@@ -1,0 +1,907 @@
+{
+  "scope": "read-only structural and numerical audit, no PDE solution",
+  "files": [
+    {
+      "path": "A题\\附件\\附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "declared_range": "A1:C242",
+          "true_nonempty_range": "A1:C242",
+          "nonempty_cells": 726,
+          "nonempty_rows": 242,
+          "header": [
+            "时间",
+            "温度",
+            "水分浓度"
+          ],
+          "first_rows": [
+            [
+              "时间",
+              "温度",
+              "水分浓度"
+            ],
+            [
+              0,
+              28,
+              0.01963
+            ],
+            [
+              60,
+              28.528,
+              0.02002
+            ],
+            [
+              120,
+              29.192,
+              0.02053
+            ],
+            [
+              180,
+              29.684,
+              0.021
+            ]
+          ],
+          "last_rows": [
+            [
+              14280,
+              49.759,
+              0.04996
+            ],
+            [
+              14340,
+              49.805,
+              0.04995
+            ],
+            [
+              14400,
+              50.165,
+              0.04986
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 241,
+          "body_result_nonempty_cells": 482
+        }
+      ],
+      "data_audit": {
+        "record_count": 241,
+        "time_min_seconds": 0.0,
+        "time_max_seconds": 14400.0,
+        "time_max_hours": 4.0,
+        "time_interval_seconds_counts": {
+          "60.0": 240
+        },
+        "duplicate_times": 0,
+        "time_strictly_increasing": true,
+        "missing_values_in_data_rectangle": 0,
+        "nonfinite_values": 0,
+        "negative_values": 0,
+        "fields": {
+          "温度": {
+            "count": 241,
+            "min": 28.0,
+            "max": 50.246,
+            "mean": 47.24532780082988,
+            "sample_sd": 5.114769115473239,
+            "first": 28.0,
+            "last": 50.165,
+            "increasing_steps": 145,
+            "decreasing_steps": 95,
+            "equal_steps": 0
+          },
+          "水分浓度": {
+            "count": 241,
+            "min": 0.01963,
+            "max": 0.05025,
+            "mean": 0.0447559336099585,
+            "sample_sd": 0.008136533971061673,
+            "first": 0.01963,
+            "last": 0.04986,
+            "increasing_steps": 159,
+            "decreasing_steps": 80,
+            "equal_steps": 1
+          }
+        }
+      },
+      "source_hash_unchanged_after_read": true
+    },
+    {
+      "path": "A题\\附件\\附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "declared_range": "A1:B146",
+          "true_nonempty_range": "A1:B146",
+          "nonempty_cells": 292,
+          "nonempty_rows": 146,
+          "header": [
+            "时间",
+            "半径"
+          ],
+          "first_rows": [
+            [
+              "时间",
+              "半径"
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              1800,
+              1.873
+            ],
+            [
+              3600,
+              1.794
+            ],
+            [
+              5400,
+              1.703
+            ]
+          ],
+          "last_rows": [
+            [
+              255600,
+              1.198
+            ],
+            [
+              257400,
+              1.198
+            ],
+            [
+              259200,
+              1.198
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 145,
+          "body_result_nonempty_cells": 145
+        }
+      ],
+      "data_audit": {
+        "record_count": 145,
+        "time_min_seconds": 0.0,
+        "time_max_seconds": 259200.0,
+        "time_max_hours": 72.0,
+        "time_interval_seconds_counts": {
+          "1800.0": 144
+        },
+        "duplicate_times": 0,
+        "time_strictly_increasing": true,
+        "missing_values_in_data_rectangle": 0,
+        "nonfinite_values": 0,
+        "negative_values": 0,
+        "fields": {
+          "半径": {
+            "count": 145,
+            "min": 1.198,
+            "max": 2.0,
+            "mean": 1.2460206896551724,
+            "sample_sd": 0.1270468783213021,
+            "first": 2.0,
+            "last": 1.198,
+            "increasing_steps": 0,
+            "decreasing_steps": 52,
+            "equal_steps": 92
+          }
+        }
+      },
+      "source_hash_unchanged_after_read": true
+    },
+    {
+      "path": "A题\\附件\\附件3\\result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "sheets": [
+        {
+          "name": "温度",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        },
+        {
+          "name": "水分浓度",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        }
+      ],
+      "source_hash_unchanged_after_read": true
+    },
+    {
+      "path": "A题\\附件\\附件3\\result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "sheets": [
+        {
+          "name": "温度",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        },
+        {
+          "name": "水分浓度",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        }
+      ],
+      "source_hash_unchanged_after_read": true
+    },
+    {
+      "path": "A题\\附件\\附件3\\result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              60,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              120,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              180,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              120,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              180,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        }
+      ],
+      "source_hash_unchanged_after_read": true
+    },
+    {
+      "path": "A题\\附件\\附件3\\result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "sheets": [
+        {
+          "name": "Sheet1",
+          "declared_range": "A1:F5",
+          "true_nonempty_range": "A1:F5",
+          "nonempty_cells": 10,
+          "nonempty_rows": 5,
+          "header": [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            "药材表面"
+          ],
+          "first_rows": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              "药材表面"
+            ],
+            [
+              60,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              120,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              180,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "last_rows": [
+            [
+              120,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              180,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ],
+          "formula_cells": [],
+          "error_cells": [],
+          "numeric_time_rows": 3,
+          "body_result_nonempty_cells": 0
+        }
+      ],
+      "source_hash_unchanged_after_read": true
+    }
+  ],
+  "environment_analysis": {
+    "temperature": {
+      "unit": "degree_C",
+      "full_fit": {
+        "form": "y_inf + (y0-y_inf)*exp(-(t/tau)^p); t in seconds",
+        "initial_value_fixed_to_source": 28.0,
+        "parameters": {
+          "y_inf": 50.01640035735214,
+          "tau_seconds": 1884.0646419734455,
+          "p": 1.1502892572671999
+        },
+        "fit_method": "six deterministic refinements of 51x51 tau,p grid, analytic least-squares amplitude",
+        "rmse": 0.14419344412083568,
+        "mae": 0.12368383899681372,
+        "max_abs_error": 0.32860880870015663,
+        "r_squared": 0.999201923058394,
+        "predicted_at_48h": 50.01640035735214,
+        "predicted_at_72h": 50.01640035735214
+      },
+      "holdout_train_range_s": [
+        0,
+        10800
+      ],
+      "holdout_test_range_s": [
+        10860,
+        14400
+      ],
+      "holdout_rmse": 0.15566023314266067,
+      "last_hour_source_range": "Sheet1!B182:B242",
+      "last_hour_stats": {
+        "count": 61,
+        "min": 49.757,
+        "max": 50.236,
+        "mean": 49.998934426229496,
+        "sample_sd": 0.15435336826607313,
+        "first": 50.195,
+        "last": 50.165,
+        "increasing_steps": 31,
+        "decreasing_steps": 29,
+        "equal_steps": 0
+      },
+      "last_hour_linear_slope_per_hour": 0.0028239026969833626,
+      "last_hour_mean_extrapolation": 49.998934426229496,
+      "last_observation_extrapolation": 50.165
+    },
+    "moisture": {
+      "unit": "kg/kg",
+      "full_fit": {
+        "form": "y_inf + (y0-y_inf)*exp(-(t/tau)^p); t in seconds",
+        "initial_value_fixed_to_source": 0.01963,
+        "parameters": {
+          "y_inf": 0.05008648262493912,
+          "tau_seconds": 2702.9249032083617,
+          "p": 1.2713644498944
+        },
+        "fit_method": "six deterministic refinements of 51x51 tau,p grid, analytic least-squares amplitude",
+        "rmse": 0.00018182747027614308,
+        "mae": 0.00015034203909071401,
+        "max_abs_error": 0.000509976952407027,
+        "r_squared": 0.9994985288995322,
+        "predicted_at_48h": 0.05008648262493912,
+        "predicted_at_72h": 0.05008648262493912
+      },
+      "holdout_train_range_s": [
+        0,
+        10800
+      ],
+      "holdout_test_range_s": [
+        10860,
+        14400
+      ],
+      "holdout_rmse": 0.00021538571607733142,
+      "last_hour_source_range": "Sheet1!C182:C242",
+      "last_hour_stats": {
+        "count": 61,
+        "min": 0.04975,
+        "max": 0.05024,
+        "mean": 0.049987540983606554,
+        "sample_sd": 0.00015012945233702923,
+        "first": 0.04977,
+        "last": 0.04986,
+        "increasing_steps": 32,
+        "decreasing_steps": 28,
+        "equal_steps": 0
+      },
+      "last_hour_linear_slope_per_hour": -1.288207297725643e-05,
+      "last_hour_mean_extrapolation": 0.049987540983606554,
+      "last_observation_extrapolation": 0.04986
+    }
+  },
+  "radius_analysis": {
+    "radius_units": "cm",
+    "time_units": "s",
+    "relative_radius_loss_at_72h": 0.401,
+    "cross_section_area_ratio_at_72h": 0.358801,
+    "every_6h": [
+      [
+        0.0,
+        2.0
+      ],
+      [
+        21600.0,
+        1.374
+      ],
+      [
+        43200.0,
+        1.248
+      ],
+      [
+        64800.0,
+        1.214
+      ],
+      [
+        86400.0,
+        1.204
+      ],
+      [
+        108000.0,
+        1.201
+      ],
+      [
+        129600.0,
+        1.2
+      ],
+      [
+        151200.0,
+        1.2
+      ],
+      [
+        172800.0,
+        1.2
+      ],
+      [
+        194400.0,
+        1.2
+      ],
+      [
+        216000.0,
+        1.199
+      ],
+      [
+        237600.0,
+        1.199
+      ],
+      [
+        259200.0,
+        1.198
+      ]
+    ],
+    "first_radius_below_1_5cm": [
+      14400.0,
+      1.477
+    ],
+    "monotone_nonincreasing": true,
+    "last_24h_radius_range": [
+      1.198,
+      1.2
+    ]
+  }
+}

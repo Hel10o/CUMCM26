@@ -1,0 +1,18 @@
+# Local credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Python environments and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Operating system and Office temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
