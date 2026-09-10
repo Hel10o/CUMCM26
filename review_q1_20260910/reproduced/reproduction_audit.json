@@ -1,0 +1,46 @@
+{
+  "all_steps_successful": true,
+  "steps": [
+    {
+      "module": "q1_solver.py",
+      "returncode": 0,
+      "elapsed_seconds": 43.92368579999993
+    },
+    {
+      "module": "q1_validate.py",
+      "returncode": 0,
+      "elapsed_seconds": 64.80269139999973
+    },
+    {
+      "module": "q1_refine.py",
+      "returncode": 0,
+      "elapsed_seconds": 78.54535069999974
+    },
+    {
+      "module": "q1_excel.py",
+      "returncode": 0,
+      "elapsed_seconds": 1.2723691000001054
+    },
+    {
+      "module": "q1_report.py",
+      "returncode": 0,
+      "elapsed_seconds": 8.87404349999997
+    }
+  ],
+  "elapsed_seconds": 197.61167569999975,
+  "original_input_hashes_unchanged": true,
+  "input_sha256": {
+    "D:\\Desktop\\CUMCM26\\q1_complete_delivery\\q1_delivery\\input\\附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "D:\\Desktop\\CUMCM26\\q1_complete_delivery\\q1_delivery\\input\\result1_template.xlsx": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  },
+  "compared_with_delivered": {
+    "temperature_degC": {
+      "max_abs_difference": 4.263256414560601e-14,
+      "four_decimal_equal": true
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 4.884981308350689e-15,
+      "four_decimal_equal": true
+    }
+  }
+}

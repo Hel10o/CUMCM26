@@ -1,0 +1,17 @@
+{
+  "files": [
+    "01_environment_temperature",
+    "02_environment_moisture",
+    "03_temperature_time",
+    "04_moisture_time",
+    "05_temperature_profiles",
+    "06_moisture_profiles",
+    "07_grid_temperature",
+    "08_grid_moisture"
+  ],
+  "formats": [
+    "300 dpi PNG",
+    "SVG"
+  ],
+  "source": "actual unrounded production and validation outputs"
+}

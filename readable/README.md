@@ -4,6 +4,8 @@
 通过 GitHub 连接阅读时，先打开本文，再按链接读取目标论文全文或单页。
 单页文件用于按页引用、分批阅读及避免长文件截断；它们不是摘要。
 
+第一问已有新的 [独立审核入口](../review_q1_20260910/README.md) 和 [完成情况与答案审核报告](../review_q1_20260910/第一问审核报告.md)，其中链接本机重跑证据及独立热参考解。审查当前模型时请一并阅读，区分模型内数值验证与物理假设是否成立。
+
 | 文档 | PDF页数 | 连续文本 |
 |---|---:|---|
 | [Estimation of thermo-physical properties of products with cylindrical shape during drying: The coupling between mass and heat](papers/da-silva-2014/README.md) | 9 | [全文](papers/da-silva-2014/fulltext.md) |

@@ -1,0 +1,121 @@
+refined 5120
+refined 10240
+cheb 96 {'max_full': 1.5207508359260657e-06, 'rms_full': 1.939942822701795e-08, 'max_table': 1.1287854562169741e-07, 'four_decimal_changed_full': 0, 'four_decimal_changed_table': 0, 'max_location_t_rindex': [1, 20]}
+cheb 160 {'max_full': 1.5206763275266155e-06, 'rms_full': 1.9389834528037276e-08, 'max_table': 1.1288018031407887e-07, 'four_decimal_changed_full': 0, 'four_decimal_changed_table': 0, 'max_location_t_rindex': [1, 20]}
+cheb 240 {'max_full': 1.520649120401174e-06, 'rms_full': 1.9400565961913796e-08, 'max_table': 1.1288009860166426e-07, 'four_decimal_changed_full': 0, 'four_decimal_changed_table': 0, 'max_location_t_rindex': [1, 20]}
+{
+  "further_refinement": [
+    {
+      "n_coarse": 5120,
+      "n_fine": 10240,
+      "T": {
+        "max_full": 2.246421360041495e-08,
+        "rms_full": 4.9560392289297e-09,
+        "max_table": 2.246421360041495e-08,
+        "four_decimal_changed_full": 1,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 4.564161316000792e-06,
+        "rms_full": 5.825910977949226e-08,
+        "max_table": 3.3922524478313676e-07,
+        "four_decimal_changed_full": 4,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    }
+  ],
+  "production_time_precision": {
+    "T": {
+      "max_full": 5.032276817473758e-10,
+      "rms_full": 6.582542239408096e-11,
+      "max_table": 1.7409007568858215e-10,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        1323,
+        20
+      ]
+    },
+    "C": {
+      "max_full": 8.150369268378199e-11,
+      "rms_full": 7.233460243086182e-12,
+      "max_table": 3.183986407861994e-11,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        1,
+        20
+      ]
+    }
+  },
+  "independent_nonlinear_collocation": {
+    "N96_vs_N160": {
+      "max_full": 2.545290644917486e-10,
+      "rms_full": 4.6607626696117884e-11,
+      "max_table": 1.6047740913904818e-10,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        1387,
+        20
+      ]
+    },
+    "N160_vs_N240": {
+      "max_full": 5.168279137990339e-10,
+      "rms_full": 9.67003421156628e-11,
+      "max_table": 4.267930453494273e-10,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        859,
+        20
+      ]
+    },
+    "fv10240_vs_N240": {
+      "max_full": 1.520649120401174e-06,
+      "rms_full": 1.9400565961913796e-08,
+      "max_table": 1.1288009860166426e-07,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        1,
+        20
+      ]
+    },
+    "settings": {
+      "N": 240,
+      "rtol": 3e-11,
+      "atol": 3e-13,
+      "accepted_steps": 1671,
+      "nfev": 3378,
+      "method": "Independent Chebyshev collocation, algebraic surface Robin, BDF"
+    }
+  },
+  "2d_heat_refinement": {
+    "200_vs_400_midplane_max_K": 9.675657608454458e-08,
+    "200_vs_400_all_max_K": 8.057831763608192e-06,
+    "400_midplane_vs_production_K": 6.278087028022128e-08,
+    "average_2d_1800": 35.427297851703,
+    "end_center_1800": 37.27243632795334,
+    "end_corner_1800": 38.91976482521783
+  },
+  "production_actual_thermal_analytic": {
+    "max_full": 7.86582177170203e-09,
+    "rms_full": 1.6693256302941238e-09,
+    "max_table": 7.86582177170203e-09,
+    "four_decimal_changed_full": 0,
+    "four_decimal_changed_table": 0,
+    "max_location_t_rindex": [
+      300,
+      20
+    ]
+  }
+}

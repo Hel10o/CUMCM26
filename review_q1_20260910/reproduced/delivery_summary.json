@@ -1,0 +1,64 @@
+{
+  "main_model": "Midplane 1D effective Robin, independent sensible-heat and nonlinear dry-basis diffusion",
+  "production_grid_intervals": 10240,
+  "values_1800": {
+    "AVG_T": 35.16791358023219,
+    "AVG_C": 2.293557194194852,
+    "CENTER_T": 33.575344825247385,
+    "SURFACE_T": 36.78556034638117,
+    "CENTER_C": 2.549992404111036,
+    "SURFACE_C": 1.5102346083329063,
+    "LOSS_PERCENT": 10.056580619809717,
+    "TEMP_DIFF": 3.210215521133783,
+    "MEAN_2D_T": 35.427297851703,
+    "END_T": 37.27243632795334,
+    "LATENT_RATIO": 9.49646930292388,
+    "LATENT_LOSS_KG": 0.018609123552755454,
+    "LATENT_J": 45592.352704250865,
+    "SENSIBLE_J": 4800.979316619639,
+    "LATENT_INITIAL_FLUX": 1145.5804687323944,
+    "LATENT_T_CENTER": 10.546614975981072,
+    "LATENT_T_SURFACE": 11.902627810114291,
+    "HM_LOW": 1.6636328474418751,
+    "HM_HIGH": 1.3759476928848897
+  },
+  "independent_comparison": {
+    "T": {
+      "max_full": 7.86582177170203e-09,
+      "rms_full": 1.6693256302941238e-09,
+      "max_table": 7.86582177170203e-09,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        300,
+        20
+      ]
+    },
+    "C": {
+      "max_full": 1.520649120401174e-06,
+      "rms_full": 1.9400565961913796e-08,
+      "max_table": 1.1288009860166426e-07,
+      "four_decimal_changed_full": 0,
+      "four_decimal_changed_table": 0,
+      "max_location_t_rindex": [
+        1,
+        20
+      ]
+    }
+  },
+  "excel": {
+    "all_passed": true,
+    "total_result_values": 75600,
+    "sheet_names_exact": true,
+    "ZIP_CRC_passed": true
+  },
+  "paper_tables_generated_from_unrounded_output": true,
+  "paper_tables_same_as_Excel": true,
+  "limitations": [
+    "Original problem PDF formula image not read; repository extracted text and explicit supplied formula used",
+    "Foods11 LFS full PDF not obtained",
+    "No internal-response experiment",
+    "No 2D nonlinear moisture computation",
+    "Latent omission not small under literal evaporating-mass interpretation; baseline is conditional"
+  ]
+}

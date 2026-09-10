@@ -1,0 +1,52 @@
+{
+  "temperature": {
+    "shape": [
+      1801,
+      21
+    ],
+    "all_finite": true,
+    "initial_max_abs_error": 0.0,
+    "min": 28.0,
+    "max": 36.785560346381175,
+    "radial_monotonicity_violation": 0.0,
+    "time_monotonicity_violation": 0.0,
+    "boundary_max_abs_residual": 7.669233070828341e-07,
+    "boundary_max_relative_residual": 3.746024475962796e-08,
+    "boundary_residual_units": "W/m^2",
+    "boundary_note": "seven positive paper times; independently differentiated snapshots, finite-difference diagnostic",
+    "boundary_flux_direction_correct": true,
+    "snapshot_output_nodes_equal": true,
+    "values_1800_at_0_0p5_1_1p5_2_cm": [
+      33.57534482524738,
+      33.77200191494837,
+      34.36416079574814,
+      35.36212459004086,
+      36.785560346381175
+    ]
+  },
+  "moisture": {
+    "shape": [
+      1801,
+      21
+    ],
+    "all_finite": true,
+    "initial_max_abs_error": 0.0,
+    "min": 1.5102346083329061,
+    "max": 2.550000000000001,
+    "radial_monotonicity_violation": 1.3322676295501878e-15,
+    "time_monotonicity_violation": 1.3322676295501878e-15,
+    "boundary_max_abs_residual": 1.2093325032515572e-13,
+    "boundary_max_relative_residual": 6.788860651289444e-08,
+    "boundary_residual_units": "(kg/kg)*m/s",
+    "boundary_note": "seven positive paper times; independently differentiated snapshots, finite-difference diagnostic",
+    "boundary_flux_direction_correct": true,
+    "snapshot_output_nodes_equal": true,
+    "values_1800_at_0_0p5_1_1p5_2_cm": [
+      2.549992404111036,
+      2.5497239340981843,
+      2.5383005504435663,
+      2.375469858584541,
+      1.5102346083329061
+    ]
+  }
+}

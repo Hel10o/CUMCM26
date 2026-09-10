@@ -1,0 +1,12 @@
+{
+  "temperature_degC": {
+    "cells": 37800,
+    "different_four_decimal_cells": 0,
+    "max_unrounded_difference": 7.86582177170203e-09
+  },
+  "moisture_dry_basis": {
+    "cells": 37800,
+    "different_four_decimal_cells": 0,
+    "max_unrounded_difference": 1.520649120401174e-06
+  }
+}

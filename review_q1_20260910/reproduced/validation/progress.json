@@ -1,0 +1,968 @@
+{
+  "input_audit": {
+    "input_name": "\u9644\u4ef61.xlsx",
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+    "sheet_names": [
+      "Sheet1"
+    ],
+    "headers": [
+      "\u65f6\u95f4",
+      "\u6e29\u5ea6",
+      "\u6c34\u5206\u6d53\u5ea6"
+    ],
+    "data_rows": 241,
+    "time_min_s": 0.0,
+    "time_max_s": 14400.0,
+    "time_steps_s": [
+      60.0
+    ],
+    "missing": 0,
+    "duplicate_times": 0,
+    "temperature_minmax_degC": [
+      28.0,
+      50.246
+    ],
+    "environment_C_minmax": [
+      0.01963,
+      0.05025
+    ],
+    "temperature_down_steps": 95,
+    "environment_C_down_steps": 80,
+    "interpretation": "External forcing only, not internal response observations",
+    "units_source": "Problem appendix 1; xlsx headings contain no unit strings"
+  },
+  "tests": {},
+  "grid": [
+    {
+      "n": 20,
+      "dr_cm": 0.1,
+      "T": {
+        "field": "T",
+        "n_intervals": 20,
+        "n_nodes": 21,
+        "dr_m": 0.001,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3617,
+        "njev": 30,
+        "nlu": 464,
+        "accepted_steps": 1766,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.37146819999998115,
+        "conservation_augmented_max_abs": 1.687538997430238e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.78528770856968,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 20,
+        "n_nodes": 21,
+        "dr_m": 0.001,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1534,
+        "njev": 30,
+        "nlu": 266,
+        "accepted_steps": 751,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.1892729999999574,
+        "conservation_augmented_max_abs": 1.609823385706477e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.511645757917239,
+        "max_value": 2.55,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 0.0019597845146890336,
+          "rms_full": 0.00043285381034823645,
+          "max_table": 0.0019597845146890336,
+          "four_decimal_changed_full": 32466,
+          "four_decimal_changed_table": 29,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.06733300565832367,
+          "rms_full": 0.004122811781046793,
+          "max_table": 0.04094774952271818,
+          "four_decimal_changed_full": 20758,
+          "four_decimal_changed_table": 18,
+          "max_location_t_rindex": [
+            22,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 40,
+      "dr_cm": 0.05,
+      "T": {
+        "field": "T",
+        "n_intervals": 40,
+        "n_nodes": 41,
+        "dr_m": 0.0005,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3883,
+        "njev": 37,
+        "nlu": 496,
+        "accepted_steps": 1887,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.4129376000000775,
+        "conservation_augmented_max_abs": 2.3092638912203256e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.785492434493165,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 40,
+        "n_nodes": 41,
+        "dr_m": 0.0005,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1660,
+        "njev": 30,
+        "nlu": 275,
+        "accepted_steps": 810,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.21092219999991357,
+        "conservation_augmented_max_abs": 1.7486012637846216e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5105697447103632,
+        "max_value": 2.55,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 0.0004905405317572331,
+          "rms_full": 0.00010823926599461887,
+          "max_table": 0.0004905405317572331,
+          "four_decimal_changed_full": 21079,
+          "four_decimal_changed_table": 20,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.03488224489331149,
+          "rms_full": 0.0011845328752368553,
+          "max_table": 0.008012447811789336,
+          "four_decimal_changed_full": 17487,
+          "four_decimal_changed_table": 16,
+          "max_location_t_rindex": [
+            6,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 80,
+      "dr_cm": 0.025,
+      "T": {
+        "field": "T",
+        "n_intervals": 80,
+        "n_nodes": 81,
+        "dr_m": 0.00025,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3914,
+        "njev": 30,
+        "nlu": 499,
+        "accepted_steps": 1927,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.418863999999985,
+        "conservation_augmented_max_abs": 2.220446049250313e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.785543386107186,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 80,
+        "n_nodes": 81,
+        "dr_m": 0.00025,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1778,
+        "njev": 30,
+        "nlu": 289,
+        "accepted_steps": 874,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.23606489999997393,
+        "conservation_augmented_max_abs": 1.5543122344752192e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5103173372199956,
+        "max_value": 2.55,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 0.00012265454952142818,
+          "rms_full": 2.7057814440425418e-05,
+          "max_table": 0.00012265454952142818,
+          "four_decimal_changed_full": 7099,
+          "four_decimal_changed_table": 8,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.017582764480690294,
+          "rms_full": 0.00032975991592621367,
+          "max_table": 0.0018833252776806475,
+          "four_decimal_changed_full": 11508,
+          "four_decimal_changed_table": 9,
+          "max_location_t_rindex": [
+            2,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 160,
+      "dr_cm": 0.0125,
+      "T": {
+        "field": "T",
+        "n_intervals": 160,
+        "n_nodes": 161,
+        "dr_m": 0.000125,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3936,
+        "njev": 30,
+        "nlu": 507,
+        "accepted_steps": 1938,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 1.2759933999998339,
+        "conservation_augmented_max_abs": 1.7763568394002505e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.78555611613011,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 160,
+        "n_nodes": 161,
+        "dr_m": 0.000125,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1883,
+        "njev": 30,
+        "nlu": 297,
+        "accepted_steps": 922,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.7975043999999798,
+        "conservation_augmented_max_abs": 1.8318679906315083e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102552273482452,
+        "max_value": 2.55,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 3.0647381365156434e-05,
+          "rms_full": 6.76044798566767e-06,
+          "max_table": 3.0647381365156434e-05,
+          "four_decimal_changed_full": 1761,
+          "four_decimal_changed_table": 2,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.007657388615312843,
+          "rms_full": 8.62130435072333e-05,
+          "max_table": 0.00046456287972240773,
+          "four_decimal_changed_full": 5629,
+          "four_decimal_changed_table": 6,
+          "max_location_t_rindex": [
+            1,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 320,
+      "dr_cm": 0.00625,
+      "T": {
+        "field": "T",
+        "n_intervals": 320,
+        "n_nodes": 321,
+        "dr_m": 6.25e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3984,
+        "njev": 30,
+        "nlu": 511,
+        "accepted_steps": 1962,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 1.7618376000000353,
+        "conservation_augmented_max_abs": 2.042810365310288e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.785559294563754,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 320,
+        "n_nodes": 321,
+        "dr_m": 6.25e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1942,
+        "njev": 30,
+        "nlu": 306,
+        "accepted_steps": 955,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.8346893999998883,
+        "conservation_augmented_max_abs": 1.1934897514720433e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102397564630585,
+        "max_value": 2.5500000000000003,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 7.644345288326804e-06,
+          "rms_full": 1.6866236367469006e-06,
+          "max_table": 7.644345288326804e-06,
+          "four_decimal_changed_full": 454,
+          "four_decimal_changed_table": 1,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.0017253742671310413,
+          "rms_full": 2.035103284433389e-05,
+          "max_table": 0.00011544673687247098,
+          "four_decimal_changed_full": 1719,
+          "four_decimal_changed_table": 2,
+          "max_location_t_rindex": [
+            1,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 640,
+      "dr_cm": 0.003125,
+      "T": {
+        "field": "T",
+        "n_intervals": 640,
+        "n_nodes": 641,
+        "dr_m": 3.125e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3948,
+        "njev": 30,
+        "nlu": 511,
+        "accepted_steps": 1944,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 1.9977946000001339,
+        "conservation_augmented_max_abs": 2.5757174171303632e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.78556008974967,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 640,
+        "n_nodes": 641,
+        "dr_m": 3.125e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 1981,
+        "njev": 30,
+        "nlu": 312,
+        "accepted_steps": 972,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 0.9999995000000581,
+        "conservation_augmented_max_abs": 1.6458188978329957e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102358912364287,
+        "max_value": 2.5500000000000003,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 1.893097284266787e-06,
+          "rms_full": 4.1753512523686754e-07,
+          "max_table": 1.893097284266787e-06,
+          "four_decimal_changed_full": 118,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 0.0003912348882004757,
+          "rms_full": 4.919916438722006e-06,
+          "max_table": 2.8500492549099476e-05,
+          "four_decimal_changed_full": 447,
+          "four_decimal_changed_table": 1,
+          "max_location_t_rindex": [
+            1,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 1280,
+      "dr_cm": 0.0015625,
+      "T": {
+        "field": "T",
+        "n_intervals": 1280,
+        "n_nodes": 1281,
+        "dr_m": 1.5625e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3914,
+        "njev": 30,
+        "nlu": 510,
+        "accepted_steps": 1927,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 2.5166295000001355,
+        "conservation_augmented_max_abs": 3.552713678800501e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.78556029067757,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 1280,
+        "n_nodes": 1281,
+        "dr_m": 1.5625e-05,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 2010,
+        "njev": 31,
+        "nlu": 314,
+        "accepted_steps": 986,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 1.4263509999998405,
+        "conservation_augmented_max_abs": 1.9984014443252818e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102349251302967,
+        "max_value": 2.5500000000000003,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 4.532049224792445e-07,
+          "rms_full": 9.959550317808608e-08,
+          "max_table": 4.532049224792445e-07,
+          "four_decimal_changed_full": 29,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            300,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 9.172035260673894e-05,
+          "rms_full": 1.1666978943867978e-06,
+          "max_table": 6.78444791413213e-06,
+          "four_decimal_changed_full": 110,
+          "four_decimal_changed_table": 1,
+          "max_location_t_rindex": [
+            1,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 2560,
+      "dr_cm": 0.00078125,
+      "T": {
+        "field": "T",
+        "n_intervals": 2560,
+        "n_nodes": 2561,
+        "dr_m": 7.8125e-06,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3898,
+        "njev": 30,
+        "nlu": 507,
+        "accepted_steps": 1919,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 3.326928500000122,
+        "conservation_augmented_max_abs": 2.7533531010703882e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.7855603410943,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 2560,
+        "n_nodes": 2561,
+        "dr_m": 7.8125e-06,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 2096,
+        "njev": 31,
+        "nlu": 332,
+        "accepted_steps": 1029,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 2.273100199999817,
+        "conservation_augmented_max_abs": 2.6419838539126772e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102346842424452,
+        "max_value": 2.5500000000000003,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 9.5059860427682e-08,
+          "rms_full": 2.0066294728315615e-08,
+          "max_table": 9.36731119338674e-08,
+          "four_decimal_changed_full": 9,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            284,
+            20
+          ]
+        },
+        "C": {
+          "max_full": 1.8277436076630238e-05,
+          "rms_full": 2.334055035171043e-07,
+          "max_table": 1.356076867242706e-06,
+          "four_decimal_changed_full": 27,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            1,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "n": 5120,
+      "dr_cm": 0.000390625,
+      "T": {
+        "field": "T",
+        "n_intervals": 5120,
+        "n_nodes": 5121,
+        "dr_m": 3.90625e-06,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 3890,
+        "njev": 30,
+        "nlu": 504,
+        "accepted_steps": 1915,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 5.141525999999885,
+        "conservation_augmented_max_abs": 3.6415315207705135e-14,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 28.0,
+        "max_value": 36.78556035391709,
+        "initial_max_error": 0.0
+      },
+      "C": {
+        "field": "C",
+        "n_intervals": 5120,
+        "n_nodes": 5121,
+        "dr_m": 3.90625e-06,
+        "rtol": 2e-10,
+        "atol": 2e-12,
+        "max_step_s": 15.0,
+        "method": "scipy.solve_ivp BDF, analytic sparse Jacobian",
+        "segments": 30,
+        "nfev": 2178,
+        "njev": 31,
+        "nlu": 349,
+        "accepted_steps": 1070,
+        "nonlinear_failure_policy": "raise; never silently accept or clip",
+        "nonlinear_iteration": "SciPy BDF Newton iteration; maximum 4 iterations; unsuccessful convergence reduces step size",
+        "first_step_policy": "C only: min(segment length, 1e-3 s, 0.05*dr^2/D0); avoids negative initial-step probe",
+        "newton_tolerance": 1.4142135623730951e-05,
+        "environment_interpolation": "linear",
+        "elapsed_seconds": 4.189096799999788,
+        "conservation_augmented_max_abs": 2.2065682614424986e-15,
+        "independent_flux_quadrature_max_abs": null,
+        "min_value": 1.5102346229449057,
+        "max_value": 2.5500000000000007,
+        "initial_max_error": 0.0
+      },
+      "difference_to_finest": {
+        "T": {
+          "max_full": 0.0,
+          "rms_full": 0.0,
+          "max_table": 0.0,
+          "four_decimal_changed_full": 0,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            0,
+            0
+          ]
+        },
+        "C": {
+          "max_full": 0.0,
+          "rms_full": 0.0,
+          "max_table": 0.0,
+          "four_decimal_changed_full": 0,
+          "four_decimal_changed_table": 0,
+          "max_location_t_rindex": [
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ],
+  "grid_pairwise": [
+    {
+      "n_coarse": 20,
+      "n_fine": 40,
+      "T": {
+        "max_full": 0.0014692439829318005,
+        "rms_full": 0.0003246169438649138,
+        "max_table": 0.0014692439829318005,
+        "four_decimal_changed_full": 31228,
+        "four_decimal_changed_table": 27,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.0467149042782653,
+        "rms_full": 0.003043575059558313,
+        "max_table": 0.032935301710928844,
+        "four_decimal_changed_full": 20225,
+        "four_decimal_changed_table": 18,
+        "max_location_t_rindex": [
+          38,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 40,
+      "n_fine": 80,
+      "T": {
+        "max_full": 0.00036788598223580493,
+        "rms_full": 8.11814893086749e-05,
+        "max_table": 0.00036788598223580493,
+        "four_decimal_changed_full": 17771,
+        "four_decimal_changed_table": 16,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.02437056256752257,
+        "rms_full": 0.0008777391321540926,
+        "max_table": 0.006129122534108689,
+        "four_decimal_changed_full": 16628,
+        "four_decimal_changed_table": 16,
+        "max_location_t_rindex": [
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 80,
+      "n_fine": 160,
+      "T": {
+        "max_full": 9.200716815627175e-05,
+        "rms_full": 2.0297367587572826e-05,
+        "max_table": 9.200716815627175e-05,
+        "four_decimal_changed_full": 5343,
+        "four_decimal_changed_table": 7,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.012356821497315984,
+        "rms_full": 0.0002464210598510596,
+        "max_table": 0.0014187623979582398,
+        "four_decimal_changed_full": 10219,
+        "four_decimal_changed_table": 7,
+        "max_location_t_rindex": [
+          3,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 160,
+      "n_fine": 320,
+      "T": {
+        "max_full": 2.300303607682963e-05,
+        "rms_full": 5.073832021919148e-06,
+        "max_table": 2.300303607682963e-05,
+        "four_decimal_changed_full": 1307,
+        "four_decimal_changed_table": 1,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.005932014348181802,
+        "rms_full": 6.590420687820924e-05,
+        "max_table": 0.00034911614284993675,
+        "four_decimal_changed_full": 4539,
+        "four_decimal_changed_table": 6,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 320,
+      "n_fine": 640,
+      "T": {
+        "max_full": 5.751248004060017e-06,
+        "rms_full": 1.2690969261034023e-06,
+        "max_table": 5.751248004060017e-06,
+        "four_decimal_changed_full": 336,
+        "four_decimal_changed_table": 1,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.0013341393789305656,
+        "rms_full": 1.5434312101920596e-05,
+        "max_table": 8.69462443233715e-05,
+        "four_decimal_changed_full": 1331,
+        "four_decimal_changed_table": 2,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 640,
+      "n_fine": 1280,
+      "T": {
+        "max_full": 1.4398923617875425e-06,
+        "rms_full": 3.1794343241929545e-07,
+        "max_table": 1.4398923617875425e-06,
+        "four_decimal_changed_full": 89,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 0.00029951453559373675,
+        "rms_full": 3.7532419607091894e-06,
+        "max_table": 2.1716044634967346e-05,
+        "four_decimal_changed_full": 341,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 1280,
+      "n_fine": 2560,
+      "T": {
+        "max_full": 3.595318105453771e-07,
+        "rms_full": 7.954032211007263e-08,
+        "max_table": 3.595318105453771e-07,
+        "four_decimal_changed_full": 20,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          300,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 7.34429165301087e-05,
+        "rms_full": 9.332960864740094e-07,
+        "max_table": 5.428371046889424e-06,
+        "four_decimal_changed_full": 83,
+        "four_decimal_changed_table": 1,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    },
+    {
+      "n_coarse": 2560,
+      "n_fine": 5120,
+      "T": {
+        "max_full": 9.5059860427682e-08,
+        "rms_full": 2.0066294728315615e-08,
+        "max_table": 9.36731119338674e-08,
+        "four_decimal_changed_full": 9,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          284,
+          20
+        ]
+      },
+      "C": {
+        "max_full": 1.8277436076630238e-05,
+        "rms_full": 2.334055035171043e-07,
+        "max_table": 1.356076867242706e-06,
+        "four_decimal_changed_full": 27,
+        "four_decimal_changed_table": 0,
+        "max_location_t_rindex": [
+          1,
+          20
+        ]
+      }
+    }
+  ]
+}

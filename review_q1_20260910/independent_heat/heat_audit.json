@@ -1,0 +1,271 @@
+{
+  "method": "Independent Q1 thermal verification: direct OOXML input + modal exact stepping.\n\nNo production module is imported. For theta = T - T_ambient,\ntheta_t = alpha * (theta_rr + theta_r/r) - T_ambient'(t), with\ntheta_r(R) + h/k * theta(R) = 0. The eigenfunctions are J0(beta*r/R),\nbeta*J1(beta) = Bi*J0(beta). Projection of the constant forcing is\nb = 2*J1(beta)/(beta*(J0(beta)**2+J1(beta)**2)). Each modal coefficient\nis advanced exactly on each one-second interval (all input knots are at\ninteger seconds), a_new = exp(-q)*a - b*slope*(1-exp(-q))/q.\n",
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "parameters": {
+    "rho_kg_m3": 820,
+    "cp_J_kgK": 2600,
+    "k_W_mK": 0.36,
+    "h_W_m2K": 25,
+    "R_m": 0.02,
+    "T0_degC": 28
+  },
+  "model_scope": "1D radial homogeneous cylinder, linear ambient interpolation, no latent heat",
+  "modes": {
+    "200": {
+      "cells": 37800,
+      "max_abs_error_degC": 4.480937221273962e-08,
+      "rms_error_degC": 5.948140017109557e-09,
+      "max_error_at": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "four_decimal_mismatches": 1,
+      "mismatch_locations": [
+        {
+          "time_s": 915,
+          "radius_cm": 2.0,
+          "given": 31.81014997563753,
+          "independent": 31.810150005716324,
+          "given_four_decimal": "31.8101",
+          "independent_four_decimal": "31.8102"
+        }
+      ]
+    },
+    "800": {
+      "cells": 37800,
+      "max_abs_error_degC": 7.865828877129388e-09,
+      "rms_error_degC": 1.6693279300224604e-09,
+      "max_error_at": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "four_decimal_mismatches": 0,
+      "mismatch_locations": [],
+      "change_from_previous_modes_degC": 3.694354688832391e-08,
+      "four_decimal_changes_from_previous": 1
+    },
+    "3200": {
+      "cells": 37800,
+      "max_abs_error_degC": 7.290214654176452e-09,
+      "rms_error_degC": 1.6333273759618696e-09,
+      "max_error_at": {
+        "time_s": 300,
+        "radius_cm": 2.0
+      },
+      "four_decimal_mismatches": 0,
+      "mismatch_locations": [],
+      "change_from_previous_modes_degC": 5.75614222952936e-10,
+      "four_decimal_changes_from_previous": 0
+    }
+  },
+  "average_temperature_max_abs_error_degC": 7.131461643439252e-09,
+  "ambient_interpolation_max_abs_error_degC": 0.0,
+  "delivered_excel_vs_independent": {
+    "cells": 37800,
+    "max_abs_error_degC": 4.999858615306607e-05,
+    "rms_error_degC": 2.8582052903051082e-05,
+    "max_error_at": {
+      "time_s": 736,
+      "radius_cm": 0.5
+    },
+    "four_decimal_mismatches": 0,
+    "mismatch_locations": []
+  },
+  "table_temperature_degC": {
+    "time_s": [
+      100,
+      300,
+      600,
+      900,
+      1200,
+      1500,
+      1800
+    ],
+    "radius_cm": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "values_four_decimal": [
+      [
+        "28.0001",
+        "28.0003",
+        "28.0040",
+        "28.0327",
+        "28.1801"
+      ],
+      [
+        "28.0408",
+        "28.0635",
+        "28.1514",
+        "28.3681",
+        "28.8489"
+      ],
+      [
+        "28.4533",
+        "28.5360",
+        "28.8039",
+        "29.3159",
+        "30.1652"
+      ],
+      [
+        "29.3243",
+        "29.4583",
+        "29.8755",
+        "30.6161",
+        "31.7304"
+      ],
+      [
+        "30.5427",
+        "30.7098",
+        "31.2223",
+        "32.1126",
+        "33.4276"
+      ],
+      [
+        "31.9957",
+        "32.1867",
+        "32.7660",
+        "33.7463",
+        "35.1203"
+      ],
+      [
+        "33.5753",
+        "33.7720",
+        "34.3642",
+        "35.3621",
+        "36.7856"
+      ]
+    ]
+  },
+  "closest_rounding_thresholds": [
+    {
+      "time_s": 736,
+      "radius_cm": 0.5,
+      "independent_degC": 28.902250001413847,
+      "distance_to_threshold_degC": 1.4138466212898493e-09
+    },
+    {
+      "time_s": 1637,
+      "radius_cm": 1.5,
+      "independent_degC": 34.4782500025956,
+      "distance_to_threshold_degC": 2.59560183621943e-09
+    },
+    {
+      "time_s": 939,
+      "radius_cm": 0.1,
+      "independent_degC": 29.47245000291635,
+      "distance_to_threshold_degC": 2.9163493309170007e-09
+    },
+    {
+      "time_s": 781,
+      "radius_cm": 0.2,
+      "independent_degC": 28.94634999320421,
+      "distance_to_threshold_degC": 6.7957909777760505e-09
+    },
+    {
+      "time_s": 1636,
+      "radius_cm": 1.6,
+      "independent_degC": 34.71655000797612,
+      "distance_to_threshold_degC": 7.97612010501325e-09
+    },
+    {
+      "time_s": 1208,
+      "radius_cm": 1.1,
+      "independent_degC": 31.40864999118071,
+      "distance_to_threshold_degC": 8.819292997941374e-09
+    },
+    {
+      "time_s": 783,
+      "radius_cm": 0.9,
+      "independent_degC": 29.319149990352322,
+      "distance_to_threshold_degC": 9.647675324231386e-09
+    },
+    {
+      "time_s": 1551,
+      "radius_cm": 0.2,
+      "independent_degC": 32.29105000992383,
+      "distance_to_threshold_degC": 9.92382992990315e-09
+    },
+    {
+      "time_s": 971,
+      "radius_cm": 0.3,
+      "independent_degC": 29.639249987494363,
+      "distance_to_threshold_degC": 1.2505636550486088e-08
+    },
+    {
+      "time_s": 1063,
+      "radius_cm": 1.9,
+      "independent_degC": 32.34124998712126,
+      "distance_to_threshold_degC": 1.2878741836175322e-08
+    },
+    {
+      "time_s": 1328,
+      "radius_cm": 0.9,
+      "independent_degC": 31.723350013098113,
+      "distance_to_threshold_degC": 1.3098114868625998e-08
+    },
+    {
+      "time_s": 1079,
+      "radius_cm": 0.8,
+      "independent_degC": 30.420050014798214,
+      "distance_to_threshold_degC": 1.4798215124756098e-08
+    },
+    {
+      "time_s": 653,
+      "radius_cm": 0.0,
+      "independent_degC": 28.576149984458205,
+      "distance_to_threshold_degC": 1.5541794709861277e-08
+    },
+    {
+      "time_s": 1187,
+      "radius_cm": 1.8,
+      "independent_degC": 32.773849984162815,
+      "distance_to_threshold_degC": 1.5837186947464944e-08
+    },
+    {
+      "time_s": 671,
+      "radius_cm": 1.4,
+      "independent_degC": 29.455549983879575,
+      "distance_to_threshold_degC": 1.6120425425469875e-08
+    },
+    {
+      "time_s": 1024,
+      "radius_cm": 1.3,
+      "independent_degC": 30.84175001657632,
+      "distance_to_threshold_degC": 1.6576319467276335e-08
+    },
+    {
+      "time_s": 231,
+      "radius_cm": 1.6,
+      "independent_degC": 28.274950016967544,
+      "distance_to_threshold_degC": 1.6967544797807932e-08
+    },
+    {
+      "time_s": 1540,
+      "radius_cm": 1.9,
+      "independent_degC": 35.02855001832138,
+      "distance_to_threshold_degC": 1.832138514146209e-08
+    },
+    {
+      "time_s": 990,
+      "radius_cm": 2.0,
+      "independent_degC": 32.22274998160362,
+      "distance_to_threshold_degC": 1.8396379891782998e-08
+    },
+    {
+      "time_s": 1449,
+      "radius_cm": 0.6,
+      "independent_degC": 32.00624998099385,
+      "distance_to_threshold_degC": 1.90061517059803e-08
+    }
+  ],
+  "elapsed_s": 0.6586075999998684
+}
