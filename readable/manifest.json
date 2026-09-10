@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "extractor": "pdftotext version 25.02.0",
+  "reading_order": "Per-document raw/default mode; layout preserved separately",
+  "page_number_basis": "1-based physical PDF page",
+  "documents": [
+    {
+      "id": "papers/da-silva-2014",
+      "title": "Estimation of thermo-physical properties of products with cylindrical shape during drying: The coupling between mass and heat",
+      "doi": "10.1016/j.jfoodeng.2014.05.010",
+      "source": "分析与文献/1-s2.0-S0260877414002118-main.pdf",
+      "source_bytes": 1464267,
+      "source_sha256": "f366438e9b447e270ae210f0f7e8bcc59bb65c94e850736e8db992e8817deb5b",
+      "pdf_pages": 9,
+      "extracted_pages": 9,
+      "mode": "raw",
+      "fulltext": "readable/papers/da-silva-2014/fulltext.md",
+      "fulltext_sha256": "ac498bfa56f1ca1eea0118607019637d3cbf48b3a4d7b76b182e398582ad1653",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 5268,
+          "non_whitespace_characters": 4468,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/001.md"
+        },
+        {
+          "page": 2,
+          "characters": 5292,
+          "non_whitespace_characters": 4435,
+          "replacement_characters": 0,
+          "marked_control_characters": 16,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/002.md"
+        },
+        {
+          "page": 3,
+          "characters": 5145,
+          "non_whitespace_characters": 4258,
+          "replacement_characters": 0,
+          "marked_control_characters": 22,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/003.md"
+        },
+        {
+          "page": 4,
+          "characters": 5901,
+          "non_whitespace_characters": 4799,
+          "replacement_characters": 0,
+          "marked_control_characters": 47,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/004.md"
+        },
+        {
+          "page": 5,
+          "characters": 6348,
+          "non_whitespace_characters": 5250,
+          "replacement_characters": 0,
+          "marked_control_characters": 35,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/005.md"
+        },
+        {
+          "page": 6,
+          "characters": 2457,
+          "non_whitespace_characters": 2038,
+          "replacement_characters": 0,
+          "marked_control_characters": 14,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/006.md"
+        },
+        {
+          "page": 7,
+          "characters": 2692,
+          "non_whitespace_characters": 2234,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/007.md"
+        },
+        {
+          "page": 8,
+          "characters": 8593,
+          "non_whitespace_characters": 7207,
+          "replacement_characters": 0,
+          "marked_control_characters": 40,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/008.md"
+        },
+        {
+          "page": 9,
+          "characters": 5274,
+          "non_whitespace_characters": 4484,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/da-silva-2014/pages/009.md"
+        }
+      ]
+    },
+    {
+      "id": "papers/chupawa-2022",
+      "title": "Combined Heat and Mass Transfer Associated with Kinetics Models for Analyzing Convective Stepwise Drying of Carrot Cubes",
+      "doi": "10.3390/foods11244045",
+      "source": "分析与文献/foods-11-04045-v2.pdf",
+      "source_bytes": 125968980,
+      "source_sha256": "e66167e5a5c7a2ee32fce3bd1aa9230636f8905749303a2377cae85ce178151e",
+      "pdf_pages": 19,
+      "extracted_pages": 19,
+      "mode": "default",
+      "fulltext": "readable/papers/chupawa-2022/fulltext.md",
+      "fulltext_sha256": "3d447b023ded929b81adbb36b4d7fec350e7f2b9179b41a2f7fa84ee9eeea3cb",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 4438,
+          "non_whitespace_characters": 3787,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/001.md"
+        },
+        {
+          "page": 2,
+          "characters": 4563,
+          "non_whitespace_characters": 3891,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/002.md"
+        },
+        {
+          "page": 3,
+          "characters": 3297,
+          "non_whitespace_characters": 2721,
+          "replacement_characters": 0,
+          "marked_control_characters": 10,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/003.md"
+        },
+        {
+          "page": 4,
+          "characters": 3109,
+          "non_whitespace_characters": 2558,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/004.md"
+        },
+        {
+          "page": 5,
+          "characters": 3053,
+          "non_whitespace_characters": 2473,
+          "replacement_characters": 0,
+          "marked_control_characters": 2,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/005.md"
+        },
+        {
+          "page": 6,
+          "characters": 3268,
+          "non_whitespace_characters": 2741,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/006.md"
+        },
+        {
+          "page": 7,
+          "characters": 1659,
+          "non_whitespace_characters": 1391,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/007.md"
+        },
+        {
+          "page": 8,
+          "characters": 3178,
+          "non_whitespace_characters": 2653,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/008.md"
+        },
+        {
+          "page": 9,
+          "characters": 1988,
+          "non_whitespace_characters": 1562,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/009.md"
+        },
+        {
+          "page": 10,
+          "characters": 3000,
+          "non_whitespace_characters": 2517,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/010.md"
+        },
+        {
+          "page": 11,
+          "characters": 2652,
+          "non_whitespace_characters": 2133,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/011.md"
+        },
+        {
+          "page": 12,
+          "characters": 1740,
+          "non_whitespace_characters": 1438,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/012.md"
+        },
+        {
+          "page": 13,
+          "characters": 2924,
+          "non_whitespace_characters": 2461,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/013.md"
+        },
+        {
+          "page": 14,
+          "characters": 3681,
+          "non_whitespace_characters": 3068,
+          "replacement_characters": 0,
+          "marked_control_characters": 2,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/014.md"
+        },
+        {
+          "page": 15,
+          "characters": 1318,
+          "non_whitespace_characters": 1098,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/015.md"
+        },
+        {
+          "page": 16,
+          "characters": 3008,
+          "non_whitespace_characters": 2496,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/016.md"
+        },
+        {
+          "page": 17,
+          "characters": 4332,
+          "non_whitespace_characters": 3685,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/017.md"
+        },
+        {
+          "page": 18,
+          "characters": 5516,
+          "non_whitespace_characters": 4700,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/018.md"
+        },
+        {
+          "page": 19,
+          "characters": 3879,
+          "non_whitespace_characters": 3301,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/chupawa-2022/pages/019.md"
+        }
+      ]
+    },
+    {
+      "id": "papers/adrover-2020",
+      "title": "A Non-Isothermal Moving-Boundary Model for Continuous and Intermittent Drying of Pears",
+      "doi": "10.3390/foods9111577",
+      "source": "分析与文献/foods-09-01577.pdf",
+      "source_bytes": 1153307,
+      "source_sha256": "bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc",
+      "pdf_pages": 22,
+      "extracted_pages": 22,
+      "mode": "default",
+      "fulltext": "readable/papers/adrover-2020/fulltext.md",
+      "fulltext_sha256": "80ab920c10f111c11df8f4db11da0318df708ba3974b62f520eb08796a86fe01",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 3711,
+          "non_whitespace_characters": 3209,
+          "replacement_characters": 0,
+          "marked_control_characters": 17,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/001.md"
+        },
+        {
+          "page": 2,
+          "characters": 4551,
+          "non_whitespace_characters": 3851,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/002.md"
+        },
+        {
+          "page": 3,
+          "characters": 1903,
+          "non_whitespace_characters": 1506,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/003.md"
+        },
+        {
+          "page": 4,
+          "characters": 2691,
+          "non_whitespace_characters": 2213,
+          "replacement_characters": 0,
+          "marked_control_characters": 4,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/004.md"
+        },
+        {
+          "page": 5,
+          "characters": 2806,
+          "non_whitespace_characters": 2263,
+          "replacement_characters": 0,
+          "marked_control_characters": 3,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/005.md"
+        },
+        {
+          "page": 6,
+          "characters": 2978,
+          "non_whitespace_characters": 2358,
+          "replacement_characters": 0,
+          "marked_control_characters": 12,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/006.md"
+        },
+        {
+          "page": 7,
+          "characters": 3372,
+          "non_whitespace_characters": 2778,
+          "replacement_characters": 0,
+          "marked_control_characters": 6,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/007.md"
+        },
+        {
+          "page": 8,
+          "characters": 3065,
+          "non_whitespace_characters": 2494,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/008.md"
+        },
+        {
+          "page": 9,
+          "characters": 2799,
+          "non_whitespace_characters": 2252,
+          "replacement_characters": 0,
+          "marked_control_characters": 8,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/009.md"
+        },
+        {
+          "page": 10,
+          "characters": 2328,
+          "non_whitespace_characters": 1800,
+          "replacement_characters": 0,
+          "marked_control_characters": 7,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/010.md"
+        },
+        {
+          "page": 11,
+          "characters": 2518,
+          "non_whitespace_characters": 2038,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/011.md"
+        },
+        {
+          "page": 12,
+          "characters": 2548,
+          "non_whitespace_characters": 2007,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/012.md"
+        },
+        {
+          "page": 13,
+          "characters": 2944,
+          "non_whitespace_characters": 2377,
+          "replacement_characters": 0,
+          "marked_control_characters": 9,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/013.md"
+        },
+        {
+          "page": 14,
+          "characters": 2746,
+          "non_whitespace_characters": 2170,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/014.md"
+        },
+        {
+          "page": 15,
+          "characters": 3431,
+          "non_whitespace_characters": 2803,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/015.md"
+        },
+        {
+          "page": 16,
+          "characters": 2342,
+          "non_whitespace_characters": 1905,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/016.md"
+        },
+        {
+          "page": 17,
+          "characters": 2149,
+          "non_whitespace_characters": 1806,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/017.md"
+        },
+        {
+          "page": 18,
+          "characters": 2363,
+          "non_whitespace_characters": 1891,
+          "replacement_characters": 0,
+          "marked_control_characters": 1,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/018.md"
+        },
+        {
+          "page": 19,
+          "characters": 1786,
+          "non_whitespace_characters": 1348,
+          "replacement_characters": 0,
+          "marked_control_characters": 8,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/019.md"
+        },
+        {
+          "page": 20,
+          "characters": 2310,
+          "non_whitespace_characters": 1822,
+          "replacement_characters": 0,
+          "marked_control_characters": 2,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/020.md"
+        },
+        {
+          "page": 21,
+          "characters": 4032,
+          "non_whitespace_characters": 3343,
+          "replacement_characters": 0,
+          "marked_control_characters": 2,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/021.md"
+        },
+        {
+          "page": 22,
+          "characters": 4549,
+          "non_whitespace_characters": 3869,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/adrover-2020/pages/022.md"
+        }
+      ]
+    },
+    {
+      "id": "papers/wu-2022",
+      "title": "基于动网格的白萝卜热风干燥热质传递研究",
+      "doi": "10.6041/j.issn.1000-1298.2022.S2.034",
+      "source": "分析与文献/基于动网格的白萝卜热风干燥热质传递研究.pdf",
+      "source_bytes": 1988165,
+      "source_sha256": "7008d5825be39367014ca79762e637e883807a96a362c9f4a6d8ab931a7a72ab",
+      "pdf_pages": 10,
+      "extracted_pages": 10,
+      "mode": "raw",
+      "fulltext": "readable/papers/wu-2022/fulltext.md",
+      "fulltext_sha256": "2ddf3e32b177df252408f392a2da961597eb9a86b85ee8acdd0c3977e3b01077",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 3147,
+          "non_whitespace_characters": 2705,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/001.md"
+        },
+        {
+          "page": 2,
+          "characters": 2549,
+          "non_whitespace_characters": 2245,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/002.md"
+        },
+        {
+          "page": 3,
+          "characters": 1870,
+          "non_whitespace_characters": 1520,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/003.md"
+        },
+        {
+          "page": 4,
+          "characters": 1624,
+          "non_whitespace_characters": 1331,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/004.md"
+        },
+        {
+          "page": 5,
+          "characters": 1990,
+          "non_whitespace_characters": 1544,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/005.md"
+        },
+        {
+          "page": 6,
+          "characters": 2013,
+          "non_whitespace_characters": 1563,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/006.md"
+        },
+        {
+          "page": 7,
+          "characters": 2108,
+          "non_whitespace_characters": 1668,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/007.md"
+        },
+        {
+          "page": 8,
+          "characters": 1518,
+          "non_whitespace_characters": 1340,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/008.md"
+        },
+        {
+          "page": 9,
+          "characters": 2257,
+          "non_whitespace_characters": 2001,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/009.md"
+        },
+        {
+          "page": 10,
+          "characters": 5681,
+          "non_whitespace_characters": 4807,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/papers/wu-2022/pages/010.md"
+        }
+      ]
+    },
+    {
+      "id": "problem",
+      "title": "2026年A题：药材的烘干问题",
+      "doi": null,
+      "source": "A题/A题.pdf",
+      "source_bytes": 553320,
+      "source_sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "pdf_pages": 4,
+      "extracted_pages": 4,
+      "mode": "default",
+      "fulltext": "readable/problem/fulltext.md",
+      "fulltext_sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "pages": [
+        {
+          "page": 1,
+          "characters": 752,
+          "non_whitespace_characters": 655,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/problem/pages/001.md"
+        },
+        {
+          "page": 2,
+          "characters": 713,
+          "non_whitespace_characters": 584,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/problem/pages/002.md"
+        },
+        {
+          "page": 3,
+          "characters": 922,
+          "non_whitespace_characters": 792,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/problem/pages/003.md"
+        },
+        {
+          "page": 4,
+          "characters": 518,
+          "non_whitespace_characters": 405,
+          "replacement_characters": 0,
+          "marked_control_characters": 0,
+          "low_text_flag": false,
+          "path": "readable/problem/pages/004.md"
+        }
+      ]
+    }
+  ]
+}

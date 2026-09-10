@@ -1,0 +1,68 @@
+{
+  "file": "/mnt/data/q1_delivery/output/result1.xlsx",
+  "checks": {
+    "all_passed": true,
+    "total_result_values": 75600,
+    "sheet_names_exact": true,
+    "ZIP_CRC_passed": true
+  },
+  "sheets": {
+    "温度": {
+      "time_count": 1800,
+      "radius_count": 21,
+      "result_count": 37800,
+      "t_first_last": [
+        1,
+        1800
+      ],
+      "r_first_last_cm": [
+        0.0,
+        2.0
+      ],
+      "first_center_surface": [
+        28.0,
+        28.0002
+      ],
+      "last_center_surface": [
+        33.5753,
+        36.7856
+      ],
+      "max_absolute_rounding_difference": 4.9997988305960916e-05,
+      "all_result_values_numeric_finite": true,
+      "all_result_number_formats": "0.0000",
+      "no_gaps_or_ellipses": true,
+      "paper_tables_match": true
+    },
+    "水分浓度": {
+      "time_count": 1800,
+      "radius_count": 21,
+      "result_count": 37800,
+      "t_first_last": [
+        1,
+        1800
+      ],
+      "r_first_last_cm": [
+        0.0,
+        2.0
+      ],
+      "first_center_surface": [
+        2.55,
+        2.5177
+      ],
+      "last_center_surface": [
+        2.55,
+        1.5102
+      ],
+      "max_absolute_rounding_difference": 4.999520582460448e-05,
+      "all_result_values_numeric_finite": true,
+      "all_result_number_formats": "0.0000",
+      "no_gaps_or_ellipses": true,
+      "paper_tables_match": true
+    }
+  },
+  "sha256": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+  "export": {
+    "engine": "artifact_tool",
+    "path": "/mnt/data/q1_delivery/output/result1.xlsx"
+  }
+}

@@ -1,0 +1,2578 @@
+# A Non-Isothermal Moving-Boundary Model for Continuous and Intermittent Drying of Pears
+
+此文件是本地原始 PDF 的自动全文提取，不是摘要或模型生成的论文内容。页码为 PDF 物理页序号（从1开始），可能与印刷页码不同。正文可检索；公式上下标、分式、表格列关系和图中信息仍须对照原始页面，不要据提取文本声称已完成逐式或图像核验。⟦U+xxxx⟧是原PDF未可靠解码的字符标记，不是数学变量，不能直接删去。
+
+原件：[PDF](../../../%E5%88%86%E6%9E%90%E4%B8%8E%E6%96%87%E7%8C%AE/foods-09-01577.pdf)
+
+DOI：[10.3390/foods9111577](https://doi.org/10.3390/foods9111577)
+
+原件 SHA-256：`bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc`
+
+共 22 页；正文提取模式：`default`。
+
+## PDF 第 1 页
+
+```text
+foods
+Article
+
+A Non-Isothermal Moving-Boundary Model for
+Continuous and Intermittent Drying of Pears
+Alessandra Adrover 1, * , Claudia Venditti 1
+1
+2
+
+*
+
+and Antonio Brasiello 1,2
+
+Dipartimento di Ingegneria Chimica, Materiali e Ambiente, Sapienza Università di Roma, via Eudossiana 18,
+00184 Roma, Italy; claudia.venditti@uniroma1.it (C.V.); antonio.brasiello@uniroma1.it (A.B.)
+INSTM Consorzio Interuniversitario Nazionale per la Scienza e Tecnologia dei Materiali, Via G. Giusti 9,
+50121 Firenze, Italy
+Correspondence: alessandra.adrover@uniroma1.it; Tel.: +39-06-44585608
+
+Received: 24 September 2020; Accepted: 27 October 2020; Published: 30 October 2020
+
+⟦U+0001⟧⟦U+0002⟧⟦U+0003⟧⟦U+0001⟧⟦U+0004⟧⟦U+0005⟧⟦U+0006⟧⟦U+0007⟧⟦U+0008⟧⟦U+0001⟧
+⟦U+0001⟧⟦U+0002⟧⟦U+0003⟧⟦U+0004⟧⟦U+0005⟧⟦U+0006⟧⟦U+0007⟧
+
+Abstract: A non-isothermal moving-boundary model for food dehydration, accounting for shrinkage
+and thermal effects, is proposed and applied to the analysis of intermittent dehydration in which
+air temperature, relative humidity, and velocity vary cyclically in time. The convection-diffusion
+heat transport equation, accounting for heat transfer, water evaporation, and shrinkage at the sample
+surface, is coupled to the convection-diffusion water transport equation. Volume shrinkage is
+not superimposed but predicted by the model through the introduction of a point-wise shrinkage
+velocity. Experimental dehydration curves, in continuous and intermittent conditions, are accurately
+predicted by the model with an effective water diffusivity Deff ( T ) that depends exclusively on the
+local temperature. The non-isothermal model is successfully applied to the large set of experimental
+data of continuous and intermittent drying of Rocha pears.
+Keywords: intermittent dehydration; shrinkage; moving-boundary model; non-isothermal drying
+
+1. Introduction
+Food process engineering represents one of the research fields that could benefit most from
+theoretical/computational support, that is the accurate modeling of all the complex heat and mass
+transport phenomena involved in many processes of interest to the food industry.
+Natural and convective drying, for food production and preservation, is undoubtedly one of the
+most investigated processes [1]. It involves heat and mass transport in a shrinking food sample [2].
+Shrinkage is a major phenomenon connected to drying [3] since it influences consumer quality
+perception, costs for transportation and storage. Mathematical modeling of drying is a useful tool for
+optimizing the process and designing the dryer.
+Most modeling approaches for the description of convective dehydration neglect thermal
+phenomena and assume that the temperature is uniform within the sample and equal to the
+temperature of the air in the climatic chamber. For a detailed review and classification of theoretical
+models for the convective drying of fruits see the recent review by Castro et al. [4].
+Thermal effects cannot be overlooked in the analysis and modeling of intermittent
+dehydration [5–11] in which the air properties change during the process. Intermittent dehydration
+has the technical advantage of increasing the dehydration capacity per unit energy consumption,
+improving product quality and reducing color degradation due to non-enzymatic browning. For this
+reason, intermittent drying is widely applied for dehydration of heat-sensitive bioproducts (see [8]
+and references therein).
+A very interesting paper by Silva et al. [11] recently analyzed an intermittent drying process of
+whole Rocha pears in which air temperature, relative humidity, and velocity vary cyclically in a climatic
+Foods 2020, 9, 1577; doi:10.3390/foods9111577
+
+www.mdpi.com/journal/foods
+```
+
+## PDF 第 2 页
+
+```text
+Foods 2020, 9, 1577
+
+2 of 22
+
+chamber specifically designed to reproduce the traditional sun-drying of the Portuguese Sao Bartolomeu
+pears. Pears are characterized by a high initial moisture content and exhibit a large ideal shrinkage [12],
+meaning that volume reduction is equal to the volume of water removed during drying.
+This article stems from the idea of verifying the predictive capabilities of the moving-boundary
+dehydration model, recently proposed by Adrover et al. [13,14], by analyzing the large set of
+experimental data of intermittent drying of Rocha pears reported by Silva et al. [11].
+This isothermal moving-boundary model has been already successfully applied to describe
+the continuous dehydration kinetics and shrinkage of different food materials and sample shapes,
+e.g., eggplant cylindrical [13] and discoidal samples [15], chayote slices [16], potatoes sticks [14] and
+square slices [13], ellipsoidal cocoa beans [17].
+The aim of this work is to improve the moving-boundary model to account for thermal effects.
+To this end, a convection-diffusion heat transport equation, accounting for sample shrinkage, heat
+transfer and water evaporation at the sample surface, is added to the convection-diffusion water
+transport equation. Like in the isothermal moving-boundary model, volume shrinkage is not
+superimposed but predicted by the model via the introduction of the pointwise shrinkage velocity that
+depends on the local volumetric water flux. The predictive capabilities of the model have been checked
+onto the experimental intermittent deydration curves of Rocha pears, performed in a programmable
+climatic chamber, and simulating the cyclic repetition of the three different stages characterizing the
+traditional solar drying. Numerical results clearly show that, if the spatio-temporal evolution of the
+temperature field is properly accounted for, the experimental dehydration curves, in continuous and
+intermittent conditions, can be accurately predicted by the moving-boundary model with an effective
+water diffusivity Deff ( T ) that depends exclusively on the local temperature.
+The article is organized as follows. Section 2 reviews the morphological and geometrical
+parameters of spherical pears subjected to dehydration and briefly describe the operating conditions
+for continuous and intermittent drying, as reported by [11]. Section 3 reviews the basic equations
+and boundary conditions of the isothermal moving-boundary model and presents its corresponding
+non-isothermal formulation. Section 4 focuses on continuous dehydration experiments and shows
+that the isothermal model does not provide satisfactory results. This is because the temperature
+of the whole pear T (r, t) cannot be approximated with the air temperature T∞ , even in the simpler
+continuous dehydration process. However, the isothermal approach allows estimating the effective
+water diffusivity Deff ( T ) from the asymptotic exponential behaviour of the two continuous dehydration
+curves at T∞ = 40 ◦ C and 50 ◦ C, as discussed in Section 4.2 and in Appendix B. The water
+diffusivity Deff ( T ) is the only unknown parameter that enters the non-isothermal model. All the
+other parameters have been estimated from independent measurements (e.g., desorption isotherms)
+or from reliable correlations (e.g., heat and mass transfer coefficients h T and hm ), as discussed in
+Appendix A. The non-isothermal model is successfully applied, in a fully predictive way, to describe
+the continuous dehydration experiments in Section 4.3, and the intermittent dehydration tests in
+Section 5. The influence of air velocity on the dehydration time and the effectiveness of the pause
+stages on the reduction of moisture internal gradients are also addressed in Section 5.
+2. Continuous and Intermittent Drying of Rocha Pears
+We analyze experimental data of continuous and intermittent drying of pears of Rocha variety
+reported in [11] and summarized in Table 1.
+Continuous and intermittent drying experiments are performed in a programmable climatic
+chamber simulating the cyclic repetition of the three different stages (see Figure 1) characterizing the
+traditional solar drying, namely
+1.
+2.
+
+max = 1.28 or 2.66 m/s,
+A first stage (10 h) of convective drying (C) with air velocity U∞
+max
+◦
+◦
+high temperature T∞ = 40 C or 50 C and low Relative Humidity RH = 15%.
+A second pause stage (P1 , 7 h), simulating the barreling stage, characterized by a high temperature
+T∞ = 40 ◦ C, 50 ◦ C, high Relative Humidity RH = 80% and very low air velocity U∞ < 0.2 m/s.
+```
+
+## PDF 第 3 页
+
+```text
+Foods 2020, 9, 1577
+
+3.
+
+3 of 22
+
+A third pause stage (P2 , 7 h), simulating the night period, characterized by a low temperature
+T∞ = 17 ◦ C, high Relative Humidity RH = 80% and very low air velocity U∞ < 0.2 m/s.
+Table 1. Initial total moisture content X0 [kg water/kg dry solid] and sample dimension d0 [cm] for
+different continuous (C) and intermittent (I) drying experiments. * Dehydration curves shown in
+Figure 2. ** Dehydration curve shown in Figure 12A.
+Experiment
+
+Type
+
+Cycles
+
+T∞
+[◦ C]
+
+U∞
+[m/s]
+
+X0
+
+d0
+[cm]
+
+C-40 ◦ C *
+I-40 ◦ C-2 Cycles *
+I-40 ◦ C-5 Cycles *
+C-50 ◦ C *
+I-50 ◦ C-2 Cycles *
+I-50 ◦ C-3 Cycles I *
+I-50 ◦ C-3 Cycles II **
+
+C
+I
+I
+C
+I
+I
+I
+
+2
+5
+2
+3
+3
+
+40
+40
+40
+50
+50
+50
+50
+
+1.28
+1.28
+1.28
+1.28
+1.28
+1.28
+2.66
+
+5.64
+6.48
+5.37
+5.55
+6.21
+6.25
+7.24
+
+5.30
+5.36
+5.30
+5.24
+5.32
+5.69
+5.43
+
+T∞ [oC], RH∞%, U∞x100 [m/s]
+
+For details regarding the experimental setup see the original paper by Silva et al. [11].
+140
+120 U∞ [0.1m/s-U∞max]
+100
+RH∞% [15-80]
+
+80
+60
+
+T∞ [17oC-T∞max]
+
+40
+20
+0
+
+P1 (7 h)
+
+C (10 h)
+0
+
+5
+
+10
+
+15
+
+P2 (7 h)
+20
+
+25
+
+h [h]
+Figure 1. Temporal evolution of air temperature T∞ , Relative Humidity RH∞ and velocity U∞
+during the three distinct stages of a single cycle for intermittent dehydration, namely a convective
+high-temperature drying period (C), a high-temperature humid pause (P1 ) and a low-temperature
+max = 1.28 or 2.66 m/s. T max = 40 ◦ C or 50 ◦ C.
+humid pause (P2 ). U∞
+∞
+
+The collection of experimental data for the temporal evolution of the rescaled total moisture
+content X (t)/X0 for continuous and intermittent drying of spherical pears at T = 40 ◦ C, 50 ◦ C and
+U∞ = 1.28 m/s are reported in Figure 2 where vertical lines highlight the different stages of the first
+two cycles for intermittent drying experiments.
+Details regarding the initial total moisture content X0 and the initial sample diameter d0 for each
+experiment are reported in Table 1.
+```
+
+## PDF 第 4 页
+
+```text
+Foods 2020, 9, 1577
+
+4 of 22
+
+1
+
+C-40oC
+o
+I-40oC-2 Cycles
+I-40 C-5 Cycles
+C-50oC
+I-50oC-2 Cycles
+I-50oC-3
+Cycles
+C-40ooC best fit
+
+X(t)/X0
+
+0.8
+0.6
+
+C-50 C best fit
+
+0.4
+0.2
+
+C P1P2
+
+0
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+140
+
+t [h]
+Figure 2. Collection of experimental data for continuous and intermittent drying of spherical pears at
+T∞ = 40 ◦ C, 50 ◦ C, U∞ = 1.28 m/s. Vertical lines highlight the different stages of the first two cycles
+for intermittent drying experiments. Continuous thick (red and blue) lines represent the best-fit curves,
+Equation (22), for the two continuous drying experiments C-40 ◦ C and C-50 ◦ C.
+
+3. Isothermal and Non-Isothermal Moving-Boundary Models
+This section preliminary reviews the basic idea and the resulting equations of the movingboundary model for food isothermal dehydration, developed in [13,14]. It subsequently extends
+the moving-boundary model to the non-isothermal case in which the sample temperature cannot be
+assumed constant (in time and/or space) and equal to the air temperature T∞ of the climatic chamber.
+3.1. Isothermal Moving-Boundary Model
+During the dehydration process, the sample volume V (t) and surface S(t) evolve in time due to
+sample shrinkage. The sample temperature is assumed constant in space and time and equal to the air
+temperature T∞ .
+The transport equation describing the space-time evolution of the pointwise water concentration
+cw (x, t) [g water/m3 product] inside the sample volume V (t) is an advection-diffusion equation
+accounting for the local shrinkage through the pointwise shrinkage velocity vs (x)
+⟦U+0010⟧
+⟦U+0011⟧
+⟦U+0010⟧
+⟦U+0011⟧
+∂cw (x, t)
+− ∇ · Jd + vs (x) cw = = ∇ · Deff ∇cw − vs (x) cw ,
+∂t
+
+x ∈ V (t)
+
+(1)
+
+where Jd = − Deff ∇cw is the diffusive mass flux, controlled by the effective water diffusivity Deff ,
+and (vs cw ) is a convective term arising from local shrinkage.
+By enforcing the analogy between food dehydration and swelling of rubbery polymers
+(both processes are characterized by moving boundaries whose movement is controlled by water
+release or absorption [18–21].), the pointwise shrinkage velocity vs (x) is assumed proportional (and
+opposite in sign) to the diffusive volumetric flux Jd (x)/ρw [m3 water/(s m2 )]
+vs (x) = −α(cw ) Jd (x)/ρw = α(cw ) Deff ∇cw /ρw ,
+
+(2)
+
+where α(cw ) is a shrinkage proportionality factor, depending on the pointwise water concentration.
+The shrinkage factor α(cw ) is the fingerprint of the specific food material under investigation.
+The simplest case is that of a constant shrinkage factor, i.e., α(cw ) = α0 . α0 = 0 represents the case of a
+rigid solid (no shrinkage). α0 = 1 represents the case of ideal shrinkage, in which volume reduction
+```
+
+## PDF 第 5 页
+
+```text
+Foods 2020, 9, 1577
+
+5 of 22
+
+corresponds exactly to the volume of water flowing outside the sample. Values of α0 less or greater
+than unity imply volume reduction less or greater than the corresponding water volume flow [14,15].
+The effective water diffusivity Deff can be assumed constant in space or, in a more refined
+approach, it can be expressed as an increasing exponential function of the water volume fraction
+φ [18,19]
+⟦U+0012⟧
+⟦U+0013⟧
+φ0 − φ
+Deff (φ, T ) = Dφ0 ( T ) exp − β
+, β ≥ 0 , φ = cw /ρw
+(3)
+φ0 − φ∞
+In Equation (3) φ0 is the initial water volume fraction, Dφ0 and D∞ = Dφ0 exp(− β) are the effective
+diffusivities at the beginning and at the end of the drying process, respectively.
+The shrinkage velocity vs (xb ), at every point xb on the sample boundary S(t), controls the
+temporal evolution of the sample boundary S(t) according to the following equation
+α(cw )
+dxb
+= vs x =
+Deff ∇cw |xb ,
+b
+dt
+ρw
+
+xb ∈ S(t) .
+
+(4)
+
+The two transport equations Equations (1) and (4) are linked together and must be solved
+simultaneously by further enforcing the following mixed boundary condition, also referred to as
+Robin or “evaporative” or third order boundary condition [10]
+⟦U+0001⟧
+pv ( T∞ )
+− Deff ∇cw · n x = hm Mw C |xb − C∞ = = hm Mw
+( RHb − RH∞ )
+b
+R g T∞
+
+(5)
+
+where n is the outward-pointing normal unit vector, Mw = 18 [g/mol] the water molecular weight,
+hm [m/s] the mass transfer coefficient, pv ( T∞ ) the saturated vapor pressure at the air temperature
+T∞ . C [mol/m3 ] is the water (vapor) concentration in air and can be further expressed in terms
+of the Relative Humidity RH, at the air/sample interface RH x and in the climatic chamber RH∞ ,
+b
+by adopting the ideal gas law
+C=
+
+p
+pv ( T ) p
+pv ( T )
+=
+=
+RH
+Rg T
+R g T pv ( T )
+Rg T
+
+(6)
+
+The Relative Humidity RHb = RH x at the air/sample interface, depends on the local water
+b
+concentration cw (xb , t) and on the temperature T∞ and must be evaluated from the Desorption Isotherm
+(DI) at T = T∞
+RHb = RH x = DI (cw (xb , t), T∞ )
+(7)
+b
+
+The mass transfer coefficient hm can be evaluated from well-known correlation functions for the
+Sherwood number Sh, specific for the sample geometry under investigation (sphere, cylinder, ellipsoid,
+slab) with all the physical parameters of the humid air evaluated at T∞ (see Appendix A).
+3.2. Non-Isothermal Moving-Boundary Model
+In the non-isothermal approach a partial differential equation describing the spatio-temporal
+evolution of the temperature T (x, t) in the shrinking sample is coupled to the mass transport equations
+Equations (1), (4) and (5). Equations (1), (4) and (5) need to be slightly modified to take into account
+that the internal temperature T (x, t) and the boundary temperature Tb = T (xb , t) are different from
+the air temperature T∞ in the climatic chamber.
+```
+
+## PDF 第 6 页
+
+```text
+Foods 2020, 9, 1577
+
+6 of 22
+
+The non-isothermal approach requires the simultaneous solution of the two advection-diffusion
+partial differential equations for cw (x, t) and T (x, t)
+∂cw (x, t)
+∂t
+⟦U+0001⟧
+p
+p
+∂ ρ C p T (x, t)
+∂t
+vs (x)
+
+⟦U+0010⟧
+⟦U+0011⟧
+= ∇ · Deff ( T ) ∇cw − vs (x) cw ,
+
+(8)
+
+⟦U+0010⟧
+⟦U+0011⟧
+p
+= ∇ · k p ∇ T − vs (x) ρ p C p T ,
+
+(9)
+
+= α(cw ) Deff ( T )∇cw /ρw
+
+(10)
+
+coupled with the equation for the temporal evolution of sample boundary S(t)
+α(cw )
+dxb
+= vs x =
+Deff ( Tb ) ∇cw |xb ,
+b
+dt
+ρw
+
+xb ∈ S(t) .
+
+(11)
+
+and with the boundary conditions
+⟦U+0012⟧
+
+− Deff ( Tb ) ∇cw · n x = hm ( Tav ) Mw
+b
+
+pv ( T∞ )
+pv ( Tb )
+RHb −
+RH∞
+R g Tb
+R g T∞
+
+⟦U+0001⟧
+− k p ∇ T · n x = h T ( Tav ) Tb − T∞ − λv ( Tb ) Deff ( Tb )∇cw · n x
+b
+
+⟦U+0013⟧
+(12)
+(13)
+
+b
+
+The boundary condition Equation (13) takes into account both the heat transfer resistance and the
+heat subtracted for water evaporation at the air/sample interface [22–26], λv being the heat of water
+evaporation, evaluated at Tb .
+In this non-isothermal case, the Relative Humidity RHb at the air/sample interface depends on
+the local water concentration cw (xb , t) and on the boundary temperature Tb 6= T∞ .
+The heat and mass transfer coefficients h T and hm can be evaluated from well-known correlation
+functions for the Sherwood Sh and Nusselt Nu numbers, specific for the sample geometry under
+investigation, with all the physical parameters of the humid air evaluated at the average film
+temperature Tav = ( Tb + T∞ )/2 (see Appendix A).
+All the physical parameters of the food product, namely the product density ρ p , the specific
+p
+heat capacity C p and the thermal conductivity k p , are functions of the local water concentration cw
+(see Appendix A).
+In the present formulation it has been assumed that the effective water diffusivity is solely a
+function of the temperature and independent of the local water concentration, i.e., β = 0 in Equation (3).
+The heat transport equation Equation (9) is coupled to the mass transport equation Equation (8)
+not only through the boundary condition Equation (13) but also through the shrinkage-convective
+p
+term (vs (x) ρ p C p T ) that contributes to flatten the temperature profile inside the sample.
+p
+p
+If the thermal diffusivity DT = k p /(ρ p C p ) of the food material is significantly larger than water
+diffusivity Deff , we can assume that the temperature is uniform inside the sample and equal to the
+boundary temperature, i.e., T (x, t) = Tb (t). Consequently, the partial differential equation Equation (9)
+for T (x, t) can be replaced with the ordinary differential equation describing the temporal evolution of
+the boundary temperature Tb (t)
+d⟦U+0010⟧
+T
+dt b
+
+Z
+V (t)
+
+⟦U+0011⟧ Z
+p
+(ρ p C p ) dx =
+
+S(t)
+
+⟦U+0001⟧
+⟦U+0001⟧
+− h T ( Tav ) Tb − T∞ + λv ( Tb ) Deff ( Tb )∇cw · n x dS
+b
+
+(14)
+
+while the water transport equations Equations (8) and (10) remain unchanged except for the fact that
+Deff ( T ) must be replaced with Deff ( Tb ).
+```
+
+## PDF 第 7 页
+
+```text
+Foods 2020, 9, 1577
+
+7 of 22
+
+3.3. Numerical Issues
+PDE equations and boundary conditions describing the one-dimensional shrinkage dynamics
+and sample dehydration have been numerically solved using finite elements method (FEM) in Comsol
+Multiphysics 3.5. The convection–diffusion package coupled with ALE (Arbitrary Lagrangian Eulerian)
+moving mesh has been adopted with Free Displacement induced by boundary velocity conditions.
+Lagrangian quadratic elements have been chosen. The linear solver adopted is UMFPACK, with relative
+tolerance 10−4 and absolute tolerance 10−7 . The Time Stepping Method adopted is BDF with a Strict
+policy for time steps taken by the solver in order to have a good resolution (in time) of step changes in
+boundary conditions (air temperature, relative humidity and velocity). The number of finite elements
+set to 104 with a non-uniform mesh. Smaller elements have been located close to the moving boundary
+r = R(t) in order to accurately compute concentration and temperature gradients, controlling the
+velocity of the moving front.
+4. Modeling of Continuous Drying Experiments
+4.1. The Isothermal Approach
+We preliminary adopt the isothermal approach to model the two continuous drying experiments
+on spherical pears at T = 40 ◦ C, 50 ◦ C (experimental data shown in Figure 2).
+It is assumed that the spherical shape of the sample is not altered by the dehydration process.
+The sample geometry is uniquely characterized by its radius R(t) evolving in time from its initial value
+R0 towards its asymptotic value R∞ .
+According to experimental shrinkage data reported by Silva et al. [11] (subsequently shown in
+Figure 7B), it is assumed ideal shrinkage, i.e., that volume reduction equals, at each time instant, the
+volume of water released by the sample
+⟦U+0010⟧
+
+1−
+
+⟦U+0010⟧
+X (t) ⟦U+0011⟧
+V (t) ⟦U+0011⟧
+= φ0 1 −
+V0
+X0
+
+(15)
+
+where φ0 is the initial uniform water volume fraction. This macroscopic observation finds its
+microscopic counterpart in the assumption of a constant and unitary shrinkage coefficient α(cw ) =
+α0 = 1. It must be pointed out that the assumption α(cw ) = α0 does not imply that the shrinkage
+velocity vs (x) is constant, nor in time or space, but rather that, according to Equation (2), the shrinkage
+velocity is directly proportional to the local concentration gradient. Therefore, the shrinkage velocity
+asymptotically tends to zero, at each point in the sample, when the water concentration gradient goes
+to zero everywhere in the system, i.e., equilibrium conditions are reached.
+The water transport equation and boundary conditions, Equations (1), (2) and (4), rewritten in
+spherical coordinates and in terms of the water volume fraction φ(r, t) = cw (r, t)/ρw , read as
+⟦U+0010⟧
+⟦U+0011⟧
+∂φ(r, t)
+1 ∂
+∂φ
+= 2
+r2 Deff
+− v s (r ) φ
+∂t
+∂r
+r ∂r
+vs (r ) = Deff
+
+∂φ
+,
+∂r
+
+!
+, r ∈ (0, R(t))
+
+dR(t)
+∂φ
+= vs ( R(t)) = Deff
+dt
+∂r R(t)
+
+∂φ
+∂φ
+Mw pv ( T∞ )
+= 0 , − Deff
+= hm
+( RHb − RH∞ )
+∂r r=0
+∂r R(t)
+ρw R g T∞
+
+(16)
+
+(17)
+(18)
+
+The Relative Humidity at the air/sample interface RHb = RH R(t) = RH (φb , T∞ ) is evaluated from
+desorption isotherms for Rocha pears reported by [27] and best fitted with the Henderson model, as
+discussed in detail in Appendix A. The correlation function adopted for the estimate of the mass
+transfer coefficient hm , evaluated at the air temperature T∞ , is also reported in Appendix A.
+```
+
+## PDF 第 8 页
+
+```text
+Foods 2020, 9, 1577
+
+8 of 22
+
+Figure 3 shows the comparison between experimental data for X (t)/X0 vs. time at T∞ = 40 ◦ C
+and isothermal model predictions with Deff = 5 × 10−11 , 1 × 10−10 , 2 × 10−10 m2 /s. It can be readily
+observed that an isothermal model with a constant water diffusivity Deff is not able to capture the
+salient features of the experimental dehydration curve. The lower value of Deff can well approximate
+only the initial behaviour of the dehydration curve, while higher values of Deff better describe the
+asymptotic behaviour. Even worse results would be obtained by using a diffusivity dependent on the
+volumetric water fraction Equation (3).
+1
+
+C-40oC
+
+X(t)/X0
+
+0.8
+0.6
+0.4
+0.2
+0
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+t [h]
+Figure 3. Continuous dehydration data X (t)/X0 vs. time at T∞ = 40 ◦ C. Comparison between
+experimental data (points) and isothermal model predictions (continuous lines) with Deff =
+5 × 10−11 , 1 × 10−10 , 2 × 10−10 m2 /s. Arrow indicates increasing values of Deff .
+
+In order to understand this result, some observations must be done
+1.
+2.
+3.
+
+4.
+
+By direct comparison between experimental continuous dehydration curves at T∞ = 40 ◦ C and
+T∞ = 50 ◦ C (see Figure 2) it can be observed that Deff is highly sensitive to air temperature T∞
+The initial temperature of the sample in all the experiments is T (r, 0) ≃ 15 ◦ C, well below the
+operating temperature T∞ = 40 ◦ C, 50 ◦ C
+The initial moisture content X0 of Rocha pears is high, order of 5–6 kg water/kg dry solid,
+that implies an initial water weight fraction xw (0) ≃ 0.84. To make a rough calculation, at the
+p
+beginning of the drying process, the product density ρ p , the specific heat capacity C p and the
+thermal conductivity k p can be reasonably approximated with that of water.
+A sphere of non evaporating water with diameter d0 ≃ 5.3 cm requires about five hours to rise its
+temperature from 15 ◦ C to 40 ◦ C for a heat transfer coefficient h T ≃ 20 W/(m2 K).
+Given the high dehydration rates, especially at the beginning of the drying process, most part
+of the heat flux supplied by forced convection h T ( T∞ − Tb ) is used for water evaporation at the
+air/sample interface. Therefore, the time required to rise the sample temperature from 15 ◦ C to
+40 ◦ C could reasonably increase from 5 to more than 30 h.
+
+For all these reasons, it has to be expected that the water diffusivity Deff , at least in the first
+30–40 h of the drying process, is changing in time due to its sensitivity to the time-dependent
+sample temperature. Deff progressively increases from lower values, corresponding to lower sample
+temperatures, towards the asymptotic value Deff ( T∞ ) that settles when the sample temperature reaches
+the air temperature T∞ . The adoption of a non-isothermal model is strictly necessary. The necessity to
+account for a temperature dependent diffusion coefficient, even in a continuous drying experiment,
+has been already pointed put by Srikiatden and Roberts [28,29] in dealing with convective hot air and
+isothermal drying of potatoes and carrots.
+```
+
+## PDF 第 9 页
+
+```text
+Foods 2020, 9, 1577
+
+9 of 22
+
+4.2. The Estimate of Deff ( T ) from the Asymptotic Behavior of Dehydration-Rate Curves
+Despite the fact that an isothermal model cannot be applied for an accurate description of the
+whole continuous dehydration curve, a simplified isothermal model can be used to estimate the
+effective diffusivity Deff ( T ) from the asymptotic behaviour of the continuous dehydration curves.
+On longer time scales, corresponding to lower values of the total moisture content X (t)/X0 ≤ 0.2,
+we can reasonably assume that (1) the sample temperature is uniform and equal to T∞ and (2)
+the sample volume V (t) has reached its asymptotic value V∞ after almost complete shrinkage
+(see Figure 7B)
+⟦U+0010⟧
+V∞
+X∞ ⟦U+0011⟧
+≃ 0.1.
+(19)
+= 1 − φ0 1 −
+V0
+X0
+On longer time scales, the convective-shrinkage contribution to water transport becomes negligible
+and the dimensionless dehydration rate J (t)
+J (t) = −
+
+d ⟦U+0010⟧ X − X∞ ⟦U+0011⟧
+dXr
+=−
+dt
+dt X0 − X∞
+
+(20)
+
+becomes a linear function of the moisture ratio Xr (t)
+J (t) = Deff ( T∞ )
+
+π 2 ⟦U+0010⟧ V∞ ⟦U+0011⟧−2/3
+Xr ( t )
+R20 V0
+
+(21)
+
+The derivation of Equation (21) is reported in Appendix B.
+Figure 4A shows the dehydration-rate curves J vs. Xr for the two continuous dehydration
+experiments at T∞ = 40 ◦ C and 50 ◦ C. These curves are obtained from the best-fit of the corresponding
+dehydration curves X (t)/X0 with the following function
+X (t)/X0 = a0 + a1 e−b1 t + a2 e−b2 t + (1 − a0 − a1 − a2 )e−b3 t
+
+(22)
+
+that satisfies the two constrains X (0)/X0 = 1, X∞ /X0 = a0 . The best-fit curves are shown in Figure 2
+(red and blue thick lines). The dehydration rate J (t) can be subsequently evaluated as
+J (t) =
+
+⟦U+0011⟧
+1 ⟦U+0010⟧
+a1 b1 e−b1 t + a2 b2 e−b2 t + (1 − a0 − a1 − a2 ) b3 e−b3 t ,
+1 − a0
+
+(23)
+
+( X (t)/X )− a
+
+0
+0
+and plotted as a function of Xr =
+.
+1− a0
+The experimental dehydration-rate curves, shown in Figure 4A, exhibit the expected asymptotic
+linear behaviour, Equation (21), valid for large t or equivalently for small Xr . From these
+dehydration-rate curves and Equation (21) the following values of water diffusivity Deff (40 ◦ C) =
+1.703 × 10−10 m2 /s and Deff (50 ◦ C) = 2.497 × 10−10 m2 /s have been estimated and then plotted, in
+Figure 4B, with the corresponding best-fit Arrhenius function
+
+Deff ( T ) = D0 e
+
+− REg T
+
+, D0 = 4.00012 × 10−5 m2 /s , E/R g = −3872.63K.
+
+(24)
+
+The water diffusivity Deff ( T ), thus estimated in the whole range of temperatures [10 ◦ C–50 ◦ C],
+will be used to verify the predictive capabilities of the non-isothermal model in which there are no
+other fitting parameters. All the other parameters have been preliminarily estimated from well-known
+correlations or from independent experimental measurements, like in the case of the desorption
+isotherms (see Appendix A).
+```
+
+## PDF 第 10 页
+
+```text
+Foods 2020, 9, 1577
+
+10 of 22
+
+0.1
+
+3
+
+o
+
+C-40oC
+C-50 C
+2
+
+10
+
+0.06
+
+Deff x 10
+
+J [h-1]
+
+2
+
+[m /s]
+
+0.08
+
+0.04
+0.02
+
+A
+
+0
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+B
+
+0
+1
+
+10
+
+20
+
+30
+
+40
+
+50
+
+60
+
+T [oC]
+
+Xr=(X-X∞)/(X0-X∞)
+
+Figure 4. (A) Dehydration-rate curves J vs. Xr for continuous dehydration tests at T∞ = 40 ◦ C, 50 ◦ C,
+U∞ = 1.28 m/s. Continuous lines represent the best-fit curves Equation (23). Black dashed lines
+highlight the asymptotic (large t, small Xr ) linear behaviour, Equation (21). (B) Estimated effective
+water diffusivity Deff at T = 40 ◦ C, 50 ◦ C (filled points). The dashed line represents the Arrhenius
+behaviour, Equation (24).
+
+4.3. The Non-Isothermal Approach
+The non-isothermal model, Equations (8)–(13), rewritten for a spherical sample in terms of the
+water volume fraction φ(r, t), reads as
+⟦U+0010⟧
+⟦U+0011⟧
+∂φ(r, t)
+1 ∂
+∂φ
+= 2
+r2 Deff ( T )
+− v s (r ) φ
+∂t
+∂r
+r ∂r
+
+!
+, r ∈ (0, R(t))
+
+!
+⟦U+0001⟧
+p
+⟦U+0010⟧ ∂φ
+⟦U+0011⟧
+∂ ρ p C p T (r, t)
+1 ∂
+2
+p
+p p
+= 2
+r k
+− v s (r ) ρ C p T
+,
+∂t
+∂r
+r ∂r
+vs (r ) = Deff ( T )
+
+∂φ
+,
+∂r
+
+r ∈ (0, R(t))
+
+dR(t)
+∂φ
+= vs ( R(t)) = Deff ( Tb )
+dt
+∂r R(t)
+
+(25)
+
+(26)
+
+(27)
+
+∂φ
+=0,
+∂r r=0
+⟦U+0012⟧
+⟦U+0013⟧
+∂φ
+Mw pv ( Tb )
+pv ( T∞ )
+= hm ( Tav )
+RHb −
+− Deff ( Tb )
+RH∞
+∂r R(t)
+ρw
+R g Tb
+R g T∞
+
+(28)
+
+∂T
+=0,
+∂r r=0
+∂T
+∂φ
+− kp
+= h T ( Tav )( Tb − T∞ ) − λv ( Tb )ρw Deff ( Tb )
+∂r R(t)
+∂r R(t)
+
+(29)
+
+where the Relative Humidity at the air/sample interface RHb = RH R(t) = RH (φb , Tb ) is evaluated
+from desorption isotherms for Rocha pears reported by [27] and best fitted with the Henderson model,
+see Appendix A. Equations (25)–(29) must be numerically integrated starting from the uniform initial
+conditions φ(r, 0) = φ0 ≃ 0.9 and T (r, 0) = T0 = 15 ◦ C. The value of φ0 can slightly change for
+different experiments because of changes in the initial total moisture content X0 (see Table 1).
+Figure 5 shows the excellent agreement between experimental data, at both temperatures T∞ = 40 ◦ C,
+50 ◦ C, and model predictions (continuous red and blue curves, coefficient of determination R2 > 0.99)
+with no adjustable parameters. Indeed, there is no need to introduce a concentration-dependent diffusion
+coefficient, Equation (3), that would require the estimate of the β parameter. For this reason, we set β = 0
+also for all the subsequent simulations of intermittent dehydration.
+```
+
+## PDF 第 11 页
+
+```text
+Foods 2020, 9, 1577
+
+11 of 22
+
+1
+
+C-40ooC
+C-50 C
+
+X(t)/X0
+
+0.8
+0.6
+0.4
+0.2
+0
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+t [h]
+Figure 5. Comparison between experimental continuous dehydration curves X (t)/X0 vs. t at T∞ =
+40 ◦ C, 50 ◦ C and U∞ = 1.28 m/s (filled points) and model predictions (continuous and dashed lines)
+with D ( T ) given by Equation (24). Continuous red and blue curves represent the non-isothermal
+model Equations (25)–(29). Black dashed lines represent the non-isothermal simplified model with
+T (r, t) = Tb (t), Equation (31).
+
+The reliability of the non-isothermal model allows us to verify some hypotheses made in
+paragraph Section 4.1 when discussing the intrinsic limitations of the isothermal approach.
+Figure 6A shows the temporal evolution of the temperature at the center T0 (t) = T (0, t) and at
+the sample boundary Tb (t) = T ( R(t), t) for the continuous dehydration at T∞ = 50 ◦ C. Due to the
+p
+p
+high value of the product thermal diffusivity DT = k p /(ρ p C p ) ≃ 9 × 10−8 m2 /s
+ Deff , the two
+temperatures T0 and Tb almost coincide for t > 3 h. This is the only numerical result that differs
+from experimental observations by Silva et al. [11]. These authors observed an appreciable difference
+between T0 and Tb in the convective stage, and this is quite difficult to explain if one considers the high
+value of the thermal diffusivity of the pears.
+As expected, both temperatures T0 (t) and Tb (t) require more than 40 h to get close to the
+asymptotic value T∞ . This is due to the large amount of energy required for water evaporation
+at the air/sample interface. This effect is particularly evident in the very first hours of the dehydration
+process, in which both temperatures T0 and Tb , highlighted in the inset of Figure 6, exhibit a slight
+decrease below the initial temperature.
+Correspondingly, also the average effective water diffusivity < Deff >, shown in Figure 6B,
+
+< Deff (t) >=
+
+1
+(4/3)πR(t)3
+
+Z R(t)
+0
+
+Deff ( T (r, t)) 4πr2 dr
+
+(30)
+
+attains a very low value, order of 5 × 10−11 m2 /s at the beginning of the drying process and requires
+more than 40 h to get close to the five times larger asymptotic value ≃ 2.5 × 10−10 m2 /s.
+Figure 6B also shows the temporal evolution of the heat and mass transfer coefficients h T and
+hm , evaluated according to well-known correlations Equations (A10)–(A13) reported in Appendix A.
+Both h T and hm exhibit a d−1/2 dependence on the sample diameter d(t) and therefore are increasing
+functions of time, mainly because of sample shrinkage.
+```
+
+## PDF 第 12 页
+
+```text
+Foods 2020, 9, 1577
+
+12 of 22
+
+30
+Tb
+T0
+
+o
+
+T0 , Tb [ C]
+
+40
+30
+
+35
+
+25
+
+30
+20
+
+25
+15
+
+20
+10
+0
+
+15
+
+1
+
+2
+
+3
+
+A
+
+10
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+2.5
+
+B
+2.1
+25
+1.7
+1.3
+20
+0.9
+
+hT
+hm
+<Deff>
+
+15
+0
+
+20
+
+40
+
+t [h]
+
+60
+
+80
+
+100
+
+<Deff>x1010 [m2/s]
+
+45
+
+hT [W/(m2K)], hmx103 [m/s]
+
+50
+
+0.5
+120
+
+t [h]
+
+Figure 6. Continuous dehydration at T∞ = 50 ◦ C and U∞ = 1.28 m/s. (A) Model predictions for
+the temporal evolution of the temperature at the center T0 (t) = T (0, t) and at the sample boundary
+Tb (t) = T ( R(t), t). (B) Model predictions for the temporal evolution of the heat and mass transfer
+coefficients h T and hm , evaluated according to Equations (A10)–(A13), and of the average water effective
+diffusivity < Deff >, Equations (24) and (30).
+
+1
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+
+1
+
+φb
+40
+
+20
+
+12 8
+
+B
+
+4
+
+R(t)/R0 , V(t)/V0
+
+φ(r,t) , φb(t)
+
+The rescaled sample volume V (t)/V0 and radius R(t)/R0 are shown in Figure 7B as a function
+of the rescaled total moisture content X (t)/X0 , in agreement with experimental data (open circles,
+from Silva et al. [11]). Indeed, starting from these experimental shrinkage data, the hypothesis of ideal
+shrinkage for Rocha pears has been formulated and implemented in the moving-boundary model by
+setting α(φ) = α0 = 1.
+The temporal evolution of the water concentration profile φ(r, t) is represented in Figure 7A,
+together with the boundary concentration φb (t) that rapidly (12 h) decreases towards the very low
+asymptotic value. Figure 7A clearly shows that a mixed third kind boundary condition, Equation (28),
+has to be applied for a correct description of all the different phases of the drying process.
+
+60
+
+80
+
+100
+
+0.8
+0.6
+0.4
+0.2
+
+120
+
+0
+
+A
+0.2
+
+0.4
+
+0.6
+
+r/R0
+
+0.8
+
+1
+
+R(t)/R0
+V(t)/V0
+exp
+
+0
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+X(t)/X0
+
+Figure 7. Continuous dehydration at T∞ = 50 ◦ C and U∞ = 1.28 m/s. (A) Model predictions for the
+temporal evolution of the water volume fraction profiles inside the shrinking sample, φ(r, t) vs. r/R0 .
+Continuous blue line highlights the water volume fraction φb (t) = φ( R(t), t) at the solid/air interface.
+Blue dots indicates the values of φb (ti ) at increasing time instants ti = 4, 8, 12, 20, 40, 60, 80, 100, 120 h.
+Arrow indicates increasing values of time. (B) Model predictions for the temporal evolution of the
+rescaled sample radius R(t)/R0 and of the rescaled sample volume V (t)/V0 during the dehydration
+process. Filled points represent the same specific time instants {ti } reported in Figure (A). Open circles
+represent experimental values from [11].
+```
+
+## PDF 第 13 页
+
+```text
+Foods 2020, 9, 1577
+
+13 of 22
+
+A last observation regarding the temperature profiles. Figure 6A clearly shows that it is reasonable
+to assume that the temperature is uniform inside the sample and equal to the boundary temperature,
+i.e., T (r, t) = Tb . This observation allows replacing the partial differential equation Equation (26) for
+T (r, t) with the ordinary differential equation for the boundary temperature Tb (t)
+Z R(t)
+⟦U+0011⟧
+d⟦U+0010⟧
+p
+Tb
+(ρ p C p )4πr2 dr =
+dt
+0
+⟦U+0010⟧
+⟦U+0011⟧
+⟦U+0001⟧
+∂φ
+− h T ( Tav ) Tb − T∞ + λv ( Tb )ρw Deff ( Tb )
+4πR2 (t)
+∂r R(t)
+
+(31)
+
+while the water transport equations Equations (25) and (27) remain unchanged except for the fact
+p
+that Deff ( T ) must be replaced with Deff ( Tb ). The thermal inertial term ρ p C p appears in the volume
+integral, right hand side of Equation (31), because it depends on φ(r, t) and therefore on r and t
+(see Appendix A).
+Numerical results of the integration of this simplified model are shown in Figure 5 (black
+dashed lines) and are almost indistinguishable from numerical results of the more accurate
+non-isothermal model.
+5. Modeling of Intermittent Drying Experiments
+The non-isothermal model Equations (25)–(29) is applied to describe the intermittent drying
+experiments. In these experiments the air temperature T∞ , Relative Humidity RH∞ and velocity U∞
+change in time according to the cyclic repetition of three different stages, as described in Section 2 and
+exemplified in Figure 1. The switch between different air operating conditions is not instantaneous but
+it requires about 30 min [11]. This effect has been accounted for by adopting a smooth step function
+θδ (t) for the switch
+⟦U+0012⟧
+⟦U+0012⟧ ⟦U+0013⟧⟦U+0013⟧
+1
+t
+θδ (t[h]) =
+1 − tanh
+, δ = 0.1 h
+(32)
+2
+δ
+shown in Figure 1. The introduction of the smooth step function also simplifies the numerical
+integration of the system of time-dependent partial differential equations.
+Figure 8A shows the excellent agreement between experimental data for X (t)/X0 vs. t and model
+predictions (coefficient of determination R2 > 0.99) for two intermittent dehydration experiments at
+max = 40 ◦ C and U max = 1.28 m/s. The two experiments differ in the number of cycles, 2 for the
+T∞
+∞
+first and 5 for the second experiment, and in the initial moisture content X0 of samples analyzed
+(see Table 1).
+1
+
+I-40ooC-2 Cycles
+I-40 C-5 Cycles
+
+0.8
+
+0.8
+
+0.6
+
+0.6
+
+V(t)/V0
+
+X(t)/X0
+
+1
+
+0.4
+0.2
+
+I-40ooC-2 Cycles
+I-40 C-5 Cycles
+
+0.4
+0.2
+
+A
+
+C P1P2
+
+C P1P2
+
+0
+
+B
+
+0
+0
+
+20
+
+40
+
+60
+
+80
+
+t [h]
+
+100
+
+120
+
+140
+
+160
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+120
+
+140
+
+t [h]
+
+max = 40 ◦ C and U max = 1.28 m/s
+Figure 8. Intermittent dehydration (2 Cycles and 5 Cycles) for T∞
+∞
+(A) Comparison between experimental dehydration curves X (t)/X0 vs. t (filled points) and model
+predictions (continuous lines) with D ( T ) given by Equation (24). (B) Model prediction of the temporal
+evolution for the rescaled sample volume V (t)/V0 .
+
+160
+```
+
+## PDF 第 14 页
+
+```text
+Foods 2020, 9, 1577
+
+14 of 22
+
+Figure 8A clearly shows that the model is capable to perfectly describe the evolution of the total
+moisture content in the convective stages (C) and in the pause stages (P1 and P2 ). The model shows
+that, in agreement with experimental data, also in the pause stage P1 (“hot-humid” pause) of the first
+two cycles, the sample is slightly dehydrating. Therefore, even if the air velocity is extremely low
+(we set U∞ = 0.1 m/s]), the sample cannot be considered “isolated” neither for the mass transfer nor
+for the heat transfer. The temporal evolution of the heat and mass transfer coefficients h T and hm is
+shown in Figure 9B.
+The corresponding evolution of the rescaled sample volume V (t)/V0 is shown in Figure 8B.
+It highlights how, in the last three cycles of the 5 cycles experiment when the total moisture content
+X (t) is low, the sample is slightly re-hydrating in the “cold-humid” pause P2 .
+The temporal evolution of the boundary temperature Tb (t) is shown in Figure 9A. In qualitative
+agreement with data reported by [11] in Figure 4, Tb (t) exhibits a rapid increase at the beginning of
+the hot-humid pause P1 due to the sudden increase of the air Relative Humidity that temporarily
+annihilates the heat consumption for water evaporation.
+30
+
+hT [W/(m2K)], hmx103 [m/s]
+
+40
+
+Tb [oC]
+
+35
+30
+25
+20
+15
+10
+0
+
+A
+
+I-40ooC-2 Cycles
+I-40 C-5 Cycles
+
+C P1P2
+20
+
+40
+
+60
+
+80
+
+o
+
+hm I-40 C-2 Cyc
+hm I-40oC-5 Cyc
+hT I-40oC-2 Cyc
+hT I-40oC-5 Cyc
+
+25
+20
+15
+
+C P1P2
+10
+
+B
+5
+
+100
+
+120
+
+140
+
+160
+
+0
+
+20
+
+40
+
+60
+
+t [h]
+
+80
+
+100
+
+120
+
+140
+
+160
+
+t [h]
+
+max = 40 ◦ C and U max = 1.28 m/s.
+Figure 9. Intermittent dehydration (2 Cycles and 5 Cycles) for T∞
+∞
+Model predictions for the temporal evolution of the boundary temperature Tb (t) (A) and of the heat
+and mass transfer coefficients h T and hm (B).
+
+Figure 10A shows the comparison between experimental data for X (t)/X0 vs. t and model
+max = 50 ◦ C
+predictions for two intermittent dehydration experiments at the higher air temperature T∞
+max = 1.28 m/s. The two experiments differ in the number of cycles, 2 for
+and the same air velocity U∞
+the first and 3 for the second experiment.
+1
+
+I-50ooC-2 Cycles
+I-50 C-3 Cycles
+
+0.8
+
+0.8
+
+0.6
+
+0.6
+
+V(t)/V0
+
+X(t)/X0
+
+1
+
+0.4
+0.2
+
+I-50ooC-2 Cycles
+I-50 C-3 Cycles
+
+0.4
+0.2
+
+C P1 P2
+
+0
+0
+
+20
+
+A
+40
+
+60
+
+t [h]
+
+80
+
+100
+
+B
+C P1 P2
+
+0
+120
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+t [h]
+
+max = 50 ◦ C and U max = 1.28 m/s
+Figure 10. Intermittent dehydration (2 Cycles and 3 Cycles) for T∞
+∞
+(A) Comparison between experimental dehydration curves X (t)/X0 vs. t (filled points) and model
+predictions (continuous lines) with D ( T ) given by Equation (24). (B) Model prediction of the temporal
+evolution for the rescaled sample volume V (t)/V0 .
+
+120
+```
+
+## PDF 第 15 页
+
+```text
+Foods 2020, 9, 1577
+
+15 of 22
+
+The higher temperature implies a significantly faster dehydration which can be considered
+complete after about 100 h for both experiments and in perfect agreement with experimental
+dehydration curves. Model predictions for the temporal evolution of the rescaled sample volume
+V (t)/V0 , the boundary temperature Tb (t) and the heat and mass transfer coefficients h T and hm are
+shown in Figures 10B and 11A,B, respectively. A qualitative behavior, similar to that obtained for
+max = 40 ◦ C, can be observed.
+intermittent experiments at the lower temperature T∞
+30
+
+hT [W/(m2K)], hmx103 [m/s]
+
+50
+45
+
+Tb [oC]
+
+40
+35
+30
+25
+20
+15
+
+C P1 P2
+
+10
+0
+
+20
+
+A
+
+I-50ooC-2 Cycles
+I-50 C-3 Cycles
+40
+
+60
+
+t [h]
+
+25
+20
+15
+
+C P1 P2
+hm I-50oC-2
+hm I-50ooC-3
+hT I-50oC-3
+hT I-50 C-3
+
+10
+5
+
+80
+
+100
+
+120
+
+0
+
+20
+
+40
+
+60
+
+80
+
+100
+
+B
+
+120
+
+t [h]
+
+max = 50 ◦ C and U max = 1.28 m/s.
+Figure 11. Intermittent dehydration (2 Cycles and 3 Cycles) for T∞
+∞
+Model predictions for the temporal evolution of the boundary temperature Tb (t) (A) and of the heat
+and mass transfer coefficients h T and hm (B).
+
+The effect of the air velocity U∞ on the dehydration process is also investigated, as a further
+check of the validity of the correlation functions adopted for the estimate of the heat and mass
+transfer coefficients h T and hm . Figure 12A compares experimental results and model predictions for
+max = 50 ◦ C characterized by two different air velocities
+the 3 Cycles intermittent experiments at T∞
+max = 1.28 m/s and 2.66 m/s.
+U∞
+max on
+Experimental results for X (t)/X0 , shown in Figure 12A, highlight a slight effect of U∞
+the dehydration curves, mainly in the first two cycles of the dehydration process, while the final
+max . Model predictions, in excellent agreement with
+dehydration time is substantially unaffected by U∞
+max , the heat and mass transfer
+experimental data, show that, more than doubling the air speed U∞
+coefficients increase by a factor of about 1.5 (see Figure 12B), and this affects the dehydration rate
+mainly when the sample moisture content is still high.
+Model predictions confirm the experimental findings by [11]. A significant reduction of the final
+dehydration time can be achieved by increasing the operating temperature from 40 ◦ C to 50 ◦ C while
+an increase in air speed has proven ineffective.
+A final remark must be made on the influence of the pause stages on moisture gradients inside
+the sample. Quite often, intermittent drying has to be preferred to continuous drying because,
+during each tempering period, a redistribution of internal moisture within the drying material
+occurs. A reduction in moisture gradients [8] decreases the probability of concentration-induced
+stress and fissure. This occurs, for example, for rice grains [30] and other seeds, i.e. for food with
+very small dimensions, order of millimeters. In the present case of whole pears, the effect of moisture
+homogenization in the pause stages is extremely small as shown in Figure 13. Red and blue curves in
+Figure 13 represent the temporal evolution of the water volume fraction profiles φ(r, t) in the two pause
+max = 50 ◦ C and U max = 1.28 m/s.
+stages P1 and P2 in the intermittent experiment with two cycles at T∞
+∞
+No significant gradient reduction is observed in the pause stages.. This effect is intrinsically due to the
+larger sample dimension, about 5 cm, and to the low effective diffusivity Deff .
+```
+
+## PDF 第 16 页
+
+```text
+Foods 2020, 9, 1577
+
+1
+
+16 of 22
+
+40
+
+hT [W/(m2K)], hmx103 [m/s]
+
+I-50oC-3 Cycles, U∞=1.28 m/s
+I-50oC-3 Cycles, U∞=2.66 m/s
+
+X(t)/X0
+
+0.8
+0.6
+0.4
+0.2
+
+C P1 P2
+
+0
+0
+
+20
+
+A
+40
+
+60
+
+80
+
+100
+
+35
+30
+25
+20
+15
+
+B
+
+C P1 P2
+
+hm U∞=2.66
+hm U∞=1.28
+hT U∞=2.66
+hT U∞=1.28
+
+10
+5
+
+120
+
+0
+
+20
+
+40
+
+t [h]
+
+60
+
+80
+
+100
+
+120
+
+t [h]
+
+max = 50 ◦ C and two different air velocities U max =
+Figure 12. Intermittent dehydration (3 Cycles) for T∞
+∞
+1.28 m/s and 2.66 m/s. (A) Comparison between experimental dehydration curves X (t)/X0 vs. t
+(filled points) and model predictions (continuous lines) with D ( T ) given by Equation (24). (B) Model
+predictions for the temporal evolution of the heat and mass transfer coefficients h T and hm .
+
+1
+
+φ(r,t)
+
+0.8
+0.6
+
+C stage
+P1 stage
+P2 stage
+
+0.4
+0.2
+0
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+r/R0
+Figure 13. Temporal evolution of water volume fraction profiles φ(r, t) for the intermittent dehydration
+max = 50 ◦ C and U max = 1.28 m/s. Arrow indicates increasing time instants
+experiment (2 Cycles) at T∞
+∞
+ti = (2, 5, 8), (12, 14, 16), (19, 21, 23), (25, 28, 31), (36, 38, 40), (43, 45, 47),(50, 70, 90, 110, 120, 130) h.
+Green, blue and red curves highlight concentration profiles in the Convective (C), hot humid (P1 ) and
+cold humid (P2 ) stages, respectively.
+
+6. Conclusions
+This article presents the non-isothermal formulation of the moving-boundary model for food
+dehydration, recently proposed by [13,14], in which sample shrinkage is accounted for via the
+introduction of the pointwise shrinkage velocity that depends on the local volumetric water flux.
+A convection-diffusion heat transport equation, affected by sample shrinkage, heat transfer and
+water evaporation at the sample surface, is added to the convection-diffusion transport equation for
+water concentration.
+The non-isothermal model is successfully applied to experimental data of continuous and
+intermittent drying of Rocha pears reported by Silva and coworkers.
+No particular analytical/computational efforts were required to estimate the shrinkage
+proportionality factor α(φ) because pears exhibit a net ideal shrinkage and a constant value α(φ) =
+α0 = 1 can be assumed a priori.
+The excellent predictive capability of the non-isothermal model makes it a useful tool for
+optimizing intermittent dehydration procedures at a laboratory and industrial level.
+```
+
+## PDF 第 17 页
+
+```text
+Foods 2020, 9, 1577
+
+17 of 22
+
+From the strictly theoretical point of view, the model showed that it is not necessary, if not wrong,
+to introduce a time-dependent water diffusivity. On the contrary, it is necessary (1) to take into account
+the dependence of diffusivity on temperature and therefore (2) to follow the temporal evolution of the
+temperature, at least the surface temperature.
+Author Contributions: Conceptualization, A.A., C.V. and A.B.; methodology, A.A.; software, A.A.; validation,
+C.V and A.B.; formal analysis, A.A.; investigation, A.A., C.V. and A.B.; resources, A.A.; data curation, A.A and
+C.V.; writing–original draft preparation, A.A.; writing–review and editing, A.B.; visualization, C.V and A.B.;
+supervision, A.A.; project administration, A.A.; funding acquisition, A.A. All authors have read and agreed to the
+published version of the manuscript.
+Funding: This research received no external funding.
+Conflicts of Interest: The authors declare no conflict of interest.
+
+Nomenclature
+Symbols
+aw
+Bi∞
+cw
+p
+C p ,C sp ,C w
+p
+k p ,ks ,kw
+d
+Deff
+Dvair
+DTair
+p
+DT
+hm
+hT
+J
+Jd
+kair
+Keq
+Nu
+p
+pv
+Pr
+r
+R
+Rg
+Re
+RH
+Sc
+Sh
+t
+T
+Tav
+V
+vs
+xw
+X
+
+[-]
+[-]
+[g water/m3 product]
+[J/(g K)]
+[W/(m K)]
+[m]
+[m2 /s]
+[m2 /s]
+[m2 /s]
+[m2 /s]
+[m/s]
+[W/(m2 K)]
+[h−1 ]
+[g water/(s m2 )]
+[W/(m K)]
+[-]
+[-]
+[Pa]
+[Pa]
+[-]
+[m]
+[m]
+[J/(mol K)]
+[-]
+[-]
+[-]
+[-]
+[s]
+[K]
+[K]
+[m3 ]
+[m/s]
+[-]
+[kg water/kg dry solid]
+
+Water activity
+Asymptotic Biot number, Equation (A16)
+Water mass concentration
+Product, solid and water specific heat capacity
+Product, solid and water thermal conductivity
+Sample diameter
+Effective water diffusivity
+Vapor in air diffusivity
+Air thermal diffusivity
+Product thermal diffusivity
+Mass transfer coefficient
+Heat transfer coefficient
+Dehydration rate
+Water diffusive mass flux
+Air thermal conductivity
+Equilibrium constant, Equation (A3)
+Nusselt number
+Vapor partial pressure
+Saturated vapor pressure
+Prandl number
+Radial coordinate
+Sample radius
+Gas constant
+Reynolds number
+Relative humidity
+Schmidt number
+Sherwood
+Time
+Temperature
+Average film temperature
+Sample volume
+Shrinkage velocity
+Water weight fraction
+Total moisture content
+```
+
+## PDF 第 18 页
+
+```text
+Foods 2020, 9, 1577
+
+Greek Symbols
+α
+γ0
+λv
+ν air
+ρp
+ρs
+ρw
+φ
+Subscripts
+0
+b
+eq
+∞
+
+18 of 22
+
+[-]
+[-]
+[J/g]
+[m/s]
+[g product/cm3 product]
+[g solid/cm3 solid]
+[g water/cm3 water]
+[-]
+
+Shrinkage factor
+smallest positive root of Equation (A18)
+Heat of water vaporization
+Air kinematic viscosity
+Product density
+Solid (pulp) density
+Water density
+water volume fraction
+
+Initial
+Sample surface (boundary)
+Equilibrium
+Asymptotic or at infinite distance
+
+Appendix A
+The Relative Humidity at the air/sample interface is evaluated from desorption isotherms for
+Rocha pears reported by [27] and best fitted with the Henderson model
+b( T ) ⟦U+0001⟧
+
+RHeq ( Xeq , T ) = 1 − exp − a( T ) TXeq
+
+, T [K ] , Xeq [kg w/kg dry solid]
+
+(A1)
+
+The Henderson model exhibits an explicit dependence on the desorption temperature T and is capable
+to accurately describe the influence of the temperature on desorption curves in the range [20 ◦ C–40 ◦ C].
+The values of the two parameters a( T ) and b( T ), entering the desorption isotherm model Equation (A1)
+are a = 0.0049, 0.0062, 0.0092 and b = 0.5739, 0.5754, 0.6449 for T = 20, 30, 40 ◦ C, respectively [27].
+In order to estimate the desorption isotherm in the whole range of temperature [10 ◦ C–50 ◦ C] the
+two parameters a( T ) and b( T ) have been estimated, from the values listed above, by piecewise cubic
+interpolation. The resulting isotherms, in the whole range [10 ◦ C–50 ◦ C], are plotted in Figure A1A,B
+as Xeq vs. aw (Figure A1A) and as φeq vs. aw (Figure A1B). The following equation
+φeq =
+
+ρs Xeq
+Xeq ρs + ρw
+
+(A2)
+
+relating the water volume fraction φeq to the moisture content Xeq has been adopted.
+From Figure A1B, it can be observed that the desorption isotherm, for high temperatures
+T ∈ [40 ◦ C–50 ◦ C] and small values of aw < 0.2 can be readily approximated with a linear function
+(dashed line)
+φeq = aw /Keq , Keq ≃ 8
+(A3)
+The density of the solid (pulp) ρs = 1.73 [g solid/cm3 solid] is estimated from the initial product
+p
+(pear) density ρ0 ≃ 1.07 [g product/cm3 product] and from the initial moisture content X0 ≃ 5.25
+[kg water/kg dry solid], reported by [31] for Rocha pears, as follows
+p
+
+ρs =
+
+ρ0 ρ w
+
+p
+
+ρ w ( 1 + X0 ) − ρ 0 X0
+
+(A4)
+
+The pear density ρ p is evaluated as the average of the water and solid (pulp) densities, averaged
+with respect to their volume fractions
+ρ p = ρ w φ + ρ s (1 − φ )
+
+(A5)
+```
+
+## PDF 第 19 页
+
+```text
+Foods 2020, 9, 1577
+
+19 of 22
+
+0.8
+
+A
+
+B
+
+0.7
+0.6
+
+2
+
+0.5
+
+φeq
+
+Xeq [kg/kg db]
+
+3
+
+0.4
+0.3
+
+1
+
+0.2
+0.1
+0
+
+0
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+0
+
+1
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+aw=RHeq
+
+aw=RHeq
+
+Figure A1. Desorption isotherms for different temperatures T∞ in the range [10 ◦ C–50 ◦ C].
+Arrows indicate increasing values of the temperature T∞ . (A) Xeq vs. water activity aw . (B) φeq vs. aw .
+The dashed line indicates the approximated linear behaviour Equation (A3).
+p
+
+The pear specific heat capacity C p [J/(g K)] is evaluated as the average of the water and solid
+specific heat capacities, averaged with respect to their weight fractions
+p
+
+s
+Cp = Cw
+p x w + C p (1 − x w ) ,
+
+xw = φ (ρw /ρ p )
+
+(A6)
+
+The pear thermal conductivity k p [W/(m K)] is evaluated from a parallel model
+1
+φ
+1−φ
+= w+ s
+p
+k
+k
+k
+
+(A7)
+
+where kw and ks are the water and solid thermal conductivities, respectively.
+Since pears contain mainly water and carbohydrate [32], the thermal conductivity ks and the
+specific heat capacity C sp of the solid phase are estimated from that of carbohydrate [33]
+ks [W/(m K)]
+C sp [J/(g K)]
+
+= 2.01 × 10−1 + 1.39 × 10−3 − 4.33 × 10−6 T 2 , T [◦ C]
+= 1.5488 + 1.9625 × 10
+
+−3
+
+T − 5.9399 × 10
+
+−6 2
+
+◦
+
+T , T [ C]
+
+(A8)
+(A9)
+
+The heat and mass transfer coefficients h T [W/(m K)] and hm [m/s]
+Nu( Tav , d)kair ( Tav )
+,
+d
+Sh( Tav , d) Dvair ( Tav )
+hm ( Tav , d) =
+d
+
+h T ( Tav , d) =
+
+(A10)
+
+are evaluated from the well known correlation functions for the Nusselt Nu and Sherwood Sh numbers
+around a sphere [34]
+Nu( Tav , d)
+
+= 2 + 0.6Re1/2 Pr1/3 =
+⟦U+0010⟧ U d ⟦U+0011⟧1/2 ⟦U+0010⟧ ν ( T ) ⟦U+0011⟧1/3
+∞
+air av
+2+
+νair ( Tav )
+DTair ( Tav )
+
+(A11)
+
+Sh( Tav , d)
+
+= 2 + 0.6Re1/2 Sc1/3 =
+⟦U+0010⟧ U d ⟦U+0011⟧1/2 ⟦U+0010⟧ ν ( T ) ⟦U+0011⟧1/3
+∞
+air av
+2+
+.
+νair ( Tav )
+Dvair ( Tav )
+
+(A12)
+```
+
+## PDF 第 20 页
+
+```text
+Foods 2020, 9, 1577
+
+20 of 22
+
+Both h T and hm change in time because all the physical properties of the humid air are evaluated at the
+film mean temperature Tav (t) = ( Tb (t) + T∞ )/2 which changes in time. Moreover, also the sample
+diameter d(t) and the Reynolds number are changing during the course of the dehydration process.
+The thermo-physical parameters of moist air (density, viscosity, thermal conductivity and thermal
+diffusivity) are evaluated as that for dry air since, for T ≤ 50 ◦ C, Relative Humidity has a small
+influence on thermo-physical properties of moist air [35–37].
+Appendix B
+Let us focus on a continuous dehydration process in which the air properties T∞ , RH∞ and U∞
+are set to fixed and constant values. On long time scales, when the water volume fraction φ is low
+everywhere inside the sample, it can be reasonably assumed that
+1.
+2.
+
+the sample temperature has already reached its asymptotic value T (r, t) = T∞
+the sample radius can be approximated with its asymptotic value R∞
+R∞
+=
+R0
+
+3.
+
+⟦U+0012⟧
+
+V∞
+V0
+
+⟦U+0013⟧1/3
+(A13)
+
+∂φ
+
+the convective-shrinkage contribution Deff ∂r φ is negligible compared to the diffusive term
+
+− Deff ∂φ
+∂r , and a purely diffusive transport equation can be adopted
+∂φ(r, t)
+1 ∂
+∂φ
+= Deff ( T∞ ) 2
+r2
+∂t
+∂r
+r ∂r
+4.
+
+!
+,
+
+r ∈ (0, R∞ )
+
+(A14)
+
+the nonlinear desorption isotherm at T = T∞ can be approximated with a linear behaviour valid
+for small RH, Equation (A3), shown in Figure A1B (black dashed line). Therefore, Equation (A14)
+can be solved with the simplified boundary conditions
+∂φ
+∂r
+
+= 0 , − R∞
+r =0
+
+∂φ
+∂r
+
+= Bi∞ (φb − φ∞ )
+
+(A15)
+
+R∞
+
+where φb = RHb /Keq , φ∞ = RH∞ /Keq and Bi∞ represents the asymptotic mass Biot number
+Bi∞ =
+
+hm ( T∞ ) R∞ Mw pv ( T∞ )
+Keq ( T∞ )
+Deff ( T∞ ) ρw R g T∞
+
+(A16)
+
+The asymptotic solution of Equations (A14) and (A15), written in terms of the moisture ratio Xr (t),
+reads as [22,38]
+Xr ( t ) =
+
+h
+X (t) − Xeq
+tD ( T∞ ) i
+∼ exp − γ02 eff 2
+X0 − Xeq
+R∞
+
+valid for large t
+
+(A17)
+
+where γ0 is the smallest positive root of the equation
+γ cot (γ) + Bi∞ − 1 = 0.
+
+(A18)
+
+It is straightforward to verify that the asymptotic exponential behaviour Equations (A17) implies
+a linear behaviour for the dehydration rate J vs. Xr for small values of Xr
+J=−
+
+γ2
+dXr
+= Deff ( T∞ ) 20 Xr
+dt
+R∞
+
+valid for small Xr
+
+(A19)
+```
+
+## PDF 第 21 页
+
+```text
+Foods 2020, 9, 1577
+
+21 of 22
+
+Equation (A19) can be used to estimate the effective water diffusivity Deff at T = T∞ from the initial
+linear scaling of the experimental dehydration-rate curve J = θ ( T∞ ) Xr . The dehydration-rate curves
+are shown in Figure 4A for the two continuous dehydration experiments at T∞ = 40 ◦ C and 50 ◦ C.
+The estimate of Deff ( T∞ ) from Equation (A19) is not so straightforward as it requires the solution
+of a nonlinear equation for Deff ( T∞ ) because γ0 is a nonlinear function of Bi∞ and Bi∞ depends on
+Deff ( T∞ ), Equation (A16).
+This estimate strongly simplifies in the case of high values of the Biot number Bi∞ because γ0
+is an increasing function of Bi∞ , saturating towards π for Bi∞ → ∞. For Bi∞ > 102 , γ0 can be well
+approximated as γ0 ≃ π. In the present case, for an effective diffusivity Deff ≃ 10−10 m2 /s, the Biot
+number is Bi∞ > 103 >> 102 for both temperatures T∞ = 40 ◦ C and 50 ◦ C. Consequently, no iterative
+procedure is required and the effective diffusivity Deff ( T∞ ) can be directly estimated from the initial
+slope θ ( T∞ ) of the corresponding experimental dehydration-rate curves as follows
+J = θ ( T∞ ) Xr = Deff ( T∞ )
+
+π2
+π2
+Xr = Deff ( T∞ ) 2
+2
+R∞
+R0
+
+⟦U+0012⟧
+
+V∞
+V0
+
+⟦U+0013⟧− 2
+3
+
+Xr .
+
+(A20)
+
+where the only unknown quantity is Deff ( T∞ ).
+If we are assuming a concentration dependent water diffusivity, in agreement with Equation (3),
+Equation (A20) permits us to estimate solely the asymptotic value D∞ . No information on the β
+value can be obtained from the asymptotic analysis. If we assume a concentration independent water
+diffusivity, then Deff and D∞ coincide.
+References
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+
+11.
+
+12.
+13.
+
+Sagar, V.; Suresh Kumar, P. Recent advances in drying and dehydration of fruits and vegetables: A review.
+J. Food Sci. Technol. 2010, 47, 15–26. [CrossRef] [PubMed]
+Mayor, L.; Sereno, A. Modelling shrinkage during convective drying of food materials: A review. J. Food
+Eng. 2004, 61, 373–386. [CrossRef]
+Mahiuddin, M.; Khan, M.; Kumar, C.; Rahman, M.; Karim, M. Shrinkage of Food Materials During Drying:
+Current Status and Challenges. Compr. Rev. Food Sci. Food Saf. 2018, 17, 1113–1126. [CrossRef]
+Castro, A.; Mayorga, E.; Moreno, F. Mathematical modelling of convective drying of fruits: A review. J. Food
+Eng. 2018, 223, 152–167. [CrossRef]
+Baini, R.; Langrish, T. Choosing an appropriate drying model for intermittent and continuous drying of
+bananas. J. Food Eng. 2007, 79, 330–343. [CrossRef]
+Kowalski, S.; Pawłowski, A. Energy consumption and quality aspect by intermittent drying. Chem. Eng.
+Process. Process Intensif. 2011, 50, 384–390. [CrossRef]
+Kowalski, S.J.; Szadzińska, J.; Łechtańska, J. Non-stationary drying of carrot: Effect on product quality.
+J. Food Eng. 2013, 118, 393–399. [CrossRef]
+Yang, Z.; Zhu, E.; Zhu, Z.; Wang, J.; Li, S. A comparative study on intermittent heat pump drying process of
+Chinese cabbage (Brassica campestris L. ssp) seeds. Food Bioprod. Process. 2013, 91, 381–388. [CrossRef]
+Silva, V.; Figueiredo, A.; Costa, J.; Guiné, R. Experimental and mathematical study of the discontinuous
+drying kinetics of pears. J. Food Eng. 2014, 134, 30–36. [CrossRef]
+da Silva, W.P.; Rodrigues, A.F.; e Silva, C.M.D.; de Castro, D.S.; Gomes, J.P. Comparison between continuous
+and intermittent drying of whole bananas using empirical and diffusion models to describe the processes.
+J. Food Eng. 2015, 166, 230–236. [CrossRef]
+Silva, V.; Costa, J.J.; Figueiredo, A.R.; Nunes, J.; Nunes, C.; Ribeiro, T.I.; Pereira, B. Study of three-stage
+intermittent drying of pears considering shrinkage and variable diffusion coefficient. J. Food Eng. 2016,
+180, 77–86. [CrossRef]
+Lozano, J.E.; Rotstein, E.; Urbicain, M.J. Shrinkage, Porosity and Bulk Density of Foodstuffs at Changing
+Moisture Contents. J. Food Sci. 1983, 48, 1497–1502. [CrossRef]
+Adrover, A.; Brasiello, A.; Ponso, G. A moving boundary model for food isothermal drying and shrinkage:
+General setting. J. Food Eng. 2019, 244, 178–191. [CrossRef]
+```
+
+## PDF 第 22 页
+
+```text
+Foods 2020, 9, 1577
+
+14.
+15.
+
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
+24.
+
+25.
+26.
+27.
+28.
+29.
+30.
+31.
+32.
+33.
+34.
+35.
+36.
+37.
+38.
+
+22 of 22
+
+Adrover, A.; Brasiello, A.; Ponso, G. A moving boundary model for food isothermal drying and shrinkage:
+A shortcut numerical method for estimating the shrinkage factor. J. Food Eng. 2019, 244, 212–219. [CrossRef]
+Adrover, A.; Brasiello, A. A Moving Boundary Model for Isothermal Drying and Shrinkage of Chayote
+Discoid Samples: Comparison between the Fully Analytical and the Shortcut Numerical Approaches. Int. J.
+Chem. Eng. 2019, 2019, 3926897. [CrossRef]
+Adrover, A.; Brasiello, A. A moving boundary model for food isothermal drying and shrinkage:
+One-dimensional versus two-dimensional approaches. J. Food Process. Eng. 2019, 42, e13178. [CrossRef]
+Adrover, A.; Brasiello, A. 3-D Modeling of Dehydration Kinetics and Shrinkage of Ellipsoidal Fermented
+Amazonian Cocoa Beans. Processes 2020, 8, 150. [CrossRef]
+Papanu, J.; Soane (Soong), D.; Bell, A.; Hess, D. Transport models for swelling and dissolution of thin
+polymer films. J. Appl. Polym. Sci. 1989, 38, 859–885. [CrossRef]
+Tu, Y.O.; Ouano, A.C. Model for the kinematics of polymer dissolution. IBM J. Res. Dev. 1977, 21, 131–142.
+[CrossRef]
+Crank, J. Free and Moving Boundary Problems; Clarendon Press: Oxford, UK, 1987.
+Adrover, A.; Nobili, M. Release kinetics from oral thin films: Theory and experiments. Chem. Eng. Res. Des.
+2015, 98, 188–201. [CrossRef]
+Carslaw, H.; Jaeger, J. Conduction of Heat in Solids, 2nd ed.; Oxford University Press: Oxford, UK, 1959.
+Hahn, D.W.; Ozisik, M.N. Heat Conduction, 3rd ed.; Wiley: Hoboken, NJ, USA, 2012.
+Herman, C.; Spreutels, L.; Turomzsa, N.; Konagano, E.M.; Haut, B. Convective drying of fermented
+Amazonian cocoa beans (Theobroma cacao var. Forasteiro). Experiments and mathematical modeling.
+Food Bioprod. Process. 2018, 108, 81–94. [CrossRef]
+Hii, C.; Law, C.; Law, M. Simulation of heat and mass transfer of cocoa beans under stepwise drying
+conditions in a heat pump dryer. Appl. Therm. Eng. 2013, 54, 264–271. [CrossRef]
+Golestani, R.; Raisi, A.; Aroujalian, A. Mathematical Modeling on Air Drying of Apples Considering
+Shrinkage and Variable Diffusion Coefficient. Dry. Technol. 2013, 31, 40–51. [CrossRef]
+Guiné, R.P.F. Sorption Isotherms of Pears Using Different Models. Int. J. Fruit Sci. 2009, 9, 11–22. [CrossRef]
+Srikiatden, J.; Roberts, J.S. Measuring moisture diffusivity of potato and carrot (core and cortex) during
+convective hot air and isothermal drying. J. Food Eng. 2006, 74, 143–152. [CrossRef]
+Srikiatden, J.; Roberts, J.S. Predicting moisture profiles in potato and carrot during convective hot air drying
+using isothermally measured effective diffusivity. J. Food Eng. 2008, 84, 516–525. [CrossRef]
+Dong, R.; Lu, Z.; Liu, Z.; Koide, S.; Cao, W. Effect of drying and tempering on rice fissuring analysed by
+integrating intra-kernel moisture distribution. J. Food Eng. 2010, 97, 161–167. [CrossRef]
+Guiné, R.P.F.; Castro, J.A.A.M. Analysis of Moisture Content and Density of Pears During Drying.
+Dry. Technol. 2003, 21, 581–591. [CrossRef]
+Rahman, M.; Chen, X.; Perera, C. An improved thermal conductivity prediction model for fruits and
+vegetables as a function of temperature, water content and porosity. J. Food Eng. 1997, 31, 163–170. [CrossRef]
+Becker, B.; Fricke, B. FREEZING | Principles. In Encyclopedia of Food Sciences and Nutrition, 2nd ed.;
+Caballero, B., Ed.; Academic Press: Oxford, UK, 2003; pp. 2706–2711. [CrossRef]
+Bird, R.B.; Stewart, W.E.; Lightfoot, E.N. Transport Phenomena, 2nd ed.; Wiley: Hoboken, NJ, USA, 2006.
+Tsilingiris, P. Thermophysical and transport properties of humid air at temperature range between 0 and
+100 ◦ C. Energy Convers. Manag. 2008, 49, 1098–1110. [CrossRef]
+Boukhriss, M.; Zhani, K.; Ghribi, R. Study of thermophysical properties of a solar desalination system using
+solar energy. Desalin. Water Treat. 2013, 51, 1290–1295. [CrossRef]
+Still, M.; Venzke, H.; Durst, F.; Melling, A. Influence of humidity on the convective heat transfer from small
+cylinders. Exp. Fluids 1998, 24, 141–150. [CrossRef]
+Crank, J. The Mathematics of Diffusion; Clarendon Press: Oxford, UK, 1979.
+
+Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional
+affiliations.
+c 2020 by the authors. Licensee MDPI, Basel, Switzerland. This article is an open access
+article distributed under the terms and conditions of the Creative Commons Attribution
+(CC BY) license (http://creativecommons.org/licenses/by/4.0/).
+```
+

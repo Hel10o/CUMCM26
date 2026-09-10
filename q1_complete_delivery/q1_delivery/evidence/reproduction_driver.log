@@ -1,0 +1,61 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+RUN q1_solver.py
+RUN q1_validate.py
+RUN q1_refine.py
+RUN q1_excel.py
+RUN q1_report.py
+{
+  "all_steps_successful": true,
+  "steps": [
+    {
+      "module": "q1_solver.py",
+      "returncode": 0,
+      "elapsed_seconds": 21.815097295000214
+    },
+    {
+      "module": "q1_validate.py",
+      "returncode": 0,
+      "elapsed_seconds": 27.22372606199997
+    },
+    {
+      "module": "q1_refine.py",
+      "returncode": 0,
+      "elapsed_seconds": 35.57120686600001
+    },
+    {
+      "module": "q1_excel.py",
+      "returncode": 0,
+      "elapsed_seconds": 18.275581228999727
+    },
+    {
+      "module": "q1_report.py",
+      "returncode": 0,
+      "elapsed_seconds": 9.49330649400008
+    }
+  ],
+  "elapsed_seconds": 112.38113484900032,
+  "original_input_hashes_unchanged": true,
+  "input_sha256": {
+    "/mnt/data/q1_delivery/input/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "/mnt/data/q1_delivery/input/result1_template.xlsx": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+  },
+  "compared_with_delivered": {
+    "temperature_degC": {
+      "max_abs_difference": 0.0,
+      "four_decimal_equal": true
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 0.0,
+      "four_decimal_equal": true
+    }
+  }
+}
