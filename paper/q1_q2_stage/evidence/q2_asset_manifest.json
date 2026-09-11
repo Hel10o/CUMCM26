@@ -1,0 +1,332 @@
+{
+  "generated_by": "paper/q1_q2_stage/build_q2_assets.py",
+  "builder_sha256": "99bd4fc0f705eae02ff192cef7314606b001afcbe7379dd269a7b7c10564a5cc",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.0"
+  },
+  "sourceSHA256": {
+    "q2_final_delivery/output/q2_unrounded.npz": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec",
+    "q2_final_delivery/output/table_temperature.csv": "bdad441edb333126c2a205bfc9ffabdaa4cf84e884329d62f67059690ad577fe",
+    "q2_final_delivery/output/table_moisture.csv": "6ec3725f1c9d078fa41b23405d48865745194c0bba4e310a11ecfc8a94c75aa0",
+    "q2_refinement_delivery/data/mechanism_unrounded.npz": "a5907c1dc112eec4d8b2bbf421dc63bfa71a0900e8b336e0ee7a8faba3c0ca70",
+    "q2_refinement_delivery/reused/sensitivity_tracks.npz": "0b591ff22f288503e63a561b078fee506cbc6ad7a72078c44ed2a0e4728751ab",
+    "q2_refinement_delivery/data/parameter_sensitivity_timeseries.csv": "60532e951be77a0a979acb535dfbeda77f7802c0acc18fd0d8dd79336926d70f",
+    "paper/build_assets.py": "edf1d877e6ebfc9b5ed81f46b726f0ff48648ee954393e22233cd3f74e40da5f"
+  },
+  "formal_source_files_unchanged": true,
+  "production_solver_rerun": false,
+  "formal_result_count": 60,
+  "tables": {
+    "temperature": {
+      "label": "tab:q2-temperature",
+      "source": "q2_final_delivery/output/table_temperature.csv",
+      "times_h": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "times_s": [
+        1800,
+        3600,
+        5400,
+        7200,
+        9000,
+        10800
+      ],
+      "radius_cm": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "result_count": 30,
+      "decimal_places": 4,
+      "formal_csv_exact_text_cells_match": true,
+      "csv_byte_identical_to_formal": true
+    },
+    "moisture": {
+      "label": "tab:q2-moisture",
+      "source": "q2_final_delivery/output/table_moisture.csv",
+      "times_h": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "times_s": [
+        1800,
+        3600,
+        5400,
+        7200,
+        9000,
+        10800
+      ],
+      "radius_cm": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "result_count": 30,
+      "decimal_places": 4,
+      "formal_csv_exact_text_cells_match": true,
+      "csv_byte_identical_to_formal": true
+    }
+  },
+  "figures": {
+    "q2_profiles": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "style_reference": "paper/build_assets.py; same Chinese font/palette/line widths",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane, accepted effective model, 0 to 3 h",
+      "color_scheme": "Q1 Okabe-Ito colors with distinguishable line styles; gray sixth profile",
+      "data_source": "q2_final_delivery/output/q2_unrounded.npz",
+      "times_s": [
+        1800,
+        3600,
+        5400,
+        7200,
+        9000,
+        10800
+      ],
+      "x": {
+        "name": "radial distance",
+        "unit": "cm",
+        "range": [
+          0,
+          2
+        ],
+        "sample_count": 21
+      },
+      "left_field": "temperature_degC",
+      "left_unit": "degC",
+      "right_field": "moisture_dry_basis",
+      "right_unit": "kg water/kg dry material",
+      "series_colors": [
+        "#0072B2",
+        "#E69F00",
+        "#009E73",
+        "#CC79A7",
+        "#D55E00",
+        "#555555"
+      ],
+      "mask": "none"
+    },
+    "q2_history": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "style_reference": "paper/build_assets.py; same Chinese font/palette/line widths",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane, accepted effective model, 0 to 3 h",
+      "color_scheme": "Q1 Okabe-Ito colors with distinguishable line styles; gray sixth profile",
+      "data_source": "q2_final_delivery/output/q2_unrounded.npz",
+      "radii_cm": [
+        0,
+        1,
+        2
+      ],
+      "x": {
+        "name": "time",
+        "unit": "h",
+        "range": [
+          0,
+          3
+        ],
+        "sample_count": 10801,
+        "source_step_s": 1
+      },
+      "left_field": "temperature_degC",
+      "right_field": "moisture_dry_basis",
+      "left_unit": "degC",
+      "right_unit": "kg water/kg dry material",
+      "mask": "none"
+    },
+    "q2_mechanism": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "style_reference": "paper/build_assets.py; same Chinese font/palette/line widths",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane, accepted effective model, 0 to 3 h",
+      "color_scheme": "Q1 Okabe-Ito colors with distinguishable line styles; gray sixth profile",
+      "data_source": "q2_refinement_delivery/data/mechanism_unrounded.npz",
+      "x": {
+        "name": "time",
+        "unit": "h",
+        "range": [
+          0,
+          3
+        ],
+        "sample_count": 10801
+      },
+      "left_field": "D_over_D0 at radii 0,1,2 cm",
+      "right_field": "H, M, H+M at surface 2 cm",
+      "left_unit": "dimensionless",
+      "right_unit": "dimensionless",
+      "interpretation": "cumulative logarithmic identity; not instantaneous rates or causal percentages",
+      "mask": "none; instantaneous-rate masks do not apply to cumulative states"
+    },
+    "q2_sensitivity": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "style_reference": "paper/build_assets.py; same Chinese font/palette/line widths",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane, accepted effective model, 0 to 3 h",
+      "color_scheme": "Q1 Okabe-Ito colors with distinguishable line styles; gray sixth profile",
+      "data_source": [
+        "q2_refinement_delivery/reused/sensitivity_tracks.npz",
+        "q2_refinement_delivery/data/parameter_sensitivity_timeseries.csv"
+      ],
+      "verified_against_accepted_csv_values": 86408,
+      "final_3h": {
+        "hm": [
+          -0.23509977208446856,
+          -0.3182575495299784,
+          -0.7534422176051231,
+          -0.42196898161098534
+        ],
+        "hT": [
+          -0.02399410716494933,
+          -0.018378507646029482,
+          -0.007207775365171988,
+          -0.015038466257266075
+        ]
+      },
+      "plotted_ranges": {
+        "hm": {
+          "data_range": [
+            -0.7534422176051231,
+            2.176907891421876e-15
+          ],
+          "axis_range": [
+            -0.8137175950135331,
+            0.060275377408412205
+          ]
+        },
+        "hT": {
+          "data_range": [
+            -0.030054499442402714,
+            0.03529992869797059
+          ],
+          "axis_range": [
+            -0.03528285369363258,
+            0.04052828294920045
+          ]
+        }
+      },
+      "formula": "(C(1.2p)-C(0.8p))/(0.4*C(p))",
+      "baseline_grid_intervals": 320,
+      "mask": "none needed for moisture because all baseline C values are positive; no temperature-rise sensitivity plotted",
+      "x": {
+        "name": "time",
+        "unit": "h",
+        "range": [
+          0,
+          3
+        ],
+        "sample_count": 10801
+      },
+      "left_parameter": "hm",
+      "right_parameter": "hT",
+      "radii_cm": [
+        0,
+        1,
+        2
+      ],
+      "average": "stored r dr weighted average on the same N320 grid",
+      "left_unit": "dimensionless",
+      "right_unit": "dimensionless"
+    }
+  },
+  "outputs": {
+    "paper/q1_q2_stage/figures/q2_profiles.pdf": {
+      "sha256": "a89ae57e4085c83f8ee9cd67c3adea1297ec90612e4bfa2275010332dbcfff63",
+      "bytes": 20687
+    },
+    "paper/q1_q2_stage/figures/q2_profiles.png": {
+      "sha256": "3a40ce02a9e871db10c4e608f864308bbfb5964f1f8b182f847876cf3af7f5d6",
+      "bytes": 197602
+    },
+    "paper/q1_q2_stage/figures/q2_history.pdf": {
+      "sha256": "669506f80621dc431a8f9524083ba1a85dd932d16eb9a3a932e6dc5608d926c4",
+      "bytes": 24020
+    },
+    "paper/q1_q2_stage/figures/q2_history.png": {
+      "sha256": "11b2555745c1ca42be2a346436e96f0649f7a34b7c39927755244bd4e3fb10c5",
+      "bytes": 195734
+    },
+    "paper/q1_q2_stage/figures/q2_mechanism.pdf": {
+      "sha256": "76aa24d72ab9f71189e07d87bd9ca64064d51b2bd398f329ae7a90d35efedf3b",
+      "bytes": 45017
+    },
+    "paper/q1_q2_stage/figures/q2_mechanism.png": {
+      "sha256": "a5825ec071b6160b4b3106f433d54f2ea3f0239e6e0e54c0cdc3000f32b9f370",
+      "bytes": 213307
+    },
+    "paper/q1_q2_stage/figures/q2_sensitivity.pdf": {
+      "sha256": "612584b9caa5718273cc183781c807d8c50415bf9f4cbb0bb200594b71ccb998",
+      "bytes": 34817
+    },
+    "paper/q1_q2_stage/figures/q2_sensitivity.png": {
+      "sha256": "68053dffadb43c8159d1724250125c78ce5f9217c64225ac8058df51df10d0de",
+      "bytes": 219216
+    },
+    "paper/q1_q2_stage/tables/q2_temperature.csv": {
+      "sha256": "bdad441edb333126c2a205bfc9ffabdaa4cf84e884329d62f67059690ad577fe",
+      "bytes": 295
+    },
+    "paper/q1_q2_stage/tables/q2_temperature.tex": {
+      "sha256": "58972aa9cedcd8f90246645a8de74eabf23dee02a8259ead22fd00d22c28a293",
+      "bytes": 747
+    },
+    "paper/q1_q2_stage/tables/q2_moisture.csv": {
+      "sha256": "6ec3725f1c9d078fa41b23405d48865745194c0bba4e310a11ecfc8a94c75aa0",
+      "bytes": 265
+    },
+    "paper/q1_q2_stage/tables/q2_moisture.tex": {
+      "sha256": "630b8f559841a1147fddd254f2b12c7f0754bcde5834bd950b27fed796a44d6e",
+      "bytes": 725
+    }
+  }
+}

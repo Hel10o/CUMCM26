@@ -1,0 +1,64 @@
+{
+  "pdf": "paper/q1_q2_stage/第一二问论文阶段稿.pdf",
+  "pdf_sha256": "e63164e8bd6c9383939b733e86ebb9c2d97914249c03d192490919afcda15c63",
+  "review_method": "Direct view_image inspection of each Poppler page render at 95 dpi.",
+  "reviewer": "root",
+  "pages": [
+    {
+      "page": 10,
+      "render_sha256": "808f25f141e67856f0b631d132ece0ee383933e913d804e58f53b53a25a048fe",
+      "result": "pass",
+      "note": "物性、耦合方程和Robin边界均完整；编号与正文无碰撞。"
+    },
+    {
+      "page": 11,
+      "render_sha256": "0f2d75d9898e66b0c8a7c87872e61b24c21d9788d15e72f8715730d0b6b8dd7c",
+      "result": "pass",
+      "note": "离散方程及外推式可读；第二问结果节与导语自然衔接。"
+    },
+    {
+      "page": 12,
+      "render_sha256": "d55314f64f7b9f6f9a22aca7f71aead44c387fa9521b0409f69b30427dceb21b",
+      "result": "pass",
+      "note": "两张规定表和径向图完整；表头、小数、单位、双面板图例清楚。"
+    },
+    {
+      "page": 13,
+      "render_sha256": "b0ab721a3b3978855d7d5ac318763f922898b31d98e274c26eeb8c169340c16b",
+      "result": "pass",
+      "note": "时间图、数值验证叙述与比较表布局完整，无越界。"
+    },
+    {
+      "page": 14,
+      "render_sha256": "30b1b6ba96b447cb059557bcfb1772852ba7fb681a95b569481aa6b4d3db1767",
+      "result": "pass",
+      "note": "累计分解公式、机制双面板及净变化解释清楚；图注区分瞬时量。"
+    },
+    {
+      "page": 15,
+      "render_sha256": "d5e1438dba3ebb90250c486889c680ef69414ad374689da418dddcb447850bc0",
+      "result": "pass",
+      "note": "机制表、瞬时公式和灵敏度图完整；图形全部曲线落在坐标范围。"
+    },
+    {
+      "page": 16,
+      "render_sha256": "b97d669f339c056d35d256697b7ca4c633537ca3f12e1339a2c2e45012667d66",
+      "result": "pass",
+      "note": "灵敏度表、可识别性与组成守恒公式完整；无标题孤行。"
+    },
+    {
+      "page": 17,
+      "render_sha256": "5e0e5aa5c38c9cc06748b1f84a4e397be62fd2879dcaeb3755cdd331a0b0343a",
+      "result": "pass",
+      "note": "能量闭合和时域说明完整；AI说明先于参考文献，引用链接可读。"
+    },
+    {
+      "page": 18,
+      "render_sha256": "47fcc5e482a72e1bc46a4697d007574b8d7bdb18076de7d966fcdc4773e7d0bf",
+      "result": "pass",
+      "note": "剩余三条参考文献的正常续页，页码连续，非空白页，无裁切。"
+    }
+  ],
+  "blocking_findings": [],
+  "final_revision_note": "Final wording qualification on page 14; all other page PNG hashes unchanged. Page 14 re-inspected after rebuild."
+}

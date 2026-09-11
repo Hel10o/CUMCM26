@@ -1,0 +1,128 @@
+\section{第二问：变物性下的热质耦合模型}
+\label{q2-model}
+
+\subsection{模型扩展与局部经验物性}
+第二问统一采用附录3描述预热与恒温阶段\cite{problem}。与第一问相比，
+热容量和导热系数随含水率变化，水分扩散系数同时受温度和含水率影响，
+因而两个场需联立求解。本问仍从题给的均匀初态出发，不将第一问
+$1800\unit{s}$的末状态作为第二问初态，也不在该时刻切换物性公式。
+保留固定圆柱中截面的径向近似，取$R=0.02\unit{m}$、$L=0.25\unit{m}$。
+收缩、托盘接触和周向风场不在本问模型内。
+
+记摄氏温度为$T$，绝对温度为$T_K=T+273.15$，局部干基含水率为$C$。
+附录3经验式为
+\begin{equation}
+\begin{aligned}
+\rho(C)&=650+128C,&
+c_p(C)&=1450+2736\frac{C}{1+C},\\
+k(C)&=0.21+0.38\frac{C}{1+C},&
+D(T_K,C)&=2.4\times10^{-3}
+ \exp\!\left(-\frac{0.45}{C}-\frac{3850}{T_K}\right).
+\end{aligned}
+\label{q2-eq-properties}
+\end{equation}
+上述四项的单位依次为$\mathrm{kg/m^3}$、$\mathrm{J/(kg\cdot K)}$、
+$\mathrm{W/(m\cdot K)}$和$\mathrm{m^2/s}$。指数中的温度必须使用开尔文。
+定义有效体积热容量$S(C)=\rho(C)c_p(C)$；全部物性均按当地状态更新。
+升温促进水分扩散，失水又改变$S$和$k$并反馈温度场，因此本问具有
+局部双向耦合，即使不显式加入潜热也不能分别冻结两个场求解。
+
+这里将题给$S(C)$用于有效温度方程，不同时宣称经验密度是满足固定体积
+组成关系的真实湿体密度。水分方程采用固定参考干密度$\rho_{d,\mathrm{ref}}$
+可约去的干基表达。这一解释使题给物性和固定几何下的计算口径明确，
+其与严格组成守恒模型的区别见第\ref{q2-limits}节。
+
+\subsection{控制方程与初边值条件}
+对圆环控制体应用热量和水分收支，得到
+\begin{align}
+ S(C)\frac{\partial T}{\partial t}
+ &=\frac{1}{r}\frac{\partial}{\partial r}
+   \left[rk(C)\frac{\partial T}{\partial r}\right],
+ \label{q2-eq-heat}\\
+ \frac{\partial C}{\partial t}
+ &=\frac{1}{r}\frac{\partial}{\partial r}
+   \left[rD(T_K,C)\frac{\partial C}{\partial r}\right],
+ \qquad 0<r<R.
+ \label{q2-eq-moisture}
+\end{align}
+水分式对应于$\boldsymbol j_w=-\rho_{d,\mathrm{ref}}D\nabla C$的守恒关系。
+由于系数随空间状态变化，必须保留通量散度：一般有
+$S^{-1}\nabla\cdot(k\nabla T)\ne\nabla\cdot[(k/S)\nabla T]$，
+故不能直接在热通量中以变热扩散率替代$k$。同理，水分方程也不能写成
+$D(T_K,C)$乘常系数拉普拉斯算子。
+
+初态与轴心对称条件取
+\begin{equation}
+\begin{aligned}
+ T(r,0)&=28\celsius,& C(r,0)&=2.55\unit{kg/kg},\\
+ T_r(0,t)&=0,& C_r(0,t)&=0.
+\end{aligned}
+\label{q2-eq-initial}
+\end{equation}
+附录3未另给交换系数，本文明确继承
+$h_T=25\unit{W/(m^2\cdot K)}$、$h_m=8\times10^{-7}\unit{m/s}$。
+将附件1的环境水分量记为$y_\infty$，进入固相边界的等效量记为$b$，
+采用数值恒等映射$b(t)=y_\infty(t)$，侧面条件为
+\begin{equation}
+\left\{\begin{aligned}
+ -k(C_s)T_r(R,t)&=h_T[T_s-T_\infty(t)],\\
+ -D(T_{s,K},C_s)C_r(R,t)&=h_m[C_s-b(t)].
+\end{aligned}\right.
+\label{q2-eq-boundary}
+\end{equation}
+径向向外为正，$T_s<T_\infty$时热量进入药材，$C_s>b$时水分向外迁移。
+药材干基含水率与空气湿度量即使均写作kg/kg，质量基准也未必相同；
+式\eqref{q2-eq-boundary}是本题数据可闭合的有效关系，
+并不表示气固平衡映射已被识别。干燥文献中的第三类质量边界通常需要
+材料平衡含水率或解吸等温线\cite{dasilva2014,adrover2020}，不能直接移用其他食品参数。
+
+附件1的241条记录覆盖$0$至$14400\unit{s}$，相邻记录间隔$60\unit{s}$。
+对温度和等效环境量分别作连续分段线性插值，在输入折点传递上一段末状态
+并重新启动积分。本文计算及展示前$10800\unit{s}$，无需外推环境数据。
+均匀含水率初态与$t=0$的表面交换条件存在角点不相容，计算保留题给初态，
+在$t>0$施加Robin条件，允许形成初始边界层，不人为降低初始表面含水率。
+
+\subsection{守恒型空间离散与隐式联立求解}
+取节点$r_i=i\Delta r$，$i=0,\ldots,N$，$\Delta r=R/N$，
+内部控制体界面位于相邻节点中点，端部界面位于$0$和$R$。
+去除公共几何因子$2\pi L$后，控制体权重为
+\begin{equation}
+ w_i=\frac{r_{i+1/2}^2-r_{i-1/2}^2}{2}.
+\label{q2-eq-volume}
+\end{equation}
+圆柱有限体积形式可直接表达径向界面的通量收支\cite{dasilva2014}。
+对$a=k,D$分别采用调和平均
+$a_{i+1/2}=2a_i a_{i+1}/(a_i+a_{i+1})$，定义向外通量
+\begin{equation}
+ Q_{i+1/2}=r_{i+1/2}k_{i+1/2}\frac{T_i-T_{i+1}}{\Delta r},\qquad
+ J_{i+1/2}=r_{i+1/2}D_{i+1/2}\frac{C_i-C_{i+1}}{\Delta r}.
+\label{q2-eq-flux}
+\end{equation}
+由此得到半离散联立方程
+\begin{equation}
+ w_iS(C_i)\dot T_i=Q_{i-1/2}-Q_{i+1/2},\qquad
+ w_i\dot C_i=J_{i-1/2}-J_{i+1/2}.
+\label{q2-eq-fvm}
+\end{equation}
+轴心界面通量为零，表面界面通量直接由式\eqref{q2-eq-boundary}给出。
+轴心权重$w_0=\Delta r^2/8$，使常系数中心格式自然产生圆柱系数4，
+无需在$r=0$处除零。轴心和表面均为实际节点，两个端点控制体都保留储存量。
+内部通量逐项相消，提供离散水分与有效热量收支的检查基础。
+
+时间推进使用变步长BDF方法\cite{scipy}，将各节点的$T,C$交错排列，
+并使用包含热容量导数及交叉耦合项的解析稀疏Jacobian。
+主有限体积计算取相对容差$2\times10^{-12}$，温度与含水率绝对容差分别为
+$2\times10^{-13}$、$2\times10^{-14}$，最大步长$10\unit{s}$。
+内部时间步与规定输出时刻分离，不在推进过程中提前舍入。
+
+以$N=20,40,80,160,320,640,1280,2560$检验空间加密。
+为消除主要二阶空间误差，正式状态采用
+\begin{equation}
+ u_R=\frac{4u_{2560}-u_{1280}}{3},\qquad u\in\{T,C\}.
+\label{q2-eq-richardson}
+\end{equation}
+另比较$640/1280$区间构成的外推结果，并使用独立谱配点和Radau时间推进
+核对规定输出。外推是同一非线性方程解的后处理，不能将其称为新的严格守恒积分器；
+守恒残差在原有限体积轨迹上计算。规定半径均落在主网格节点上，
+最终在$1$至$10800\unit{s}$每秒、$0$至$2\unit{cm}$每$0.1\unit{cm}$输出。
+\FloatBarrier

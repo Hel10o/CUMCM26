@@ -1,0 +1,41 @@
+\section{第一问的计算结果与解释}
+\subsection{规定时刻与位置的结果}
+表\ref{tab:q1-temperature}、表\ref{tab:q1-moisture}列出题目要求的七个时刻、五个径向位置的结果。两表直接从未舍入数值场提取，显示时统一保留四位小数；完整输出覆盖$1,2,\ldots,1800\unit{s}$及$0,0.1,\ldots,2.0\unit{cm}$，分别存入\texttt{result1.xlsx}的“温度”和“水分浓度”工作表。
+\input{tables/q1_temperature}
+\input{tables/q1_moisture}
+\FloatBarrier
+
+\subsection{升温与失水的空间差异}
+1800\unit{s}时，轴心温度为33.5753\celsius，表面温度为36.7856\celsius，均低于该时刻烘房温度41.5130\celsius。表面先响应外界升温，内部传导使轴心随后升温。由未舍入端点值计算，表面与轴心温差为3.2102\unit{K}；显示值相减可能因独立舍入而相差最后一位。
+
+图\ref{fig:q1-history}显示，温度响应已遍及所考察的径向位置，而水分变化主要集中在靠近表面的区域。1800\unit{s}时表面含水率降至1.5102\unit{kg/kg}，轴心含水率实际为2.5499924\unit{kg/kg}，较初值减少约$7.6\times10^{-6}\unit{kg/kg}$，在四位小数输出中仍为2.5500。因而“轴心保持初值”只适用于当前显示精度，并不表示其数学上严格不变。
+\begin{figure}[htbp]
+\centering\includegraphics[width=\textwidth]{figures/q1_history.pdf}
+\caption{预热阶段的时间响应。左图比较轴心、表面与烘房温度；右图为五个径向位置的干基含水率，环境水分量不作为固相含水率曲线绘入。}\label{fig:q1-history}
+\end{figure}
+
+图\ref{fig:q1-profiles}进一步表明，含水率在表层形成较陡梯度，但不存在严格截断的扩散前沿。在距表面0.5\unit{cm}处，即$r=1.5\unit{cm}$，1800\unit{s}含水率为2.3755\unit{kg/kg}，相对初值已降低约6.84\%；在$r=1.0\unit{cm}$处仍为2.5383\unit{kg/kg}。因此，对“受影响薄层厚度”的描述需要先指定变化阈值。
+\begin{figure}[htbp]
+\centering\includegraphics[width=\textwidth]{figures/q1_profiles.pdf}
+\caption{300、600、1200和1800\unit{s}的径向温度及含水率剖面。各曲线取自同一正式运行的10241节点快照，并与0.1\unit{cm}间隔的输出值交叉核对。}\label{fig:q1-profiles}
+\end{figure}
+
+中截面的面积加权平均量定义为
+\begin{equation}
+\overline u(t)=\frac{2}{R^2}\int_0^R u(r,t)r\,\mathrm{d}r,\qquad u=T\text{或}C.
+\label{eq:radial-average}
+\end{equation}
+采用求解网格上的控制体权重计算，1800\unit{s}得到$\overline T=35.1679\celsius$、$\overline C=2.2936\unit{kg/kg}$。平均含水率相对初值下降约10.06\%，但这不足以代表轴心已经接近干燥完成，也不能把中截面平均温度等同于含端部效应的全圆柱平均温度。
+
+\subsection{热扩散与水分扩散的时间尺度}
+取共同长度尺度$R$，定义
+\begin{equation}
+\tau_T=\frac{R^2}{\alpha},\qquad
+\tau_C=\frac{R^2}{D(C_0)},\qquad
+\alpha=\frac{k}{\rho c_p}=1.6886\times10^{-7}\unit{m^2/s}.
+\label{eq:diffusion-times}
+\end{equation}
+由$D(C_0)=4.9377\times10^{-9}\unit{m^2/s}$，计算得$\tau_T=2368.89\unit{s}$、$\tau_C=81010.11\unit{s}$，故$\tau_C/\tau_T=34.20$，约为1.53个数量级。该比较使用相同几何尺度和初始水分扩散系数；由于$D$随局部$C$变化，$\tau_C$不是全程恒定的干燥时长。
+
+1800\unit{s}时的特征扩散长度$\sqrt{\alpha t}=1.7434\unit{cm}$、$\sqrt{D(C_0)t}=0.2981\unit{cm}$，解释了温度与水分响应的空间差异。这两个长度是尺度估计，不是依据固定阈值测得的渗透深度。上述结果支持前30分钟内水分扩散慢于热扩散；全过程的控制机制和达到干燥要求的时间仍需结合后续变物性模型与终止条件确定。
+\FloatBarrier

@@ -1,0 +1,763 @@
+{
+  "status": "PASS: actual PDF numerical tables, frozen assets, abstract, layout log and citations checked; visual review is separate",
+  "scope": "Q1 and Q2 stage paper, not the complete four-question submission",
+  "production_model_rerun": false,
+  "checks": {
+    "manifest_has_sources_and_outputs_q1_asset_manifest.json": {
+      "passed": true,
+      "details": null
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q1_history.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q1_history.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q1_history.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q1_history.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q1_profiles.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q1_profiles.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q1_profiles.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q1_profiles.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q1_temperature.tex": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q1_temperature.tex"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q1_temperature.csv": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q1_temperature.csv"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q1_moisture.tex": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q1_moisture.tex"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q1_moisture.csv": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q1_moisture.csv"
+    },
+    "asset_builder_hash_q1_asset_manifest.json": {
+      "passed": true,
+      "details": "paper/build_assets.py"
+    },
+    "manifest_has_sources_and_outputs_q2_asset_manifest.json": {
+      "passed": true,
+      "details": null
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_profiles.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_profiles.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_profiles.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_profiles.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_history.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_history.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_history.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_history.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_mechanism.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_mechanism.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_mechanism.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_mechanism.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_sensitivity.pdf": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_sensitivity.pdf"
+    },
+    "new_stage_asset_paper/q1_q2_stage/figures/q2_sensitivity.png": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\figures\\q2_sensitivity.png"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q2_temperature.csv": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q2_temperature.csv"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q2_temperature.tex": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q2_temperature.tex"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q2_moisture.csv": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q2_moisture.csv"
+    },
+    "new_stage_asset_paper/q1_q2_stage/tables/q2_moisture.tex": {
+      "passed": true,
+      "details": "D:\\Desktop\\CUMCM26\\paper\\q1_q2_stage\\tables\\q2_moisture.tex"
+    },
+    "asset_builder_hash_q2_asset_manifest.json": {
+      "passed": true,
+      "details": "paper/q1_q2_stage/build_q2_assets.py"
+    },
+    "q2_snapshot_contains_output/q2_unrounded.npz": {
+      "passed": true,
+      "details": null
+    },
+    "q2_snapshot_contains_output/result2.xlsx": {
+      "passed": true,
+      "details": null
+    },
+    "q2_snapshot_contains_output/table_temperature.csv": {
+      "passed": true,
+      "details": null
+    },
+    "q2_snapshot_contains_output/table_moisture.csv": {
+      "passed": true,
+      "details": null
+    },
+    "frozen_source_hashes": {
+      "passed": true,
+      "details": []
+    },
+    "figure_and_table_hashes": {
+      "passed": true,
+      "details": []
+    },
+    "previous_q1_paper_assets_preserved": {
+      "passed": true,
+      "details": []
+    },
+    "claim_paths_claim_evidence.csv": {
+      "passed": true,
+      "details": null
+    },
+    "compiled_pdf_exists": {
+      "passed": true,
+      "details": null
+    },
+    "q1_pdf_table_exact_four_decimal_match": {
+      "passed": true,
+      "details": {
+        "expected_rows": 14,
+        "actual_rows": 14,
+        "first_difference": null
+      }
+    },
+    "q1_expected_value_count": {
+      "passed": true,
+      "details": null
+    },
+    "q2_pdf_table_exact_four_decimal_match": {
+      "passed": true,
+      "details": {
+        "expected_rows": 12,
+        "actual_rows": 12,
+        "first_difference": null
+      }
+    },
+    "q2_expected_value_count": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_33.5753": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_36.7856": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_3.2102": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_2.5500": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_1.5102": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_34.20": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_2368.89": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_81010.11": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_0.6044": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_0.8095": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_33.3008": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_49.8495": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_49.9664": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_1.7662": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_1.0081": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_2.1957": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_1.8207": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_1.06": {
+      "passed": true,
+      "details": null
+    },
+    "pdf_key_number_3.16": {
+      "passed": true,
+      "details": null
+    },
+    "no_pdf_missing_glyph_or_unresolved_marker": {
+      "passed": true,
+      "details": null
+    },
+    "stage_disclosure": {
+      "passed": true,
+      "details": null
+    },
+    "abstract_fits_first_page": {
+      "passed": true,
+      "details": null
+    },
+    "q2_abstract_has_all_four_endpoints": {
+      "passed": true,
+      "details": null
+    },
+    "body_starts_after_abstract_page": {
+      "passed": true,
+      "details": null
+    },
+    "two_extractors_agree_page_count": {
+      "passed": true,
+      "details": null
+    },
+    "a4_page_1": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_1": {
+      "passed": true,
+      "details": {
+        "characters": 833
+      }
+    },
+    "a4_page_2": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_2": {
+      "passed": true,
+      "details": {
+        "characters": 1391
+      }
+    },
+    "a4_page_3": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_3": {
+      "passed": true,
+      "details": {
+        "characters": 1080
+      }
+    },
+    "a4_page_4": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_4": {
+      "passed": true,
+      "details": {
+        "characters": 1408
+      }
+    },
+    "a4_page_5": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_5": {
+      "passed": true,
+      "details": {
+        "characters": 1402
+      }
+    },
+    "a4_page_6": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_6": {
+      "passed": true,
+      "details": {
+        "characters": 1217
+      }
+    },
+    "a4_page_7": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_7": {
+      "passed": true,
+      "details": {
+        "characters": 938
+      }
+    },
+    "a4_page_8": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_8": {
+      "passed": true,
+      "details": {
+        "characters": 1266
+      }
+    },
+    "a4_page_9": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_9": {
+      "passed": true,
+      "details": {
+        "characters": 1401
+      }
+    },
+    "a4_page_10": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_10": {
+      "passed": true,
+      "details": {
+        "characters": 1411
+      }
+    },
+    "a4_page_11": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_11": {
+      "passed": true,
+      "details": {
+        "characters": 1309
+      }
+    },
+    "a4_page_12": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_12": {
+      "passed": true,
+      "details": {
+        "characters": 839
+      }
+    },
+    "a4_page_13": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_13": {
+      "passed": true,
+      "details": {
+        "characters": 1039
+      }
+    },
+    "a4_page_14": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_14": {
+      "passed": true,
+      "details": {
+        "characters": 1176
+      }
+    },
+    "a4_page_15": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_15": {
+      "passed": true,
+      "details": {
+        "characters": 933
+      }
+    },
+    "a4_page_16": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_16": {
+      "passed": true,
+      "details": {
+        "characters": 1374
+      }
+    },
+    "a4_page_17": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_17": {
+      "passed": true,
+      "details": {
+        "characters": 1501
+      }
+    },
+    "a4_page_18": {
+      "passed": true,
+      "details": null
+    },
+    "text_page_18": {
+      "passed": true,
+      "details": {
+        "characters": 584
+      }
+    },
+    "no_overflow_missing_glyph_or_undefined_reference": {
+      "passed": true,
+      "details": []
+    },
+    "tex_labels_unique": {
+      "passed": true,
+      "details": null
+    },
+    "references_have_labels": {
+      "passed": true,
+      "details": []
+    },
+    "bibliography_keys_unique": {
+      "passed": true,
+      "details": null
+    },
+    "citations_have_bibliography_entries": {
+      "passed": true,
+      "details": []
+    },
+    "compiled_citations_match_sources": {
+      "passed": true,
+      "details": {
+        "source": [
+          "adrover2020",
+          "ashrae",
+          "comsol",
+          "dasilva2014",
+          "fao",
+          "problem",
+          "scipy"
+        ],
+        "compiled": [
+          "adrover2020",
+          "ashrae",
+          "comsol",
+          "dasilva2014",
+          "fao",
+          "problem",
+          "scipy"
+        ]
+      }
+    },
+    "compiled_bibliography_matches_sources": {
+      "passed": true,
+      "details": null
+    },
+    "compiled_labels_include_all_source_labels": {
+      "passed": true,
+      "details": []
+    },
+    "compiled_bibliography_unique": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q1_history.pdf": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q1_profiles.pdf": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q2_profiles.pdf": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q2_history.pdf": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q2_mechanism.pdf": {
+      "passed": true,
+      "details": null
+    },
+    "included_figure_has_verified_manifest_figures/q2_sensitivity.pdf": {
+      "passed": true,
+      "details": null
+    }
+  },
+  "validator_sha256": "321b34072d8f09e5a290f134956dde95d8e159a3f3a6c324305348570f747b34",
+  "frozen_source_hash_checks": {
+    "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": true,
+    "q1_complete_delivery/q1_delivery/output/T_n10240.npz": true,
+    "q1_complete_delivery/q1_delivery/output/C_n10240.npz": true,
+    "q1_complete_delivery/q1_delivery/output/table_temperature.csv": true,
+    "q1_complete_delivery/q1_delivery/output/table_moisture.csv": true,
+    "q2_final_delivery/output/q2_unrounded.npz": true,
+    "q2_final_delivery/output/table_temperature.csv": true,
+    "q2_final_delivery/output/table_moisture.csv": true,
+    "q2_refinement_delivery/data/mechanism_unrounded.npz": true,
+    "q2_refinement_delivery/reused/sensitivity_tracks.npz": true,
+    "q2_refinement_delivery/data/parameter_sensitivity_timeseries.csv": true,
+    "paper/build_assets.py": true,
+    "q1_complete_delivery/q1_delivery/input/附件1.xlsx": true,
+    "q1_complete_delivery/q1_delivery/source/q1_solver.py": true,
+    "q1_complete_delivery/q1_delivery/output/第一问论文正文.md": true,
+    "q1_complete_delivery/q1_delivery/output/result1.xlsx": true,
+    "q2_final_delivery/output/result2.xlsx": true
+  },
+  "figure_and_table_hash_checks": {
+    "paper/q1_q2_stage/figures/q1_history.pdf": true,
+    "paper/q1_q2_stage/figures/q1_history.png": true,
+    "paper/q1_q2_stage/figures/q1_profiles.pdf": true,
+    "paper/q1_q2_stage/figures/q1_profiles.png": true,
+    "paper/q1_q2_stage/tables/q1_temperature.tex": true,
+    "paper/q1_q2_stage/tables/q1_temperature.csv": true,
+    "paper/q1_q2_stage/tables/q1_moisture.tex": true,
+    "paper/q1_q2_stage/tables/q1_moisture.csv": true,
+    "paper/q1_q2_stage/figures/q2_profiles.pdf": true,
+    "paper/q1_q2_stage/figures/q2_profiles.png": true,
+    "paper/q1_q2_stage/figures/q2_history.pdf": true,
+    "paper/q1_q2_stage/figures/q2_history.png": true,
+    "paper/q1_q2_stage/figures/q2_mechanism.pdf": true,
+    "paper/q1_q2_stage/figures/q2_mechanism.png": true,
+    "paper/q1_q2_stage/figures/q2_sensitivity.pdf": true,
+    "paper/q1_q2_stage/figures/q2_sensitivity.png": true,
+    "paper/q1_q2_stage/tables/q2_temperature.csv": true,
+    "paper/q1_q2_stage/tables/q2_temperature.tex": true,
+    "paper/q1_q2_stage/tables/q2_moisture.csv": true,
+    "paper/q1_q2_stage/tables/q2_moisture.tex": true
+  },
+  "asset_manifest_sha256": {
+    "paper/q1_q2_stage/evidence/q1_asset_manifest.json": "f99ec6c9d1e84bf61694840a6301473de8b8415ef9c9e7b577acdd4b46e188f0",
+    "paper/q1_q2_stage/evidence/q2_asset_manifest.json": "12250987b1d716a3a1e9e85eb38328af31a9ce4b2668936c3808fb3c2779e816"
+  },
+  "previous_q1_paper_hash_checks": {
+    "paper/.gitignore": true,
+    "paper/build.ps1": true,
+    "paper/build/.gitkeep": true,
+    "paper/build_assets.py": true,
+    "paper/evidence/AI使用阶段记录.md": true,
+    "paper/evidence/asset_manifest.json": true,
+    "paper/evidence/claim_evidence.csv": true,
+    "paper/evidence/paper_validation.json": true,
+    "paper/evidence/sources_and_scope.md": true,
+    "paper/evidence/论文部分稿验收.md": true,
+    "paper/figures/q1_history.pdf": true,
+    "paper/figures/q1_history.png": true,
+    "paper/figures/q1_profiles.pdf": true,
+    "paper/figures/q1_profiles.png": true,
+    "paper/main.tex": true,
+    "paper/sections/preliminaries.tex": true,
+    "paper/sections/q1_limits.tex": true,
+    "paper/sections/q1_model.tex": true,
+    "paper/sections/q1_results.tex": true,
+    "paper/tables/q1_moisture.csv": true,
+    "paper/tables/q1_moisture.tex": true,
+    "paper/tables/q1_temperature.csv": true,
+    "paper/tables/q1_temperature.tex": true,
+    "paper/validate_paper.py": true,
+    "paper/第一问论文阶段稿.pdf": true
+  },
+  "claim_evidence_rows": 30,
+  "pdf_table_values_checked": 130,
+  "pdf_table_values_by_question": {
+    "q1": 70,
+    "q2": 60
+  },
+  "pdf_tables_exact_four_decimal_match": true,
+  "abstract_page": 1,
+  "pdf": "paper/q1_q2_stage/第一二问论文阶段稿.pdf",
+  "pdf_sha256": "e63164e8bd6c9383939b733e86ebb9c2d97914249c03d192490919afcda15c63",
+  "page_count": 18,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 833,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 2,
+      "characters": 1391,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 3,
+      "characters": 1080,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 4,
+      "characters": 1408,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 5,
+      "characters": 1402,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 6,
+      "characters": 1217,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 7,
+      "characters": 938,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 8,
+      "characters": 1266,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 9,
+      "characters": 1401,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 10,
+      "characters": 1411,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 11,
+      "characters": 1309,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 12,
+      "characters": 839,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 13,
+      "characters": 1039,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 14,
+      "characters": 1176,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 15,
+      "characters": 933,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 16,
+      "characters": 1374,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 17,
+      "characters": 1501,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 18,
+      "characters": 584,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    }
+  ],
+  "undefined_or_overfull_or_missing_character_warnings": [],
+  "reference_checks": {
+    "label_count": 51,
+    "reference_count": 24,
+    "bibliography_keys": [
+      "problem",
+      "scipy",
+      "fao",
+      "ashrae",
+      "dasilva2014",
+      "adrover2020",
+      "comsol"
+    ],
+    "cited_keys": [
+      "adrover2020",
+      "ashrae",
+      "comsol",
+      "dasilva2014",
+      "fao",
+      "problem",
+      "scipy"
+    ],
+    "unused_bibliography_entries": [],
+    "source_aux_correspondence": true
+  },
+  "included_figures": [
+    "paper/q1_q2_stage/figures/q1_history.pdf",
+    "paper/q1_q2_stage/figures/q1_profiles.pdf",
+    "paper/q1_q2_stage/figures/q2_profiles.pdf",
+    "paper/q1_q2_stage/figures/q2_history.pdf",
+    "paper/q1_q2_stage/figures/q2_mechanism.pdf",
+    "paper/q1_q2_stage/figures/q2_sensitivity.pdf"
+  ],
+  "source_sha256": {
+    "paper/q1_q2_stage/main.tex": "955a0153a77408e1b784f8a1754ffde84b2fcadc88079e0e322cf886af3d4c5f",
+    "paper/q1_q2_stage/sections/preliminaries.tex": "86ac745921d952be4b8ed5fd128070866cfa6b2956db1e3ecf2593c04ed30c60",
+    "paper/q1_q2_stage/sections/q1_model.tex": "d14358c4e3df324568724750aac6f7097dbd9b11dc4df03fbbd1f864d401511b",
+    "paper/q1_q2_stage/sections/q1_results.tex": "5ec901a06542df89901ff431f8498b9167fda424ee8ecfd10f58757b407b57a0",
+    "paper/q1_q2_stage/tables/q1_temperature.tex": "077a6671aa61897225cb825d9d15706c03329c0b27b904e3d53749a1b74b7182",
+    "paper/q1_q2_stage/tables/q1_moisture.tex": "3d2fb27e23b1df02327f95755734cf529818bdc49d73b652ca3672372452b826",
+    "paper/q1_q2_stage/sections/q1_limits.tex": "88cc24eefdfe26e2cc673a7d36ddffb9fa251744af1686e5f3f9d5dd9982b20f",
+    "paper/q1_q2_stage/sections/q2_model.tex": "6894c877de1904cdb35e3a2ccb7aaf64ff1bcdc001ff15db38dc55c0a7a2d839",
+    "paper/q1_q2_stage/sections/q2_results.tex": "43c09edc073ff358ff4bbccfa504d2d7add64b9b4d032595607272f0d20b7979",
+    "paper/q1_q2_stage/tables/q2_temperature.tex": "58972aa9cedcd8f90246645a8de74eabf23dee02a8259ead22fd00d22c28a293",
+    "paper/q1_q2_stage/tables/q2_moisture.tex": "630b8f559841a1147fddd254f2b12c7f0754bcde5834bd950b27fed796a44d6e",
+    "paper/q1_q2_stage/sections/q2_limits.tex": "964ce9b5be17d75857009ec339d40af50d65391315a6ab75f665dc7b69691c6f"
+  }
+}

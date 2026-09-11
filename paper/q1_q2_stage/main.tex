@@ -1,0 +1,75 @@
+% !TEX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,graphicx}
+\usepackage{enumitem,caption,float,placeins,xcolor}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\linespread{1.18}
+\setlist{nosep,leftmargin=2em}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=6pt}
+\ctexset{section={format=\Large\bfseries,beforeskip=1.0ex plus .3ex,afterskip=.6ex},subsection={format=\large\bfseries,beforeskip=.8ex plus .2ex,afterskip=.4ex}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\renewcommand{\arraystretch}{1.18}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.90}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{5}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\newcommand{\unit}[1]{\ensuremath{\,\mathrm{#1}}}
+\newcommand{\celsius}{\ensuremath{\,{}^\circ\mathrm{C}}}
+\hypersetup{pdftitle={圆柱药材烘干的径向热质传输与变物性耦合分析（第一二问阶段稿）},pdfauthor={},pdfsubject={第一问与第二问，2026-09-11}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 圆柱药材烘干的径向热质传输\\与变物性耦合分析\par}
+\vspace{0.8em}
+{\small 论文阶段稿：第一问与第二问\quad 2026年9月11日}
+\end{center}
+\vspace{0.5em}
+\begin{center}\large\bfseries 摘\quad 要\end{center}
+针对圆柱药材在热风烘干中的温度与干基含水率分布，依据题给环境记录与分问物性参数，建立固定圆柱中截面的径向热质传输模型。以分段线性插值描述时变环境，表面采用等效含水率差的第三类边界，利用守恒型有限体积离散和隐式BDF时间积分求解，并以独立空间离散与时间方法检验计算结果。
+
+第一问采用附录2规定的固定热物性及含水率相关扩散系数，计算前1800\unit{s}预热过程。末时轴心、表面温度分别为33.5753\celsius、36.7856\celsius，干基含水率分别为2.5500、1.5102\unit{kg/kg}；初始水分扩散时间约为热扩散时间的34.20倍。全部75600个规定输出的四位小数与独立参考一致。
+
+第二问采用附录3的状态相关密度、比热容、导热系数及扩散系数，构成温度与水分双向耦合的有效模型。经网格细化和Richardson外推获得前3\unit{h}逐秒结果，453600个规定输出的四位小数及两张结果表60个数值通过独立核对。3\unit{h}时轴心、表面温度分别为49.8495\celsius、49.9664\celsius，干基含水率分别为1.7662、1.0081\unit{kg/kg}。对扩散系数作累计对数分解，发现升温促进与失水抑制同时存在；3\unit{h}轴心、表面扩散系数仍分别为初值的2.1957、1.8207倍，但最后半小时已分别下降约1.06\%、3.16\%，不能解释为全程单调增加。
+
+上述结果支持给定参数、等效表面边界与所列时域下的数值可靠性。气固平衡映射、潜热及收缩等机制仍需相应数据闭合；前3\unit{h}计算不等同于数天干燥全过程，数值一致性也不能替代真实药材实验验证。
+
+\vspace{0.5em}
+\noindent\textbf{关键词：}圆柱药材；热质耦合；变物性；有限体积法；扩散机制
+
+\vfill
+\noindent\small\textcolor{gray}{本稿已完成第一问与第二问。第三、第四问及完整代码附录尚未合入，用于论文审阅与后续续写。}
+\clearpage
+\normalsize
+\input{sections/preliminaries}
+\input{sections/q1_model}
+\input{sections/q1_results}
+\input{sections/q1_limits}
+\FloatBarrier
+\input{sections/q2_model}
+\input{sections/q2_results}
+\input{sections/q2_limits}
+\FloatBarrier
+\section*{AI工具使用声明（阶段记录）}
+本阶段使用AI工具辅助进行模型审查、代码与结果核对、图表生成及论文文字整理。第二问正文采用已经独立验收的结果，并核对新增机制分析、参数情景及引用范围。本稿保留数值复算与独立审查记录；代理复核不等同于参赛队员的人工审查。实际使用过程及待补全信息记录于支撑文档，全文完成后据实际采纳和人工核验情况统一整理最终声明与使用详情。
+\begin{thebibliography}{9}
+\small
+\bibitem{problem} 用户提供的《药材的烘干问题》[Z]. 题面第一至第四问、附录1至4及附件1至3，项目原始资料，2026.
+\bibitem{scipy} SciPy. BDF --- SciPy v1.17.0 Manual[EB/OL]. [2026-09-10]. \url{https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.integrate.BDF.html}.
+\bibitem{fao} Allen R G, Pereira L S, Raes D, Smith M. Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements[M/OL]. FAO Irrigation and Drainage Paper 56. Rome: FAO, 1998. Chapter 3[2026-09-10]. \url{https://www.fao.org/4/X0490E/x0490e07.htm}.
+\bibitem{ashrae} ASHRAE. 2017 ASHRAE Handbook---Fundamentals: Chapter 1, Psychrometrics[EB/OL]. [2026-09-10]. \href{https://handbook.ashrae.org/Handbooks/F17/IP/f17_ch01/f17_ch01_ip.aspx}{ASHRAE Handbook 官方在线版}.
+\bibitem{dasilva2014} da Silva W P, e Silva C M D P S, Gama F J A. Estimation of thermo-physical properties of products with cylindrical shape during drying: The coupling between mass and heat[J]. Journal of Food Engineering, 2014, 141: 65--73. \href{https://doi.org/10.1016/j.jfoodeng.2014.05.010}{doi:10.1016/j.jfoodeng.2014.05.010}.
+\bibitem{adrover2020} Adrover A, Venditti C, Brasiello A. A Non-Isothermal Moving-Boundary Model for Continuous and Intermittent Drying of Pears[J]. Foods, 2020, 9(11): 1577. \href{https://doi.org/10.3390/foods9111577}{doi:10.3390/foods9111577}.
+\bibitem{comsol} COMSOL. The Heat and Moisture Transport Multiphysics Interfaces: COMSOL 6.3 Documentation[EB/OL]. [2026-09-11]. \href{https://doc.comsol.com/6.3/doc/com.comsol.help.heat/heat_ug_multiphysics_interfaces.11.36.html}{COMSOL 官方热湿耦合接口文档}.
+\end{thebibliography}
+\end{document}
