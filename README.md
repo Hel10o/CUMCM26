@@ -2,6 +2,8 @@
 
 项目题目、建模资料、前三问计算交付，以及独立核验和第一、二问论文阶段稿。
 
+当前交给Pro的任务是[前三问二维与潜热影响评估及最终建模路线](q123_model_selection_handoff/README.md)：先定量比较二维、潜热和交互作用，再推荐最终模型。[最新提示词](q123_model_selection_handoff/发给Pro的提示词.txt)与[离线输入包](q123_model_selection_handoff/q123_model_selection_inputs.zip)配套使用。历史物理闭合交接仍作技术背景，本轮不要求立即定稿所有Excel和论文。
+
 ## 通过 ChatGPT 的 GitHub 连接读取
 
 先读取 [网页模型阅读入口](readable/README.md)。其中包含4篇论文和原题的逐页Markdown全文，均为普通Git文件，不需要PDF解析或Git LFS下载。
