@@ -1,0 +1,7 @@
+START tests
+DONE tests {'passed': True, 'elapsed_s': 79.7666008999995}
+COMPLETE: False
+
+STDERR:
+D:\Desktop\CUMCM26\review_q1_20260910\.venv\Lib\site-packages\scipy\integrate\_ivp\bdf.py:416: RuntimeWarning: invalid value encountered in subtract
+  D[order + 2] = d - D[order + 1]

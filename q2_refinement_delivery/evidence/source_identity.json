@@ -1,0 +1,166 @@
+{
+  "adopted_remote_commit": "98774ff73704fa102d52870cd84b2a33798083e3",
+  "parent_prior_remote_commit": "1942d7506632e94853b32772c7c9bb4ba3a3c0be",
+  "commit_time_utc": "2026-09-11T06:06:03Z",
+  "content_basis": "Uploaded accepted outputs; actual current connector files used for identity and source reading. No edits to either baseline.",
+  "checked_file_identities": [
+    {
+      "remote_path": "A题/A题.pdf",
+      "uploaded_path": "q2_final_delivery/inputs/题目原件.pdf",
+      "remote_git_blob": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+      "actual_upload_git_blob": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "matches": true
+    },
+    {
+      "remote_path": "A题/附件/附件1.xlsx",
+      "uploaded_path": "q2_final_delivery/inputs/附件1.xlsx",
+      "remote_git_blob": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "actual_upload_git_blob": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "matches": true
+    },
+    {
+      "remote_path": "A题/附件/附件3/result2.xlsx",
+      "uploaded_path": "q2_final_delivery/inputs/result2_template.xlsx",
+      "remote_git_blob": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "actual_upload_git_blob": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "matches": true
+    },
+    {
+      "remote_path": "review_q2_20260911/第二问验收报告.md",
+      "uploaded_path": "review_q2_20260911/第二问验收报告.md",
+      "remote_git_blob": "18f02d9e14761e89d04566450db9ceeaa7e57578",
+      "actual_upload_git_blob": "18f02d9e14761e89d04566450db9ceeaa7e57578",
+      "sha256": "c5749c6ca85616f92e2903a3bdb5102392c2410c32e37f4759d9209f05ad96fa",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/run_all.py",
+      "uploaded_path": "q2_final_delivery/run_all.py",
+      "remote_git_blob": "848c2003ffde07d569de46414821faaa44500e44",
+      "actual_upload_git_blob": "848c2003ffde07d569de46414821faaa44500e44",
+      "sha256": "479cacbe2e455e1398d1c6d87d9aeef9e5955554e060273a69c7237713dfcc9f",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_refinement_handoff/MANIFEST.sha256",
+      "uploaded_path": "q2_refinement_handoff/MANIFEST.sha256",
+      "remote_git_blob": "c8c16c5e8843c17bd6f928aee983f2e5b5e82bf2",
+      "actual_upload_git_blob": "b8114918c5c18b5a8874f0c5a5b9a93213e84bb9",
+      "sha256": "5a24d593844b0b90da93768062a0ca07d84fa14d3d53d6be04bdc178d97f57a6",
+      "matches": false
+    },
+    {
+      "remote_path": "q2_refinement_handoff/第二问深化分析提示词.md",
+      "uploaded_path": "q2_refinement_handoff/第二问深化分析提示词.md",
+      "remote_git_blob": "b6f167383a0580a7f409b37664b2cbba0343a498",
+      "actual_upload_git_blob": "58242b7c003d23a0bee7f1a7008beb9bf225d135",
+      "sha256": "795979f2ab57085820e2b2ea4b7027d0fcc6aef34f737bfe095280cf395bbfe4",
+      "matches": false
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_core.py",
+      "uploaded_path": "q2_final_delivery/source/q2_core.py",
+      "remote_git_blob": "1da48e84d908cbf4994e83bf79b4f07e17365813",
+      "actual_upload_git_blob": "1da48e84d908cbf4994e83bf79b4f07e17365813",
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_spectral.py",
+      "uploaded_path": "q2_final_delivery/source/q2_spectral.py",
+      "remote_git_blob": "181fa6acda1acd4e93cc698a833412dba212fc60",
+      "actual_upload_git_blob": "181fa6acda1acd4e93cc698a833412dba212fc60",
+      "sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_axisymmetric.py",
+      "uploaded_path": "q2_final_delivery/source/q2_axisymmetric.py",
+      "remote_git_blob": "3213312ba5fabd3dddd8e0a240cfc531737d91f1",
+      "actual_upload_git_blob": "3213312ba5fabd3dddd8e0a240cfc531737d91f1",
+      "sha256": "4f747534ed9c419a6b731897f814f03a3d4bd2220deaa5fabb4c983d3ace512b",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_finalize.py",
+      "uploaded_path": "q2_final_delivery/source/q2_finalize.py",
+      "remote_git_blob": "08cbbcff6eabfb1afb41ea671c43a2ad1494d4d4",
+      "actual_upload_git_blob": "08cbbcff6eabfb1afb41ea671c43a2ad1494d4d4",
+      "sha256": "b28e735826ae9be7b3b2f28d3c9435ee9920054a56c2c68f8f0873a3fbfec8de",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_report.py",
+      "uploaded_path": "q2_final_delivery/source/q2_report.py",
+      "remote_git_blob": "846c71584ec1132abb1f0807882a70259a31d7ff",
+      "actual_upload_git_blob": "846c71584ec1132abb1f0807882a70259a31d7ff",
+      "sha256": "6ebe219cadf9ed2de4255a2500fed6e7c56adcfe3823c3672da2363920175a0a",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_audit.py",
+      "uploaded_path": "q2_final_delivery/source/q2_audit.py",
+      "remote_git_blob": "6397bce9cc5565753abeb8670b8e94c740997714",
+      "actual_upload_git_blob": "6397bce9cc5565753abeb8670b8e94c740997714",
+      "sha256": "aa221a43d425ce5737e9dc8471d35120fe530bd41af9e9b7827c6310652ebd0c",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_tests.py",
+      "uploaded_path": "q2_final_delivery/source/q2_tests.py",
+      "remote_git_blob": "d08130f710ef2d5cec5c3fe983b9fd43d1a310c4",
+      "actual_upload_git_blob": "d08130f710ef2d5cec5c3fe983b9fd43d1a310c4",
+      "sha256": "822d28b2e6a88c82ad91479d95cfc3353d31006baa49b69effdc2647e7004654",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_geometry_tests.py",
+      "uploaded_path": "q2_final_delivery/source/q2_geometry_tests.py",
+      "remote_git_blob": "14ceab329ebcaeece3dfe0bc99fb112bad94de58",
+      "actual_upload_git_blob": "14ceab329ebcaeece3dfe0bc99fb112bad94de58",
+      "sha256": "39a07dd3e8d99661bc18d87499d3e38210793a4587f0b3c6fe633a3386394f76",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_excel.py",
+      "uploaded_path": "q2_final_delivery/source/q2_excel.py",
+      "remote_git_blob": "771c8a90d8aae7ec19fd60b8fb92b47562c86a0c",
+      "actual_upload_git_blob": "771c8a90d8aae7ec19fd60b8fb92b47562c86a0c",
+      "sha256": "81213778fde7d1cbc755dbc6ce58f4bea79148e72ee27d847964c19c42700219",
+      "matches": true
+    },
+    {
+      "remote_path": "q2_final_delivery/source/q2_xlsx_portable.py",
+      "uploaded_path": "q2_final_delivery/source/q2_xlsx_portable.py",
+      "remote_git_blob": "9d92a959c97f53256c575a03ac1106126de38706",
+      "actual_upload_git_blob": "9d92a959c97f53256c575a03ac1106126de38706",
+      "sha256": "817d71222006476ac007ecf399e9968a605bced7ae4a6336ad942531477d08a0",
+      "matches": true
+    }
+  ],
+  "archive_comparison": {
+    "uploaded_bytes": 21025481,
+    "uploaded_sha256": "a1bcaa8c1d8025b1f6bef07d888436a4797ff22b8bec1bfd5a4138b6ff7f715e",
+    "uploaded_git_blob": "1624697c33eec08fdc5107c08d8853f2a009d1ac",
+    "remote_zip_bytes": 21010377,
+    "remote_zip_git_blob": "ae920e88ff8afe3ebaabb24212a2a0b7b2c83b85",
+    "byte_identical": false,
+    "warning": "Remote ZIP binary not downloaded; no whole-archive content-equivalence claim."
+  },
+  "known_prompt_difference": "Uploaded section 1 says Q2 unpushed; current remote lines14-16 state it has been synchronized. Other remote prompt lines not fetched for a full textual diff.",
+  "new_sources": {
+    "papers": [
+      "readable/papers/da-silva-2014/pages/004.md",
+      "readable/papers/adrover-2020/pages/005.md",
+      "readable/papers/adrover-2020/pages/006.md"
+    ],
+    "old_code_ranges": {
+      "q1_complete_delivery/q1_delivery/source/q1_solver.py": "108-155",
+      "review_q1_20260910/第一问审核报告.md": "80-110"
+    },
+    "binary_method": "Original PDF and workbooks: uploaded actual bytes, checked against connector blob IDs. Direct remote binary download unsuccessful. No LFS pointer treated as PDF."
+  }
+}

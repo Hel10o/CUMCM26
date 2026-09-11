@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction; exact rational equalities",
+  "independent_of_pro_code": true,
+  "checks": {
+    "energy_mass_elimination": 64,
+    "domain_reference_invariance": 64,
+    "surface_total_flux": 64,
+    "surface_reference_invariance": 64,
+    "boundary_nonuniqueness_positive_b": 64,
+    "density_derivative_identity": 64,
+    "coefficient_basis_conversion": 64
+  },
+  "scope": "Synthetic algebra checks only. No PDE, material calibration or physical accuracy claim.",
+  "important_condition": "The same water enthalpy reference shift must be applied to both h_v and h_bar_w at the surface."
+}

@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-11",
+  "source": "q2_refinement_delivery/figures",
+  "method": "Direct visual inspection of original PNGs through view_image; data checks are separate in numeric/.",
+  "inspected_pngs": [
+    "01_D_competition.png",
+    "02_log_contributions.png",
+    "05_instantaneous_rates.png",
+    "07_instantaneous_rates.png",
+    "08_sensitivity_hm.png",
+    "09_sensitivity_hT.png",
+    "10_mapping_flux_diagnostic.png"
+  ],
+  "checked": ["legible axes and legends", "visible units and time scope", "no visible clipping of titles or labels", "curves consistent with numerical report", "algebraic mapping diagnostic labeled separately from PDE sensitivity"],
+  "blocking_findings": [],
+  "limitations": ["7 of 10 original PNG figures inspected, not all SVG renderers or final paper page layout", "English figure labels may be localized when composing the Chinese paper", "new cross-platform figure bytes are not expected to match the original PNG/SVG bytes"]
+}

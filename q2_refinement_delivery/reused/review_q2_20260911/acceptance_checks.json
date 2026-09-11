@@ -1,0 +1,317 @@
+{
+  "scope": "Fresh local ten-stage reproduction of the declared effective radial Q2 model, 0..10800 s; not experimental validation or a days-long drying result.",
+  "command": [
+    "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\Desktop\\CUMCM26\\q2_final_delivery\\run_all.py",
+    "--out",
+    "D:\\Desktop\\CUMCM26\\review_q2_20260911\\reproduced",
+    "--excel-engine",
+    "portable"
+  ],
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "exit_code": 0,
+  "complete": true,
+  "stages": {
+    "mesh": {
+      "passed": true,
+      "elapsed_s": 200.65693320000003
+    },
+    "reference": {
+      "passed": true,
+      "elapsed_s": 88.25619240000003
+    },
+    "tests": {
+      "passed": true,
+      "elapsed_s": 35.344491500000004
+    },
+    "time": {
+      "passed": true,
+      "elapsed_s": 42.28746990000002
+    },
+    "sensitivity": {
+      "passed": true,
+      "elapsed_s": 116.52922520000004
+    },
+    "geometry": {
+      "passed": true,
+      "elapsed_s": 353.3059048
+    },
+    "assemble": {
+      "passed": true,
+      "elapsed_s": 16.67182109999999
+    },
+    "excel": {
+      "passed": true,
+      "elapsed_s": 1.0602768999999626
+    },
+    "report": {
+      "passed": true,
+      "elapsed_s": 6.696296600000096
+    },
+    "audit": {
+      "passed": true,
+      "elapsed_s": 4.993051599999944
+    }
+  },
+  "sum_stage_elapsed_s": 865.8016632000001,
+  "original_delivery_files_checked": 119,
+  "original_delivery_files_changed": [],
+  "original_inputs": {
+    "题目原件.pdf": {
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "matches_original": true
+    },
+    "附件1.xlsx": {
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "matches_original": true
+    },
+    "result2_template.xlsx": {
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "matches_original": true
+    }
+  },
+  "full_field_comparison_with_delivery": {
+    "temperature_degC": {
+      "max_abs": 8.526512829121202e-14,
+      "rms": 1.5587700071250372e-14,
+      "index": [
+        8690,
+        6
+      ],
+      "four_decimal_mismatches": 0
+    },
+    "moisture_dry_basis": {
+      "max_abs": 5.329070518200751e-15,
+      "rms": 1.05646350564523e-15,
+      "index": [
+        5119,
+        1
+      ],
+      "four_decimal_mismatches": 0
+    }
+  },
+  "paper_60_values_comparison_with_delivery": {
+    "temperature_degC": {
+      "max_abs": 2.842170943040401e-14,
+      "rms": 1.1383477120998878e-14,
+      "index": [
+        5,
+        2
+      ],
+      "four_decimal_mismatches": 0
+    },
+    "moisture_dry_basis": {
+      "max_abs": 2.6645352591003757e-15,
+      "rms": 9.847037774550072e-16,
+      "index": [
+        2,
+        1
+      ],
+      "four_decimal_mismatches": 0
+    }
+  },
+  "fresh_excel_audit": {
+    "all_passed": true,
+    "sheet_names": [
+      "温度",
+      "水分浓度"
+    ],
+    "total_result_values": 453600,
+    "sheets": {
+      "温度": {
+        "result_rows": 10800,
+        "result_columns": 21,
+        "first_time_s": 1.0,
+        "last_time_s": 10800.0,
+        "first_radius_cm": 0.0,
+        "last_radius_cm": 2.0,
+        "top_left_result": 28.0,
+        "bottom_right_result": 49.9664,
+        "all_numeric_finite": true,
+        "all_result_formats_0000": true,
+        "exact_rounded_raw_match": true,
+        "maximum_rounding_difference": 4.999990407128507e-05,
+        "no_missing_ellipsis_or_formulas": true
+      },
+      "水分浓度": {
+        "result_rows": 10800,
+        "result_columns": 21,
+        "first_time_s": 1.0,
+        "last_time_s": 10800.0,
+        "first_radius_cm": 0.0,
+        "last_radius_cm": 2.0,
+        "top_left_result": 2.55,
+        "bottom_right_result": 1.0081,
+        "all_numeric_finite": true,
+        "all_result_formats_0000": true,
+        "exact_rounded_raw_match": true,
+        "maximum_rounding_difference": 4.999987745946122e-05,
+        "no_missing_ellipsis_or_formulas": true
+      }
+    },
+    "xlsx_hash": {
+      "sha256": "61e7d27696352e88d322c5cc5e2d0e33141ead71d2c39fce72b1b5fe9972dec8",
+      "git_blob_sha1": "defa9fa2f170c70508977927aef6986f227e3c27",
+      "bytes": 2507535
+    },
+    "paper_tables_checked": true,
+    "paper_values_checked": 60
+  },
+  "fresh_independent_reference_comparison": {
+    "temperature_degC": {
+      "final_vs_independent": {
+        "max_abs": 1.0470273537066532e-09,
+        "rms": 1.266090576981046e-10,
+        "index": [
+          9480,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 9481.0,
+        "radius_cm": 2.0
+      },
+      "table_vs_independent": {
+        "max_abs": 3.511928525767871e-10,
+        "rms": 1.6786988851075753e-10,
+        "index": [
+          4,
+          4
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 9000.0,
+        "radius_cm": 2.0
+      },
+      "Richardson_1280_vs_2560": {
+        "max_abs": 1.1817178346973378e-09,
+        "rms": 1.2250377047862093e-10,
+        "index": [
+          10680,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 10681.0,
+        "radius_cm": 2.0
+      },
+      "spectral_128_vs_192": {
+        "max_abs": 7.674572088944842e-11,
+        "rms": 4.075031228737622e-12,
+        "index": [
+          1383,
+          19
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1384.0,
+        "radius_cm": 1.9000000000000001
+      },
+      "fine_FV_vs_independent": {
+        "max_abs": 1.0331782362982267e-07,
+        "rms": 2.3040855627764375e-08,
+        "index": [
+          2939,
+          20
+        ],
+        "four_decimal_mismatches": 36,
+        "time_s": 2940.0,
+        "radius_cm": 2.0
+      }
+    },
+    "moisture_dry_basis": {
+      "final_vs_independent": {
+        "max_abs": 8.477118473848577e-08,
+        "rms": 1.9457772966217828e-10,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      },
+      "table_vs_independent": {
+        "max_abs": 8.818279439992693e-12,
+        "rms": 3.6145234187032356e-12,
+        "index": [
+          1,
+          0
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 3600.0,
+        "radius_cm": 0.0
+      },
+      "Richardson_1280_vs_2560": {
+        "max_abs": 1.3516514494327225e-06,
+        "rms": 3.088365896337819e-09,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      },
+      "spectral_128_vs_192": {
+        "max_abs": 1.2294609774698984e-12,
+        "rms": 4.187114984262574e-14,
+        "index": [
+          6437,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 6438.0,
+        "radius_cm": 2.0
+      },
+      "fine_FV_vs_independent": {
+        "max_abs": 1.9902774864632988e-05,
+        "rms": 1.0328235650385885e-07,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 45,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      }
+    }
+  },
+  "fresh_balance": {
+    "grid": 1280,
+    "method": "six-point Gauss quadrature of independently differentiated accepted BDF polynomial and boundary flux on every accepted step",
+    "mass_quantity": "volume average of C; multiply by constant reference dry density for an effective water inventory",
+    "thermal_quantity": "space-time integral of S(C)*T_t, NOT endpoint difference of integral S(C)*T",
+    "note": "Constituent FV balance is tested. Richardson postprocessing is not itself a new conservative time integrator.",
+    "water_balance_max_kgkg": 6.498135363131041e-12,
+    "effective_heat_balance_max_J_m3": 0.0020736753940582275,
+    "net_heat_input_J_m3": 66653654.81244457,
+    "effective_heat_balance_relative": 3.111120312746995e-11,
+    "endpoint_ST28_proxy_J_m3": 54906818.58125775,
+    "proxy_minus_effective_heat_input_J_m3": -11746836.231186815
+  },
+  "fresh_unit_tests_passed": true,
+  "fresh_geometry_unit_tests_passed": true,
+  "surface_at_1s": {
+    "temperature_degC": 28.000129668744787,
+    "moisture_dry_basis": 2.51980514734992
+  },
+  "values_at_3h": {
+    "T_center": 49.849495583627146,
+    "T_surface": 49.966412934359134,
+    "C_center": 1.7661771010384424,
+    "C_surface": 1.0081231241945778,
+    "mean_T": 49.90432863692265,
+    "mean_C": 1.3825270573112691,
+    "effective_water_reduction_percent": 45.78325265446003
+  },
+  "runtime_warning_lines": [
+    "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Lib\\site-packages\\scipy\\integrate\\_ivp\\bdf.py:416: RuntimeWarning: invalid value encountered in subtract"
+  ],
+  "warning_note": "Warnings are retained; see the separate model-audit diagnosis. Passing result checks is not a claim of a warning-free run.",
+  "all_reproduction_checks_passed": true
+}

@@ -1,0 +1,288 @@
+{
+  "independence": "New direct-r collocation, expanded PDE, Radau and new input parser; no Pro numerical RHS imported.",
+  "new_reference_vs_original_delivery": {
+    "temperature_degC": {
+      "max_abs_difference": 1.3836185530635703e-09,
+      "rms_difference": 1.5059680288580844e-10,
+      "max_at_time_s_radius_cm": [
+        9123,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 1.1461414572977446e-07,
+      "rms_difference": 2.5505342853970387e-10,
+      "max_at_time_s_radius_cm": [
+        1,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    }
+  },
+  "paper_tables": {
+    "temperature_degC": {
+      "max_abs_difference": 4.9912313180300316e-05,
+      "rms_difference": 3.2385313941162864e-05,
+      "max_at_time_s_radius_cm": [
+        5400,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": [],
+      "paper_equals_csv": true,
+      "max_abs_difference_meaning": "Four-decimal displayed table versus unrounded reference; includes ordinary rounding error, not a solver error estimate."
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 4.845682443788135e-05,
+      "rms_difference": 2.8761922435936386e-05,
+      "max_at_time_s_radius_cm": [
+        7200,
+        0.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": [],
+      "paper_equals_csv": true,
+      "max_abs_difference_meaning": "Four-decimal displayed table versus unrounded reference; includes ordinary rounding error, not a solver error estimate."
+    }
+  },
+  "raw_60_values_vs_reference": {
+    "temperature_degC": {
+      "max_abs_difference": 4.1100634007307235e-10,
+      "rms_difference": 1.9601335435437797e-10,
+      "max_at_time_s_radius_cm": [
+        9000,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 4.279931964390471e-11,
+      "rms_difference": 1.6981637840857954e-11,
+      "max_at_time_s_radius_cm": [
+        1800,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    }
+  },
+  "independent_startup_convergence": {
+    "64_to_128": {
+      "temperature_degC": {
+        "max_abs_difference": 2.787459152386873e-11,
+        "rms_difference": 2.742854197861845e-12,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 3.091915803832279e-06,
+        "rms_difference": 8.959650440944178e-08,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "128_to_160": {
+      "temperature_degC": {
+        "max_abs_difference": 5.577760475716786e-13,
+        "rms_difference": 7.787812949789694e-14,
+        "max_at_time_s_radius_cm": [
+          45,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 4.147970855683525e-10,
+        "rms_difference": 2.2438305722916315e-11,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    }
+  },
+  "startup_first_second_surface": {
+    "64": 2.5198083234785957,
+    "128": 2.519805231562792,
+    "160": 2.519805231977589,
+    "delivery": 2.51980514734992,
+    "fresh_Pro_spectral192": 2.519805232121105,
+    "fresh_FV1280": 2.5198850975341185,
+    "fresh_FV2560": 2.5198251348959695,
+    "fresh_Richardson": 2.51980514734992
+  },
+  "all_453600_independent_four_decimal_results_equal": true,
+  "all_60_paper_values_equal_independent_rounding": true,
+  "fresh_parent_arrays_recomputed_metrics": {
+    "note": "Parent executed Pro code in a new directory; these metrics are independently recomputed here without importing its audit/finalization code. This section is a reproduction check, not a new numerical method.",
+    "original_vs_reconstructed_richardson": {
+      "temperature_degC": {
+        "max_abs_difference": 8.526512829121202e-14,
+        "rms_difference": 1.5587700071250372e-14,
+        "max_at_time_s_radius_cm": [
+          8691,
+          0.6
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 5.329070518200751e-15,
+        "rms_difference": 1.05646350564523e-15,
+        "max_at_time_s_radius_cm": [
+          5120,
+          0.1
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "richardson_to_new_spectral_192": {
+      "temperature_degC": {
+        "max_abs_difference": 1.0470273537066532e-09,
+        "rms_difference": 1.266090576981046e-10,
+        "max_at_time_s_radius_cm": [
+          9481,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 8.477118473848577e-08,
+        "rms_difference": 1.9457772966217828e-10,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "richardson_1280_to_2560": {
+      "temperature_degC": {
+        "max_abs_difference": 1.1817178346973378e-09,
+        "rms_difference": 1.2250377047862093e-10,
+        "max_at_time_s_radius_cm": [
+          10681,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 1.3516514494327225e-06,
+        "rms_difference": 3.088365896337819e-09,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "spectral_128_to_192": {
+      "temperature_degC": {
+        "max_abs_difference": 7.674572088944842e-11,
+        "rms_difference": 4.075031228737622e-12,
+        "max_at_time_s_radius_cm": [
+          1384,
+          1.9
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 1.2294609774698984e-12,
+        "rms_difference": 4.187114984262574e-14,
+        "max_at_time_s_radius_cm": [
+          6438,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "time_at_fixed_fv1280": {
+      "temperature_degC": {
+        "max_abs_difference": 7.628599973941164e-10,
+        "rms_difference": 7.58686321975513e-11,
+        "max_at_time_s_radius_cm": [
+          10681,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 7.136780055816416e-11,
+        "rms_difference": 1.912503145784245e-12,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "new_independent_direct_r96_to_new_pro_spectral192": {
+      "temperature_degC": {
+        "max_abs_difference": 4.473719172892743e-10,
+        "rms_difference": 5.2140196630495975e-11,
+        "max_at_time_s_radius_cm": [
+          7801,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      },
+      "moisture_dry_basis": {
+        "max_abs_difference": 2.984296099128869e-08,
+        "rms_difference": 7.817296478060186e-11,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    }
+  },
+  "startup160_vs_Pro192": {
+    "temperature_degC": {
+      "max_abs_difference": 1.8971491044794675e-12,
+      "rms_difference": 2.694412247554006e-13,
+      "max_at_time_s_radius_cm": [
+        48,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 1.4351586585803489e-10,
+      "rms_difference": 1.000433347422122e-11,
+      "max_at_time_s_radius_cm": [
+        1,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": []
+    }
+  }
+}

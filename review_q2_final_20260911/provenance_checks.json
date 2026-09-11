@@ -1,0 +1,137 @@
+{
+  "historical_commit": "98774ff73704fa102d52870cd84b2a33798083e3",
+  "actual_commit_time": "2026-09-11T14:06:03+08:00",
+  "recorded_commit_time_utc": "2026-09-11T06:06:03Z",
+  "historical_objects": [
+    {
+      "path": "A题/A题.pdf",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "A题/附件/附件1.xlsx",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "A题/附件/附件3/result2.xlsx",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "review_q2_20260911/第二问验收报告.md",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/run_all.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_refinement_handoff/MANIFEST.sha256",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": false
+    },
+    {
+      "path": "q2_refinement_handoff/第二问深化分析提示词.md",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": false
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_spectral.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_axisymmetric.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_finalize.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_report.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_audit.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_tests.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_geometry_tests.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_excel.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    },
+    {
+      "path": "q2_final_delivery/source/q2_xlsx_portable.py",
+      "historical_git_blob_matches": true,
+      "reported_upload_matches_remote": true
+    }
+  ],
+  "reused_file_checks": [
+    {
+      "path": "review_q2_20260911/acceptance_checks.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "review_q2_20260911/第二问验收报告.md",
+      "bytes_equal": true
+    },
+    {
+      "path": "review_q2_20260911/independent_numeric/independent_audit.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "review_q2_20260911/model_audit/model_audit.md",
+      "bytes_equal": true
+    },
+    {
+      "path": "review_q2_20260911/reproduced/run_state.json",
+      "bytes_equal": true
+    },
+    {
+      "path": "q2_final_delivery/inputs/result2_template.xlsx",
+      "bytes_equal": true
+    },
+    {
+      "path": "q2_final_delivery/inputs/附件1.xlsx",
+      "bytes_equal": true
+    },
+    {
+      "path": "q2_final_delivery/inputs/题目原件.pdf",
+      "bytes_equal": true
+    },
+    {
+      "path": "q2_final_delivery/output/q2_unrounded.npz",
+      "bytes_equal": true
+    },
+    {
+      "path": "q2_final_delivery/output/validation/validation.json",
+      "bytes_equal": true
+    }
+  ],
+  "original_q2_files_unchanged": 119,
+  "formal_result2_sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0",
+  "note": "Git object checks confirm identity, not every historical network interaction or omitted original sensitivity array."
+}

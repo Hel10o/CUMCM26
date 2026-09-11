@@ -1,0 +1,10 @@
+{
+  "written_by_current_successful_tests": [
+    "entry_first.log",
+    "entry_geometry_unit_tests.json",
+    "entry_integration.json",
+    "entry_refused.log",
+    "entry_resume.log",
+    "entry_unit_tests.json"
+  ]
+}

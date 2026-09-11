@@ -1,0 +1,5 @@
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+# No spreadsheet application or artifact_tool is needed for the new diagnostics.
+# The inherited portable Excel exporter was tested by the local 2026-09-11 review.

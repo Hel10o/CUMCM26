@@ -1,0 +1,226 @@
+{
+  "scope": "Copied package tests and isolated management counterexamples; no full ten-stage solve and no modification of original deliveries.",
+  "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+  "original_sources": [
+    {
+      "name": "q2_audit.py",
+      "original_sha256": "aa221a43d425ce5737e9dc8471d35120fe530bd41af9e9b7827c6310652ebd0c",
+      "runtime_sha256": "aa221a43d425ce5737e9dc8471d35120fe530bd41af9e9b7827c6310652ebd0c",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_axisymmetric.py",
+      "original_sha256": "4f747534ed9c419a6b731897f814f03a3d4bd2220deaa5fabb4c983d3ace512b",
+      "runtime_sha256": "4f747534ed9c419a6b731897f814f03a3d4bd2220deaa5fabb4c983d3ace512b",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_core.py",
+      "original_sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "runtime_sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_excel.py",
+      "original_sha256": "81213778fde7d1cbc755dbc6ce58f4bea79148e72ee27d847964c19c42700219",
+      "runtime_sha256": "81213778fde7d1cbc755dbc6ce58f4bea79148e72ee27d847964c19c42700219",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_finalize.py",
+      "original_sha256": "b28e735826ae9be7b3b2f28d3c9435ee9920054a56c2c68f8f0873a3fbfec8de",
+      "runtime_sha256": "b28e735826ae9be7b3b2f28d3c9435ee9920054a56c2c68f8f0873a3fbfec8de",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_geometry_tests.py",
+      "original_sha256": "39a07dd3e8d99661bc18d87499d3e38210793a4587f0b3c6fe633a3386394f76",
+      "runtime_sha256": "39a07dd3e8d99661bc18d87499d3e38210793a4587f0b3c6fe633a3386394f76",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_preview.py",
+      "original_sha256": "2ace86a098bcb95c2f2e23b884d6e34e615dc387fc04a8a4a752499cdc9d9043",
+      "runtime_sha256": "2ace86a098bcb95c2f2e23b884d6e34e615dc387fc04a8a4a752499cdc9d9043",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_report.py",
+      "original_sha256": "6ebe219cadf9ed2de4255a2500fed6e7c56adcfe3823c3672da2363920175a0a",
+      "runtime_sha256": "6ebe219cadf9ed2de4255a2500fed6e7c56adcfe3823c3672da2363920175a0a",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_spectral.py",
+      "original_sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33",
+      "runtime_sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_tests.py",
+      "original_sha256": "822d28b2e6a88c82ad91479d95cfc3353d31006baa49b69effdc2647e7004654",
+      "runtime_sha256": "822d28b2e6a88c82ad91479d95cfc3353d31006baa49b69effdc2647e7004654",
+      "byte_identical": true
+    },
+    {
+      "name": "q2_xlsx_portable.py",
+      "original_sha256": "817d71222006476ac007ecf399e9968a605bced7ae4a6336ad942531477d08a0",
+      "runtime_sha256": "817d71222006476ac007ecf399e9968a605bced7ae4a6336ad942531477d08a0",
+      "byte_identical": true
+    }
+  ],
+  "bundled_tests": [
+    {
+      "name": "test_run_guard.py",
+      "command": [
+        "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\candidate\\tests\\test_run_guard.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.954382699999769
+    },
+    {
+      "name": "check_entry.py",
+      "command": [
+        "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\candidate\\tests\\check_entry.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 81.20411669999976
+    }
+  ],
+  "probes": [
+    {
+      "name": "same_signature_upstream_recomputed_with_different_bytes_invalidates_downstream",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "old_assemble_text": "version one assemble",
+        "new_mesh_text": "version two same solver/config",
+        "valid_stages": {
+          "mesh": true,
+          "reference": true,
+          "tests": true,
+          "time": true,
+          "sensitivity": true,
+          "geometry": true,
+          "assemble": false,
+          "excel": false,
+          "report": false,
+          "audit": false
+        }
+      }
+    },
+    {
+      "name": "protected_name_q2_final_delivery",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "output": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_2_case_names\\q2_final_delivery\\new_output",
+        "reason": "Protected original/source/input/evidence output location"
+      }
+    },
+    {
+      "name": "protected_name_Q2_FINAL_DELIVERY",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "output": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_2_case_names\\Q2_FINAL_DELIVERY\\new_output",
+        "reason": "Protected original/source/input/evidence output location"
+      }
+    },
+    {
+      "name": "protected_name_review_q2_20260911",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "output": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_2_case_names\\review_q2_20260911\\new_output",
+        "reason": "Protected original/source/input/evidence output location"
+      }
+    },
+    {
+      "name": "protected_name_REVIEW_Q2_20260911",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "output": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_2_case_names\\REVIEW_Q2_20260911\\new_output",
+        "reason": "Protected original/source/input/evidence output location"
+      }
+    },
+    {
+      "name": "protected_name_q2_refinement_delivery",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "output": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_2_case_names\\q2_refinement_delivery\\new_output",
+        "reason": "Protected original/source/input/evidence output location"
+      }
+    },
+    {
+      "name": "single_json_is_not_a_complete_mesh_stage",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "reason": "Incomplete output artifacts for mesh: ['validation/fv_n20.npz', 'validation/fv_n40.npz', 'validation/fv_n40.json', 'validation/fv_n80.npz', 'validation/fv_n80.json', 'validation/fv_n160.npz', 'validation/fv_n160.json', 'validation/fv_n320.npz', 'validation/fv_n320.json', 'validation/fv_n640.npz', 'validation/fv_n640.json', 'validation/fv_n1280.npz', 'validation/fv_n1280.json', 'validation/fv_n2560.npz', 'validation/fv_n2560.json']"
+      }
+    },
+    {
+      "name": "junction_inside_owned_output_refused_before_stage_writes",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "is_symlink": false,
+        "is_junction": true,
+        "resolved_target": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\fixture_4_junction\\external_evidence"
+      }
+    },
+    {
+      "name": "hardlink_to_external_file_refused_before_write",
+      "observed": false,
+      "expected": false,
+      "passed": true,
+      "details": {
+        "is_symlink": false,
+        "link_count": 2
+      }
+    },
+    {
+      "name": "same_windows_output_directory_can_resume_with_case_variant",
+      "observed": true,
+      "expected": true,
+      "passed": true,
+      "details": {
+        "reason": null
+      }
+    }
+  ],
+  "required_outputs_vs_accepted_full_reproduction": {
+    "mesh": 16,
+    "reference": 4,
+    "tests": 7,
+    "time": 2,
+    "sensitivity": 14,
+    "geometry": 10,
+    "assemble": 8,
+    "excel": 1,
+    "report": 22,
+    "audit": 1
+  },
+  "original_delivery_unchanged": true,
+  "original_delivery_files": 97,
+  "elapsed_s": 84.40910309999981
+}

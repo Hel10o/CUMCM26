@@ -1,0 +1,157 @@
+{
+  "scope": "Run-management regression and 60-s copied-kernel equality only; not a new 3-h validation or full ten-stage patched run.",
+  "all_passed": true,
+  "tests": [
+    {
+      "test": "new_owned_workspace_and_dependency_order",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "unchanged_resume_accepts_all_stages",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "nonempty_without_resume_rejected",
+      "passed": true,
+      "details": "Nonempty output: use a new directory, or explicit --resume for an owned run"
+    },
+    {
+      "test": "plot_change_invalidates_report_audit_only",
+      "passed": true,
+      "details": [
+        "report",
+        "audit"
+      ]
+    },
+    {
+      "test": "template_change_invalidates_excel_audit_only",
+      "passed": true,
+      "details": [
+        "excel",
+        "audit"
+      ]
+    },
+    {
+      "test": "physics_source_change_invalidates_all",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "driver_time_grid_tolerance_change_invalidates_all",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "explicit_extra_configuration_changes_invalidate_all",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "environment_bytes_change_invalidates_all",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "tampered_stage_file_invalidates_its_dependents",
+      "passed": true,
+      "details": [
+        "reference",
+        "assemble",
+        "excel",
+        "report",
+        "audit"
+      ]
+    },
+    {
+      "test": "assemble_refuses_invalid_prerequisite",
+      "passed": true,
+      "details": "assemble requires valid stages ['reference']; run them or --stage all"
+    },
+    {
+      "test": "restored_stage_can_be_reused",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "failed_stage_never_reused",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "arbitrary_nonempty_output_rejected",
+      "passed": true,
+      "details": "Nonempty output: use a new directory, or explicit --resume for an owned run"
+    },
+    {
+      "test": "legacy_cache_not_adopted",
+      "passed": true,
+      "details": "Legacy/unowned nonempty output cannot be resumed"
+    },
+    {
+      "test": "resume_of_nonexistent_workspace_rejected",
+      "passed": true,
+      "details": "--resume requires an existing, managed nonempty directory"
+    },
+    {
+      "test": "protected_path_runtime/source/out",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "protected_path_runtime/inputs/nested",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "protected_path_q1_complete_delivery/new",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "protected_path_q2_final_delivery/new",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "protected_path_review_q2_20260911/new",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "copied_owner_marker_rejected",
+      "passed": true,
+      "details": "Cache ownership/schema mismatch; choose a new directory"
+    },
+    {
+      "test": "internal_output_symlink_rejected",
+      "passed": true,
+      "details": "Symlink inside output refused: /tmp/q2_guard_dftwfwcd/work/link"
+    },
+    {
+      "test": "symlink_resolving_into_accepted_output_rejected",
+      "passed": true,
+      "details": "Protected original/source/input/evidence output location"
+    },
+    {
+      "test": "scientific_core_sha256_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "test": "copied_numerics_60s_bitwise_match",
+      "passed": true,
+      "details": {
+        "temperature_degC": 0.0,
+        "moisture_dry_basis": 0.0
+      }
+    }
+  ],
+  "count": 26,
+  "kernel_elapsed_s": 0.043320002999962526,
+  "runtime": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Final preserved-byte check and evidence summary; no full PDE rerun.",
+  "new_pro_delivery": {
+    "files": 97,
+    "unchanged": true,
+    "changed_or_missing": [],
+    "added": []
+  },
+  "original_q2_delivery": {
+    "files": 119,
+    "unchanged": true,
+    "changed_or_missing": [],
+    "added": []
+  },
+  "new_manifest_count": 96,
+  "new_manifest_matches": true,
+  "new_manifest_failures": [],
+  "formal_result2_sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0",
+  "formal_result2_preserved": true,
+  "numeric_check_count": 290,
+  "numeric_checks_passed": true,
+  "algebra_passed": true,
+  "runtime_fixed_probe_count": 10,
+  "runtime_fixed_probes_passed": true,
+  "runtime_fixed_bundled_processes": [
+    {
+      "name": "test_run_guard.py",
+      "command": [
+        "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\candidate\\tests\\test_run_guard.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.954382699999769
+    },
+    {
+      "name": "check_entry.py",
+      "command": [
+        "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_final_runtime_audit_l48pvjdk\\candidate\\tests\\check_entry.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 81.20411669999976
+    }
+  ],
+  "runtime_skips": "Two ordinary symlink tests skipped for unavailable Windows privilege; junction and hardlink probes executed.",
+  "required_artifacts_exist": true,
+  "all_final_checks_passed": true
+}

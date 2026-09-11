@@ -1,0 +1,12 @@
+{
+  "scope": "Actual patched CLI ran tests stage (not whole ten-stage pipeline), then legitimate resume and unsafe-output refusal.",
+  "first_run_exitcode": 0,
+  "first_run_tests_stage_passed": true,
+  "complete_ten_stage_run": false,
+  "resume_exitcode": 0,
+  "resume_skipped_only_valid_stage": true,
+  "nonempty_without_resume_rejected": true,
+  "accepted_output_location_rejected": true,
+  "unit_test_log_is_this_review": true,
+  "tests_stage_elapsed_s": 76.41369080000004
+}

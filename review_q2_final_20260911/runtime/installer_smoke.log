@@ -1,0 +1,36 @@
+{
+  "installed_to": "C:\\Users\\libai\\AppData\\Local\\Temp\\q2_verified_installer_gayyniqq\\verified_runtime",
+  "scientific_modules_unchanged": 11,
+  "numerical_calculation_started": false
+}
+
+CLI HELP:
+usage: run_all.py [-h] [--input INPUT] [--template TEMPLATE] [--out OUT]
+                  [--stage {all,mesh,reference,tests,time,sensitivity,geometry,assemble,excel,report,audit}]
+                  [--resume] [--excel-engine {artifact,portable}]
+
+Q2 complete reproducible entry. Defaults to a new output directory. Run:
+python run_all.py --out reproduced --excel-engine artifact Or on a local
+machine without artifact_tool: --excel-engine portable. --stage permits the
+identical stages to run under a hard execution time limit. --resume reuses
+complete managed stages only: source/config/input/output signatures are
+verified. Legacy caches are not adopted. Numerical kernels are unchanged.
+
+options:
+  -h, --help            show this help message and exit
+  --input INPUT
+  --template TEMPLATE
+  --out OUT
+  --stage {all,mesh,reference,tests,time,sensitivity,geometry,assemble,excel,report,audit}
+  --resume
+  --excel-engine {artifact,portable}
+
+EXPECTED DUPLICATE REFUSAL:
+Traceback (most recent call last):
+  File "D:\Desktop\CUMCM26\review_q2_final_20260911\runtime\install_verified_runtime.py", line 43, in <module>
+    install(parser.parse_args().destination)
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\CUMCM26\review_q2_final_20260911\runtime\install_verified_runtime.py", line 19, in install
+    if target.exists():raise FileExistsError(f'Existing destination refused: {target}')
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: Existing destination refused: C:\Users\libai\AppData\Local\Temp\q2_verified_installer_gayyniqq\verified_runtime

@@ -1,0 +1,8 @@
+{
+  "jacobian_central_difference_relative": 2.2498285122324587e-10,
+  "no_end_flux_2D_vs_1D_600s": {
+    "temperature_degC": 2.1316282072803006e-14,
+    "moisture_dry_basis": 3.9968028886505635e-15
+  },
+  "passed": true
+}

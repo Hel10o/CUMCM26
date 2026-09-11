@@ -1,0 +1,70 @@
+{
+  "source_archive": "q2_validation_arrays.zip",
+  "bytes": 89435587,
+  "sha256": "7ec2835829955dbc02aee9ad5a4af1e23ee6d2fe4d57a28560870ea9b1789a6b",
+  "git_blob_sha1": "4f090535c0dd58df0a5d3644c6aedcde40d87266",
+  "projection": "Exact selection: r=0,1,2 cm; stored rdr averages; environment; all seconds. No interpolation, rounding or PDE recomputation.",
+  "source_arrays": [
+    {
+      "name": "baseline",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_baseline.npz",
+      "sha256": "4e326618bc658a412c5c8c9b579adc01c5427296f6b311e3bee4eccf83ba44dc",
+      "bytes": 3334979,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "hm_0.8",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_hm_0.8.npz",
+      "sha256": "9bf6144823f8185b726ffe5e83107f6c824d1c0d8254a8e07f9b255c4fc16923",
+      "bytes": 3321368,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "hm_1.2",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_hm_1.2.npz",
+      "sha256": "d6348ba4180a6dee538a711120e6187814449d5984071a36e72c03d3bbed1b16",
+      "bytes": 3346471,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "hT_0.8",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_hT_0.8.npz",
+      "sha256": "5dc13923600ca44d71a34da763ad855b09f6672a037f16a5413c3a6bb70c64f3",
+      "bytes": 3335405,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "hT_1.2",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_hT_1.2.npz",
+      "sha256": "889e36bccee53eb2549316ece37f6cb279801298aac2a25fd359671aec361d70",
+      "bytes": 3334016,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "pchip_all241",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_pchip_all241.npz",
+      "sha256": "55fea9b2fea10c9ebf297b4fbcd1cbe6d16f6ffdd47b587f31e87324889bfd13",
+      "bytes": 3364441,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    },
+    {
+      "name": "freeze_all_initial",
+      "original_zip_member": "q2_final_delivery/output/validation/sensitivity_freeze_all_initial.npz",
+      "sha256": "068f7ac3f445ffdcac7171802b47a52b9985eb720802154e8644b92932546447",
+      "bytes": 3318276,
+      "original_Pro_manifest_match": true,
+      "kind": "original Pro, not local review recomputation"
+    }
+  ],
+  "projected_file": {
+    "bytes": 4616413,
+    "sha256": "0b591ff22f288503e63a561b078fee506cbc6ad7a72078c44ed2a0e4728751ab",
+    "git_blob_sha1": "91dea0db7eaf8d83e3ff4e33d4f10a95dec7316a"
+  }
+}

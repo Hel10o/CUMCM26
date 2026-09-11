@@ -1,0 +1,18 @@
+{
+  "all_unchanged": true,
+  "checks": {
+    "q2_core.py": true,
+    "q2_tests.py": true,
+    "q2_audit.py": true,
+    "q2_xlsx_portable.py": true,
+    "q2_geometry_tests.py": true,
+    "q2_report.py": true,
+    "q2_finalize.py": true,
+    "q2_spectral.py": true,
+    "q2_axisymmetric.py": true,
+    "q2_preview.py": true,
+    "q2_excel.py": true
+  },
+  "only_existing_file_patched": "run_all.py",
+  "new_file": "source/q2_run_guard.py"
+}

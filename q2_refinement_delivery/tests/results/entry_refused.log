@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/mnt/data/q2_refinement_delivery/runtime/run_all.py", line 106, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/q2_refinement_delivery/runtime/run_all.py", line 37, in main
+    guard=RunGuard(ROOT,out,a.input,a.template,resume=a.resume,excel_engine=a.excel_engine)
+  File "/mnt/data/q2_refinement_delivery/runtime/source/q2_run_guard.py", line 76, in __init__
+    if not resume:raise FileExistsError('Nonempty output: use a new directory, or explicit --resume for an owned run')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: Nonempty output: use a new directory, or explicit --resume for an owned run
+
+PROTECTED:
+Traceback (most recent call last):
+  File "/mnt/data/q2_refinement_delivery/runtime/run_all.py", line 106, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/q2_refinement_delivery/runtime/run_all.py", line 37, in main
+    guard=RunGuard(ROOT,out,a.input,a.template,resume=a.resume,excel_engine=a.excel_engine)
+  File "/mnt/data/q2_refinement_delivery/runtime/source/q2_run_guard.py", line 72, in __init__
+    raise ValueError('Protected original/source/input/evidence output location')
+ValueError: Protected original/source/input/evidence output location

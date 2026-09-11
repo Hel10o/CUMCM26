@@ -1,0 +1,265 @@
+{
+  "scope": "New postprocessing only; no 3-hour PDE rerun and no corrected physical prediction.",
+  "source_hashes": {
+    "accepted_npz": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec",
+    "sensitivity_projection": "0b591ff22f288503e63a561b078fee506cbc6ad7a72078c44ed2a0e4728751ab",
+    "raw_environment": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "reused_validation": "75d27f16213c7323fcf9d9462d913a9663bf3416966dc7c02c7c9fc84c040c26"
+  },
+  "D_initial_m2_s": 5.641680373025664e-09,
+  "identity_max_abs_log_error": 2.8033131371785203e-15,
+  "locations": [
+    {
+      "radius_cm": 0.0,
+      "H_3h": 0.8648034892553825,
+      "M_3h": -0.07831699775221403,
+      "net_log_3h": 0.7864864915031673,
+      "D_3h": 1.2387259083577044e-08,
+      "D_ratio_3h": 2.1956683584564165,
+      "global_sample_min_s": 0,
+      "D_ratio_min": 1.0,
+      "global_sample_max_s": 8856,
+      "D_ratio_max": 2.21952662088496,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "last_half_hour_delta_H": 0.014132536056703615,
+      "last_half_hour_delta_M": -0.024801693905666083,
+      "last_half_hour_D_relative_change": -0.010612444258973563,
+      "rate_positive_time_fraction_2to3h": 0.46,
+      "rate_negative_time_fraction_2to3h": 0.5372222222222223,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 1.0,
+      "H_3h": 0.8657302866250052,
+      "M_3h": -0.11011747305852698,
+      "net_log_3h": 0.7556128135664788,
+      "D_3h": 1.2010662214700143e-08,
+      "D_ratio_3h": 2.128915752144739,
+      "global_sample_min_s": 0,
+      "D_ratio_min": 1.0,
+      "global_sample_max_s": 8678,
+      "D_ratio_max": 2.1612639530020776,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "last_half_hour_delta_H": 0.013333285065182832,
+      "last_half_hour_delta_M": -0.027368494219516995,
+      "last_half_hour_D_relative_change": -0.013937174786544437,
+      "rate_positive_time_fraction_2to3h": 0.4075,
+      "rate_negative_time_fraction_2to3h": 0.59,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 2.0,
+      "H_3h": 0.869116483041997,
+      "M_3h": -0.26990345993418857,
+      "net_log_3h": 0.5992130231078072,
+      "D_3h": 1.0271725081560238e-08,
+      "D_ratio_3h": 1.8206853991005971,
+      "global_sample_min_s": 144,
+      "D_ratio_min": 0.9832815756295331,
+      "global_sample_max_s": 7262,
+      "D_ratio_max": 1.9056003525874396,
+      "return_to_initial_D_s_linear_between_samples": 449.309663914502,
+      "last_half_hour_delta_H": 0.011276340457991418,
+      "last_half_hour_delta_M": -0.043382104701016916,
+      "last_half_hour_D_relative_change": -0.03159584586961872,
+      "rate_positive_time_fraction_2to3h": 0.23,
+      "rate_negative_time_fraction_2to3h": 0.7561111111111111,
+      "temperature_cooling_seconds_2to3h": 928
+    }
+  ],
+  "derivative_check": {
+    "method": "piecewise fourth-order finite differences, 1/2/5 s stencils, no crossing 60 s knots; right derivative at knots; not a PDE RHS.",
+    "early_rate_not_interpreted_s": [
+      0,
+      9
+    ],
+    "t0_surface_rate_note": "Initial Robin corner produces a boundary layer; no finite instantaneous derivative is inferred from t=0.",
+    "step_1_vs_2_max_abs_s-1_after10": 1.6545461631010746e-06,
+    "step_1_vs_5_max_abs_s-1_after10": 3.2763789068400787e-05,
+    "step_1_vs_5_max_abs_s-1_after60": 4.9350685486365235e-06,
+    "chain_rule_vs_direct_log_derivative_after10_s-1": 5.842933082354264e-10,
+    "sign_certification": "Pointwise |rate| > max(5*max(step differences),1e-10 s^-1). Diagnostic, not a formal error bound."
+  },
+  "sensitivity_3h": [
+    {
+      "parameter": "hm",
+      "location": "axis",
+      "C_minus20": 1.8581467910640403,
+      "C_baseline": 1.7661772607386725,
+      "C_plus20": 1.6920556424798672,
+      "C_secant_elasticity": -0.23509977208446856,
+      "T_minus20": 49.83690035570243,
+      "T_baseline": 49.84949592471038,
+      "T_plus20": 49.85946121826627,
+      "T_rise_secant_elasticity": 0.0025813939417157136,
+      "maximum_abs_C_change": 0.09196953032536781,
+      "maximum_abs_T_change": 0.05731820082824157
+    },
+    {
+      "parameter": "hm",
+      "location": "r1cm",
+      "C_minus20": 1.681502581642245,
+      "C_baseline": 1.5701978461215815,
+      "C_plus20": 1.4816116541286832,
+      "C_secant_elasticity": -0.3182575495299784,
+      "T_minus20": 49.86265225771034,
+      "T_baseline": 49.87461235190304,
+      "T_plus20": 49.88409163675549,
+      "T_rise_secant_elasticity": 0.002450258169179633,
+      "maximum_abs_C_change": 0.11130473552066356,
+      "maximum_abs_T_change": 0.05624218910627121
+    },
+    {
+      "parameter": "hm",
+      "location": "surface",
+      "C_minus20": 1.1774929533908343,
+      "C_baseline": 1.0081216929395505,
+      "C_plus20": 0.8736683758131519,
+      "C_secant_elasticity": -0.7534422176051231,
+      "T_minus20": 49.95609598629629,
+      "T_baseline": 49.9664127733444,
+      "T_plus20": 49.97473374668454,
+      "T_rise_secant_elasticity": 0.0021211656837829603,
+      "maximum_abs_C_change": 0.1693712604512838,
+      "maximum_abs_T_change": 0.05663700464743471
+    },
+    {
+      "parameter": "hm",
+      "location": "rdr_mean",
+      "C_minus20": 1.5127440803025793,
+      "C_baseline": 1.3825247167528278,
+      "C_plus20": 1.2793910615904966,
+      "C_secant_elasticity": -0.42196898161098534,
+      "T_minus20": 49.89297141910845,
+      "T_baseline": 49.904329111166135,
+      "T_plus20": 49.913363271838925,
+      "T_rise_secant_elasticity": 0.002327377002393716,
+      "maximum_abs_C_change": 0.1302193635497515,
+      "maximum_abs_T_change": 0.05549161646960954
+    },
+    {
+      "parameter": "hT",
+      "location": "axis",
+      "C_minus20": 1.7765670646703855,
+      "C_baseline": 1.7661772607386725,
+      "C_plus20": 1.7596159260838014,
+      "C_secant_elasticity": -0.02399410716494933,
+      "T_minus20": 49.72034323138795,
+      "T_baseline": 49.84949592471038,
+      "T_plus20": 49.90719021525067,
+      "T_rise_secant_elasticity": 0.021378866646004635,
+      "maximum_abs_C_change": 0.015376678089645601,
+      "maximum_abs_T_change": 1.069878866469658
+    },
+    {
+      "parameter": "hT",
+      "location": "r1cm",
+      "C_minus20": 1.5772052830650471,
+      "C_baseline": 1.5701978461215815,
+      "C_plus20": 1.5656621258167573,
+      "C_secant_elasticity": -0.018378507646029482,
+      "T_minus20": 49.75360949046053,
+      "T_baseline": 49.87461235190304,
+      "T_plus20": 49.92869368346248,
+      "T_rise_secant_elasticity": 0.020009976655279038,
+      "maximum_abs_C_change": 0.010363200084863688,
+      "maximum_abs_T_change": 1.070723908091182
+    },
+    {
+      "parameter": "hT",
+      "location": "surface",
+      "C_minus20": 1.009637882704703,
+      "C_baseline": 1.0081216929395505,
+      "C_plus20": 1.006731356823317,
+      "C_secant_elasticity": -0.007207775365171988,
+      "T_minus20": 49.86534785727746,
+      "T_baseline": 49.9664127733444,
+      "T_plus20": 50.01296411279589,
+      "T_rise_secant_elasticity": 0.01680022325920653,
+      "maximum_abs_C_change": 0.012086413705707066,
+      "maximum_abs_T_change": 1.098143367527669
+    },
+    {
+      "parameter": "hT",
+      "location": "rdr_mean",
+      "C_minus20": 1.3874840465451865,
+      "C_baseline": 1.3825247167528278,
+      "C_plus20": 1.379167626024097,
+      "C_secant_elasticity": -0.015038466257266075,
+      "T_minus20": 49.79019454595373,
+      "T_baseline": 49.904329111166135,
+      "T_plus20": 49.95573019445438,
+      "T_rise_secant_elasticity": 0.01889302882326876,
+      "maximum_abs_C_change": 0.005048923695169627,
+      "maximum_abs_T_change": 1.072205983287759
+    }
+  ],
+  "boundary_fixed_state": {
+    "q0_effective_m_s": 2.0242959999999997e-06,
+    "q3h_effective_m_s": 7.666824993556624e-07,
+    "b_elasticity_initial": -0.007757758746744548,
+    "b_elasticity_3h": -0.05193284056106965,
+    "no_boundary_mapping_PDE_scenarios": true
+  },
+  "density_diagnostic": {
+    "interpretation": "Only if empirical rho is actual wet density, which is not the accepted static fixed-volume model.",
+    "implied_rho_d_initial": 275.0422535211268,
+    "implied_rho_d_3h_0_1_2cm": [
+      316.70809096208535,
+      331.0971934741967,
+      387.9442204069856
+    ],
+    "implied_ratio_to_initial_3h": [
+      1.1514888600116786,
+      1.2038048308412517,
+      1.4104895354821783
+    ],
+    "conditional_lost_water_kg_reference_dry_density": 0.10087791897756064,
+    "reused_effective_heat_input_J": 20939.86322936834,
+    "latent_equal_effective_heat_input_at_lambda_J_kg": 207576.28073222068,
+    "no_lambda_assumed_and_no_latent_PDE_run": true
+  },
+  "time_scope": {
+    "raw_data_s": [
+      0,
+      14400
+    ],
+    "paper_s": [
+      1800,
+      3600,
+      5400,
+      7200,
+      9000,
+      10800
+    ],
+    "excel_s": [
+      1,
+      10800
+    ],
+    "tail_sample_mean_3to4h": [
+      49.99893442622951,
+      0.04998754098360656
+    ],
+    "tail_time_mean_linear_3to4h": [
+      49.99591666666667,
+      0.04999041666666666
+    ],
+    "last_environment_value": [
+      50.165,
+      0.04986
+    ],
+    "no_days_long_solution_or_threshold_in_this_review": true
+  },
+  "response_3h": {
+    "environment_T": 50.195,
+    "radial_T_span_K": 0.11691735073200249,
+    "max_T_lag_to_current_air_K": 0.34550441637286156,
+    "radial_C_span_kgkg": 0.7580539768438643,
+    "remaining_effective_water_fraction": 0.5421674734553996
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.35-x86_64-with-glibc2.41"
+  }
+}

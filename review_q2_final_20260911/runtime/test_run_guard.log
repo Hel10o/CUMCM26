@@ -1,0 +1,13 @@
+
+STDERR:
+Traceback (most recent call last):
+  File "C:\Users\libai\AppData\Local\Temp\q2_final_runtime_audit_sn0kyf2k\candidate\tests\test_run_guard.py", line 109, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "C:\Users\libai\AppData\Local\Temp\q2_final_runtime_audit_sn0kyf2k\candidate\tests\test_run_guard.py", line 86, in main
+    (out/'link').symlink_to(inp)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\libai\AppData\Local\Programs\Python\Python313\Lib\pathlib\_local.py", line 789, in symlink_to
+    os.symlink(target, self, target_is_directory)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1314] 客户端没有所需的特权。: 'C:\\Users\\libai\\AppData\\Local\\Temp\\q2_guard_lqdcnkgw\\runtime\\inputs\\env.xlsx' -> 'C:\\Users\\libai\\AppData\\Local\\Temp\\q2_guard_lqdcnkgw\\work\\link'

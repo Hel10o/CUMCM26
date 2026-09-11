@@ -1,0 +1,11 @@
+{
+  "model_intended_stages": ["preheating", "constant-temperature drying"],
+  "measured_environment_seconds": [0, 14400],
+  "paper_table_seconds": [1800, 3600, 5400, 7200, 9000, 10800],
+  "accepted_excel_seconds": [1, 10800],
+  "accepted_excel_scope": "Disclosed three-hour working interpretation; not an official clarification of all-process wording.",
+  "new_long_time_solution_executed": false,
+  "third_question_threshold_adopted": false,
+  "accepted_answers_modified": false,
+  "requires_before_extension": ["environment continuation after 4h", "explicit stopping rule", "long-time precision and physical-scope validation"]
+}

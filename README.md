@@ -33,6 +33,8 @@
 - [2026-09-11 第二问验收报告](review_q2_20260911/第二问验收报告.md)、[机器检查结果](review_q2_20260911/acceptance_checks.json)及[独立数值核查](review_q2_20260911/independent_numeric/独立数值核查.md)。
 - [第二问深化审查提示词](q2_refinement_handoff/第二问深化分析提示词.md)、[简短启动提示词](q2_refinement_handoff/发给Pro的简短提示词.txt)及[交接说明](q2_refinement_handoff/README.md)。
 - [第二问改进复审包 ZIP](第二问_改进复审包.zip)：原 Pro 交付与精选最新验收证据，包内文件可用 [SHA256 清单](q2_refinement_handoff/MANIFEST.sha256) 核验。
+- [第二问 Pro 深化交付](q2_refinement_delivery/README.md)与[第二问最终核查报告](review_q2_final_20260911/第二问最终核查报告.md)。
+- [深化材料采纳与勘误](review_q2_final_20260911/采纳与勘误.md)、[新增数值独立复算](review_q2_final_20260911/numeric/numeric_audit.md)及[运行管理修复与验证](review_q2_final_20260911/runtime/runtime_audit.md)。
 - [第三问 Pro 分析交接](q3_pro_handoff/README.md)、[完整分析与提示词](q3_pro_handoff/第三问分析与Pro交付说明.md)及[简短启动提示词](q3_pro_handoff/发给Pro的简短提示词.txt)。
 - [第三问预分析证据](q3_pro_handoff/预分析结果与限制.md)、[相关论文方法核查](q3_pro_handoff/evidence/literature_review.md)及[第三问交接 ZIP](第三问_Pro分析交付包.zip)。
 
@@ -44,7 +46,9 @@
 
 第二问已在本机新目录完成十阶段复现，并以独立径向离散与 Radau 方法复算；453600 个输出的四位小数和两张论文表 60 个数值全部一致。验收支持“附录3有效物性、固定几何中截面、前3h完整采样”口径下的数值答案。3h 时轴心/表面温度为 49.8495/49.9664 ℃，干基含水率为 1.7662/1.0081 kg/kg。
 
-上述结论不等于已模拟数天全过程，也不代表已经验证真实药材的物理预测误差。继续审查应优先分析表面水分边界的含义与可识别性、潜热等扩展的物理闭合、升温与失水对扩散系数的竞争，以及题目要求的时域；详见本仓库的深化审查提示词。已验收原交付和原审核记录保留原样，新分析应写入新的 `q2_refinement_delivery/`。
+第二问深化交付现已完成最终核查。新增后处理真实重跑并通过290项独立数值检查；物理闭合推导另经精确代数核查。原正式Excel及两张论文表保留，可以在上述模型和前3h口径下完成第二问数值与机制分析的定稿。采用深化材料时，应修正一处含水率增量正负号的文字误写，并使用本次审核提供的运行管理修复副本；具体问题、验证范围与安装方式见最终核查报告。原Pro文件、原审核及正式数值均保留字节完整性。
+
+上述结论不等于已模拟数天全过程，也不代表已经验证真实药材的物理预测误差。气固映射、潜热和携焓等扩展的数据需求，以及逐秒Excel仅覆盖前3h的工作解释，仍须在论文中明确。新增分析还表明，扩散系数虽在3h仍高于初值，但后期已回落，不能概括为全程单调增加。
 
 Pro 可直接从当前 GitHub 仓库读取上述目录。ZIP 是便于上传的精选副本，并未包含全部重复的重跑中间产物；具体省略项见 [omitted_review_files.json](q2_refinement_handoff/omitted_review_files.json)。阅读时记录实际提交版本，并区分原 Pro 文件、本地重算和后续新增材料。
 

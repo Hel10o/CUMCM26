@@ -1,0 +1,30 @@
+{
+  "pairs": 10,
+  "format": [
+    "PNG 300 dpi",
+    "SVG"
+  ],
+  "source": "q2_mechanism.py; accepted unrounded data only",
+  "files": [
+    "01_D_competition.png",
+    "01_D_competition.svg",
+    "02_log_contributions.png",
+    "02_log_contributions.svg",
+    "03_log_contributions.png",
+    "03_log_contributions.svg",
+    "04_log_contributions.png",
+    "04_log_contributions.svg",
+    "05_instantaneous_rates.png",
+    "05_instantaneous_rates.svg",
+    "06_instantaneous_rates.png",
+    "06_instantaneous_rates.svg",
+    "07_instantaneous_rates.png",
+    "07_instantaneous_rates.svg",
+    "08_sensitivity_hm.png",
+    "08_sensitivity_hm.svg",
+    "09_sensitivity_hT.png",
+    "09_sensitivity_hT.svg",
+    "10_mapping_flux_diagnostic.png",
+    "10_mapping_flux_diagnostic.svg"
+  ]
+}

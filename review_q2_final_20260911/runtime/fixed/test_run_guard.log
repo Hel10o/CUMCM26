@@ -1,0 +1,3 @@
+PASSED 24 management/kernel checks {'temperature_degC': 0.0, 'moisture_dry_basis': 0.0}
+
+STDERR:

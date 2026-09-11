@@ -1,0 +1,82 @@
+{
+  "identity_error": 2.6867071935277043e-15,
+  "locations": [
+    {
+      "radius_cm": 0.0,
+      "H_3h": 0.8648034892553825,
+      "M_3h": -0.07831699775221403,
+      "net_log_3h": 0.7864864915031673,
+      "D_3h": 1.2387259083577044e-08,
+      "D_ratio_3h": 2.1956683584564165,
+      "global_sample_min_s": 0,
+      "D_ratio_min": 1.0,
+      "global_sample_max_s": 8856,
+      "D_ratio_max": 2.21952662088496,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "last_half_hour_delta_H": 0.014132536056703615,
+      "last_half_hour_delta_M": -0.024801693905666083,
+      "last_half_hour_D_relative_change": -0.010612444258973563,
+      "rate_positive_time_fraction_2to3h": 0.46,
+      "rate_negative_time_fraction_2to3h": 0.5372222222222223,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 1.0,
+      "H_3h": 0.8657302866250052,
+      "M_3h": -0.11011747305852698,
+      "net_log_3h": 0.7556128135664788,
+      "D_3h": 1.2010662214700143e-08,
+      "D_ratio_3h": 2.128915752144739,
+      "global_sample_min_s": 0,
+      "D_ratio_min": 1.0,
+      "global_sample_max_s": 8678,
+      "D_ratio_max": 2.1612639530020776,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "last_half_hour_delta_H": 0.013333285065182832,
+      "last_half_hour_delta_M": -0.027368494219516995,
+      "last_half_hour_D_relative_change": -0.013937174786544437,
+      "rate_positive_time_fraction_2to3h": 0.4075,
+      "rate_negative_time_fraction_2to3h": 0.59,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 2.0,
+      "H_3h": 0.869116483041997,
+      "M_3h": -0.26990345993418857,
+      "net_log_3h": 0.5992130231078074,
+      "D_3h": 1.027172508156024e-08,
+      "D_ratio_3h": 1.8206853991005976,
+      "global_sample_min_s": 144,
+      "D_ratio_min": 0.9832815756295331,
+      "global_sample_max_s": 7262,
+      "D_ratio_max": 1.9056003525874396,
+      "return_to_initial_D_s_linear_between_samples": 449.309663914502,
+      "last_half_hour_delta_H": 0.011276340457991418,
+      "last_half_hour_delta_M": -0.043382104701016916,
+      "last_half_hour_D_relative_change": -0.03159584586961861,
+      "rate_positive_time_fraction_2to3h": 0.23,
+      "rate_negative_time_fraction_2to3h": 0.7561111111111111,
+      "temperature_cooling_seconds_2to3h": 928
+    }
+  ],
+  "derivatives": {
+    "method": "piecewise fourth-order finite differences, 1/2/5 s stencils, no crossing 60 s knots; right derivative at knots; not a PDE RHS.",
+    "early_rate_not_interpreted_s": [
+      0,
+      9
+    ],
+    "t0_surface_rate_note": "Initial Robin corner produces a boundary layer; no finite instantaneous derivative is inferred from t=0.",
+    "step_1_vs_2_max_abs_s-1_after10": 1.6545461631010746e-06,
+    "step_1_vs_5_max_abs_s-1_after10": 3.2763789068400787e-05,
+    "step_1_vs_5_max_abs_s-1_after60": 4.9350685486365235e-06,
+    "chain_rule_vs_direct_log_derivative_after10_s-1": 5.842933081812163e-10,
+    "sign_certification": "Pointwise |rate| > max(5*max(step differences),1e-10 s^-1). Diagnostic, not a formal error bound."
+  },
+  "response_3h": {
+    "environment_T": 50.195,
+    "radial_T_span_K": 0.11691735073200249,
+    "max_T_lag_to_current_air_K": 0.34550441637286156,
+    "radial_C_span_kgkg": 0.7580539768438643,
+    "remaining_effective_water_fraction": 0.5421674734553996
+  }
+}

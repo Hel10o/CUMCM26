@@ -1,0 +1,151 @@
+{
+  "all_checks_passed": true,
+  "check_count": 290,
+  "failed": [],
+  "locations": [
+    {
+      "radius_cm": 0,
+      "H_3h": 0.8648034892553825,
+      "M_3h": -0.07831699775221403,
+      "D_ratio_3h": 2.1956683584564196,
+      "global_sample_min_s": 0,
+      "global_sample_max_s": 8856,
+      "D_ratio_min": 1.0,
+      "D_ratio_max": 2.2195266208849604,
+      "last_half_hour_delta_H": 0.014132536056703615,
+      "last_half_hour_delta_M": -0.024801693905666083,
+      "last_half_hour_D_relative_change": -0.01061244425897296,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "rate_positive_time_fraction_2to3h": 0.46,
+      "rate_negative_time_fraction_2to3h": 0.5372222222222223,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 1,
+      "H_3h": 0.8657302866250052,
+      "M_3h": -0.11011747305852698,
+      "D_ratio_3h": 2.12891575214474,
+      "global_sample_min_s": 0,
+      "global_sample_max_s": 8678,
+      "D_ratio_min": 1.0,
+      "D_ratio_max": 2.161263953002073,
+      "last_half_hour_delta_H": 0.013333285065182832,
+      "last_half_hour_delta_M": -0.027368494219516995,
+      "last_half_hour_D_relative_change": -0.013937174786543435,
+      "return_to_initial_D_s_linear_between_samples": null,
+      "rate_positive_time_fraction_2to3h": 0.4075,
+      "rate_negative_time_fraction_2to3h": 0.59,
+      "temperature_cooling_seconds_2to3h": 0
+    },
+    {
+      "radius_cm": 2,
+      "H_3h": 0.869116483041997,
+      "M_3h": -0.26990345993418857,
+      "D_ratio_3h": 1.8206853991005985,
+      "global_sample_min_s": 144,
+      "global_sample_max_s": 7262,
+      "D_ratio_min": 0.9832815756295314,
+      "D_ratio_max": 1.9056003525874383,
+      "last_half_hour_delta_H": 0.011276340457991418,
+      "last_half_hour_delta_M": -0.043382104701016916,
+      "last_half_hour_D_relative_change": -0.03159584586961709,
+      "return_to_initial_D_s_linear_between_samples": 449.3096639144986,
+      "rate_positive_time_fraction_2to3h": 0.23,
+      "rate_negative_time_fraction_2to3h": 0.7561111111111111,
+      "temperature_cooling_seconds_2to3h": 928
+    }
+  ],
+  "source_projection_comparisons": [
+    {
+      "name": "baseline",
+      "max_abs_diffs": {
+        "temperature_degC": 7.815970093361102e-14,
+        "moisture_dry_basis": 5.329070518200751e-15,
+        "average_temperature_degC": 4.263256414560601e-14,
+        "average_moisture_dry_basis": 4.218847493575595e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "97872b1b947c44d713edbf40715b125d3fddee2f792aceaa400de80ca5af4749",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "hm_0.8",
+      "max_abs_diffs": {
+        "temperature_degC": 4.973799150320701e-14,
+        "moisture_dry_basis": 5.329070518200751e-15,
+        "average_temperature_degC": 4.973799150320701e-14,
+        "average_moisture_dry_basis": 2.6645352591003757e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "7de4629110ede75c3bcb8d26cf94e222b5aa8cab12885bf6a8820846a97d6b9d",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "hm_1.2",
+      "max_abs_diffs": {
+        "temperature_degC": 4.973799150320701e-14,
+        "moisture_dry_basis": 5.329070518200751e-15,
+        "average_temperature_degC": 4.263256414560601e-14,
+        "average_moisture_dry_basis": 2.6645352591003757e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "9393f17da174742c42467428a2c75f34c1175090c6d18e44d4cca932e36e0f3f",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "hT_0.8",
+      "max_abs_diffs": {
+        "temperature_degC": 4.973799150320701e-14,
+        "moisture_dry_basis": 4.884981308350689e-15,
+        "average_temperature_degC": 4.263256414560601e-14,
+        "average_moisture_dry_basis": 3.3306690738754696e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "ad6d872f8b637b1b8acde06507301a0c5217c5b35a72cb1ce460a03f3ef3af88",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "hT_1.2",
+      "max_abs_diffs": {
+        "temperature_degC": 6.394884621840902e-14,
+        "moisture_dry_basis": 3.552713678800501e-15,
+        "average_temperature_degC": 3.552713678800501e-14,
+        "average_moisture_dry_basis": 2.6645352591003757e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "36ef8b505643765e325addc1e94e7dc58bdb1a8c7e3645cc77764483147d8273",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "pchip_all241",
+      "max_abs_diffs": {
+        "temperature_degC": 7.176481631177012e-13,
+        "moisture_dry_basis": 3.1086244689504383e-15,
+        "average_temperature_degC": 4.973799150320701e-14,
+        "average_moisture_dry_basis": 2.220446049250313e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "a7ed225eef937ab6426ae9f2368a13c8b10eb9d9b8c498e8b4ff210661d2d2d2",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    },
+    {
+      "name": "freeze_all_initial",
+      "max_abs_diffs": {
+        "temperature_degC": 4.973799150320701e-14,
+        "moisture_dry_basis": 3.9968028886505635e-15,
+        "average_temperature_degC": 4.263256414560601e-14,
+        "average_moisture_dry_basis": 3.3306690738754696e-15,
+        "environment": 0.0
+      },
+      "original_npz_available_here": false,
+      "fresh_npz_sha256": "96969682eb7109907f56730b0bf04f5ebad1f1e72c1e6bbc90da75b124f959e1",
+      "source_identity": "Pro hash agrees with old manifest; numerics independently corroborated by previous local fresh PDE run"
+    }
+  ]
+}
