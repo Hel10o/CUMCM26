@@ -1,0 +1,1 @@
+{"case":"independent_cell_r768","status":"terminated_before_first_1800s_checkpoint","signal":"SIGTERM","reason":"Very slow initial Radau progress caused by generic finite-difference Jacobian of unscaled H near H=0; superseded by explicit coloured finite-difference Jacobian. Not a physical result."}

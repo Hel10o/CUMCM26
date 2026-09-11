@@ -1,0 +1,58 @@
+{
+  "config": {
+    "question": 1,
+    "nr": 48,
+    "nz": 128,
+    "latent": true,
+    "baseline": false,
+    "ceq": 0.075,
+    "grading_r": 1.5,
+    "grading_z": 1.5,
+    "end_factor": 1.0,
+    "hT": 25.0,
+    "hm": 8e-07,
+    "pressure": 101325.0,
+    "gas_multiplier": 1.0,
+    "method": "BDF",
+    "rtol": 2e-08,
+    "atol_T": 2e-09,
+    "atol_C": 2e-11,
+    "max_step_early": 20.0,
+    "max_step_late": 600.0,
+    "horizon": 864000.0,
+    "event_margin": 600.0,
+    "nominal_future": false,
+    "face_rule": "arithmetic"
+  },
+  "input_sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e",
+  "source_sha256": {
+    "independent_cell_fv_jac.py": "c6510569c24dbac3e28e3c5a52f23e68ec54f0c28d6b84d3961e8a5da3358d40",
+    "run_case.py": "65abfc3b1b06d1c751cdb4b045460a5cbc4eb5a0dda59c74fe6dc7e4bde2e74c",
+    "independent_cell_fv.py": "b44db3e3556f72df2648c5af5332784ed71feb330507e45ca85b474dc1b199e7",
+    "model.py": "120d2f76741f45325c79c42efa8a366b6ad14808b00f26577aeae856c0f299fb",
+    "extra_configs.py": "7a785c9ef5ba5906318800c904e073b4d4a8cec11699d1f23171cdfa6f8012d3",
+    "unreachable_batch.py": "da760cee87835ae1082d7ddb1eb12e6855b66395ed82a3dbc8c447179c9b6b78",
+    "analyse.py": "c506f102d69a757693b49247f7378c80d5959a58515b55e746ead1c9e4e9a1e1",
+    "batch.py": "b60b882cd9cc33a477ee593ee9c6fe230a25f004e9813c8e3ea5e6804dc5994a",
+    "extra_batch.py": "30d12d6abd9d4ccdd21057a2159d67dd3a9707fec89a7c8f7e7e9181ded01d6d",
+    "run_case_memory_safe.py": "95e346efb694a2dce02c50830a2695cb5a8cc9566ddbbb157a233fc1978af6f1",
+    "axis_batch.py": "af9e727e500abe1f75ca334f18bc7e81d65a803e7fc9a3169313eb9ab9ae8d44",
+    "validate.py": "674933d0aa2b9166e613e8aebda1cb229a676a37e7e7b5b0e943d43eb0c26dcc"
+  },
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "start_unix": 1789138880.6259875,
+  "scenario_status": "conditional",
+  "future": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "activity_K": 0.047740157116756055,
+  "relative_humidity_future": 0.611046961009318,
+  "command": [
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case_memory_safe.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q1_F11_r48_z128_axis.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q1_F11_r48_z128_axis"
+  ]
+}

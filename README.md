@@ -2,7 +2,9 @@
 
 项目题目、建模资料、前三问计算交付，以及独立核验和第一、二问论文阶段稿。
 
-当前交给Pro的任务是[前三问二维与潜热影响评估及最终建模路线](q123_model_selection_handoff/README.md)：先定量比较二维、潜热和交互作用，再推荐最终模型。[最新提示词](q123_model_selection_handoff/发给Pro的提示词.txt)与[离线输入包](q123_model_selection_handoff/q123_model_selection_inputs.zip)配套使用。历史物理闭合交接仍作技术背景，本轮不要求立即定稿所有Excel和论文。
+当前交给 Pro 的任务是[前三问模型选择质疑与题意约束重分析](q123_requirements_review_handoff/README.md)：重新审视第一问比热、第二三问经验密度、潜热、边界假设与一维/二维选型，优先落实原题参数和输出要求。[完整交接文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)与[最新提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)为本轮入口。
+
+已收到[上轮四种情况的 Pro 交付 v1](q123_model_selection_delivery/v1/README.md)，本机尚未复算其数值；本轮同步原始材料，并将其作为待重新裁定的条件模型分析，不自动替换旧正式答案。[上一轮二维与潜热任务](q123_model_selection_handoff/README.md)及历史物理闭合交接继续保留为背景，本轮不要求立即定稿全部 Excel 和论文。
 
 ## 通过 ChatGPT 的 GitHub 连接读取
 
@@ -47,6 +49,8 @@
 - [前三问物理问题与新交付审核入口](review_q123_physics_20260911/README.md)、[潜热与干物质守恒主审核](review_q123_physics_20260911/前三问现状与物理闭合审核.md)及[独立物理/文献核查](review_q123_physics_20260911/model/物理闭合审查.md)。
 - [前三问物理闭合Pro交接入口](q123_physics_pro_handoff/README.md)、[完整修正计算任务书](q123_physics_pro_handoff/前三问物理闭合与修正计算_Pro交接文档.md)及[简短启动提示词](q123_physics_pro_handoff/发给Pro的简短提示词.txt)。
 - [Pro部分交付诊断与离线恢复](q123_physics_recovery_20260911/README.md)、[可直接上传的离线输入包](q123_physics_recovery_20260911/q123_physics_offline_inputs.zip)及[恢复执行提示词](q123_physics_recovery_20260911/恢复执行提示词.txt)。
+- [前三问四组模型 Pro 交付 v1](q123_model_selection_delivery/v1/README.md)、[影响评估](q123_model_selection_delivery/v1/前三问二维与潜热影响评估.md)及[模型假设契约](q123_model_selection_delivery/v1/模型推导与假设契约.md)。
+- [当前模型选择质疑交接](q123_requirements_review_handoff/README.md)、[完整重分析文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)及[发送给 Pro 的提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
@@ -79,6 +83,14 @@ Pro 可直接从当前 GitHub 仓库读取上述目录。ZIP 是便于上传的�
 最新审核表明：第一问条件失水的潜热约45.59kJ，是原无潜热基线对流输入约4.801kJ的9.50倍；第二三问若在固定体积内把经验密度视为真实湿体密度，隐含干质量分别在3h和结束时增加约26.87%、115.39%。这两项属于实质物理闭合问题。将经验ρcp用于有效热容量可以明确简化口径，但不能声称真实质量—能量闭合已完成。
 
 前三问原解及新版第三问可作为已声明有效模型的条件数值结果。下一阶段应优先统一空气/药材质量基准、气固平衡、同一蒸发通量和能量收支，再讨论守恒修正与时长变化；潜热影响不能仅凭题面未列参数而略去，也不能保持原失水轨迹只扣潜热便称为真实修正答案。详见[前三问现状与物理闭合审核](review_q123_physics_20260911/前三问现状与物理闭合审核.md)。现有论文未在本轮改写或重新编译。
+
+## 四组比较交付与当前重新分析
+
+2026-09-12 收到的 `q123_model_selection_delivery/v1` 保留四组比较文档、源码、配置、输出、日志和原清单。其报告认为潜热效应显著、中截面可降维，但整根失水和全域终点需分别讨论。这些是 Pro 在新增边界与物性解释下的条件结论，本机本轮未运行求解或数值验收。
+
+当前质疑集中在：第一问 F 未保留题给 2600 比热，第二三问 F 只以经验密度初值确定固定干密度，且新增了未标定的平衡含水率与气膜假设。请按[最新交接](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)重新确定主模型；既不预设旧无潜热基线正确，也不因物理扩展更复杂而直接采纳新答案。约 73.44 h 不作为本轮新验收的正式时长。
+
+上轮包内关于 ZIP 分发、运行与验证的说明按原样保存；本次收到的是解压后的目录，GitHub 同步该目录，没有重新制作上轮同名 ZIP。新增材料的传输与字节检查不等于数值验收。
 
 ## 获取大PDF原件
 

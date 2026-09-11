@@ -1,0 +1,32 @@
+{
+  "evidence_class": "Inherited GitHub JSON read at fixed source commit; not new PDE and not independently downloaded NPZ",
+  "source_commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+  "q1": {
+    "source": "review_q123_physics_20260911/q1_heat_scale.json",
+    "git_blob": "f2d1895d64353101135e556b7712900b130efb92",
+    "unrounded_source_sha256_declared": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+    "water_loss_kg": 0.018609122380912488,
+    "latent_J_at_2_45MJkg": 45592.349833235596,
+    "convective_input_J": 4800.978930016514,
+    "sensible_J": 4800.979302361748,
+    "latent_to_convective": 9.496469469629348
+  },
+  "q3": {
+    "source": "q3_refinement_delivery/output/end_event.json",
+    "git_blob": "4dc7af9f4f93e0cdaec1d0a88a08979cb4b1f7ca",
+    "equal_s": 206906.38993234557,
+    "execution_s": 206906.76,
+    "execution_maxC": 0.14999989220803223
+  },
+  "geometry": {
+    "source": "q3_refinement_delivery/validation/geometry/historical_geometry_comparison.json",
+    "git_blob": "1e4d556136397ac6f7422cb39294c39c6fffc6a5",
+    "paired_old_end_effects_s": [
+      -7.657284624205204,
+      -7.657433906424558,
+      -7.660840359778376,
+      -7.512307353230426
+    ],
+    "caution": "Finite old-effective-model grids, several with an isothermal projection; not new F latent results or rigorous interval"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "evidence": "new original-environment PDE runs, same nr24 and time tolerances; end exchange disabled",
+  "max_T_difference": 2.8377998354756073e-05,
+  "max_C_difference": 8.743563411073296e-07
+}

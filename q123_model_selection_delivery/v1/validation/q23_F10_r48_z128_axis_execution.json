@@ -1,0 +1,11 @@
+{
+  "case": "q23_F10_r48_z128_axis",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case_memory_safe.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q23_F10_r48_z128_axis.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q23_F10_r48_z128_axis"
+  ],
+  "elapsed_s": 280.64635586738586,
+  "exit_code": 0
+}

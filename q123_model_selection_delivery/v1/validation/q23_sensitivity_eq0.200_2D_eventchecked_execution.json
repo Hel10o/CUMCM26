@@ -1,0 +1,11 @@
+{
+  "case": "q23_sensitivity_eq0.200_2D_eventchecked",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case_memory_safe.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q23_sensitivity_eq0.200_2D_eventchecked.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q23_sensitivity_eq0.200_2D_eventchecked"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 86.8004093170166
+}

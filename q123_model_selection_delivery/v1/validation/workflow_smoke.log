@@ -1,0 +1,2 @@
+{"case": "smoke", "command": ["/opt/pyvenv/bin/python", "/mnt/data/model_selection_smoke_run/source/run_case_memory_safe.py", "/mnt/data/model_selection_smoke_run/configs/smoke.json", "/mnt/data/model_selection_smoke_run/output/smoke"], "exit_code": 0, "elapsed_s": 2.194438934326172}
+Completed run root: /mnt/data/model_selection_smoke_run

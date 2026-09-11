@@ -1,0 +1,13 @@
+Fri Sep 11 14:18:16 UTC 2026
+* Added raw.githubusercontent.com:443:185.199.108.133 to DNS cache
+* Uses proxy env variable no_proxy == 'localhost,127.0.0.1'
+* Hostname raw.githubusercontent.com was found in DNS cache
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0*   Trying 185.199.108.133:443...
+* connect to 185.199.108.133 port 443 from 172.26.39.253 port 41592 failed: Connection refused
+* Failed to connect to raw.githubusercontent.com port 443 after 0 ms: Could not connect to server
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+* closing connection #0
+curl: (7) Failed to connect to raw.githubusercontent.com port 443 after 0 ms: Could not connect to server
+EXIT_CODE=7

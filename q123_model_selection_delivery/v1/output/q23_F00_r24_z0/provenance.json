@@ -1,0 +1,49 @@
+{
+  "config": {
+    "question": 23,
+    "nr": 24,
+    "nz": 0,
+    "latent": false,
+    "baseline": false,
+    "ceq": 0.075,
+    "grading_r": 1.5,
+    "grading_z": 1.5,
+    "end_factor": 1.0,
+    "hT": 25.0,
+    "hm": 8e-07,
+    "pressure": 101325.0,
+    "gas_multiplier": 1.0,
+    "method": "BDF",
+    "rtol": 3e-07,
+    "atol_T": 2e-08,
+    "atol_C": 2e-10,
+    "max_step_early": 30.0,
+    "max_step_late": 900.0,
+    "horizon": 864000.0,
+    "event_margin": 600.0,
+    "nominal_future": false,
+    "face_rule": "arithmetic"
+  },
+  "input_sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e",
+  "source_sha256": {
+    "run_case.py": "65abfc3b1b06d1c751cdb4b045460a5cbc4eb5a0dda59c74fe6dc7e4bde2e74c",
+    "model.py": "909104a93eba419e207ae1e2623a5de658bb3ac734a1b6cb798666a3546ac995",
+    "batch.py": "b60b882cd9cc33a477ee593ee9c6fe230a25f004e9813c8e3ea5e6804dc5994a"
+  },
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "start_unix": 1789136976.1725335,
+  "scenario_status": "conditional",
+  "future": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "activity_K": 0.047740157116756055,
+  "relative_humidity_future": 0.611046961009318,
+  "command": [
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q23_F00_r24_z0.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q23_F00_r24_z0"
+  ]
+}

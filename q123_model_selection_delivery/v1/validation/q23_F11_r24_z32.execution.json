@@ -1,0 +1,11 @@
+{
+  "case": "q23_F11_r24_z32",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q23_F11_r24_z32.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q23_F11_r24_z32"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 33.47663688659668
+}

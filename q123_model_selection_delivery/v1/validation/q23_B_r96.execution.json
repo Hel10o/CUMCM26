@@ -1,0 +1,11 @@
+{
+  "case": "q23_B_r96",
+  "command": [
+    "/opt/pyvenv/bin/python",
+    "/mnt/data/q123_model_selection_delivery/v1/source/run_case.py",
+    "/mnt/data/q123_model_selection_delivery/v1/configs/q23_B_r96.json",
+    "/mnt/data/q123_model_selection_delivery/v1/output/q23_B_r96"
+  ],
+  "exit_code": 0,
+  "elapsed_s": 12.419604301452637
+}

@@ -1,0 +1,9 @@
+{
+  "meaning": "Do not interpret differences smaller than time-integration/no-end reduction discrepancy as resolved physical end effects.",
+  "closed_end_real_PDE_T_C_max_difference_C": 2.8377998354756073e-05,
+  "closed_end_real_PDE_C_max_difference_kgkg": 8.743563411073296e-07,
+  "Q1_F00_F10_recorded_maxT_difference": 1.897040803555683e-05,
+  "Q1_F01_F11_recorded_maxT_difference": 1.9699718833976476e-05,
+  "Q2_latent_recorded_maxT_difference": 3.719923986267304e-05,
+  "interpretation": "Q1 common-model midplane geometry effects and Q2 latent midplane effects are not cleanly separable from numerical error at this level. This supports practical equivalence relative to 0.05 C/0.001 kgkg reporting criteria, not proof of zero effect or stable four decimals."
+}

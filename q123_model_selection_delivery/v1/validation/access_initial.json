@@ -1,0 +1,4 @@
+{
+  "url": "https://api.github.com/repos/Hel10o/libai/commits/main",
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'api.github.com\\', port=443): Max retries exceeded with url: /repos/Hel10o/libai/commits/main (Caused by NameResolutionError(\"HTTPSConnection(host=\\'api.github.com\\', port=443): Failed to resolve \\'api.github.com\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+}

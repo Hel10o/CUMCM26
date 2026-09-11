@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-09-11T14:45:31.907784+00:00",
+  "basis": "Engineering reporting criteria proposed after pilot runs, not task-specified experimental uncertainty; all raw differences also reported. Do not claim prespecified before every computation.",
+  "midplane_T_abs_C": 0.05,
+  "midplane_C_abs_kgkg": 0.001,
+  "time_relative": 0.001,
+  "whole_mass_relative": 0.01,
+  "whole_energy_relative": 0.01,
+  "numerical_effect_resolution": "Fine-coarse paired effects must be smaller than effects claimed; unresolved differences labelled as such.",
+  "four_decimal_display": "0.0001 h = 0.36 s is formatting, not model accuracy"
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "figure": "Q1_midplane_T.png",
+    "cases": [
+      "q1_B_r512_v2",
+      "q1_F00_r96_z0_v2",
+      "q1_F10_r96_z128_v2",
+      "q1_F01_r96_z0_v2",
+      "q1_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q1_midplane_C.png",
+    "cases": [
+      "q1_B_r512_v2",
+      "q1_F00_r96_z0_v2",
+      "q1_F10_r96_z128_v2",
+      "q1_F01_r96_z0_v2",
+      "q1_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q1_whole_water.png",
+    "cases": [
+      "q1_B_r512_v2",
+      "q1_F00_r96_z0_v2",
+      "q1_F10_r96_z128_v2",
+      "q1_F01_r96_z0_v2",
+      "q1_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q2_midplane_T.png",
+    "cases": [
+      "q23_B_r512_v2",
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q2_midplane_C.png",
+    "cases": [
+      "q23_B_r512_v2",
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q2_whole_water.png",
+    "cases": [
+      "q23_B_r512_v2",
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q3_full_domain_maxC.png",
+    "cases": [
+      "q23_B_r512_v2",
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q3_geometry_time_effect.png",
+    "cases": [
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q2_F11_full_field_C.png",
+    "cases": [
+      "q23_F11_r96_z128_v2"
+    ]
+  },
+  {
+    "figure": "Q3_energy_residual.png",
+    "cases": [
+      "q23_F00_r96_z0_v2",
+      "q23_F10_r96_z128_retry",
+      "q23_F01_r96_z0_v2",
+      "q23_F11_r96_z128_v2"
+    ]
+  }
+]

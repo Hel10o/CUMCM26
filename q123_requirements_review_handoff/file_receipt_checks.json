@@ -1,0 +1,26 @@
+{
+  "scope": "File receipt, SHA256 preservation, link and upload hygiene checks only; no numerical reproduction or model validation.",
+  "received_base": "q123_model_selection_delivery/v1",
+  "file_count": 521,
+  "total_bytes": 595618290,
+  "manifest_entries": 520,
+  "missing": [],
+  "hash_mismatches": [],
+  "unlisted_files": [],
+  "broken_links": [],
+  "suspicious_filenames": [],
+  "largest_file_bytes": 34351567,
+  "original_manifest_sha256": "46372e8601ab8e8447bac4839416fdd9e8d76334881c1f46ad36398ded7d101c",
+  "content_types": {
+    ".b64": 4,
+    ".csv": 62,
+    ".json": 282,
+    ".log": 77,
+    ".md": 6,
+    ".npz": 56,
+    ".png": 10,
+    ".py": 19,
+    ".sha256": 1,
+    ".txt": 4
+  }
+}

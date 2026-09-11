@@ -1,0 +1,70 @@
+[
+  {
+    "name": "full-cylinder volume",
+    "value": 5.421010862427522e-20,
+    "limit": 1e-16,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "side exchange area",
+    "value": 0.0,
+    "limit": 1e-15,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "two end faces area",
+    "value": 0.0,
+    "limit": 1e-15,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "zero chemical driving",
+    "value": 1.538675290466414e-20,
+    "limit": 1e-15,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "evaporation",
+    "j_kgm2s": 9.024676290818066e-05,
+    "driving_Pa": 594.1827150892263,
+    "passed": true,
+    "evidence": "synthetic direction probe"
+  },
+  {
+    "name": "condensation",
+    "j_kgm2s": -2.793926413268277e-05,
+    "driving_Pa": -183.95150457466116,
+    "passed": true,
+    "evidence": "synthetic direction probe"
+  },
+  {
+    "name": "adiabatic_no_flow_water_invariance",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "adiabatic_no_flow_temperature_invariance",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "impermeable_water_invariance",
+    "value": 0.0,
+    "limit": 1e-10,
+    "passed": true,
+    "evidence": "synthetic software or analytic limit, not original material prediction"
+  },
+  {
+    "name": "NaN rejected",
+    "passed": true,
+    "evidence": "synthetic invalid-input probe"
+  }
+]
