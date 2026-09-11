@@ -1,0 +1,24 @@
+{
+  "scope": "Readback and approximate energy bookkeeping of an old one-way conditional diagnostic, not a newly solved coupled physical model.",
+  "source_npz": "q1_complete_delivery\\q1_delivery\\output\\validation\\conditional_latent_T.npz",
+  "source_npz_sha256": "5bfa12285b941b2bb43cf5b82ed853fe86337fbfd4eed51a107b387ddecfaf64",
+  "source_validation": "q1_complete_delivery\\q1_delivery\\output\\validation\\validation.json",
+  "source_validation_sha256": "068823b8c41a9aafd9b9109e3a04e349c3d980a0aed90b9af82c6bc99e9f3768",
+  "time_s": 1800.0,
+  "old_conditional_mean_temperature_C": 11.115656528100596,
+  "old_conditional_surface_temperature_C": 11.902627810118135,
+  "fixed_volumetric_heat_capacity_J_m3_K": 2132000,
+  "volume_m3": 0.0003141592653589793,
+  "old_conditional_sensible_change_J": -11308.92311063967,
+  "old_baseline_sensible_change_J": 4800.979316619639,
+  "old_conditional_latent_from_original_moisture_loss_J": 45592.35270425016,
+  "approximately_implied_new_convection_J": 34283.42959361049,
+  "old_latent_to_baseline_sensible_ratio": 9.496469302923733,
+  "limitations": [
+    "The thermal diagnostic used interpolated 1-second baseline surface moisture with a fixed outward-loss law.",
+    "Its new temperature was not fed back to a temperature-dependent gas-solid equilibrium relation.",
+    "Convection above is reconstructed from storage plus original-track latent energy, not independently integrated here.",
+    "Original moisture loss and interpolated diagnostic boundary have different numerical representations; do not infer exact equality to a boundary quadrature.",
+    "The temperature is not a calibrated prediction, and its energy bookkeeping does not resolve the gas-phase driving-force contradiction."
+  ]
+}

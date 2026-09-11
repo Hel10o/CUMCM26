@@ -1,0 +1,64 @@
+{
+  "checks": [
+    {
+      "check": "delivery_manifest",
+      "passed": true,
+      "entries": 81,
+      "mismatches": []
+    },
+    {
+      "check": "manifest_coverage",
+      "passed": true,
+      "files": 82
+    },
+    {
+      "check": "new_delivery_unchanged",
+      "passed": true,
+      "changed": []
+    },
+    {
+      "check": "source_identity:inputs/attachment1.xlsx",
+      "passed": true,
+      "original": "A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "check": "source_identity:inputs/problem.pdf",
+      "passed": true,
+      "original": "A题/A题.pdf",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "check": "source_identity:inputs/result3_blank.xlsx",
+      "passed": true,
+      "original": "A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "check": "source_identity:validation/numeric/reference80_radau_historical.npz",
+      "passed": true,
+      "original": "q3_final_delivery/validation/reference80.npz",
+      "sha256": "4f4c5f0d71322980729003ba7c768e5b1cfd34aa861ff6e49565d5f9c377fd14"
+    },
+    {
+      "check": "source_identity:validation/numeric/reference160_bdf_historical.npz",
+      "passed": true,
+      "original": "q3_final_delivery/validation/reference160.npz",
+      "sha256": "53440ab4a45fc887a1edeba500b25589e84f2ca2a557ca1871d41b04b250f7b4"
+    },
+    {
+      "check": "source_identity:validation/numeric/reference80_official_endpoint_historical.npz",
+      "passed": true,
+      "original": "q3_final_delivery/validation/reference80_official_endpoint.npz",
+      "sha256": "60633c6cc41a11906f42ddf9f0c59a7d1f31910eb9bce27638c7a2678e8eed30"
+    },
+    {
+      "check": "source_identity:validation/numeric/reference160_official_endpoint_historical.npz",
+      "passed": true,
+      "original": "q3_final_delivery/validation/reference160_official_endpoint.npz",
+      "sha256": "5c88f94169eebde19ddeb1b99a79aa5423429ba31ed0d7cb8eb38292dcda036c"
+    }
+  ],
+  "all_pass": true,
+  "source_zip_limit": "The archive hash quoted by Pro is retained as provenance; that exact archive is not separately present or verified here. Its retained numerical/input files are compared directly to the repository originals."
+}

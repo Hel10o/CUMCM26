@@ -1,0 +1,22 @@
+{
+  "scenario": "time_mean",
+  "future_T_C": 49.99591666666667,
+  "future_C_kgkg": 0.04999041666666666,
+  "critical_s": 206926.4375837698,
+  "critical_h": 57.479565995491605,
+  "critical_max": 0.15,
+  "critical_argmax_flat_index": 0,
+  "execution_s": 206926.56,
+  "execution_h": 57.4796,
+  "execution_max": 0.14999996434698004,
+  "strict_execution_pass": true,
+  "Cmax_206901": 0.15000740942317686,
+  "strict_at_206901": false,
+  "elapsed_s": 8.806356067000024,
+  "nfev": 9090,
+  "njev": 13,
+  "nlu": 709,
+  "checkpoint_sha256": "53a4c255454f90eeec2d86ab66d58dd8736c2286cf7e0139dd1851010ea60b8e",
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "source_sha256": "199381ea52d6dd5b12d75ad7e4be36355d3c66f98187a44d5254fa07d3421eb2"
+}

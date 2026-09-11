@@ -1,0 +1,277 @@
+{
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "blas_threads": 1
+  },
+  "original_file_count": 82,
+  "frozen_verify": {
+    "exit_code": 1,
+    "log": "frozen_verify.log",
+    "failure": "Windows snapshot paths use backslashes while manifest uses forward slashes"
+  },
+  "cold_comparison": {
+    "cold_algorithm": "N80 Chebyshev collocation, primitive-gradient moisture flux, BDF from uniform initial state t=0",
+    "formal_source": "historical reference80 Radau trajectory + actual reference80 continuation to 206906.76 s",
+    "elapsed_s": 52.46031960000255,
+    "critical_s": 206906.3892193108,
+    "critical_difference_s": -0.0007130347657948732,
+    "execution_s": 206906.75999999998,
+    "execution_max": 0.14999989200034242,
+    "execution_max_difference": -2.0768980979468665e-10,
+    "times_exactly_equal": true,
+    "moisture_workbook_cells": 72429,
+    "max_abs_moisture_difference": 3.434461604001626e-10,
+    "max_abs_temperature_difference": 3.3338594107590325e-09,
+    "workbook_four_decimal_mismatches": 0,
+    "table5_values": 50,
+    "table5_max_abs_difference": 2.0815826839992724e-10,
+    "table5_four_decimal_mismatches": 0,
+    "last_snapshot_polynomial_extrema": {
+      "t_s": 206906.75999999998,
+      "max_C": 0.14999989200034242,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838795407889154e-07
+    },
+    "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "solver_driver_sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda",
+    "complete_source_hashes": {
+      "build_documents.py": "b40d0732e6cfc3e902449ce82bb5475f46bb919e9def866d665f140e932523ba",
+      "export_workbook.py": "af1d710f011c14248496e374ff85858637412c952eee4f1b173b831168719224",
+      "future_scenarios_from_checkpoint.py": "30ffe81f0543ccf582879cfe97efb9cdd7ddc19cda1802c6df2c05a836d85a86",
+      "q3_reference.py": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "q3_reference_legacy.py": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "q3_refined_reference.py": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda",
+      "q3_solver.py": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "q3_solver_legacy.py": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "runtime_selftests.py": "7f45b64354fd7646751a152cbae70447335258e6c31357908a7101323f69c95c",
+      "validate_xlsx.py": "753512f76f382c297b13388e7c2f0cd36a6b69b07b32ccfb0ecc0fb98db399c3",
+      "verify_frozen.py": "4356acb19ffaaa59bd8b2d95b6e91dbfa8c93f586fe08f7a393dbd0f5c06b91e"
+    },
+    "cold_output_hashes": {
+      "result3.xlsx": "66b317263e6355f19bb39d3315095e66686cb87c6faa0ae1a1c033e1733bc4b4",
+      "solution.json": "42f1e9adf43ef38e38085fc19e18b4bfaccb6a993b843c353dd6e2f2c4dc445f",
+      "solution.npz": "6dfef61bcdf05839b6e4f8a3bebb6d32e6b64e8b21f1da1c2075fbe92b8ec897"
+    }
+  },
+  "cold_export": {
+    "exit_code": 0,
+    "reused_completed_export": true,
+    "log": "cold_export.log"
+  },
+  "cold_xlsx_readback": {
+    "exit_code": 0,
+    "command": [
+      "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "D:\\Desktop\\CUMCM26\\q3_refinement_delivery\\source\\validate_xlsx.py",
+      "--xlsx",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\cold\\output\\result3.xlsx",
+      "--solution",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\cold\\output\\solution.npz",
+      "--json-out",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\cold_xlsx_readback.json"
+    ],
+    "log": "cold_xlsx_readback.log"
+  },
+  "original_selftests": {
+    "exit_code": 0,
+    "command": [
+      "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\q3_refinement_delivery\\source\\runtime_selftests.py"
+    ],
+    "log": "original_selftests.log"
+  },
+  "selftests_result": {
+    "passed": true,
+    "probes": [
+      {
+        "name": "original_xlsx_accepts",
+        "passed": true
+      },
+      {
+        "name": "xlsx_extra_rejected",
+        "passed": true,
+        "reason": "Exact extent must be A1:V3450, got row=3450, col=23"
+      },
+      {
+        "name": "xlsx_header_rejected",
+        "passed": true,
+        "reason": "Wrong A1 title/unit"
+      },
+      {
+        "name": "orphan_npz_not_overwritten",
+        "passed": true
+      },
+      {
+        "name": "export_existing_target_rejected",
+        "passed": true
+      },
+      {
+        "name": "report_uses_current_event_data",
+        "passed": true
+      }
+    ]
+  },
+  "candidate_posix_verify": {
+    "exit_code": 0,
+    "command": [
+      "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\q3_refinement_delivery\\source\\verify_frozen.py",
+      "--root",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\q3_refinement_delivery",
+      "--audit-out",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\verify_out"
+    ],
+    "log": "candidate_posix_verify.log"
+  },
+  "candidate_stale_table_verify": {
+    "exit_code": 0,
+    "command": [
+      "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+      "-B",
+      "-X",
+      "utf8",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\q3_refinement_delivery\\source\\verify_frozen.py",
+      "--root",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\q3_refinement_delivery",
+      "--audit-out",
+      "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_snb509w0\\stale_verify_out"
+    ],
+    "log": "candidate_stale_table_verify.log"
+  },
+  "probes": [
+    {
+      "name": "nan_moisture",
+      "accepted": true,
+      "result": {
+        "passed": true,
+        "sheet": "Sheet1",
+        "rows_including_header": 3450,
+        "columns": 22,
+        "data_rows": 3449,
+        "moisture_cells": 72429,
+        "max_time_difference_s": 0.0,
+        "max_moisture_difference_kgkg": 0.0,
+        "last_time_s": 206906.75999999998,
+        "last_max_C": 0.14999989220803223
+      }
+    },
+    {
+      "name": "nan_radius",
+      "accepted": true,
+      "result": {
+        "passed": true,
+        "sheet": "Sheet1",
+        "rows_including_header": 3450,
+        "columns": 22,
+        "data_rows": 3449,
+        "moisture_cells": 72429,
+        "max_time_difference_s": 0.0,
+        "max_moisture_difference_kgkg": 0.0,
+        "last_time_s": 206906.75999999998,
+        "last_max_C": 0.14999989220803223
+      }
+    },
+    {
+      "name": "duplicate_cell",
+      "accepted": true,
+      "result": {
+        "passed": true,
+        "sheet": "Sheet1",
+        "rows_including_header": 3450,
+        "columns": 22,
+        "data_rows": 3449,
+        "moisture_cells": 72429,
+        "max_time_difference_s": 0.0,
+        "max_moisture_difference_kgkg": 0.0,
+        "last_time_s": 206906.75999999998,
+        "last_max_C": 0.14999989220803223
+      }
+    },
+    {
+      "name": "dynamic_documents_60h_fixture",
+      "new_critical_present": true,
+      "stale_execution_57_4741h_present": true,
+      "stale_last_complete_minute_206880s_present": true
+    },
+    {
+      "name": "refined_cross_segment_fixture",
+      "accepted": false,
+      "exception": "RuntimeError",
+      "reason": "Derived execution endpoint crosses unresolved integration segment",
+      "root_s": 59.995,
+      "segment_end_s": 60.0,
+      "execution_s": 60.12
+    },
+    {
+      "name": "scenario_execution_outside_integrated_span_fixture",
+      "accepted": true,
+      "queries": [
+        {
+          "t_s": 206939.995,
+          "outside_span": false
+        },
+        {
+          "t_s": 206940.24,
+          "outside_span": true
+        },
+        {
+          "t_s": 206901.0,
+          "outside_span": false
+        }
+      ],
+      "event": {
+        "scenario": "mean",
+        "future_T_C": 49.99893442622951,
+        "future_C_kgkg": 0.04998754098360656,
+        "critical_s": 206939.995,
+        "critical_h": 57.483331944444444,
+        "critical_max": 0.15,
+        "critical_argmax_flat_index": 0,
+        "execution_s": 206940.24,
+        "execution_h": 57.483399999999996,
+        "execution_max": 0.149999755,
+        "strict_execution_pass": true,
+        "Cmax_206901": 0.15003899499999998,
+        "strict_at_206901": false,
+        "elapsed_s": 0.0003436999977566302,
+        "nfev": 0,
+        "njev": 0,
+        "nlu": 0,
+        "checkpoint_sha256": "6126f50e228830f19cf2b2d1dd542393d71e22196b0a63c941c48ceecd64c430",
+        "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "source_sha256": "30ffe81f0543ccf582879cfe97efb9cdd7ddc19cda1802c6df2c05a836d85a86"
+      },
+      "scope": "fake solve_ivp only; no physical scenario assertion; real Operator grid and checkpoint size validation retained"
+    },
+    {
+      "name": "manifest_valid_but_wrong_table5",
+      "accepted": true,
+      "scope": "changed isolated table and regenerated isolated manifest; demonstrates absent cross-artifact semantic check"
+    }
+  ],
+  "original_unchanged": true,
+  "original_snapshot_difference": {
+    "added": [],
+    "removed": [],
+    "changed": []
+  },
+  "limitations": [
+    "No new N2048 scenario integrations; scoped cold-start BDF run only",
+    "No claim of mathematical error bounds",
+    "No source package edits; only one-line verifier candidate retained",
+    "Original full-package verify fails on Windows; candidate verifies after path normalization and candidate manifest regeneration",
+    "Cold-start and formal trajectory share the same spatial Reference operator; BDF vs Radau is a time-method cross-check, not independent physics"
+  ]
+}

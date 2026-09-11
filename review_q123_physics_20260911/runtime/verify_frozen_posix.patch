@@ -1,0 +1,6 @@
+--- a/source/verify_frozen.py
++++ b/source/verify_frozen.py
+@@ -18,2 +18,2 @@
+ def snapshot(root: Path):
+-    return {str(p.relative_to(root)):sha256(p) for p in sorted(root.rglob('*')) if p.is_file() and '__pycache__' not in p.parts}
++    return {p.relative_to(root).as_posix():sha256(p) for p in sorted(root.rglob('*')) if p.is_file() and '__pycache__' not in p.parts}

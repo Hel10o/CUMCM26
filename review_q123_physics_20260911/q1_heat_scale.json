@@ -1,0 +1,36 @@
+{
+  "scope": "Fresh postprocessing of frozen Q1 solution; no coupled latent-heat PDE run.",
+  "solution_sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+  "additional_assumptions": [
+    "820 kg/m3 is initial wet bulk density",
+    "fixed dry density 820/(1+2.55)",
+    "all outward effective water loss evaporates at the surface",
+    "latent heat 2.45 MJ/kg used as a scale estimate"
+  ],
+  "time_s": 1800.0,
+  "dry_density_kg_m3": 230.98591549295776,
+  "dry_mass_kg": 0.0725663655195389,
+  "water_loss_kg": 0.018609122380912488,
+  "latent_J": 45592.349833235596,
+  "baseline_sensible_J": 4800.979302361748,
+  "baseline_convective_input_1s_trapezoid_J": 4800.978930016514,
+  "convective_minus_sensible_J": -0.0003723452336998889,
+  "latent_to_sensible": 9.496468733120206,
+  "latent_to_baseline_convective_input": 9.496469469629348,
+  "lambda_temperature_range_20_50_C_J_kg": [
+    2453780.0,
+    2382950.0
+  ],
+  "conditional_air_check": {
+    "assumptions": [
+      "air value is kg vapor/kg dry air",
+      "pressure 101.325 kPa",
+      "FAO Tetens approximation"
+    ],
+    "pv_kPa": 5.115635138126608,
+    "dew_point_C": 33.300774857479055,
+    "historical_latent_only_surface_C": 11.902627810118135,
+    "saturation_pressure_at_that_surface_kPa": 1.3935838234368583
+  },
+  "interpretation": "The latent estimate exceeds baseline heating, so omission is not demonstrably small under these assumptions. After coupling, both evaporation and surface temperature/convective heat change; baseline heating is not a fixed available-energy ceiling. A temperature below the conditional dew point with persistent outward evaporation diagnoses incompatible closures, not proof that latent heat is negligible."
+}

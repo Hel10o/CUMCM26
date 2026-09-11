@@ -1,0 +1,65 @@
+[
+  {
+    "case": "cylinder40x64",
+    "n_r": 40,
+    "n_z": 64,
+    "critical_s": 206910.90476341965,
+    "critical_h": 57.475251323172124,
+    "end_effect_vs_matching_radial_s": -7.657284624205204,
+    "max_midplane_T_difference_K": 0.0017010404364157239,
+    "max_midplane_C_difference_kgkg": 2.264303227117459e-05,
+    "event_max_index": 0,
+    "projections": []
+  },
+  {
+    "case": "cylinder40x64_iso",
+    "n_r": 40,
+    "n_z": 64,
+    "critical_s": 206910.90461413743,
+    "critical_h": 57.47525128170484,
+    "end_effect_vs_matching_radial_s": -7.657433906424558,
+    "max_midplane_T_difference_K": 0.0017010404364157239,
+    "max_midplane_C_difference_kgkg": 2.264303227117459e-05,
+    "event_max_index": 0,
+    "projections": [
+      {
+        "t_s": 21600.0,
+        "max_temperature_projection_K": 1.3017529383319015e-05
+      }
+    ]
+  },
+  {
+    "case": "cylinder80x64_iso",
+    "n_r": 80,
+    "n_z": 64,
+    "critical_s": 206901.78337116484,
+    "critical_h": 57.472717603101344,
+    "end_effect_vs_matching_radial_s": -7.660840359778376,
+    "max_midplane_T_difference_K": 0.0017012735138095536,
+    "max_midplane_C_difference_kgkg": 2.2643209914852136e-05,
+    "event_max_index": 0,
+    "projections": [
+      {
+        "t_s": 21600.0,
+        "max_temperature_projection_K": 1.335382428635512e-05
+      }
+    ]
+  },
+  {
+    "case": "cylinder40x128_iso",
+    "n_r": 40,
+    "n_z": 128,
+    "critical_s": 206911.04974069062,
+    "critical_h": 57.47529159463628,
+    "end_effect_vs_matching_radial_s": -7.512307353230426,
+    "max_midplane_T_difference_K": 0.0016933036072046548,
+    "max_midplane_C_difference_kgkg": 2.2510438171252645e-05,
+    "event_max_index": 0,
+    "projections": [
+      {
+        "t_s": 21600.0,
+        "max_temperature_projection_K": 1.3409649810114388e-05
+      }
+    ]
+  }
+]

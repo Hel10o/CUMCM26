@@ -1,0 +1,4 @@
+numpy>=2.0
+scipy>=1.14
+matplotlib>=3.8
+# Official workbook generation in ChatGPT used artifact_tool; the portable OOXML exporter has no extra spreadsheet dependency.

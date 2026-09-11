@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "probes": [
+    {
+      "name": "original_xlsx_accepts",
+      "passed": true
+    },
+    {
+      "name": "xlsx_extra_rejected",
+      "passed": true,
+      "reason": "Exact extent must be A1:V3450, got row=3450, col=23"
+    },
+    {
+      "name": "xlsx_header_rejected",
+      "passed": true,
+      "reason": "Wrong A1 title/unit"
+    },
+    {
+      "name": "orphan_npz_not_overwritten",
+      "passed": true
+    },
+    {
+      "name": "export_existing_target_rejected",
+      "passed": true
+    },
+    {
+      "name": "report_uses_current_event_data",
+      "passed": true
+    }
+  ]
+}

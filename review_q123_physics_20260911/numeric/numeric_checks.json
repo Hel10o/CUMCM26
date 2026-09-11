@@ -1,0 +1,58 @@
+{
+  "scope": "Fresh independent OOXML readback, stored trajectory comparisons and scalar spatial quadrature only; no PDE rerun.",
+  "xlsx": {
+    "header": "时间/s\\到药材中心的距离/cm",
+    "data_rows": 3449,
+    "moisture_cells": 72429,
+    "all_values_exact": true,
+    "finite_unique_cells": true,
+    "moisture_format": "0.0000"
+  },
+  "official_provenance": "Exact historical Radau trajectory plus historical real endpoint continuation; not a new physical model.",
+  "references": {
+    "historical160_BDF": {
+      "max_abs_difference": 9.331825590042087e-09,
+      "four_decimal_mismatches": 0
+    },
+    "historical80_Radau": {
+      "max_abs_difference": 0.0,
+      "four_decimal_mismatches": 0
+    },
+    "Pro_fresh80_BDF": {
+      "max_abs_difference": 3.434554862735695e-10,
+      "four_decimal_mismatches": 0
+    }
+  },
+  "old_FV_comparison": {
+    "max_abs_difference": 3.6031241457123997e-07,
+    "four_decimal_mismatches": 8
+  },
+  "initial_dry_mass_g": 86.40707230887533,
+  "q2_dry_mass": [
+    {
+      "N": 1280,
+      "time_s": 10800,
+      "apparent_dry_mass_g": 109.6271065354271,
+      "gain_percent": 26.87283992628313
+    },
+    {
+      "N": 2560,
+      "time_s": 10800,
+      "apparent_dry_mass_g": 109.62710191204316,
+      "gain_percent": 26.87283457558227
+    }
+  ],
+  "q3_dry_mass": [
+    {
+      "gauss_nodes": 128,
+      "apparent_dry_mass_g": 186.11634698944863,
+      "gain_percent": 115.39480741130448
+    },
+    {
+      "gauss_nodes": 256,
+      "apparent_dry_mass_g": 186.11634698973396,
+      "gain_percent": 115.3948074116347
+    }
+  ],
+  "mass_interpretation": "Diagnostic contradiction if empirical rho is actual wet bulk density in fixed volume; these are not actual dry material generation predictions. Q2 uses old full FV snapshots; Q3 uses the refined official full spectral endpoint, interpolating F(C) in x=(r/R)^2 then inverting F before integration."
+}

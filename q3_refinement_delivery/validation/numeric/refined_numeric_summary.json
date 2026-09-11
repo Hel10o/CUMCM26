@@ -1,0 +1,15 @@
+{
+  "official_reference80_Radau_critical_s": 206906.38993234557,
+  "reference160_BDF_critical_s": 206906.3883501266,
+  "fresh_reference80_BDF_critical_s": 206906.38899237852,
+  "historical_FV_N2048_critical_s": 206906.39466967233,
+  "differences_from_official_s": {
+    "reference160_BDF": -0.0015822189743630588,
+    "fresh_reference80_BDF": -0.0009399670525453985,
+    "historical_FV_N2048": 0.004737326758913696
+  },
+  "execution_s": 206906.75999999998,
+  "execution_max_official": 0.14999989220803223,
+  "all_four_decimal_workbook_cells_stable_against_reference160": true,
+  "all_four_decimal_workbook_cells_stable_against_fresh_reference80_BDF": true
+}

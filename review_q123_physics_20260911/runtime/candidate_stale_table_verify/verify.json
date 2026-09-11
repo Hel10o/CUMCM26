@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "root": "D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\candidate_8_18ycw6\\q3_refinement_delivery",
+  "root_unchanged": true,
+  "manifest_files": 81,
+  "endpoint_max_C": 0.14999989220803223,
+  "checks": {
+    "event_execution_matches_solution": true,
+    "strict_endpoint": true,
+    "event_execution_max_matches_profile": true,
+    "table5_exists": true,
+    "xlsx": {
+      "passed": true,
+      "sheet": "Sheet1",
+      "rows_including_header": 3450,
+      "columns": 22,
+      "data_rows": 3449,
+      "moisture_cells": 72429,
+      "max_time_difference_s": 0.0,
+      "max_moisture_difference_kgkg": 0.0,
+      "last_time_s": 206906.75999999998,
+      "last_max_C": 0.14999989220803223
+    }
+  }
+}

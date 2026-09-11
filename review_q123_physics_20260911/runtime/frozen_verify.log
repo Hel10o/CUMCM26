@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "D:\Desktop\CUMCM26\q3_refinement_delivery\source\verify_frozen.py", line 63, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--root',type=Path,required=True);p.add_argument('--audit-out',type=Path,required=True);a=p.parse_args();print(json.dumps(verify(a.root,a.audit_out),ensure_ascii=False,indent=2))
+                                                                                                                                                                         ~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\CUMCM26\q3_refinement_delivery\source\verify_frozen.py", line 40, in verify
+    raise ValueError(f'manifest coverage mismatch: missing={sorted(set(actual)-set(manifest))[:5]}, stale={sorted(set(manifest)-set(actual))[:5]}')
+ValueError: manifest coverage mismatch: missing=['inputs\\attachment1.xlsx', 'inputs\\problem.pdf', 'inputs\\problem_page_2.png', 'inputs\\problem_page_3.png', 'inputs\\problem_page_4.png'], stale=['inputs/attachment1.xlsx', 'inputs/problem.pdf', 'inputs/problem_page_2.png', 'inputs/problem_page_3.png', 'inputs/problem_page_4.png']
+Traceback (most recent call last):
+  File "D:\Desktop\CUMCM26\q3_refinement_delivery\run_all.py", line 31, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "D:\Desktop\CUMCM26\q3_refinement_delivery\run_all.py", line 21, in main
+    run([PY,str(ROOT/'source/verify_frozen.py'),'--root',str(ROOT),'--audit-out',str(a.audit_out)])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Desktop\CUMCM26\q3_refinement_delivery\run_all.py", line 10, in run
+    subprocess.run(cmd,check=True,env=env)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\libai\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe', 'D:\\Desktop\\CUMCM26\\q3_refinement_delivery\\source\\verify_frozen.py', '--root', 'D:\\Desktop\\CUMCM26\\q3_refinement_delivery', '--audit-out', 'D:\\Desktop\\CUMCM26\\review_q123_physics_20260911\\runtime\\frozen_verify']' returned non-zero exit status 1.

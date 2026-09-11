@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "sheet": "Sheet1",
+  "rows_including_header": 3450,
+  "columns": 22,
+  "data_rows": 3449,
+  "moisture_cells": 72429,
+  "max_time_difference_s": 0.0,
+  "max_moisture_difference_kgkg": 0.0,
+  "last_time_s": 206906.75999999998,
+  "last_max_C": 0.14999989220803223
+}

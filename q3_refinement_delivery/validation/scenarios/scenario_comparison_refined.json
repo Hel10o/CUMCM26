@@ -1,0 +1,44 @@
+{
+  "grid": "N=2048 FV continuation from verified 4 h full internal state",
+  "common_model": "same q3_solver operator, BDF, rtol=2e-12, atol_T=2e-12, atol_C=2e-14, max_step=60 s; all-domain maximum event",
+  "scenarios": {
+    "mean": {
+      "future_T_C": 49.99893442622951,
+      "future_C_kgkg": 0.04998754098360656,
+      "critical_s": 206906.39467181696,
+      "critical_h": 57.473998519949156,
+      "execution_s": 206906.75999999998,
+      "execution_h": 57.47409999999999,
+      "execution_max": 0.14999989358852844,
+      "Cmax_206901": 0.15000157138225836,
+      "strict_at_206901": false
+    },
+    "nominal": {
+      "future_T_C": 50.0,
+      "future_C_kgkg": 0.05,
+      "critical_s": 206900.28496322126,
+      "critical_h": 57.47230137867257,
+      "execution_s": 206900.63999999998,
+      "execution_h": 57.47239999999999,
+      "execution_max": 0.14999989658225663,
+      "Cmax_206901": 0.1499997917191354,
+      "strict_at_206901": true
+    },
+    "time_mean": {
+      "future_T_C": 49.99591666666667,
+      "future_C_kgkg": 0.04999041666666666,
+      "critical_s": 206926.4375837698,
+      "critical_h": 57.479565995491605,
+      "execution_s": 206926.56,
+      "execution_h": 57.4796,
+      "execution_max": 0.14999996434698004,
+      "Cmax_206901": 0.15000740942317686,
+      "strict_at_206901": false
+    }
+  },
+  "differences_from_mean_s": {
+    "mean": 0.0,
+    "nominal": -6.109708595700795,
+    "time_mean": 20.042911952827126
+  }
+}

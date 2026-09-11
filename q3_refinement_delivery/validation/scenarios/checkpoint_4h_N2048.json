@@ -1,0 +1,10 @@
+{
+  "source_main_npz_sha256": "53a4c255454f90eeec2d86ab66d58dd8736c2286cf7e0139dd1851010ea60b8e",
+  "checkpoint_time_s": 14400.0,
+  "shape": [
+    2049,
+    1,
+    2
+  ],
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+}
