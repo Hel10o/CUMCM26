@@ -1,0 +1,64 @@
+{
+  "repository": "Hel10o/libai",
+  "pinned_commit": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+  "commit_date_utc": "2026-09-11T06:38:15Z",
+  "source_zip": "第三问_Pro分析交付包.zip",
+  "source_zip_sha256": "8125fb1cbbbf32ff8d6873e3cc25e79567c0ec3b4f0512b439ff94ef814bfa4a",
+  "manifest_git_blob_sha1": "30255c732161fb83e2ed55302045b01dc2f8e023",
+  "git_api_reads": [
+    {
+      "path": "README.md",
+      "ref": "default branch at read",
+      "blob_sha1": "c8352c90b83f01f2f7c2da743669555facb07e48",
+      "status": "complete"
+    },
+    {
+      "url": "https://api.github.com/repos/Hel10o/libai/commits?per_page=1",
+      "status": "complete, current commit identified"
+    },
+    {
+      "path": "readable/README.md",
+      "ref": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+      "blob_sha1": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+      "status": "complete"
+    },
+    {
+      "path": "q3_pro_handoff/第三问分析与Pro交付说明.md",
+      "ref": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+      "status": "connector response truncated; completed using hash-verified uploaded copy"
+    },
+    {
+      "path": "q3_pro_handoff/MANIFEST.sha256",
+      "ref": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+      "status": "first 12 lines and whole-blob SHA returned; uploaded whole manifest git-blob hash matches"
+    }
+  ],
+  "upstream_manifest_files_verified": 153,
+  "all_hashes_pass": true,
+  "maddix": {
+    "requested_url": "https://arxiv.org/pdf/1709.02581v5",
+    "read_url": "https://arxiv.org/pdf/1709.02581",
+    "verified_header": "arXiv:1709.02581v5 [math.NA] 13 Feb 2018",
+    "physical_pages": 22,
+    "read_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      17,
+      18
+    ],
+    "visual_pages": [
+      2,
+      6,
+      17,
+      18
+    ],
+    "local_pdf_bytes_obtained": false,
+    "local_sha256": null
+  },
+  "three_drying_papers": "Read listed hash-matched page texts, not their original PDF bytes. Upstream historical original-PDF checks are attributed to upstream, not to this execution.",
+  "writes": "new local q3_final_delivery only; no remote write operations"
+}

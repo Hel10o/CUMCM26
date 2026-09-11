@@ -1,0 +1,58 @@
+{
+  "events": [
+    {
+      "case": "integral256",
+      "n": 256,
+      "rtol": 2e-10,
+      "critical_s": 206906.68684557133,
+      "critical_h": 57.47407967932537
+    },
+    {
+      "case": "integral512",
+      "n": 512,
+      "rtol": 2e-10,
+      "critical_s": 206906.4624542988,
+      "critical_h": 57.47401734841633
+    },
+    {
+      "case": "integral1024",
+      "n": 1024,
+      "rtol": 2e-10,
+      "critical_s": 206906.4062638714,
+      "critical_h": 57.47400173996428
+    },
+    {
+      "case": "integral2048",
+      "n": 2048,
+      "rtol": 2e-10,
+      "critical_s": 206906.39236690788,
+      "critical_h": 57.47399787969663
+    },
+    {
+      "case": "integral1024_tight",
+      "n": 1024,
+      "rtol": 2e-12,
+      "critical_s": 206906.4086999421,
+      "critical_h": 57.474002416650585
+    },
+    {
+      "case": "main2048_tight",
+      "n": 2048,
+      "rtol": 2e-12,
+      "critical_s": 206906.39466967233,
+      "critical_h": 57.47399851935342
+    }
+  ],
+  "observed_orders": [
+    1.9976202860386394,
+    2.015554683465648
+  ],
+  "estimated_fine_spatial_error_s": 0.004676756594562903,
+  "measured_time_setting_change_s": 0.002436070702970028,
+  "richardson_diagnostic_s": 206906.38999291573,
+  "engineering_numerical_error_budget_s": 0.03,
+  "budget_is_interval_arithmetic_proof": false,
+  "hours_four_decimal_rounding_stable_in_budget": true,
+  "execution_rule": "ceil((critical_s + 0.03)/0.36)*0.36",
+  "expected_execution_s": 206906.75999999998
+}

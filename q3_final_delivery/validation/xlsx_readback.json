@@ -1,0 +1,26 @@
+{
+  "file": "result3.xlsx",
+  "sha256": "ea03e53da185dbeb8f91a79beae81e659867eba8327d4ad4df20873689b45b00",
+  "zip_crc_pass": true,
+  "sheet_names": [
+    "Sheet1"
+  ],
+  "rows_including_header": 3450,
+  "data_rows": 3449,
+  "water_cells_checked": 72429,
+  "numeric_data_cells_checked": 75878,
+  "max_value_readback_error": 0.0,
+  "all_display_4dp_match_npz": true,
+  "all_water_number_formats": [
+    "0.0000"
+  ],
+  "all_time_values_match": true,
+  "last_regular_s": 206880.0,
+  "last_s": 206906.76,
+  "last_center_raw": 0.14999989358790375,
+  "last_center_display": "0.1500",
+  "last_surface_raw": 0.052646936354767346,
+  "end_row": 3450,
+  "ellipsis_removed": true,
+  "saved_event_and_final_row_agree": true
+}

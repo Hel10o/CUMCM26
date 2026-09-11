@@ -1,0 +1,54 @@
+{
+  "scope": "Copied code, isolated data mutations, no modification of original package",
+  "probes": [
+    {
+      "name": "copied_original_xlsx_accepts",
+      "observed_accepted": true,
+      "expected_accepted": true,
+      "passed": true,
+      "cells": 72429
+    },
+    {
+      "name": "extra_column_W2",
+      "observed_accepted": true,
+      "expected_accepted": false,
+      "passed": false,
+      "reason": null
+    },
+    {
+      "name": "wrong_A1_units",
+      "observed_accepted": true,
+      "expected_accepted": false,
+      "passed": false,
+      "reason": null
+    },
+    {
+      "name": "orphan_npz_must_not_be_overwritten",
+      "observed_overwritten": true,
+      "expected_overwritten": false,
+      "passed": false,
+      "note": "zero-duration isolated solver fixture; no PDE integration"
+    },
+    {
+      "name": "report_heading_uses_its_event_data",
+      "observed_old_time_remains": true,
+      "expected_old_time_remains": false,
+      "passed": false,
+      "fixture_event_h": 60.0,
+      "note": "report-only synthetic fixture; not a claimed new physical solution"
+    }
+  ],
+  "original_selected_files_unchanged": true,
+  "selected_original_sha256": {
+    "source/export_workbook.py": "229506522238345b45bde9a60ee72971ae26d9c784a5093d91662c27a3f96f99",
+    "source/make_report.py": "ff21b05c26179f81fe736889f5487a2e542423161801a0d9630bcc7dcb64a66a",
+    "source/q3_reference.py": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+    "source/q3_solver.py": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+    "source/q3_solver_main_executed.py": "fee53985193a3689db97a5c1dc9d617ee2296f33e8c810e52267e5403d7b9f4a",
+    "source/validate_results.py": "59055ffe2507798519cdff0a7915a5f5f1592057af0001c00ab9294979fd974c",
+    "run_all.py": "d7ccae891d177cfecd2f24a94fc23319227361f27bae32e64a34f573756c3c1d",
+    "validation/configs/main.json": "4a74aca30ec6043fb356773c667e74e877430057e86112791a96d7acc8311268",
+    "inputs/attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "result3.xlsx": "ea03e53da185dbeb8f91a79beae81e659867eba8327d4ad4df20873689b45b00"
+  }
+}

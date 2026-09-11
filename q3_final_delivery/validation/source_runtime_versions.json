@@ -1,0 +1,6 @@
+{
+  "main_run_executed_source": "source/q3_solver_main_executed.py",
+  "main_executed_sha256": "fee53985193a3689db97a5c1dc9d617ee2296f33e8c810e52267e5403d7b9f4a",
+  "reproduction_source": "source/q3_solver.py",
+  "only_difference": "An explicit sol=None releases completed dense-output history before the next segment; no arithmetic, parameters, accepted states, or integration settings change."
+}

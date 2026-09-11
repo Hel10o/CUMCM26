@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "wall_time_s": 345.0625593,
+  "OPENBLAS_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "MKL_NUM_THREADS": "1"
+}

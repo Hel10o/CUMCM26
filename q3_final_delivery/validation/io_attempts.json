@@ -1,0 +1,15 @@
+{
+  "artifact_startup_failures": true,
+  "first_large_export_failed": true,
+  "failed_attempts_treated_as_no_output": true,
+  "recovery": "after large numerical jobs exited, reinitialize artifact RPC; export succeeded",
+  "official_workbook_engine": "artifact_tool",
+  "official_workbook_readback": "all numeric cells independently parsed from ZIP/XML",
+  "previews_visually_reviewed": [
+    "result3_preview_head.png",
+    "result3_preview_tail.png"
+  ],
+  "numerical_plots_visually_reviewed": [
+    "moisture_history.png"
+  ]
+}

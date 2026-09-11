@@ -1,0 +1,38 @@
+[
+  {
+    "reference": "reference80",
+    "start_from_saved_time_s": 206906.39993234558,
+    "target_time_s": 206906.76,
+    "method": "Radau",
+    "max_step_s": 0.05,
+    "success": true,
+    "nfev": 77,
+    "polynomial_extrema": {
+      "max_C": 0.14999989220803223,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838795439103334e-07
+    },
+    "max_T_difference_K": 1.8545165403338615e-12,
+    "max_C_difference_kgkg": 2.6719550252907176e-09,
+    "all_21_C_four_decimal_match": true
+  },
+  {
+    "reference": "reference160",
+    "start_from_saved_time_s": 206906.3983501266,
+    "target_time_s": 206906.76,
+    "method": "Radau",
+    "max_step_s": 0.05,
+    "success": true,
+    "nfev": 92,
+    "polynomial_extrema": {
+      "max_C": 0.1499998917471701,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.83879095680664e-07
+    },
+    "max_T_difference_K": 3.199573939127731e-11,
+    "max_C_difference_kgkg": 1.8407336488390769e-09,
+    "all_21_C_four_decimal_match": true
+  }
+]

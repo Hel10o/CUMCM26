@@ -1,0 +1,8 @@
+{
+  "case": "cylinder80x128",
+  "exit_code": -9,
+  "completed_end_event": false,
+  "last_logged_time_s": 64800,
+  "excluded_from_passed_results": true,
+  "note": "Killed during high-memory full coupled run. Original log retained; no event result fabricated."
+}

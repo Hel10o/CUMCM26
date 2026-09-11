@@ -1,0 +1,33 @@
+{
+  "reference_critical_h": 57.47399720342799,
+  "main_difference_s": -0.004737331561045721,
+  "endpoint_max_C": 0.1499998922080308,
+  "table5": {
+    "water_values": 50,
+    "max_C_difference": 1.1699731405911962e-08,
+    "all_50_four_decimal_match": true
+  },
+  "full_export": {
+    "temperature_K": {
+      "maximum_abs": 1.4286753113879058e-07,
+      "maximum_time_s": 780.0,
+      "maximum_radius_cm": 1.7000000000000002,
+      "all_exported_four_decimal_mismatches": 1
+    },
+    "moisture_kgkg": {
+      "maximum_abs": 3.6031241457123997e-07,
+      "maximum_time_s": 60.0,
+      "maximum_radius_cm": 2.0,
+      "all_exported_four_decimal_mismatches": 8
+    }
+  }
+}
+{
+  "counterexamples": [
+    "extra_column_W2",
+    "wrong_A1_units",
+    "orphan_npz_must_not_be_overwritten",
+    "report_heading_uses_its_event_data"
+  ],
+  "original_selected_files_unchanged": true
+}

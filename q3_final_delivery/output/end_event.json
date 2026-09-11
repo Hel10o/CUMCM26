@@ -1,0 +1,41 @@
+{
+  "critical_s": 206906.39466967233,
+  "critical_h": 57.47399851935342,
+  "critical_max": 0.15,
+  "t_minus_s": 206906.38466967232,
+  "max_minus": 0.15000000291276885,
+  "t_plus_s": 206906.40466967234,
+  "max_plus": 0.14999999708723138,
+  "critical_slope_kgkg_s": -2.9127687357526564e-07,
+  "bracket_s": 0.02,
+  "argmax_flat_index": 0,
+  "execution_s": 206906.76,
+  "execution_h": 57.4741,
+  "execution_max": 0.14999989358790375,
+  "strict_execution_pass": true,
+  "global_max_from_saved_fields": [
+    0.15000000291276885,
+    0.15,
+    0.14999999708723138,
+    0.14999989358790375
+  ],
+  "saved_event_times_s": [
+    206906.38466967232,
+    206906.39466967233,
+    206906.40466967234,
+    206906.76
+  ],
+  "max_positions_r_m": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "reconstruction": "PCHIP in r^2, bounded on every interval; formal axial-uniform domain. Thus reconstructed max equals max over all 2049 nodes.",
+  "threshold_kgkg": 0.15,
+  "numerical_error_budget_s": 0.03,
+  "strict_PDE_interval_error_certificate": false,
+  "excel_final_row_definition": "strict execution time, not equality root and not first qualified minute",
+  "last_full_minute_s": 206880.0,
+  "first_qualified_full_minute_s": 206940.0
+}

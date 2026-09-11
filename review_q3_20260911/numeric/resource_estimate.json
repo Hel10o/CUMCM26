@@ -1,0 +1,8 @@
+{
+  "total_memory_kib": 16547704,
+  "free_memory_kib": 3093420,
+  "estimated_full_array_bytes": 113072016,
+  "estimated_peak_under_bytes": 1073741824,
+  "process_policy": "one N2048 FV plus one independent N80 reference maximum",
+  "time_utc": "2026-09-11T08:00:41.8632491Z"
+}

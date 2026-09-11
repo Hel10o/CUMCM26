@@ -1,0 +1,18 @@
+[
+  {
+    "name": "reference80",
+    "critical_time_difference_s": 0.004737326758913696,
+    "maximum_T_difference_K": 1.428674103465255e-07,
+    "maximum_C_difference_kgkg": 3.6031241457123997e-07,
+    "table5_regular_rows_C_max_error": 1.1699726965019863e-08,
+    "table5_regular_rows_four_decimal_match": true
+  },
+  {
+    "name": "reference160",
+    "critical_time_difference_s": 0.006319545733276755,
+    "maximum_T_difference_K": 1.426677656013453e-07,
+    "maximum_C_difference_kgkg": 3.599720472813317e-07,
+    "table5_regular_rows_C_max_error": 1.168393581885141e-08,
+    "table5_regular_rows_four_decimal_match": true
+  }
+]

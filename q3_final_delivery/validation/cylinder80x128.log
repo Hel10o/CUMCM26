@@ -1,0 +1,4 @@
+n=80 nz=128 integral t=4h M=1.45360674 elapsed=586.8s
+n=80 nz=128 integral t=6h M=1.01696617 elapsed=601.2s
+n=80 nz=128 integral t=12h M=0.45614666 elapsed=630.0s
+n=80 nz=128 integral t=18h M=0.29884110 elapsed=641.7s

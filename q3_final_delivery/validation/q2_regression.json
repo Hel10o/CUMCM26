@@ -1,0 +1,9 @@
+{
+  "times_count": 181,
+  "radii_count": 21,
+  "max_temperature_error_K": 1.4285877725228602e-07,
+  "max_moisture_error_kgkg": 3.603858549361405e-07,
+  "four_decimal_temperature_differences": 1,
+  "four_decimal_moisture_differences": 3,
+  "q2_paper_60_values_four_decimal_match": true
+}

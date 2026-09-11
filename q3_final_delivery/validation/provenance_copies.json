@@ -1,0 +1,162 @@
+[
+  {
+    "repository_path": "readable/README.md",
+    "local_path": "inputs/upstream/readable/README.md",
+    "sha256": "2b5cd0b3a61213ccb3729702ac2afc1d739175c31b5d5ac206d9e0e3fa522311"
+  },
+  {
+    "repository_path": "readable/QUALITY.md",
+    "local_path": "inputs/upstream/readable/QUALITY.md",
+    "sha256": "5d5162b40d007f7b24cf5f2f7065729121a004f0474de258d7a5c351dae01599"
+  },
+  {
+    "repository_path": "readable/problem/fulltext.md",
+    "local_path": "inputs/upstream/readable/problem/fulltext.md",
+    "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b"
+  },
+  {
+    "repository_path": "q3_pro_handoff/README.md",
+    "local_path": "inputs/upstream/q3_pro_handoff/README.md",
+    "sha256": "44d959d10879ac517eb8da80f7af3bc863e089bbd4437f3a3f6796a0f8c5d885"
+  },
+  {
+    "repository_path": "q3_pro_handoff/第三问分析与Pro交付说明.md",
+    "local_path": "inputs/upstream/q3_pro_handoff/第三问分析与Pro交付说明.md",
+    "sha256": "b52c679a93e1c9e39d1c47211839e2d42ab1b16d268cc77e4f2da3e8788f36b4"
+  },
+  {
+    "repository_path": "q3_pro_handoff/evidence/literature_review.md",
+    "local_path": "inputs/upstream/q3_pro_handoff/evidence/literature_review.md",
+    "sha256": "64cbdf0d72449775ad9a06936b487122194c5c3521a613479442ddeee3769da0"
+  },
+  {
+    "repository_path": "q3_pro_handoff/evidence/input_contract.json",
+    "local_path": "inputs/upstream/q3_pro_handoff/evidence/input_contract.json",
+    "sha256": "7317bdec551a06e2c6e1c2e44029b4aae3ace212a18ba10d7b1dce2891cbd039"
+  },
+  {
+    "repository_path": "q2_final_delivery/analysis_decisions.md",
+    "local_path": "inputs/upstream/q2_final_delivery/analysis_decisions.md",
+    "sha256": "38e248d92db86dd826d7120459ae7511a86b901db373f8e4891f23c4d8d4b5ed"
+  },
+  {
+    "repository_path": "q2_final_delivery/source/q2_core.py",
+    "local_path": "inputs/upstream/q2_final_delivery/source/q2_core.py",
+    "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1"
+  },
+  {
+    "repository_path": "q2_final_delivery/source/q2_spectral.py",
+    "local_path": "inputs/upstream/q2_final_delivery/source/q2_spectral.py",
+    "sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33"
+  },
+  {
+    "repository_path": "q2_final_delivery/output/第二问论文正文.md",
+    "local_path": "inputs/upstream/q2_final_delivery/output/第二问论文正文.md",
+    "sha256": "191332dfb9c783159efb04f929cc9170226eb03e7a7d1012c912d421c59e4b20"
+  },
+  {
+    "repository_path": "q2_final_delivery/output/table_moisture.csv",
+    "local_path": "inputs/upstream/q2_final_delivery/output/table_moisture.csv",
+    "sha256": "6ec3725f1c9d078fa41b23405d48865745194c0bba4e310a11ecfc8a94c75aa0"
+  },
+  {
+    "repository_path": "q2_final_delivery/output/table_temperature.csv",
+    "local_path": "inputs/upstream/q2_final_delivery/output/table_temperature.csv",
+    "sha256": "bdad441edb333126c2a205bfc9ffabdaa4cf84e884329d62f67059690ad577fe"
+  },
+  {
+    "repository_path": "review_q2_20260911/第二问验收报告.md",
+    "local_path": "inputs/upstream/review_q2_20260911/第二问验收报告.md",
+    "sha256": "c5749c6ca85616f92e2903a3bdb5102392c2410c32e37f4759d9209f05ad96fa"
+  },
+  {
+    "repository_path": "review_q2_20260911/acceptance_checks.json",
+    "local_path": "inputs/upstream/review_q2_20260911/acceptance_checks.json",
+    "sha256": "e1b4f380f0eb15e5e7e2b583874e350eb90a4ad41c656351f270bc3e412f8907"
+  },
+  {
+    "repository_path": "readable/papers/da-silva-2014/README.md",
+    "local_path": "inputs/upstream/readable/papers/da-silva-2014/README.md",
+    "sha256": "e4045d6ab1efbcffd87f043230fec0dfaea7ff0fb38a783b5004295abd6c9f59"
+  },
+  {
+    "repository_path": "readable/papers/da-silva-2014/pages/001.md",
+    "local_path": "inputs/upstream/readable/papers/da-silva-2014/pages/001.md",
+    "sha256": "c290fd5cc496cfa4388be204f35063405b7f9ec590be2b00c939d9cc4813df00"
+  },
+  {
+    "repository_path": "readable/papers/da-silva-2014/pages/003.md",
+    "local_path": "inputs/upstream/readable/papers/da-silva-2014/pages/003.md",
+    "sha256": "9706623446f89e0d7bad7ae6bddc794924946a5b8586c7944a1abd3264e25832"
+  },
+  {
+    "repository_path": "readable/papers/da-silva-2014/pages/004.md",
+    "local_path": "inputs/upstream/readable/papers/da-silva-2014/pages/004.md",
+    "sha256": "4f1d260c4bcd03ea7ebe0bcc5887459207a679c37aca6c4d1d451f04ee879c62"
+  },
+  {
+    "repository_path": "readable/papers/da-silva-2014/pages/005.md",
+    "local_path": "inputs/upstream/readable/papers/da-silva-2014/pages/005.md",
+    "sha256": "5a9f5e8905944ffdb195aacd2b4e33b57af5ffd826fea330d11cb95c7594b7ed"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/README.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/README.md",
+    "sha256": "c8c0ff80f29941d5b58c2e2f983e0e5ba6384225e4bd3836ecd8a56b2e3cff73"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/pages/001.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/pages/001.md",
+    "sha256": "32e880ba84ea47ca97261121dbd2cd1d0e8b6fad82bf16756af0b84953c6e8b8"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/pages/003.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/pages/003.md",
+    "sha256": "3b82266eeea0b0bd60807abcf809356fd4d39de772edf3f3f835f1cb38ce4971"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/pages/004.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/pages/004.md",
+    "sha256": "fe3f33b0ed3846e7e2ccecadb51904483f1bece3127829115872297bb76b13e4"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/pages/005.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/pages/005.md",
+    "sha256": "8cfdc820ddfa4a6b5a265affdb16d134640c413592f5247a7eaababf6610039c"
+  },
+  {
+    "repository_path": "readable/papers/chupawa-2022/pages/006.md",
+    "local_path": "inputs/upstream/readable/papers/chupawa-2022/pages/006.md",
+    "sha256": "d38339d75a659ae634bfdb09761f972b2e2c371eb18409f233c04cb0492b969d"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/README.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/README.md",
+    "sha256": "cb6790d6f8db1f2e7069d6010a01475969c3d63c4db07dc3573b9b9c9664d1e7"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/pages/001.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/pages/001.md",
+    "sha256": "e7ac24852e3dd894fd202e4dd766d7b8c08eee7ebb62675102b25d2b9c1a5bc5"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/pages/004.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/pages/004.md",
+    "sha256": "5782ab54a7c8297db80a5044bf222bc12c544c551d35df5db42ecb34a88bf4c5"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/pages/005.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/pages/005.md",
+    "sha256": "aaaa9f8ab256db576286b869d00665d6974d5889a4c2805e6f46cd2c973394ad"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/pages/006.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/pages/006.md",
+    "sha256": "75d8d8f9440d220ed101165db10758a17ab047c649a9e9c69a1be4d955e7d432"
+  },
+  {
+    "repository_path": "readable/papers/adrover-2020/pages/007.md",
+    "local_path": "inputs/upstream/readable/papers/adrover-2020/pages/007.md",
+    "sha256": "32bb89a99b44b2a4852ea39d369b9a6822b32262989e5af4793a862dc9db5ee3"
+  }
+]

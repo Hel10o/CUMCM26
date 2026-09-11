@@ -1,0 +1,113 @@
+{
+  "checks": [
+    {
+      "name": "received_delivery_manifest",
+      "passed": true,
+      "detail": {
+        "entries": 184,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "received_delivery_manifest_coverage",
+      "passed": true,
+      "detail": {
+        "files": 185,
+        "unlisted": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "upstream_bundle_sha256",
+      "passed": true,
+      "detail": {
+        "actual": "8125fb1cbbbf32ff8d6873e3cc25e79567c0ec3b4f0512b439ff94ef814bfa4a",
+        "expected": "8125fb1cbbbf32ff8d6873e3cc25e79567c0ec3b4f0512b439ff94ef814bfa4a"
+      }
+    },
+    {
+      "name": "upstream_bundle_all_entries",
+      "passed": true,
+      "detail": {
+        "entries": 153,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "retained_upstream_copies",
+      "passed": true,
+      "detail": {
+        "files": 32,
+        "mismatches": []
+      }
+    },
+    {
+      "name": "original_input:inputs/problem.pdf",
+      "passed": true,
+      "detail": {
+        "repository_path": "A题/A题.pdf",
+        "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+      }
+    },
+    {
+      "name": "original_input:inputs/attachment1.xlsx",
+      "passed": true,
+      "detail": {
+        "repository_path": "A题/附件/附件1.xlsx",
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+      }
+    },
+    {
+      "name": "original_input:inputs/result3_blank.xlsx",
+      "passed": true,
+      "detail": {
+        "repository_path": "A题/附件/附件3/result3.xlsx",
+        "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+      }
+    },
+    {
+      "name": "original_input:inputs/q2_unrounded.npz",
+      "passed": true,
+      "detail": {
+        "repository_path": "q2_final_delivery/output/q2_unrounded.npz",
+        "sha256": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec"
+      }
+    },
+    {
+      "name": "pinned_git_blob:README.md",
+      "passed": true,
+      "detail": {
+        "pinned_commit": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+        "expected": "c8352c90b83f01f2f7c2da743669555facb07e48",
+        "actual": "c8352c90b83f01f2f7c2da743669555facb07e48"
+      }
+    },
+    {
+      "name": "pinned_git_blob:readable/README.md",
+      "passed": true,
+      "detail": {
+        "pinned_commit": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+        "expected": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+        "actual": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4"
+      }
+    },
+    {
+      "name": "pinned_git_blob:q3_pro_handoff/MANIFEST.sha256",
+      "passed": true,
+      "detail": {
+        "pinned_commit": "ab45397ce383fd968256997d61e3b701c8a9ac5f",
+        "expected": "30255c732161fb83e2ed55302045b01dc2f8e023",
+        "actual": "30255c732161fb83e2ed55302045b01dc2f8e023"
+      }
+    },
+    {
+      "name": "unchanged_since_review_opened",
+      "passed": true,
+      "detail": {
+        "files": 185,
+        "changed": []
+      }
+    }
+  ],
+  "all_pass": true
+}

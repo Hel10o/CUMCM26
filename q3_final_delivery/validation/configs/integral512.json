@@ -1,0 +1,22 @@
+{
+  "n": 512,
+  "nz": 0,
+  "grading": 2.0,
+  "zgrading": 2.0,
+  "flux": "integral",
+  "scenario": "mean",
+  "interpolation": "linear",
+  "hT": 25.0,
+  "hm": 8e-07,
+  "end_factor": 1.0,
+  "rtol": 2e-10,
+  "atol_T": 2e-10,
+  "atol_C": 2e-12,
+  "max_step": 240.0,
+  "early_step": 30.0,
+  "method": "BDF",
+  "end_s": 360000.0,
+  "isothermal_after": 0.0,
+  "quadrature": false,
+  "full_samples": false
+}

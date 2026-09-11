@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "n": 512,
+      "harmonic_critical_s": 206909.0124112979,
+      "integral_critical_s": 206906.4624542988,
+      "same_mesh_flux_event_difference_s": 2.5499569991079625
+    },
+    {
+      "n": 1024,
+      "harmonic_critical_s": 206907.0438009983,
+      "integral_critical_s": 206906.4062638714,
+      "same_mesh_flux_event_difference_s": 0.6375371268950403
+    }
+  ],
+  "difference_reduction_factor": 3.9996996120474875,
+  "interpretation": "Both methods converge here; integral flux has smaller observed event bias. No observed temporal oscillations are claimed."
+}

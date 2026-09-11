@@ -1,0 +1,69 @@
+{
+  "finite_volume": [
+    {
+      "n": 12,
+      "nz": 0,
+      "flux": "integral",
+      "directional_jacobian_relative_error": 1.0389039954800357e-10,
+      "water_operator_residual": -2.2830184906463564e-22,
+      "heat_operator_residual": -7.993605777301127e-15,
+      "constant_equilibrium_rhs_max": 0.0
+    },
+    {
+      "n": 8,
+      "nz": 7,
+      "flux": "integral",
+      "directional_jacobian_relative_error": 1.6794893585157137e-09,
+      "water_operator_residual": 4.963083675318166e-24,
+      "heat_operator_residual": 5.551115123125783e-17,
+      "constant_equilibrium_rhs_max": 0.0
+    },
+    {
+      "n": 12,
+      "nz": 0,
+      "flux": "harmonic",
+      "directional_jacobian_relative_error": 2.802938776215299e-09,
+      "water_operator_residual": -1.9852334701272664e-23,
+      "heat_operator_residual": 3.9968028886505635e-14,
+      "constant_equilibrium_rhs_max": 0.0
+    }
+  ],
+  "reference_jacobian_relative_error": 2.9666952037834237e-08,
+  "primitive_quad_checks": [
+    {
+      "a": 0.05265,
+      "b": 0.05,
+      "primitive_difference": 4.152927833406062e-07,
+      "independent_quad": 4.152927833406062e-07,
+      "relative_error": 0.0
+    },
+    {
+      "a": 0.15,
+      "b": 0.05,
+      "primitive_difference": 0.0015957195819666925,
+      "independent_quad": 0.0015957195819666934,
+      "relative_error": 5.435552385209167e-16
+    },
+    {
+      "a": 2.55,
+      "b": 0.05,
+      "primitive_difference": 1.5406044834179413,
+      "independent_quad": 1.540604483417941,
+      "relative_error": 1.4412823493308905e-16
+    },
+    {
+      "a": 0.150000000001,
+      "b": 0.15,
+      "primitive_difference": 4.978734886151049e-14,
+      "independent_quad": 4.978734886151048e-14,
+      "relative_error": 1.2675684458159418e-16
+    },
+    {
+      "a": 0.052,
+      "b": 0.052000000001,
+      "primitive_difference": -1.7445555988130275e-16,
+      "independent_quad": -1.7445555988130287e-16,
+      "relative_error": 7.065381953125894e-16
+    }
+  ]
+}

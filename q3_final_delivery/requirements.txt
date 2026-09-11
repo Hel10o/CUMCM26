@@ -1,0 +1,5 @@
+# Tested numerical environment: CPython 3.13.5.
+# artifact_tool is optional; default local reproduction uses standard-library OOXML.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib>=3.8,<4

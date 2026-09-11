@@ -1,0 +1,11 @@
+n=40 nz=64 integral t=4h M=1.45366061 elapsed=102.6s
+n=40 nz=64 integral t=6h M=1.01698894 elapsed=105.0s
+n=40 nz=64 integral t=12h M=0.45615521 elapsed=109.5s
+n=40 nz=64 integral t=18h M=0.29884923 elapsed=111.8s
+n=40 nz=64 integral t=24h M=0.23780420 elapsed=113.3s
+n=40 nz=64 integral t=30h M=0.20582735 elapsed=114.8s
+n=40 nz=64 integral t=36h M=0.18588046 elapsed=116.0s
+n=40 nz=64 integral t=42h M=0.17206828 elapsed=117.2s
+n=40 nz=64 integral t=48h M=0.16182935 elapsed=118.3s
+n=40 nz=64 integral t=54h M=0.15386875 elapsed=119.5s
+{"config": {"n": 40, "nz": 64, "grading": 2.0, "zgrading": 2.0, "flux": "integral", "scenario": "mean", "interpolation": "linear", "hT": 25.0, "hm": 8e-07, "end_factor": 1.0, "rtol": 2e-09, "atol_T": 2e-10, "atol_C": 2e-12, "max_step": 240.0, "early_step": 30.0, "method": "BDF", "end_s": 360000.0, "isothermal_after": 21600, "quadrature": false, "full_samples": false, "execution_time_s": 0.0}, "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]", "numpy": "2.3.5", "scipy": "1.17.0", "future": [49.99893442622951, 0.04998754098360656], "nodes": 2665, "min_dr_m": 1.2499999999998623e-05, "max_dr_m": 0.0009875000000000012, "nfev": 25559, "njev": 320, "nlu": 3540, "steps": 12269, "elapsed_s": 120.51932080000006, "event": {"critical_s": 206910.90461413743, "critical_h": 57.47525128170484, "critical_max": 0.15, "t_minus_s": 206910.89461413742, "max_minus": 0.15000000291272503, "t_plus_s": 206910.91461413744, "max_plus": 0.14999999708727524, "critical_slope_kgkg_s": -2.9127248974234377e-07, "bracket_s": 0.02, "argmax_flat_index": 0, "execution_s": 206910.91461413744, "execution_h": 57.47525405948262, "execution_max": 0.14999999708727524, "strict_execution_pass": true}, "global_C_min": 0.04998833807051269, "global_C_max": 2.55, "global_T_min": 28.0, "global_T_max": 50.09387463941208, "max_radial_increase": 0.0003468897849814301, "max_axial_increase": 0.0007814253214932787, "max_argmax_flat_index": 37, "max_M_increase_accepted": 8.881784197001252e-16, "surface_crossing_s": 45183.21759829339, "mean_crossing_s": 121664.63138731621, "projections": [{"t_s": 21600.0, "max_temperature_projection_K": 1.3017529383319015e-05}], "source_sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6", "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"}

@@ -1,0 +1,11 @@
+{
+  "n": 2048,
+  "rtol": 2e-12,
+  "atol_T": 2e-12,
+  "atol_C": 2e-14,
+  "max_step": 60,
+  "early_step": 15,
+  "quadrature": true,
+  "full_samples": true,
+  "execution_time_s": 206906.76
+}

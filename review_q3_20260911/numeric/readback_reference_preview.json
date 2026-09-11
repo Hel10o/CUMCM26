@@ -1,0 +1,554 @@
+{
+  "preview_only": true,
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "check": "formal_state_shapes",
+      "passed": true
+    },
+    {
+      "check": "formal_time_grid",
+      "passed": true,
+      "shape": [
+        3450
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "formal_radii",
+      "passed": true,
+      "shape": [
+        21
+      ],
+      "max_abs_diff": 2.220446049250313e-16,
+      "tolerance": 1e-15
+    },
+    {
+      "check": "initial_state",
+      "passed": true
+    },
+    {
+      "check": "finite_positive_sample_states",
+      "passed": true
+    },
+    {
+      "check": "event_times_report",
+      "passed": true,
+      "shape": [
+        4
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "event_max_from_whole_mesh",
+      "passed": true,
+      "shape": [
+        4
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "strict_event_sides",
+      "passed": true,
+      "whole_mesh_maxima": [
+        0.15000000291276885,
+        0.15,
+        0.14999999708723138,
+        0.14999989358790375
+      ]
+    },
+    {
+      "check": "event_max_at_center",
+      "passed": true,
+      "indices": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "check": "endpoint_21_C_vs_full_mesh",
+      "passed": true,
+      "shape": [
+        21
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-15
+    },
+    {
+      "check": "execution_time_quantization",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 2.9103830456733704e-11,
+      "tolerance": 6e-11
+    },
+    {
+      "check": "root_hours_conversion",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "execution_hours_conversion",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "root_rounding_budget_stable",
+      "passed": true
+    },
+    {
+      "check": "previous_full_minute_not_qualified",
+      "passed": true,
+      "max_C": 0.1500076890933975,
+      "time_s": 206880.0
+    },
+    {
+      "check": "final_all_nodes_strict",
+      "passed": true,
+      "margin_kgkg": 1.0641209624573378e-07
+    },
+    {
+      "check": "result3.xlsx_crc",
+      "passed": true
+    },
+    {
+      "check": "result3.xlsx_one_sheet",
+      "passed": true
+    },
+    {
+      "check": "result3.xlsx_no_formulas",
+      "passed": true,
+      "formula_count": 0
+    },
+    {
+      "check": "xlsx_all_21_radius_headers",
+      "passed": true,
+      "shape": [
+        21
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 1e-15
+    },
+    {
+      "check": "xlsx_all_3449_times",
+      "passed": true,
+      "shape": [
+        3449
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "xlsx_all_72429_water_values",
+      "passed": true,
+      "shape": [
+        3449,
+        21
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "xlsx_all_75878_data_values_numeric",
+      "passed": true
+    },
+    {
+      "check": "xlsx_water_format_exact_0_0000",
+      "passed": true,
+      "formats": [
+        "0.0000"
+      ]
+    },
+    {
+      "check": "xlsx_no_leftover_template_rows",
+      "passed": true,
+      "rows": 3450,
+      "stored_cells": 75900
+    },
+    {
+      "check": "xlsx_no_ellipsis",
+      "passed": true
+    },
+    {
+      "check": "xlsx_final_center_equals_execution_max",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "xlsx_display_zero_point_1500_but_strictly_less",
+      "passed": true
+    },
+    {
+      "check": "result3_csv_all_values",
+      "passed": true,
+      "shape": [
+        3449,
+        22
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "table5_csv_10_times_50_C_values",
+      "passed": true,
+      "shape": [
+        10,
+        6
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "table5_summary_10_times_50_C_values",
+      "passed": true,
+      "shape": [
+        10,
+        6
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "table5_four_decimal_text_table5.md",
+      "passed": true,
+      "rows_found": 10,
+      "water_values": 50
+    },
+    {
+      "check": "table5_four_decimal_text_第三问分析与最终答案.md",
+      "passed": true,
+      "rows_found": 10,
+      "water_values": 50
+    },
+    {
+      "check": "reference80_regular_times_match",
+      "passed": true,
+      "shape": [
+        3449
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "reference80_endpoint_same_time",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "reference80_all_workbook_values_close",
+      "passed": true,
+      "max_abs_C_difference": 3.6031241457123997e-07,
+      "four_decimal_mismatch_count": 8
+    },
+    {
+      "check": "reference80_official_endpoint_strict",
+      "passed": true
+    },
+    {
+      "check": "reference160_regular_times_match",
+      "passed": true,
+      "shape": [
+        3449
+      ],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "reference160_endpoint_same_time",
+      "passed": true,
+      "shape": [],
+      "max_abs_diff": 0.0,
+      "tolerance": 0
+    },
+    {
+      "check": "reference160_all_workbook_values_close",
+      "passed": true,
+      "max_abs_C_difference": 3.599720472813317e-07,
+      "four_decimal_mismatch_count": 8
+    },
+    {
+      "check": "reference160_official_endpoint_strict",
+      "passed": true
+    }
+  ],
+  "independent_reference_all_cells": [
+    {
+      "reference": "reference80",
+      "comparison_cells": 72429,
+      "common_regular_rows": 3448,
+      "aligned_endpoint_s": 206906.76,
+      "max_abs_C_difference": 3.6031241457123997e-07,
+      "max_abs_T_difference": 1.428674103465255e-07,
+      "four_decimal_mismatch_count": 8,
+      "mismatches": [
+        {
+          "xlsx_row": 53,
+          "xlsx_column": "O",
+          "time_s": 3120.0,
+          "radius_cm": 1.3,
+          "main_C": 2.2552500571300014,
+          "reference_C": 2.255249949422555,
+          "difference_reference_minus_main": -1.0770744651722453e-07,
+          "main_display": "2.2553",
+          "reference_display": "2.2552",
+          "nearest_half_rounding_boundary": 2.25525,
+          "main_distance_to_rounding_boundary": 5.7130001174243716e-08,
+          "reference_distance_to_rounding_boundary": 5.057744534298081e-08
+        },
+        {
+          "xlsx_row": 65,
+          "xlsx_column": "M",
+          "time_s": 3840.0,
+          "radius_cm": 1.1,
+          "main_C": 2.277950047542579,
+          "reference_C": 2.277949975939402,
+          "difference_reference_minus_main": -7.160317672116889e-08,
+          "main_display": "2.2780",
+          "reference_display": "2.2779",
+          "nearest_half_rounding_boundary": 2.27795,
+          "main_distance_to_rounding_boundary": 4.754257876271595e-08,
+          "reference_distance_to_rounding_boundary": 2.4060597958452945e-08
+        },
+        {
+          "xlsx_row": 67,
+          "xlsx_column": "R",
+          "time_s": 3960.0,
+          "radius_cm": 1.6,
+          "main_C": 1.8805500050229575,
+          "reference_C": 1.8805499201688456,
+          "difference_reference_minus_main": -8.485411195913173e-08,
+          "main_display": "1.8806",
+          "reference_display": "1.8805",
+          "nearest_half_rounding_boundary": 1.88055,
+          "main_distance_to_rounding_boundary": 5.022957605405054e-09,
+          "reference_distance_to_rounding_boundary": 7.983115435372667e-08
+        },
+        {
+          "xlsx_row": 206,
+          "xlsx_column": "C",
+          "time_s": 12300.0,
+          "radius_cm": 0.1,
+          "main_C": 1.6240500024323115,
+          "reference_C": 1.6240499672586024,
+          "difference_reference_minus_main": -3.517370905647965e-08,
+          "main_display": "1.6241",
+          "reference_display": "1.6240",
+          "nearest_half_rounding_boundary": 1.62405,
+          "main_distance_to_rounding_boundary": 2.432311463351766e-09,
+          "reference_distance_to_rounding_boundary": 3.2741397593127886e-08
+        },
+        {
+          "xlsx_row": 487,
+          "xlsx_column": "V",
+          "time_s": 29160.0,
+          "radius_cm": 2.0,
+          "main_C": 0.34464999504352606,
+          "reference_C": 0.34465000421838793,
+          "difference_reference_minus_main": 9.174861870242523e-09,
+          "main_display": "0.3446",
+          "reference_display": "0.3447",
+          "nearest_half_rounding_boundary": 0.34465,
+          "main_distance_to_rounding_boundary": 4.956473953487972e-09,
+          "reference_distance_to_rounding_boundary": 4.218387916754551e-09
+        },
+        {
+          "xlsx_row": 593,
+          "xlsx_column": "L",
+          "time_s": 35520.0,
+          "radius_cm": 1.0,
+          "main_C": 0.5087499987820957,
+          "reference_C": 0.5087500012431845,
+          "difference_reference_minus_main": 2.4610887772169576e-09,
+          "main_display": "0.5087",
+          "reference_display": "0.5088",
+          "nearest_half_rounding_boundary": 0.50875,
+          "main_distance_to_rounding_boundary": 1.2179043329396677e-09,
+          "reference_distance_to_rounding_boundary": 1.24318444427729e-09
+        },
+        {
+          "xlsx_row": 1575,
+          "xlsx_column": "Q",
+          "time_s": 94440.0,
+          "radius_cm": 1.5,
+          "main_C": 0.1762499990467283,
+          "reference_C": 0.17625000010398884,
+          "difference_reference_minus_main": 1.0572605291248038e-09,
+          "main_display": "0.1762",
+          "reference_display": "0.1763",
+          "nearest_half_rounding_boundary": 0.17625,
+          "main_distance_to_rounding_boundary": 9.532716838123179e-10,
+          "reference_distance_to_rounding_boundary": 1.0398884531248598e-10
+        },
+        {
+          "xlsx_row": 3006,
+          "xlsx_column": "C",
+          "time_s": 180300.0,
+          "radius_cm": 0.1,
+          "main_C": 0.15875000053004157,
+          "reference_C": 0.1587499989786405,
+          "difference_reference_minus_main": -1.5514010631711983e-09,
+          "main_display": "0.1588",
+          "reference_display": "0.1587",
+          "nearest_half_rounding_boundary": 0.15875,
+          "main_distance_to_rounding_boundary": 5.300415661935176e-10,
+          "reference_distance_to_rounding_boundary": 1.0213594969776807e-09
+        }
+      ],
+      "critical_s": 206906.38993234557,
+      "main_minus_reference_root_s": 0.004737326758913696,
+      "strict_endpoint_max_C": 0.14999989220803223,
+      "all_final_21_four_decimal_match": true
+    },
+    {
+      "reference": "reference160",
+      "comparison_cells": 72429,
+      "common_regular_rows": 3448,
+      "aligned_endpoint_s": 206906.76,
+      "max_abs_C_difference": 3.599720472813317e-07,
+      "max_abs_T_difference": 1.426677656013453e-07,
+      "four_decimal_mismatch_count": 8,
+      "mismatches": [
+        {
+          "xlsx_row": 53,
+          "xlsx_column": "O",
+          "time_s": 3120.0,
+          "radius_cm": 1.3,
+          "main_C": 2.2552500571300014,
+          "reference_C": 2.255249949422019,
+          "difference_reference_minus_main": -1.0770798253290081e-07,
+          "main_display": "2.2553",
+          "reference_display": "2.2552",
+          "nearest_half_rounding_boundary": 2.25525,
+          "main_distance_to_rounding_boundary": 5.7130001174243716e-08,
+          "reference_distance_to_rounding_boundary": 5.05779813586571e-08
+        },
+        {
+          "xlsx_row": 65,
+          "xlsx_column": "M",
+          "time_s": 3840.0,
+          "radius_cm": 1.1,
+          "main_C": 2.277950047542579,
+          "reference_C": 2.277949975936145,
+          "difference_reference_minus_main": -7.160643411552314e-08,
+          "main_display": "2.2780",
+          "reference_display": "2.2779",
+          "nearest_half_rounding_boundary": 2.27795,
+          "main_distance_to_rounding_boundary": 4.754257876271595e-08,
+          "reference_distance_to_rounding_boundary": 2.4063855352807195e-08
+        },
+        {
+          "xlsx_row": 67,
+          "xlsx_column": "R",
+          "time_s": 3960.0,
+          "radius_cm": 1.6,
+          "main_C": 1.8805500050229575,
+          "reference_C": 1.8805499201812192,
+          "difference_reference_minus_main": -8.484173830147768e-08,
+          "main_display": "1.8806",
+          "reference_display": "1.8805",
+          "nearest_half_rounding_boundary": 1.88055,
+          "main_distance_to_rounding_boundary": 5.022957605405054e-09,
+          "reference_distance_to_rounding_boundary": 7.981878069607262e-08
+        },
+        {
+          "xlsx_row": 206,
+          "xlsx_column": "C",
+          "time_s": 12300.0,
+          "radius_cm": 0.1,
+          "main_C": 1.6240500024323115,
+          "reference_C": 1.6240499672712405,
+          "difference_reference_minus_main": -3.5161070943701134e-08,
+          "main_display": "1.6241",
+          "reference_display": "1.6240",
+          "nearest_half_rounding_boundary": 1.62405,
+          "main_distance_to_rounding_boundary": 2.432311463351766e-09,
+          "reference_distance_to_rounding_boundary": 3.272875948034937e-08
+        },
+        {
+          "xlsx_row": 487,
+          "xlsx_column": "V",
+          "time_s": 29160.0,
+          "radius_cm": 2.0,
+          "main_C": 0.34464999504352606,
+          "reference_C": 0.34465000427133496,
+          "difference_reference_minus_main": 9.227808905887258e-09,
+          "main_display": "0.3446",
+          "reference_display": "0.3447",
+          "nearest_half_rounding_boundary": 0.34465,
+          "main_distance_to_rounding_boundary": 4.956473953487972e-09,
+          "reference_distance_to_rounding_boundary": 4.271334952399286e-09
+        },
+        {
+          "xlsx_row": 593,
+          "xlsx_column": "L",
+          "time_s": 35520.0,
+          "radius_cm": 1.0,
+          "main_C": 0.5087499987820957,
+          "reference_C": 0.5087500013128052,
+          "difference_reference_minus_main": 2.5307095308235716e-09,
+          "main_display": "0.5087",
+          "reference_display": "0.5088",
+          "nearest_half_rounding_boundary": 0.50875,
+          "main_distance_to_rounding_boundary": 1.2179043329396677e-09,
+          "reference_distance_to_rounding_boundary": 1.312805197883904e-09
+        },
+        {
+          "xlsx_row": 1575,
+          "xlsx_column": "Q",
+          "time_s": 94440.0,
+          "radius_cm": 1.5,
+          "main_C": 0.1762499990467283,
+          "reference_C": 0.17625000008350783,
+          "difference_reference_minus_main": 1.0367795233445776e-09,
+          "main_display": "0.1762",
+          "reference_display": "0.1763",
+          "nearest_half_rounding_boundary": 0.17625,
+          "main_distance_to_rounding_boundary": 9.532716838123179e-10,
+          "reference_distance_to_rounding_boundary": 8.350783953225971e-11
+        },
+        {
+          "xlsx_row": 3006,
+          "xlsx_column": "C",
+          "time_s": 180300.0,
+          "radius_cm": 0.1,
+          "main_C": 0.15875000053004157,
+          "reference_C": 0.1587499985626545,
+          "difference_reference_minus_main": -1.9673870588210463e-09,
+          "main_display": "0.1588",
+          "reference_display": "0.1587",
+          "nearest_half_rounding_boundary": 0.15875,
+          "main_distance_to_rounding_boundary": 5.300415661935176e-10,
+          "reference_distance_to_rounding_boundary": 1.4373454926275286e-09
+        }
+      ],
+      "critical_s": 206906.3883501266,
+      "main_minus_reference_root_s": 0.006319545733276755,
+      "strict_endpoint_max_C": 0.1499998917471701,
+      "all_final_21_four_decimal_match": true
+    }
+  ]
+}

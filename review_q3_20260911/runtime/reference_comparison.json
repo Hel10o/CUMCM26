@@ -1,0 +1,176 @@
+{
+  "scope": "One 80-degree independent collocation/Radau run from t=0 to threshold; short real continuation to the official endpoint. No full suite.",
+  "input_original_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "input_bundled_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "source_sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+  "n": 80,
+  "method": "Radau",
+  "elapsed_s": 196.6390347000006,
+  "critical_s": 206906.38993234077,
+  "critical_h": 57.47399720342799,
+  "difference_from_delivered_reference_s": -4.802132025361061e-09,
+  "difference_from_delivered_primary_s": -0.004737331561045721,
+  "critical_h_four_decimal": "57.4740",
+  "root_bracket": {
+    "critical_s": 206906.38993234077,
+    "critical_h": 57.47399720342799,
+    "t_minus_s": 206906.37993234076,
+    "max_minus": 0.1500000029127689,
+    "t_plus_s": 206906.39993234078,
+    "max_plus": 0.1499999970872313,
+    "slope": -2.9127688021452233e-07,
+    "polynomial_extrema": {
+      "max_C": 0.15,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838812469546146e-07
+    }
+  },
+  "official_endpoint": {
+    "time_s": 206906.76,
+    "elapsed_continuation_s": 0.3600676592322998,
+    "nfev": 77,
+    "polynomial_extrema": {
+      "max_C": 0.1499998922080308,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.83879543910225e-07
+    },
+    "center_C": 0.1499998922080308,
+    "surface_C": 0.052646939026722454,
+    "max_T_difference": 2.0321522242738865e-12,
+    "max_C_difference": 2.6719551085574444e-09,
+    "all_21_four_decimal_match": true
+  },
+  "full_export_comparison": {
+    "temperature_K": {
+      "maximum_abs": 1.4286753113879058e-07,
+      "maximum_time_s": 780.0,
+      "maximum_radius_cm": 1.7000000000000002,
+      "all_exported_four_decimal_mismatches": 1,
+      "mismatch_details": [
+        {
+          "time_s": 4980.0,
+          "radius_cm": 1.6,
+          "main_unrounded": 45.93295004361769,
+          "reference_unrounded": 45.93294995990464,
+          "main_display": "45.9330",
+          "reference_display": "45.9329",
+          "decimal_rounding_midpoint": "45.93295",
+          "main_signed_distance_to_midpoint": "4.361769E-8",
+          "reference_signed_distance_to_midpoint": "-4.009536E-8"
+        }
+      ]
+    },
+    "moisture_kgkg": {
+      "maximum_abs": 3.6031241457123997e-07,
+      "maximum_time_s": 60.0,
+      "maximum_radius_cm": 2.0,
+      "all_exported_four_decimal_mismatches": 8,
+      "mismatch_details": [
+        {
+          "time_s": 3120.0,
+          "radius_cm": 1.3,
+          "main_unrounded": 2.2552500571300014,
+          "reference_unrounded": 2.2552499494225593,
+          "main_display": "2.2553",
+          "reference_display": "2.2552",
+          "decimal_rounding_midpoint": "2.25525",
+          "main_signed_distance_to_midpoint": "5.71300014E-8",
+          "reference_signed_distance_to_midpoint": "-5.05774407E-8"
+        },
+        {
+          "time_s": 3840.0,
+          "radius_cm": 1.1,
+          "main_unrounded": 2.277950047542579,
+          "reference_unrounded": 2.2779499759394035,
+          "main_display": "2.2780",
+          "reference_display": "2.2779",
+          "decimal_rounding_midpoint": "2.27795",
+          "main_signed_distance_to_midpoint": "4.7542579E-8",
+          "reference_signed_distance_to_midpoint": "-2.40605965E-8"
+        },
+        {
+          "time_s": 3960.0,
+          "radius_cm": 1.6,
+          "main_unrounded": 1.8805500050229575,
+          "reference_unrounded": 1.8805499201688485,
+          "main_display": "1.8806",
+          "reference_display": "1.8805",
+          "decimal_rounding_midpoint": "1.88055",
+          "main_signed_distance_to_midpoint": "5.0229575E-9",
+          "reference_signed_distance_to_midpoint": "-7.98311515E-8"
+        },
+        {
+          "time_s": 12300.0,
+          "radius_cm": 0.1,
+          "main_unrounded": 1.6240500024323115,
+          "reference_unrounded": 1.6240499672585995,
+          "main_display": "1.6241",
+          "reference_display": "1.6240",
+          "decimal_rounding_midpoint": "1.62405",
+          "main_signed_distance_to_midpoint": "2.4323115E-9",
+          "reference_signed_distance_to_midpoint": "-3.27414005E-8"
+        },
+        {
+          "time_s": 29160.0,
+          "radius_cm": 2.0,
+          "main_unrounded": 0.34464999504352606,
+          "reference_unrounded": 0.3446500042190116,
+          "main_display": "0.3446",
+          "reference_display": "0.3447",
+          "decimal_rounding_midpoint": "0.34465",
+          "main_signed_distance_to_midpoint": "-4.95647394E-9",
+          "reference_signed_distance_to_midpoint": "4.2190116E-9"
+        },
+        {
+          "time_s": 35520.0,
+          "radius_cm": 1.0,
+          "main_unrounded": 0.5087499987820957,
+          "reference_unrounded": 0.5087500012436834,
+          "main_display": "0.5087",
+          "reference_display": "0.5088",
+          "decimal_rounding_midpoint": "0.50875",
+          "main_signed_distance_to_midpoint": "-1.2179043E-9",
+          "reference_signed_distance_to_midpoint": "1.2436834E-9"
+        },
+        {
+          "time_s": 94440.0,
+          "radius_cm": 1.5,
+          "main_unrounded": 0.1762499990467283,
+          "reference_unrounded": 0.1762500001040116,
+          "main_display": "0.1762",
+          "reference_display": "0.1763",
+          "decimal_rounding_midpoint": "0.17625",
+          "main_signed_distance_to_midpoint": "-9.532717E-10",
+          "reference_signed_distance_to_midpoint": "1.040116E-10"
+        },
+        {
+          "time_s": 180300.0,
+          "radius_cm": 0.1,
+          "main_unrounded": 0.15875000053004157,
+          "reference_unrounded": 0.15874999897864006,
+          "main_display": "0.1588",
+          "reference_display": "0.1587",
+          "decimal_rounding_midpoint": "0.15875",
+          "main_signed_distance_to_midpoint": "5.3004157E-10",
+          "reference_signed_distance_to_midpoint": "-1.02135994E-9"
+        }
+      ]
+    }
+  },
+  "table5": {
+    "water_values": 50,
+    "max_C_difference": 1.1699731405911962e-08,
+    "all_50_four_decimal_match": true
+  },
+  "independence": "Different global collocation space operator, primitive-gradient reconstruction, algebraic Robin surface, Radau time method; shares only input parser and Environment with q3_solver. This is a fresh run of the delivered independent algorithm, not a newly authored third implementation.",
+  "fresh_reference_boundary_checks": {
+    "min_scalar_boundary_derivative": 2.087403108209441e-06,
+    "max_boundary_residual": 2.97816784254612e-18,
+    "max_boundary_newton": 5,
+    "boundary_fallbacks": 0,
+    "dense_U_overshoot": 6.661338147750939e-16,
+    "global_C_min": 0.05264694756682595
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "path": "output/main.npz",
+    "keys": [
+      "time_s",
+      "radius_cm",
+      "sample_TC",
+      "r_m",
+      "z_m",
+      "weights",
+      "snapshot_time_s",
+      "snapshots",
+      "diagnostics",
+      "balance",
+      "event_time_s",
+      "event_fields_TC",
+      "full_TC"
+    ],
+    "finite_arrays": true
+  },
+  {
+    "path": "validation/reference80.npz",
+    "keys": [
+      "time_s",
+      "sample_TC",
+      "x",
+      "snapshot_time_s",
+      "snapshots"
+    ],
+    "finite_arrays": true
+  },
+  {
+    "path": "validation/reference160.npz",
+    "keys": [
+      "time_s",
+      "sample_TC",
+      "x",
+      "snapshot_time_s",
+      "snapshots"
+    ],
+    "finite_arrays": true
+  }
+]

@@ -1,0 +1,11 @@
+n=1024 nz=0 integral t=4h M=1.45360611 elapsed=27.7s
+n=1024 nz=0 integral t=6h M=1.01696840 elapsed=28.0s
+n=1024 nz=0 integral t=12h M=0.45614940 elapsed=28.4s
+n=1024 nz=0 integral t=18h M=0.29884261 elapsed=28.8s
+n=1024 nz=0 integral t=24h M=0.23779953 elapsed=29.1s
+n=1024 nz=0 integral t=30h M=0.20582403 elapsed=29.3s
+n=1024 nz=0 integral t=36h M=0.18587795 elapsed=29.6s
+n=1024 nz=0 integral t=42h M=0.17206629 elapsed=29.9s
+n=1024 nz=0 integral t=48h M=0.16182769 elapsed=30.1s
+n=1024 nz=0 integral t=54h M=0.15386734 elapsed=30.4s
+{"config": {"n": 1024, "nz": 0, "grading": 2.0, "zgrading": 2.0, "flux": "integral", "scenario": "mean", "interpolation": "linear", "hT": 25.0, "hm": 8e-07, "end_factor": 1.0, "rtol": 2e-10, "atol_T": 2e-10, "atol_C": 2e-12, "max_step": 240.0, "early_step": 30.0, "method": "BDF", "end_s": 360000.0, "isothermal_after": 0.0, "quadrature": false, "full_samples": false}, "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]", "numpy": "2.3.5", "scipy": "1.17.0", "future": [49.99893442622951, 0.04998754098360656], "nodes": 1025, "min_dr_m": 1.9073486328541334e-08, "max_dr_m": 3.904342651367187e-05, "nfev": 36750, "njev": 276, "nlu": 4927, "steps": 17921, "elapsed_s": 30.61811718299998, "event": {"critical_s": 206906.4062638714, "critical_h": 57.47400173996428, "critical_max": 0.15, "t_minus_s": 206906.3962638714, "max_minus": 0.15000000291276866, "t_plus_s": 206906.41626387142, "max_plus": 0.1499999970872316, "critical_slope_kgkg_s": -2.9127685283976526e-07, "bracket_s": 0.02, "argmax_flat_index": 0}, "global_C_min": 0.05264694328963325, "global_C_max": 2.550000000000001, "global_T_min": 27.999999999999993, "global_T_max": 50.03986664073429, "max_radial_increase": 2.6645352591003757e-15, "max_axial_increase": 0.0, "max_argmax_flat_index": 671, "max_M_increase_accepted": 8.881784197001252e-16, "surface_crossing_s": 45185.44792963968, "mean_crossing_s": 129691.69512274527, "projections": []}

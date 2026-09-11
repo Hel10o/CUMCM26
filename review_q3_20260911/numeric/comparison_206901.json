@@ -1,0 +1,85 @@
+{
+  "purpose": "Actual whole-state continuation to evaluate the proposed 206901 s time; not linear endpoint extrapolation.",
+  "source_npz": "q3_final_delivery/output/main.npz",
+  "source_npz_sha256": "53a4c255454f90eeec2d86ab66d58dd8736c2286cf7e0139dd1851010ea60b8e",
+  "operator_sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+  "main_scenario": "future 61-sample last-hour arithmetic mean, fixed radial N2048 model",
+  "runs": [
+    {
+      "max_step_s": 1.0,
+      "method": "BDF with exact sparse coupled Jacobian",
+      "rtol": 2e-12,
+      "atol_T": 2e-12,
+      "atol_C": 2e-14,
+      "success": true,
+      "start_s": 206880.0,
+      "times_s": [
+        206880.0,
+        206901.0,
+        206906.39466967233,
+        206906.76
+      ],
+      "maximum_C": [
+        0.1500076890933975,
+        0.15000157138216091,
+        0.15000000000052718,
+        0.14999989358843094
+      ],
+      "maximum_locations_r_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "critical_s": 206906.39467148227,
+      "critical_minus_original_s": 1.8099381122738123e-06,
+      "max_endpoint_C_diff_vs_saved": 5.272449143944868e-13,
+      "max_endpoint_T_diff_vs_saved": 2.1316282072803006e-14,
+      "nfev": 90,
+      "njev": 1,
+      "nlu": 19,
+      "elapsed_s": 0.12910349999947357
+    },
+    {
+      "max_step_s": 0.25,
+      "method": "BDF with exact sparse coupled Jacobian",
+      "rtol": 2e-12,
+      "atol_T": 2e-12,
+      "atol_C": 2e-14,
+      "success": true,
+      "start_s": 206880.0,
+      "times_s": [
+        206880.0,
+        206901.0,
+        206906.39466967233,
+        206906.76
+      ],
+      "maximum_C": [
+        0.1500076890933975,
+        0.1500015713817738,
+        0.15000000000014016,
+        0.14999989358804394
+      ],
+      "maximum_locations_r_m": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "critical_s": 206906.39467015353,
+      "critical_minus_original_s": 4.812027327716351e-07,
+      "max_endpoint_C_diff_vs_saved": 1.4019341243454164e-13,
+      "max_endpoint_T_diff_vs_saved": 2.1316282072803006e-14,
+      "nfev": 248,
+      "njev": 1,
+      "nlu": 45,
+      "elapsed_s": 0.3359340999995766
+    }
+  ],
+  "step_refinement_max_C_difference": 3.871347686867921e-13,
+  "step_refinement_max_T_difference": 1.4210854715202004e-14,
+  "C_206901": 0.1500015713817738,
+  "excess_over_threshold_206901": 1.5713817738127744e-06,
+  "main_critical_minus_206901_s": 5.394669672328746,
+  "scope": "This verifies the same discretized mean-boundary model; it does not identify assumptions used by another person."
+}
