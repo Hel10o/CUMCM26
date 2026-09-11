@@ -1,0 +1,266 @@
+{
+  "baseline_commit": "15cc3bf4afad748ab08e87bb3030ef606b1c9b9a",
+  "scope": "Cited local source files and original attachments. Not a full repository manifest.",
+  "count": 37,
+  "files": [
+    {
+      "path": "A题/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/A%E9%A2%98.pdf"
+    },
+    {
+      "path": "A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B61.xlsx"
+    },
+    {
+      "path": "A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B62.xlsx"
+    },
+    {
+      "path": "A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B63/result1.xlsx"
+    },
+    {
+      "path": "A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B63/result2.xlsx"
+    },
+    {
+      "path": "A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B63/result3.xlsx"
+    },
+    {
+      "path": "A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B63/result4.xlsx"
+    },
+    {
+      "path": "paper/q1_q2_stage/README.md",
+      "bytes": 2341,
+      "sha256": "052da1279eb8537b3313f401be26bb52df7af3acbd30bbbe2888b9ab88b8637f",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/paper/q1_q2_stage/README.md"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_limits.tex",
+      "bytes": 4595,
+      "sha256": "88cc24eefdfe26e2cc673a7d36ddffb9fa251744af1686e5f3f9d5dd9982b20f",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/paper/q1_q2_stage/sections/q1_limits.tex"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_limits.tex",
+      "bytes": 6627,
+      "sha256": "964ce9b5be17d75857009ec339d40af50d65391315a6ab75f665dc7b69691c6f",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/paper/q1_q2_stage/sections/q2_limits.tex"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_model.tex",
+      "bytes": 6468,
+      "sha256": "6894c877de1904cdb35e3a2ccb7aaf64ff1bcdc001ff15db38dc55c0a7a2d839",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/paper/q1_q2_stage/sections/q2_model.tex"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+      "bytes": 520928,
+      "sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q1_complete_delivery/q1_delivery/output/q1_unrounded.npz"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/README.md",
+      "bytes": 5726,
+      "sha256": "1b69a72246bad862b746776dbd04f44f51815d4f395bd443ae12c8f6f441642d",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q1_complete_delivery/q1_delivery/README.md"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "bytes": 15435,
+      "sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q1_complete_delivery/q1_delivery/source/q1_solver.py"
+    },
+    {
+      "path": "q2_final_delivery/output/q2_unrounded.npz",
+      "bytes": 3299005,
+      "sha256": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q2_final_delivery/output/q2_unrounded.npz"
+    },
+    {
+      "path": "q2_final_delivery/README.md",
+      "bytes": 7781,
+      "sha256": "2197762a328be0cbeebb312f8b613bd7eb47a49dad156adcd5dc53da65f0c21b",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q2_final_delivery/README.md"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "bytes": 16233,
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q2_final_delivery/source/q2_core.py"
+    },
+    {
+      "path": "q2_refinement_delivery/物理闭合与数据需求.md",
+      "bytes": 13759,
+      "sha256": "2c4456fb6761e3e4c0c6d5894fdee17aa40f4249a1cf935a37bee278b8d43f68",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q2_refinement_delivery/%E7%89%A9%E7%90%86%E9%97%AD%E5%90%88%E4%B8%8E%E6%95%B0%E6%8D%AE%E9%9C%80%E6%B1%82.md"
+    },
+    {
+      "path": "q3_pro_handoff/evidence/literature_review.md",
+      "bytes": 13190,
+      "sha256": "64cbdf0d72449775ad9a06936b487122194c5c3521a613479442ddeee3769da0",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_pro_handoff/evidence/literature_review.md"
+    },
+    {
+      "path": "q3_refinement_delivery/output/end_event.json",
+      "bytes": 1083,
+      "sha256": "65667636ff37ff8170354e4fe9280a8dda9ebbad6389f017f1d329fb2edc5491",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/output/end_event.json"
+    },
+    {
+      "path": "q3_refinement_delivery/output/solution.npz",
+      "bytes": 736909,
+      "sha256": "6dc8e7fb69b684162ef60016741200815fb797b6af5824b19ec1b8772553dfab",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/output/solution.npz"
+    },
+    {
+      "path": "q3_refinement_delivery/README.md",
+      "bytes": 2465,
+      "sha256": "745ce1e76135a7bc719feb4eaa367db3f2ca56076b0c06d0a9012ffd9661670c",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/README.md"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_reference.py",
+      "bytes": 8667,
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/source/q3_reference.py"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_refined_reference.py",
+      "bytes": 10677,
+      "sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/source/q3_refined_reference.py"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_solver.py",
+      "bytes": 19331,
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/q3_refinement_delivery/source/q3_solver.py"
+    },
+    {
+      "path": "readable/papers/adrover-2020/fulltext.md",
+      "bytes": 67073,
+      "sha256": "80ab920c10f111c11df8f4db11da0318df708ba3974b62f520eb08796a86fe01",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/papers/adrover-2020/fulltext.md"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/fulltext.md",
+      "bytes": 62848,
+      "sha256": "3d447b023ded929b81adbb36b4d7fec350e7f2b9179b41a2f7fa84ee9eeea3cb",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/papers/chupawa-2022/fulltext.md"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/fulltext.md",
+      "bytes": 49350,
+      "sha256": "ac498bfa56f1ca1eea0118607019637d3cbf48b3a4d7b76b182e398582ad1653",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/papers/da-silva-2014/fulltext.md"
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "bytes": 7063,
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/problem/fulltext.md"
+    },
+    {
+      "path": "readable/QUALITY.md",
+      "bytes": 2232,
+      "sha256": "5d5162b40d007f7b24cf5f2f7065729121a004f0474de258d7a5c351dae01599",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/QUALITY.md"
+    },
+    {
+      "path": "readable/README.md",
+      "bytes": 3819,
+      "sha256": "2b5cd0b3a61213ccb3729702ac2afc1d739175c31b5d5ac206d9e0e3fa522311",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/readable/README.md"
+    },
+    {
+      "path": "review_q123_physics_20260911/model/物理闭合审查.md",
+      "bytes": 18159,
+      "sha256": "cdfcd01c5f5caf64505e0cf2cdccec95fe90a45b5f51a648b70c43d943c4c2b0",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/model/%E7%89%A9%E7%90%86%E9%97%AD%E5%90%88%E5%AE%A1%E6%9F%A5.md"
+    },
+    {
+      "path": "review_q123_physics_20260911/numeric/numeric_checks.json",
+      "bytes": 1970,
+      "sha256": "00f8b1c613a4a32f64590863933ef8cd2edf853c5fee48935a7ee911626dcdaf",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/numeric/numeric_checks.json"
+    },
+    {
+      "path": "review_q123_physics_20260911/numeric/数值与干质量核查.md",
+      "bytes": 3048,
+      "sha256": "a01c52b2ad1a0ab7157a5783b1e13a88b1ec979ce1ad8a71cf1f30b8fbc07c89",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/numeric/%E6%95%B0%E5%80%BC%E4%B8%8E%E5%B9%B2%E8%B4%A8%E9%87%8F%E6%A0%B8%E6%9F%A5.md"
+    },
+    {
+      "path": "review_q123_physics_20260911/q1_heat_scale.json",
+      "bytes": 1772,
+      "sha256": "a9d582593695c95668c0f771d401cb42fd9f1b88870d53881645f6a9c5777716",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/q1_heat_scale.json"
+    },
+    {
+      "path": "review_q123_physics_20260911/runtime/runtime_review.md",
+      "bytes": 11491,
+      "sha256": "413c2077a28b3d165dab597231571d2b579736d881b5bfbe731e17b81dfd2d8a",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/runtime/runtime_review.md"
+    },
+    {
+      "path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "bytes": 12634,
+      "sha256": "3698604fbc66755910ea14a6ebef1e9c6fa2173f91db4201498d031c50534ed8",
+      "baseline_bytes_match": true,
+      "url": "https://github.com/Hel10o/libai/blob/15cc3bf4afad748ab08e87bb3030ef606b1c9b9a/review_q123_physics_20260911/%E5%89%8D%E4%B8%89%E9%97%AE%E7%8E%B0%E7%8A%B6%E4%B8%8E%E7%89%A9%E7%90%86%E9%97%AD%E5%90%88%E5%AE%A1%E6%A0%B8.md"
+    }
+  ]
+}

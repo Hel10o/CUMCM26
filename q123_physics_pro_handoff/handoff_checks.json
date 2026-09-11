@@ -1,0 +1,170 @@
+{
+  "status": "pass",
+  "baseline_commit": "15cc3bf4afad748ab08e87bb3030ef606b1c9b9a",
+  "source_files_verified_byte_for_byte": 37,
+  "local_links_checked": 40,
+  "links": [
+    {
+      "document": "README.md",
+      "target": "q123_physics_pro_handoff/发给Pro的简短提示词.txt"
+    },
+    {
+      "document": "README.md",
+      "target": "q123_physics_pro_handoff/前三问物理闭合与修正计算_Pro交接文档.md"
+    },
+    {
+      "document": "README.md",
+      "target": "q123_physics_pro_handoff/source_manifest.json"
+    },
+    {
+      "document": "README.md",
+      "target": "q123_physics_pro_handoff/handoff_checks.json"
+    },
+    {
+      "document": "README.md",
+      "target": "q123_physics_pro_handoff/MANIFEST.sha256"
+    },
+    {
+      "document": "README.md",
+      "target": "review_q123_physics_20260911/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q123_physics_pro_handoff/source_manifest.json"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/problem/fulltext.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "A题/A题.pdf"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "A题/附件"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/前三问现状与物理闭合审核.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/model/物理闭合审查.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/q1_heat_scale.json"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/numeric/数值与干质量核查.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/numeric/numeric_checks.json"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q1_complete_delivery/q1_delivery/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q1_complete_delivery/q1_delivery/source/q1_solver.py"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q2_final_delivery/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q2_final_delivery/source/q2_core.py"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q2_final_delivery/output/q2_unrounded.npz"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q2_refinement_delivery/物理闭合与数据需求.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/source/q3_refined_reference.py"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/source/q3_reference.py"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/source/q3_solver.py"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/output/solution.npz"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_refinement_delivery/output/end_event.json"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/runtime/runtime_review.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "paper/q1_q2_stage/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "paper/q1_q2_stage/sections/q1_limits.tex"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "paper/q1_q2_stage/sections/q2_model.tex"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "paper/q1_q2_stage/sections/q2_limits.tex"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/README.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/QUALITY.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/papers/adrover-2020/fulltext.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/papers/da-silva-2014/fulltext.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "readable/papers/chupawa-2022/fulltext.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "review_q123_physics_20260911/model/物理闭合审查.md"
+    },
+    {
+      "document": "前三问物理闭合与修正计算_Pro交接文档.md",
+      "target": "q3_pro_handoff/evidence/literature_review.md"
+    }
+  ],
+  "validation_scope": "Document link targets and baseline source bytes only; no new physics simulation.",
+  "independent_review": "Separate physics reviewer inspected the task requirements; this script does not certify physical correctness."
+}
