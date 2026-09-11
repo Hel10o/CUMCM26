@@ -44,6 +44,7 @@
 - [第三问定向复审新交付](q3_refinement_delivery/README.md)、[新版 result3.xlsx](q3_refinement_delivery/output/result3.xlsx)及[新版第三问结论](q3_refinement_delivery/第三问最终复审与答案.md)。
 - [前三问物理问题与新交付审核入口](review_q123_physics_20260911/README.md)、[潜热与干物质守恒主审核](review_q123_physics_20260911/前三问现状与物理闭合审核.md)及[独立物理/文献核查](review_q123_physics_20260911/model/物理闭合审查.md)。
 - [前三问物理闭合Pro交接入口](q123_physics_pro_handoff/README.md)、[完整修正计算任务书](q123_physics_pro_handoff/前三问物理闭合与修正计算_Pro交接文档.md)及[简短启动提示词](q123_physics_pro_handoff/发给Pro的简短提示词.txt)。
+- [Pro部分交付诊断与离线恢复](q123_physics_recovery_20260911/README.md)、[可直接上传的离线输入包](q123_physics_recovery_20260911/q123_physics_offline_inputs.zip)及[恢复执行提示词](q123_physics_recovery_20260911/恢复执行提示词.txt)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 

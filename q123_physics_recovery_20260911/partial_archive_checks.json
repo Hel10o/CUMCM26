@@ -1,0 +1,51 @@
+{
+  "original_zip_sha256": "ac6e81901a0eb5ed43febfb5c53b29928dbdfdf07222919ee6165a6c616fec06",
+  "bytes": 7735,
+  "zip_crc_pass": true,
+  "files": [
+    {
+      "path": "q123_physics_revision_delivery/README.md",
+      "bytes": 2025
+    },
+    {
+      "path": "q123_physics_revision_delivery/SHA256SUMS.txt",
+      "bytes": 358
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_derivation.md",
+      "bytes": 4514
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_mass_energy_check.py",
+      "bytes": 4921
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_results.json",
+      "bytes": 2156
+    }
+  ],
+  "internal_hash_checks": [
+    {
+      "path": "q123_physics_revision_delivery/README.md",
+      "sha256": "b3d56ce11888dac41095e49ca5db6665938fc1d6b5ccfffa23e21ffb357a10dc",
+      "pass": true
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_derivation.md",
+      "sha256": "6a243e02f738702d3b64498b2f5715b1674f6109ab39f58a3828cdaf655727aa",
+      "pass": true
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_mass_energy_check.py",
+      "sha256": "48296a3cd84e46adef4289969e57916649f7a3cacde6311cdb0f749d2fdff73a",
+      "pass": true
+    },
+    {
+      "path": "q123_physics_revision_delivery/conditional_results.json",
+      "sha256": "98243a572648a7d8bb7db9ce1845c3c2ad4f987a2680431fdb82d34e4541fdd1",
+      "pass": true
+    }
+  ],
+  "not_executed": "Submitted Python script was inspected, never run by this review. No new Q1/Q2/Q3 PDE run.",
+  "access_evidence": "No source_access file, attempted URL list, original HTTP/tool errors or access command logs present; specific failure cause remains unknown."
+}

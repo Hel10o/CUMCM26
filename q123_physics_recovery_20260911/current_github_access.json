@@ -1,0 +1,11 @@
+{
+  "checked_date": "2026-09-11",
+  "surface": "Current Codex task GitHub connector; not the user's earlier Pro session",
+  "main_commit": "c46bef5d128ee506a9934b843f6cde93a3658995",
+  "commit_url": "https://github.com/Hel10o/libai/commit/c46bef5d128ee506a9934b843f6cde93a3658995",
+  "handoff_url": "https://github.com/Hel10o/libai/blob/c46bef5d128ee506a9934b843f6cde93a3658995/q123_physics_pro_handoff/%E5%89%8D%E4%B8%89%E9%97%AE%E7%89%A9%E7%90%86%E9%97%AD%E5%90%88%E4%B8%8E%E4%BF%AE%E6%AD%A3%E8%AE%A1%E7%AE%97_Pro%E4%BA%A4%E6%8E%A5%E6%96%87%E6%A1%A3.md",
+  "characters": 9084,
+  "contains_final_acceptance": true,
+  "isError": false,
+  "limitation": "Shows current access success only. Pro archive contains no original failure trace, so no attribution to network, account permissions or model/tool availability is established."
+}

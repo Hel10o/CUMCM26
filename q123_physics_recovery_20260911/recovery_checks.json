@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "source_commit": "c46bef5d128ee506a9934b843f6cde93a3658995",
+  "source_files": 292,
+  "archive_entries": 295,
+  "input_manifest_files": 294,
+  "direct_handoff_links_checked": 34,
+  "zip_bytes": 16250804,
+  "zip_sha256": "290dfab4e78d6489cc794d3428cd48bde8ff43a74fac1956ccd5c490ac49ec59",
+  "uncompressed_bytes": 19118000,
+  "scope": "Packaging and byte verification only; no PDE or submitted script execution."
+}
