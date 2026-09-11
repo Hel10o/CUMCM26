@@ -1,0 +1,14 @@
+AXISYMMETRIC 40 80 1800.0
+AXISYMMETRIC 40 80 3600.0
+AXISYMMETRIC 40 80 5400.0
+Traceback (most recent call last):
+  File [35m"/mnt/data/q2_work/geometry40_checkpoint.py"[0m, line [35m6[0m, in [35m<module>[0m
+    from q2_core import *
+  File [35m"/mnt/data/q2_final_delivery/source/q2_core.py"[0m, line [35m13[0m, in [35m<module>[0m
+    import scipy
+[1;35mModuleNotFoundError[0m: [35mNo module named 'scipy'[0m
+RESUME 40 80 5400.0
+AXISYMMETRIC 40 80 7200.0
+AXISYMMETRIC 40 80 9000.0
+AXISYMMETRIC 40 80 10800.0
+GEOMETRY COMPLETE {'nr': 40, 'nz': 80, 'end_s': 10800.0, 'end_transfer': True, 'rtol': 1e-09, 'atol': 1e-11, 'nfev': 15386, 'njev': 180, 'nlu': 2116, 'geometry': 'z in [0,L/2], coupled r-z finite cylinder', 'max_step_s': 30.0, 'elapsed_s': 61.22526774400012}

@@ -1,0 +1,18 @@
+{
+  "n": 128,
+  "spatial_method": "Chebyshev-Lobatto collocation in x=(r/R)^2; coupled Robin elimination",
+  "time_method": "BDF",
+  "rtol": 1e-12,
+  "atol_T": 2e-13,
+  "atol_C": 2e-14,
+  "max_step_s": 15.0,
+  "nfev": 1973,
+  "njev": 2,
+  "nlu": 169,
+  "accepted_steps": 977,
+  "environment": "linear",
+  "extension": "error",
+  "end_s": 600,
+  "elapsed_s": 0.6662439340000219,
+  "max_boundary_newton_iterations": 2
+}

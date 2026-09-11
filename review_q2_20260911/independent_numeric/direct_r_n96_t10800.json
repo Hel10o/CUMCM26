@@ -1,0 +1,78 @@
+{
+  "method": "Independent Q2 reference: direct-r collocation, expanded PDE, Radau.\n\nNo q2_final_delivery or Q2-preflight numerical module is imported. Both boundary\nvalues are eliminated: r=0 by a Neumann row; r=R by the coupled Robin equations.\nThe PDE is evaluated in expanded local derivatives, not the Pro FV flux RHS or\nits x=(r/R)^2 spectral product derivative. A complex-step Jacobian is generated\nfrom this implementation. Input values are independently decoded from OOXML.\n",
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "stats": {
+    "n": 96,
+    "end_s": 10800,
+    "rtol": 2e-11,
+    "atol_T": 1e-12,
+    "atol_C": 9.999999999999999e-14,
+    "max_step_s": 15,
+    "method": "Direct-r Chebyshev, expanded nonlinear PDE, algebraic center and surface, Radau, independent complex-step Jacobian",
+    "nfev": 63070,
+    "njev": 322,
+    "nlu": 8704,
+    "accepted_steps": 8854,
+    "warnings": [],
+    "elapsed_s": 67.73057619999997,
+    "jacobian_calls": 322
+  },
+  "first_second_center_surface": [
+    [
+      28.0,
+      2.550000000026452
+    ],
+    [
+      28.00012966874563,
+      2.519805261964066
+    ]
+  ],
+  "comparisons": {
+    "temperature_degC": {
+      "max_abs_difference": 1.3836185530635703e-09,
+      "rms_difference": 1.5059680288580844e-10,
+      "max_at_time_s_radius_cm": [
+        9123,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": [],
+      "paper_table": {
+        "max_abs_difference": 4.1100634007307235e-10,
+        "rms_difference": 1.9601335435437797e-10,
+        "max_at_time_s_radius_cm": [
+          9000,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    },
+    "moisture_dry_basis": {
+      "max_abs_difference": 1.1461414572977446e-07,
+      "rms_difference": 2.5505342853970387e-10,
+      "max_at_time_s_radius_cm": [
+        1,
+        2.0
+      ],
+      "four_decimal_mismatches": 0,
+      "first_mismatches": [],
+      "paper_table": {
+        "max_abs_difference": 4.279931964390471e-11,
+        "rms_difference": 1.6981637840857954e-11,
+        "max_at_time_s_radius_cm": [
+          1800,
+          2.0
+        ],
+        "four_decimal_mismatches": 0,
+        "first_mismatches": []
+      }
+    }
+  }
+}

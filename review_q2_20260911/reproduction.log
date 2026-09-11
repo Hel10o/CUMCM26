@@ -1,0 +1,61 @@
+START mesh
+GRID COMPLETE 20
+GRID COMPLETE 40
+GRID COMPLETE 80
+GRID COMPLETE 160
+GRID COMPLETE 320
+GRID COMPLETE 640
+GRID COMPLETE 1280
+GRID COMPLETE 2560
+DONE mesh {'passed': True, 'elapsed_s': 200.65693320000003}
+START reference
+REFERENCE COMPLETE 128
+REFERENCE COMPLETE 192
+DONE reference {'passed': True, 'elapsed_s': 88.25619240000003}
+START tests
+D:\Desktop\CUMCM26\review_q1_20260910\.venv\Lib\site-packages\scipy\integrate\_ivp\bdf.py:416: RuntimeWarning: invalid value encountered in subtract
+  D[order + 2] = d - D[order + 1]
+DONE tests {'passed': True, 'elapsed_s': 35.344491500000004}
+START time
+DONE time {'passed': True, 'elapsed_s': 42.28746990000002}
+START sensitivity
+DONE sensitivity {'passed': True, 'elapsed_s': 116.52922520000004}
+START geometry
+AXISYMMETRIC 20 40 1800.0
+AXISYMMETRIC 20 40 3600.0
+AXISYMMETRIC 20 40 5400.0
+AXISYMMETRIC 20 40 7200.0
+AXISYMMETRIC 20 40 9000.0
+AXISYMMETRIC 20 40 10800.0
+AXISYMMETRIC 20 80 1800.0
+AXISYMMETRIC 20 80 3600.0
+AXISYMMETRIC 20 80 5400.0
+AXISYMMETRIC 20 80 7200.0
+AXISYMMETRIC 20 80 9000.0
+AXISYMMETRIC 20 80 10800.0
+AXISYMMETRIC 40 80 1800.0
+AXISYMMETRIC 40 80 3600.0
+AXISYMMETRIC 40 80 5400.0
+AXISYMMETRIC 40 80 7200.0
+AXISYMMETRIC 40 80 9000.0
+AXISYMMETRIC 40 80 10800.0
+DONE geometry {'passed': True, 'elapsed_s': 353.3059048}
+START assemble
+{
+  "T_center": 49.849495583627146,
+  "T_surface": 49.966412934359134,
+  "C_center": 1.7661771010384424,
+  "C_surface": 1.0081231241945778,
+  "mean_T": 49.90432863692265,
+  "mean_C": 1.3825270573112691,
+  "effective_water_reduction_percent": 45.78325265446003
+}
+DONE assemble {'passed': True, 'elapsed_s': 16.67182109999999}
+START excel
+DONE excel {'passed': True, 'elapsed_s': 1.0602768999999626}
+START report
+DONE report {'passed': True, 'elapsed_s': 6.696296600000096}
+START audit
+AUDIT PASSED 453600 values; paper checked: True
+DONE audit {'passed': True, 'elapsed_s': 4.993051599999944}
+COMPLETE: True

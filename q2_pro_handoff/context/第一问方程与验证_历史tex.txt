@@ -1,0 +1,180 @@
+\section{第一问：预热阶段的径向传输模型}
+\label{sec:q1-model}
+
+\subsection{守恒方程与局部扩散系数}
+
+根据前述假设，以药材中截面内距轴线的距离 $r$ 为径向坐标，研究
+$0\leq r\leq R$、$0\leq t\leq1800\,\mathrm{s}$ 内的温度 $T(r,t)$
+和干基含水率 $C(r,t)$，其中 $R=0.02\,\mathrm{m}$。
+由傅里叶定律及圆环控制体的显热收支，得到温度方程；对水分通量
+$\boldsymbol{j}_w=-\rho_dD(C)\nabla C$ 应用质量守恒，并利用固定、均匀的
+干物质密度 $\rho_d$ 约去储存项与通量项中的共同因子，得到
+\begin{align}
+ \rho c_p\frac{\partial T}{\partial t}
+ &=\frac{1}{r}\frac{\partial}{\partial r}
+   \left(rk\frac{\partial T}{\partial r}\right),
+ &&0<r<R, \label{eq:q1-heat}\\
+ \frac{\partial C}{\partial t}
+ &=\frac{1}{r}\frac{\partial}{\partial r}
+   \left[rD(C)\frac{\partial C}{\partial r}\right],
+ \qquad D(C)=7\times10^{-9}\exp\!\left(-\frac{0.89}{C}\right).
+ \label{eq:q1-moisture}
+\end{align}
+式中参数采用题目附录~2 的规定\cite{problem}，计算内部的长度和时间分别使用
+$\mathrm{m}$ 和 $\mathrm{s}$，$D$ 的单位为 $\mathrm{m^2/s}$。
+温度方程只涉及温差，故使用摄氏温度与先换算为开尔文等价。
+$\rho c_p$ 为题给固定有效体积热容；$\rho_d$ 则用于将干基含水率积分换算为
+真实水质量，两者的密度含义不作混用。
+
+水分方程的扩散系数按局部 $C$ 更新。对光滑解，其右端展开后包含
+$D'(C)(\partial C/\partial r)^2$，因而不能以平均含水率计算一个统一的 $D$，
+也不能将其简化为 $D(C)$ 乘常系数圆柱拉普拉斯算子。
+本问中 $D$ 不依赖 $T$，热物性与热边界也不依赖 $C$，故两个场可分别求解；
+水分方程自身非线性，主模型不属于双向热质耦合模型。
+
+\subsection{初边值条件与环境输入}
+
+药材初态取题给均匀状态，轴心满足对称条件，侧面采用第三类边界条件：
+\begin{align}
+ T(r,0)&=28\,{}^\circ\mathrm{C},\qquad
+ C(r,0)=2.55\,\mathrm{kg/kg}, &&0\leq r\leq R,
+ \label{eq:q1-initial}\\
+ T_r(0,t)&=0,\qquad C_r(0,t)=0, &&t>0.
+ \label{eq:q1-symmetry}
+\end{align}
+\begin{equation}
+ \left\{\begin{aligned}
+ -kT_r(R,t)&=h_T\bigl[T_s-T_\infty(t)\bigr],\\
+ -D(C_s)C_r(R,t)&=h_m\bigl[C_s-C_\infty(t)\bigr],
+ \end{aligned}\right.\qquad t>0.
+ \label{eq:q1-robin}
+\end{equation}
+其中 $T_s=T(R,t)$、$C_s=C(R,t)$，$h_T=25\,\mathrm{W/(m^2\cdot K)}$，
+$h_m=8\times10^{-7}\,\mathrm{m/s}$；$C_\infty$ 按前述等效浓度尺度解释。
+取径向向外为正，升温时 $T_s<T_\infty$，热边界通量为负，表示热量进入药材；
+失水时 $C_s>C_\infty$，水分通量为正。质量边界两端同乘 $\rho_d$ 后，
+才表示单位为 $\mathrm{kg/(m^2\cdot s)}$ 的实际水质量通量。
+
+附件~1 在 $t=0$ 给出 $C_\infty=0.01963$，因此均匀初态的 $C_r=0$ 与
+式\eqref{eq:q1-robin} 在 $(R,0)$ 处不相容。该角点不相容会形成早期表面边界层。
+计算保留包括表面在内的全部题给初值，并在 $t>0$ 施加交换条件，
+不通过人为降低初始表面含水率来消除这一现象。
+
+附件~1 的温湿环境是已知边界驱动。对相邻的 $60\,\mathrm{s}$ 采样时刻
+$t_j,t_{j+1}$，分别构造连续分段线性输入
+\begin{equation}
+ b(t)=b_j+\frac{t-t_j}{t_{j+1}-t_j}(b_{j+1}-b_j),
+ \qquad b\in\{T_\infty,C_\infty\},\quad t_j\leq t\leq t_{j+1}.
+ \label{eq:q1-forcing}
+\end{equation}
+计算仅截取 $0$ 至 $1800\,\mathrm{s}$，不作时间外推。
+在各输入折点重新启动时间积分并传递上一段末状态，使解连续，
+同时避免将环境斜率的变化作为光滑输入跨越。
+
+\subsection{圆柱有限体积离散与时间推进}
+
+将半径划分为 $N$ 个等距区间，节点为 $r_i=i\Delta r$，
+$\Delta r=R/N$，$i=0,\ldots,N$。
+相邻节点的中点作为内部控制体界面，最内、最外界面分别设在 $0$ 和 $R$。
+定义去除公共几何因子 $2\pi L$ 后的控制体权重
+\begin{equation}
+ w_i=\int_{r_{i-1/2}}^{r_{i+1/2}}r\,\mathrm{d}r
+ =\frac{r_{i+1/2}^{2}-r_{i-1/2}^{2}}{2},
+ \qquad V_i=2\pi Lw_i.
+ \label{eq:q1-volumes}
+\end{equation}
+轴心控制体对应 $0\leq r\leq\Delta r/2$，表面控制体对应
+$R-\Delta r/2\leq r\leq R$。两端均保留储存项，输出中的轴心和表面值
+直接对应 $r_0$ 和 $r_N$，不以靠近端点的单元中心值代替。
+
+统一记 $u=T$ 或 $C$，对应扩散系数 $a=\alpha=k/(\rho c_p)$ 或 $D(C)$，
+交换系数 $\beta=h_T/(\rho c_p)$ 或 $h_m$。
+采用相邻节点扩散系数的调和平均，构造向外为正的归一化界面通量：
+\begin{align}
+ a_{i+1/2}&=\frac{2a_i a_{i+1}}{a_i+a_{i+1}},\qquad
+ G_{i+1/2}=r_{i+1/2}a_{i+1/2}\frac{u_i-u_{i+1}}{\Delta r},
+ \label{eq:q1-fv-flux}\\
+ w_i\frac{\mathrm{d}u_i}{\mathrm{d}t}
+ &=G_{i-1/2}-G_{i+1/2},\qquad
+ G_{-1/2}=0,\quad G_{N+1/2}=R\beta(u_N-u_\infty).
+ \label{eq:q1-fv-balance}
+\end{align}
+该格式在轴心给出
+$\mathrm{d}u_0/\mathrm{d}t=4a_{1/2}(u_1-u_0)/\Delta r^2$，
+自然处理了圆柱坐标的几何因子，避免在 $r=0$ 除零。
+表面半控制体通过积分收支施加 Robin 条件；网格细化时其离散边界趋于
+式\eqref{eq:q1-robin}。每个内部面在相邻控制体中采用同一通量、相反符号，
+求和可得离散平均量的守恒关系
+\begin{equation}
+ \overline{u}_h=\frac{2}{R^2}\sum_{i=0}^{N}w_i u_i,
+ \qquad
+ \frac{\mathrm{d}\overline{u}_h}{\mathrm{d}t}
+ =-\frac{2\beta}{R}(u_N-u_\infty).
+ \label{eq:q1-discrete-conservation}
+\end{equation}
+
+半离散方程采用 SciPy 的变阶 BDF 隐式方法推进\cite{scipy}，提供解析稀疏
+Jacobian，并在非线性迭代中更新 $D(C)$ 及其导数。
+正式计算取 $N=10240$，$\Delta r=1.953125\times10^{-6}\,\mathrm{m}$，
+相对容差为 $2\times10^{-12}$，绝对容差为 $2\times10^{-14}$，最大时间步为
+$3\,\mathrm{s}$；非线性迭代或积分失败时停止计算，不截断负含水率。
+为适应初始边界层，水分场每段的初始试探步取该段长度、$10^{-3}\,\mathrm{s}$
+及 $0.05\Delta r^2/(7\times10^{-9}\,\mathrm{m^2/s})$ 中的最小值。
+规定的 $1\,\mathrm{s}$ 是输出间隔，由连续时间插值取得，不是固定积分步长。
+由于 $N$ 是 $20$ 的整数倍，$0,0.1,\ldots,2\,\mathrm{cm}$ 的全部输出位置
+均位于计算节点上，无须空间插值。内部计算保留双精度，导出时统一保留四位小数。
+
+\subsection{数值验证与独立参考对照}
+
+验证依次检查均匀场保持、无通量守恒、空间网格和时间精度，再采用不同空间
+表示构造独立参考。外界等于初态时，两场保持均匀；非均匀初态且表面关闭交换时，
+按式\eqref{eq:q1-discrete-conservation} 计算的平均量只出现浮点量级漂移。
+空间区间数从 $20$ 逐级加倍至 $10240$，并在全部规定时空输出位置比较差异。
+时间精度检验固定正式网格，将相对、绝对容差分别收紧到 $5\times10^{-13}$、
+$5\times10^{-15}$，最大步长减至 $1\,\mathrm{s}$。
+
+温度的独立参考采用贝塞尔特征函数展开。令
+$\theta=T-T_\infty$，展开基底为 $J_0(\mu_n r/R)$，其中
+$\mu_nJ_1(\mu_n)=\mathrm{Bi}_T J_0(\mu_n)$，
+$\mathrm{Bi}_T=h_TR/k$。
+各模态满足一阶线性方程，其强迫项与分段常数 $-T'_\infty(t)$ 成正比，
+因此可在每个输入区间内精确推进。分别使用 $200$、$800$、$3200$ 个模态，
+最后两级的全场最大差仅为 $5.7561\times10^{-10}\,\mathrm{K}$。
+
+水分的独立参考采用变换 $x=(r/R)^2$，将控制方程写为
+\begin{equation}
+ C_t=\frac{4}{R^2}\left\{D(C)C_x+
+ x\frac{\partial}{\partial x}\bigl[D(C)C_x\bigr]\right\}.
+ \label{eq:q1-collocation}
+\end{equation}
+在 Chebyshev--Lobatto 配点上构造谱微分矩阵，并利用非线性 Robin 方程消去
+表面未知量；在由内部状态限定的正含水率区间内求解表面 Robin 方程，初始输出仍保留均匀初态。
+分别以 $96$、$160$、$240$ 阶配点细化，其空间实现不调用有限体积通量。
+该参考仍采用 BDF 时间积分，因而其独立性主要体现在空间离散和边界处理，
+时间误差由上述容差收紧检验补充约束。
+
+\begin{table}[htbp]
+ \centering
+ \caption{第一问的数值验证与独立参考对照}
+ \label{tab:q1-verification}
+ \small
+ \begin{tabular}{>{\raggedright\arraybackslash}p{0.43\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.27\linewidth}}
+  \toprule
+  检查项目 & 温度差或漂移$/\mathrm{K}$ & 含水率差或漂移$/(\mathrm{kg/kg})$\\
+  \midrule
+  均匀场保持的最大偏差 & $0$ & $0$\\
+  无通量条件下的平均量漂移 & $7.1054\times10^{-15}$ & $1.3323\times10^{-15}$\\
+  $N=5120$ 与 $10240$ 的全场最大差 & $2.2464\times10^{-8}$ & $4.5642\times10^{-6}$\\
+  正式网格收紧时间控制后的全场最大差 & $5.0323\times10^{-10}$ & $8.1504\times10^{-11}$\\
+  正式解与独立参考的全场最大差 & $7.2902\times10^{-9}$ & $1.520649\times10^{-6}$\\
+  \bottomrule
+ \end{tabular}
+\end{table}
+
+其中，全场比较覆盖 $1$ 至 $1800\,\mathrm{s}$ 的全部 $21$ 个输出半径。
+仅比较最后两级有限体积网格时，仍有 $1$ 个温度值和 $4$ 个含水率值因接近
+舍入分界而出现末位差异，因此不能仅凭误差小于 $5\times10^{-5}$ 判定全部
+四位小数稳定。进一步与独立参考逐项比较后，两场各 $37800$ 个、合计
+$75600$ 个正式输出的四位小数均一致。
+上述结果支持给定参数、边界插值及模型假设下的数值可靠性，
+不表示实际药材温湿预测已达到四位小数的物理精度。

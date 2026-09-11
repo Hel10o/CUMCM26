@@ -1,0 +1,246 @@
+{
+  "generated_by": "paper/build_assets.py",
+  "builder_sha256": "edf1d877e6ebfc9b5ed81f46b726f0ff48648ee954393e22233cd3f74e40da5f",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "matplotlib": "3.11.0"
+  },
+  "sourceSHA256": {
+    "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+    "q1_complete_delivery/q1_delivery/output/T_n10240.npz": "b766f75766acaade31bc55561146f11f5d2a55410c3d03b85aa7e65390f747f2",
+    "q1_complete_delivery/q1_delivery/output/C_n10240.npz": "0f8a2539950f5887b6a779132259025885d56f8aa53bc4cf46033f3318f216dd",
+    "q1_complete_delivery/q1_delivery/output/table_temperature.csv": "dc1568f39ba0419dfd0219ab1617cddf617767821de645cffa9a49e5ffe6696e",
+    "q1_complete_delivery/q1_delivery/output/table_moisture.csv": "df88c7373fdccdbdffd46505ca447a7e10c8f0cd1af7788827f5bfdb0969499d"
+  },
+  "formal_source_files_unchanged": true,
+  "production_solver_rerun": false,
+  "final_1800_s": {
+    "time_s": 1800,
+    "center_temperature_degC": 33.57534482524738,
+    "surface_temperature_degC": 36.785560346381175,
+    "surface_minus_center_temperature_K": 3.2102155211337973,
+    "surface_minus_center_four_decimal_K": "3.2102",
+    "center_moisture_kg_kg": 2.549992404111036,
+    "surface_moisture_kg_kg": 1.5102346083329061,
+    "volume_weighted_average_temperature_degC": 35.16791358023219,
+    "volume_weighted_average_moisture_kg_kg": 2.293557194194852,
+    "relative_average_moisture_decrease_percent": 10.056580619809717,
+    "environment_temperature_degC": 41.513
+  },
+  "scales": {
+    "radius_m": 0.02,
+    "length_m": 0.25,
+    "thermal_diffusivity_m2_s": 1.6885553470919323e-07,
+    "initial_moisture_diffusivity_m2_s": 4.937655094173937e-09,
+    "thermal_time_scale_s": 2368.888888888889,
+    "initial_moisture_time_scale_s": 81010.11358042607,
+    "thermal_diffusion_length_at_1800_cm": 1.7433873995086342,
+    "initial_moisture_diffusion_length_at_1800_cm": 0.2981237858593824,
+    "thermal_Biot_radius": 1.3888888888888888,
+    "moisture_Biot_radius_initial": 3.2404045432170427,
+    "interpretation": "R-based characteristic scales; diffusion length is a scale, not a finite propagation front"
+  },
+  "tables": {
+    "temperature": {
+      "label": "tab:q1-temperature",
+      "times_s": [
+        100,
+        300,
+        600,
+        900,
+        1200,
+        1500,
+        1800
+      ],
+      "radius_cm": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "result_count": 35,
+      "decimal_places": 4,
+      "formal_csv_exact_text_cells_match": true
+    },
+    "moisture": {
+      "label": "tab:q1-moisture",
+      "times_s": [
+        100,
+        300,
+        600,
+        900,
+        1200,
+        1500,
+        1800
+      ],
+      "radius_cm": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "result_count": 35,
+      "decimal_places": 4,
+      "formal_csv_exact_text_cells_match": true
+    }
+  },
+  "figures": {
+    "q1_history": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "color_scheme": "Okabe-Ito colors plus distinguishable line styles",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane; effective Robin exchange; no explicit latent heat or radiation",
+      "data_source": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+      "question": "How do center/surface temperatures and five radial moisture values evolve within 1800 s?",
+      "x": {
+        "name": "time",
+        "unit": "s",
+        "range": [
+          0,
+          1800
+        ],
+        "step": 1,
+        "sample_count": 1801
+      },
+      "left": {
+        "unit": "degC",
+        "series": {
+          "center": {
+            "color": "#0072B2",
+            "line": "solid"
+          },
+          "surface": {
+            "color": "#D55E00",
+            "line": "dashed"
+          },
+          "environment": {
+            "color": "#555555",
+            "line": "dash-dot"
+          }
+        }
+      },
+      "right": {
+        "unit": "kg water/kg dry material",
+        "radii_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "series_colors": [
+          "#0072B2",
+          "#E69F00",
+          "#009E73",
+          "#CC79A7",
+          "#D55E00"
+        ],
+        "line_styles": [
+          "solid",
+          "dashed",
+          "dash-dot",
+          "dotted",
+          "long-short dash"
+        ],
+        "environment_moisture_plotted": false
+      }
+    },
+    "q1_profiles": {
+      "size_cm": [
+        16.0,
+        6.9
+      ],
+      "png_dpi": 400,
+      "formats": [
+        "PDF vector",
+        "PNG"
+      ],
+      "font": "Microsoft YaHei",
+      "color_scheme": "Okabe-Ito colors plus distinguishable line styles",
+      "numerical_interpolation_for_plotting": "none; connected original numerical samples",
+      "model_scope": "fixed cylinder midplane; effective Robin exchange; no explicit latent heat or radiation",
+      "data_source": [
+        "q1_complete_delivery/q1_delivery/output/T_n10240.npz",
+        "q1_complete_delivery/q1_delivery/output/C_n10240.npz"
+      ],
+      "question": "How do radial temperature and moisture gradients differ at four specified times?",
+      "x": {
+        "name": "radial distance from axis",
+        "unit": "cm",
+        "range": [
+          0,
+          2
+        ],
+        "step": 0.0001953125,
+        "sample_count": 10241
+      },
+      "times_s": [
+        300,
+        600,
+        1200,
+        1800
+      ],
+      "series_colors": [
+        "#0072B2",
+        "#E69F00",
+        "#009E73",
+        "#CC79A7"
+      ],
+      "line_styles": [
+        "solid",
+        "dashed",
+        "dash-dot",
+        "dotted"
+      ],
+      "left_unit": "degC",
+      "right_unit": "kg water/kg dry material",
+      "internal_snapshots_exactly_match_formal_21_output_nodes": true
+    }
+  },
+  "outputs": {
+    "paper/figures/q1_history.pdf": {
+      "sha256": "6c2fd4ef1f23e349abb8a9e87b3701b8957572e822cc8cf0aa4b47a7ce17f13e",
+      "bytes": 26319
+    },
+    "paper/figures/q1_history.png": {
+      "sha256": "8bc76ece1662d0e0a624da684fc1644f1f2fd719694d50a7e22151394c0a62dc",
+      "bytes": 189368
+    },
+    "paper/figures/q1_profiles.pdf": {
+      "sha256": "feee5cafdca386b6d90bdf80d930cff73ab306b9693380067bb256581f72cae5",
+      "bytes": 21668
+    },
+    "paper/figures/q1_profiles.png": {
+      "sha256": "c554e1f802361017dd7bd42b0bc299d37cb7d2f8bf52fb1ba74c80eb7bde1ad1",
+      "bytes": 194971
+    },
+    "paper/tables/q1_temperature.tex": {
+      "sha256": "077a6671aa61897225cb825d9d15706c03329c0b27b904e3d53749a1b74b7182",
+      "bytes": 809
+    },
+    "paper/tables/q1_temperature.csv": {
+      "sha256": "dc1568f39ba0419dfd0219ab1617cddf617767821de645cffa9a49e5ffe6696e",
+      "bytes": 347
+    },
+    "paper/tables/q1_moisture.tex": {
+      "sha256": "3d2fb27e23b1df02327f95755734cf529818bdc49d73b652ca3672372452b826",
+      "bytes": 782
+    },
+    "paper/tables/q1_moisture.csv": {
+      "sha256": "df88c7373fdccdbdffd46505ca447a7e10c8f0cd1af7788827f5bfdb0969499d",
+      "bytes": 312
+    }
+  }
+}

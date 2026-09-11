@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File [35m"/mnt/data/q2_final_delivery/source/q2_preview.py"[0m, line [35m13[0m, in [35m<module>[0m
+    if __name__=="__main__":[31mmain[0m[1;31m()[0m
+                            [31m~~~~[0m[1;31m^^[0m
+  File [35m"/mnt/data/q2_final_delivery/source/q2_preview.py"[0m, line [35m9[0m, in [35mmain[0m
+    b=[31mw.render[0m[1;31m({"sheet_name":"温度","range":"A1:H7","scale":2})
+    [0m  [31m~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py"[0m, line [35m32453[0m, in [35mrender[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py"[0m, line [35m749[0m, in [35m__call__[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py"[0m, line [35m135[0m, in [35mcall[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py"[0m, line [35m115[0m, in [35m_recv_one_line[0m
+[1;35martifact_tool.rpc.client.TransportError[0m: [35mRPC connection closed by peer[0m

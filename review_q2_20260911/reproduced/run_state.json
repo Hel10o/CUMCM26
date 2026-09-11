@@ -1,0 +1,84 @@
+{
+  "input_hashes": {
+    "附件1.xlsx": {
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "bytes": 16586
+    },
+    "result2_template.xlsx": {
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "bytes": 10073
+    }
+  },
+  "stages": {
+    "mesh": {
+      "passed": true,
+      "elapsed_s": 200.65693320000003
+    },
+    "reference": {
+      "passed": true,
+      "elapsed_s": 88.25619240000003
+    },
+    "tests": {
+      "passed": true,
+      "elapsed_s": 35.344491500000004
+    },
+    "time": {
+      "passed": true,
+      "elapsed_s": 42.28746990000002
+    },
+    "sensitivity": {
+      "passed": true,
+      "elapsed_s": 116.52922520000004
+    },
+    "geometry": {
+      "passed": true,
+      "elapsed_s": 353.3059048
+    },
+    "assemble": {
+      "passed": true,
+      "elapsed_s": 16.67182109999999
+    },
+    "excel": {
+      "passed": true,
+      "elapsed_s": 1.0602768999999626
+    },
+    "report": {
+      "passed": true,
+      "elapsed_s": 6.696296600000096
+    },
+    "audit": {
+      "passed": true,
+      "elapsed_s": 4.993051599999944
+    }
+  },
+  "complete": true,
+  "model_version": "q2-effective-local-v1",
+  "excel_engine": "portable",
+  "original_inputs_unchanged": true,
+  "compared_with_delivered": {
+    "temperature_degC": {
+      "max_abs": 8.526512829121202e-14,
+      "rms": 1.5587700071250372e-14,
+      "index": [
+        8690,
+        6
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 8691.0,
+      "radius_cm": 0.6000000000000001
+    },
+    "moisture_dry_basis": {
+      "max_abs": 5.329070518200751e-15,
+      "rms": 1.05646350564523e-15,
+      "index": [
+        5119,
+        1
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 5120.0,
+      "radius_cm": 0.1
+    }
+  }
+}

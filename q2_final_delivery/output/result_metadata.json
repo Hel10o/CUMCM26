@@ -1,0 +1,43 @@
+{
+  "time_s": {
+    "start": 0,
+    "end": 10800,
+    "step": 1,
+    "excel_includes_t0": false
+  },
+  "radius_cm": {
+    "start": 0,
+    "end": 2,
+    "step": 0.1,
+    "meaning": "midplane distance from cylinder axis"
+  },
+  "temperature_degC": {
+    "unit": "degC",
+    "shape": [
+      10801,
+      21
+    ]
+  },
+  "moisture_dry_basis": {
+    "unit": "kg water/kg dry solid",
+    "shape": [
+      10801,
+      21
+    ]
+  },
+  "environment": {
+    "columns": [
+      "temperature_degC",
+      "environment_moisture_equal_numeric_effective_scale"
+    ],
+    "interpolation": "piecewise linear"
+  },
+  "average_temperature_degC": {
+    "weight": "radial volume weight r dr (not arithmetic nodal mean)"
+  },
+  "average_moisture_dry_basis": {
+    "weight": "radial volume weight r dr",
+    "not_actual_mass_from_variable_rho": true
+  },
+  "final_spatial_result": "Richardson: (4*FV2560-FV1280)/3; independent Chebyshev192 checked"
+}

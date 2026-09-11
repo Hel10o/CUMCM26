@@ -1,0 +1,191 @@
+{
+  "scipy_version": "1.17.0",
+  "cases": {
+    "uniform_no_drive": {
+      "runs": [
+        {
+          "mode": "natural",
+          "initial_workspaces": [
+            {
+              "mode": "natural",
+              "D2_nonfinite": 0,
+              "D2_first_bits_hex": "0x4004daf218141a97"
+            }
+          ],
+          "warning_events": [],
+          "accepted_steps": 39,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 4.440892098500626e-16
+        },
+        {
+          "mode": "zero_unused",
+          "initial_workspaces": [
+            {
+              "mode": "zero_unused",
+              "D2_nonfinite": 0,
+              "D2_first_bits_hex": "0x0"
+            }
+          ],
+          "warning_events": [],
+          "accepted_steps": 39,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 4.440892098500626e-16
+        },
+        {
+          "mode": "inject_snan_unused",
+          "initial_workspaces": [
+            {
+              "mode": "inject_snan_unused",
+              "D2_nonfinite": 162,
+              "D2_first_bits_hex": "0x7ff0000000000001"
+            }
+          ],
+          "warning_events": [
+            {
+              "mode": "inject_snan_unused",
+              "before": {
+                "step": 1,
+                "t": 0.0,
+                "order": 1,
+                "n_equal_steps": 0,
+                "active_rows_finite": true,
+                "D_order_plus_1_nonfinite": 162
+              },
+              "warnings": [
+                {
+                  "message": "invalid value encountered in subtract",
+                  "line": 416,
+                  "file": "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Lib\\site-packages\\scipy\\integrate\\_ivp\\bdf.py"
+                }
+              ],
+              "after": {
+                "t": 0.001,
+                "order": 1,
+                "n_equal_steps": 1,
+                "state_finite": true,
+                "active_rows_finite": true,
+                "D2_finite": true,
+                "D3_finite": false
+              }
+            }
+          ],
+          "accepted_steps": 39,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 4.440892098500626e-16
+        }
+      ],
+      "comparisons": {
+        "natural_versus_zero_unused": {
+          "temperature_degC_max_abs": 0.0,
+          "moisture_dry_basis_max_abs": 0.0,
+          "balance_records_max_abs": 0.0
+        },
+        "inject_snan_unused_versus_zero_unused": {
+          "temperature_degC_max_abs": 0.0,
+          "moisture_dry_basis_max_abs": 0.0,
+          "balance_records_max_abs": 0.0
+        }
+      }
+    },
+    "closed_redistribution": {
+      "runs": [
+        {
+          "mode": "natural",
+          "initial_workspaces": [
+            {
+              "mode": "natural",
+              "D2_nonfinite": 0,
+              "D2_first_bits_hex": "0x12a"
+            }
+          ],
+          "warning_events": [],
+          "accepted_steps": 125,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 0.0
+        },
+        {
+          "mode": "zero_unused",
+          "initial_workspaces": [
+            {
+              "mode": "zero_unused",
+              "D2_nonfinite": 0,
+              "D2_first_bits_hex": "0x0"
+            }
+          ],
+          "warning_events": [],
+          "accepted_steps": 125,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 0.0
+        },
+        {
+          "mode": "inject_snan_unused",
+          "initial_workspaces": [
+            {
+              "mode": "inject_snan_unused",
+              "D2_nonfinite": 322,
+              "D2_first_bits_hex": "0x7ff0000000000001"
+            }
+          ],
+          "warning_events": [
+            {
+              "mode": "inject_snan_unused",
+              "before": {
+                "step": 1,
+                "t": 0.0,
+                "order": 1,
+                "n_equal_steps": 0,
+                "active_rows_finite": true,
+                "D_order_plus_1_nonfinite": 322
+              },
+              "warnings": [
+                {
+                  "message": "invalid value encountered in subtract",
+                  "line": 416,
+                  "file": "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Lib\\site-packages\\scipy\\integrate\\_ivp\\bdf.py"
+                }
+              ],
+              "after": {
+                "t": 0.001,
+                "order": 1,
+                "n_equal_steps": 1,
+                "state_finite": true,
+                "active_rows_finite": true,
+                "D2_finite": true,
+                "D3_finite": false
+              }
+            }
+          ],
+          "accepted_steps": 125,
+          "temperature_all_finite": true,
+          "moisture_all_finite": true,
+          "heat_balance_abs_J_m3": 0.0,
+          "water_balance_abs_kgkg": 0.0
+        }
+      ],
+      "comparisons": {
+        "natural_versus_zero_unused": {
+          "temperature_degC_max_abs": 0.0,
+          "moisture_dry_basis_max_abs": 0.0,
+          "balance_records_max_abs": 0.0
+        },
+        "inject_snan_unused_versus_zero_unused": {
+          "temperature_degC_max_abs": 0.0,
+          "moisture_dry_basis_max_abs": 0.0,
+          "balance_records_max_abs": 0.0
+        }
+      }
+    }
+  },
+  "note": "Signaling-NaN runs intentionally inject only initially unused BDF workspace. They demonstrate the source-level mechanism and are not evidence that a naturally emitted warning contained the same bit pattern.",
+  "passed": true
+}

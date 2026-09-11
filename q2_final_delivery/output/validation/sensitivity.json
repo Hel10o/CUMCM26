@@ -1,0 +1,417 @@
+{
+  "hT_0.8": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 1.098143367527669,
+        "rms": 0.669668629176977,
+        "index": [
+          3302,
+          20
+        ],
+        "four_decimal_mismatches": 225386,
+        "time_s": 3302.0,
+        "radius_cm": 2.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.015376678089645601,
+        "rms": 0.007567472779229462,
+        "index": [
+          7181,
+          0
+        ],
+        "four_decimal_mismatches": 204115,
+        "time_s": 7181.0,
+        "radius_cm": 0.0
+      }
+    },
+    "T_center_end": 49.72034323138795,
+    "T_surface_end": 49.86534785727746,
+    "C_center_end": 1.7765670646703855,
+    "C_surface_end": 1.009637882704703,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "linear",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": false,
+      "fault": null,
+      "nfev": 21784,
+      "njev": 180,
+      "nlu": 2779,
+      "accepted_steps": 10801,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 20.0,
+        "hm": 8e-07
+      },
+      "elapsed_s": 5.597623152999859,
+      "accepted_internal_min": [
+        27.99999999999996,
+        1.009637882704703
+      ],
+      "accepted_internal_max": [
+        49.86534785727746,
+        2.550000000000007
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "hT_1.2": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 0.8112902388460839,
+        "rms": 0.4729002319615122,
+        "index": [
+          2887,
+          20
+        ],
+        "four_decimal_mismatches": 225369,
+        "time_s": 2887.0,
+        "radius_cm": 2.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.010614285888848496,
+        "rms": 0.005248666609708084,
+        "index": [
+          6830,
+          0
+        ],
+        "four_decimal_mismatches": 203710,
+        "time_s": 6830.0,
+        "radius_cm": 0.0
+      }
+    },
+    "T_center_end": 49.90719021525067,
+    "T_surface_end": 50.01296411279589,
+    "C_center_end": 1.7596159260838014,
+    "C_surface_end": 1.006731356823317,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "linear",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": false,
+      "fault": null,
+      "nfev": 23006,
+      "njev": 180,
+      "nlu": 2873,
+      "accepted_steps": 11412,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 30.0,
+        "hm": 8e-07
+      },
+      "elapsed_s": 5.651693063000039,
+      "accepted_internal_min": [
+        27.999999999999943,
+        1.006731356823317
+      ],
+      "accepted_internal_max": [
+        50.01296411279589,
+        2.550000000000007
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "hm_0.8": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 0.05731820082824157,
+        "rms": 0.036531150954275615,
+        "index": [
+          5097,
+          0
+        ],
+        "four_decimal_mismatches": 222638,
+        "time_s": 5097.0,
+        "radius_cm": 0.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.1693712604512838,
+        "rms": 0.08306124368051271,
+        "index": [
+          10800,
+          20
+        ],
+        "four_decimal_mismatches": 208648,
+        "time_s": 10800.0,
+        "radius_cm": 2.0
+      }
+    },
+    "T_center_end": 49.83690035570243,
+    "T_surface_end": 49.95609598629629,
+    "C_center_end": 1.8581467910640403,
+    "C_surface_end": 1.1774929533908343,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "linear",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": false,
+      "fault": null,
+      "nfev": 22326,
+      "njev": 180,
+      "nlu": 2827,
+      "accepted_steps": 11072,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 25.0,
+        "hm": 6.4e-07
+      },
+      "elapsed_s": 5.861382408999816,
+      "accepted_internal_min": [
+        27.99999999999996,
+        1.1774929533908343
+      ],
+      "accepted_internal_max": [
+        49.9560959862963,
+        2.5500000000000056
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "hm_1.2": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 0.050149094306789266,
+        "rms": 0.03148849788360316,
+        "index": [
+          3815,
+          20
+        ],
+        "four_decimal_mismatches": 222662,
+        "time_s": 3815.0,
+        "radius_cm": 2.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.13488401930923832,
+        "rms": 0.06856963333943936,
+        "index": [
+          9402,
+          20
+        ],
+        "four_decimal_mismatches": 208521,
+        "time_s": 9402.0,
+        "radius_cm": 2.0
+      }
+    },
+    "T_center_end": 49.85946121826627,
+    "T_surface_end": 49.97473374668454,
+    "C_center_end": 1.6920556424798672,
+    "C_surface_end": 0.8736683758131519,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "linear",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": false,
+      "fault": null,
+      "nfev": 22560,
+      "njev": 180,
+      "nlu": 2838,
+      "accepted_steps": 11189,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 25.0,
+        "hm": 9.6e-07
+      },
+      "elapsed_s": 5.560840563000056,
+      "accepted_internal_min": [
+        27.999999999999943,
+        0.8736683758131519
+      ],
+      "accepted_internal_max": [
+        49.97473374668454,
+        2.5500000000000083
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "pchip_all241": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 0.005714604008574042,
+        "rms": 0.0005635241917188076,
+        "index": [
+          1850,
+          20
+        ],
+        "four_decimal_mismatches": 193041,
+        "time_s": 1850.0,
+        "radius_cm": 2.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 1.647363975232352e-05,
+        "rms": 3.0756280746378177e-06,
+        "index": [
+          1859,
+          20
+        ],
+        "four_decimal_mismatches": 5626,
+        "time_s": 1859.0,
+        "radius_cm": 2.0
+      }
+    },
+    "T_center_end": 49.8493878145836,
+    "T_surface_end": 49.966645562281435,
+    "C_center_end": 1.76617431150828,
+    "C_surface_end": 1.0081201006386784,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "pchip",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": false,
+      "fault": null,
+      "nfev": 15810,
+      "njev": 180,
+      "nlu": 2129,
+      "accepted_steps": 7814,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 25.0,
+        "hm": 8e-07
+      },
+      "elapsed_s": 4.016387377000001,
+      "accepted_internal_min": [
+        27.999999999999954,
+        1.0081201006386786
+      ],
+      "accepted_internal_max": [
+        49.96664556228143,
+        2.550000000000007
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "freeze_all_initial": {
+    "differences": {
+      "temperature_degC": {
+        "max_abs": 0.39944906090367027,
+        "rms": 0.2591699297689088,
+        "index": [
+          5182,
+          0
+        ],
+        "four_decimal_mismatches": 223972,
+        "time_s": 5182.0,
+        "radius_cm": 0.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.39806321961751734,
+        "rms": 0.1546220198885211,
+        "index": [
+          10800,
+          0
+        ],
+        "four_decimal_mismatches": 208701,
+        "time_s": 10800.0,
+        "radius_cm": 0.0
+      }
+    },
+    "T_center_end": 49.73513947897864,
+    "T_surface_end": 49.876934147234024,
+    "C_center_end": 2.16424048035619,
+    "C_surface_end": 0.8654915180862653,
+    "stats": {
+      "n": 320,
+      "nodes": 321,
+      "dr_m": 6.25e-05,
+      "end_s": 10800.0,
+      "rtol": 1e-10,
+      "atol_T": 2e-12,
+      "atol_C": 2e-13,
+      "max_step_s": 20.0,
+      "method": "BDF + exact coupled block sparse Jacobian",
+      "environment": "linear",
+      "extension": "error",
+      "temperature_offset": 0.0,
+      "freeze": true,
+      "fault": null,
+      "nfev": 21714,
+      "njev": 180,
+      "nlu": 2775,
+      "accepted_steps": 10766,
+      "parameters": {
+        "R": 0.02,
+        "L": 0.25,
+        "T0": 28.0,
+        "C0": 2.55,
+        "hT": 25.0,
+        "hm": 8e-07
+      },
+      "elapsed_s": 4.850783925000087,
+      "accepted_internal_min": [
+        27.999999999999954,
+        0.8654915180862653
+      ],
+      "accepted_internal_max": [
+        49.87693414723403,
+        2.550000000000007
+      ],
+      "environment_knots_restarted": 180,
+      "quadrature_performed": false
+    }
+  },
+  "scope": "Deterministic scenarios; not parameter confidence intervals. Same N=320 and tolerances."
+}

@@ -1,0 +1,25 @@
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
+BUILT 温度 226800
+BUILT 水分浓度 226800
+Traceback (most recent call last):
+  File [35m"/mnt/data/q2_final_delivery/source/q2_excel.py"[0m, line [35m34[0m, in [35m<module>[0m
+    a=p.parse_args();[31mexport_artifact[0m[1;31m(a.template,a.raw,a.out)[0m
+                     [31m~~~~~~~~~~~~~~~[0m[1;31m^^^^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/mnt/data/q2_final_delivery/source/q2_excel.py"[0m, line [35m29[0m, in [35mexport_artifact[0m
+    [31mSpreadsheetFile.export_xlsx[0m[1;31m(w)[0m.save(str(out))
+    [31m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[1;31m^^^[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py"[0m, line [35m34603[0m, in [35mexport_xlsx[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py"[0m, line [35m913[0m, in [35m__call__[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py"[0m, line [35m983[0m, in [35mcall_static[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py"[0m, line [35m135[0m, in [35mcall[0m
+  File [35m"/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py"[0m, line [35m115[0m, in [35m_recv_one_line[0m
+[1;35martifact_tool.rpc.client.TransportError[0m: [35mRPC connection closed by peer[0m

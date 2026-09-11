@@ -1,0 +1,66 @@
+START mesh
+GRID COMPLETE 20
+GRID COMPLETE 40
+GRID COMPLETE 80
+GRID COMPLETE 160
+GRID COMPLETE 320
+GRID COMPLETE 640
+GRID COMPLETE 1280
+GRID COMPLETE 2560
+DONE mesh {'passed': True, 'elapsed_s': 123.61890342599963}
+START reference
+REFERENCE COMPLETE 128
+REFERENCE COMPLETE 192
+DONE reference {'passed': True, 'elapsed_s': 52.11635449200003}
+START tests
+DONE tests {'passed': True, 'elapsed_s': 24.059242691999316}
+START time
+DONE time {'passed': True, 'elapsed_s': 25.19318671400015}
+START sensitivity
+DONE sensitivity {'passed': True, 'elapsed_s': 40.20332965699981}
+START geometry
+AXISYMMETRIC 20 40 1800.0
+AXISYMMETRIC 20 40 3600.0
+AXISYMMETRIC 20 40 5400.0
+AXISYMMETRIC 20 40 7200.0
+AXISYMMETRIC 20 40 9000.0
+AXISYMMETRIC 20 40 10800.0
+AXISYMMETRIC 20 80 1800.0
+AXISYMMETRIC 20 80 3600.0
+AXISYMMETRIC 20 80 5400.0
+AXISYMMETRIC 20 80 7200.0
+AXISYMMETRIC 20 80 9000.0
+AXISYMMETRIC 20 80 10800.0
+AXISYMMETRIC 40 80 1800.0
+AXISYMMETRIC 40 80 3600.0
+AXISYMMETRIC 40 80 5400.0
+AXISYMMETRIC 40 80 7200.0
+AXISYMMETRIC 40 80 9000.0
+AXISYMMETRIC 40 80 10800.0
+DONE geometry {'passed': True, 'elapsed_s': 114.33631220900043}
+START assemble
+{
+  "T_center": 49.84949558362714,
+  "T_surface": 49.96641293435914,
+  "C_center": 1.7661771010384424,
+  "C_surface": 1.008123124194578,
+  "mean_T": 49.90432863692265,
+  "mean_C": 1.382527057311269,
+  "effective_water_reduction_percent": 45.783252654460036
+}
+DONE assemble {'passed': True, 'elapsed_s': 7.7427516359994115}
+START excel
+BUILT 温度 226800
+EXPORTED PART temperature_degC 1485722
+BUILT 水分浓度 226800
+EXPORTED PART moisture_dry_basis 1371635
+EXPORTED /mnt/data/q2_reproduced/result2.xlsx {'method': 'artifact_tool worksheet generation + lossless OOXML package assembly', 'styles_identical': True, 'shared_strings_identical': True, 'cell_xml_unchanged': True, 'output_bytes': 2501562}
+DONE excel {'passed': True, 'elapsed_s': 70.5077447879994}
+START report
+/home/oai/.config/matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/matplotlib-6nsr9ghw because there was an issue with the default path (/home/oai/.config/matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+DONE report {'passed': True, 'elapsed_s': 5.7757776360003845}
+START audit
+AUDIT PASSED 453600 values; paper checked: True
+DONE audit {'passed': True, 'elapsed_s': 3.3296166529999027}
+COMPLETE: True

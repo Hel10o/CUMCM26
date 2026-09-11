@@ -1,0 +1,110 @@
+{
+  "scope": "Independent read-only package input and saved N320 preflight evidence consistency check. No main script execution, no new PDE integration, no final Q2 result generation.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "portability": {
+    "audit_source": "evidence/audit_inputs.py",
+    "repository_lookup_deliberately_disabled": true,
+    "audit_reader_called_only_with_packaged_inputs": true,
+    "no_import_cache_written": true,
+    "attachment1_rows": 241,
+    "attachment1_first_3h_rows_including_endpoints": 181,
+    "template_sheets": [
+      "温度",
+      "水分浓度"
+    ],
+    "template_nonempty_cells_exactly_match_audited_contract": true,
+    "audit_script_main_not_executed": true
+  },
+  "original_copy_checks": {
+    "inputs/附件1.xlsx": {
+      "original_repository_path": "A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "same_sha256_as_original": true,
+      "bytes": 16586
+    },
+    "inputs/result2_template.xlsx": {
+      "original_repository_path": "A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "same_sha256_as_original": true,
+      "bytes": 10073
+    },
+    "inputs/题目原件.pdf": {
+      "original_repository_path": "A题/A题.pdf",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "same_sha256_as_original": true,
+      "bytes": 553320
+    }
+  },
+  "saved_preflight_evidence": {
+    "npz_sha256": "75dd019174dcc5d4a814fe9b6d2a5a92494836def3fd19caba7005fd39d6f189",
+    "json_sha256": "be591f3be255e94089d2d7c4702105c5dd32c999bb482e5c1bff00d9c88c8c69",
+    "status_remains_preliminary_not_final": true,
+    "no_PDE_rerun": true,
+    "source_input_hash_matches_packaged_input": true,
+    "time_axis": {
+      "first": 0,
+      "last": 10800,
+      "step": 1,
+      "samples": 10801
+    },
+    "radius_axis": {
+      "first_cm": 0,
+      "last_cm": 2,
+      "step_cm": 0.1,
+      "samples": 21
+    },
+    "paper_values_checked": 60,
+    "fields": {
+      "temperature_C": {
+        "shape": [
+          10801,
+          21
+        ],
+        "all_finite": true,
+        "initial_value": 28.0,
+        "initial_all_21_radii_exact": true,
+        "paper_table_value_count": 30,
+        "all_30_paper_values_bitwise_equal_json": true,
+        "max_paper_value_abs_difference": 0.0,
+        "at_1800_center_surface": [
+          32.18924513148688,
+          35.41302294358978
+        ],
+        "at_10800_center_surface": [
+          49.84949591855253,
+          49.96641272656407
+        ],
+        "1800_and_10800_means_exactly_match_json": true,
+        "all_field_minmax_exactly_match_json": true
+      },
+      "moisture_dry_basis": {
+        "shape": [
+          10801,
+          21
+        ],
+        "all_finite": true,
+        "initial_value": 2.55,
+        "initial_all_21_radii_exact": true,
+        "paper_table_value_count": 30,
+        "all_30_paper_values_bitwise_equal_json": true,
+        "max_paper_value_abs_difference": 0.0,
+        "at_1800_center_surface": [
+          2.549933950226094,
+          1.6486167859227923
+        ],
+        "at_10800_center_surface": [
+          1.766177264168019,
+          1.0081216945843945
+        ],
+        "1800_and_10800_means_exactly_match_json": true,
+        "all_field_minmax_exactly_match_json": true
+      }
+    }
+  },
+  "all_preexisting_files_unchanged": true,
+  "all_checks_passed": true,
+  "defects": []
+}

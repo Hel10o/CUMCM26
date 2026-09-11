@@ -1,0 +1,312 @@
+{
+  "scope": "This refinement archive selection only, not missing Pro-owned original evidence.",
+  "count": 51,
+  "files": [
+    {
+      "path": "review_q2_20260911/reproduced/figures/01_environment_T.png",
+      "bytes": 99435,
+      "sha256": "aed350f5ad8d3e37b024f70a88388dd52036253a9bb766365d2654ec20b422d9",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/01_environment_T.svg",
+      "bytes": 35298,
+      "sha256": "590386a1608a8bff716d31de2d71046ffac753a3bc7b53c0ddeeada850e1492c",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/02_environment_C.png",
+      "bytes": 104949,
+      "sha256": "509be803dde29daf5cb6c155e15b1e6db6003fdd035a1a2320dd70d9036ce2d5",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/02_environment_C.svg",
+      "bytes": 37245,
+      "sha256": "ee226b9cdd539b4b146328b5d9351f5723833f12c8e29446183c23c1422b11b0",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/03_temperature_time.png",
+      "bytes": 181305,
+      "sha256": "13f6f790f74049989c7adf2a7c97b3742e816d474bb584116f7dc71cfd29032c",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/03_temperature_time.svg",
+      "bytes": 44165,
+      "sha256": "84bad0dcdbb8ce8a1f48b8f0523f5a44d1eed31bca9affb3174585d1f07637e6",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/04_moisture_time.png",
+      "bytes": 212297,
+      "sha256": "b3d18bc9f90bf523d020057094637036b004c816674374725d7d95e334e97d77",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/04_moisture_time.svg",
+      "bytes": 47477,
+      "sha256": "ed23e7eae3fe85795401f4ae7898e0a84e5ba69239cd8cda01e3e140d6f5047b",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/05_temperature_radius.png",
+      "bytes": 112431,
+      "sha256": "8d180703da7f13fb1f69814e9393a2b204cb22fd8e98b2f9f5c063ebe26b2e80",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/05_temperature_radius.svg",
+      "bytes": 47728,
+      "sha256": "ae60da35dde6131c2fb5011fad6982e02881e583cfccc4538123734e7396c480",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/06_moisture_radius.png",
+      "bytes": 231558,
+      "sha256": "77880d3782b6fb12d7a6318a11569f23954747728897d707b07ebf56a8e04102",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/06_moisture_radius.svg",
+      "bytes": 51405,
+      "sha256": "611bd08ad61f3e584c042bc3a49485a3c11247084d51696a55571e4a713eba71",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/07_grid_temperature.png",
+      "bytes": 136828,
+      "sha256": "d74c6358bc5bbf37205b06e30e343e19ac249b7e7d4a6d6df704f120766b4ba7",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/07_grid_temperature.svg",
+      "bytes": 75492,
+      "sha256": "530bd5b15afb692c963aa70eecf22c22fbfa683e8d5d875ce6e57628314ff14d",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/08_grid_moisture.png",
+      "bytes": 134533,
+      "sha256": "6b8ad28d9475aab96c43296cf11ae15cfbad2f331371daff442c013e4a4426f7",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/08_grid_moisture.svg",
+      "bytes": 75490,
+      "sha256": "261948a8e3ce44bb4ac60a0dd6e73b9435cc069e2c0634046ab52409acc7a150",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/09_end_effect_T.png",
+      "bytes": 150626,
+      "sha256": "09407fbdde0aed6ef6bf2bf987e5761ae4413f1e48270551a74075357dab1e7e",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/09_end_effect_T.svg",
+      "bytes": 43696,
+      "sha256": "402c4d6f1451bf0d2875d12ac089951b5b5df055ff0f8fd92695356eec26a664",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/10_end_effect_C.png",
+      "bytes": 125900,
+      "sha256": "ccccc68a2cd3242e554cdfd461c69212a45253dd96748a54da63485bf043a042",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/figures/10_end_effect_C.svg",
+      "bytes": 40412,
+      "sha256": "fb3cca28eb3487ac7f8572c21f5432daae19627a3c1d312ccffafde509a43182",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/moisture_dry_basis_unrounded.csv",
+      "bytes": 4349289,
+      "sha256": "7cd55bd17b9b5739de90b66c608ff36903c791a256dd69ba51e4d5f49a2f754f",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/temperature_degC_unrounded.csv",
+      "bytes": 4346957,
+      "sha256": "b89cb234ba095ebfa4884b5a248ebaea4e7794aba379a6ee74a0f776d93a090c",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/axisymmetric_20_40.npz",
+      "bytes": 6369070,
+      "sha256": "034e8ea00a51c63a189967256203fb63297dffb9a4457c4f6823b56e39c845fd",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/axisymmetric_20_80.npz",
+      "bytes": 6437221,
+      "sha256": "257d1fae281c390a17f6aef5f7b7a47a41d4819bd132dede948c66fa3e685601",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/axisymmetric_40_80.npz",
+      "bytes": 6560186,
+      "sha256": "1de6076d21d4f7bc216a17b94782f6ba4fb05ba9c7dc3ad17f246889eff4ef0a",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/axisymmetric_paired1d_20.npz",
+      "bytes": 3320153,
+      "sha256": "62f4c554b9fdf0ddf5b8e7d155e8f8412d3219af80b9d0e6d5ac9dc8b71c6819",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/axisymmetric_paired1d_40.npz",
+      "bytes": 3314653,
+      "sha256": "9b4b470f36e2c82d353e5b2cdc00cfaaa42d6f291e408d2a55a1f2f9b6980cb5",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/cheb_n128.npz",
+      "bytes": 3321019,
+      "sha256": "d3c3824c61ac568c7edb912ca1361d4fc7ce36b7c0709d277d3eb57ef5f435ed",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/cheb_n192.npz",
+      "bytes": 3327332,
+      "sha256": "b652f1d8908a8589e37c3c5cb8d746f9776b9b8483d9ef102b52b6211c339a17",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/checkpoints/axisymmetric_20_40.npz",
+      "bytes": 6487696,
+      "sha256": "8a04ca73dfa7802ee1579cdcb9af150c72be7595ed1ef8d9162a7f421799653d",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/checkpoints/axisymmetric_20_80.npz",
+      "bytes": 6568193,
+      "sha256": "b1e2d4ff5fe265a1e84a489fcbdc7eb9702b58e444bd17f6a7ac0135ed422aab",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/checkpoints/axisymmetric_40_80.npz",
+      "bytes": 6714549,
+      "sha256": "7b110e010a667d3b25a942268d76a2f7bcf9af36f63e7cc5fac5c37668cbcfaa",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/constant_coefficient_bessel.npz",
+      "bytes": 144802,
+      "sha256": "2b0681b63455bcca83ba7790d482247f30cbb98bc16f5321d2df8f28e4e187e7",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/constant_coefficient_spectral.npz",
+      "bytes": 156111,
+      "sha256": "dab79bf0aed867566e404ff967f5ef7c599df846739d89506724a03fc52013eb",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n1280.npz",
+      "bytes": 3422251,
+      "sha256": "611f9b73e6e87558ec5f63ad04d98a93be6061d39c53ab63ef8c22d0b3add06e",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n1280_time_tight.npz",
+      "bytes": 3418250,
+      "sha256": "0c508aed701d07588f07e3c2bdc21f9ff75bc182fdc7fa5f9b089ca3e88a351e",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n160.npz",
+      "bytes": 3320795,
+      "sha256": "6dfef961b70ef040a26cfdcbde5697db92f48f1390bafe59b6012ec52da4ff1f",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n20.npz",
+      "bytes": 3320172,
+      "sha256": "2de38aee4a180a2c9b7c0fc76ee03f2e1dba3e91ee331e5bcaa6133272ad07b4",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n2560.npz",
+      "bytes": 3524225,
+      "sha256": "15186dd7c412a07da90818cddf14e0866a32f5f952745b42ed2312aba45eca7b",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n320.npz",
+      "bytes": 3335774,
+      "sha256": "3c84ecb866dc6519bdfb609cf42cb1c95158eedb6d364a08a221dc8a4dcbbd33",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n40.npz",
+      "bytes": 3314504,
+      "sha256": "3da1e30d765110d07476df35e0dc930b092f4d3c1bf8aa25b098be4334c11f61",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n640.npz",
+      "bytes": 3363285,
+      "sha256": "d7a227a8344415b393ddbd8449ba5d24b29da2da7d5a7cfd65c920660494d43f",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/fv_n80.npz",
+      "bytes": 3314532,
+      "sha256": "3a00a55d1550a334a36502bd0febad5d9a3411746a38fcea676fa2e36dd82d02",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/kelvin_invariance.npz",
+      "bytes": 3290380,
+      "sha256": "4eb322bbf23da83bcc3fa0e28efec043b0964dd8a083e0b37287e5284e90a16b",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_baseline.npz",
+      "bytes": 3335229,
+      "sha256": "97872b1b947c44d713edbf40715b125d3fddee2f792aceaa400de80ca5af4749",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_freeze_all_initial.npz",
+      "bytes": 3318284,
+      "sha256": "96969682eb7109907f56730b0bf04f5ebad1f1e72c1e6bbc90da75b124f959e1",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_hm_0.8.npz",
+      "bytes": 3321507,
+      "sha256": "7de4629110ede75c3bcb8d26cf94e222b5aa8cab12885bf6a8820846a97d6b9d",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_hm_1.2.npz",
+      "bytes": 3346487,
+      "sha256": "9393f17da174742c42467428a2c75f34c1175090c6d18e44d4cca932e36e0f3f",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_hT_0.8.npz",
+      "bytes": 3335379,
+      "sha256": "ad6d872f8b637b1b8acde06507301a0c5217c5b35a72cb1ce460a03f3ef3af88",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_hT_1.2.npz",
+      "bytes": 3334047,
+      "sha256": "36ef8b505643765e325addc1e94e7dc58bdb1a8c7e3645cc77764483147d8273",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    },
+    {
+      "path": "review_q2_20260911/reproduced/validation/sensitivity_pchip_all241.npz",
+      "bytes": 3364341,
+      "sha256": "a7ed225eef937ab6426ae9f2368a13c8b10eb9d9b8c498e8b4ff210661d2d2d2",
+      "reason": "Omitted repeated intermediate array, complete CSV, or figure; regenerate using q2_final_delivery/run_all.py or read the original local review directory."
+    }
+  ]
+}

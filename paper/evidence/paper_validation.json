@@ -1,0 +1,104 @@
+{
+  "status": "PASS: numerical tables and document structure checked; visual inspection recorded separately",
+  "pdf": "paper/第一问论文阶段稿.pdf",
+  "pdf_sha256": "ed71608edf5f08c27b00a7dc53ae77b1b6e6bafb3e7f007cf42e4debb4235fc2",
+  "page_count": 10,
+  "pages": [
+    {
+      "page": 1,
+      "characters": 653,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 2,
+      "characters": 1352,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 3,
+      "characters": 1023,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 4,
+      "characters": 1408,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 5,
+      "characters": 1403,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 6,
+      "characters": 1217,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 7,
+      "characters": 938,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 8,
+      "characters": 1262,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 9,
+      "characters": 1320,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    },
+    {
+      "page": 10,
+      "characters": 586,
+      "width_pt": 595.28,
+      "height_pt": 841.89
+    }
+  ],
+  "pdf_table_values_checked": 70,
+  "pdf_tables_exact_four_decimal_match": true,
+  "frozen_source_hash_checks": {
+    "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": true,
+    "q1_complete_delivery/q1_delivery/output/T_n10240.npz": true,
+    "q1_complete_delivery/q1_delivery/output/C_n10240.npz": true,
+    "q1_complete_delivery/q1_delivery/output/table_temperature.csv": true,
+    "q1_complete_delivery/q1_delivery/output/table_moisture.csv": true,
+    "q1_complete_delivery/q1_delivery/input/附件1.xlsx": true,
+    "q1_complete_delivery/q1_delivery/source/q1_solver.py": true,
+    "q1_complete_delivery/q1_delivery/output/第一问论文正文.md": true,
+    "q1_complete_delivery/q1_delivery/output/result1.xlsx": true
+  },
+  "figure_and_table_hash_checks": {
+    "paper/figures/q1_history.pdf": true,
+    "paper/figures/q1_history.png": true,
+    "paper/figures/q1_profiles.pdf": true,
+    "paper/figures/q1_profiles.png": true,
+    "paper/tables/q1_temperature.tex": true,
+    "paper/tables/q1_temperature.csv": true,
+    "paper/tables/q1_moisture.tex": true,
+    "paper/tables/q1_moisture.csv": true
+  },
+  "claim_evidence_rows": 18,
+  "undefined_or_overfull_or_missing_character_warnings": [],
+  "source_sha256": {
+    "paper/main.tex": "8a45ae2cb00668f4898f19c5332ad2a435d1a61cbccd364a5011e73f8eb3d0e2",
+    "paper/sections/preliminaries.tex": "473c1f82e00c7d8c6c8f404439ec7fad5b6c24b092dceb40a322519882eca61c",
+    "paper/sections/q1_limits.tex": "e430f6d95e567d7a5c373f7061de7ecdeeb51bac1e6534e3d35df74638a764b5",
+    "paper/sections/q1_model.tex": "d14358c4e3df324568724750aac6f7097dbd9b11dc4df03fbbd1f864d401511b",
+    "paper/sections/q1_results.tex": "5ec901a06542df89901ff431f8498b9167fda424ee8ecfd10f58757b407b57a0",
+    "paper/tables/q1_moisture.tex": "3d2fb27e23b1df02327f95755734cf529818bdc49d73b652ca3672372452b826",
+    "paper/tables/q1_temperature.tex": "077a6671aa61897225cb825d9d15706c03329c0b27b904e3d53749a1b74b7182"
+  },
+  "scope": "Partial paper: Q1 and preliminary sections; not complete competition submission",
+  "production_model_rerun": false
+}

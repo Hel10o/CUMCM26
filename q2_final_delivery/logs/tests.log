@@ -1,0 +1,157 @@
+BEGIN UNIT TESTS
+{
+  "parameter_states": [
+    {
+      "T_degC": 28,
+      "C": 2.55,
+      "rho": 976.4,
+      "cp": 3415.295774647887,
+      "k": 0.48295774647887324,
+      "D": 5.641680373025668e-09,
+      "S": 3334694.7943661967,
+      "alpha": 1.448281705704542e-07,
+      "BiT_R": 1.0352872557596966,
+      "BiC_R": 2.836034468826014,
+      "heat_time_R2_alpha_s": 2761.8936179644206,
+      "moisture_time_R2_D_s": 70900.86172065035
+    },
+    {
+      "T_degC": 50,
+      "C": 2.55,
+      "rho": 976.4,
+      "cp": 3415.295774647887,
+      "k": 0.48295774647887324,
+      "D": 1.347096821741582e-08,
+      "S": 3334694.7943661967,
+      "alpha": 1.448281705704542e-07,
+      "BiT_R": 1.0352872557596966,
+      "BiC_R": 1.1877394216782833,
+      "heat_time_R2_alpha_s": 2761.8936179644206,
+      "moisture_time_R2_D_s": 29693.48554195708
+    },
+    {
+      "T_degC": 50,
+      "C": 0.15,
+      "rho": 669.2,
+      "cp": 1806.8695652173913,
+      "k": 0.25956521739130434,
+      "D": 8.001208146652625e-10,
+      "S": 1209157.1130434782,
+      "alpha": 2.1466624526400237e-07,
+      "BiT_R": 1.9262981574539364,
+      "BiC_R": 19.996980089430295,
+      "heat_time_R2_alpha_s": 1863.3576951423786,
+      "moisture_time_R2_D_s": 499924.50223575736
+    },
+    {
+      "T_degC": 50,
+      "C": 0.05,
+      "rho": 656.4,
+      "cp": 1580.2857142857142,
+      "k": 0.2280952380952381,
+      "D": 1.983301210947583e-12,
+      "S": 1037299.5428571427,
+      "alpha": 2.1989331786165788e-07,
+      "BiT_R": 2.1920668058455113,
+      "BiC_R": 8067.357550977096,
+      "heat_time_R2_alpha_s": 1819.063916492693,
+      "moisture_time_R2_D_s": 201683938.77442738
+    }
+  ],
+  "scales": {
+    "alpha0": 1.448281705704542e-07,
+    "D0": 5.641680373025668e-09,
+    "BiT_R": 1.0352872557596966,
+    "BiC_R": 2.836034468826014,
+    "thermal_diffusion_length_3h_m": 0.03954926348443047,
+    "moisture_diffusion_length_3h_m": 0.007805776580755897,
+    "L_over_diameter": 6.25,
+    "ends_over_side_area": 0.08
+  },
+  "jacobian_complex_step": {
+    "fv_relative": 1.5636345380042245e-16,
+    "spectral_relative": 7.337045296626718e-16,
+    "passed": true
+  },
+  "uniform_no_drive": {
+    "T_max_change": 0.0,
+    "C_max_change": 0.0
+  },
+  "closed_redistribution": {
+    "T_max_change": 0.0,
+    "C_weighted_average_drift": 2.220446049250313e-15,
+    "water_profile_changed": 0.1049951046667903,
+    "scope": "Fixed-reference-dry-density effective mass integral; not rho(C)*C"
+  },
+  "constant_coefficient_bessel": {
+    "temperature_degC": {
+      "max_abs": 4.5013237581770227e-10,
+      "rms": 1.8297836728752063e-10,
+      "index": [
+        307,
+        0
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 308.0,
+      "radius_cm": 0.0
+    },
+    "moisture_dry_basis": {
+      "max_abs": 1.7137846697323766e-11,
+      "rms": 4.452100251231876e-12,
+      "index": [
+        3,
+        20
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 4.0,
+      "radius_cm": 2.0
+    }
+  },
+  "fault_injection": {
+    "Celsius_in_exponent": {
+      "wrong_over_correct_D": 6.865486216567403e-55,
+      "detected": true
+    },
+    "face_alpha_instead_of_k": {
+      "correct_interior_error_K_s": 4.632692202199279e-07,
+      "faulty_error_K_s": 0.000714715442642011,
+      "detected": true
+    },
+    "frozen_RHS_D_coupling": {
+      "correct_response_C_s": 0.001150471834153513,
+      "faulty_response": 0.0,
+      "detected": true
+    },
+    "unclosed_product_storage": {
+      "correct_T_rate_max": 0.0,
+      "faulty_T_rate_max": 0.0025324846544545836,
+      "detected": true
+    }
+  },
+  "temperature_unit_invariance": {
+    "temperature_degC": {
+      "max_abs": 9.039098358698539e-10,
+      "rms": 9.715128692693305e-11,
+      "index": [
+        6183,
+        20
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 6183.0,
+      "radius_cm": 2.0
+    },
+    "moisture_dry_basis": {
+      "max_abs": 1.0721645793410062e-11,
+      "rms": 4.756898576452144e-13,
+      "index": [
+        85,
+        20
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 85.0,
+      "radius_cm": 2.0
+    }
+  },
+  "passed": true
+}
+BEGIN FIXED N TIME TEST

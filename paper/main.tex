@@ -1,0 +1,66 @@
+% !TEX program = xelatex
+\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,graphicx}
+\usepackage{enumitem,caption,float,placeins,xcolor}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\linespread{1.18}
+\setlist{nosep,leftmargin=2em}
+\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=6pt}
+\ctexset{section={format=\Large\bfseries,beforeskip=1.0ex plus .3ex,afterskip=.6ex},subsection={format=\large\bfseries,beforeskip=.8ex plus .2ex,afterskip=.4ex}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\headheight}{14pt}
+\renewcommand{\arraystretch}{1.18}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.90}
+\renewcommand{\textfraction}{0.05}
+\renewcommand{\floatpagefraction}{0.85}
+\setcounter{topnumber}{4}
+\setcounter{totalnumber}{5}
+\setlength{\textfloatsep}{12pt plus 2pt minus 2pt}
+\newcommand{\unit}[1]{\ensuremath{\,\mathrm{#1}}}
+\newcommand{\celsius}{\ensuremath{\,{}^\circ\mathrm{C}}}
+\hypersetup{pdftitle={药材预热阶段的径向热质传输模型与数值分析（论文部分稿）},pdfauthor={},pdfsubject={前置章节与第一问，2026-09-10}}
+\begin{document}
+\begin{center}
+{\LARGE\bfseries 药材预热阶段的径向热质传输模型与数值分析\par}
+\vspace{0.8em}
+{\small 论文部分稿：前置章节与第一问\quad 2026年9月10日}
+\end{center}
+\vspace{0.5em}
+\begin{center}\large\bfseries 摘\quad 要\end{center}
+针对圆柱药材在热风预热阶段的内部温度与含水率分布问题，依据题给环境记录及附录2参数，建立固定圆柱中截面的径向显热传导与非线性水分扩散模型。模型以局部干基含水率更新扩散系数，采用等效含水率差的第三类边界条件，并对离散环境记录作分段线性插值。通过守恒型有限体积离散与隐式时间积分，计算前1800\unit{s}的温度和水分场。
+
+计算表明，1800\unit{s}时轴心和表面温度分别为33.5753\celsius、36.7856\celsius，径向温差为3.2102\unit{K}；轴心和表面含水率分别为2.5500、1.5102\unit{kg/kg}。热扩散时间与初始水分扩散时间分别约为2369\unit{s}和81010\unit{s}，后者为前者的34.20倍，说明该阶段内部含水率的响应明显慢于温度响应。温度通过独立贝塞尔级数解复核，含水率通过独立配点离散复核，规定输出位置的全部75600个数值在保留四位小数后均一致。
+
+对等效界面关系、相变潜热、收缩和辐射进行补充审查后，本文将结果限定为给定参数及所列假设下的基础模型解。数值收敛支持该模型的计算可靠性，不能替代真实药材的实验验证，也不能据前30分钟结果判定全过程的干燥控制机制。
+
+\vspace{0.5em}
+\noindent\textbf{关键词：}圆柱药材；预热；有限体积法；非线性扩散；独立数值验证
+
+\vfill
+\noindent\small\textcolor{gray}{本稿已完成第一问及必要前置章节。第二至第四问、全文综合摘要与完整代码附录尚未合稿，本文件用于论文审阅与后续续写。}
+\clearpage
+\normalsize
+\input{sections/preliminaries}
+\input{sections/q1_model}
+\input{sections/q1_results}
+\input{sections/q1_limits}
+\FloatBarrier
+\section*{AI工具使用声明（阶段记录）}
+本阶段使用AI工具辅助进行模型审查、代码与结果核对、图表生成及论文文字整理。本稿保留了数值复算与独立审查记录；代理复核不等同于参赛队员的人工审查。实际使用过程及待补全信息记录于支撑文档，全文完成后据实际采纳和人工核验情况统一整理最终声明与使用详情。
+\begin{thebibliography}{9}
+\small
+\bibitem{problem} 用户提供的《药材的烘干问题》[Z]. 题面第一至第四问、附录1至4及附件1至3，项目原始资料，2026.
+\bibitem{scipy} SciPy. BDF --- SciPy v1.17.0 Manual[EB/OL]. [2026-09-10]. \url{https://docs.scipy.org/doc/scipy-1.17.0/reference/generated/scipy.integrate.BDF.html}.
+\bibitem{fao} Allen R G, Pereira L S, Raes D, Smith M. Crop Evapotranspiration: Guidelines for Computing Crop Water Requirements[M/OL]. FAO Irrigation and Drainage Paper 56. Rome: FAO, 1998. Chapter 3[2026-09-10]. \url{https://www.fao.org/4/X0490E/x0490e07.htm}.
+\bibitem{ashrae} ASHRAE. 2017 ASHRAE Handbook---Fundamentals: Chapter 1, Psychrometrics[EB/OL]. [2026-09-10]. \href{https://handbook.ashrae.org/Handbooks/F17/IP/f17_ch01/f17_ch01_ip.aspx}{ASHRAE Handbook 官方在线版}.
+\end{thebibliography}
+\end{document}

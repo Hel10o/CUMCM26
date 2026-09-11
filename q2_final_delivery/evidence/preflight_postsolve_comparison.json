@@ -1,0 +1,36 @@
+{
+  "use": "Post-solve magnitude comparison only; never calibration or acceptance reference",
+  "preflight_grids": [
+    "80",
+    "160",
+    "320"
+  ],
+  "saved_scope": "PREFLIGHT N320 ONLY; NOT FINAL",
+  "temperature_degC": {
+    "max_abs_whole_output": 6.698293148588164e-06,
+    "max_abs_6x5_table": 4.284612401761478e-06,
+    "at3h_center_surface_preflight": [
+      49.84949591855253,
+      49.96641272656407
+    ],
+    "at3h_center_surface_this_run": [
+      49.84949558362714,
+      49.96641293435914
+    ]
+  },
+  "moisture_dry_basis": {
+    "max_abs_whole_output": 0.0013910776610099873,
+    "max_abs_6x5_table": 3.891835987257508e-06,
+    "at3h_center_surface_preflight": [
+      1.766177264168019,
+      1.0081216945843945
+    ],
+    "at3h_center_surface_this_run": [
+      1.7661771010384424,
+      1.008123124194578
+    ]
+  },
+  "matching_output_grid_exact": false,
+  "matching_physical_output_grid": true,
+  "max_radius_float_difference_cm": 2.220446049250313e-16
+}

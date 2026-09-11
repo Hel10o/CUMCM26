@@ -1,0 +1,14 @@
+START 20 80
+AXISYMMETRIC 20 80 1800.0
+AXISYMMETRIC 20 80 3600.0
+AXISYMMETRIC 20 80 5400.0
+AXISYMMETRIC 20 80 7200.0
+AXISYMMETRIC 20 80 9000.0
+AXISYMMETRIC 20 80 10800.0
+DONE {'nr': 20, 'nz': 80, 'end_s': 10800.0, 'end_transfer': True, 'rtol': 1e-09, 'atol': 1e-11, 'nfev': 14542, 'njev': 197, 'nlu': 2041, 'geometry': 'z in [0,L/2], coupled r-z finite cylinder', 'max_step_s': 30.0, 'elapsed_s': 31.543785514999854}
+temperature_degC mid effect 0.0016950101241732796 end mid diff 0.0012532011014130262
+moisture_dry_basis mid effect 2.252255612256171e-05 end mid diff 2.252255612256171e-05
+START 40 160
+AXISYMMETRIC 40 160 1800.0
+AXISYMMETRIC 40 160 3600.0
+AXISYMMETRIC 40 160 5400.0

@@ -1,0 +1,20 @@
+{
+  "temperature_degC": {
+    "max_abs_difference": 8.526512829121202e-14,
+    "index": [
+      8691,
+      6
+    ],
+    "four_decimal_mismatches": 0,
+    "surface_at_1s": 28.000129668744787
+  },
+  "moisture_dry_basis": {
+    "max_abs_difference": 5.329070518200751e-15,
+    "index": [
+      5120,
+      1
+    ],
+    "four_decimal_mismatches": 0,
+    "surface_at_1s": 2.51980514734992
+  }
+}

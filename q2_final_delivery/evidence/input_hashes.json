@@ -1,0 +1,29 @@
+[
+  {
+    "repo_path": "A题/A题.pdf",
+    "local_path": "inputs/题目原件.pdf",
+    "bytes": 553320,
+    "git_blob_sha1": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+    "remote_blob_sha1": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+    "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+    "matched": true
+  },
+  {
+    "repo_path": "A题/附件/附件1.xlsx",
+    "local_path": "inputs/附件1.xlsx",
+    "bytes": 16586,
+    "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+    "remote_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "matched": true
+  },
+  {
+    "repo_path": "A题/附件/附件3/result2.xlsx",
+    "local_path": "inputs/result2_template.xlsx",
+    "bytes": 10073,
+    "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+    "remote_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+    "matched": true
+  }
+]

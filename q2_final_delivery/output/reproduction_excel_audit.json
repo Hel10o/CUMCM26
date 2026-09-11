@@ -1,0 +1,47 @@
+{
+  "all_passed": true,
+  "sheet_names": [
+    "温度",
+    "水分浓度"
+  ],
+  "total_result_values": 453600,
+  "sheets": {
+    "温度": {
+      "result_rows": 10800,
+      "result_columns": 21,
+      "first_time_s": 1.0,
+      "last_time_s": 10800.0,
+      "first_radius_cm": 0.0,
+      "last_radius_cm": 2.0,
+      "top_left_result": 28.0,
+      "bottom_right_result": 49.9664,
+      "all_numeric_finite": true,
+      "all_result_formats_0000": true,
+      "exact_rounded_raw_match": true,
+      "maximum_rounding_difference": 4.999990407128507e-05,
+      "no_missing_ellipsis_or_formulas": true
+    },
+    "水分浓度": {
+      "result_rows": 10800,
+      "result_columns": 21,
+      "first_time_s": 1.0,
+      "last_time_s": 10800.0,
+      "first_radius_cm": 0.0,
+      "last_radius_cm": 2.0,
+      "top_left_result": 2.55,
+      "bottom_right_result": 1.0081,
+      "all_numeric_finite": true,
+      "all_result_formats_0000": true,
+      "exact_rounded_raw_match": true,
+      "maximum_rounding_difference": 4.999987746057144e-05,
+      "no_missing_ellipsis_or_formulas": true
+    }
+  },
+  "xlsx_hash": {
+    "sha256": "ffd51b3e2afa5cc568346dd81d4dcdbb97455ce324bf4e840c76d807adb070a8",
+    "git_blob_sha1": "8c84a1b46f7bb817359a0ecaf2a7c12dcb2abd76",
+    "bytes": 2501562
+  },
+  "paper_tables_checked": true,
+  "paper_values_checked": 60
+}

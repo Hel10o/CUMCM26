@@ -1,0 +1,185 @@
+{
+  "scope": "physical audit and conditional radiation scenario, NOT a rerun of full production/validation pipeline",
+  "input": {
+    "rows": 241,
+    "first": [
+      0.0,
+      28.0,
+      0.01963
+    ],
+    "t1800": [
+      1800.0,
+      41.513,
+      0.03307
+    ],
+    "finite": true,
+    "strict_time_order": true
+  },
+  "excel_crosscheck": {
+    "温度": {
+      "values": 37800,
+      "equal_to_rounded_npz": true,
+      "last_center_surface": [
+        33.5753,
+        36.7856
+      ]
+    },
+    "水分浓度": {
+      "values": 37800,
+      "equal_to_rounded_npz": true,
+      "last_center_surface": [
+        2.55,
+        1.5102
+      ]
+    }
+  },
+  "original_file_sha256": {
+    "input/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "source/q1_solver.py": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+    "output/第一问论文正文.md": "dded0ba2aa81dcfd2648e1a862120ada89a0587774f50c596277de796be89d13",
+    "output/result1.xlsx": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+    "output/q1_unrounded.npz": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77"
+  },
+  "attachment2": {
+    "read_level": "first two original numeric rows decoded from ZIP entry prefix; not full workbook CRC",
+    "cells": {
+      "A2": "0",
+      "B2": "2",
+      "A3": "1800",
+      "B3": "1.873"
+    },
+    "radius_decrease_percent": 6.35,
+    "area_volume_decrease_percent_fixed_L": 12.296775000000004,
+    "geometric_time_scale_ratio_fixed_D": 0.87703225,
+    "surface_displacement_mm": 1.2700000000000002,
+    "displacement_over_initial_moisture_length": 0.4259975420408179
+  },
+  "scales": {
+    "alpha_m2_s": 1.6885553470919323e-07,
+    "D_initial_m2_s": 4.937655094173937e-09,
+    "BiT_R": 1.3888888888888888,
+    "BiM_R": 3.2404045432170427,
+    "heat_diffusion_length_cm": 1.7433873995086342,
+    "moisture_diffusion_length_cm": 0.2981237858593824,
+    "heat_diffusion_time_s": 2368.888888888889,
+    "moisture_diffusion_time_s": 81010.11358042607,
+    "end_side_area": 0.08
+  },
+  "latent_recalculation": {
+    "additional_assumptions": [
+      "rho=initial wet bulk density",
+      "fixed uniform dry density",
+      "all effective loss evaporates at side",
+      "lambda=2.45 MJ/kg"
+    ],
+    "rho_d_kg_m3": 230.98591549295776,
+    "volume_m3": 0.0003141592653589793,
+    "side_area_m2": 0.031415926535897934,
+    "dry_mass_kg": 0.07256636551953889,
+    "average_C_1800": 2.293557194194852,
+    "average_T_1800": 35.16791358023219,
+    "water_loss_kg": 0.018609122380912484,
+    "latent_J": 45592.34983323559,
+    "baseline_sensible_J": 4800.979302361747,
+    "ratio": 9.496468733120206,
+    "mean_latent_flux_W_m2": 806.2497603482659,
+    "initial_latent_flux_W_m2": 1145.5804687323944,
+    "water_loss_fraction_initial_wet_mass": 0.07223741008595713,
+    "rho_wet_average_1800_if_mass_consistent": 760.7653237295151
+  },
+  "conditional_psychrometric": {
+    "assumptions": [
+      "environment=kg_vapour/kg_dry_air",
+      "p=101.325 kPa",
+      "ideal-gas moist air",
+      "FAO56 Tetens saturation pressure"
+    ],
+    "states": [
+      {
+        "time_s": 0.0,
+        "air_C": 28.0,
+        "assumed_humidity_ratio": 0.01963,
+        "pv_kPa": 3.100198340022601,
+        "dew_C": 24.63847262460968,
+        "RH_percent": 82.01734004289413
+      },
+      {
+        "time_s": 1800.0,
+        "air_C": 41.513,
+        "assumed_humidity_ratio": 0.03307,
+        "pv_kPa": 5.115635138126608,
+        "dew_C": 33.300774857479055,
+        "RH_percent": 64.01351133367803
+      }
+    ],
+    "p_sat_11p9_C_kPa": 1.3933421778648425,
+    "p_sat_baseline_surface_1800_kPa": 6.20189474187879,
+    "baseline_minimum_aw_for_evaporation_at_1800": 0.8248503644511851
+  },
+  "radiation_scale": {
+    "assumptions": [
+      "Tw=Tair",
+      "epsilon=1",
+      "large black enclosure/unit view factor"
+    ],
+    "hr_W_m2K": 6.90891032849669,
+    "hr_over_hT": 0.2763564131398676,
+    "rad_flux_W_m2": 32.661456650231905,
+    "conv_flux_W_m2": 118.1859913404706
+  },
+  "existing_latent_test_record": {
+    "additional_assumptions": [
+      "820 interpreted as initial wet bulk density",
+      "constant dry density rho/(1+C0)",
+      "all effective outward loss evaporates at surface",
+      "lambda=2.45 MJ/kg constant (FAO56 Annex3)"
+    ],
+    "rho_d_kg_dry_m3": 230.98591549295776,
+    "lambda_J_kg": 2450000.0,
+    "implied_water_loss_kg": 0.018609123552755166,
+    "baseline_sensible_J": 4800.979316619639,
+    "implied_latent_J": 45592.35270425016,
+    "ratio_latent_to_sensible": 9.496469302923733,
+    "initial_latent_W_m2": 1145.5804687323944,
+    "T1800_degC": [
+      10.546614975987517,
+      10.59236351217826,
+      10.761374590547856,
+      11.14871032130874,
+      11.902627810118135
+    ],
+    "min_T_degC": 9.150126091263802,
+    "max_difference_vs_no_latent_K": 24.882932480559454,
+    "interpretation": "Diagnostic exposes major closure uncertainty; not used in result1.xlsx; surface trace interpolated at 1s."
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "radiation_scenario": {
+    "n_intervals": 320,
+    "rtol": 2e-10,
+    "atol": 2e-12,
+    "max_step_s": 5,
+    "elapsed_s": 1.4783900969999877,
+    "no_radiation_center_surface_1800": [
+      33.5753442451864,
+      36.785559294604994
+    ],
+    "epsilon1_center_surface_1800": [
+      34.17972949028399,
+      37.59507447683119
+    ],
+    "delta_center_surface_1800": [
+      0.6043852450975891,
+      0.8095151822261997
+    ],
+    "max_field_temperature_change_K": 0.8095151822261997,
+    "radiation_160_vs_320_max_K": 2.4451058667551706e-05,
+    "radiation_effect_160_vs_320_max_K": 2.99567923889299e-06,
+    "no_radiation_vs_delivered_max_K": 7.652208608988076e-06,
+    "moisture_effect_in_decoupled_baseline": "identically zero by structure; not an experimental conclusion"
+  },
+  "original_files_unchanged": true
+}

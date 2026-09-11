@@ -1,0 +1,43 @@
+{
+  "n": 1280,
+  "nodes": 1281,
+  "dr_m": 1.5625e-05,
+  "end_s": 10800.0,
+  "rtol": 2e-12,
+  "atol_T": 2e-13,
+  "atol_C": 2e-14,
+  "max_step_s": 10.0,
+  "method": "BDF + exact coupled block sparse Jacobian",
+  "environment": "linear",
+  "extension": "error",
+  "temperature_offset": 0.0,
+  "freeze": false,
+  "fault": null,
+  "nfev": 40016,
+  "njev": 180,
+  "nlu": 4251,
+  "accepted_steps": 19912,
+  "parameters": {
+    "R": 0.02,
+    "L": 0.25,
+    "T0": 28.0,
+    "C0": 2.55,
+    "hT": 25.0,
+    "hm": 8e-07
+  },
+  "elapsed_s": 27.923230891999992,
+  "accepted_internal_min": [
+    27.999999999999993,
+    1.0081230347358054
+  ],
+  "accepted_internal_max": [
+    49.96641292482202,
+    2.5500000000000056
+  ],
+  "environment_knots_restarted": 180,
+  "quadrature_performed": true,
+  "water_balance_max_kgkg": 6.5065730581181924e-12,
+  "effective_heat_balance_max_J_m3": 0.0020729005336761475,
+  "net_heat_input_J_m3": 66653654.8124438,
+  "effective_heat_balance_relative": 3.1099577952762924e-11
+}

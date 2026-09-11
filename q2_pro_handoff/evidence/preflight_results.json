@@ -1,0 +1,580 @@
+{
+  "status": "PRELIMINARY_NUMERICAL_SCALE_AND_IMPLEMENTATION_CHECK_ONLY",
+  "do_not_use_as": [
+    "final four-decimal answers",
+    "replacement of Q1",
+    "validated physical truth",
+    "Q3 drying duration"
+  ],
+  "contract": "Q2 preflight only: coupled local-state finite volumes, NOT final answers.\n\nrho(C)*cp(C)*T_t = div(k(C)*grad(T)); C_t = div(D(C,T)*grad(C)).\nFixed radial cylinder, linear original environmental input, no latent heat or\nshrinkage. Appendix 3 is applied from t=0, not spliced onto a Q1 terminal state.\nTemperature storage uses Celsius but D always uses T+273.15 kelvin.\n\nThis is a preliminary effective-variable baseline. It does not resolve the\nthermodynamic meaning of state-dependent density with fixed geometry, gas/solid\nconcentration mapping, or latent energy. No existing Q1 code is imported.\n",
+  "original_input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "input_rows": 241,
+  "input_range_s": [
+    0.0,
+    14400.0
+  ],
+  "environment_1800": [
+    1800.0,
+    41.513,
+    0.03307
+  ],
+  "environment_10800": [
+    10800.0,
+    50.195,
+    0.04977
+  ],
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "grids": {
+    "80": {
+      "status": "PREFLIGHT_ONLY_NOT_FROZEN_ANSWER",
+      "n_intervals": 80,
+      "n_vertices": 81,
+      "dr_m": 0.00025,
+      "method": "Monolithic coupled MOL, vertex finite volumes, BDF with sparse finite-difference Jacobian pattern",
+      "local_updates": "rho(C), cp(C), k(C), D(C,T_K); harmonic face k and D; nodal heat capacity remains outside divergence.",
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_s": 15,
+      "restart_interval_s": 60,
+      "first_step_each_segment_s": 0.001,
+      "output_shape": [
+        10801,
+        21,
+        2
+      ],
+      "time_s_1800_center_surface_T_C": [
+        [
+          32.1892510987843,
+          2.549931693926109
+        ],
+        [
+          35.413063878484884,
+          1.6486019794455882
+        ]
+      ],
+      "time_s_10800_center_surface_T_C": [
+        [
+          49.84950100068193,
+          1.7661796466512367
+        ],
+        [
+          49.96641043662511,
+          1.0081002226931493
+        ]
+      ],
+      "mean_T_C_1800": [
+        33.77340897006597,
+        2.2825807701948566
+      ],
+      "mean_T_C_10800": [
+        49.90433621008267,
+        1.3824896018688433
+      ],
+      "sampled_min_T_C": [
+        27.999999999999996,
+        1.0081002226931493
+      ],
+      "sampled_max_T_C": [
+        49.96641043662511,
+        2.55
+      ],
+      "integrated_discrete_mean_moisture_balance_max_abs": 7.549516567451064e-15,
+      "balance_scope": "Augmented integral of the same discrete boundary flux; consistency check, not independent model validation.",
+      "table": {
+        "time_s": [
+          1800,
+          3600,
+          5400,
+          7200,
+          9000,
+          10800
+        ],
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "temperature_C": [
+          [
+            32.1892510987843,
+            32.382119943333464,
+            32.96594397433277,
+            33.960781409783294,
+            35.413063878484884
+          ],
+          [
+            40.38157771393741,
+            40.5535786905993,
+            41.0605060336386,
+            41.87826189852888,
+            42.99766583275723
+          ],
+          [
+            45.8467683159022,
+            45.93482151699227,
+            46.19297586121039,
+            46.60510763835683,
+            47.14011864026709
+          ],
+          [
+            48.45024514421711,
+            48.48807092248506,
+            48.59845839651283,
+            48.77356866955136,
+            49.00335181182945
+          ],
+          [
+            49.46698481629915,
+            49.479224291429176,
+            49.51365632356992,
+            49.56534186473778,
+            49.660877140614744
+          ],
+          [
+            49.84950100068193,
+            49.855345024081814,
+            49.874614348883995,
+            49.910149725559485,
+            49.96641043662511
+          ]
+        ],
+        "moisture_dry_basis": [
+          [
+            2.549931693926109,
+            2.548870578499268,
+            2.5255172634430765,
+            2.3257662101734864,
+            1.6486019794455882
+          ],
+          [
+            2.5256861262362396,
+            2.494742684810413,
+            2.357813419308913,
+            2.0229898238410686,
+            1.4710509547946078
+          ],
+          [
+            2.3860256446390733,
+            2.325610964013825,
+            2.1344067666719866,
+            1.8020167305889725,
+            1.347534801030929
+          ],
+          [
+            2.1708402685516535,
+            2.108426003148174,
+            1.9236247451079218,
+            1.6259297143301104,
+            1.2310645421738275
+          ],
+          [
+            1.9566414044901501,
+            1.9005965388554213,
+            1.735976800195765,
+            1.4719768434401366,
+            1.1166214186271306
+          ],
+          [
+            1.7661796466512367,
+            1.7165343577081915,
+            1.570195567639686,
+            1.3332542178096842,
+            1.0081002226931493
+          ]
+        ]
+      },
+      "warnings": [],
+      "runtime_s": 3.0798651000000064,
+      "nfev": 15268,
+      "njev": 180,
+      "nlu": 2197,
+      "accepted_steps": 7544
+    },
+    "160": {
+      "status": "PREFLIGHT_ONLY_NOT_FROZEN_ANSWER",
+      "n_intervals": 160,
+      "n_vertices": 161,
+      "dr_m": 0.000125,
+      "method": "Monolithic coupled MOL, vertex finite volumes, BDF with sparse finite-difference Jacobian pattern",
+      "local_updates": "rho(C), cp(C), k(C), D(C,T_K); harmonic face k and D; nodal heat capacity remains outside divergence.",
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_s": 15,
+      "restart_interval_s": 60,
+      "first_step_each_segment_s": 0.001,
+      "output_shape": [
+        10801,
+        21,
+        2
+      ],
+      "time_s_1800_center_surface_T_C": [
+        [
+          32.18924626007271,
+          2.5499335003252326
+        ],
+        [
+          35.41303106812819,
+          1.6486138113836535
+        ]
+      ],
+      "time_s_10800_center_surface_T_C": [
+        [
+          49.84949694213544,
+          1.7661777398809828
+        ],
+        [
+          49.96641224760945,
+          1.0081173991799761
+        ]
+      ],
+      "mean_T_C_1800": [
+        33.7733002016658,
+        2.282625667339057
+      ],
+      "mean_T_C_10800": [
+        49.904330515536714,
+        1.3825176950666358
+      ],
+      "sampled_min_T_C": [
+        28.0,
+        1.0081173991799761
+      ],
+      "sampled_max_T_C": [
+        49.96641224760945,
+        2.5500000000000003
+      ],
+      "integrated_discrete_mean_moisture_balance_max_abs": 4.440892098500626e-15,
+      "balance_scope": "Augmented integral of the same discrete boundary flux; consistency check, not independent model validation.",
+      "table": {
+        "time_s": [
+          1800,
+          3600,
+          5400,
+          7200,
+          9000,
+          10800
+        ],
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "temperature_C": [
+          [
+            32.18924626007271,
+            32.38211564515752,
+            32.96594109258835,
+            33.960779572746354,
+            35.41303106812819
+          ],
+          [
+            40.38156945995068,
+            40.55356915399219,
+            41.06048932815817,
+            41.87822918876154,
+            42.997623097510605
+          ],
+          [
+            45.84675831423574,
+            45.934809891985374,
+            46.192959037591514,
+            46.605082494941996,
+            47.14006712322915
+          ],
+          [
+            48.450237795798195,
+            48.488062987507966,
+            48.59844808390953,
+            48.77355485457674,
+            49.00333123289649
+          ],
+          [
+            49.4669816520693,
+            49.479221094274,
+            49.513651324675315,
+            49.56533409909935,
+            49.66090206231643
+          ],
+          [
+            49.84949694213544,
+            49.855341773300836,
+            49.874612730339976,
+            49.91014826878915,
+            49.96641224760945
+          ]
+        ],
+        "moisture_dry_basis": [
+          [
+            2.5499335003252326,
+            2.548880531739866,
+            2.5255478435487273,
+            2.325719528353029,
+            1.6486138113836535
+          ],
+          [
+            2.525724730469455,
+            2.494775875508035,
+            2.357817730775341,
+            2.022970163328815,
+            1.4710829327129145
+          ],
+          [
+            2.386054606266057,
+            2.325630170625522,
+            2.134408298451305,
+            1.80201692857261,
+            1.3475591731662462
+          ],
+          [
+            2.1708487268731527,
+            2.1084319302220687,
+            1.9236275030783774,
+            1.6259364868916837,
+            1.231085607008554
+          ],
+          [
+            1.9566416716759265,
+            1.9005971024049584,
+            1.7359792476128602,
+            1.4719846054047494,
+            1.116641073624014
+          ],
+          [
+            1.7661777398809828,
+            1.7165333522656632,
+            1.5701973916168777,
+            1.3332611257796951,
+            1.0081173991799761
+          ]
+        ]
+      },
+      "warnings": [],
+      "runtime_s": 3.9766947999999047,
+      "nfev": 15644,
+      "njev": 180,
+      "nlu": 2217,
+      "accepted_steps": 7732
+    },
+    "320": {
+      "status": "PREFLIGHT_ONLY_NOT_FROZEN_ANSWER",
+      "n_intervals": 320,
+      "n_vertices": 321,
+      "dr_m": 6.25e-05,
+      "method": "Monolithic coupled MOL, vertex finite volumes, BDF with sparse finite-difference Jacobian pattern",
+      "local_updates": "rho(C), cp(C), k(C), D(C,T_K); harmonic face k and D; nodal heat capacity remains outside divergence.",
+      "rtol": 1e-09,
+      "atol": 1e-11,
+      "max_step_s": 15,
+      "restart_interval_s": 60,
+      "first_step_each_segment_s": 0.001,
+      "output_shape": [
+        10801,
+        21,
+        2
+      ],
+      "time_s_1800_center_surface_T_C": [
+        [
+          32.18924513148688,
+          2.549933950226094
+        ],
+        [
+          35.41302294358978,
+          1.6486167859227923
+        ]
+      ],
+      "time_s_10800_center_surface_T_C": [
+        [
+          49.84949591855253,
+          1.766177264168019
+        ],
+        [
+          49.96641272656407,
+          1.0081216945843945
+        ]
+      ],
+      "mean_T_C_1800": [
+        33.77327308588461,
+        2.282636890159674
+      ],
+      "mean_T_C_10800": [
+        49.90432910527638,
+        1.3825247191685708
+      ],
+      "sampled_min_T_C": [
+        28.0,
+        1.0081216945843945
+      ],
+      "sampled_max_T_C": [
+        49.96641272656407,
+        2.5500000000000003
+      ],
+      "integrated_discrete_mean_moisture_balance_max_abs": 5.329070518200751e-15,
+      "balance_scope": "Augmented integral of the same discrete boundary flux; consistency check, not independent model validation.",
+      "table": {
+        "time_s": [
+          1800,
+          3600,
+          5400,
+          7200,
+          9000,
+          10800
+        ],
+        "radius_cm": [
+          0,
+          0.5,
+          1,
+          1.5,
+          2
+        ],
+        "temperature_C": [
+          [
+            32.18924513148688,
+            32.3821146506534,
+            32.96594045831321,
+            33.96077917664412,
+            35.41302294358978
+          ],
+          [
+            40.38156737441522,
+            40.55356674629394,
+            41.060485125699806,
+            41.878220991357864,
+            42.99761239532489
+          ],
+          [
+            45.84675573978947,
+            45.93480691295151,
+            46.19295476476152,
+            46.60507615332248,
+            47.14005419657118
+          ],
+          [
+            48.450235834500695,
+            48.48806088062099,
+            48.59844538823575,
+            48.77355129948455,
+            49.00332599456604
+          ],
+          [
+            49.46698080552717,
+            49.47922024036621,
+            49.51365002366185,
+            49.565332099617514,
+            49.660908251949
+          ],
+          [
+            49.84949591855253,
+            49.855340956906595,
+            49.874612332751305,
+            49.910147919950724,
+            49.96641272656407
+          ]
+        ],
+        "moisture_dry_basis": [
+          [
+            2.549933950226094,
+            2.5488830206793747,
+            2.525555487799329,
+            2.325707854315931,
+            1.6486167859227923
+          ],
+          [
+            2.525734387431904,
+            2.4947841705358167,
+            2.357818804001179,
+            2.022965252930325,
+            1.4710909336781344
+          ],
+          [
+            2.3860618424052715,
+            2.3256349678492265,
+            2.134408680935778,
+            1.8020169805628423,
+            1.347565262366429
+          ],
+          [
+            2.170850838438859,
+            2.1084334105297353,
+            1.9236281934516009,
+            1.6259381816049523,
+            1.2310908719090201
+          ],
+          [
+            1.9566417384889694,
+            1.9005972442007126,
+            1.7359798608380277,
+            1.4719865470366478,
+            1.1166459943688614
+          ],
+          [
+            1.766177264168019,
+            1.7165331023948014,
+            1.5701978490141102,
+            1.3332628537277715,
+            1.0081216945843945
+          ]
+        ]
+      },
+      "warnings": [],
+      "runtime_s": 5.375487999999905,
+      "nfev": 15560,
+      "njev": 180,
+      "nlu": 2254,
+      "accepted_steps": 7690
+    }
+  },
+  "grid_comparisons": {
+    "80_to_160": {
+      "scope": "Every integer second 1..10800 and 21 requested radii; not all internal vertices or a rigorous continuous-domain bound.",
+      "temperature_C": {
+        "max_abs": 7.955922707481022e-05,
+        "rms": 1.7736094642781514e-05,
+        "max_at_time_s_radius_cm": [
+          2940,
+          2.0
+        ],
+        "table_max_abs": 5.1517037938708654e-05
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.010865618222201778,
+        "rms": 8.274597282684998e-05,
+        "max_at_time_s_radius_cm": [
+          2,
+          2.0
+        ],
+        "table_max_abs": 4.6681820457195045e-05
+      }
+    },
+    "160_to_320": {
+      "scope": "Every integer second 1..10800 and 21 requested radii; not all internal vertices or a rigorous continuous-domain bound.",
+      "temperature_C": {
+        "max_abs": 1.988110933837106e-05,
+        "rms": 4.4605536739261e-06,
+        "max_at_time_s_radius_cm": [
+          2940,
+          2.0
+        ],
+        "table_max_abs": 1.2926657973366673e-05
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.004975133080798333,
+        "rms": 2.1893991875559377e-05,
+        "max_at_time_s_radius_cm": [
+          1,
+          2.0
+        ],
+        "table_max_abs": 1.1674037098341472e-05
+      }
+    }
+  },
+  "elapsed_s": 12.762087999999949,
+  "execution_exit_status": "completed_all_three_preflight_grids"
+}

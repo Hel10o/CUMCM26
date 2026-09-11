@@ -1,0 +1,42 @@
+{
+  "python": "3.13.14",
+  "pro_script_rerun_exit_code": 0,
+  "rerun_note": "First rerun emitted one BDF RuntimeWarning at difference-table update; Radau crosscheck below examines final values independently in time.",
+  "delivery_hashes_match_pro": {
+    "input/附件1.xlsx": true,
+    "source/q1_solver.py": true,
+    "output/第一问论文正文.md": true,
+    "output/result1.xlsx": true,
+    "output/q1_unrounded.npz": true
+  },
+  "all_75600_excel_values_match": true,
+  "rerun_vs_pro": {
+    "0": {
+      "max_field_abs_difference_K": 1.3180567748349858e-12,
+      "all_finite": true,
+      "Radau_vs_BDF_max_K": 2.697928636052893e-08,
+      "Radau_accepted_steps": 1484
+    },
+    "1": {
+      "max_field_abs_difference_K": 1.2008172234345693e-12,
+      "all_finite": true,
+      "Radau_vs_BDF_max_K": 2.5977556106226984e-08,
+      "Radau_accepted_steps": 1558
+    }
+  },
+  "attachment2_complete_workbook_crc_passed": true,
+  "attachment2_cells_match_prefix": true,
+  "dew_point_independent_root_C": 33.300774857479226,
+  "radau_runtime_warnings": [],
+  "radiation_320_vs_640_Radau_max_K": 6.1129981432372915e-06,
+  "radau_320_delta_center_surface_1800_K": [
+    0.6043852447652114,
+    0.8095151869677082
+  ],
+  "radau_640_epsilon1_center_surface_1800_C": [
+    34.179729636707265,
+    37.59507484528943
+  ],
+  "pro_files_unchanged": true,
+  "status": "PASS: evidence reproducible; conditional scenarios do not replace the main answer"
+}

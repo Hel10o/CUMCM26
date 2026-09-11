@@ -1,0 +1,8 @@
+BEGIN UNIT TESTS
+Traceback (most recent call last):
+  File "/mnt/data/q2_work/run_tests.py", line 10, in <module>
+    r=run_unit_tests(env,out);print(json.dumps(r,indent=2),flush=True)
+  File "/mnt/data/q2_final_delivery/source/q2_tests.py", line 58, in run_unit_tests
+    assert abs(s['D']/5.64168065e-9-1)<2e-8
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

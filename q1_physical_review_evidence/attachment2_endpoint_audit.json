@@ -1,0 +1,13 @@
+{
+  "source": "Hel10o/libai/A题/附件/附件2.xlsx",
+  "git_blob_sha1": "0066c189b555f705df8b5bf0fe945cac7872fd3d",
+  "method": "partial original base64 decoded; original sheet1.xml ZIP entry prefix inflated; no whole-workbook CRC audit",
+  "entry": "xl/worksheets/sheet1.xml",
+  "cells": {
+    "A2": "0",
+    "B2": "2",
+    "A3": "1800",
+    "B3": "1.873"
+  },
+  "full_stream_received": false
+}

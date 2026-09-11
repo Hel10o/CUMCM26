@@ -1,0 +1,39 @@
+{
+  "n": 80,
+  "nodes": 81,
+  "dr_m": 0.00025,
+  "end_s": 10800.0,
+  "rtol": 2e-12,
+  "atol_T": 2e-13,
+  "atol_C": 2e-14,
+  "max_step_s": 10.0,
+  "method": "BDF + exact coupled block sparse Jacobian",
+  "environment": "linear",
+  "extension": "error",
+  "temperature_offset": 0.0,
+  "freeze": false,
+  "fault": null,
+  "nfev": 37657,
+  "njev": 180,
+  "nlu": 3923,
+  "accepted_steps": 18689,
+  "parameters": {
+    "R": 0.02,
+    "L": 0.25,
+    "T0": 28.0,
+    "C0": 2.55,
+    "hT": 25.0,
+    "hm": 8e-07
+  },
+  "elapsed_s": 9.747334200000012,
+  "accepted_internal_min": [
+    27.999999999999993,
+    1.0081002222983204
+  ],
+  "accepted_internal_max": [
+    49.9664105262963,
+    2.5500000000000003
+  ],
+  "environment_knots_restarted": 180,
+  "quadrature_performed": false
+}

@@ -1,0 +1,457 @@
+{
+  "scope": "Read-only original OOXML data/output contract audit for Q2, no model solving or result2 generation",
+  "runtime_python": "3.12.14",
+  "source_files": {
+    "attachment1": {
+      "path": "inputs/附件1.xlsx",
+      "path_base": "evidence_bundle",
+      "original_repository_path": "A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "packaged_copy_hash_matches_repository_original": true
+    },
+    "result2_template": {
+      "path": "inputs/result2_template.xlsx",
+      "path_base": "evidence_bundle",
+      "original_repository_path": "A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "packaged_copy_hash_matches_repository_original": true
+    },
+    "problem_page2_extracted_text": {
+      "path": "readable/problem/pages/002.md",
+      "path_base": "repository",
+      "original_repository_path": "readable/problem/pages/002.md",
+      "bytes": 2138,
+      "sha256": "5a1c6f46430e37b1b60f9213392e414b31da13942ced1f8f356f41941b649157",
+      "git_blob_sha1": "04b779f2d63392012f2b82af26805df82935ac6c"
+    },
+    "problem_page3_extracted_text": {
+      "path": "readable/problem/pages/003.md",
+      "path_base": "repository",
+      "original_repository_path": "readable/problem/pages/003.md",
+      "bytes": 2625,
+      "sha256": "8dc9304476f9c09d0e20e9336c3e1822c21a39c18d1c6c56e88e0a17f277eacf",
+      "git_blob_sha1": "1c944e7ff4a730d2eef65fe0538374ab6cfdad64"
+    }
+  },
+  "attachment1": {
+    "zip_crc_passed": true,
+    "sheet_names": [
+      "Sheet1"
+    ],
+    "schema": {
+      "sheet": "Sheet1",
+      "dimension": "A1:C242",
+      "header_cells": {
+        "A1": "时间",
+        "B1": "温度",
+        "C1": "水分浓度"
+      },
+      "units_from_problem_appendix1": {
+        "A": "s",
+        "B": "degC",
+        "C": "kg/kg"
+      },
+      "units_are_not_written_in_workbook_header": true
+    },
+    "record_count": 241,
+    "time_domain_s": [
+      0,
+      14400
+    ],
+    "sample_interval_s": 60,
+    "finite": true,
+    "strictly_increasing_unique_times": true,
+    "records_at_key_times": {
+      "0": [
+        0.0,
+        28.0,
+        0.01963
+      ],
+      "1800": [
+        1800.0,
+        41.513,
+        0.03307
+      ],
+      "3600": [
+        3600.0,
+        47.485,
+        0.04272
+      ],
+      "7200": [
+        7200.0,
+        49.852,
+        0.04894
+      ],
+      "10800": [
+        10800.0,
+        50.195,
+        0.04977
+      ],
+      "14400": [
+        14400.0,
+        50.165,
+        0.04986
+      ]
+    },
+    "variation": {
+      "temperature_degC": {
+        "minimum": 28.0,
+        "maximum": 50.246,
+        "times_of_maximum_s": [
+          10620.0
+        ],
+        "increase_step_count": 145,
+        "decrease_step_count": 95,
+        "unchanged_step_count": 0,
+        "largest_positive_60s_change": 0.7970000000000006,
+        "largest_negative_60s_change": -0.45000000000000284
+      },
+      "environment_quantity_kg_kg": {
+        "minimum": 0.01963,
+        "maximum": 0.05025,
+        "times_of_maximum_s": [
+          9780.0,
+          10080.0
+        ],
+        "increase_step_count": 159,
+        "decrease_step_count": 80,
+        "unchanged_step_count": 1,
+        "largest_positive_60s_change": 0.00068,
+        "largest_negative_60s_change": -0.0004400000000000029
+      }
+    },
+    "windows": {
+      "q1_0_to_1800": {
+        "closed_interval_s": [
+          0,
+          1800
+        ],
+        "sample_count_including_both_endpoints": 31,
+        "first_record": [
+          0.0,
+          28.0,
+          0.01963
+        ],
+        "last_record": [
+          1800.0,
+          41.513,
+          0.03307
+        ],
+        "temperature_degC": {
+          "minimum": 28.0,
+          "maximum": 41.513,
+          "sample_arithmetic_mean": 35.30809677419355,
+          "piecewise_linear_time_average": 35.326483333333336,
+          "first_to_last_change": 13.512999999999998,
+          "sample_standard_deviation": 4.095245994685698
+        },
+        "environment_quantity_kg_kg": {
+          "minimum": 0.01963,
+          "maximum": 0.03307,
+          "sample_arithmetic_mean": 0.026448064516129032,
+          "piecewise_linear_time_average": 0.026451333333333334,
+          "first_to_last_change": 0.01344,
+          "sample_standard_deviation": 0.004105816540271325
+        }
+      },
+      "q2_first_3h_0_to_10800": {
+        "closed_interval_s": [
+          0,
+          10800
+        ],
+        "sample_count_including_both_endpoints": 181,
+        "first_record": [
+          0.0,
+          28.0,
+          0.01963
+        ],
+        "last_record": [
+          10800.0,
+          50.195,
+          0.04977
+        ],
+        "temperature_degC": {
+          "minimum": 28.0,
+          "maximum": 50.246,
+          "sample_arithmetic_mean": 46.33361325966851,
+          "piecewise_linear_time_average": 46.37381388888889,
+          "first_to_last_change": 22.195,
+          "sample_standard_deviation": 5.613922901010476
+        },
+        "environment_quantity_kg_kg": {
+          "minimum": 0.01963,
+          "maximum": 0.05025,
+          "sample_arithmetic_mean": 0.04302049723756906,
+          "piecewise_linear_time_average": 0.04306672222222222,
+          "first_to_last_change": 0.03014,
+          "sample_standard_deviation": 0.008723491736954563
+        }
+      },
+      "full_input_0_to_14400": {
+        "closed_interval_s": [
+          0,
+          14400
+        ],
+        "sample_count_including_both_endpoints": 241,
+        "first_record": [
+          0.0,
+          28.0,
+          0.01963
+        ],
+        "last_record": [
+          14400.0,
+          50.165,
+          0.04986
+        ],
+        "temperature_degC": {
+          "minimum": 28.0,
+          "maximum": 50.246,
+          "sample_arithmetic_mean": 47.24532780082988,
+          "piecewise_linear_time_average": 47.27933958333333,
+          "first_to_last_change": 22.165,
+          "sample_standard_deviation": 5.114769115473239
+        },
+        "environment_quantity_kg_kg": {
+          "minimum": 0.01963,
+          "maximum": 0.05025,
+          "sample_arithmetic_mean": 0.044755933609958505,
+          "piecewise_linear_time_average": 0.04479764583333333,
+          "first_to_last_change": 0.03023,
+          "sample_standard_deviation": 0.008136533971061675
+        }
+      },
+      "last_hour_of_available_input_10800_to_14400": {
+        "closed_interval_s": [
+          10800,
+          14400
+        ],
+        "sample_count_including_both_endpoints": 61,
+        "first_record": [
+          10800.0,
+          50.195,
+          0.04977
+        ],
+        "last_record": [
+          14400.0,
+          50.165,
+          0.04986
+        ],
+        "temperature_degC": {
+          "minimum": 49.757,
+          "maximum": 50.236,
+          "sample_arithmetic_mean": 49.99893442622951,
+          "piecewise_linear_time_average": 49.995916666666666,
+          "first_to_last_change": -0.030000000000001137,
+          "sample_standard_deviation": 0.15435336826607313
+        },
+        "environment_quantity_kg_kg": {
+          "minimum": 0.04975,
+          "maximum": 0.05024,
+          "sample_arithmetic_mean": 0.049987540983606554,
+          "piecewise_linear_time_average": 0.04999041666666666,
+          "first_to_last_change": 8.99999999999998e-05,
+          "sample_standard_deviation": 0.00015012945233702923
+        }
+      },
+      "last_hour_of_3h_reporting_window_7200_to_10800": {
+        "closed_interval_s": [
+          7200,
+          10800
+        ],
+        "sample_count_including_both_endpoints": 61,
+        "first_record": [
+          7200.0,
+          49.852,
+          0.04894
+        ],
+        "last_record": [
+          10800.0,
+          50.195,
+          0.04977
+        ],
+        "temperature_degC": {
+          "minimum": 49.612,
+          "maximum": 50.246,
+          "sample_arithmetic_mean": 49.941786885245904,
+          "piecewise_linear_time_average": 49.940425,
+          "first_to_last_change": 0.3430000000000035,
+          "sample_standard_deviation": 0.17221779957891478
+        },
+        "environment_quantity_kg_kg": {
+          "minimum": 0.04894,
+          "maximum": 0.05025,
+          "sample_arithmetic_mean": 0.04974131147540983,
+          "piecewise_linear_time_average": 0.04974775,
+          "first_to_last_change": 0.0008300000000000043,
+          "sample_standard_deviation": 0.0003432514889981593
+        }
+      }
+    },
+    "meaning_boundary": "Room measurements are boundary inputs, not internal material observations; interpreting environmental kg/kg as an effective solid-basis driver is a model assumption."
+  },
+  "result2_template": {
+    "zip_crc_passed": true,
+    "sheet_names": [
+      "温度",
+      "水分浓度"
+    ],
+    "sheets": {
+      "温度": {
+        "xml_part": "xl/worksheets/sheet1.xml",
+        "dimension": "A1:F5",
+        "nonempty_cell_count": 10,
+        "all_nonempty_cells": {
+          "A1": "时间\\到药材中心的距离",
+          "B1": 0.0,
+          "C1": 0.1,
+          "D1": 0.2,
+          "E1": "…",
+          "F1": 2.0,
+          "A2": 1.0,
+          "A3": 2.0,
+          "A4": 3.0,
+          "A5": "…"
+        },
+        "time_column_numeric_examples": {
+          "A2": 1.0,
+          "A3": 2.0,
+          "A4": 3.0
+        },
+        "radius_header_examples": {
+          "B1": 0.0,
+          "C1": 0.1,
+          "D1": 0.2,
+          "E1": "…",
+          "F1": 2.0
+        },
+        "ellipsis_cells": {
+          "E1": "…",
+          "A5": "…"
+        },
+        "numeric_time_examples_after_time_column_ellipsis": {},
+        "numeric_radius_examples_after_header_ellipsis": {
+          "F1": 2.0
+        },
+        "largest_numeric_time_example_s": 3.0,
+        "end_time_is_specified_by_template": false,
+        "merged_ranges": []
+      },
+      "水分浓度": {
+        "xml_part": "xl/worksheets/sheet2.xml",
+        "dimension": "A1:F5",
+        "nonempty_cell_count": 10,
+        "all_nonempty_cells": {
+          "A1": "时间\\到药材中心的距离",
+          "B1": 0.0,
+          "C1": 0.1,
+          "D1": 0.2,
+          "E1": "…",
+          "F1": 2.0,
+          "A2": 1.0,
+          "A3": 2.0,
+          "A4": 3.0,
+          "A5": "…"
+        },
+        "time_column_numeric_examples": {
+          "A2": 1.0,
+          "A3": 2.0,
+          "A4": 3.0
+        },
+        "radius_header_examples": {
+          "B1": 0.0,
+          "C1": 0.1,
+          "D1": 0.2,
+          "E1": "…",
+          "F1": 2.0
+        },
+        "ellipsis_cells": {
+          "E1": "…",
+          "A5": "…"
+        },
+        "numeric_time_examples_after_time_column_ellipsis": {},
+        "numeric_radius_examples_after_header_ellipsis": {
+          "F1": 2.0
+        },
+        "largest_numeric_time_example_s": 3.0,
+        "end_time_is_specified_by_template": false,
+        "merged_ranges": []
+      }
+    },
+    "is_populated_result": false,
+    "contains_placeholder_ellipses": true
+  },
+  "problem_contract": {
+    "q2_exact_extracted_paragraph": "问题 2 烘干过程一般持续 2-3 天，预热平衡与恒温干燥阶段的参数有所不同。请建立\n整个烘干过程药材温度和水分浓度变化规律的数学模型（为简化问题，相关经验公式统一采\n用附录 3 中的公式），在论文中按表 3 和表 4 的格式分别给出 3 h 内每隔 0.5 h、到药材中心\n距离 0、0.5、1、1.5、2 cm 处的结果，并将每隔 1 s、到药材中心距离每隔 0.1 cm 的完整结\n果保存到文件 result2.xlsx 中（模板文件见附件 3）。",
+    "appendix1_result2_exact_extracted_description": "在“温度”和“水分浓度”工作表中分别保存问题 2 要求的温度（单位：°C）和水分\n浓度（单位：kg/kg），其中 A 列为时间（单位：s），第 1 行为到药材中心的距离（单位：\ncm）。",
+    "source_reading_level": "Local original PDF text extraction, Q2 paragraph and appendix1 template description; this script does not claim original PDF visual formula verification.",
+    "text_source_mode_this_run": "current original-PDF extraction files, with embedded excerpts crosschecked verbatim",
+    "model_time_scope": "The statement asks for a model of the entire drying process and says drying usually lasts 2-3 days.",
+    "paper_reporting_horizon_s": 10800,
+    "paper_times_h": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ],
+    "paper_times_s": [
+      1800,
+      3600,
+      5400,
+      7200,
+      9000,
+      10800
+    ],
+    "paper_radii_cm": [
+      0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "paper_result_values_per_field": 30,
+    "paper_result_values_both_fields": 60,
+    "if_exporting_3h": {
+      "time_s_first_last": [
+        1,
+        10800
+      ],
+      "time_step_s": 1,
+      "positive_time_rows_per_field": 10800,
+      "radius_cm_first_last": [
+        0,
+        2
+      ],
+      "radius_step_cm": 0.1,
+      "radius_columns": 21,
+      "result_values_per_field": 226800,
+      "result_values_both_fields": 453600,
+      "worksheet_result_range": "B2:V10801",
+      "including_t0_in_raw_arrays_shape_per_field": [
+        10801,
+        21
+      ],
+      "not_1800_rows": "1800 s is only the first paper reporting time for Q2; Q1 had 1800 output seconds."
+    },
+    "input_records_through_3h_including_endpoints": 181,
+    "input_records_through_30min_including_endpoints": 31,
+    "complete_result2_end_time_explicit_in_q2_sentence": false,
+    "complete_result2_end_time_explicit_in_appendix1_description": false,
+    "complete_result2_end_time_explicit_in_original_template": false,
+    "template_time_column_evidence": "Both sheets show A2=1, A3=2, A4=3, A5=ellipsis, with no nonempty time cell after A5. F1=2 is the radius endpoint after E1=ellipsis, not a time endpoint.",
+    "interpretation_boundary": "The 3 h requirement is explicit for the paper tables; the full-result sentence repeats sampling intervals but does not explicitly repeat an end time. The actual original template specifies no final time."
+  },
+  "recommendations": [
+    "Freeze 0-10800 s as the fully evidenced 3 h reporting/validation horizon, with 1-10800 s Excel rows if using the 3 h result2 convention.",
+    "Explain explicitly whether result2 covers the 3 h table horizon or the entire drying process; the original template has no numeric time endpoint after its ellipsis.",
+    "First 3 h requires interpolation within measured data, not extrapolation. Any full drying trajectory beyond 14400 s needs a stated room-boundary extension rule.",
+    "Keep the raw measured room trace over 0-14400 s; a constant-temperature extension must be labelled as a new assumption, and last-value and last-hour-mean conventions must not be conflated.",
+    "Retain 31 measurements only for the first 1800 s; Q2 first 3 h has 181 measured samples. Exporting 1 s values is interpolation/solution output, not 10800 original observations."
+  ],
+  "original_files_unchanged": true
+}

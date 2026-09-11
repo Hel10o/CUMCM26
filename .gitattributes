@@ -4,7 +4,14 @@
 *.xlsx binary
 *.npz binary
 *.7z binary
+*.zip binary
 q1_complete_delivery/** -text
 review_q1_20260910/** -text
+q1_physical_review_evidence/** -text
+q2_final_delivery/** -text
+q2_pro_handoff/** -text
+q2_refinement_handoff/** -text
+review_q2_20260911/** -text
+paper/** -text
 readable/** text eol=lf
 分析与文献/foods-11-04045-v2.pdf filter=lfs diff=lfs merge=lfs -text

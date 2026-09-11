@@ -1,0 +1,5 @@
+BUILT 温度 226800
+EXPORTED PART temperature_degC 1485721
+BUILT 水分浓度 226800
+EXPORTED PART moisture_dry_basis 1371636
+EXPORTED /mnt/data/q2_final_delivery/output/result2.xlsx {'method': 'artifact_tool worksheet generation + lossless OOXML package assembly', 'styles_identical': True, 'shared_strings_identical': True, 'cell_xml_unchanged': True, 'output_bytes': 2501564}

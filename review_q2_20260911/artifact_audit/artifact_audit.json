@@ -1,0 +1,1510 @@
+{
+  "audit_utc": "2026-09-11T03:51:35.522308+00:00",
+  "scope": "Independently executed artifact audit; no PDE solves, no delivery imports, no writes to delivery. Historical source-access and solver-reproduction events remain Pro-supplied records; local hashes and consistency were independently checked.",
+  "source_hash": {
+    "bytes": 18253,
+    "sha256": "f4cbe658af4eebd1cd5381d71bed61e439837998cccd060273f3aad63c9e2295",
+    "git_blob_sha1": "12984d076ad6a0d2eb4666e88e102dcb0833a59c"
+  },
+  "delivery_root": "D:\\Desktop\\CUMCM26\\q2_final_delivery",
+  "all_artifact_checks_passed": true,
+  "checks": [
+    {
+      "name": "input inputs/题目原件.pdf",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "input inputs/附件1.xlsx",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "input inputs/result2_template.xlsx",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "input rows and time",
+      "passed": true,
+      "details": {
+        "sheets": [
+          "Sheet1"
+        ],
+        "dimension": "A1:C242",
+        "headings": [
+          "时间",
+          "温度",
+          "水分浓度"
+        ],
+        "records": 241,
+        "first_3h_records": 181,
+        "time_range_s": [
+          0.0,
+          14400.0
+        ],
+        "steps_s": [
+          60.0
+        ],
+        "temperature_minmax": [
+          28.0,
+          50.246
+        ],
+        "environmental_moisture_minmax": [
+          0.01963,
+          0.05025
+        ],
+        "last_record": [
+          14400.0,
+          50.165,
+          0.04986
+        ]
+      }
+    },
+    {
+      "name": "input audit values",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "NPZ all fields finite",
+      "passed": true,
+      "details": {
+        "time_s": {
+          "shape": [
+            10801
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "radius_cm": {
+          "shape": [
+            21
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "environment": {
+          "shape": [
+            10801,
+            2
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "temperature_degC": {
+          "shape": [
+            10801,
+            21
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "moisture_dry_basis": {
+          "shape": [
+            10801,
+            21
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "average_temperature_degC": {
+          "shape": [
+            10801
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        },
+        "average_moisture_dry_basis": {
+          "shape": [
+            10801
+          ],
+          "dtype": "float64",
+          "nonfinite": 0
+        }
+      }
+    },
+    {
+      "name": "NPZ time",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "NPZ radius",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "NPZ environment from original piecewise linear input",
+      "passed": true,
+      "details": {
+        "max_abs": 0.0
+      }
+    },
+    {
+      "name": "XLSX CRC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX sheet names preserve template",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX extent temperature_degC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX axis values temperature_degC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX values and format temperature_degC",
+      "passed": true,
+      "details": {
+        "sheet": "温度",
+        "dimension_tag": null,
+        "actual_last_cell": "V10801",
+        "nonempty_cells": 237622,
+        "result_values": 226800,
+        "unexpected_cells": [],
+        "nonfinite_results": 0,
+        "non_numeric_results": 0,
+        "formula_count": 0,
+        "incorrect_decimal_formats": 0,
+        "rounded_NPZ_mismatches": 0,
+        "max_rounding_error": 4.999990407128507e-05,
+        "A1": "时间/s；距离/cm",
+        "first_row": [
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0,
+          28.0001
+        ],
+        "last_row": [
+          49.8495,
+          49.8497,
+          49.8504,
+          49.8516,
+          49.8532,
+          49.8553,
+          49.858,
+          49.8613,
+          49.8651,
+          49.8695,
+          49.8746,
+          49.8803,
+          49.8868,
+          49.8938,
+          49.9016,
+          49.9101,
+          49.9194,
+          49.9296,
+          49.9407,
+          49.9529,
+          49.9664
+        ]
+      }
+    },
+    {
+      "name": "NPZ field shape and initial temperature_degC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full CSV temperature_degC",
+      "passed": true,
+      "details": {
+        "shape": [
+          10801,
+          22
+        ],
+        "max_abs": 0.0,
+        "header": "time_s,r=0.0cm,r=0.1cm,r=0.2cm,r=0.3cm,r=0.4cm,r=0.5cm,r=0.6cm,r=0.7cm,r=0.8cm,r=0.9cm,r=1.0cm,r=1.1cm,r=1.2cm,r=1.3cm,r=1.4cm,r=1.5cm,r=1.6cm,r=1.7cm,r=1.8cm,r=1.9cm,r=2.0cm"
+      }
+    },
+    {
+      "name": "paper CSV temperature_degC",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "paper Markdown temperature_degC",
+      "passed": true,
+      "details": {
+        "rows": 6,
+        "values": 30,
+        "tokens": [
+          [
+            "0.5",
+            "32.1892",
+            "32.3821",
+            "32.9659",
+            "33.9608",
+            "35.4130"
+          ],
+          [
+            "1.0",
+            "40.3816",
+            "40.5536",
+            "41.0605",
+            "41.8782",
+            "42.9976"
+          ],
+          [
+            "1.5",
+            "45.8468",
+            "45.9348",
+            "46.1930",
+            "46.6051",
+            "47.1400"
+          ],
+          [
+            "2.0",
+            "48.4502",
+            "48.4881",
+            "48.5984",
+            "48.7736",
+            "49.0033"
+          ],
+          [
+            "2.5",
+            "49.4670",
+            "49.4792",
+            "49.5136",
+            "49.5653",
+            "49.6609"
+          ],
+          [
+            "3.0",
+            "49.8495",
+            "49.8553",
+            "49.8746",
+            "49.9101",
+            "49.9664"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "XLSX extent moisture_dry_basis",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX axis values moisture_dry_basis",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "XLSX values and format moisture_dry_basis",
+      "passed": true,
+      "details": {
+        "sheet": "水分浓度",
+        "dimension_tag": null,
+        "actual_last_cell": "V10801",
+        "nonempty_cells": 237622,
+        "result_values": 226800,
+        "unexpected_cells": [],
+        "nonfinite_results": 0,
+        "non_numeric_results": 0,
+        "formula_count": 0,
+        "incorrect_decimal_formats": 0,
+        "rounded_NPZ_mismatches": 0,
+        "max_rounding_error": 4.999987746057144e-05,
+        "A1": "时间/s；距离/cm",
+        "first_row": [
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.55,
+          2.5198
+        ],
+        "last_row": [
+          1.7662,
+          1.7642,
+          1.7582,
+          1.7483,
+          1.7344,
+          1.7165,
+          1.6948,
+          1.6693,
+          1.64,
+          1.6069,
+          1.5702,
+          1.5299,
+          1.4859,
+          1.4385,
+          1.3876,
+          1.3333,
+          1.2754,
+          1.2141,
+          1.1493,
+          1.0807,
+          1.0081
+        ]
+      }
+    },
+    {
+      "name": "NPZ field shape and initial moisture_dry_basis",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full CSV moisture_dry_basis",
+      "passed": true,
+      "details": {
+        "shape": [
+          10801,
+          22
+        ],
+        "max_abs": 0.0,
+        "header": "time_s,r=0.0cm,r=0.1cm,r=0.2cm,r=0.3cm,r=0.4cm,r=0.5cm,r=0.6cm,r=0.7cm,r=0.8cm,r=0.9cm,r=1.0cm,r=1.1cm,r=1.2cm,r=1.3cm,r=1.4cm,r=1.5cm,r=1.6cm,r=1.7cm,r=1.8cm,r=1.9cm,r=2.0cm"
+      }
+    },
+    {
+      "name": "paper CSV moisture_dry_basis",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "paper Markdown moisture_dry_basis",
+      "passed": true,
+      "details": {
+        "rows": 6,
+        "values": 30,
+        "tokens": [
+          [
+            "0.5",
+            "2.5499",
+            "2.5489",
+            "2.5256",
+            "2.3257",
+            "1.6486"
+          ],
+          [
+            "1.0",
+            "2.5257",
+            "2.4948",
+            "2.3578",
+            "2.0230",
+            "1.4711"
+          ],
+          [
+            "1.5",
+            "2.3861",
+            "2.3256",
+            "2.1344",
+            "1.8020",
+            "1.3476"
+          ],
+          [
+            "2.0",
+            "2.1709",
+            "2.1084",
+            "1.9236",
+            "1.6259",
+            "1.2311"
+          ],
+          [
+            "2.5",
+            "1.9566",
+            "1.9006",
+            "1.7360",
+            "1.4720",
+            "1.1166"
+          ],
+          [
+            "3.0",
+            "1.7662",
+            "1.7165",
+            "1.5702",
+            "1.3333",
+            "1.0081"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "summary endpoint and average values",
+      "passed": true,
+      "details": {
+        "recomputed": {
+          "T_center": 49.84949558362714,
+          "T_surface": 49.96641293435914,
+          "C_center": 1.7661771010384424,
+          "C_surface": 1.008123124194578,
+          "mean_T": 49.90432863692265,
+          "mean_C": 1.382527057311269,
+          "effective_water_reduction_percent": 45.783252654460036
+        }
+      }
+    },
+    {
+      "name": "summary physical field checks",
+      "passed": true,
+      "details": {
+        "T_min": 27.99999999999999,
+        "T_max": 49.96641293435914,
+        "C_min": 1.008123124194578,
+        "C_max": 2.550000000000002,
+        "C_min_space_difference": -0.23969851019778377,
+        "C_max_unexpected_radial_increase": 2.6645352591003757e-15,
+        "T_max_above_current_ambient": 0.08650536418308974,
+        "initial_T_error": 0.0,
+        "initial_C_error": 0.0
+      }
+    },
+    {
+      "name": "summary matches validation shared fields",
+      "passed": true,
+      "details": [
+        "model",
+        "output_scope",
+        "method",
+        "total_values",
+        "precision",
+        "values_3h",
+        "field_checks"
+      ]
+    },
+    {
+      "name": "counts across metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "recorded Excel audit counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "recorded Excel audit hash",
+      "passed": true,
+      "details": {
+        "sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0",
+        "git_blob_sha1": "8fedcea86bc806cca1eaab25b23e962ef847a018",
+        "bytes": 2501564
+      }
+    },
+    {
+      "name": "manifest available bytes and hashes",
+      "passed": true,
+      "details": {
+        "listed": 144,
+        "duplicate_paths": 0,
+        "present_and_matched": 118,
+        "mismatched": [],
+        "missing": [
+          {
+            "path": "output/validation/fv_n640.npz",
+            "bytes": 3363320,
+            "sha256": "e996184ff8ea6ba6a60a2b986a9630c8c51e05079e55011065a068e6184e1799"
+          },
+          {
+            "path": "output/validation/fv_n80.npz",
+            "bytes": 3314712,
+            "sha256": "f48c5a0486d0050fba04698aa9e003edb3c8f48746819db81df9cdc7f8f2cb80"
+          },
+          {
+            "path": "output/validation/sensitivity_hm_0.8.npz",
+            "bytes": 3321368,
+            "sha256": "9bf6144823f8185b726ffe5e83107f6c824d1c0d8254a8e07f9b255c4fc16923"
+          },
+          {
+            "path": "output/validation/fv_n1280_time_tight.npz",
+            "bytes": 3418451,
+            "sha256": "ae2f4b1a456209b4c4dbdd42019fb537733d289cae36c91e58eec4d03a338f94"
+          },
+          {
+            "path": "output/validation/axisymmetric_20_80.npz",
+            "bytes": 6437206,
+            "sha256": "77f3aa81d3fc107857438923dd726579d9c20eac9c1dfa892155edb4eb0828bc"
+          },
+          {
+            "path": "output/validation/sensitivity_freeze_all_initial.npz",
+            "bytes": 3318276,
+            "sha256": "068f7ac3f445ffdcac7171802b47a52b9985eb720802154e8644b92932546447"
+          },
+          {
+            "path": "output/validation/fv_n320.npz",
+            "bytes": 3335731,
+            "sha256": "666659462262572e626750935a81210c21bf0bb2292874fbcab54a962d5d4c3a"
+          },
+          {
+            "path": "output/validation/kelvin_invariance.npz",
+            "bytes": 3290891,
+            "sha256": "67fd25da40007b80ffeb88f55375c8108578966e85a7b0c594bef3dda5b4e895"
+          },
+          {
+            "path": "output/validation/sensitivity_hm_1.2.npz",
+            "bytes": 3346471,
+            "sha256": "d6348ba4180a6dee538a711120e6187814449d5984071a36e72c03d3bbed1b16"
+          },
+          {
+            "path": "output/validation/fv_n160.npz",
+            "bytes": 3320769,
+            "sha256": "0700246c2d0218d497b668d54fa8e8e189f0f2c7467f627bca27767157e8dfee"
+          },
+          {
+            "path": "output/validation/constant_coefficient_bessel.npz",
+            "bytes": 144862,
+            "sha256": "a65b64a6e882b867cf24e49e2c667e693f933773e3a9ad88b382d34f45bf7ddb"
+          },
+          {
+            "path": "output/validation/cheb_n128.npz",
+            "bytes": 3320859,
+            "sha256": "7e0689546cfeb2ebed964ebcf2c12c36e20720420c79477f57e611d13bb3e315"
+          },
+          {
+            "path": "output/validation/fv_n2560.npz",
+            "bytes": 3524224,
+            "sha256": "731366ba979283c07e3b80def058d5f629d17f176ed1e333beb9a63e1fa87eb2"
+          },
+          {
+            "path": "output/validation/fv_n20.npz",
+            "bytes": 3320103,
+            "sha256": "6e671f5e20fc2084505bed93c7a22f28486022cd8e99dda54e33ad6ed6e888d0"
+          },
+          {
+            "path": "output/validation/fv_n1280.npz",
+            "bytes": 3421878,
+            "sha256": "791049439c66aefab33f1672d7ceea2114e12abc968b9dda02e080a46431d18e"
+          },
+          {
+            "path": "output/validation/axisymmetric_paired1d_40.npz",
+            "bytes": 3314309,
+            "sha256": "2456d826c6bf00b098b3a9b046dd5fe51f4aadd95cf8b4634769e86cb7e4e6e3"
+          },
+          {
+            "path": "output/validation/axisymmetric_40_80.npz",
+            "bytes": 6560457,
+            "sha256": "4b63b4c56f127b2b92a185e752fe4953f621bc73969cbe32c10eed089a43cc4d"
+          },
+          {
+            "path": "output/validation/sensitivity_pchip_all241.npz",
+            "bytes": 3364441,
+            "sha256": "55fea9b2fea10c9ebf297b4fbcd1cbe6d16f6ffdd47b587f31e87324889bfd13"
+          },
+          {
+            "path": "output/validation/axisymmetric_paired1d_20.npz",
+            "bytes": 3320075,
+            "sha256": "bf5a2e91ef6c6f753acc9e6a9399fb09f487cb22efa1c80ddb292ee2265063fa"
+          },
+          {
+            "path": "output/validation/sensitivity_hT_1.2.npz",
+            "bytes": 3334016,
+            "sha256": "889e36bccee53eb2549316ece37f6cb279801298aac2a25fd359671aec361d70"
+          },
+          {
+            "path": "output/validation/axisymmetric_20_40.npz",
+            "bytes": 6369475,
+            "sha256": "3c187757dad0490454bf8a97f8dc228742407708d277c9b1e582c9dda3a334e9"
+          },
+          {
+            "path": "output/validation/cheb_n192.npz",
+            "bytes": 3327159,
+            "sha256": "56050165e3514fd40cd8824f863c2ffd8e9af5106088135820f558ec14b9edeb"
+          },
+          {
+            "path": "output/validation/fv_n40.npz",
+            "bytes": 3314475,
+            "sha256": "d053300fe498bdfc9f29d9c2477f67984cb7516517193354cf50991098e6cc9a"
+          },
+          {
+            "path": "output/validation/constant_coefficient_spectral.npz",
+            "bytes": 156283,
+            "sha256": "87e76f3a7551dbe598586d7564a7942edf676da37b8c854a63138a1b4d906fa9"
+          },
+          {
+            "path": "output/validation/sensitivity_hT_0.8.npz",
+            "bytes": 3335405,
+            "sha256": "5dc13923600ca44d71a34da763ad855b09f6672a037f16a5413c3a6bb70c64f3"
+          },
+          {
+            "path": "output/validation/sensitivity_baseline.npz",
+            "bytes": 3334979,
+            "sha256": "4e326618bc658a412c5c8c9b579adc01c5427296f6b311e3bee4eccf83ba44dc"
+          }
+        ],
+        "unlisted": [
+          "evidence/delivery_manifest.json"
+        ],
+        "split_arrays_declared": true,
+        "missing_bytes": 89930195,
+        "all_missing_are_validation_npz": true
+      }
+    },
+    {
+      "name": "manifest absent files limited to declared array split",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "figure manifest files",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "paper image references",
+      "passed": true,
+      "details": [
+        "figures/01_environment_T.png",
+        "figures/02_environment_C.png",
+        "figures/03_temperature_time.png",
+        "figures/04_moisture_time.png",
+        "figures/05_temperature_radius.png",
+        "figures/06_moisture_radius.png",
+        "figures/07_grid_temperature.png",
+        "figures/08_grid_moisture.png",
+        "figures/09_end_effect_T.png",
+        "figures/10_end_effect_C.png"
+      ]
+    },
+    {
+      "name": "paper no unresolved generation tokens",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "JSON no NaN/Infinity",
+      "passed": true,
+      "details": []
+    },
+    {
+      "name": "GitHub source read blob records match pinned local Git objects",
+      "passed": true,
+      "details": [
+        {
+          "path": "README.md",
+          "recorded_blob": "e29466ca8838feb44be8ff4cb46fc1d280dd8e04",
+          "local_commit_blob": "e29466ca8838feb44be8ff4cb46fc1d280dd8e04",
+          "match": true
+        },
+        {
+          "path": "readable/README.md",
+          "recorded_blob": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+          "local_commit_blob": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+          "match": true
+        },
+        {
+          "path": "readable/QUALITY.md",
+          "recorded_blob": "29c9a22207711787316803dd7e7b078e0829c44f",
+          "local_commit_blob": "29c9a22207711787316803dd7e7b078e0829c44f",
+          "match": true
+        },
+        {
+          "path": "readable/problem/pages/002.md",
+          "recorded_blob": "04b779f2d63392012f2b82af26805df82935ac6c",
+          "local_commit_blob": "04b779f2d63392012f2b82af26805df82935ac6c",
+          "match": true
+        },
+        {
+          "path": "q1_complete_delivery/q1_delivery/README.md",
+          "recorded_blob": "38eb3b99e84520b1b8c6bbfec8cb68896fecc732",
+          "local_commit_blob": "38eb3b99e84520b1b8c6bbfec8cb68896fecc732",
+          "match": true
+        },
+        {
+          "path": "q1_complete_delivery/q1_delivery/run_all.py",
+          "recorded_blob": "081c005b3b086b9fe942c49ad818b33ea1b67dcb",
+          "local_commit_blob": "081c005b3b086b9fe942c49ad818b33ea1b67dcb",
+          "match": true
+        },
+        {
+          "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+          "recorded_blob": "02adff297ad8256bac1c32afc155a34b8af3ecbd",
+          "local_commit_blob": "02adff297ad8256bac1c32afc155a34b8af3ecbd",
+          "match": true
+        },
+        {
+          "path": "q1_complete_delivery/q1_delivery/output/delivery_summary.json",
+          "recorded_blob": "b7e3a30ae6a1dc29befe1ce9c7eea8c9d526cfb5",
+          "local_commit_blob": "b7e3a30ae6a1dc29befe1ce9c7eea8c9d526cfb5",
+          "match": true
+        },
+        {
+          "path": "review_q1_20260910/README.md",
+          "recorded_blob": "e459e87ea464f5e63d64a329d926c071b686557e",
+          "local_commit_blob": "e459e87ea464f5e63d64a329d926c071b686557e",
+          "match": true
+        },
+        {
+          "path": "review_q1_20260910/第一问审核报告.md",
+          "status": "no recorded blob hash; partial read explicitly disclosed"
+        },
+        {
+          "path": "review_q1_20260910/reproduced/reproduction_audit.json",
+          "recorded_blob": "a86c46505a25d4769d7d1fd3f35dc1c1f678bf2d",
+          "local_commit_blob": "a86c46505a25d4769d7d1fd3f35dc1c1f678bf2d",
+          "match": true
+        },
+        {
+          "path": "readable/papers/adrover-2020/pages/006.md",
+          "recorded_blob": "815843170be14962fc3da8e2b22e32afe769d2ed",
+          "local_commit_blob": "815843170be14962fc3da8e2b22e32afe769d2ed",
+          "match": true
+        },
+        {
+          "path": "readable/papers/da-silva-2014/pages/004.md",
+          "recorded_blob": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+          "local_commit_blob": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+          "match": true
+        }
+      ]
+    },
+    {
+      "name": "original input bytes match pinned Git blobs",
+      "passed": true,
+      "details": [
+        {
+          "path": "A题/A题.pdf",
+          "blob": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+          "match": true
+        },
+        {
+          "path": "A题/附件/附件1.xlsx",
+          "blob": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+          "match": true
+        },
+        {
+          "path": "A题/附件/附件3/result2.xlsx",
+          "blob": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+          "match": true
+        }
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "repository_path": "A题/A题.pdf",
+      "delivery_path": "inputs/题目原件.pdf",
+      "actual": {
+        "bytes": 553320,
+        "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+        "git_blob_sha1": "c492bcd60b55904dc2bf63199f7568756f1120d1"
+      },
+      "original": {
+        "bytes": 553320,
+        "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+        "git_blob_sha1": "c492bcd60b55904dc2bf63199f7568756f1120d1"
+      },
+      "matches_original": true,
+      "matches_record": true,
+      "record_remote_blob_matches_bytes": true
+    },
+    {
+      "repository_path": "A题/附件/附件1.xlsx",
+      "delivery_path": "inputs/附件1.xlsx",
+      "actual": {
+        "bytes": 16586,
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33"
+      },
+      "original": {
+        "bytes": 16586,
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33"
+      },
+      "matches_original": true,
+      "matches_record": true,
+      "record_remote_blob_matches_bytes": true
+    },
+    {
+      "repository_path": "A题/附件/附件3/result2.xlsx",
+      "delivery_path": "inputs/result2_template.xlsx",
+      "actual": {
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+        "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb"
+      },
+      "original": {
+        "bytes": 10073,
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+        "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb"
+      },
+      "matches_original": true,
+      "matches_record": true,
+      "record_remote_blob_matches_bytes": true
+    }
+  ],
+  "input_schema": {
+    "sheets": [
+      "Sheet1"
+    ],
+    "dimension": "A1:C242",
+    "headings": [
+      "时间",
+      "温度",
+      "水分浓度"
+    ],
+    "records": 241,
+    "first_3h_records": 181,
+    "time_range_s": [
+      0.0,
+      14400.0
+    ],
+    "steps_s": [
+      60.0
+    ],
+    "temperature_minmax": [
+      28.0,
+      50.246
+    ],
+    "environmental_moisture_minmax": [
+      0.01963,
+      0.05025
+    ],
+    "last_record": [
+      14400.0,
+      50.165,
+      0.04986
+    ]
+  },
+  "template_schema": [
+    {
+      "name": "温度",
+      "dimension": "A1:F5",
+      "cells": {
+        "A1": "时间\\到药材中心的距离",
+        "B1": 0.0,
+        "C1": 0.1,
+        "D1": 0.2,
+        "E1": "…",
+        "F1": 2.0,
+        "A2": 1.0,
+        "A3": 2.0,
+        "A4": 3.0,
+        "A5": "…"
+      }
+    },
+    {
+      "name": "水分浓度",
+      "dimension": "A1:F5",
+      "cells": {
+        "A1": "时间\\到药材中心的距离",
+        "B1": 0.0,
+        "C1": 0.1,
+        "D1": 0.2,
+        "E1": "…",
+        "F1": 2.0,
+        "A2": 1.0,
+        "A3": 2.0,
+        "A4": 3.0,
+        "A5": "…"
+      }
+    }
+  ],
+  "raw_hash": {
+    "bytes": 3299005,
+    "sha256": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec",
+    "git_blob_sha1": "077e622416f048d868c6239b3515d370a4946fae"
+  },
+  "workbook": [
+    {
+      "sheet": "温度",
+      "dimension_tag": null,
+      "actual_last_cell": "V10801",
+      "nonempty_cells": 237622,
+      "result_values": 226800,
+      "unexpected_cells": [],
+      "nonfinite_results": 0,
+      "non_numeric_results": 0,
+      "formula_count": 0,
+      "incorrect_decimal_formats": 0,
+      "rounded_NPZ_mismatches": 0,
+      "max_rounding_error": 4.999990407128507e-05,
+      "A1": "时间/s；距离/cm",
+      "first_row": [
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0,
+        28.0001
+      ],
+      "last_row": [
+        49.8495,
+        49.8497,
+        49.8504,
+        49.8516,
+        49.8532,
+        49.8553,
+        49.858,
+        49.8613,
+        49.8651,
+        49.8695,
+        49.8746,
+        49.8803,
+        49.8868,
+        49.8938,
+        49.9016,
+        49.9101,
+        49.9194,
+        49.9296,
+        49.9407,
+        49.9529,
+        49.9664
+      ]
+    },
+    {
+      "sheet": "水分浓度",
+      "dimension_tag": null,
+      "actual_last_cell": "V10801",
+      "nonempty_cells": 237622,
+      "result_values": 226800,
+      "unexpected_cells": [],
+      "nonfinite_results": 0,
+      "non_numeric_results": 0,
+      "formula_count": 0,
+      "incorrect_decimal_formats": 0,
+      "rounded_NPZ_mismatches": 0,
+      "max_rounding_error": 4.999987746057144e-05,
+      "A1": "时间/s；距离/cm",
+      "first_row": [
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.55,
+        2.5198
+      ],
+      "last_row": [
+        1.7662,
+        1.7642,
+        1.7582,
+        1.7483,
+        1.7344,
+        1.7165,
+        1.6948,
+        1.6693,
+        1.64,
+        1.6069,
+        1.5702,
+        1.5299,
+        1.4859,
+        1.4385,
+        1.3876,
+        1.3333,
+        1.2754,
+        1.2141,
+        1.1493,
+        1.0807,
+        1.0081
+      ]
+    }
+  ],
+  "paper_tables": [
+    {
+      "field": "temperature_degC",
+      "hours": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "values": [
+        [
+          32.1892,
+          32.3821,
+          32.9659,
+          33.9608,
+          35.413
+        ],
+        [
+          40.3816,
+          40.5536,
+          41.0605,
+          41.8782,
+          42.9976
+        ],
+        [
+          45.8468,
+          45.9348,
+          46.193,
+          46.6051,
+          47.14
+        ],
+        [
+          48.4502,
+          48.4881,
+          48.5984,
+          48.7736,
+          49.0033
+        ],
+        [
+          49.467,
+          49.4792,
+          49.5136,
+          49.5653,
+          49.6609
+        ],
+        [
+          49.8495,
+          49.8553,
+          49.8746,
+          49.9101,
+          49.9664
+        ]
+      ]
+    },
+    {
+      "field": "moisture_dry_basis",
+      "hours": [
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0
+      ],
+      "values": [
+        [
+          2.5499,
+          2.5489,
+          2.5256,
+          2.3257,
+          1.6486
+        ],
+        [
+          2.5257,
+          2.4948,
+          2.3578,
+          2.023,
+          1.4711
+        ],
+        [
+          2.3861,
+          2.3256,
+          2.1344,
+          1.802,
+          1.3476
+        ],
+        [
+          2.1709,
+          2.1084,
+          1.9236,
+          1.6259,
+          1.2311
+        ],
+        [
+          1.9566,
+          1.9006,
+          1.736,
+          1.472,
+          1.1166
+        ],
+        [
+          1.7662,
+          1.7165,
+          1.5702,
+          1.3333,
+          1.0081
+        ]
+      ]
+    }
+  ],
+  "values_3h": {
+    "T_center": 49.84949558362714,
+    "T_surface": 49.96641293435914,
+    "C_center": 1.7661771010384424,
+    "C_surface": 1.008123124194578,
+    "mean_T": 49.90432863692265,
+    "mean_C": 1.382527057311269,
+    "effective_water_reduction_percent": 45.783252654460036
+  },
+  "manifest": {
+    "listed": 144,
+    "duplicate_paths": 0,
+    "present_and_matched": 118,
+    "mismatched": [],
+    "missing": [
+      {
+        "path": "output/validation/fv_n640.npz",
+        "bytes": 3363320,
+        "sha256": "e996184ff8ea6ba6a60a2b986a9630c8c51e05079e55011065a068e6184e1799"
+      },
+      {
+        "path": "output/validation/fv_n80.npz",
+        "bytes": 3314712,
+        "sha256": "f48c5a0486d0050fba04698aa9e003edb3c8f48746819db81df9cdc7f8f2cb80"
+      },
+      {
+        "path": "output/validation/sensitivity_hm_0.8.npz",
+        "bytes": 3321368,
+        "sha256": "9bf6144823f8185b726ffe5e83107f6c824d1c0d8254a8e07f9b255c4fc16923"
+      },
+      {
+        "path": "output/validation/fv_n1280_time_tight.npz",
+        "bytes": 3418451,
+        "sha256": "ae2f4b1a456209b4c4dbdd42019fb537733d289cae36c91e58eec4d03a338f94"
+      },
+      {
+        "path": "output/validation/axisymmetric_20_80.npz",
+        "bytes": 6437206,
+        "sha256": "77f3aa81d3fc107857438923dd726579d9c20eac9c1dfa892155edb4eb0828bc"
+      },
+      {
+        "path": "output/validation/sensitivity_freeze_all_initial.npz",
+        "bytes": 3318276,
+        "sha256": "068f7ac3f445ffdcac7171802b47a52b9985eb720802154e8644b92932546447"
+      },
+      {
+        "path": "output/validation/fv_n320.npz",
+        "bytes": 3335731,
+        "sha256": "666659462262572e626750935a81210c21bf0bb2292874fbcab54a962d5d4c3a"
+      },
+      {
+        "path": "output/validation/kelvin_invariance.npz",
+        "bytes": 3290891,
+        "sha256": "67fd25da40007b80ffeb88f55375c8108578966e85a7b0c594bef3dda5b4e895"
+      },
+      {
+        "path": "output/validation/sensitivity_hm_1.2.npz",
+        "bytes": 3346471,
+        "sha256": "d6348ba4180a6dee538a711120e6187814449d5984071a36e72c03d3bbed1b16"
+      },
+      {
+        "path": "output/validation/fv_n160.npz",
+        "bytes": 3320769,
+        "sha256": "0700246c2d0218d497b668d54fa8e8e189f0f2c7467f627bca27767157e8dfee"
+      },
+      {
+        "path": "output/validation/constant_coefficient_bessel.npz",
+        "bytes": 144862,
+        "sha256": "a65b64a6e882b867cf24e49e2c667e693f933773e3a9ad88b382d34f45bf7ddb"
+      },
+      {
+        "path": "output/validation/cheb_n128.npz",
+        "bytes": 3320859,
+        "sha256": "7e0689546cfeb2ebed964ebcf2c12c36e20720420c79477f57e611d13bb3e315"
+      },
+      {
+        "path": "output/validation/fv_n2560.npz",
+        "bytes": 3524224,
+        "sha256": "731366ba979283c07e3b80def058d5f629d17f176ed1e333beb9a63e1fa87eb2"
+      },
+      {
+        "path": "output/validation/fv_n20.npz",
+        "bytes": 3320103,
+        "sha256": "6e671f5e20fc2084505bed93c7a22f28486022cd8e99dda54e33ad6ed6e888d0"
+      },
+      {
+        "path": "output/validation/fv_n1280.npz",
+        "bytes": 3421878,
+        "sha256": "791049439c66aefab33f1672d7ceea2114e12abc968b9dda02e080a46431d18e"
+      },
+      {
+        "path": "output/validation/axisymmetric_paired1d_40.npz",
+        "bytes": 3314309,
+        "sha256": "2456d826c6bf00b098b3a9b046dd5fe51f4aadd95cf8b4634769e86cb7e4e6e3"
+      },
+      {
+        "path": "output/validation/axisymmetric_40_80.npz",
+        "bytes": 6560457,
+        "sha256": "4b63b4c56f127b2b92a185e752fe4953f621bc73969cbe32c10eed089a43cc4d"
+      },
+      {
+        "path": "output/validation/sensitivity_pchip_all241.npz",
+        "bytes": 3364441,
+        "sha256": "55fea9b2fea10c9ebf297b4fbcd1cbe6d16f6ffdd47b587f31e87324889bfd13"
+      },
+      {
+        "path": "output/validation/axisymmetric_paired1d_20.npz",
+        "bytes": 3320075,
+        "sha256": "bf5a2e91ef6c6f753acc9e6a9399fb09f487cb22efa1c80ddb292ee2265063fa"
+      },
+      {
+        "path": "output/validation/sensitivity_hT_1.2.npz",
+        "bytes": 3334016,
+        "sha256": "889e36bccee53eb2549316ece37f6cb279801298aac2a25fd359671aec361d70"
+      },
+      {
+        "path": "output/validation/axisymmetric_20_40.npz",
+        "bytes": 6369475,
+        "sha256": "3c187757dad0490454bf8a97f8dc228742407708d277c9b1e582c9dda3a334e9"
+      },
+      {
+        "path": "output/validation/cheb_n192.npz",
+        "bytes": 3327159,
+        "sha256": "56050165e3514fd40cd8824f863c2ffd8e9af5106088135820f558ec14b9edeb"
+      },
+      {
+        "path": "output/validation/fv_n40.npz",
+        "bytes": 3314475,
+        "sha256": "d053300fe498bdfc9f29d9c2477f67984cb7516517193354cf50991098e6cc9a"
+      },
+      {
+        "path": "output/validation/constant_coefficient_spectral.npz",
+        "bytes": 156283,
+        "sha256": "87e76f3a7551dbe598586d7564a7942edf676da37b8c854a63138a1b4d906fa9"
+      },
+      {
+        "path": "output/validation/sensitivity_hT_0.8.npz",
+        "bytes": 3335405,
+        "sha256": "5dc13923600ca44d71a34da763ad855b09f6672a037f16a5413c3a6bb70c64f3"
+      },
+      {
+        "path": "output/validation/sensitivity_baseline.npz",
+        "bytes": 3334979,
+        "sha256": "4e326618bc658a412c5c8c9b579adc01c5427296f6b311e3bee4eccf83ba44dc"
+      }
+    ],
+    "unlisted": [
+      "evidence/delivery_manifest.json"
+    ],
+    "split_arrays_declared": true,
+    "missing_bytes": 89930195,
+    "all_missing_are_validation_npz": true
+  },
+  "source_access_git_checks": [
+    {
+      "path": "README.md",
+      "recorded_blob": "e29466ca8838feb44be8ff4cb46fc1d280dd8e04",
+      "local_commit_blob": "e29466ca8838feb44be8ff4cb46fc1d280dd8e04",
+      "match": true
+    },
+    {
+      "path": "readable/README.md",
+      "recorded_blob": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+      "local_commit_blob": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+      "match": true
+    },
+    {
+      "path": "readable/QUALITY.md",
+      "recorded_blob": "29c9a22207711787316803dd7e7b078e0829c44f",
+      "local_commit_blob": "29c9a22207711787316803dd7e7b078e0829c44f",
+      "match": true
+    },
+    {
+      "path": "readable/problem/pages/002.md",
+      "recorded_blob": "04b779f2d63392012f2b82af26805df82935ac6c",
+      "local_commit_blob": "04b779f2d63392012f2b82af26805df82935ac6c",
+      "match": true
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/README.md",
+      "recorded_blob": "38eb3b99e84520b1b8c6bbfec8cb68896fecc732",
+      "local_commit_blob": "38eb3b99e84520b1b8c6bbfec8cb68896fecc732",
+      "match": true
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/run_all.py",
+      "recorded_blob": "081c005b3b086b9fe942c49ad818b33ea1b67dcb",
+      "local_commit_blob": "081c005b3b086b9fe942c49ad818b33ea1b67dcb",
+      "match": true
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "recorded_blob": "02adff297ad8256bac1c32afc155a34b8af3ecbd",
+      "local_commit_blob": "02adff297ad8256bac1c32afc155a34b8af3ecbd",
+      "match": true
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/delivery_summary.json",
+      "recorded_blob": "b7e3a30ae6a1dc29befe1ce9c7eea8c9d526cfb5",
+      "local_commit_blob": "b7e3a30ae6a1dc29befe1ce9c7eea8c9d526cfb5",
+      "match": true
+    },
+    {
+      "path": "review_q1_20260910/README.md",
+      "recorded_blob": "e459e87ea464f5e63d64a329d926c071b686557e",
+      "local_commit_blob": "e459e87ea464f5e63d64a329d926c071b686557e",
+      "match": true
+    },
+    {
+      "path": "review_q1_20260910/第一问审核报告.md",
+      "status": "no recorded blob hash; partial read explicitly disclosed"
+    },
+    {
+      "path": "review_q1_20260910/reproduced/reproduction_audit.json",
+      "recorded_blob": "a86c46505a25d4769d7d1fd3f35dc1c1f678bf2d",
+      "local_commit_blob": "a86c46505a25d4769d7d1fd3f35dc1c1f678bf2d",
+      "match": true
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/006.md",
+      "recorded_blob": "815843170be14962fc3da8e2b22e32afe769d2ed",
+      "local_commit_blob": "815843170be14962fc3da8e2b22e32afe769d2ed",
+      "match": true
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/004.md",
+      "recorded_blob": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+      "local_commit_blob": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+      "match": true
+    }
+  ],
+  "pro_recorded_reproduction": {
+    "input_hashes": {
+      "附件1.xlsx": {
+        "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+        "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+        "bytes": 16586
+      },
+      "result2_template.xlsx": {
+        "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+        "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+        "bytes": 10073
+      }
+    },
+    "stages": {
+      "mesh": {
+        "passed": true,
+        "elapsed_s": 123.61890342599963
+      },
+      "reference": {
+        "passed": true,
+        "elapsed_s": 52.11635449200003
+      },
+      "tests": {
+        "passed": true,
+        "elapsed_s": 24.059242691999316
+      },
+      "time": {
+        "passed": true,
+        "elapsed_s": 25.19318671400015
+      },
+      "sensitivity": {
+        "passed": true,
+        "elapsed_s": 40.20332965699981
+      },
+      "geometry": {
+        "passed": true,
+        "elapsed_s": 114.33631220900043
+      },
+      "assemble": {
+        "passed": true,
+        "elapsed_s": 7.7427516359994115
+      },
+      "excel": {
+        "passed": true,
+        "elapsed_s": 70.5077447879994
+      },
+      "report": {
+        "passed": true,
+        "elapsed_s": 5.7757776360003845
+      },
+      "audit": {
+        "passed": true,
+        "elapsed_s": 3.3296166529999027
+      }
+    },
+    "complete": true,
+    "model_version": "q2-effective-local-v1",
+    "excel_engine": "artifact",
+    "original_inputs_unchanged": true,
+    "compared_with_delivered": {
+      "temperature_degC": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "index": [
+          0,
+          0
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 0.0
+      },
+      "moisture_dry_basis": {
+        "max_abs": 0.0,
+        "rms": 0.0,
+        "index": [
+          0,
+          0
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 0.0
+      }
+    },
+    "total_stage_elapsed_s": 466.88321990299846,
+    "executed_command": [
+      "python",
+      "run_all.py",
+      "--out",
+      "q2_reproduced",
+      "--excel-engine",
+      "artifact"
+    ],
+    "returncode": 0,
+    "report_text_identical": false,
+    "report_text_difference_scope": "Only small independently recomputed reference/error diagnostics; all 60 paper values and 453600 workbook results pass both audits.",
+    "reference_repeat_max_abs": {
+      "temperature_degC": 8.714096111361869e-11,
+      "moisture_dry_basis": 1.7037482535897652e-12
+    }
+  },
+  "limits": [
+    "26 per-grid/reference/sensitivity/2D NPZ files are listed but absent from this directory; README and manifest explicitly disclose separate archive. Independent recomputation of those validation statistics requires that archive or fresh solver runs.",
+    "This audit verifies workbook/formal-array/CSV/paper consistency, not the physical validity of the model or actual historical GitHub tool activity."
+  ]
+}

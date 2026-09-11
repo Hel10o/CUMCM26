@@ -1,0 +1,142 @@
+{
+  "model": "S(C)*T_t=div(k(C)*grad(T)); C_t=div(D(TK,C)*grad(C)); midplane equivalent Robin",
+  "output_scope": "1..10800 seconds; working interpretation of the 3-hour Q2 output, not days-long full drying",
+  "method": "Vertex-centred finite volume + local coupled BDF + Richardson (4*u_2560-u_1280)/3",
+  "total_values": 453600,
+  "precision": {
+    "temperature_degC": {
+      "final_vs_independent": {
+        "max_abs": 1.0470273537066532e-09,
+        "rms": 1.266090576981046e-10,
+        "index": [
+          9480,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 9481.0,
+        "radius_cm": 2.0
+      },
+      "table_vs_independent": {
+        "max_abs": 3.511928525767871e-10,
+        "rms": 1.6786988851075753e-10,
+        "index": [
+          4,
+          4
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 9000.0,
+        "radius_cm": 2.0
+      },
+      "Richardson_1280_vs_2560": {
+        "max_abs": 1.1817178346973378e-09,
+        "rms": 1.2250377047862093e-10,
+        "index": [
+          10680,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 10681.0,
+        "radius_cm": 2.0
+      },
+      "spectral_128_vs_192": {
+        "max_abs": 7.674572088944842e-11,
+        "rms": 4.075031228737622e-12,
+        "index": [
+          1383,
+          19
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1384.0,
+        "radius_cm": 1.9000000000000001
+      },
+      "fine_FV_vs_independent": {
+        "max_abs": 1.0331782362982267e-07,
+        "rms": 2.3040855627764375e-08,
+        "index": [
+          2939,
+          20
+        ],
+        "four_decimal_mismatches": 36,
+        "time_s": 2940.0,
+        "radius_cm": 2.0
+      }
+    },
+    "moisture_dry_basis": {
+      "final_vs_independent": {
+        "max_abs": 8.477118473848577e-08,
+        "rms": 1.9457772966217828e-10,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      },
+      "table_vs_independent": {
+        "max_abs": 8.818279439992693e-12,
+        "rms": 3.6145234187032356e-12,
+        "index": [
+          1,
+          0
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 3600.0,
+        "radius_cm": 0.0
+      },
+      "Richardson_1280_vs_2560": {
+        "max_abs": 1.3516514494327225e-06,
+        "rms": 3.088365896337819e-09,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      },
+      "spectral_128_vs_192": {
+        "max_abs": 1.2294609774698984e-12,
+        "rms": 4.187114984262574e-14,
+        "index": [
+          6437,
+          20
+        ],
+        "four_decimal_mismatches": 0,
+        "time_s": 6438.0,
+        "radius_cm": 2.0
+      },
+      "fine_FV_vs_independent": {
+        "max_abs": 1.9902774864632988e-05,
+        "rms": 1.0328235650385885e-07,
+        "index": [
+          0,
+          20
+        ],
+        "four_decimal_mismatches": 45,
+        "time_s": 1.0,
+        "radius_cm": 2.0
+      }
+    }
+  },
+  "values_3h": {
+    "T_center": 49.849495583627146,
+    "T_surface": 49.966412934359134,
+    "C_center": 1.7661771010384424,
+    "C_surface": 1.0081231241945778,
+    "mean_T": 49.90432863692265,
+    "mean_C": 1.3825270573112691,
+    "effective_water_reduction_percent": 45.78325265446003
+  },
+  "field_checks": {
+    "T_min": 27.999999999999986,
+    "T_max": 49.966412934359134,
+    "C_min": 1.0081231241945778,
+    "C_max": 2.5500000000000025,
+    "C_min_space_difference": -0.2396985101977842,
+    "C_max_unexpected_radial_increase": 3.9968028886505635e-15,
+    "T_max_above_current_ambient": 0.08650536418308974,
+    "initial_T_error": 0.0,
+    "initial_C_error": 0.0
+  }
+}

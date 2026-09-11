@@ -1,0 +1,106 @@
+{
+  "all_matched": true,
+  "checked": 25,
+  "files": [
+    {
+      "path": "context/q1_moisture_reference.csv",
+      "matched": true
+    },
+    {
+      "path": "context/q1_solver_reference.py",
+      "matched": true
+    },
+    {
+      "path": "context/q1_temperature_reference.csv",
+      "matched": true
+    },
+    {
+      "path": "context/第一问方程与验证_历史tex.txt",
+      "matched": true
+    },
+    {
+      "path": "context/第一问结题核查_原报告.md",
+      "matched": true
+    },
+    {
+      "path": "context/题面提取文本.md",
+      "matched": true
+    },
+    {
+      "path": "evidence/adrover-page-06.png",
+      "matched": true
+    },
+    {
+      "path": "evidence/audit_inputs.py",
+      "matched": true
+    },
+    {
+      "path": "evidence/data_contract_audit.json",
+      "matched": true
+    },
+    {
+      "path": "evidence/package_checks.json",
+      "matched": true
+    },
+    {
+      "path": "evidence/parameter_scales.json",
+      "matched": true
+    },
+    {
+      "path": "evidence/pdf_render_warnings.log",
+      "matched": true
+    },
+    {
+      "path": "evidence/preflight_npz.npz",
+      "matched": true
+    },
+    {
+      "path": "evidence/preflight_q2.py",
+      "matched": true
+    },
+    {
+      "path": "evidence/preflight_results.json",
+      "matched": true
+    },
+    {
+      "path": "evidence/problem-page-2.png",
+      "matched": true
+    },
+    {
+      "path": "evidence/problem-page-4.png",
+      "matched": true
+    },
+    {
+      "path": "inputs/result2_template.xlsx",
+      "matched": true
+    },
+    {
+      "path": "inputs/附件1.xlsx",
+      "matched": true
+    },
+    {
+      "path": "inputs/题目原件.pdf",
+      "matched": true
+    },
+    {
+      "path": "README.md",
+      "matched": true
+    },
+    {
+      "path": "requirements-preflight.txt",
+      "matched": true
+    },
+    {
+      "path": "发给Pro的简短提示词.txt",
+      "matched": true
+    },
+    {
+      "path": "第二问分析与Pro交付说明.md",
+      "matched": true
+    },
+    {
+      "path": "预计算说明.md",
+      "matched": true
+    }
+  ]
+}

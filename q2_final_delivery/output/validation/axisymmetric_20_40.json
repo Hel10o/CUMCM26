@@ -1,0 +1,14 @@
+{
+  "nr": 20,
+  "nz": 40,
+  "end_s": 10800.0,
+  "end_transfer": true,
+  "rtol": 1e-09,
+  "atol": 1e-11,
+  "nfev": 14529,
+  "njev": 205,
+  "nlu": 2042,
+  "geometry": "z in [0,L/2], coupled r-z finite cylinder",
+  "max_step_s": 30.0,
+  "elapsed_s": 13.032164962000024
+}

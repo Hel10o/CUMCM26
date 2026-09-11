@@ -1,0 +1,100 @@
+{
+  "input_hashes": {
+    "附件1.xlsx": {
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "bytes": 16586
+    },
+    "result2_template.xlsx": {
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "bytes": 10073
+    }
+  },
+  "stages": {
+    "mesh": {
+      "passed": true,
+      "elapsed_s": 123.61890342599963
+    },
+    "reference": {
+      "passed": true,
+      "elapsed_s": 52.11635449200003
+    },
+    "tests": {
+      "passed": true,
+      "elapsed_s": 24.059242691999316
+    },
+    "time": {
+      "passed": true,
+      "elapsed_s": 25.19318671400015
+    },
+    "sensitivity": {
+      "passed": true,
+      "elapsed_s": 40.20332965699981
+    },
+    "geometry": {
+      "passed": true,
+      "elapsed_s": 114.33631220900043
+    },
+    "assemble": {
+      "passed": true,
+      "elapsed_s": 7.7427516359994115
+    },
+    "excel": {
+      "passed": true,
+      "elapsed_s": 70.5077447879994
+    },
+    "report": {
+      "passed": true,
+      "elapsed_s": 5.7757776360003845
+    },
+    "audit": {
+      "passed": true,
+      "elapsed_s": 3.3296166529999027
+    }
+  },
+  "complete": true,
+  "model_version": "q2-effective-local-v1",
+  "excel_engine": "artifact",
+  "original_inputs_unchanged": true,
+  "compared_with_delivered": {
+    "temperature_degC": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "index": [
+        0,
+        0
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 1.0,
+      "radius_cm": 0.0
+    },
+    "moisture_dry_basis": {
+      "max_abs": 0.0,
+      "rms": 0.0,
+      "index": [
+        0,
+        0
+      ],
+      "four_decimal_mismatches": 0,
+      "time_s": 1.0,
+      "radius_cm": 0.0
+    }
+  },
+  "total_stage_elapsed_s": 466.88321990299846,
+  "executed_command": [
+    "python",
+    "run_all.py",
+    "--out",
+    "q2_reproduced",
+    "--excel-engine",
+    "artifact"
+  ],
+  "returncode": 0,
+  "report_text_identical": false,
+  "report_text_difference_scope": "Only small independently recomputed reference/error diagnostics; all 60 paper values and 453600 workbook results pass both audits.",
+  "reference_repeat_max_abs": {
+    "temperature_degC": 8.714096111361869e-11,
+    "moisture_dry_basis": 1.7037482535897652e-12
+  }
+}

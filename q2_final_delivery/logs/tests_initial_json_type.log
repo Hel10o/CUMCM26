@@ -1,0 +1,18 @@
+BEGIN UNIT TESTS
+Traceback (most recent call last):
+  File "/mnt/data/q2_work/run_tests.py", line 10, in <module>
+    r=run_unit_tests(env,out);print(json.dumps(r,indent=2),flush=True)
+  File "/mnt/data/q2_final_delivery/source/q2_tests.py", line 127, in run_unit_tests
+    (out/'unit_tests.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+                                       ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ~~~~~~^^^^^
+  File "/usr/lib/python3.13/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.13/json/encoder.py", line 261, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.13/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type bool is not JSON serializable

@@ -1,0 +1,20 @@
+{
+  "figures": [
+    "01_environment_T",
+    "02_environment_C",
+    "03_temperature_time",
+    "04_moisture_time",
+    "05_temperature_radius",
+    "06_moisture_radius",
+    "07_grid_temperature",
+    "08_grid_moisture",
+    "09_end_effect_T",
+    "10_end_effect_C"
+  ],
+  "formats": [
+    "300 dpi PNG",
+    "SVG"
+  ],
+  "colors": "matplotlib defaults",
+  "source": "q2_unrounded.npz and validation arrays"
+}

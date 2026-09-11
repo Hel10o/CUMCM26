@@ -1,0 +1,39 @@
+{
+  "file": "附件1.xlsx",
+  "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+  "bytes": 16586,
+  "sheets": [
+    "Sheet1"
+  ],
+  "count": 241,
+  "headings": [
+    "时间",
+    "温度",
+    "水分浓度"
+  ],
+  "units": [
+    "s",
+    "degC",
+    "kg/kg (environmental basis unspecified)"
+  ],
+  "time_range_s": [
+    0.0,
+    14400.0
+  ],
+  "time_steps_s": [
+    60.0
+  ],
+  "missing_values": 0,
+  "duplicate_times": 0,
+  "first_3h_records": 181,
+  "temperature_minmax": [
+    28.0,
+    50.246
+  ],
+  "environmental_moisture_minmax": [
+    0.01963,
+    0.05025
+  ],
+  "internal_response_observations": false
+}

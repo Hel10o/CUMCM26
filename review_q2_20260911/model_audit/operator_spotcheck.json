@@ -1,0 +1,24 @@
+{
+  "scope": "manufactured smooth states; operator identities and directional Jacobian only; not an independent full solution",
+  "radial_heat_balance_abs": 8.881784197001252e-16,
+  "radial_mass_balance_abs": 3.308722450212111e-24,
+  "radial_jacobian_relative_inf_error": 3.4221774422895777e-16,
+  "kelvin_rhs_max_abs_difference": 1.2347761702002913e-14,
+  "axis_heat_balance_abs": 0.0,
+  "axis_mass_balance_abs": 8.271806125530277e-25,
+  "axis_jacobian_central_difference": [
+    {
+      "step": 0.0001,
+      "relative_inf_error": 6.678209819719769e-10
+    },
+    {
+      "step": 1e-05,
+      "relative_inf_error": 8.186980734658954e-11
+    },
+    {
+      "step": 1e-06,
+      "relative_inf_error": 8.254569691147941e-10
+    }
+  ],
+  "passed": true
+}
