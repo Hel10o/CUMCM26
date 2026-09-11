@@ -33,6 +33,8 @@
 - [2026-09-11 第二问验收报告](review_q2_20260911/第二问验收报告.md)、[机器检查结果](review_q2_20260911/acceptance_checks.json)及[独立数值核查](review_q2_20260911/independent_numeric/独立数值核查.md)。
 - [第二问深化审查提示词](q2_refinement_handoff/第二问深化分析提示词.md)、[简短启动提示词](q2_refinement_handoff/发给Pro的简短提示词.txt)及[交接说明](q2_refinement_handoff/README.md)。
 - [第二问改进复审包 ZIP](第二问_改进复审包.zip)：原 Pro 交付与精选最新验收证据，包内文件可用 [SHA256 清单](q2_refinement_handoff/MANIFEST.sha256) 核验。
+- [第三问 Pro 分析交接](q3_pro_handoff/README.md)、[完整分析与提示词](q3_pro_handoff/第三问分析与Pro交付说明.md)及[简短启动提示词](q3_pro_handoff/发给Pro的简短提示词.txt)。
+- [第三问预分析证据](q3_pro_handoff/预分析结果与限制.md)、[相关论文方法核查](q3_pro_handoff/evidence/literature_review.md)及[第三问交接 ZIP](第三问_Pro分析交付包.zip)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
@@ -45,6 +47,10 @@
 上述结论不等于已模拟数天全过程，也不代表已经验证真实药材的物理预测误差。继续审查应优先分析表面水分边界的含义与可识别性、潜热等扩展的物理闭合、升温与失水对扩散系数的竞争，以及题目要求的时域；详见本仓库的深化审查提示词。已验收原交付和原审核记录保留原样，新分析应写入新的 `q2_refinement_delivery/`。
 
 Pro 可直接从当前 GitHub 仓库读取上述目录。ZIP 是便于上传的精选副本，并未包含全部重复的重跑中间产物；具体省略项见 [omitted_review_files.json](q2_refinement_handoff/omitted_review_files.json)。阅读时记录实际提交版本，并区分原 Pro 文件、本地重算和后续新增材料。
+
+## 第三问当前进度
+
+第三问已完成原题/模板核查、独立数学分析、相关论文方法核对，以及8个长时先导算例。已发现低含水率阶段的通量离散和4h后环境延拓会明显影响所需时长，详见交接说明。先导结果不是最终答案，尚未完成长期独立方法、时间误差和有限圆柱的完整验收，也未生成正式 `result3.xlsx`。请让 Pro 从第三问交接目录继续独立分析并返回新的 `q3_final_delivery/`。
 
 ## 获取大PDF原件
 

@@ -1,0 +1,65 @@
+{
+  "source": "A题/A题.pdf, Appendix 3; R=0.02 m and inherited hm=8e-7 m/s",
+  "interpretation": "Statewise diagnostic scales only; D/hm is an interface length scale, not a measured skin thickness, mesh requirement or final drying time.",
+  "states": [
+    {
+      "T_degC": 28,
+      "C_kgkg": 2.55,
+      "D_m2_s": 5.641680373025668e-09,
+      "alpha_m2_s": 1.448281705704542e-07,
+      "alpha_over_D": 25.67110523717634,
+      "R2_over_D_h": 19.694683811291764,
+      "D_over_hm_m": 0.007052100466282085,
+      "Bi_m_R": 2.836034468826014
+    },
+    {
+      "T_degC": 50,
+      "C_kgkg": 2.55,
+      "D_m2_s": 1.347096821741582e-08,
+      "alpha_m2_s": 1.448281705704542e-07,
+      "alpha_over_D": 10.75113297225469,
+      "R2_over_D_h": 8.248190428321411,
+      "D_over_hm_m": 0.016838710271769777,
+      "Bi_m_R": 1.1877394216782833
+    },
+    {
+      "T_degC": 50,
+      "C_kgkg": 0.15,
+      "D_m2_s": 8.001208146652625e-10,
+      "alpha_m2_s": 2.1466624526400237e-07,
+      "alpha_over_D": 268.2922895260635,
+      "R2_over_D_h": 138.86791728771038,
+      "D_over_hm_m": 0.0010001510183315781,
+      "Bi_m_R": 19.996980089430295
+    },
+    {
+      "T_degC": 50,
+      "C_kgkg": 0.05,
+      "D_m2_s": 1.983301210947583e-12,
+      "alpha_m2_s": 2.1989331786165788e-07,
+      "alpha_over_D": 110872.37614129078,
+      "R2_over_D_h": 56023.316326229826,
+      "D_over_hm_m": 2.4791265136844785e-06,
+      "Bi_m_R": 8067.357550977096
+    },
+    {
+      "T_degC": 50.165,
+      "C_kgkg": 0.04986,
+      "D_m2_s": 1.9456033441153333e-12,
+      "alpha_m2_s": 2.1990114699427618e-07,
+      "alpha_over_D": 113024.65513301497,
+      "R2_over_D_h": 57108.819969485296,
+      "D_over_hm_m": 2.432004180144167e-06,
+      "Bi_m_R": 8223.670075605882
+    }
+  ],
+  "uniform_grid_dr_m": {
+    "128": 0.00015625,
+    "256": 7.8125e-05,
+    "512": 3.90625e-05,
+    "1280": 1.5625e-05,
+    "2560": 7.8125e-06
+  },
+  "four_decimal_hour_quantum_s": 0.36000000000000004,
+  "rounding_half_quantum_s": 0.18000000000000002
+}

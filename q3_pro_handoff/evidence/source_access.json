@@ -1,0 +1,71 @@
+{
+  "checked_date": "2026-09-11",
+  "purpose": "Question 3 method evidence; no search for current contest solutions",
+  "source_policy": "Publisher metadata and local original papers; one additional author manuscript; no original project PDF modified",
+  "sources": [
+    {
+      "id": "da-silva-2014",
+      "doi": "10.1016/j.jfoodeng.2014.05.010",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S0260877414002118",
+      "metadata_verified": ["title", "authors", "2014", "Journal of Food Engineering", "141", "65-73", "doi"],
+      "web_access": "Direct publisher open returned 403; publisher search-index content verified metadata and abstract. DOI direct open returned internal error. No online full-text claim.",
+      "local_source": "分析与文献/1-s2.0-S0260877414002118-main.pdf",
+      "source_sha256": "f366438e9b447e270ae210f0f7e8bcc59bb65c94e850736e8db992e8817deb5b",
+      "hash_matches_readable_manifest": true,
+      "physical_pages": 9,
+      "text_read_pages": [1, 3, 4, 5],
+      "text_scope": "Page 1 metadata; pages 3-5 methods sections 2.2-2.4; not all paper pages read",
+      "visually_verified_pages": [3, 4],
+      "key_locations": ["p3 section2.2 equations1-2 and Figure2", "p4 sections2.2.2-2.3 equations6-14", "p5 section2.4 equations17-18"]
+    },
+    {
+      "id": "chupawa-2022",
+      "doi": "10.3390/foods11244045",
+      "publisher_url": "https://www.mdpi.com/2304-8158/11/24/4045",
+      "publisher_version_url": "https://www.mdpi.com/2304-8158/11/24/4045/notes",
+      "metadata_verified": ["title", "authors", "2022", "Foods", "11(24)", "4045", "doi"],
+      "web_access": "Direct publisher open returned 429; publisher search-index content returned metadata, article excerpts and version notes. DOI direct open returned internal error. Local v2 PDF used for equations.",
+      "local_source": "分析与文献/foods-11-04045-v2.pdf",
+      "source_sha256": "e66167e5a5c7a2ee32fce3bd1aa9230636f8905749303a2377cae85ce178151e",
+      "hash_matches_readable_manifest": true,
+      "physical_pages": 19,
+      "text_read_pages": [1, 3, 4, 5, 6],
+      "text_scope": "Page1 metadata; pages3-6 model, kinetics context and validation discussion; not all paper pages read",
+      "visually_verified_pages": [3],
+      "key_locations": ["p3 section2.1 equations1-6", "p4 temperature and equilibrium-moisture definitions", "p6 section3.1.1 exclusion of shrinkage coupling"],
+      "formula_cautions": ["Equation6 printed sign requires explicit normal convention check", "Equation5 printed scalar/vector form and J/mol enthalpy need independent dimensional closure for dry-basis moisture", "Equation4 Celsius convention differs from equations5-9 Kelvin convention"]
+    },
+    {
+      "id": "adrover-2020",
+      "doi": "10.3390/foods9111577",
+      "publisher_url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "metadata_verified": ["title", "authors", "2020-10-30", "Foods", "9(11)", "1577", "doi"],
+      "web_access": "Direct publisher open returned 429; publisher search-index content verified metadata and article excerpts. DOI direct open returned internal error. Methods read from local original.",
+      "local_source": "分析与文献/foods-09-01577.pdf",
+      "source_sha256": "bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc",
+      "hash_matches_readable_manifest": true,
+      "physical_pages": 22,
+      "text_read_pages": [1, 4, 5, 6, 7],
+      "text_scope": "Page1 metadata; sections3.1-3.3 and opening of4.1; not whole paper or AppendixA read this turn",
+      "visually_verified_pages": [5, 6],
+      "key_locations": ["p4 equations1-2 current-volume moisture and shrinkage", "p5 equations5-7 gas/solid desorption bridge", "p6 equations8-14 nonisothermal closure", "p7 section3.3 BDF and near-surface mesh"]
+    },
+    {
+      "id": "maddix-2018",
+      "doi": "10.1016/j.jcp.2018.02.010",
+      "publisher_url": "https://www.sciencedirect.com/science/article/abs/pii/S002199911830086X",
+      "author_manuscript_url": "https://arxiv.org/pdf/1709.02581v5",
+      "author_metadata_url": "https://arxiv.org/abs/1709.02581",
+      "metadata_verified": ["title", "authors", "2018", "Journal of Computational Physics", "361", "280-298", "doi"],
+      "web_access": "Publisher search-index content verified journal metadata and methods/conclusions excerpts. Author manuscript opened successfully through web PDF tool; 22-page arXiv v5 dated 2018-02-13. Web screenshot for page17 timed out; local temporary render subsequently read successfully.",
+      "temporary_pdf_sha256": "29ea430621e1fbc6d35aed4b074f55b12b3f8d63aa71fe56c01f38525727e572",
+      "temporary_pdf_policy": "Read-only temporary download for visual verification; not added as a new permanent project source or replacement for existing papers",
+      "physical_pages": 22,
+      "text_read_pages": [1, 2, 3, 4, 5, 6, 17, 18],
+      "text_scope": "Relevant text on these pages; additional selected AppendixB statements and error tables on pages19-21; not a complete line-by-line manuscript review",
+      "visually_verified_pages": [6, 17, 18],
+      "key_locations": ["p2 equation1.3 superslow diffusivity", "pp5-6 section2.1 equations2.3-2.7", "pp17-18 section5.2 Figures16-18", "pp19-21 AppendixB selected convergence evidence"],
+      "scope_limit": "Cartesian Dirichlet model; not a proof for the current cylindrical Robin threshold event; no borrowing of unrelated material coefficients"
+    }
+  ]
+}

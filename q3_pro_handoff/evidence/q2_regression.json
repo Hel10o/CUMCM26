@@ -1,0 +1,53 @@
+{
+  "scope": "Only 5 moisture positions at t=10800s; pilot regression diagnostic, not a full Q2 or Q3 acceptance test",
+  "reference": "q2_final_delivery/output/q2_unrounded.npz",
+  "reference_C": [
+    1.7661771010384424,
+    1.7165330147685063,
+    1.5701979976710987,
+    1.3332634267784715,
+    1.008123124194578
+  ],
+  "cases": [
+    {
+      "case": "harmonic_n128_trajectory",
+      "max_abs_C_difference": 8.887863142348351e-06,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "harmonic_n256_trajectory",
+      "max_abs_C_difference": 2.1798675962081404e-06,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "harmonic_n512_trajectory",
+      "max_abs_C_difference": 5.057474492531355e-07,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "kirchhoff_last_hour_mean_n256_trajectory",
+      "max_abs_C_difference": 1.9785238818403883e-06,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "kirchhoff_n128_trajectory",
+      "max_abs_C_difference": 8.082408514908934e-06,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "kirchhoff_n256_trajectory",
+      "max_abs_C_difference": 1.9785238818403883e-06,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "kirchhoff_n512_trajectory",
+      "max_abs_C_difference": 4.554127814859754e-07,
+      "four_decimal_equal_5_points": true
+    },
+    {
+      "case": "kirchhoff_nominal_50_005_n256_trajectory",
+      "max_abs_C_difference": 1.9785238818403883e-06,
+      "four_decimal_equal_5_points": true
+    }
+  ]
+}

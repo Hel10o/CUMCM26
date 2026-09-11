@@ -11,6 +11,7 @@ q1_physical_review_evidence/** -text
 q2_final_delivery/** -text
 q2_pro_handoff/** -text
 q2_refinement_handoff/** -text
+q3_pro_handoff/** -text
 review_q2_20260911/** -text
 paper/** -text
 readable/** text eol=lf

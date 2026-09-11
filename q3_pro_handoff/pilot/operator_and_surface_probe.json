@@ -1,0 +1,229 @@
+{
+  "operator_verification": {
+    "analytic_jacobian_vs_central_relative_max": 1.3004484715898707e-10,
+    "moisture_conservation_rhs_residual": 0.0,
+    "primitive_derivative_relative_max": 4.246666188948916e-09
+  },
+  "surface_roots": {
+    "state_type": "synthetic uniform interior, not accepted Q2/Q3 trajectory",
+    "equation": "(2/R)*G_NN*D(T,Cs)*(Cs-near)+hm*(Cs-Cenv)=0",
+    "cases": [
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.08,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.0715257488787097
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.1,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.09641079682572756
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.15,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.14852091412096355
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.2,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.1989631130139204
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.3,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.2991872240749618
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 32,
+        "synthetic_uniform_interior_C": 0.5,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.4991982188021987
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.08,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.07839140442676795
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.1,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.09916485388270888
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.15,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.14963425768611543
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.2,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.1997416171449612
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.3,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.2997968568697345
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 64,
+        "synthetic_uniform_interior_C": 0.5,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.499799430617695
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.08,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.07930945879340244
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.1,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.09963318134146025
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.15,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.14983776925644016
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.2,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.19988523126987987
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.3,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.2999097182804346
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 96,
+        "synthetic_uniform_interior_C": 0.5,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.4999108478235664
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.08,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.07975551383646944
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.1,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.0998687216509455
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.15,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.14994165574444013
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.2,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.19995869576758013
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.3,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.29996749933663963
+        ],
+        "root_count": 1
+      },
+      {
+        "n": 160,
+        "synthetic_uniform_interior_C": 0.5,
+        "T_C": 50.165,
+        "surface_equation_roots": [
+          0.4999679033304177
+        ],
+        "root_count": 1
+      }
+    ]
+  }
+}

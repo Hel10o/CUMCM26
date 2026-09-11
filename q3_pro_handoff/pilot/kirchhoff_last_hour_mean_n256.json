@@ -1,0 +1,57 @@
+{
+  "n": 256,
+  "method": "kirchhoff",
+  "dr_m": 7.8125e-05,
+  "rtol": 2e-08,
+  "atol_T": 2e-09,
+  "atol_C": 2e-10,
+  "environment_extension": "last_hour_mean after 14400 s; scenario assumption, not observation",
+  "continuation": "last_hour_mean",
+  "held_environment_T_C_kgkg": [
+    49.99893442622951,
+    0.04998754098360656
+  ],
+  "last_environment": [
+    14400.0,
+    50.165,
+    0.04986
+  ],
+  "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "nfev": 14996,
+  "njev": 257,
+  "nlu": 2550,
+  "accepted_steps": 7337,
+  "min_C_accepted": 0.05264587070351458,
+  "min_D_accepted": 3.1175408880950306e-12,
+  "max_C_radial_increase": 8.881784197001252e-16,
+  "max_C_temporal_increase_at_sampled_nodes": 8.881784197001252e-16,
+  "Cmax_node_always_center_with_tolerance": true,
+  "max_rhs_C_during_accepted_steps": 2.20533015759782e-15,
+  "max_water_balance_segment_error": 3.4433011726186374e-08,
+  "status": "event_found",
+  "formal_answer": false,
+  "max_temporal_increase_location": {
+    "r_m": 0.00703125,
+    "start_s": 242.56350430396344,
+    "end_s": 243.21957814953808,
+    "C_start": 2.5499999999999985,
+    "C_end": 2.5499999999999994
+  },
+  "event_time_s": 206907.40623202722,
+  "event_time_h": 57.47427950889645,
+  "event_C_center": 0.15,
+  "event_C_surface": 0.05264587070351458,
+  "event_C_max": 0.15,
+  "event_max_radius_m": 0.0,
+  "event_C_center_slope_per_s": -2.9127529442074723e-07,
+  "event_T_center": 49.99893442622951,
+  "event_T_surface": 49.99893442622951,
+  "event_D_center_surface": [
+    8.00089381768921e-10,
+    3.1175408880950306e-12
+  ],
+  "event_surface_D_over_hm_m": 3.896926110118789e-06,
+  "elapsed_wall_s": 7.801395400000047,
+  "critical_time_interpretation": "first downward crossing of full discrete-field max C=0.15; strict < holds immediately after crossing",
+  "temporal_diagnostic_note": "max_rhs_C is evaluated at segment endpoints; temporal increase checks use all accepted states"
+}

@@ -1,0 +1,16 @@
+{
+  "q3_pilot_cases_checked": [
+    "harmonic_n128.json",
+    "harmonic_n256.json",
+    "harmonic_n512.json",
+    "kirchhoff_last_hour_mean_n256.json",
+    "kirchhoff_n128.json",
+    "kirchhoff_n256.json",
+    "kirchhoff_n512.json",
+    "kirchhoff_nominal_50_005_n256.json"
+  ],
+  "source_hashes_verified": true,
+  "event_profiles_verified": true,
+  "q2_original_files_unchanged": 119,
+  "formal_result3_created": false
+}

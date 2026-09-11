@@ -1,0 +1,72 @@
+{
+  "scope": "Executed bounded Q3 reconnaissance only. No formal result3.xlsx or final four-decimal answer.",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "delivered_code_sha256": {
+    "run_pilot.py": "5943f6bf48827a563204f08b2c54c40b27ff5902eea39729ba632d969a0b0aae",
+    "summarize_pilot.py": "84fe5125d072ddd56150ec889e15f0bedc1dbc642a141628a86f06bb10c9a497"
+  },
+  "input_and_reused_source_sha256": {
+    "q2_final_delivery/inputs/附件1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "q2_final_delivery/source/q2_core.py": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+    "q2_final_delivery/source/q2_spectral.py": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33"
+  },
+  "six_cases_actually_executed_successfully": true,
+  "additional_two_continuation_cases_successful": true,
+  "additional_continuation_cases_total_wall_s": 16.328839900000048,
+  "continuation_saved_five_C_samples_at_0_3_4h_bitwise_equal": {
+    "last_hour_mean": true,
+    "nominal_50_005": true
+  },
+  "shared_history_verification_scope": "CSV values only: five C samples at r=0,0.5,1,1.5,2 cm at t=0,3,4 h; not all internal T/C states.",
+  "last_hour_mean_definition": "arithmetic mean of all 61 records from t=10800 through t=14400 seconds inclusive; switched just after 4h",
+  "all_cases_minimum_accepted_C_positive": true,
+  "total_case_wall_s_excludes_probe_and_first_n128_diagnostic_rerun": 85.44097249999982,
+  "boundary_after_4h": {
+    "assumption": "last measured value held constant",
+    "T_degC": 50.165,
+    "C_kgkg": 0.04986
+  },
+  "integrated_flux_256_to_512_event_change_s": -0.7561549697129522,
+  "harmonic_256_to_512_event_change_s": -2230.229058505676,
+  "harmonic_minus_integrated_n512_event_s": 420.79091373141273,
+  "illustrative_error_budget": {
+    "event_slope_C_per_s": -2.930676998346456e-07,
+    "half_0.0001_h_in_s": 0.18,
+    "approx_max_abs_C_error_for_0.18s_event_error": 5.275218597023621e-08,
+    "qualification": "linearized illustration, not achieved total error bound; report time precision from demonstrated evidence"
+  },
+  "harmonic_n128_local_increase_under_constant_boundary": {
+    "r_m": 0.01984375,
+    "start_s": 79160.66186373687,
+    "end_s": 79460.66186373687,
+    "C_start": 0.12363380882541138,
+    "C_end": 0.12386331655164115
+  },
+  "no_failures_encountered": true,
+  "limitations": [
+    "Three explicit continuation scenarios studied; external moisture basis remains the inherited effective-model assumption. Scenarios are not probability confidence intervals.",
+    "No separate time-tolerance/max-step convergence study; no independent spatial discretization verification of the long-time endpoint.",
+    "Kirchhoff and harmonic variants share thermal operator, surface half-volume, time integrator and imported material functions.",
+    "C maximum is checked over all numerical nodes/accepted states, not a mathematical continuum maximum proof.",
+    "Finite grid convergence evidence does not establish four-decimal final sampling stability.",
+    "No 60-second full result3 export or template fill, no 2D long-time check, no shrinkage/latent-heat model.",
+    "Only two extra continuations, both at n256; no exhaustive environmental extrapolation or interpolation study.",
+    "The additional max_temporal_increase_location diagnostic was added after initial six runs; only harmonic n128 was rerun to locate its anomaly. Numeric formulas/settings were unchanged."
+  ],
+  "reproduction_commands": [
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case probes",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case harmonic --n 128",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case harmonic --n 256",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case harmonic --n 512",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case kirchhoff --n 128",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case kirchhoff --n 256",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case kirchhoff --n 512",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case kirchhoff --n 256 --continuation last_hour_mean",
+    "python -X utf8 -B q3_pro_handoff/pilot/run_pilot.py --case kirchhoff --n 256 --continuation nominal_50_005",
+    "python -X utf8 -B q3_pro_handoff/pilot/summarize_pilot.py"
+  ]
+}

@@ -1,0 +1,13 @@
+kirchhoff 512 t_h 3.0 C_center_surface 1.7661772293928002 1.0081226687817966
+kirchhoff 512 t_h 4.0 C_center_surface 1.4536061395386557 0.8153458504969543
+kirchhoff 512 t_h 6.0 C_center_surface 1.015550479970072 0.5334556978688247
+kirchhoff 512 t_h 12.0 C_center_surface 0.4547576717432692 0.16394955726029461
+kirchhoff 512 t_h 18.0 C_center_surface 0.29789097572093026 0.08422205733241378
+kirchhoff 512 t_h 24.0 C_center_surface 0.23709961219209297 0.06627087763368464
+kirchhoff 512 t_h 30.0 C_center_surface 0.20526517341668646 0.05966181160957875
+kirchhoff 512 t_h 36.0 C_center_surface 0.18540697809508108 0.05648185708249808
+kirchhoff 512 t_h 42.0 C_center_surface 0.1716550078703692 0.054693846527114856
+kirchhoff 512 t_h 48.0 C_center_surface 0.16145961744267165 0.05358022844300317
+kirchhoff 512 t_h 54.0 C_center_surface 0.15353203203913166 0.05283472417231639
+kirchhoff 512 t_h 57.16944809767589 C_center_surface 0.15 0.05253543865415647
+{"n": 512, "method": "kirchhoff", "dr_m": 3.90625e-05, "rtol": 2e-08, "atol_T": 2e-09, "atol_C": 2e-10, "environment_extension": "hold last after 14400 s; scenario assumption, not observation", "last_environment": [14400.0, 50.165, 0.04986], "input_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7", "nfev": 14933, "njev": 257, "nlu": 2543, "accepted_steps": 7312, "min_C_accepted": 0.05253543865415647, "min_D_accepted": 3.0808216103954856e-12, "max_C_radial_increase": 8.881784197001252e-16, "max_C_temporal_increase_at_sampled_nodes": 8.881784197001252e-16, "Cmax_node_always_center_with_tolerance": true, "max_rhs_C_during_accepted_steps": 7.854573727846401e-15, "max_water_balance_segment_error": 3.480923875694413e-08, "status": "event_found", "formal_answer": false, "event_time_s": 205810.0131516332, "event_time_h": 57.16944809767589, "event_C_center": 0.15, "event_C_surface": 0.05253543865415647, "event_C_max": 0.15, "event_max_radius_m": 0.0, "event_C_center_slope_per_s": -2.930676998346456e-07, "event_T_center": 50.165, "event_T_surface": 50.165, "event_D_center_surface": [8.050004929030141e-10, 3.0808216103954856e-12], "event_surface_D_over_hm_m": 3.851027012994358e-06, "elapsed_wall_s": 25.45652210000003, "critical_time_interpretation": "first downward crossing of full discrete-field max C=0.15; strict < holds immediately after crossing", "temporal_diagnostic_note": "max_rhs_C is evaluated at segment endpoints; temporal increase checks use all accepted states"}

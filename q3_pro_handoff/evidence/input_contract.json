@@ -1,0 +1,860 @@
+{
+  "audit_date": "2026-09-11",
+  "scope": "Read-only source and output-contract audit; no PDE solve and no original workbook changes.",
+  "method": {
+    "python": "3.12.14",
+    "openpyxl": "3.1.5",
+    "independent_read": "OOXML ZipFile + ElementTree cell decoding, exact numeric/text comparison against openpyxl",
+    "original_pdf_visual_checked": [
+      "q2_final_delivery/evidence/problem-page-2.png",
+      "q2_final_delivery/evidence/problem-page-3.png",
+      "q2_final_delivery/evidence/problem-page-4.png"
+    ]
+  },
+  "sources": {
+    "A题/A题.pdf": {
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "bytes": 553320
+    },
+    "A题/附件/附件1.xlsx": {
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    "A题/附件/附件3/result3.xlsx": {
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "bytes": 9345
+    }
+  },
+  "problem_contract": {
+    "termination_statement": {
+      "pdf_page": 2,
+      "section": "问题3",
+      "threshold_kg_kg": 0.15,
+      "comparison": "strictly less than",
+      "spatial_scope": "药材各处",
+      "quantity": "dry-basis moisture concentration",
+      "required_time_unit": "h",
+      "not_allowed_substitutes": [
+        "surface alone",
+        "spatial average",
+        "unverified center-only condition",
+        "rounded concentrations as event test"
+      ]
+    },
+    "paper_table_5": {
+      "pdf_page": 2,
+      "radial_cm": [
+        0,
+        0.5,
+        1,
+        1.5,
+        2
+      ],
+      "regular_time_interval_h": 6,
+      "mandatory_terminal_row": true,
+      "initial_time_row_required_by_template": false,
+      "table_time_unit": "h"
+    },
+    "result3": {
+      "pdf_pages": [
+        2,
+        3
+      ],
+      "filename": "result3.xlsx",
+      "quantity": "moisture concentration kg/kg",
+      "time_column": "A",
+      "time_unit": "s",
+      "regular_time_interval_s": 60,
+      "radius_header_row": 1,
+      "radius_unit": "cm",
+      "radial_cm": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9,
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6,
+        1.7,
+        1.8,
+        1.9,
+        2.0
+      ],
+      "final_data_columns": "B:V",
+      "sheet_name_to_preserve": "Sheet1",
+      "results_decimal_places": 4,
+      "decimal_source": "PDF p1 所有结果保留四位小数（下同）"
+    },
+    "geometry_and_properties": {
+      "radius_m": 0.02,
+      "length_m": 0.25,
+      "geometry_source": "PDF p1 Q1, continued Q2/Q3; size change introduced separately in Q4",
+      "initial_temperature_C": 28,
+      "initial_moisture_kg_kg": 2.55,
+      "property_source": "PDF p4 appendix3 explicitly names Q2 and Q3",
+      "rho": "650+128*C",
+      "cp": "1450+2736*C/(C+1)",
+      "k": "0.21+0.38*C/(C+1)",
+      "D": "2.4e-3*exp(-0.45/C)*exp(-3850/T_K)",
+      "D_temperature_unit": "K",
+      "do_not_import": "Appendix4 formulas and A题/附件/附件2.xlsx radius history belong to Q4"
+    },
+    "choices_requiring_explicit_disclosure": [
+      "Continuation of ambient boundary after last observation t=14400s is an assumption, not supplied data.",
+      "Radial 1D and inherited convection coefficients are modeling choices to justify, not fresh Q3 measurements.",
+      "Numerical handling of strict < threshold versus equality event root requires an event bracket and tolerance policy.",
+      "Workbook template starts at 60s; whether to add t=0 and a non-minute terminal row must be disclosed. Table5 terminal row is mandatory."
+    ]
+  },
+  "ambient_input": {
+    "path": "A题/附件/附件1.xlsx",
+    "sheet": "Sheet1",
+    "xml_dimension": "A1:C242",
+    "header_range": "A1:C1",
+    "headers": [
+      "时间",
+      "温度",
+      "水分浓度"
+    ],
+    "data_range": "A2:C242",
+    "rows": 241,
+    "time_min_s": 0,
+    "time_max_s": 14400,
+    "duration_h": 4,
+    "time_step_s": 60,
+    "all_time_s": [
+      0,
+      60,
+      120,
+      180,
+      240,
+      300,
+      360,
+      420,
+      480,
+      540,
+      600,
+      660,
+      720,
+      780,
+      840,
+      900,
+      960,
+      1020,
+      1080,
+      1140,
+      1200,
+      1260,
+      1320,
+      1380,
+      1440,
+      1500,
+      1560,
+      1620,
+      1680,
+      1740,
+      1800,
+      1860,
+      1920,
+      1980,
+      2040,
+      2100,
+      2160,
+      2220,
+      2280,
+      2340,
+      2400,
+      2460,
+      2520,
+      2580,
+      2640,
+      2700,
+      2760,
+      2820,
+      2880,
+      2940,
+      3000,
+      3060,
+      3120,
+      3180,
+      3240,
+      3300,
+      3360,
+      3420,
+      3480,
+      3540,
+      3600,
+      3660,
+      3720,
+      3780,
+      3840,
+      3900,
+      3960,
+      4020,
+      4080,
+      4140,
+      4200,
+      4260,
+      4320,
+      4380,
+      4440,
+      4500,
+      4560,
+      4620,
+      4680,
+      4740,
+      4800,
+      4860,
+      4920,
+      4980,
+      5040,
+      5100,
+      5160,
+      5220,
+      5280,
+      5340,
+      5400,
+      5460,
+      5520,
+      5580,
+      5640,
+      5700,
+      5760,
+      5820,
+      5880,
+      5940,
+      6000,
+      6060,
+      6120,
+      6180,
+      6240,
+      6300,
+      6360,
+      6420,
+      6480,
+      6540,
+      6600,
+      6660,
+      6720,
+      6780,
+      6840,
+      6900,
+      6960,
+      7020,
+      7080,
+      7140,
+      7200,
+      7260,
+      7320,
+      7380,
+      7440,
+      7500,
+      7560,
+      7620,
+      7680,
+      7740,
+      7800,
+      7860,
+      7920,
+      7980,
+      8040,
+      8100,
+      8160,
+      8220,
+      8280,
+      8340,
+      8400,
+      8460,
+      8520,
+      8580,
+      8640,
+      8700,
+      8760,
+      8820,
+      8880,
+      8940,
+      9000,
+      9060,
+      9120,
+      9180,
+      9240,
+      9300,
+      9360,
+      9420,
+      9480,
+      9540,
+      9600,
+      9660,
+      9720,
+      9780,
+      9840,
+      9900,
+      9960,
+      10020,
+      10080,
+      10140,
+      10200,
+      10260,
+      10320,
+      10380,
+      10440,
+      10500,
+      10560,
+      10620,
+      10680,
+      10740,
+      10800,
+      10860,
+      10920,
+      10980,
+      11040,
+      11100,
+      11160,
+      11220,
+      11280,
+      11340,
+      11400,
+      11460,
+      11520,
+      11580,
+      11640,
+      11700,
+      11760,
+      11820,
+      11880,
+      11940,
+      12000,
+      12060,
+      12120,
+      12180,
+      12240,
+      12300,
+      12360,
+      12420,
+      12480,
+      12540,
+      12600,
+      12660,
+      12720,
+      12780,
+      12840,
+      12900,
+      12960,
+      13020,
+      13080,
+      13140,
+      13200,
+      13260,
+      13320,
+      13380,
+      13440,
+      13500,
+      13560,
+      13620,
+      13680,
+      13740,
+      13800,
+      13860,
+      13920,
+      13980,
+      14040,
+      14100,
+      14160,
+      14220,
+      14280,
+      14340,
+      14400
+    ],
+    "time_strictly_increasing": true,
+    "duplicate_time_count": 0,
+    "missing_expected_time_count": 0,
+    "finite_numeric_data": true,
+    "formula_cell_count": 0,
+    "xml_openpyxl_exact_match": true,
+    "first_row": [
+      0,
+      28,
+      0.01963
+    ],
+    "last_row": [
+      14400,
+      50.165,
+      0.04986
+    ],
+    "tail_last_21_rows": [
+      [
+        13200,
+        49.9,
+        0.04982
+      ],
+      [
+        13260,
+        49.994,
+        0.05022
+      ],
+      [
+        13320,
+        50.081,
+        0.0499
+      ],
+      [
+        13380,
+        50.228,
+        0.05004
+      ],
+      [
+        13440,
+        49.893,
+        0.0501
+      ],
+      [
+        13500,
+        50.212,
+        0.05007
+      ],
+      [
+        13560,
+        49.762,
+        0.05022
+      ],
+      [
+        13620,
+        50.028,
+        0.04982
+      ],
+      [
+        13680,
+        50.067,
+        0.05
+      ],
+      [
+        13740,
+        49.803,
+        0.04995
+      ],
+      [
+        13800,
+        49.82,
+        0.04999
+      ],
+      [
+        13860,
+        49.96,
+        0.04981
+      ],
+      [
+        13920,
+        50.233,
+        0.04982
+      ],
+      [
+        13980,
+        50.048,
+        0.04989
+      ],
+      [
+        14040,
+        50.217,
+        0.0499
+      ],
+      [
+        14100,
+        50.152,
+        0.04996
+      ],
+      [
+        14160,
+        49.984,
+        0.05006
+      ],
+      [
+        14220,
+        50.142,
+        0.05007
+      ],
+      [
+        14280,
+        49.759,
+        0.04996
+      ],
+      [
+        14340,
+        49.805,
+        0.04995
+      ],
+      [
+        14400,
+        50.165,
+        0.04986
+      ]
+    ],
+    "tail_windows": [
+      {
+        "window_s": 1800,
+        "inclusive_start_s": 12600,
+        "inclusive_end_s": 14400,
+        "rows": 31,
+        "source_range": "Sheet1!A212:C242",
+        "temperature_C": {
+          "minimum": 49.759,
+          "maximum": 50.233,
+          "mean": 50.01325806451613,
+          "population_std": 0.15291827202409325,
+          "last_minus_first": 0.06799999999999784,
+          "linear_least_squares_slope_per_h": -0.01601612903225632,
+          "strictly_constant": false
+        },
+        "ambient_moisture_kg_kg": {
+          "minimum": 0.0498,
+          "maximum": 0.05024,
+          "mean": 0.049988709677419356,
+          "population_std": 0.0001310686088616497,
+          "last_minus_first": -0.00032999999999999696,
+          "linear_least_squares_slope_per_h": -0.0002112096774193532,
+          "strictly_constant": false
+        }
+      },
+      {
+        "window_s": 3600,
+        "inclusive_start_s": 10800,
+        "inclusive_end_s": 14400,
+        "rows": 61,
+        "source_range": "Sheet1!A182:C242",
+        "temperature_C": {
+          "minimum": 49.757,
+          "maximum": 50.236,
+          "mean": 49.99893442622951,
+          "population_std": 0.15308294856940666,
+          "last_minus_first": -0.030000000000001137,
+          "linear_least_squares_slope_per_h": 0.0028239026969858576,
+          "strictly_constant": false
+        },
+        "ambient_moisture_kg_kg": {
+          "minimum": 0.04975,
+          "maximum": 0.05024,
+          "mean": 0.049987540983606554,
+          "population_std": 0.00014889379797171636,
+          "last_minus_first": 8.99999999999998e-05,
+          "linear_least_squares_slope_per_h": -1.2882072977259037e-05,
+          "strictly_constant": false
+        }
+      },
+      {
+        "window_s": 7200,
+        "inclusive_start_s": 7200,
+        "inclusive_end_s": 14400,
+        "rows": 121,
+        "source_range": "Sheet1!A122:C242",
+        "temperature_C": {
+          "minimum": 49.612,
+          "maximum": 50.246,
+          "mean": 49.9685041322314,
+          "population_std": 0.16408434255140852,
+          "last_minus_first": 0.3130000000000024,
+          "linear_least_squares_slope_per_h": 0.08147717111502527,
+          "strictly_constant": false
+        },
+        "ambient_moisture_kg_kg": {
+          "minimum": 0.04894,
+          "maximum": 0.05025,
+          "mean": 0.04986520661157025,
+          "population_std": 0.00029121886680989463,
+          "last_minus_first": 0.0009200000000000041,
+          "linear_least_squares_slope_per_h": 0.00030379623357268686,
+          "strictly_constant": false
+        }
+      }
+    ],
+    "interpretation": "Last hour fluctuates near 50 C and 0.05 kg/kg. This is not an exactly constant measured plateau and contains no observation after 4 h. Plateau/last-value/other extension must be labeled assumptions and compared when determining drying duration."
+  },
+  "result3_template": {
+    "path": "A题/附件/附件3/result3.xlsx",
+    "sheet_names": [
+      "Sheet1"
+    ],
+    "xml_dimension": "A1:F5",
+    "openpyxl_max_row": 5,
+    "openpyxl_max_column": 6,
+    "values": [
+      [
+        "时间\\到药材中心的距离",
+        0,
+        0.1,
+        0.2,
+        "…",
+        2
+      ],
+      [
+        60,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        120,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        180,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      [
+        "…",
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    ],
+    "typed_cells": [
+      {
+        "cell": "A1",
+        "value": "时间\\到药材中心的距离",
+        "data_type": "s",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "B1",
+        "value": 0,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "C1",
+        "value": 0.1,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "D1",
+        "value": 0.2,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "E1",
+        "value": "…",
+        "data_type": "s",
+        "number_format": "General",
+        "style_id": 3
+      },
+      {
+        "cell": "F1",
+        "value": 2,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "A2",
+        "value": 60,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "B2",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "C2",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "D2",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "E2",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "F2",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "A3",
+        "value": 120,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "B3",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "C3",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "D3",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "E3",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "F3",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "A4",
+        "value": 180,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "B4",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "C4",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "D4",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "E4",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "F4",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "A5",
+        "value": "…",
+        "data_type": "s",
+        "number_format": "General",
+        "style_id": 3
+      },
+      {
+        "cell": "B5",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "C5",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "D5",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "E5",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      },
+      {
+        "cell": "F5",
+        "value": null,
+        "data_type": "n",
+        "number_format": "General",
+        "style_id": 1
+      }
+    ],
+    "merged_ranges": [],
+    "freeze_panes": null,
+    "formula_cell_count": 0,
+    "column_widths": {
+      "A": 19.625,
+      "B": 9.625,
+      "G": 8.75
+    },
+    "xml_openpyxl_exact_match": true,
+    "shape_interpretation": "A1:F5 is schematic, not a final matrix or cutoff. E1 and A5 contain ellipses. No terminal-time text or numeric cutoff exists in this workbook. Expand all radial and temporal placeholders; keep original input bytes untouched."
+  },
+  "recommended_output_policy": {
+    "status": "Recommendation for Pro to confirm and document, not a new statement from the problem",
+    "paper": "6,12,... h before termination, plus actual terminal-time row; avoid duplicate row if terminal coincides with a 6h tick. Use 5 radii.",
+    "workbook": "Keep main regular rows 60,120,... <= chosen terminal time and expand 21 radii. If terminal is not an exact minute, append one terminal row with exact seconds and document the shorter final interval; optional t0 row should be separately stated. Do not infer event time by rounding to minutes.",
+    "event": "Determine spatial maximum using full solver mesh and verified extrema. Estimate threshold crossing with dense output/event bracketing. Preserve unrounded values and distinguish equality crossing from a certified strictly-below time.",
+    "verification": "Check all required times/radii, numeric cells, four-decimal formatting, terminal-row agreement with event record and table5, no placeholder ellipses, dynamic row counts, and original input hashes."
+  }
+}
