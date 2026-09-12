@@ -1,0 +1,59 @@
+{
+  "checked_date": "2026-09-12",
+  "retrieved_at_utc": "2026-09-12T04:11:17.6348431Z",
+  "repository_commit": "ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377",
+  "scope": "Official format, AI rules and schedule only; no external problem solution sources",
+  "problem_identity": "User-provided repository input; no independent practice/official status attribution",
+  "sources": [
+    {
+      "title": "论文格式规范（2026年修订稿）",
+      "url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "published": "2026-03-03",
+      "local_path": "official/webpages/format_2026.html",
+      "http_status": 200,
+      "sha256": "2aa27a6c74ddc0385c924f29fac1d91ab1511f15a01042cdc2ee8a6d49293e8a",
+      "bytes": 12619,
+      "retrieval_method": "PowerShell Invoke-WebRequest; text also inspected through official web tool"
+    },
+    {
+      "title": "人工智能工具使用规定（2026年试行）",
+      "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+      "published": "2026-08-03",
+      "local_path": "official/webpages/ai_rules_2026.html",
+      "http_status": 200,
+      "sha256": "5b80b9b932cac141f72d3b3932f82de0f5c5371180b7c471dab4f2028590af58",
+      "bytes": 8528,
+      "retrieval_method": "PowerShell Invoke-WebRequest; text also inspected through official web tool"
+    },
+    {
+      "title": "CUMCM official English homepage and 2026 schedule",
+      "url": "https://en.mcm.edu.cn/",
+      "published": null,
+      "local_path": "official/webpages/contest_time_2026.html",
+      "http_status": 200,
+      "sha256": "39f21cbe0df09ff03218a3c06826d829f4a8a3f68006947491c909a790e3deb2",
+      "bytes": 9413,
+      "retrieval_method": "PowerShell Invoke-WebRequest; text also inspected through official web tool"
+    },
+    {
+      "title": "论文格式规范（2026年修订稿）官方PDF",
+      "url": "https://www.mcm.edu.cn/upload_cn/node/775/cQMeL0YY905244c8bd4b9af832f1699446d8385e.pdf",
+      "published": "2026-03-03",
+      "local_path": "official/attachments/format_2026.pdf",
+      "http_status": 200,
+      "sha256": "cece4bb3a900a0435160032b98ea26e03b0f2d7eca58424b0d023e26085aed26",
+      "bytes": 168354,
+      "retrieval_method": "PowerShell Invoke-WebRequest; text also inspected through official web tool"
+    },
+    {
+      "title": "人工智能工具使用规定（2026年试行）官方PDF",
+      "url": "https://www.mcm.edu.cn/upload_cn/node/785/Glps6mBh6563c55c45300fede72ddbf6eb33d3a8.pdf",
+      "published": "2026-08-03",
+      "local_path": "official/attachments/ai_rules_2026.pdf",
+      "http_status": 200,
+      "sha256": "4cf6f30cdd37d6ef2cdb3439c5dba4d9f207c12d6aafe24419e81f3c69acf59a",
+      "bytes": 97121,
+      "retrieval_method": "PowerShell Invoke-WebRequest; text also inspected through official web tool"
+    }
+  ]
+}

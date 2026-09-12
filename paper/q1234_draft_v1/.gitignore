@@ -1,0 +1,13 @@
+/build/*
+!/build/.gitkeep
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.xdv
+*.log
+!evidence/*.log
+!evidence/**/*.log
+/support/project/**/output/
+/support/project/**/validation/

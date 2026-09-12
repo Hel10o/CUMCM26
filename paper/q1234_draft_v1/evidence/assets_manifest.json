@@ -1,0 +1,351 @@
+{
+  "git_commit_read": "ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377",
+  "script": "paper/q1234_draft_v1/build_assets.py",
+  "script_sha256": "0726a8383844d8d029cdd48331f56d860fa83197bed02f99141c379a03047e8d",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.0",
+    "executable": "D:\\Desktop\\CUMCM26\\review_q1_20260910\\.venv\\Scripts\\python.exe",
+    "font": "Microsoft YaHei"
+  },
+  "scope": "Frozen evidence postprocessing only; no PDE runs; generated files replace only named draft asset outputs.",
+  "sources": {
+    "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz": {
+      "sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+      "purposes": [
+        "Q1 actual table states"
+      ]
+    },
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz": {
+      "sha256": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "purposes": [
+        "Current Q2 table states and Q3 full-process plot"
+      ]
+    },
+    "q3_refinement_delivery/output/solution.npz": {
+      "sha256": "6dc8e7fb69b684162ef60016741200815fb797b6af5824b19ec1b8772553dfab",
+      "purposes": [
+        "Current formal Q3 table 5 and endpoint crosscheck"
+      ]
+    },
+    "q4_complete_delivery/v1/output/main.npz": {
+      "sha256": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+      "purposes": [
+        "Current Q4 table 6, full-process and radial plots"
+      ]
+    },
+    "q1_complete_delivery/q1_delivery/output/table_temperature.csv": {
+      "sha256": "dc1568f39ba0419dfd0219ab1617cddf617767821de645cffa9a49e5ffe6696e",
+      "purposes": [
+        "Q1 frozen official four-decimal crosscheck"
+      ]
+    },
+    "q1_complete_delivery/q1_delivery/output/table_moisture.csv": {
+      "sha256": "df88c7373fdccdbdffd46505ca447a7e10c8f0cd1af7788827f5bfdb0969499d",
+      "purposes": [
+        "Q1 frozen official four-decimal crosscheck"
+      ]
+    },
+    "q2_final_delivery/output/table_temperature.csv": {
+      "sha256": "bdad441edb333126c2a205bfc9ffabdaa4cf84e884329d62f67059690ad577fe",
+      "purposes": [
+        "Q2 frozen official four-decimal crosscheck"
+      ]
+    },
+    "q2_final_delivery/output/table_moisture.csv": {
+      "sha256": "6ec3725f1c9d078fa41b23405d48865745194c0bba4e310a11ecfc8a94c75aa0",
+      "purposes": [
+        "Q2 frozen official four-decimal crosscheck"
+      ]
+    },
+    "q3_refinement_delivery/output/table5.csv": {
+      "sha256": "9d2afb24b8797a5c5b9895d33a4a9ec6b589f415d8f5fc64eacbe5734e5be050",
+      "purposes": [
+        "Current formal Q3 table 5 display crosscheck"
+      ]
+    },
+    "q4_complete_delivery/v1/output/table6_unrounded.csv": {
+      "sha256": "f52aff949b771ea3f18c494cd19a369f5fde305fd37ee8f749a923d8d4613351",
+      "purposes": [
+        "Current formal Q4 table 6 display crosscheck"
+      ]
+    },
+    "paper/q1_q2_stage/figures/q1_profiles.pdf": {
+      "sha256": "feee5cafdca386b6d90bdf80d930cff73ab306b9693380067bb256581f72cae5",
+      "purposes": [
+        "Accepted profile figure copied byte-for-byte"
+      ]
+    },
+    "paper/q1_q2_stage/figures/q1_profiles.png": {
+      "sha256": "c554e1f802361017dd7bd42b0bc299d37cb7d2f8bf52fb1ba74c80eb7bde1ad1",
+      "purposes": [
+        "Accepted profile figure copied byte-for-byte"
+      ]
+    },
+    "paper/q1_q2_stage/figures/q2_profiles.pdf": {
+      "sha256": "a89ae57e4085c83f8ee9cd67c3adea1297ec90612e4bfa2275010332dbcfff63",
+      "purposes": [
+        "Accepted profile figure copied byte-for-byte"
+      ]
+    },
+    "paper/q1_q2_stage/figures/q2_profiles.png": {
+      "sha256": "3a40ce02a9e871db10c4e608f864308bbfb5964f1f8b182f847876cf3af7f5d6",
+      "purposes": [
+        "Accepted profile figure copied byte-for-byte"
+      ]
+    },
+    "q4_complete_delivery/v1/inputs/attachment2.xlsx": {
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "purposes": [
+        "q4_shrinkage"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q3_baseline_n40.json": {
+      "sha256": "fdfba57f2aa82dcc99ff2be8f35b6a7bacadd5bf1ab9f143a1827c7110bf590e",
+      "purposes": [
+        "Same-n40 environment baseline"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_minus_1K_n40.json": {
+      "sha256": "6a2eaa9a400519bd2b8f0cb57efe56277c4c726b1832d218f9470ebe28d7a144",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_plus_1K_n40.json": {
+      "sha256": "192350d1182ec96f4c1be23165b4252761c00f33b9813d132c6489bf0a57bc8d",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_minus_0p005_n40.json": {
+      "sha256": "d4e3f74329ad2448d0570446b8ae8e6920b69b50c3b8e1b6023e0dca4666e314",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_plus_0p005_n40.json": {
+      "sha256": "3fd5c6d8db56f6824acbd816c766468fe4119566a9ac35a17e68b1b06af57510",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q4_baseline_n40.json": {
+      "sha256": "ab7255bbc7ae660c66cb8e7bd09c9d1e7d8c8d3f432c43b5a46b066615a405e6",
+      "purposes": [
+        "Same-n40 environment baseline"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n40.json": {
+      "sha256": "cc9913d83b8620b7d7b8cfc628dd42549e8356366821d51daa206a2ccd5fef5c",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_plus_1K_n40.json": {
+      "sha256": "93f6d15b6ba5fa1267cfcdf2961cfd89fa24fe79bd24e7ca85266b7a7c8fdb81",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_minus_0p005_n40.json": {
+      "sha256": "9481945c0f8a3a7b9f0ed765debe897f9499ebc67ba4944ef5a774521f25bdd0",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    },
+    "q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_plus_0p005_n40.json": {
+      "sha256": "05ad79248567af35a56c27e3a66b11b7c5268fbd083281d94ad6f5201b0ec24c",
+      "purposes": [
+        "Executed environment root difference"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "name": "q1_profiles",
+      "operation": "byte-for-byte copy of accepted figure",
+      "copied": [
+        {
+          "from": "paper/q1_q2_stage/figures/q1_profiles.pdf",
+          "to": "paper/q1234_draft_v1/figures/q1_profiles.pdf",
+          "sha256": "feee5cafdca386b6d90bdf80d930cff73ab306b9693380067bb256581f72cae5"
+        },
+        {
+          "from": "paper/q1_q2_stage/figures/q1_profiles.png",
+          "to": "paper/q1234_draft_v1/figures/q1_profiles.png",
+          "sha256": "c554e1f802361017dd7bd42b0bc299d37cb7d2f8bf52fb1ba74c80eb7bde1ad1"
+        }
+      ]
+    },
+    {
+      "name": "q2_profiles",
+      "operation": "byte-for-byte copy of accepted figure",
+      "copied": [
+        {
+          "from": "paper/q1_q2_stage/figures/q2_profiles.pdf",
+          "to": "paper/q1234_draft_v1/figures/q2_profiles.pdf",
+          "sha256": "a89ae57e4085c83f8ee9cd67c3adea1297ec90612e4bfa2275010332dbcfff63"
+        },
+        {
+          "from": "paper/q1_q2_stage/figures/q2_profiles.png",
+          "to": "paper/q1234_draft_v1/figures/q2_profiles.png",
+          "sha256": "3a40ce02a9e871db10c4e608f864308bbfb5964f1f8b182f847876cf3af7f5d6"
+        }
+      ]
+    },
+    {
+      "name": "q3_q4_drying",
+      "sources": [
+        "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+        "q4_complete_delivery/v1/output/main.npz"
+      ],
+      "panels": "Q3 left; Q4 right; shared x 0-60 h; logarithmic C axis; axis/surface/0.15 threshold; curves stop at official execution",
+      "time_sampling": "Q3 every 60 s plus execution; Q4 all stored 60 s outputs plus execution"
+    },
+    {
+      "name": "q4_shrinkage",
+      "sources": [
+        "q4_complete_delivery/v1/inputs/attachment2.xlsx",
+        "q4_complete_delivery/v1/output/main.npz"
+      ],
+      "profile_hours": [
+        6,
+        12,
+        24,
+        51.0921
+      ],
+      "panels": "left observed R over 0-72 h; right actual-r profiles, points terminate at current surface; no extrapolation outside material"
+    },
+    {
+      "name": "environment_sensitivity",
+      "panels": "Both are analyst-selected changes after 4 h, not error bars or confidence intervals; Q4 R(t) unchanged",
+      "data": [
+        {
+          "case": "q3",
+          "scenario": "temperature_minus_1K",
+          "delta_root_h": 1.867278713551544,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_minus_1K_n40.json"
+        },
+        {
+          "case": "q3",
+          "scenario": "temperature_plus_1K",
+          "delta_root_h": -1.7856392149210862,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q3_temperature_plus_1K_n40.json"
+        },
+        {
+          "case": "q3",
+          "scenario": "boundary_minus_0p005",
+          "delta_root_h": -0.09124866983399746,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_minus_0p005_n40.json"
+        },
+        {
+          "case": "q3",
+          "scenario": "boundary_plus_0p005",
+          "delta_root_h": 0.11011652883527859,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q3_boundary_plus_0p005_n40.json"
+        },
+        {
+          "case": "q4",
+          "scenario": "temperature_minus_1K",
+          "delta_root_h": 1.6373428540828092,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_minus_1K_n40.json"
+        },
+        {
+          "case": "q4",
+          "scenario": "temperature_plus_1K",
+          "delta_root_h": -1.5666602386716193,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q4_temperature_plus_1K_n40.json"
+        },
+        {
+          "case": "q4",
+          "scenario": "boundary_minus_0p005",
+          "delta_root_h": -0.09818524639298427,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_minus_0p005_n40.json"
+        },
+        {
+          "case": "q4",
+          "scenario": "boundary_plus_0p005",
+          "delta_root_h": 0.12674981203575347,
+          "source": "q1234_overall_review_delivery/v1/evidence/environment/q4_boundary_plus_0p005_n40.json"
+        }
+      ]
+    }
+  ],
+  "outputs": {
+    "paper/q1234_draft_v1/tables/q1_temperature.tex": {
+      "sha256": "1ed7a7b963bffc274ee112fe63b18e86ae095fb288a796f9f8a998d225ad811b",
+      "bytes": 586
+    },
+    "paper/q1234_draft_v1/tables/q1_moisture.tex": {
+      "sha256": "28f7297e44c10604f870d9568134ac7d3713fc1bcb8553da4371fac19672f8b3",
+      "bytes": 551
+    },
+    "paper/q1234_draft_v1/tables/q2_temperature.tex": {
+      "sha256": "e3aa114161029bfc9bbc00b08174413e614312c69c3fa7fd287ad959637bb2ac",
+      "bytes": 543
+    },
+    "paper/q1234_draft_v1/tables/q2_moisture.tex": {
+      "sha256": "2a151adcad9f83659566e428a903fdd39fb217558bbc578ffc006118a15da919",
+      "bytes": 513
+    },
+    "paper/q1234_draft_v1/tables/q3_moisture.tex": {
+      "sha256": "fc5abb663e19d63fa8ce8ffe746c903ec99841bf074d3154566694e9e2ca572c",
+      "bytes": 746
+    },
+    "paper/q1234_draft_v1/tables/q4_moisture.tex": {
+      "sha256": "cac0f1258d72c809a03915fe409333f07b0230db712377c77bd20abb44637cf9",
+      "bytes": 716
+    },
+    "paper/q1234_draft_v1/figures/q1_profiles.pdf": {
+      "sha256": "feee5cafdca386b6d90bdf80d930cff73ab306b9693380067bb256581f72cae5",
+      "bytes": 21668
+    },
+    "paper/q1234_draft_v1/figures/q1_profiles.png": {
+      "sha256": "c554e1f802361017dd7bd42b0bc299d37cb7d2f8bf52fb1ba74c80eb7bde1ad1",
+      "bytes": 194971
+    },
+    "paper/q1234_draft_v1/figures/q2_profiles.pdf": {
+      "sha256": "a89ae57e4085c83f8ee9cd67c3adea1297ec90612e4bfa2275010332dbcfff63",
+      "bytes": 20687
+    },
+    "paper/q1234_draft_v1/figures/q2_profiles.png": {
+      "sha256": "3a40ce02a9e871db10c4e608f864308bbfb5964f1f8b182f847876cf3af7f5d6",
+      "bytes": 197602
+    },
+    "paper/q1234_draft_v1/figures/q3_q4_drying.pdf": {
+      "sha256": "3a1fbd987c5e4eacdeda03ec00e3a5d1339c8a491b83949dabfe185f98025ebc",
+      "bytes": 27842
+    },
+    "paper/q1234_draft_v1/figures/q3_q4_drying.png": {
+      "sha256": "bb21e4c533bca1b39efb4a7f90afcbcc997210dc1657a120964da186c6dab314",
+      "bytes": 140523
+    },
+    "paper/q1234_draft_v1/figures/q4_shrinkage.pdf": {
+      "sha256": "6b6db91621f0ca08db93271898a0808efc0450cbd68d30a814c863ea4727ec14",
+      "bytes": 34570
+    },
+    "paper/q1234_draft_v1/figures/q4_shrinkage.png": {
+      "sha256": "25bc19f50f5835672a77c489eb1773b90ffdc71e6c42271d5d54ecf1a9e30180",
+      "bytes": 140262
+    },
+    "paper/q1234_draft_v1/figures/environment_sensitivity.pdf": {
+      "sha256": "12c43ad14aaa663e20d22070ac07ef302423acb6ce8a07a049b37ddca4799a8e",
+      "bytes": 21898
+    },
+    "paper/q1234_draft_v1/figures/environment_sensitivity.png": {
+      "sha256": "db8b335c71a2948335c4dfc7940666b3f0442e99d9efa753fea1bc8acc64ce71",
+      "bytes": 75052
+    },
+    "paper/q1234_draft_v1/evidence/table_expected.json": {
+      "sha256": "1325c851255e6e23c90568217243f6eb9f1a5ac4e3a8b5b934956d5a80a4e445",
+      "bytes": 16526
+    },
+    "paper/q1234_draft_v1/evidence/assets_build.log": {
+      "sha256": "9b3c35c4195f222104c9fe6a467b5023296001bb9f4fb4c0da51b004011c342b",
+      "bytes": 989
+    }
+  }
+}

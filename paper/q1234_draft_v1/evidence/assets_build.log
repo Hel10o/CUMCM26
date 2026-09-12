@@ -1,0 +1,15 @@
+POSTPROCESS ONLY: no PDE solver imported or run
+RUNTIME Python=3.13.14 numpy=2.3.5 scipy=1.17.0 matplotlib=3.11.0; font=Microsoft YaHei; executable=D:\Desktop\CUMCM26\review_q1_20260910\.venv\Scripts\python.exe
+TABLE PASS q1_temperature: 7 rows, 6 columns, 0 domain-empty cells
+TABLE PASS q1_moisture: 7 rows, 6 columns, 0 domain-empty cells
+TABLE PASS q2_temperature: 6 rows, 6 columns, 0 domain-empty cells
+TABLE PASS q2_moisture: 6 rows, 6 columns, 0 domain-empty cells
+TABLE PASS q3_moisture: 10 rows, 6 columns, 0 domain-empty cells
+Q3 current formal table and new Q23 unified trajectory: all four-decimal cells agree
+TABLE PASS q4_moisture: 9 rows, 7 columns, 18 domain-empty cells
+FIGURE COPIED q1_profiles
+FIGURE COPIED q2_profiles
+FIGURE BUILT q3_q4_drying
+FIGURE BUILT q4_shrinkage
+FIGURE BUILT environment_sensitivity
+FINAL PASS: 6 tables; 216 temperature/moisture cells and 18 domain-empty cells; 5 figure PDFs + PNG previews; all frozen source hashes unchanged
