@@ -67,6 +67,24 @@
 \par\endgroup
 \clearpage
 \label{body:start}
+\begingroup
+\linespread{1.30}\selectfont
+\setlength{\parskip}{5pt plus 1pt minus 1pt}
+\setlength{\abovedisplayskip}{12pt plus 2pt minus 2pt}
+\setlength{\belowdisplayskip}{12pt plus 2pt minus 2pt}
+\setlength{\abovedisplayshortskip}{8pt plus 2pt minus 1pt}
+\setlength{\belowdisplayshortskip}{10pt plus 2pt minus 2pt}
+\ctexset{section={beforeskip=13pt plus 2pt minus 2pt,afterskip=7pt plus 1pt minus 1pt},subsection={beforeskip=10pt plus 2pt minus 1pt,afterskip=5pt plus 1pt minus 1pt},subsubsection={beforeskip=8pt,afterskip=4pt}}
+\setlist{topsep=6pt,itemsep=3pt,parsep=0pt,partopsep=0pt,leftmargin=2em}
+\renewcommand{\arraystretch}{1.30}
+\captionsetup{skip=8pt}
+\setlength{\textfloatsep}{16pt plus 2pt minus 2pt}
+\setlength{\intextsep}{16pt plus 2pt minus 2pt}
+\setlength{\floatsep}{14pt plus 2pt minus 2pt}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\raggedbottom
 \renewcommand{\thetable}{S\arabic{table}}
 \renewcommand{\theHtable}{pre.\arabic{table}}
 \input{sections/problem_model}
@@ -99,6 +117,7 @@
 本稿为AI辅助形成的初版。现有计算核对和交叉审阅由程序及代理完成，不等同于参赛队员逐项人工审核；尚未取得覆盖本版全部内容的人工修改与核验记录。正式采用前应完成并如实补充该项记录。
 \input{sections/references}
 \FloatBarrier
+\par\clearpage\endgroup
 \ifdefined\BodyOnly
 \else
 \clearpage
