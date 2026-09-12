@@ -1,0 +1,855 @@
+{
+  "baseline_sha": "a2c8baf0175c29a4fe21145ba222cb8e19d84199",
+  "automatic_passed": true,
+  "checks": [
+    {
+      "id": "protected_old_files_unchanged",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "new_files_within_authorized_scope",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "no_tracked_deletions",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "main_tex_entire_bytes_frozen",
+      "passed": true,
+      "evidence": {
+        "sha256": "5dc5f65b932e10a2f4d6e5355569636c174a842aae3bcda0bf2885dd1197636a"
+      }
+    },
+    {
+      "id": "formal_excel_raw_sha256_unchanged",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "old_figures_tables_main_raw_sha256_unchanged",
+      "passed": true,
+      "evidence": {
+        "files": 19
+      }
+    },
+    {
+      "id": "equation_environments_exact:sections/q1.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "table_environments_exact:sections/q1.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "numeric_result_sentences_retained:sections/q1.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "protected_prose_sentences_retained:sections/q1.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "equation_environments_exact:sections/q2.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "table_environments_exact:sections/q2.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "numeric_result_sentences_retained:sections/q2.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "protected_prose_sentences_retained:sections/q2.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "equation_environments_exact:sections/q3.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "table_environments_exact:sections/q3.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "numeric_result_sentences_retained:sections/q3.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "protected_prose_sentences_retained:sections/q3.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "equation_environments_exact:sections/q4.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "table_environments_exact:sections/q4.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "numeric_result_sentences_retained:sections/q4.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "protected_prose_sentences_retained:sections/q4.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "equation_environments_exact:sections/validation_limits.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "table_environments_exact:sections/validation_limits.tex",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "numeric_result_sentences_retained:sections/validation_limits.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "protected_prose_sentences_retained:sections/validation_limits.tex",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "no_old_numeric_occurrences_lost",
+      "passed": true,
+      "evidence": {
+        "old": 1255,
+        "new": 1257,
+        "removed": {},
+        "added": {
+          "2": 1,
+          "1": 1
+        }
+      }
+    },
+    {
+      "id": "ten_body_sections",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "paper_source_redlines_zero",
+      "passed": true,
+      "evidence": {
+        "counts": {
+          "能耗": 0,
+          "节能": 0,
+          "可忽略": 0,
+          "题面指定中截面": 0
+        },
+        "scope": "main and its included manuscript sections; standalone unreferenced ai_details.tex remains byte-frozen but is not compiled into this PDF"
+      }
+    },
+    {
+      "id": "six_existing_figure_labels_retained_once",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "figure_input_and_output_hash_bindings:process",
+      "passed": true,
+      "evidence": {
+        "sources": 2,
+        "outputs": 4,
+        "input_mismatch": [],
+        "output_mismatch": []
+      }
+    },
+    {
+      "id": "figure_script_hash_bindings:process",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "figure_input_and_output_hash_bindings:geometry",
+      "passed": true,
+      "evidence": {
+        "sources": 5,
+        "outputs": 4,
+        "input_mismatch": [],
+        "output_mismatch": []
+      }
+    },
+    {
+      "id": "figure_script_hash_bindings:geometry",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "figure_input_and_output_hash_bindings:validation",
+      "passed": true,
+      "evidence": {
+        "sources": 17,
+        "outputs": 4,
+        "input_mismatch": [],
+        "output_mismatch": []
+      }
+    },
+    {
+      "id": "figure_script_hash_bindings:validation",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "six_new_pdf_png_pairs",
+      "passed": true,
+      "evidence": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "id": "no_solver_imports_or_named_solver_calls_in_new_plot_scripts",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "old_q1_four_profile_times_covered_by_new_heatmap",
+      "passed": true,
+      "evidence": {
+        "old_profile_times_s": [
+          300,
+          600,
+          1200,
+          1800
+        ],
+        "new_time_range_s": [
+          0,
+          1800
+        ],
+        "radial_nodes": 21
+      }
+    },
+    {
+      "id": "old_q2_six_profiles_four_decimal_values_preserved_in_accepted_unified_source",
+      "passed": true,
+      "evidence": {
+        "temperature_degC": {
+          "cells": 126,
+          "four_decimal_mismatches": 0,
+          "max_abs_saved_array_difference": 4.163283051639155e-10
+        },
+        "moisture_dry_basis": {
+          "cells": 126,
+          "four_decimal_mismatches": 0,
+          "max_abs_saved_array_difference": 8.999911926821369e-12
+        }
+      }
+    },
+    {
+      "id": "old_dimension_figure_endpoint_information_retained",
+      "passed": true,
+      "evidence": [
+        {
+          "case": "q1",
+          "old_history_saved_times": 8,
+          "same_source_hashes": true,
+          "full_81_node_profiles_exact": true,
+          "endpoint_mean_displays_exact": true,
+          "loss_percentage_displays_exact": true
+        },
+        {
+          "case": "q23",
+          "old_history_saved_times": 13,
+          "same_source_hashes": true,
+          "full_81_node_profiles_exact": true,
+          "endpoint_mean_displays_exact": true,
+          "loss_percentage_displays_exact": true
+        },
+        {
+          "case": "q4",
+          "old_history_saved_times": 15,
+          "same_source_hashes": true,
+          "full_81_node_profiles_exact": true,
+          "endpoint_mean_displays_exact": true,
+          "loss_percentage_displays_exact": true
+        }
+      ]
+    },
+    {
+      "id": "refs_eqrefs_resolved_unique",
+      "passed": true,
+      "evidence": {
+        "uses": 99,
+        "targets": 51,
+        "invalid": []
+      }
+    },
+    {
+      "id": "all_aux_labels_unique",
+      "passed": true,
+      "evidence": {
+        "labels": 74
+      }
+    },
+    {
+      "id": "citations_resolved_unique",
+      "passed": true,
+      "evidence": {
+        "uses": 20,
+        "targets": 7
+      }
+    },
+    {
+      "id": "compiled_ten_body_sections",
+      "passed": true,
+      "evidence": [
+        [
+          "一",
+          "问题重述与建模思路",
+          "2",
+          "1"
+        ],
+        [
+          "二",
+          "数据处理、基本假设与符号",
+          "2",
+          "2"
+        ],
+        [
+          "三",
+          "统一传热传质模型与数值方法",
+          "4",
+          "3"
+        ],
+        [
+          "四",
+          "第一问：预热阶段的径向分布",
+          "6",
+          "4"
+        ],
+        [
+          "五",
+          "第二问：变物性热质耦合与全过程输出",
+          "10",
+          "5"
+        ],
+        [
+          "六",
+          "问题三：由全域含水率约束确定干燥时长",
+          "15",
+          "6"
+        ],
+        [
+          "七",
+          "问题四：观测收缩下的干燥过程",
+          "19",
+          "7"
+        ],
+        [
+          "八",
+          "模型检验：降维有效性与后段环境灵敏度",
+          "24",
+          "8"
+        ],
+        [
+          "九",
+          "模型评价、适用范围与推广",
+          "27",
+          "9"
+        ],
+        [
+          "十",
+          "结论",
+          "29",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "chapter9_subsection_order",
+      "passed": true,
+      "evidence": [
+        [
+          "9.1",
+          "模型优点",
+          "27"
+        ],
+        [
+          "9.2",
+          "模型推广",
+          "27"
+        ],
+        [
+          "9.3",
+          "适用范围与主要限制",
+          "28"
+        ],
+        [
+          "9.4",
+          "改进方向与数据需求",
+          "29"
+        ]
+      ]
+    },
+    {
+      "id": "six_figure_numbers_order",
+      "passed": true,
+      "evidence": {
+        "fig:q1-profiles": {
+          "number": "1",
+          "page": 9
+        },
+        "fig:q2-profiles": {
+          "number": "2",
+          "page": 13
+        },
+        "fig:q3-q4-drying": {
+          "number": "3",
+          "page": 18
+        },
+        "fig:q4-shrinkage": {
+          "number": "4",
+          "page": 23
+        },
+        "fig:dimension-reduction": {
+          "number": "5",
+          "page": 25
+        },
+        "fig:environment": {
+          "number": "6",
+          "page": 26
+        }
+      }
+    },
+    {
+      "id": "final_log_refs_and_glyphs_clean",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "abstract_page_pixels_identical_to_Git_baseline_72dpi",
+      "passed": true,
+      "evidence": {
+        "dpi": 72,
+        "baseline_pdf_sha256": "4f2a1098f16a6abcfb272ba01ee8a814a56ecbd6e950e93b2da4a5583add4e0b"
+      }
+    },
+    {
+      "id": "six_formal_PDF_tables_all_display_cells_match_frozen_expected",
+      "passed": true,
+      "evidence": {
+        "tables": {
+          "q1_temperature": {
+            "status": "pass",
+            "matched_cells": 42,
+            "mismatches": [],
+            "error": null
+          },
+          "q1_moisture": {
+            "status": "pass",
+            "matched_cells": 42,
+            "mismatches": [],
+            "error": null
+          },
+          "q2_temperature": {
+            "status": "pass",
+            "matched_cells": 36,
+            "mismatches": [],
+            "error": null
+          },
+          "q2_moisture": {
+            "status": "pass",
+            "matched_cells": 36,
+            "mismatches": [],
+            "error": null
+          },
+          "q3_moisture": {
+            "status": "pass",
+            "matched_cells": 60,
+            "mismatches": [],
+            "error": null
+          },
+          "q4_moisture": {
+            "status": "pass",
+            "matched_cells": 63,
+            "mismatches": [],
+            "error": null
+          }
+        },
+        "matched_cells": 279,
+        "method": "Existing caption/vector-rule-bounded table extractor executed read-only; no global text-token fallback and no save() call."
+      }
+    },
+    {
+      "id": "abstract_one_page_body_at_most_30",
+      "passed": true,
+      "evidence": {
+        "total_pages": 157,
+        "body_pages": 29,
+        "body_start": 2,
+        "appendix_start": 31
+      }
+    },
+    {
+      "id": "pdf_redlines_zero",
+      "passed": true,
+      "evidence": {
+        "能耗": [],
+        "节能": [],
+        "可忽略": [],
+        "题面指定中截面": []
+      }
+    },
+    {
+      "id": "pdf_no_unresolved_placeholders",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "AI_before_references",
+      "passed": true,
+      "evidence": {
+        "ai": [
+          [
+            30,
+            0
+          ]
+        ],
+        "references": [
+          [
+            30,
+            174
+          ]
+        ]
+      }
+    },
+    {
+      "id": "three_model_time_percent_contexts",
+      "passed": true,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "一后段环境假设下得到执行时长51.0921h。进一步设置同物性恒半径对照，其临界时间为129.8484h；施加观测收缩后，模型临界时间缩短约60.65%。这一有效方程内的条件对照体现了几何尺度与干基边界标度变化的共同作用。所得干燥时间约为2.39天与2.13天，与题目所述2–3天的烘干周期一"
+        },
+        {
+          "page": 23,
+          "text": "为2cm作受控对照，临界时间为129.848360839h；施加观测收缩后为51.092003254h，模型临界时间缩短78.7564h，约60.6526%。这反映当前模型中缩短扩散路径与改变边界交换标度的综合作用。第三、四问还更换了整套物性，故图3两问约6.382h的净差不能全部归因于收缩。固"
+        },
+        {
+          "page": 23,
+          "text": "系数为KC=ρdhm。当R/R0=0.6时，KC为初始的2.7778倍，式(40)中的2hm/R为初始的1.6667倍。所以模型临界时间缩短60.6526%是同一有效方程内的条件对照结果，不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。半径重建方式也影响终时。将线性插"
+        }
+      ]
+    },
+    {
+      "id": "published_pdf_matches_reviewed_build",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "id": "reviewed_inputs_stable",
+      "passed": true,
+      "evidence": null
+    }
+  ],
+  "inputs": {
+    "main.tex": {
+      "bytes": 8681,
+      "sha256": "5dc5f65b932e10a2f4d6e5355569636c174a842aae3bcda0bf2885dd1197636a"
+    },
+    "ai_details.tex": {
+      "bytes": 8501,
+      "sha256": "3af266353600ee2e44af378f24dd4fe399a4d360a1089ac15647730a05bceeb9"
+    },
+    "sections/problem_model.tex": {
+      "bytes": 10524,
+      "sha256": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd"
+    },
+    "sections/q1.tex": {
+      "bytes": 8218,
+      "sha256": "e369c7f00a51f2a16155376096fb31bc0afeafd15dfb4e65f99afb35fa3e5fc3"
+    },
+    "sections/q2.tex": {
+      "bytes": 11156,
+      "sha256": "b4e6a333cf63d7b5d6c26a3be95eebd583441aa9c1b4326cd61b56c2f2272910"
+    },
+    "sections/q3.tex": {
+      "bytes": 8912,
+      "sha256": "214290c5d18d1d73b600593c6645bdf7354a87bbb5bd9f6b45ed6969f05af4db"
+    },
+    "sections/q4.tex": {
+      "bytes": 13057,
+      "sha256": "39eaa5737207b1ceaa9d50a7335a8236f9c8b8c984eac61b649cf5365a4349b7"
+    },
+    "sections/validation_limits.tex": {
+      "bytes": 13713,
+      "sha256": "d31f172cb329af148228c40ae12496a54f83e80ef845d9b7b405ddefb584d24f"
+    },
+    "sections/references.tex": {
+      "bytes": 1744,
+      "sha256": "426d2e5f53b72f9823fa1314e844b260d6217aeba8759fb348096b5d4b35740e"
+    },
+    "sections/appendix.tex": {
+      "bytes": 7804,
+      "sha256": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\evidence\\figure_revision_20260912\\process_sources.json": {
+      "bytes": 14063,
+      "sha256": "af862a9f73a5a9c7132987d8312a091214ea1fcaca2020a28ece170959eca83d"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\visual_revision\\process.py": {
+      "bytes": 5951,
+      "sha256": "93b4a4049f0fa661e066ac54f1746da31c55e109458bc64d537074372ce3b156"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\visual_revision\\common.py": {
+      "bytes": 3810,
+      "sha256": "3b95588397102933411150593b8b85ada59aee350065e5e1df4bbe3c907d1bbf"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q1_profiles.pdf": {
+      "bytes": 45978,
+      "sha256": "a835535aa32ea84a7bd6be8930e52744ae1637794da166cd791a05a792d90c77"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q1_profiles.png": {
+      "bytes": 119754,
+      "sha256": "754088d0174a9d895a49cba8054d6c5c14d3c8e1c0d2f475b140db06620b5715"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q2_profiles.pdf": {
+      "bytes": 31417,
+      "sha256": "b1ef29ef2406df236cb43289ea57fb5b6ae7bd608dc86e250834a6d4a1bbd41b"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q2_profiles.png": {
+      "bytes": 157678,
+      "sha256": "ca1d1b11c4bc39aeccde7b9d07be5e9348035360bf152ba5c2437277a95912bf"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\evidence\\figure_revision_20260912\\geometry_sources.json": {
+      "bytes": 5560,
+      "sha256": "daa7b8d15b0d5f54fdbb36dd0189f3af3964a3c28675fb2f81ce2f2a566dcc86"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\visual_revision\\geometry.py": {
+      "bytes": 10687,
+      "sha256": "3e464343be5bf29fc9f32546668b6b5f001e689d96bf1fe9705b6621d4df855b"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q3_q4_drying.pdf": {
+      "bytes": 43811,
+      "sha256": "63ab98afe1a69d04b24b0118d39adf028472d0b1caa17eb2f671583fc2b0b7bc"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q3_q4_drying.png": {
+      "bytes": 173549,
+      "sha256": "ca69b1ea79e9ea0ff5be83d0aa71c06191a10d2d0b7b13d72c4ef2a9a3ee0001"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q4_shrinkage.pdf": {
+      "bytes": 197106,
+      "sha256": "ce1e5e47efed77236448d5ba652164a185552117e37a379c610148716ff81c12"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\q4_shrinkage.png": {
+      "bytes": 354446,
+      "sha256": "716cf43cfe8a0149b73b056d292be58d256ecf606ba101f17aa36c319faae864"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\evidence\\figure_revision_20260912\\validation_sources.json": {
+      "bytes": 56350,
+      "sha256": "b4b5f535aafa8c7492d38054dad25949e59f8775131a1c313c96684c475136ed"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\visual_revision\\validation.py": {
+      "bytes": 13589,
+      "sha256": "26b793d167ce405ea0a4588165d0f392883688fd3567b2983f701f760b2ef393"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\dimension_reduction.pdf": {
+      "bytes": 67236,
+      "sha256": "02c1089461ebd2a02c902269eb64777977093b31909a5f420d7363adebd02a21"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\dimension_reduction.png": {
+      "bytes": 204531,
+      "sha256": "ca33e35f850a662ee18a9597997a404b9fb4bc2cdea295c5308f0a9e0fc6fc1b"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\environment_sensitivity.pdf": {
+      "bytes": 36829,
+      "sha256": "03778029c913409499bdc815e8e749b3734062967620475430049b0b348fa747"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\figures\\visual_revision\\environment_sensitivity.png": {
+      "bytes": 100813,
+      "sha256": "8063a19d4a0cb61e8b7c2c242a5e43bb09b03c6f7bea39be7a2d394ed99b6ab9"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\figure_revision\\main.pdf": {
+      "bytes": 1422128,
+      "sha256": "f70a1bb14ed72d64d9bca0f54ba5d64aa068b2ecf2b0c56d5e540921b75a2b50"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\figure_revision\\main.aux": {
+      "bytes": 29811,
+      "sha256": "91abc96cfcd73eb313bd288bfa2f47393ab7b571e16ac2782b5c5383a7aabed5"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\figure_revision\\main.log": {
+      "bytes": 51205,
+      "sha256": "06e2c211ed9d93bd65a77e5eaa6db7f28fd7f271e32cfa8594f4fd306446b2be"
+    }
+  },
+  "review_required": {
+    "numeric_occurrences": {
+      "old": 1255,
+      "new": 1257,
+      "removed": {},
+      "added": {
+        "2": 1,
+        "1": 1
+      }
+    },
+    "outside_figure_numeric_delta": {
+      "main.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "ai_details.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/problem_model.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/q1.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/q2.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/q3.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/q4.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/validation_limits.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/references.tex": {
+        "removed": {},
+        "added": {}
+      },
+      "sections/appendix.tex": {
+        "removed": {},
+        "added": {}
+      }
+    },
+    "compiled_source_number_scope": {
+      "old": 1200,
+      "new": 1202,
+      "standalone_ai_details_not_compiled": true
+    },
+    "figure_environments_current": {
+      "sections/q1.tex": [
+        "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=0.94\\textwidth]{figures/visual_revision/q1_profiles.pdf}\n\\caption{第一问的时间--径向温湿场。横轴为时间，纵轴为径向距离；左、右色标分别表示温度与干基含水率，均由已保存采样值着色。}\n\\label{fig:q1-profiles}\n\\end{figure}"
+      ],
+      "sections/q2.tex": [
+        "\\begin{figure}[htbp]\n\\centering\n\\includegraphics[width=0.94\\textwidth]{figures/visual_revision/q2_profiles.pdf}\n\\caption{第二问前3小时的温湿状态路径与径向含水率。左图以温度、干基含水率为坐标，分别连接轴心和表面的已保存状态，箭头表示时间推进；右图保留对应时刻的中截面径向剖面。}\n\\label{fig:q2-profiles}\n\\end{figure}"
+      ],
+      "sections/q3.tex": [
+        "\\begin{figure}[htbp]\n \\centering\n \\includegraphics[width=0.93\\textwidth]{figures/visual_revision/q3_q4_drying.pdf}\n \\caption{问题三（左）与问题四（右）的干燥过程与事件判定。上排为一维径向有效模型的轴心、当前表面含水率演化。\n 纵轴为对数刻度，水平线为0.15\\unit{kg/kg}阈值，终点标记对应各自正式执行时刻。\n 下排以各自临界根为时间原点，仅标示已存临界根与执行点，并列出执行最大值。\n 两问采用各自附录物性，问题四另施加观测半径历程，\n 因而曲线差异不能全部归因于收缩。}\n\\label{fig:q3-q4-drying}\n\\end{figure}"
+      ],
+      "sections/q4.tex": [
+        "\\begin{figure}[htbp]\n \\centering\n \\includegraphics[width=0.92\\textwidth]{figures/visual_revision/q4_shrinkage.pdf}\n \\caption{规定收缩下的径向有效模型场与观测输入。(a)当前实际半径坐标中的含水率色图，仅显示至正式执行时刻，采用对数色标，材料域外留白；边界线与空心点区分输入半径及抽样观测记录。(b)附录4下不同时间的径向含水率剖面。(c)完整观测半径历程。\n 半径图标出正式执行时刻；剖面采用当前实际半径坐标，\n 各曲线只画至对应时刻的材料表面。}\n \\label{fig:q4-shrinkage}\n\\end{figure}"
+      ],
+      "sections/validation_limits.tex": [
+        "\\begin{figure}[htbp]\n\\centering\\includegraphics[width=.98\\linewidth]{figures/visual_revision/dimension_reduction.pdf}\n\\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\\unit{s}、问题二10800\\unit{s}及问题四21600\\unit{s}的中截面径向含水率差$\\Delta C=C_{2D}-C_{1D}$；下排为各时窗终点的整根体积加权平均，圆点、方点分别表示二维和配对一维，终点失水增加与表\\ref{tab:wholebody}一致。\n问题一、二在已检时段中截面采样最大含水率差分别为$4.09\\times10^{-9}$、$2.24706\\times10^{-5}\\unit{kg/kg}$。\n上述时段最大差与上排终点差值的统计范围不同。\n体积加权平均在空间均匀干密度假设下等于干质量加权平均。\n来源：\\nolinkurl{q4_complete_delivery/v1/validation/geometry/}下的\\nolinkurl{q1_80x128/q1_80x0}、\\nolinkurl{q23_80x256_integral/q23_80x0_integral}及\\nolinkurl{q4_80x128_integral/q4_80x0_integral}配对\\texttt{.npz}文件；二维半柱坐标的$z=0$为中截面对称面。}\n\\label{fig:dimension-reduction}\n\\end{figure}",
+        "\\begin{figure}[htbp]\n\\centering\\includegraphics[width=.93\\linewidth]{figures/visual_revision/environment_sensitivity.pdf}\n\\caption{后段环境情景相对同阶基线的根变化；幅度为人工设定，第四问规定半径保持不变。圆点、方点分别表示问题三、四，共用零线；负值表示根提前，正值表示根后移。}\\label{fig:environment}\n\\end{figure}"
+      ]
+    },
+    "new_reading_guides_require_semantic_review": true,
+    "plot_script_AST_scope": "AST names/imports checked and code separately reviewed; this check alone cannot certify arbitrary Python behavior. Scripts are not executed by this audit.",
+    "plot_script_imports": {
+      "common.py": {
+        "imports": [
+          "pathlib",
+          "hashlib",
+          "json",
+          "platform",
+          "numpy",
+          "matplotlib",
+          "matplotlib.pyplot",
+          "matplotlib"
+        ],
+        "forbidden_call_names": []
+      },
+      "geometry.py": {
+        "imports": [
+          "common",
+          "matplotlib.colors",
+          "matplotlib.ticker",
+          "openpyxl"
+        ],
+        "forbidden_call_names": []
+      },
+      "process.py": {
+        "imports": [
+          "common",
+          "matplotlib.lines"
+        ],
+        "forbidden_call_names": []
+      },
+      "validation.py": {
+        "imports": [
+          "common",
+          "matplotlib.lines"
+        ],
+        "forbidden_call_names": []
+      }
+    },
+    "figure_manifest_summary": {
+      "process": {
+        "sources": 2,
+        "outputs": [
+          "paper/q1234_draft_v1/figures/visual_revision/q1_profiles.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/q1_profiles.png",
+          "paper/q1234_draft_v1/figures/visual_revision/q2_profiles.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/q2_profiles.png"
+        ]
+      },
+      "geometry": {
+        "sources": 5,
+        "outputs": [
+          "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.png",
+          "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.png"
+        ]
+      },
+      "validation": {
+        "sources": 17,
+        "outputs": [
+          "paper/q1234_draft_v1/figures/visual_revision/dimension_reduction.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/dimension_reduction.png",
+          "paper/q1234_draft_v1/figures/visual_revision/environment_sensitivity.pdf",
+          "paper/q1234_draft_v1/figures/visual_revision/environment_sensitivity.png"
+        ]
+      }
+    },
+    "removed_panel_information_scope": "Q1 four profile times covered by saved heatmap samples and official tables. Q2 temperature profiles and three omitted moisture times remain in six-time official tables/unchanged stored fields; new chart supports endpoint T-C evolution and retained moisture profiles. Dimension mean time histories are not drawn now; unchanged historical records retain 8/13/15 snapshots, while current discussion uses endpoint paired means/differences and does not claim slopes or time-history extrema from the new figure."
+  },
+  "not_executed": [
+    "PDE solving or new parameter scenarios",
+    "model modules or solver imports",
+    "recomputation of scientific results",
+    "visual inspection certified by static checks"
+  ]
+}

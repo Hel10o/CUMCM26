@@ -1,0 +1,22 @@
+{
+  "old_pages": 156,
+  "new_pages": 157,
+  "old_appendix_start": 30,
+  "new_appendix_start": 31,
+  "comparison_dpi": 72,
+  "footer_mask_points": [
+    275,
+    766,
+    321,
+    781
+  ],
+  "body_render_dpi": 130,
+  "appendix_count": 127,
+  "appendix_changed_excluding_footer": [],
+  "abstract_pixels_identical": true,
+  "all_pages_rendered": 157,
+  "body_pages_rendered": 30,
+  "appendix_comparison_passed": true,
+  "all_checks_passed": true,
+  "visual_review_is_separate": true
+}

@@ -1,0 +1,132 @@
+{
+  "baseline_commit": "a2c8baf0175c29a4fe21145ba222cb8e19d84199",
+  "scope": "Read frozen arrays and evidence; graphical postprocessing only, no PDE or scenario execution.",
+  "script": "paper/q1234_draft_v1/visual_revision/geometry.py",
+  "script_sha256": "3e464343be5bf29fc9f32546668b6b5f001e689d96bf1fe9705b6621d4df855b",
+  "common_sha256": "3b95588397102933411150593b8b85ada59aee350065e5e1df4bbe3c907d1bbf",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0"
+  },
+  "sources": {
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz": {
+      "sha256": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "purpose": "Q3 frozen full trajectory, axis and surface moisture"
+    },
+    "q4_complete_delivery/v1/output/main.npz": {
+      "sha256": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+      "purpose": "Q4 frozen time/radius/material field, current surface and formal endpoint"
+    },
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.json": {
+      "sha256": "a5214496d3dc42277668779d906ad05257f9ece761985182e9ce4f7606096610",
+      "purpose": "Saved Q3 exact root and execution extrema"
+    },
+    "q4_complete_delivery/v1/output/end_event.json": {
+      "sha256": "13b737e84266e1c89984b2cb970e212872abd0233683d86f09da24771f69a4ef",
+      "purpose": "Saved Q4 root, execution point and endpoint maximum"
+    },
+    "q4_complete_delivery/v1/inputs/attachment2.xlsx": {
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "purpose": "Observed external radius history; visual input trace only"
+    }
+  },
+  "outputs": {
+    "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.pdf": {
+      "sha256": "63ab98afe1a69d04b24b0118d39adf028472d0b1caa17eb2f671583fc2b0b7bc",
+      "bytes": 43811
+    },
+    "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.png": {
+      "sha256": "ca69b1ea79e9ea0ff5be83d0aa71c06191a10d2d0b7b13d72c4ef2a9a3ee0001",
+      "bytes": 173549
+    },
+    "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.pdf": {
+      "sha256": "ce1e5e47efed77236448d5ba652164a185552117e37a379c610148716ff81c12",
+      "bytes": 197106
+    },
+    "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.png": {
+      "sha256": "716cf43cfe8a0149b73b056d292be58d256ecf606ba101f17aa36c319faae864",
+      "bytes": 354446
+    }
+  },
+  "details": {
+    "font": "Microsoft YaHei",
+    "events": [
+      {
+        "title": "(a) 问题三：附录3 · 固定半径",
+        "root_s": 206906.38993232802,
+        "exec_s": 206906.76,
+        "exec_C": 0.14999989220802712,
+        "exec_h": "57.4741",
+        "margin_display": "0.3701"
+      },
+      {
+        "title": "(b) 问题四：附录4 · 规定收缩",
+        "root_s": 183931.21171548913,
+        "exec_s": 183931.56,
+        "exec_C": 0.14999982116131336,
+        "exec_h": "51.0921",
+        "margin_display": "0.3483"
+      }
+    ],
+    "shrinkage": {
+      "profiles": [
+        {
+          "time_h": 6,
+          "time_index": 360,
+          "current_radius_cm": 1.374,
+          "axis_C": 1.7196029341884955,
+          "surface_C": 0.4206825942811151
+        },
+        {
+          "time_h": 12,
+          "time_index": 720,
+          "current_radius_cm": 1.248,
+          "axis_C": 0.7376863465762249,
+          "surface_C": 0.16694747164292625
+        },
+        {
+          "time_h": 24,
+          "time_index": 1440,
+          "current_radius_cm": 1.204,
+          "axis_C": 0.28512069131022066,
+          "surface_C": 0.06732456430561844
+        },
+        {
+          "time_h": 51.0921,
+          "time_index": 3066,
+          "current_radius_cm": 1.2,
+          "axis_C": 0.14999982116131336,
+          "surface_C": 0.05260748963556811
+        }
+      ],
+      "heatmap_time_count": 3067,
+      "radial_node_count": 121,
+      "current_radius_mapping": "r_cm=100*radius_m(t)*sqrt(x)",
+      "time_stop_h": 51.0921,
+      "radius_observations_count": 145,
+      "log_color_limits": [
+        0.05,
+        2.55
+      ],
+      "heatmap_visual_interpolation": "Gouraud color interpolation between saved mesh nodes; no PDE state evaluated or extrapolated.",
+      "outside_material": "No mesh or fill beyond the current outer vertex R(t); white background.",
+      "observation_time_end_h": 72.0
+    },
+    "process_sampling": "Q3 every stored 60 s plus exact execution output; Q4 all 3067 stored outputs. Rulers read exact saved JSON root and execution metadata.",
+    "event_scope": "Each root/execution result is for its one-dimensional effective model and assumed environment; no continuous 2D or physical execution guarantee.",
+    "between_question_scope": "Q3 uses appendix 3 and fixed radius; Q4 uses appendix 4 and prescribed shrinkage. Difference between these two curves is not a pure shrinkage effect.",
+    "old_new_mapping": {
+      "q3_q4_drying": "Retains axis, current surface, threshold and official execution labels; adds stored discrete root-to-execution evidence.",
+      "q4_shrinkage": "Retains all 145 radius observations through 72 h in a small panel and four exact-time current-radius profiles; adds moisture map only through official execution."
+    },
+    "checks": {
+      "q3_event_max_matches_last_frozen_axis": true,
+      "q4_event_max_matches_last_frozen_axis": true,
+      "displayed_root_to_execution_deltas_match_paper": true,
+      "saved_radius_matches_linear_observation_input": true,
+      "no_outside_material_mesh": true
+    }
+  },
+  "all_input_hashes_unchanged": true
+}

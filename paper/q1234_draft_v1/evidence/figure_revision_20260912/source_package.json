@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": {
+    "crc": true,
+    "no_duplicate_members": true,
+    "member_set_matches_manifest": true,
+    "outer_inner_manifests_match": true,
+    "zip_and_disk_all_hashes_match": true,
+    "no_cache_or_compile_intermediates": true,
+    "new_assets_scripts_and_records_in_zip": true,
+    "archive_hash_matches_outer": true,
+    "sidecar_hash_matches": true,
+    "published_pdf_matches_compiled": true,
+    "new_python_sources_parse": true,
+    "all_23_unique_inputs_unchanged": true
+  },
+  "member_count": 277,
+  "mismatched_members": [],
+  "source_zip": {
+    "bytes": 23484619,
+    "sha256": "9ed40efd56e81b0224b9c4253ab07fe60150c03790c56a8394bf1e008537c4d3"
+  },
+  "paper_pdf": {
+    "sha256": "f70a1bb14ed72d64d9bca0f54ba5d64aa068b2ecf2b0c56d5e540921b75a2b50",
+    "bytes": 1422128
+  },
+  "comparison_pdf": {
+    "sha256": "3178ee2471b98b4afef1cee565b93ced0a832f4e8bf5de520712186d8be7e51c",
+    "bytes": 577525
+  },
+  "purpose": "External archive audit; this file named source_package.json is deliberately excluded from the ZIP to avoid self-reference.",
+  "not_run": [
+    "PDE or parameter scenarios",
+    "compilation from an extracted standalone ZIP"
+  ]
+}

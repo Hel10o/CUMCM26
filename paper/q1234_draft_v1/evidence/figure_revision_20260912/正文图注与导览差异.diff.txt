@@ -1,0 +1,71 @@
+diff --git a/paper/q1234_draft_v1/sections/q1.tex b/paper/q1234_draft_v1/sections/q1.tex
+index f5607fb..db8f7c7 100644
+--- a/paper/q1234_draft_v1/sections/q1.tex
++++ b/paper/q1234_draft_v1/sections/q1.tex
+@@ -124,2 +124,2 @@ $2.5499924\unit{kg/kg}$，四位显示仍为2.5500；因此不能把表中轴心
+-\includegraphics[width=0.94\textwidth]{figures/q1_profiles.pdf}
+-\caption{第一问不同时刻的径向温度与干基含水率分布。}
++\includegraphics[width=0.94\textwidth]{figures/visual_revision/q1_profiles.pdf}
++\caption{第一问的时间--径向温湿场。横轴为时间，纵轴为径向距离；左、右色标分别表示温度与干基含水率，均由已保存采样值着色。}
+@@ -129 +129 @@ $2.5499924\unit{kg/kg}$，四位显示仍为2.5500；因此不能把表中轴心
+-图\ref{fig:q1-profiles}显示，升温已遍及所考察的径向位置，而水分变化
++沿图\ref{fig:q1-profiles}横向可跟踪同一径向位置的变化，沿纵向可比较同一时刻的内部与表面。色阶显示，升温已遍及所考察的径向位置，而水分变化
+diff --git a/paper/q1234_draft_v1/sections/q2.tex b/paper/q1234_draft_v1/sections/q2.tex
+index 9ec2c93..aecadc6 100644
+--- a/paper/q1234_draft_v1/sections/q2.tex
++++ b/paper/q1234_draft_v1/sections/q2.tex
+@@ -151,2 +151,2 @@ $1.3825\unit{kg/kg}$，相对初始含水率下降45.7833\%。该比例是固定
+-\includegraphics[width=0.94\textwidth]{figures/q2_profiles.pdf}
+-\caption{第二问前3小时的中截面径向温湿分布。}
++\includegraphics[width=0.94\textwidth]{figures/visual_revision/q2_profiles.pdf}
++\caption{第二问前3小时的温湿状态路径与径向含水率。左图以温度、干基含水率为坐标，分别连接轴心和表面的已保存状态，箭头表示时间推进；右图保留对应时刻的中截面径向剖面。}
+@@ -154,0 +155 @@ $1.3825\unit{kg/kg}$，相对初始含水率下降45.7833\%。该比例是固定
++\FloatBarrier
+@@ -156 +157 @@ $1.3825\unit{kg/kg}$，相对初始含水率下降45.7833\%。该比例是固定
+-图\ref{fig:q2-profiles}表明，初期失水集中于外层，随后内部含水率逐步
++图\ref{fig:q2-profiles}左图把升温与失水放在同一路径中，轴心初期以升温为主，表面则较早出现含水率下降；右图表明，初期失水集中于外层，随后内部含水率逐步
+diff --git a/paper/q1234_draft_v1/sections/q3.tex b/paper/q1234_draft_v1/sections/q3.tex
+index 248979a..c161baf 100644
+--- a/paper/q1234_draft_v1/sections/q3.tex
++++ b/paper/q1234_draft_v1/sections/q3.tex
+@@ -143,2 +143,2 @@ $9.33\times10^{-9}\unit{kg/kg}$。
+- \includegraphics[width=0.93\textwidth]{figures/q3_q4_drying.pdf}
+- \caption{问题三（左）与问题四（右）的轴心、当前表面含水率演化。
++ \includegraphics[width=0.93\textwidth]{figures/visual_revision/q3_q4_drying.pdf}
++ \caption{问题三（左）与问题四（右）的干燥过程与事件判定。上排为一维径向有效模型的轴心、当前表面含水率演化。
+@@ -145,0 +146 @@ $9.33\times10^{-9}\unit{kg/kg}$。
++ 下排以各自临界根为时间原点，仅标示已存临界根与执行点，并列出执行最大值。
+@@ -151,0 +153,2 @@ $9.33\times10^{-9}\unit{kg/kg}$。
++图\ref{fig:q3-q4-drying}上排展示表面先失水、轴心控制尾段的过程；下排将等号临界根与已选执行点分开，时间差直接取自原事件记录。
++
+diff --git a/paper/q1234_draft_v1/sections/q4.tex b/paper/q1234_draft_v1/sections/q4.tex
+index 29ac758..e63476e 100644
+--- a/paper/q1234_draft_v1/sections/q4.tex
++++ b/paper/q1234_draft_v1/sections/q4.tex
+@@ -247,2 +247,2 @@ $t_{*,4}=183931.211715489\unit{s}$。
+- \includegraphics[width=0.92\textwidth]{figures/q4_shrinkage.pdf}
+- \caption{观测半径历程（左）及附录4下不同时间的径向含水率剖面（右）。
++ \includegraphics[width=0.92\textwidth]{figures/visual_revision/q4_shrinkage.pdf}
++ \caption{规定收缩下的径向有效模型场与观测输入。(a)当前实际半径坐标中的含水率色图，仅显示至正式执行时刻，采用对数色标，材料域外留白；边界线与空心点区分输入半径及抽样观测记录。(b)附录4下不同时间的径向含水率剖面。(c)完整观测半径历程。
+@@ -255 +255 @@ $t_{*,4}=183931.211715489\unit{s}$。
+-图\ref{fig:q4-shrinkage}给出半径输入与相应的径向含水率变化。
++图\ref{fig:q4-shrinkage}在当前实际半径坐标中展示规定收缩与含水率演化；上方色图止于正式执行时刻，左下剖面止于各时刻的材料表面，右下小图保留完整半径观测输入。
+diff --git a/paper/q1234_draft_v1/sections/validation_limits.tex b/paper/q1234_draft_v1/sections/validation_limits.tex
+index 1fc53b2..ab5048f 100644
+--- a/paper/q1234_draft_v1/sections/validation_limits.tex
++++ b/paper/q1234_draft_v1/sections/validation_limits.tex
+@@ -20 +20 @@
+-图\ref{fig:dimension-reduction}将同一配对保存场的中截面剖面与整根平均并列，显示局部近似与总体失水应分别判断。
++图\ref{fig:dimension-reduction}上排直接显示各时窗终点的中截面含水率差，下排并列对应的整根平均与失水增加，显示局部近似与总体失水应分别判断。上排各面板注明各自量级；下排各行时窗不同，只在同行的一维、二维之间作配对比较。
+@@ -22,2 +22,2 @@
+-\centering\includegraphics[width=.98\linewidth]{figures/dimension_reduction.pdf}
+-\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\unit{s}、问题二10800\unit{s}及问题四21600\unit{s}的中截面径向含水率；下排为整根体积加权平均随时间的变化，终点失水增加与表\ref{tab:wholebody}一致。
++\centering\includegraphics[width=.98\linewidth]{figures/visual_revision/dimension_reduction.pdf}
++\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\unit{s}、问题二10800\unit{s}及问题四21600\unit{s}的中截面径向含水率差$\Delta C=C_{2D}-C_{1D}$；下排为各时窗终点的整根体积加权平均，圆点、方点分别表示二维和配对一维，终点失水增加与表\ref{tab:wholebody}一致。
+@@ -24,0 +25 @@
++上述时段最大差与上排终点差值的统计范围不同。
+@@ -51,2 +52,2 @@ $b+0.005$&57.584113&$+0.110117$&51.218753&$+0.126750$\\
+-\centering\includegraphics[width=.93\linewidth]{figures/environment_sensitivity.pdf}
+-\caption{后段环境情景相对同阶基线的根变化；幅度为人工设定，第四问规定半径保持不变。}\label{fig:environment}
++\centering\includegraphics[width=.93\linewidth]{figures/visual_revision/environment_sensitivity.pdf}
++\caption{后段环境情景相对同阶基线的根变化；幅度为人工设定，第四问规定半径保持不变。圆点、方点分别表示问题三、四，共用零线；负值表示根提前，正值表示根后移。}\label{fig:environment}

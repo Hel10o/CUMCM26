@@ -1,0 +1,23 @@
+"""Six-page visual comparison from existing PDF assets; no numerical work."""
+from pathlib import Path
+import fitz,hashlib,json
+BASE=Path(__file__).resolve().parents[2]
+OUT=BASE/'evidence/figure_revision_20260912/六图新旧对照.pdf'
+names=['q1_profiles','q2_profiles','q3_q4_drying','q4_shrinkage','dimension_reduction','environment_sensitivity']
+titles=['时间—径向温湿场','温湿状态路径与径向剖面','全过程与离散事件','收缩材料域、剖面与观测输入','中截面差值与整根平均','后段环境情景']
+doc=fitz.open()
+for i,(name,title) in enumerate(zip(names,titles),1):
+    p=doc.new_page(width=841.89,height=595.28)
+    p.insert_font(fontname='cjk',fontfile='C:/Windows/Fonts/msyh.ttc')
+    p.insert_text((26,29),f'图 {i}  {title}',fontname='cjk',fontsize=13,color=(.14,.23,.28))
+    p.insert_text((26,61),'修订前',fontname='cjk',fontsize=11)
+    p.insert_text((440,61),'修订后',fontname='cjk',fontsize=11)
+    p.draw_line((421,72),(421,548),color=(.8,.84,.86),width=.6)
+    for folder,box in [('figures',fitz.Rect(24,78,405,545)),('figures/visual_revision',fitz.Rect(440,78,820,545))]:
+        with fitz.open(BASE/folder/f'{name}.pdf') as source:
+            p.show_pdf_page(box,source,0,keep_proportion=True)
+    p.insert_text((26,575),'仅比较呈现方式；原规定结果、数据文件与历史图保持。完整说明见本轮修订记录。',fontname='cjk',fontsize=8,color=(.35,.42,.45))
+doc.set_metadata({'title':'六图新旧对照','subject':'Frozen-data figure redesign comparison','author':'','creator':'PyMuPDF visual postprocessing'})
+doc.subset_fonts()
+doc.save(OUT,garbage=4,deflate=True)
+print(json.dumps({'path':str(OUT),'pages':len(doc),'sha256':hashlib.sha256(OUT.read_bytes()).hexdigest()},ensure_ascii=False))

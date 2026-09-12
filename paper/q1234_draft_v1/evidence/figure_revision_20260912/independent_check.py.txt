@@ -1,0 +1,230 @@
+#!/usr/bin/env python3
+"""Independent read-only figure revision audit. Never imports project solvers.
+--freeze creates its own immutable baseline; normal mode prints JSON only.
+"""
+from pathlib import Path
+from collections import Counter
+import argparse, ast, hashlib, json, re, subprocess, sys
+
+sys.stdout.reconfigure(encoding='utf-8')
+HERE = Path(__file__).resolve().parent
+BASE = HERE.parents[1]
+ROOT = BASE.parents[1]
+SHA = 'a2c8baf0175c29a4fe21145ba222cb8e19d84199'
+PREFIX = 'paper/q1234_draft_v1/'
+FROZEN = HERE / 'baseline_integrity.json'
+SOURCES = ['main.tex', 'ai_details.tex', 'sections/problem_model.tex', 'sections/q1.tex',
+ 'sections/q2.tex', 'sections/q3.tex', 'sections/q4.tex', 'sections/validation_limits.tex',
+ 'sections/references.tex', 'sections/appendix.tex']
+EDITABLE = ['sections/q1.tex', 'sections/q2.tex', 'sections/q3.tex', 'sections/q4.tex', 'sections/validation_limits.tex']
+MUTABLE = {'README.md'} | {PREFIX+p for p in EDITABLE + ['README.md', 'package_source.py',
+ 'evidence/source_package.json', '四问论文初稿_v1.pdf', '四问论文LaTeX源稿_v1.zip', '四问论文LaTeX源稿_v1.zip.sha256']}
+NEW_PREFIXES = [PREFIX+'evidence/figure_revision_20260912/', PREFIX+'figures/visual_revision/', PREFIX+'visual_revision/', 'template/']
+NEW_FILES = {PREFIX+'build_visual_assets.py'}
+FORMAL = ['q1_complete_delivery/q1_delivery/output/result1.xlsx', 'q4_complete_delivery/v1/q123_closeout/result2.xlsx',
+ 'q3_refinement_delivery/output/result3.xlsx', 'q4_complete_delivery/v1/output/result4.xlsx']
+RED = ['能耗', '节能', '可忽略', '题面指定中截面']
+FIG_LABELS = ['fig:q1-profiles', 'fig:q2-profiles', 'fig:q3-q4-drying', 'fig:q4-shrinkage', 'fig:dimension-reduction', 'fig:environment']
+ENV = re.compile(r'\\begin\{(equation\*?|align\*?|table\*?|figure\*?)\}.*?\\end\{\1\}', re.S)
+FIG = re.compile(r'\\begin\{figure\*?\}.*?\\end\{figure\*?\}', re.S)
+EQ = re.compile(r'\\begin\{(?:equation\*?|align\*?)\}.*?\\end\{(?:equation\*?|align\*?)\}', re.S)
+TABLE = re.compile(r'\\begin\{table\*?\}.*?\\end\{table\*?\}', re.S)
+PROTECTION = re.compile('不能|不等于|不构成|不消除|不含环境|不替代|不推翻|仍需|尚不|不足以|未取得|不是|严格|仅覆盖|人工设定|给定|规定|保守')
+
+def git(*args): return subprocess.check_output(['git', *args], cwd=ROOT)
+def H(data): return hashlib.sha256(data).hexdigest()
+def FH(path):
+ h=hashlib.sha256()
+ with path.open('rb') as f:
+  for b in iter(lambda:f.read(1024*1024), b''): h.update(b)
+ return h.hexdigest()
+def old(p): return git('show', SHA+':'+PREFIX+p).decode('utf-8')
+def norm(s): return re.sub(r'\s+', '', s)
+def numbers(s):
+ s=re.sub(r'\\(?:label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}', '', s)
+ return re.findall(r'\d+(?:\.\d+)?', s)
+def prose(s):
+ s=ENV.sub('',s)
+ s=re.sub(r'\\(?:section|subsection|label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}', '', s)
+ return re.sub(r'\\(?:FloatBarrier|Needspace\{[^}]*\})', '', s)
+def sentences(s):
+ # Paragraph splitting prevents false joined sentences across display environments.
+ return [norm(t) for p in re.split(r'\r?\n\s*\r?\n',prose(s)) for t in re.findall(r'[^。！？]+[。！？]',p) if norm(t)]
+def freeze():
+ if FROZEN.exists(): raise SystemExit('Refusing to overwrite frozen baseline')
+ tree=[]
+ for raw in git('ls-tree','-r','-l','-z',SHA).decode('utf-8').split('\0'):
+  if raw:
+   meta,p=raw.split('\t',1); mode,kind,oid,size=meta.split()
+   tree.append({'path':p,'git_blob_oid':oid,'bytes':int(size)})
+ src={p:old(p) for p in SOURCES}; protect=[x for x in tree if x['path'] not in MUTABLE]
+ keyfiles=[x for x in protect if x['path'].startswith(PREFIX+'figures/') or x['path'].startswith(PREFIX+'tables/') or x['path']==PREFIX+'main.tex']
+ result={'baseline_sha':SHA,'scope':'Immutable Git object snapshot; no PDE, parameter scenario, numerical integration or model code execution',
+ 'hash_method':'git_blob_oid is Git SHA-1 over canonical blob bytes; raw SHA256 supplied separately for source, original figures/tables and formal Excel.',
+ 'observed_status_at_freeze':git('status','--short').decode('utf-8'),'protected_git_blobs':protect,'protected_count':len(protect),
+ 'old_evidence_count':sum(x['path'].startswith(PREFIX+'evidence/') for x in protect),
+ 'old_figure_count':sum(x['path'].startswith(PREFIX+'figures/') for x in protect),
+ 'official_table_count':sum(x['path'].startswith(PREFIX+'tables/') for x in protect),
+ 'key_asset_sha256':{x['path']:H(git('show',SHA+':'+x['path'])) for x in keyfiles},
+ 'formal_excel':{p:{'sha256':FH(ROOT/p),'bytes':(ROOT/p).stat().st_size,'git_blob_matches':git('hash-object','--',p).decode().strip()==next(x['git_blob_oid'] for x in tree if x['path']==p)} for p in FORMAL},
+ 'source_sha256':{p:H(s.encode('utf-8')) for p,s in src.items()},
+ 'numbers_by_source':{p:numbers(s) for p,s in src.items()},
+ 'numbers_outside_figures':{p:numbers(FIG.sub('',s)) for p,s in src.items()},
+ 'numeric_result_sentences':{p:[t for t in sentences(s) if re.search(r'\d',t)] for p,s in src.items()},
+ 'protected_prose_sentences':{p:[t for t in sentences(s) if PROTECTION.search(t)] for p,s in src.items()},
+ 'figure_environment_text':{p:FIG.findall(s) for p,s in src.items() if FIG.search(s)},
+ 'interpretation':'main.tex byte frozen including abstract, conclusion and AI. Existing numeric result prose, equations, tables and protection statements must remain; caption and new reading-guide number deltas separately reported. Numeric counts alone do not certify unchanged results.'}
+ FROZEN.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps({k:result[k] for k in ['baseline_sha','protected_count','old_evidence_count','old_figure_count','official_table_count']},ensure_ascii=False))
+
+def run(pdf_dir=None):
+ b=json.loads(FROZEN.read_text(encoding='utf-8')); src={p:(BASE/p).read_bytes().decode('utf-8') for p in SOURCES}
+ checks=[]; review={}
+ def C(k,p,e=None): checks.append({'id':k,'passed':bool(p),'evidence':e})
+ changed=set(filter(None,git('diff',SHA,'--name-only','-z').decode('utf-8').split('\0')))
+ forbidden=changed & {x['path'] for x in b['protected_git_blobs']}
+ C('protected_old_files_unchanged',not forbidden,sorted(forbidden))
+ added=set(filter(None,git('ls-files','--others','--exclude-standard','-z').decode('utf-8').split('\0')))
+ added|=set(filter(None,git('diff',SHA,'--diff-filter=A','--name-only','-z').decode('utf-8').split('\0')))
+ unexpected=[p for p in added if p not in NEW_FILES and not any(p.startswith(a) for a in NEW_PREFIXES)]
+ C('new_files_within_authorized_scope',not unexpected,sorted(unexpected))
+ C('no_tracked_deletions',not git('diff',SHA,'--diff-filter=D','--name-only','-z').strip())
+ C('main_tex_entire_bytes_frozen',FH(BASE/'main.tex')==b['source_sha256']['main.tex'],{'sha256':FH(BASE/'main.tex')})
+ C('formal_excel_raw_sha256_unchanged',all(FH(ROOT/p)==v['sha256'] for p,v in b['formal_excel'].items()))
+ C('old_figures_tables_main_raw_sha256_unchanged',all(FH(ROOT/p)==sha for p,sha in b['key_asset_sha256'].items()),{'files':len(b['key_asset_sha256'])})
+ for p in EDITABLE:
+  C('equation_environments_exact:'+p,EQ.findall(src[p])==EQ.findall(old(p)))
+  C('table_environments_exact:'+p,TABLE.findall(src[p])==TABLE.findall(old(p)))
+  current=norm(prose(src[p]))
+  missing=[s for s in b['numeric_result_sentences'][p] if s not in current]
+  C('numeric_result_sentences_retained:'+p,not missing,missing)
+  missing=[s for s in b['protected_prose_sentences'][p] if s not in current]
+  C('protected_prose_sentences_retained:'+p,not missing,missing)
+ oldnum=Counter(x for ns in b['numbers_by_source'].values() for x in ns)
+ newnum=Counter(x for s in src.values() for x in numbers(s))
+ review['numeric_occurrences']={'old':sum(oldnum.values()),'new':sum(newnum.values()),'removed':dict(oldnum-newnum),'added':dict(newnum-oldnum)}
+ review['outside_figure_numeric_delta']={p:{'removed':dict(Counter(b['numbers_outside_figures'][p])-Counter(numbers(FIG.sub('',s)))),'added':dict(Counter(numbers(FIG.sub('',s)))-Counter(b['numbers_outside_figures'][p]))} for p,s in src.items()}
+ C('no_old_numeric_occurrences_lost',not (oldnum-newnum),review['numeric_occurrences'])
+ body_names=[p for p in SOURCES if p not in {'ai_details.tex','sections/references.tex','sections/appendix.tex'}]
+ C('ten_body_sections',sum(len(re.findall(r'\\section\{',src[p])) for p in body_names)==10)
+ compiled_src={p:s for p,s in src.items() if p!='ai_details.tex'}
+ C('paper_source_redlines_zero',not any(t in s for t in RED for s in compiled_src.values()),{'counts':{t:sum(s.count(t) for s in compiled_src.values()) for t in RED},'scope':'main and its included manuscript sections; standalone unreferenced ai_details.tex remains byte-frozen but is not compiled into this PDF'})
+ review['compiled_source_number_scope']={'old':sum(len(b['numbers_by_source'][p]) for p in compiled_src),'new':sum(len(numbers(s)) for s in compiled_src.values()),'standalone_ai_details_not_compiled':True}
+ labels=Counter(k for s in src.values() for k in re.findall(r'\\label\{([^}]+)\}',s))
+ C('six_existing_figure_labels_retained_once',all(labels[k]==1 for k in FIG_LABELS))
+ review['figure_environments_current']={p:FIG.findall(s) for p,s in src.items() if FIG.search(s)}
+ review['new_reading_guides_require_semantic_review']=True
+ inputs={p:{'bytes':(BASE/p).stat().st_size,'sha256':FH(BASE/p)} for p in SOURCES}
+ manifest_summary={}
+ for group in ['process','geometry','validation']:
+  mp=HERE/(group+'_sources.json')
+  if not mp.exists():
+   C('figure_evidence_present:'+group,False)
+   continue
+  manifest=json.loads(mp.read_text(encoding='utf-8'))
+  source_bad=[p for p,r in manifest['sources'].items() if FH(ROOT/p)!=r['sha256']]
+  output_bad=[p for p,r in manifest['outputs'].items() if FH(ROOT/p)!=r['sha256'] or (ROOT/p).stat().st_size!=r['bytes']]
+  C('figure_input_and_output_hash_bindings:'+group,not source_bad and not output_bad and manifest['baseline_commit']==SHA,{'sources':len(manifest['sources']),'outputs':len(manifest['outputs']),'input_mismatch':source_bad,'output_mismatch':output_bad})
+  script=BASE/'visual_revision'/(group+'.py'); common=BASE/'visual_revision/common.py'
+  C('figure_script_hash_bindings:'+group,FH(script)==manifest['script_sha256'] and FH(common)==manifest['common_sha256'])
+  manifest_summary[group]={'sources':len(manifest['sources']),'outputs':list(manifest['outputs'])}
+  for path in [mp,script,common]+[ROOT/p for p in manifest['outputs']]:
+   inputs[str(path.resolve())]={'bytes':path.stat().st_size,'sha256':FH(path)}
+ actual_figs={p.name for p in (BASE/'figures/visual_revision').glob('*') if p.is_file()}
+ expected_figs={n+ext for n in ['q1_profiles','q2_profiles','q3_q4_drying','q4_shrinkage','dimension_reduction','environment_sensitivity'] for ext in ['.pdf','.png']}
+ C('six_new_pdf_png_pairs',actual_figs==expected_figs,{'missing':sorted(expected_figs-actual_figs),'extra':sorted(actual_figs-expected_figs)})
+ forbidden_calls={'solve_ivp','odeint','solve_bvp','root_scalar','brentq','fsolve','solve_pde'}
+ ast_summary={}; forbidden_ast=[]
+ for path in sorted((BASE/'visual_revision').glob('*.py')):
+  tree=ast.parse(path.read_text(encoding='utf-8')); imports=[]; calls=[]
+  for node in ast.walk(tree):
+   if isinstance(node,ast.Import): imports.extend(a.name for a in node.names)
+   elif isinstance(node,ast.ImportFrom): imports.append(node.module)
+   elif isinstance(node,ast.Call):
+    name=node.func.id if isinstance(node.func,ast.Name) else node.func.attr if isinstance(node.func,ast.Attribute) else ''
+    if name in forbidden_calls: calls.append(name)
+  badimports=[n for n in imports if n and ('solver' in n or n.startswith('scipy.integrate') or n.startswith('scipy.optimize'))]
+  if calls or badimports: forbidden_ast.append({'file':path.name,'calls':calls,'imports':badimports})
+  ast_summary[path.name]={'imports':imports,'forbidden_call_names':calls}
+ C('no_solver_imports_or_named_solver_calls_in_new_plot_scripts',not forbidden_ast,forbidden_ast)
+ review['plot_script_AST_scope']='AST names/imports checked and code separately reviewed; this check alone cannot certify arbitrary Python behavior. Scripts are not executed by this audit.'
+ review['plot_script_imports']=ast_summary
+ review['figure_manifest_summary']=manifest_summary
+ # Compare stored outputs only; this is neither model integration nor figure rebuilding.
+ import numpy as np
+ with np.load(ROOT/'q1_complete_delivery/q1_delivery/output/q1_unrounded.npz',allow_pickle=False) as q1:
+  old_times=[300,600,1200,1800]
+  C('old_q1_four_profile_times_covered_by_new_heatmap',all(np.count_nonzero(q1['time_s']==t)==1 for t in old_times) and len(q1['radius_cm'])==21,{'old_profile_times_s':old_times,'new_time_range_s':[0,1800],'radial_nodes':len(q1['radius_cm'])})
+ with np.load(ROOT/'q2_final_delivery/output/q2_unrounded.npz',allow_pickle=False) as a, np.load(ROOT/'q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz',allow_pickle=False) as z:
+  times=np.arange(1800,10801,1800); oi=[np.flatnonzero(a['time_s']==t).item() for t in times]; ni=[np.flatnonzero(z['time_s']==t).item() for t in times]
+  q2_compare={}
+  for key,ch in [('temperature_degC',0),('moisture_dry_basis',1)]:
+   before=a[key][oi]; after=z['profile_TC'][ni,:,ch]
+   q2_compare[key]={'cells':int(before.size),'four_decimal_mismatches':int(np.count_nonzero(np.char.mod('%.4f',before)!=np.char.mod('%.4f',after))),'max_abs_saved_array_difference':float(np.max(abs(before-after)))}
+  C('old_q2_six_profiles_four_decimal_values_preserved_in_accepted_unified_source',all(v['four_decimal_mismatches']==0 for v in q2_compare.values()),q2_compare)
+ old_dimension=json.loads((BASE/'evidence/content_finalization_20260912/dimension_reduction_plot_data.json').read_text(encoding='utf-8'))
+ new_dimension=json.loads((HERE/'validation_sources.json').read_text(encoding='utf-8'))
+ coverage=[]
+ for before,after in zip(old_dimension['cases'],new_dimension['details']['reduction']):
+  coverage.append({'case':before['case'],'old_history_saved_times':len(before['two_d']['time_s']),
+   'same_source_hashes':all(before[k]['sha256']==new_dimension['sources'][after[k]['source']]['sha256'] for k in ['two_d','one_d']),
+   'full_81_node_profiles_exact':all(before[k]['profile_C_kg_per_kg']==after[k]['C_kg_per_kg'] for k in ['two_d','one_d']),
+   'endpoint_mean_displays_exact':before['table_mean_display']==after['display_means'],
+   'loss_percentage_displays_exact':before['loss_increase_percent_display']==after['display_loss_increase_percent']})
+ C('old_dimension_figure_endpoint_information_retained',len(coverage)==3 and all(all(v for k,v in r.items() if k not in {'case','old_history_saved_times'}) for r in coverage),coverage)
+ review['removed_panel_information_scope']='Q1 four profile times covered by saved heatmap samples and official tables. Q2 temperature profiles and three omitted moisture times remain in six-time official tables/unchanged stored fields; new chart supports endpoint T-C evolution and retained moisture profiles. Dimension mean time histories are not drawn now; unchanged historical records retain 8/13/15 snapshots, while current discussion uses endpoint paired means/differences and does not claim slopes or time-history extrema from the new figure.'
+ if pdf_dir:
+  import fitz
+  bd=Path(pdf_dir).resolve(); aux=(bd/'main.aux').read_text(encoding='utf-8'); log=(bd/'main.log').read_text(encoding='utf-8')
+  rows=re.findall(r'\\newlabel\{([^}]+)\}\{\{([^{}]*)\}\{([^{}]*)\}',aux)
+  counts=Counter(k for k,n,p in rows); lab={k:{'number':n,'page':int(p) if p.isdigit() else p} for k,n,p in rows}
+  refs=[k for s in src.values() for k in re.findall(r'\\(?:ref|eqref)\{([^}]+)\}',s)]
+  C('refs_eqrefs_resolved_unique',all(counts[k]==1 for k in refs),{'uses':len(refs),'targets':len(set(refs)),'invalid':[k for k in set(refs) if counts[k]!=1]})
+  C('all_aux_labels_unique',all(v==1 for v in counts.values()),{'labels':len(counts)})
+  cites=[k.strip() for s in src.values() for group in re.findall(r'\\cite(?:\[[^]]*\])?\{([^}]+)\}',s) for k in group.split(',')]
+  bib=Counter(re.findall(r'\\bibcite\{([^}]+)\}',aux))
+  C('citations_resolved_unique',all(bib[k]==1 for k in cites),{'uses':len(cites),'targets':len(set(cites))})
+  sec=re.findall(r'\\contentsline \{section\}\{\\numberline \{([^}]+)\}([^}]*)\}\{(\d+)\}\{section\.(\d+)\}',aux)
+  C('compiled_ten_body_sections',len(sec)==10 and [int(x[3]) for x in sec]==list(range(1,11)),sec)
+  sub9=re.findall(r'\\contentsline \{subsection\}\{\\numberline \{(9\.\d+)\}([^}]*)\}\{(\d+)\}',aux)
+  C('chapter9_subsection_order',[(a,n) for a,n,p in sub9]==[('9.1','模型优点'),('9.2','模型推广'),('9.3','适用范围与主要限制'),('9.4','改进方向与数据需求')],sub9)
+  C('six_figure_numbers_order',all(lab[k]['number']==str(i) for i,k in enumerate(FIG_LABELS,1)),{k:lab.get(k) for k in FIG_LABELS})
+  bad=[s for s in log.splitlines() if re.search(r'undefined references|Reference .* undefined|Citation .* undefined|multiply defined|Missing character',s,re.I)]
+  C('final_log_refs_and_glyphs_clean',not bad,bad)
+  with fitz.open(bd/'main.pdf') as doc:
+   texts=[p.get_text() for p in doc]; compact=[norm(t) for t in texts]
+   with fitz.open(stream=git('show',SHA+':'+PREFIX+'四问论文初稿_v1.pdf'),filetype='pdf') as previous:
+    old_abstract=previous[0].get_pixmap(dpi=72,alpha=False); new_abstract=doc[0].get_pixmap(dpi=72,alpha=False)
+    C('abstract_page_pixels_identical_to_Git_baseline_72dpi',(old_abstract.width,old_abstract.height,old_abstract.samples)==(new_abstract.width,new_abstract.height,new_abstract.samples),{'dpi':72,'baseline_pdf_sha256':H(git('show',SHA+':'+PREFIX+'四问论文初稿_v1.pdf'))})
+   # Reuse the accepted spatial PDF table extractor without running its main/save
+   # entry points or writing Python bytecode/audit files.
+   validator_path=BASE/'validate_paper.py'
+   ns={'__name__':'independent_readonly_table_validation','__file__':str(validator_path)}
+   exec(compile(validator_path.read_text(encoding='utf-8'),str(validator_path),'exec'),ns)
+   audit=ns['Audit'].__new__(ns['Audit']); audit.report={'checks':[],'table_results':{}}
+   audit.inspect_tables(doc,lab,json.loads((BASE/'evidence/table_expected.json').read_text(encoding='utf-8')))
+   table_summary={k:{'status':r['status'],'matched_cells':r.get('matched_cells',0),'mismatches':r.get('mismatches',[]),'error':r.get('error')} for k,r in audit.report['table_results'].items()}
+   C('six_formal_PDF_tables_all_display_cells_match_frozen_expected',len(table_summary)==6 and all(r['status']=='pass' for r in table_summary.values()),{'tables':table_summary,'matched_cells':sum(r['matched_cells'] for r in table_summary.values()),'method':'Existing caption/vector-rule-bounded table extractor executed read-only; no global text-token fallback and no save() call.'})
+   bs=lab['body:start']['page']; aps=lab['appendix:start']['page']
+   C('abstract_one_page_body_at_most_30',bs==2 and aps-bs<=30 and lab['document:end']['page']==len(doc),{'total_pages':len(doc),'body_pages':aps-bs,'body_start':bs,'appendix_start':aps})
+   C('pdf_redlines_zero',not any(t in s for t in RED for s in compact),{t:[i+1 for i,s in enumerate(compact) if t in s] for t in RED})
+   missing=[i+1 for i,s in enumerate(texts) if '??' in s or '[?]' in s or '\ufffd' in s]
+   C('pdf_no_unresolved_placeholders',not missing,missing)
+   ai=[(i+1,s.find('AI工具使用声明')) for i,s in enumerate(compact) if 'AI工具使用声明' in s]
+   refspos=[(i+1,s.find('参考文献')) for i,s in enumerate(compact) if '参考文献' in s]
+   C('AI_before_references',bool(ai and refspos) and ai[0]<refspos[0],{'ai':ai,'references':refspos})
+   contexts=[{'page':i+1,'text':s[max(0,m.start()-70):m.end()+70]} for i,s in enumerate(compact) for m in re.finditer(r'60\.65(?:26)?%',s)]
+   C('three_model_time_percent_contexts',len(contexts)==3 and all('模型临界时间缩短' in x['text'] for x in contexts),contexts)
+  published=BASE/'四问论文初稿_v1.pdf'
+  C('published_pdf_matches_reviewed_build',FH(published)==FH(bd/'main.pdf'))
+  inputs.update({str(bd/p):{'bytes':(bd/p).stat().st_size,'sha256':FH(bd/p)} for p in ['main.pdf','main.aux','main.log']})
+ C('reviewed_inputs_stable',all(FH(Path(p) if Path(p).is_absolute() else BASE/p)==r['sha256'] for p,r in inputs.items()))
+ result={'baseline_sha':SHA,'automatic_passed':all(c['passed'] for c in checks),'checks':checks,'inputs':inputs,'review_required':review,
+ 'not_executed':['PDE solving or new parameter scenarios','model modules or solver imports','recomputation of scientific results','visual inspection certified by static checks']}
+ print(json.dumps(result,ensure_ascii=False,indent=2))
+ return 0 if result['automatic_passed'] else 1
+
+if __name__=='__main__':
+ p=argparse.ArgumentParser(description=__doc__); p.add_argument('--freeze',action='store_true'); p.add_argument('--pdf-dir'); a=p.parse_args()
+ if a.freeze: freeze()
+ else: raise SystemExit(run(a.pdf_dir))

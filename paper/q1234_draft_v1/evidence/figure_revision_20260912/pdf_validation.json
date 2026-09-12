@@ -1,0 +1,1348 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-09-12T11:11:06.804506+00:00",
+  "validation_scope": "full_document",
+  "full_document_validated": true,
+  "submission_ready": false,
+  "inputs": {
+    "pdf": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\四问论文初稿_v1.pdf",
+      "exists": true,
+      "bytes": 1422128,
+      "sha256": "f70a1bb14ed72d64d9bca0f54ba5d64aa068b2ecf2b0c56d5e540921b75a2b50"
+    },
+    "aux": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\figure_revision\\main.aux",
+      "exists": true,
+      "bytes": 29811,
+      "sha256": "91abc96cfcd73eb313bd288bfa2f47393ab7b571e16ac2782b5c5383a7aabed5"
+    },
+    "ai_pdf": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\AI工具使用详情.pdf",
+      "exists": true,
+      "bytes": 121379,
+      "sha256": "dedf1eed51e4ed810e95aace5cd618e1972e5dfbd8a74db9157923b1930d2ed7"
+    },
+    "expected": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\evidence\\table_expected.json",
+      "exists": true,
+      "bytes": 16526,
+      "sha256": "1325c851255e6e23c90568217243f6eb9f1a5ac4e3a8b5b934956d5a80a4e445"
+    }
+  },
+  "checks": [
+    {
+      "id": "input.pdf",
+      "status": "pass",
+      "message": "Required input pdf exists."
+    },
+    {
+      "id": "input.aux",
+      "status": "pass",
+      "message": "Required input aux exists."
+    },
+    {
+      "id": "input.ai_pdf",
+      "status": "pass",
+      "message": "Required input ai_pdf exists."
+    },
+    {
+      "id": "input.expected",
+      "status": "pass",
+      "message": "Required input expected exists."
+    },
+    {
+      "id": "paper.size",
+      "status": "pass",
+      "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
+      "evidence": {
+        "bytes": 1422128,
+        "limit_bytes_exclusive": 20000000
+      }
+    },
+    {
+      "id": "paper.a4",
+      "status": "pass",
+      "message": "All pages are unrotated portrait A4.",
+      "evidence": []
+    },
+    {
+      "id": "paper.footer_sequence",
+      "status": "pass",
+      "message": "Every physical page has exactly one centered Arabic footer matching its 1-based index.",
+      "evidence": []
+    },
+    {
+      "id": "paper.blank_pages",
+      "status": "pass",
+      "message": "No structurally empty pages.",
+      "evidence": []
+    },
+    {
+      "id": "paper.known_anonymity",
+      "status": "pass",
+      "message": "No known account identifiers, absolute machine/user paths, or nonempty PDF author metadata.",
+      "evidence": []
+    },
+    {
+      "id": "paper.text_margins",
+      "status": "pass",
+      "message": "Text lies inside the 25 mm margin box, allowing 2 pt for font bounding-box overhang; centered footer only is exempt.",
+      "evidence": {
+        "violation_count": 0,
+        "violations": [],
+        "margin_pt": 70.86614173228347,
+        "glyph_bbox_tolerance_pt": 2.0
+      }
+    },
+    {
+      "id": "aux.unique_labels",
+      "status": "pass",
+      "message": "AUX labels have no duplicate definitions.",
+      "evidence": []
+    },
+    {
+      "id": "aux.citation_keys",
+      "status": "pass",
+      "message": "Every cited AUX key has exactly one bibliography definition.",
+      "evidence": {
+        "cited": [
+          "adrover2020",
+          "ashrae",
+          "dasilva2014",
+          "fao",
+          "problem",
+          "scipy",
+          "wu2022"
+        ],
+        "undefined": [],
+        "duplicate_bibcite": []
+      }
+    },
+    {
+      "id": "paper.abstract_one_page",
+      "status": "pass",
+      "message": "AUX body:start must be physical page 2, leaving exactly one abstract page.",
+      "evidence": {
+        "body_start": 2
+      }
+    },
+    {
+      "id": "paper.abstract_content",
+      "status": "pass",
+      "message": "The first page contains the abstract and keywords."
+    },
+    {
+      "id": "paper.no_submission_cover_pages",
+      "status": "pass",
+      "message": "The electronic-paper PDF does not begin with a commitment or numbering cover."
+    },
+    {
+      "id": "paper.appendix_boundary",
+      "status": "pass",
+      "message": "Full validation requires an appendix:start label after the body and within the PDF.",
+      "evidence": {
+        "body_start": 2,
+        "appendix_start": 31,
+        "pdf_pages": 157
+      }
+    },
+    {
+      "id": "paper.end_boundary",
+      "status": "pass",
+      "message": "document:end agrees with the actual final physical PDF page.",
+      "evidence": {
+        "label_page": 157,
+        "pdf_pages": 157
+      }
+    },
+    {
+      "id": "paper.body_page_limit",
+      "status": "pass",
+      "message": "Body, references, and AI declaration together occupy at most 30 pages, excluding abstract and appendix.",
+      "evidence": {
+        "body_start": 2,
+        "body_end": 30,
+        "body_pages": 29,
+        "maximum": 30
+      }
+    },
+    {
+      "id": "paper.ai_declaration_location",
+      "status": "pass",
+      "message": "AI declaration is included in the counted body pages.",
+      "evidence": {
+        "ai_declaration_page": 30
+      }
+    },
+    {
+      "id": "paper.references_resolved",
+      "status": "pass",
+      "message": "Abstract/body contain no ??, [?], or Unicode replacement characters; literal appendix source is excluded.",
+      "evidence": []
+    },
+    {
+      "id": "paper.no_contents_page",
+      "status": "pass",
+      "message": "Abstract/body contain no table-of-contents heading.",
+      "evidence": []
+    },
+    {
+      "id": "paper.ai_before_references",
+      "status": "pass",
+      "message": "Exactly one references heading follows the AI declaration, with appendix afterwards.",
+      "evidence": [
+        {
+          "page": 30,
+          "y": 261.6050109863281
+        }
+      ]
+    },
+    {
+      "id": "paper.body_font_distribution",
+      "status": "info",
+      "message": "CJK text-size distribution, weighted by character count; equations, captions, and tables may use other sizes.",
+      "evidence": {
+        "cjk_character_counts_by_pt": {
+          "12.0": 11853,
+          "10.5": 1038,
+          "15.0": 291,
+          "18.0": 141,
+          "5.95": 53,
+          "6.21": 42,
+          "6.9": 39,
+          "7.05": 34,
+          "7.74": 32,
+          "7.91": 28,
+          "6.27": 23,
+          "6.98": 21,
+          "7.8": 19,
+          "7.83": 18,
+          "5.89": 15,
+          "6.54": 15,
+          "6.02": 12,
+          "6.1": 12,
+          "6.46": 10,
+          "7.35": 9,
+          "5.47": 8,
+          "6.45": 7,
+          "7.53": 7,
+          "7.66": 6,
+          "6.28": 4,
+          "6.73": 4,
+          "6.99": 4
+        },
+        "dominant_cjk_size_pt": 12.0
+      }
+    },
+    {
+      "id": "tables.manifest_keys",
+      "status": "pass",
+      "message": "The expected manifest defines exactly the six requested result tables.",
+      "evidence": {
+        "found": [
+          "q1_temperature",
+          "q1_moisture",
+          "q2_temperature",
+          "q2_moisture",
+          "q3_moisture",
+          "q4_moisture"
+        ],
+        "required": [
+          "q1_temperature",
+          "q1_moisture",
+          "q2_temperature",
+          "q2_moisture",
+          "q3_moisture",
+          "q4_moisture"
+        ]
+      }
+    },
+    {
+      "id": "tables.q1_temperature",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          8
+        ],
+        "matched_cells": 42,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "tables.q1_moisture",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          8
+        ],
+        "matched_cells": 42,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "tables.q2_temperature",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          12
+        ],
+        "matched_cells": 36,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "tables.q2_moisture",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          13
+        ],
+        "matched_cells": 36,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "tables.q3_moisture",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          17
+        ],
+        "matched_cells": 60,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "tables.q4_moisture",
+      "status": "pass",
+      "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
+      "evidence": {
+        "pages": [
+          22
+        ],
+        "matched_cells": 63,
+        "mismatch_count": 0
+      }
+    },
+    {
+      "id": "ai_details.size",
+      "status": "pass",
+      "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
+      "evidence": {
+        "bytes": 121379,
+        "limit_bytes_exclusive": 20000000
+      }
+    },
+    {
+      "id": "ai_details.a4",
+      "status": "pass",
+      "message": "All pages are unrotated portrait A4.",
+      "evidence": []
+    },
+    {
+      "id": "ai_details.footer_sequence",
+      "status": "pass",
+      "message": "Every physical page has exactly one centered Arabic footer matching its 1-based index.",
+      "evidence": []
+    },
+    {
+      "id": "ai_details.blank_pages",
+      "status": "pass",
+      "message": "No structurally empty pages.",
+      "evidence": []
+    },
+    {
+      "id": "ai_details.known_anonymity",
+      "status": "pass",
+      "message": "No known account identifiers, absolute machine/user paths, or nonempty PDF author metadata.",
+      "evidence": []
+    },
+    {
+      "id": "ai_details.text_margins",
+      "status": "pass",
+      "message": "Text lies inside the 25 mm margin box, allowing 2 pt for font bounding-box overhang; centered footer only is exempt.",
+      "evidence": {
+        "violation_count": 0,
+        "violations": [],
+        "margin_pt": 70.86614173228347,
+        "glyph_bbox_tolerance_pt": 2.0
+      }
+    },
+    {
+      "id": "ai_details.required_topics",
+      "status": "pass",
+      "message": "AI-details PDF contains the expected disclosure topic labels; this does not certify the statements' truth or completeness.",
+      "evidence": {
+        "title": true,
+        "tool_and_version": true,
+        "purpose_or_stage": true,
+        "input_and_interaction": true,
+        "adoption_and_review": true
+      }
+    },
+    {
+      "id": "ai_details.human_review_external",
+      "status": "info",
+      "message": "Actual authors must verify AI outputs and complete truthful records; automated topic detection does not establish human review.",
+      "evidence": null
+    },
+    {
+      "id": "inputs.stable_during_validation",
+      "status": "pass",
+      "message": "No input file changed while this audit was running.",
+      "evidence": []
+    }
+  ],
+  "table_results": {
+    "q1_temperature": {
+      "aux_label": "tab:q1-temperature",
+      "expected_table_number": "1",
+      "segments": [
+        {
+          "page": 8,
+          "clip": [
+            155.28700256347656,
+            262.1549987792969,
+            436.4930114746094,
+            417.42401123046875
+          ],
+          "row_bboxes": [
+            [
+              182.8939971923828,
+              272.25897216796875,
+              430.50506591796875,
+              282.75897216796875
+            ],
+            [
+              182.8939971923828,
+              293.552978515625,
+              430.50506591796875,
+              304.052978515625
+            ],
+            [
+              182.8939971923828,
+              314.84698486328125,
+              430.50506591796875,
+              325.34698486328125
+            ],
+            [
+              182.8939971923828,
+              336.1409912109375,
+              430.50506591796875,
+              346.6409912109375
+            ],
+            [
+              177.6439971923828,
+              357.43499755859375,
+              430.50506591796875,
+              367.93499755859375
+            ],
+            [
+              177.6439971923828,
+              378.72900390625,
+              430.50506591796875,
+              389.22900390625
+            ],
+            [
+              177.6439971923828,
+              400.0240173339844,
+              430.50506591796875,
+              410.5240173339844
+            ]
+          ],
+          "rows": [
+            [
+              "100",
+              "28.0001",
+              "28.0003",
+              "28.0040",
+              "28.0327",
+              "28.1801"
+            ],
+            [
+              "300",
+              "28.0408",
+              "28.0635",
+              "28.1514",
+              "28.3681",
+              "28.8489"
+            ],
+            [
+              "600",
+              "28.4533",
+              "28.5360",
+              "28.8039",
+              "29.3159",
+              "30.1652"
+            ],
+            [
+              "900",
+              "29.3243",
+              "29.4583",
+              "29.8755",
+              "30.6161",
+              "31.7304"
+            ],
+            [
+              "1200",
+              "30.5427",
+              "30.7098",
+              "31.2223",
+              "32.1126",
+              "33.4276"
+            ],
+            [
+              "1500",
+              "31.9957",
+              "32.1867",
+              "32.7660",
+              "33.7463",
+              "35.1203"
+            ],
+            [
+              "1800",
+              "33.5753",
+              "33.7720",
+              "34.3642",
+              "35.3621",
+              "36.7856"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 8,
+        "text": "表1 30 分钟内药材中截面温度（◦C）",
+        "bbox": [
+          209.0030059814453,
+          184.81195068359375,
+          392.2200012207031,
+          196.2379913330078
+        ]
+      },
+      "expected_row_count": 7,
+      "actual_row_count": 7,
+      "column_count": 6,
+      "mismatches": [],
+      "matched_cells": 42,
+      "status": "pass"
+    },
+    "q1_moisture": {
+      "aux_label": "tab:q1-moisture",
+      "expected_table_number": "2",
+      "segments": [
+        {
+          "page": 8,
+          "clip": [
+            168.41200256347656,
+            524.2219848632812,
+            423.3680114746094,
+            679.4910278320312
+          ],
+          "row_bboxes": [
+            [
+              196.0189971923828,
+              534.3270263671875,
+              417.38006591796875,
+              544.8270263671875
+            ],
+            [
+              196.0189971923828,
+              555.6209716796875,
+              417.38006591796875,
+              566.1209716796875
+            ],
+            [
+              196.0189971923828,
+              576.9149780273438,
+              417.38006591796875,
+              587.4149780273438
+            ],
+            [
+              196.0189971923828,
+              598.208984375,
+              417.38006591796875,
+              608.708984375
+            ],
+            [
+              190.7689971923828,
+              619.5029907226562,
+              417.38006591796875,
+              630.0029907226562
+            ],
+            [
+              190.7689971923828,
+              640.7969970703125,
+              417.38006591796875,
+              651.2969970703125
+            ],
+            [
+              190.7689971923828,
+              662.0910034179688,
+              417.38006591796875,
+              672.5910034179688
+            ]
+          ],
+          "rows": [
+            [
+              "100",
+              "2.5500",
+              "2.5500",
+              "2.5500",
+              "2.5500",
+              "2.2470"
+            ],
+            [
+              "300",
+              "2.5500",
+              "2.5500",
+              "2.5500",
+              "2.5492",
+              "2.0508"
+            ],
+            [
+              "600",
+              "2.5500",
+              "2.5500",
+              "2.5500",
+              "2.5353",
+              "1.8770"
+            ],
+            [
+              "900",
+              "2.5500",
+              "2.5500",
+              "2.5497",
+              "2.5045",
+              "1.7547"
+            ],
+            [
+              "1200",
+              "2.5500",
+              "2.5500",
+              "2.5482",
+              "2.4646",
+              "1.6586"
+            ],
+            [
+              "1500",
+              "2.5500",
+              "2.5499",
+              "2.5445",
+              "2.4206",
+              "1.5787"
+            ],
+            [
+              "1800",
+              "2.5500",
+              "2.5497",
+              "2.5383",
+              "2.3755",
+              "1.5102"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 8,
+        "text": "表2 30 分钟内药材中截面干基含水率（kg/kg）",
+        "bbox": [
+          185.91500854492188,
+          447.24951171875,
+          415.3080139160156,
+          458.3059997558594
+        ]
+      },
+      "expected_row_count": 7,
+      "actual_row_count": 7,
+      "column_count": 6,
+      "mismatches": [],
+      "matched_cells": 42,
+      "status": "pass"
+    },
+    "q2_temperature": {
+      "aux_label": "tab:q2-temperature",
+      "expected_table_number": "3",
+      "segments": [
+        {
+          "page": 12,
+          "clip": [
+            154.43600463867188,
+            441.8059997558594,
+            437.3429870605469,
+            575.781005859375
+          ],
+          "row_bboxes": [
+            [
+              170.32598876953125,
+              451.9109802246094,
+              431.3560485839844,
+              462.4109802246094
+            ],
+            [
+              170.32598876953125,
+              473.2049865722656,
+              431.3560485839844,
+              483.7049865722656
+            ],
+            [
+              170.32598876953125,
+              494.4989929199219,
+              431.3560485839844,
+              504.9989929199219
+            ],
+            [
+              170.32598876953125,
+              515.79296875,
+              431.3560485839844,
+              526.29296875
+            ],
+            [
+              170.32598876953125,
+              537.0870361328125,
+              431.3560485839844,
+              547.5870361328125
+            ],
+            [
+              170.32598876953125,
+              558.3809814453125,
+              431.3560485839844,
+              568.8809814453125
+            ]
+          ],
+          "rows": [
+            [
+              "0.5000",
+              "32.1892",
+              "32.3821",
+              "32.9659",
+              "33.9608",
+              "35.4130"
+            ],
+            [
+              "1.0000",
+              "40.3816",
+              "40.5536",
+              "41.0605",
+              "41.8782",
+              "42.9976"
+            ],
+            [
+              "1.5000",
+              "45.8468",
+              "45.9348",
+              "46.1930",
+              "46.6051",
+              "47.1400"
+            ],
+            [
+              "2.0000",
+              "48.4502",
+              "48.4881",
+              "48.5984",
+              "48.7736",
+              "49.0033"
+            ],
+            [
+              "2.5000",
+              "49.4670",
+              "49.4792",
+              "49.5136",
+              "49.5653",
+              "49.6609"
+            ],
+            [
+              "3.0000",
+              "49.8495",
+              "49.8553",
+              "49.8746",
+              "49.9101",
+              "49.9664"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 12,
+        "text": "表3 3 小时内药材中截面温度（◦C）",
+        "bbox": [
+          211.6280059814453,
+          364.4639587402344,
+          389.5950012207031,
+          375.8899841308594
+        ]
+      },
+      "expected_row_count": 6,
+      "actual_row_count": 6,
+      "column_count": 6,
+      "mismatches": [],
+      "matched_cells": 36,
+      "status": "pass"
+    },
+    "q2_moisture": {
+      "aux_label": "tab:q2-moisture",
+      "expected_table_number": "4",
+      "segments": [
+        {
+          "page": 13,
+          "clip": [
+            167.56100463867188,
+            166.45098876953125,
+            424.2179870605469,
+            300.4259948730469
+          ],
+          "row_bboxes": [
+            [
+              183.45098876953125,
+              176.55599975585938,
+              418.2310485839844,
+              187.05599975585938
+            ],
+            [
+              183.45098876953125,
+              197.85000610351562,
+              418.2310485839844,
+              208.35000610351562
+            ],
+            [
+              183.45098876953125,
+              219.14401245117188,
+              418.2310485839844,
+              229.64401245117188
+            ],
+            [
+              183.45098876953125,
+              240.43801879882812,
+              418.2310485839844,
+              250.93801879882812
+            ],
+            [
+              183.45098876953125,
+              261.73199462890625,
+              418.2310485839844,
+              272.23199462890625
+            ],
+            [
+              183.45098876953125,
+              283.0260009765625,
+              418.2310485839844,
+              293.5260009765625
+            ]
+          ],
+          "rows": [
+            [
+              "0.5000",
+              "2.5499",
+              "2.5489",
+              "2.5256",
+              "2.3257",
+              "1.6486"
+            ],
+            [
+              "1.0000",
+              "2.5257",
+              "2.4948",
+              "2.3578",
+              "2.0230",
+              "1.4711"
+            ],
+            [
+              "1.5000",
+              "2.3861",
+              "2.3256",
+              "2.1344",
+              "1.8020",
+              "1.3476"
+            ],
+            [
+              "2.0000",
+              "2.1709",
+              "2.1084",
+              "1.9236",
+              "1.6259",
+              "1.2311"
+            ],
+            [
+              "2.5000",
+              "1.9566",
+              "1.9006",
+              "1.7360",
+              "1.4720",
+              "1.1166"
+            ],
+            [
+              "3.0000",
+              "1.7662",
+              "1.7165",
+              "1.5702",
+              "1.3333",
+              "1.0081"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 13,
+        "text": "表4 3 小时内药材中截面干基含水率（kg/kg）",
+        "bbox": [
+          188.54000854492188,
+          89.47850036621094,
+          412.6830139160156,
+          100.53500366210938
+        ]
+      },
+      "expected_row_count": 6,
+      "actual_row_count": 6,
+      "column_count": 6,
+      "mismatches": [],
+      "matched_cells": 36,
+      "status": "pass"
+    },
+    "q3_moisture": {
+      "aux_label": "tab:q3-moisture",
+      "expected_table_number": "5",
+      "segments": [
+        {
+          "page": 17,
+          "clip": [
+            167.56100463867188,
+            251.72500610351562,
+            424.2179870605469,
+            470.8760070800781
+          ],
+          "row_bboxes": [
+            [
+              183.45098876953125,
+              261.8299865722656,
+              418.2310485839844,
+              272.3299865722656
+            ],
+            [
+              178.20098876953125,
+              283.1239929199219,
+              418.2310485839844,
+              293.6239929199219
+            ],
+            [
+              178.20098876953125,
+              304.4179992675781,
+              418.2310485839844,
+              314.9179992675781
+            ],
+            [
+              178.20098876953125,
+              325.7120056152344,
+              418.2310485839844,
+              336.2120056152344
+            ],
+            [
+              178.20098876953125,
+              347.0060119628906,
+              418.2310485839844,
+              357.5060119628906
+            ],
+            [
+              178.20098876953125,
+              368.3000183105469,
+              418.2310485839844,
+              378.8000183105469
+            ],
+            [
+              178.20098876953125,
+              389.5940246582031,
+              418.2310485839844,
+              400.0940246582031
+            ],
+            [
+              178.20098876953125,
+              410.8880310058594,
+              418.2310485839844,
+              421.3880310058594
+            ],
+            [
+              178.20098876953125,
+              432.1820373535156,
+              418.2310485839844,
+              442.6820373535156
+            ],
+            [
+              178.20098876953125,
+              453.4760437011719,
+              418.2310485839844,
+              463.9760437011719
+            ]
+          ],
+          "rows": [
+            [
+              "6.0000",
+              "1.0170",
+              "0.9881",
+              "0.9015",
+              "0.7550",
+              "0.5328"
+            ],
+            [
+              "12.0000",
+              "0.4561",
+              "0.4432",
+              "0.4031",
+              "0.3297",
+              "0.1642"
+            ],
+            [
+              "18.0000",
+              "0.2988",
+              "0.2916",
+              "0.2687",
+              "0.2253",
+              "0.0845"
+            ],
+            [
+              "24.0000",
+              "0.2378",
+              "0.2327",
+              "0.2167",
+              "0.1855",
+              "0.0665"
+            ],
+            [
+              "30.0000",
+              "0.2058",
+              "0.2018",
+              "0.1892",
+              "0.1641",
+              "0.0598"
+            ],
+            [
+              "36.0000",
+              "0.1859",
+              "0.1825",
+              "0.1718",
+              "0.1504",
+              "0.0566"
+            ],
+            [
+              "42.0000",
+              "0.1721",
+              "0.1691",
+              "0.1597",
+              "0.1407",
+              "0.0548"
+            ],
+            [
+              "48.0000",
+              "0.1618",
+              "0.1592",
+              "0.1507",
+              "0.1334",
+              "0.0537"
+            ],
+            [
+              "54.0000",
+              "0.1539",
+              "0.1514",
+              "0.1436",
+              "0.1277",
+              "0.0530"
+            ],
+            [
+              "57.4741",
+              "0.1500",
+              "0.1477",
+              "0.1402",
+              "0.1249",
+              "0.0526"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 17,
+        "text": "表5 题设表5：固定半径时的径向干基含水率（kg/kg）",
+        "bbox": [
+          166.66500854492188,
+          174.75250244140625,
+          434.5580139160156,
+          186.06591796875
+        ]
+      },
+      "expected_row_count": 10,
+      "actual_row_count": 10,
+      "column_count": 6,
+      "mismatches": [],
+      "matched_cells": 60,
+      "status": "pass"
+    },
+    "q4_moisture": {
+      "aux_label": "tab:q4-moisture",
+      "expected_table_number": "6",
+      "segments": [
+        {
+          "page": 22,
+          "clip": [
+            160.41799926757812,
+            166.45098876953125,
+            431.3609924316406,
+            364.3080139160156
+          ],
+          "row_bboxes": [
+            [
+              176.30799865722656,
+              176.55599975585938,
+              425.3785400390625,
+              187.05599975585938
+            ],
+            [
+              171.05799865722656,
+              197.85000610351562,
+              425.3785400390625,
+              208.35000610351562
+            ],
+            [
+              171.05799865722656,
+              219.14401245117188,
+              425.3785400390625,
+              229.64401245117188
+            ],
+            [
+              171.05799865722656,
+              240.43801879882812,
+              425.3785400390625,
+              250.93801879882812
+            ],
+            [
+              171.05799865722656,
+              261.73199462890625,
+              425.3785400390625,
+              272.23199462890625
+            ],
+            [
+              171.05799865722656,
+              283.0260009765625,
+              425.3785400390625,
+              293.5260009765625
+            ],
+            [
+              171.05799865722656,
+              304.32000732421875,
+              425.3785400390625,
+              314.82000732421875
+            ],
+            [
+              171.05799865722656,
+              325.614013671875,
+              425.3785400390625,
+              336.114013671875
+            ],
+            [
+              171.05799865722656,
+              346.90802001953125,
+              425.3785400390625,
+              357.40802001953125
+            ]
+          ],
+          "rows": [
+            [
+              "6.0000",
+              "1.7196",
+              "1.5378",
+              "1.0226",
+              "--",
+              "--",
+              "0.4207"
+            ],
+            [
+              "12.0000",
+              "0.7377",
+              "0.6546",
+              "0.4083",
+              "--",
+              "--",
+              "0.1669"
+            ],
+            [
+              "18.0000",
+              "0.4088",
+              "0.3687",
+              "0.2397",
+              "--",
+              "--",
+              "0.0892"
+            ],
+            [
+              "24.0000",
+              "0.2851",
+              "0.2611",
+              "0.1790",
+              "--",
+              "--",
+              "0.0673"
+            ],
+            [
+              "30.0000",
+              "0.2263",
+              "0.2094",
+              "0.1493",
+              "--",
+              "--",
+              "0.0595"
+            ],
+            [
+              "36.0000",
+              "0.1928",
+              "0.1797",
+              "0.1317",
+              "--",
+              "--",
+              "0.0560"
+            ],
+            [
+              "42.0000",
+              "0.1712",
+              "0.1604",
+              "0.1200",
+              "--",
+              "--",
+              "0.0541"
+            ],
+            [
+              "48.0000",
+              "0.1561",
+              "0.1468",
+              "0.1116",
+              "--",
+              "--",
+              "0.0530"
+            ],
+            [
+              "51.0921",
+              "0.1500",
+              "0.1413",
+              "0.1081",
+              "--",
+              "--",
+              "0.0526"
+            ]
+          ]
+        }
+      ],
+      "caption": {
+        "page": 22,
+        "text": "表6 题设表6：收缩过程中的干基含水率（kg/kg）",
+        "bbox": [
+          177.16500854492188,
+          89.47850036621094,
+          424.0580139160156,
+          100.79192352294922
+        ]
+      },
+      "expected_row_count": 9,
+      "actual_row_count": 9,
+      "column_count": 7,
+      "mismatches": [],
+      "matched_cells": 63,
+      "status": "pass"
+    }
+  },
+  "documents": {
+    "paper": {
+      "page_count": 157,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "考虑变物性与径向收缩的圆柱药材干燥模型",
+        "author": "",
+        "subject": "四问论文初稿",
+        "keywords": "药材干燥,变物性,材料坐标,有限体积,严格阈值",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20260113)",
+        "creationDate": "D:20260912191000+08'00'",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      }
+    },
+    "ai_details": {
+      "page_count": 4,
+      "metadata": {
+        "format": "PDF 1.7",
+        "title": "AI工具使用详情",
+        "author": "",
+        "subject": "四问论文初版的AI使用阶段记录",
+        "keywords": "",
+        "creator": "LaTeX with hyperref",
+        "producer": "xdvipdfmx (20260113)",
+        "creationDate": "D:20260912123544+08'00'",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      }
+    }
+  },
+  "limitations": [
+    "Text and geometry audit does not replace rendered-page visual inspection.",
+    "Unknown author/school/team identifiers require human anonymity review.",
+    "AI disclosure truthfulness and complete human review cannot be certified by this script.",
+    "Table checks compare rendered strings with the supplied expected manifest; numerical model validity is outside scope."
+  ],
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\libai\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+    "pymupdf": "1.28.0"
+  },
+  "aux_labels": {
+    "body:start": {
+      "number": "",
+      "page": 2
+    },
+    "tab:q1-temperature": {
+      "number": "1",
+      "page": 8
+    },
+    "tab:q1-moisture": {
+      "number": "2",
+      "page": 8
+    },
+    "tab:q2-temperature": {
+      "number": "3",
+      "page": 12
+    },
+    "tab:q2-moisture": {
+      "number": "4",
+      "page": 13
+    },
+    "tab:q3-moisture": {
+      "number": "5",
+      "page": 17
+    },
+    "tab:q4-moisture": {
+      "number": "6",
+      "page": 22
+    },
+    "ai:declaration": {
+      "number": "十",
+      "page": 30
+    },
+    "appendix:start": {
+      "number": "",
+      "page": 31
+    },
+    "document:end": {
+      "number": "A.51",
+      "page": 157
+    }
+  },
+  "body_page_count": 29,
+  "failed_check_ids": [],
+  "passed": true,
+  "status": "automated_checks_passed",
+  "check_counts": {
+    "pass": 37,
+    "info": 2
+  }
+}

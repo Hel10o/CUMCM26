@@ -17,11 +17,12 @@
 \end{table}
 \FloatBarrier
 
-图\ref{fig:dimension-reduction}将同一配对保存场的中截面剖面与整根平均并列，显示局部近似与总体失水应分别判断。
+图\ref{fig:dimension-reduction}上排直接显示各时窗终点的中截面含水率差，下排并列对应的整根平均与失水增加，显示局部近似与总体失水应分别判断。上排各面板注明各自量级；下排各行时窗不同，只在同行的一维、二维之间作配对比较。
 \begin{figure}[htbp]
-\centering\includegraphics[width=.98\linewidth]{figures/dimension_reduction.pdf}
-\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\unit{s}、问题二10800\unit{s}及问题四21600\unit{s}的中截面径向含水率；下排为整根体积加权平均随时间的变化，终点失水增加与表\ref{tab:wholebody}一致。
+\centering\includegraphics[width=.98\linewidth]{figures/visual_revision/dimension_reduction.pdf}
+\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\unit{s}、问题二10800\unit{s}及问题四21600\unit{s}的中截面径向含水率差$\Delta C=C_{2D}-C_{1D}$；下排为各时窗终点的整根体积加权平均，圆点、方点分别表示二维和配对一维，终点失水增加与表\ref{tab:wholebody}一致。
 问题一、二在已检时段中截面采样最大含水率差分别为$4.09\times10^{-9}$、$2.24706\times10^{-5}\unit{kg/kg}$。
+上述时段最大差与上排终点差值的统计范围不同。
 体积加权平均在空间均匀干密度假设下等于干质量加权平均。
 来源：\nolinkurl{q4_complete_delivery/v1/validation/geometry/}下的\nolinkurl{q1_80x128/q1_80x0}、\nolinkurl{q23_80x256_integral/q23_80x0_integral}及\nolinkurl{q4_80x128_integral/q4_80x0_integral}配对\texttt{.npz}文件；二维半柱坐标的$z=0$为中截面对称面。}
 \label{fig:dimension-reduction}
@@ -48,8 +49,8 @@ $b+0.005$&57.584113&$+0.110117$&51.218753&$+0.126750$\\
 \end{tabular}
 \end{table}
 \begin{figure}[htbp]
-\centering\includegraphics[width=.93\linewidth]{figures/environment_sensitivity.pdf}
-\caption{后段环境情景相对同阶基线的根变化；幅度为人工设定，第四问规定半径保持不变。}\label{fig:environment}
+\centering\includegraphics[width=.93\linewidth]{figures/visual_revision/environment_sensitivity.pdf}
+\caption{后段环境情景相对同阶基线的根变化；幅度为人工设定，第四问规定半径保持不变。圆点、方点分别表示问题三、四，共用零线；负值表示根提前，正值表示根后移。}\label{fig:environment}
 \end{figure}
 \FloatBarrier
 
