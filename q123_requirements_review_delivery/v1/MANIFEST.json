@@ -1,0 +1,211 @@
+{
+  "scope": "All delivered files except this manifest itself",
+  "hash": "SHA-256",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3203,
+      "sha256": "e8ae9d37fd56a33afcc96593939601eda2a6dfe7638f6cd971cb8ec6fbefc0b1"
+    },
+    {
+      "path": "configs/review_contract.json",
+      "bytes": 1114,
+      "sha256": "9ae1e273e4748ebf38275f70e8310f1c48071997b3c3c4b4583118711fc181b0"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 26,
+      "sha256": "3d655a75a8f48f668c3576093f64a578ecbc7df28b1e4c10ffe038e8a50ef650"
+    },
+    {
+      "path": "source/given_model.py",
+      "bytes": 4268,
+      "sha256": "c77932ac4a3c70b9ceb91b68ef00dcf82218dd4aee538bb9dd054a6c6cea019c"
+    },
+    {
+      "path": "source/review_checks.py",
+      "bytes": 7975,
+      "sha256": "d3675d9196668de8629f06292bf846f48209a3b3e2fbbc1adcf730615c0c016b"
+    },
+    {
+      "path": "source/verify_manifest.py",
+      "bytes": 677,
+      "sha256": "a3d8393d65bed6aaf5a48f20049017827e76dcd7e094cdabe7d60e9c894c8cfc"
+    },
+    {
+      "path": "source_access.json",
+      "bytes": 16541,
+      "sha256": "a920108e580f7d4b57c162aa7a5f602f5427f99da4cfd24f097f5a3b2ecce55f"
+    },
+    {
+      "path": "sources/previous_delivery/README.md",
+      "bytes": 6988,
+      "sha256": "1c8d1058da426e25a285457e319bbcff11387db05ec6052b0e24990708954f05"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/conservation_runs.csv",
+      "bytes": 7118,
+      "sha256": "c6a695618f7d6fe8fcb0ea32d464204b37e795f6fd67f1492813855611929d65"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/equilibrium_sensitivity.csv",
+      "bytes": 2315,
+      "sha256": "150ab372fcae6f7978459144883098bec8b1f1497ef5eddb7a927bd5452fe099"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/event_times.csv",
+      "bytes": 542,
+      "sha256": "3e7d77bcad88243bbecd49baea2f4d432c00270a769ce37e512d826351ec170c"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/factorial_contrasts.csv",
+      "bytes": 12102,
+      "sha256": "e8980095b3c68fecba1adb1c47200279f03ff335f0ba9175e303ba96b5684f47"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/midplane_difference_norms.csv",
+      "bytes": 1498,
+      "sha256": "c408e4440a696de2f25532c29c17f7148d3922bb04d0d91267932e3f2bf92e1a"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/paired_convergence.csv",
+      "bytes": 1445,
+      "sha256": "51b0b7c176f0700b93d81a3b07cc68e6f50c5918947f4db6bf58b611196ca41c"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/sampled_fields.csv",
+      "bytes": 45604,
+      "sha256": "d8b114b9a2ab9aef8c11446a1bff89a5eeb94b1e0c2af2bac952515eb78e3b1f"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/separate_axis_radial_refinement.csv",
+      "bytes": 375,
+      "sha256": "350764e349b4ebc38352316c43c8313d3ce08ab9524affcabff339311cf981c7"
+    },
+    {
+      "path": "sources/previous_delivery/analysis/stage_summary.csv",
+      "bytes": 4665,
+      "sha256": "11a9941f12271d485e02523d3d246cf992c4987f99f9d0e93888418e6361d5e4"
+    },
+    {
+      "path": "sources/previous_delivery/inputs/environment_extracted.csv",
+      "bytes": 18123,
+      "sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e"
+    },
+    {
+      "path": "sources/previous_delivery/source/model.py",
+      "bytes": 7758,
+      "sha256": "120d2f76741f45325c79c42efa8a366b6ad14808b00f26577aeae856c0f299fb"
+    },
+    {
+      "path": "sources/previous_delivery/source_access.json",
+      "bytes": 15399,
+      "sha256": "933aba83deca3cd93ca8976777b806d40aeec7ad76fa16daec0f08fea4c1f668"
+    },
+    {
+      "path": "sources/previous_delivery/前三问二维与潜热影响评估.md",
+      "bytes": 12340,
+      "sha256": "c2f8b1437c4f5715dbf4ed22f9500c015542e58b1fba48f10727c302f77a0e72"
+    },
+    {
+      "path": "sources/previous_delivery/参数与文献证据表.md",
+      "bytes": 5939,
+      "sha256": "7ca27ab346aff416c17f3e074113d5eb6252233d1460a6eee0efa687d5e8cc2f"
+    },
+    {
+      "path": "sources/previous_delivery/最终建模思路.md",
+      "bytes": 8490,
+      "sha256": "25fea1bcc1fe1f0d7f9d595caa1b31fc468dbf5de78e70c77578c5e8b81cf19f"
+    },
+    {
+      "path": "sources/previous_delivery/最终模型选择表.csv",
+      "bytes": 1409,
+      "sha256": "4d5c9aaeaa3a426810e606ef7d7381162a8cf12e954d5fd5b289b6b8fbf1133c"
+    },
+    {
+      "path": "sources/previous_delivery/模型推导与假设契约.md",
+      "bytes": 8133,
+      "sha256": "03fd4cab83b989d5554209f0d29d7dd8cdfeecd336f81d67c377e6d42e1105a0"
+    },
+    {
+      "path": "sources/result2_retrieved.b64",
+      "bytes": 13656,
+      "sha256": "dac58a63db4b6208e93ed32be7ec81afa3e99e9889ca9474fc756b7b7f4b1808"
+    },
+    {
+      "path": "sources/result2_retrieved.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "validation/delivery_review.json",
+      "bytes": 387,
+      "sha256": "7c95172b4d6d448055a54a6e0dcafd6a0982fcaed4a0b93093b6788f78379aad"
+    },
+    {
+      "path": "validation/first_download.json",
+      "bytes": 602,
+      "sha256": "6b20368dd4df492810f988c8466517642fa348bc787919f217544c104316c34d"
+    },
+    {
+      "path": "validation/historical_preservation.json",
+      "bytes": 1097,
+      "sha256": "a2a1e808322b26d11e842c63ad5fdbb6f0527b259f6428e7369bb6d3cc9ad413"
+    },
+    {
+      "path": "validation/local_source_inventory.json",
+      "bytes": 5711,
+      "sha256": "1e47ddf5cee0492d8aa48ce684cfe49d6f97650619e71a3788eb8eaaa7caccbd"
+    },
+    {
+      "path": "validation/review_checks.json",
+      "bytes": 9213,
+      "sha256": "3d683f3633583d4beb44485233de4419067a6dec7e5a607e906a86fce93017dc"
+    },
+    {
+      "path": "validation/review_checks.log",
+      "bytes": 183,
+      "sha256": "220a681cfe7293f1658b8e05e82bbfa8d66747f548bdee0b67d5e06153b7d015"
+    },
+    {
+      "path": "validation/review_checks_final.json",
+      "bytes": 9673,
+      "sha256": "8652d7f7054f0c5eff03a4309bb77275f9664edbfc7525fcd433dbb58b36887f"
+    },
+    {
+      "path": "validation/review_checks_final.log",
+      "bytes": 203,
+      "sha256": "d936f172ffe0bac3c0c02b0661f53c2bf00d588aef460693a975404af541083a"
+    },
+    {
+      "path": "必要补算与未决条件.md",
+      "bytes": 7845,
+      "sha256": "3519e482cd8330a9ab3cef3c245bfead6344a7688363b0eccfd5ee73ae10414f"
+    },
+    {
+      "path": "按题给物性的前三问模型.md",
+      "bytes": 13711,
+      "sha256": "56f1e5bb4171598be43aaeaf7589926027bc44033103a728a60de0b7d783a55e"
+    },
+    {
+      "path": "最终选型与论文路线.md",
+      "bytes": 8541,
+      "sha256": "dab16cbb913da35f832769d8e9f5cdd4c8e312222e232b26685ef9a09f8bbe9e"
+    },
+    {
+      "path": "本轮最终选型表.csv",
+      "bytes": 700,
+      "sha256": "6216bcabbd01b12afd879a2a059518860c165bf73a962d72faee3d99ee954eb1"
+    },
+    {
+      "path": "来源与阅读索引.md",
+      "bytes": 5981,
+      "sha256": "30eb7186367a28ef2fd8209f21a1aef8e0bc2e98a6a950283af79924e8aff4ce"
+    },
+    {
+      "path": "题意约束与逐项质疑答复.md",
+      "bytes": 15781,
+      "sha256": "c3687f294ccb7e33d5e1099cb13e53085ba2742341295f048ff59909e2ec190d"
+    }
+  ]
+}

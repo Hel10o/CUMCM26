@@ -1,0 +1,70 @@
+{
+  "scope": "Raw workbook read and input packaging only; no PDE or model validation.",
+  "files": [
+    {
+      "source": "A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "header": [
+        "时间",
+        "温度",
+        "水分浓度"
+      ],
+      "records": 241,
+      "first": [
+        0.0,
+        28.0,
+        0.01963
+      ],
+      "last": [
+        14400.0,
+        50.165,
+        0.04986
+      ],
+      "csv": "q4_pro_handoff/inputs/environment_from_xlsx.csv"
+    },
+    {
+      "source": "A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "header": [
+        "时间",
+        "半径"
+      ],
+      "records": 145,
+      "first": [
+        0.0,
+        2.0
+      ],
+      "last": [
+        259200.0,
+        1.198
+      ],
+      "csv": "q4_pro_handoff/inputs/radius_from_xlsx.csv"
+    }
+  ],
+  "result4_template": {
+    "source": "A题/附件/附件3/result4.xlsx",
+    "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+    "rows": [
+      [
+        "时间\\到药材中心的距离",
+        0.0,
+        0.1,
+        0.2,
+        "…",
+        "药材表面"
+      ],
+      [
+        60.0
+      ],
+      [
+        120.0
+      ],
+      [
+        180.0
+      ],
+      [
+        "…"
+      ]
+    ]
+  }
+}

@@ -23,6 +23,8 @@ q123_physics_recovery_20260911/** -text
 q123_model_selection_handoff/** -text
 q123_model_selection_delivery/** -text
 q123_requirements_review_handoff/** -text
+q123_requirements_review_delivery/** -text
+q4_pro_handoff/** -text
 review_q2_20260911/** -text
 paper/** -text
 readable/** text eol=lf

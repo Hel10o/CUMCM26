@@ -1,0 +1,6 @@
+{
+  "url": "https://raw.githubusercontent.com/Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/README.md",
+  "method": "container requests GET",
+  "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'raw.githubusercontent.com\\', port=443): Max retries exceeded with url: /Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/README.md (Caused by NameResolutionError(\"HTTPSConnection(host=\\'raw.githubusercontent.com\\', port=443): Failed to resolve \\'raw.githubusercontent.com\\' ([Errno -3] Temporary failure in name resolution)\"))'))",
+  "elapsed_s": 0.007451295852661133
+}

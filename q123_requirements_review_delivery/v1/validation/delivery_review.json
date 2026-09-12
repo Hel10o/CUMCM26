@@ -1,0 +1,10 @@
+{
+  "required_documents_present": true,
+  "all_JSON_parse": true,
+  "all_new_Python_compile": true,
+  "executed_script_hashes_match_current_sources": true,
+  "display_equation_delimiters_paired": true,
+  "model_candidate_has_no_default_equilibrium_mapping": true,
+  "PDE_run": false,
+  "status": "source and model adjudication complete; numeric predictions intentionally not reissued"
+}

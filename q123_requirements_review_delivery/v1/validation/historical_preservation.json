@@ -1,0 +1,24 @@
+{
+  "scope": "Current runtime original archives/reports, checked before and after finalization stage; no claim of an earlier unavailable hash snapshot.",
+  "original_files": {
+    "/mnt/data/q123_model_selection_delivery_v1.zip": {
+      "bytes": 383159877,
+      "sha256": "c8ede1f4365133b1d15636f5b6e87074c33536bbfc0daee607533f3baf65898d"
+    },
+    "/mnt/data/q123_model_selection_reading_v1.zip": {
+      "bytes": 1038627,
+      "sha256": "c1ee930e6cce709e43c2c1d53fb8363e514d0ce75aa881f7ce01ccb2a41c15b6"
+    },
+    "/mnt/data/q123_model_selection_delivery/v1/前三问二维与潜热影响评估.md": {
+      "bytes": 12340,
+      "sha256": "c2f8b1437c4f5715dbf4ed22f9500c015542e58b1fba48f10727c302f77a0e72"
+    },
+    "/mnt/data/q123_model_selection_delivery/v1/最终建模思路.md": {
+      "bytes": 8490,
+      "sha256": "25fea1bcc1fe1f0d7f9d595caa1b31fc468dbf5de78e70c77578c5e8b81cf19f"
+    }
+  },
+  "same_at_second_check": true,
+  "source_subdirectory_check": "20 files unchanged during actual source/constitutive checks; see review_checks_final.json",
+  "GitHub_write_actions": []
+}

@@ -1,0 +1,16 @@
+{
+  "status": "model_and_requirements_review_only",
+  "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "main_candidate": "R_L: original effective properties + surface latent heat + a single confirmed equivalent-material boundary",
+  "PDE_has_been_run_this_round": false,
+  "equilibrium_mapping": null,
+  "equilibrium_mapping_status": "MISSING: no Ceq, K or aw family is silently specified",
+  "hm_interpretation": "material-equivalent Robin coefficient is a candidate requiring confirmation",
+  "future_environment": "last-hour sample mean may be used as a stated scenario; not observed after 4 hours",
+  "Q1_capacity": "820*2600",
+  "Q23_capacity": "(650+128*C)*(1450+2736*C/(1+C)) updated locally from t=0",
+  "density_role": "effective thermal capacity; not simultaneous exact physical wet density for fixed dry skeleton",
+  "geometry": "1D main analysis after paired 2D verification; Q3 currently 2D full-domain event",
+  "numerical_tolerances_for_new_PDE": null,
+  "note": "The helper contains only property and boundary functions; it is NOT a completed PDE simulation or a unique numerical answer."
+}

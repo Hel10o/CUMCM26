@@ -1,0 +1,413 @@
+{
+  "record_written_at_UTC": "2026-09-11T16:57:01.719153+00:00",
+  "time_note": "Per-call wall-clock timestamps were not exposed for most connector/web actions. This is the record creation time, NOT a fabricated retrieval timestamp.",
+  "repository": "Hel10o/libai",
+  "requested_ref": "main",
+  "actual_main_commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "commit_tree": "049415e310b152a14d14cfd3866839b63c9d64a0",
+  "branch_resolution_method": "GitHub.fetch https://api.github.com/repos/Hel10o/libai/branches/main",
+  "branch_resolution_status": "SUCCESS",
+  "commit_timestamp_from_GitHub": "2026-09-11T16:25:22Z",
+  "parent_commit": "f5c06bb276062b52b61c092f16c436c9d971f4f9",
+  "source_freeze_in_historical_tasks": "1feb7686a371179bc6f545217e229f388a9bc379 (background, not the current task commit)",
+  "reads": [
+    {
+      "repository_path": "README.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "first response beginning, truncated",
+        "65–EOF; combined full coverage"
+      ],
+      "git_blob_sha1": "8a97c3bc80c0feacf8124db8b1298688a013a0ff",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/README.md"
+    },
+    {
+      "repository_path": "q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "1–55",
+        "56–110",
+        "111–EOF"
+      ],
+      "git_blob_sha1": "812a17c5353db71b7b1cb3038c0c53ae38d0db34",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_requirements_review_handoff/%E5%89%8D%E4%B8%89%E9%97%AE%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9%E8%B4%A8%E7%96%91%E4%B8%8E%E9%A2%98%E6%84%8F%E7%BA%A6%E6%9D%9F%E9%87%8D%E5%88%86%E6%9E%90_Pro%E4%BA%A4%E6%8E%A5%E6%96%87%E6%A1%A3.md"
+    },
+    {
+      "repository_path": "readable/README.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "full"
+      ],
+      "git_blob_sha1": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/readable/README.md"
+    },
+    {
+      "repository_path": "readable/problem/README.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "full"
+      ],
+      "git_blob_sha1": "5c9a5ac6363fbeeb6fee6cd86f24277cb8ffd2c3",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/readable/problem/README.md"
+    },
+    {
+      "repository_path": "readable/problem/fulltext.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "1–180",
+        "181–EOF"
+      ],
+      "git_blob_sha1": "e97b7dabbd704ac4dfde3092467601546fe48c99",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/readable/problem/fulltext.md"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/模型推导与假设契约.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector1–55; complete local copy read and object SHA matched"
+      ],
+      "git_blob_sha1": "e5c102634f6fe528e2b590aeebc86a343e62fff9",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/%E6%A8%A1%E5%9E%8B%E6%8E%A8%E5%AF%BC%E4%B8%8E%E5%81%87%E8%AE%BE%E5%A5%91%E7%BA%A6.md"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/前三问二维与潜热影响评估.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector60–117; complete local copy read and object SHA matched"
+      ],
+      "git_blob_sha1": "af17e81b2df180e37793ebb4f160e1d141c5804f",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/%E5%89%8D%E4%B8%89%E9%97%AE%E4%BA%8C%E7%BB%B4%E4%B8%8E%E6%BD%9C%E7%83%AD%E5%BD%B1%E5%93%8D%E8%AF%84%E4%BC%B0.md"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/最终建模思路.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector1–36; complete local copy read and object SHA matched"
+      ],
+      "git_blob_sha1": "c2023686fa64be16717b18b48769322c563f3396",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/%E6%9C%80%E7%BB%88%E5%BB%BA%E6%A8%A1%E6%80%9D%E8%B7%AF.md"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/参数与文献证据表.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector1–30; complete local copy read and object SHA matched"
+      ],
+      "git_blob_sha1": "d732bd5cef6de8440bda65b35002f52f8044f37c",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/%E5%8F%82%E6%95%B0%E4%B8%8E%E6%96%87%E7%8C%AE%E8%AF%81%E6%8D%AE%E8%A1%A8.md"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/最终模型选择表.csv",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "full; local object SHA matched"
+      ],
+      "git_blob_sha1": "9344e49ba454b2190d65817ec23cc6fbd3071ce2",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/%E6%9C%80%E7%BB%88%E6%A8%A1%E5%9E%8B%E9%80%89%E6%8B%A9%E8%A1%A8.csv"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/source/model.py",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector1–120; complete177-line local copy read and object SHA matched"
+      ],
+      "git_blob_sha1": "ef9bb86adec1a878aef1c6f3ef54af7d438f9fb5",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/source/model.py"
+    },
+    {
+      "repository_path": "q123_model_selection_delivery/v1/inputs/environment_extracted.csv",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file + local archive",
+      "read_ranges": [
+        "connector1–3 metadata; all241 data rows parsed locally, full object SHA matched"
+      ],
+      "git_blob_sha1": "d55880786a62ff55933c045998a6a7de033b83c5",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/q123_model_selection_delivery/v1/inputs/environment_extracted.csv"
+    },
+    {
+      "repository_path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "1–95; targeted background only"
+      ],
+      "git_blob_sha1": "b1df9b93a3ce948e7f2d1ead2ab4226953509481",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/review_q123_physics_20260911/%E5%89%8D%E4%B8%89%E9%97%AE%E7%8E%B0%E7%8A%B6%E4%B8%8E%E7%89%A9%E7%90%86%E9%97%AD%E5%90%88%E5%AE%A1%E6%A0%B8.md"
+    },
+    {
+      "repository_path": "readable/papers/da-silva-2014/pages/004.md",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file",
+      "read_ranges": [
+        "50–158",
+        "159–252"
+      ],
+      "git_blob_sha1": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/readable/papers/da-silva-2014/pages/004.md"
+    },
+    {
+      "repository_path": "A题/附件/附件3/result2.xlsx",
+      "commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+      "method": "GitHub.fetch_file base64; reconstructed actual bytes; CRC and object SHA checked; artifact_tool import",
+      "read_ranges": [
+        "base64 1–70",
+        "71–120",
+        "121–EOF",
+        "159–EOF tail reread"
+      ],
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "url": "https://github.com/Hel10o/libai/blob/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/A%E9%A2%98/%E9%99%84%E4%BB%B6/%E9%99%84%E4%BB%B63/result2.xlsx"
+    }
+  ],
+  "directories_read": [
+    "A题",
+    "A题/附件",
+    "A题/附件/附件3"
+  ],
+  "originals_metadata": {
+    "A题/A题.pdf": {
+      "git_blob_sha1": "c492bcd60b55904dc2bf63199f7568756f1120d1",
+      "bytes": 553320,
+      "local_PDF_visual_verification": false
+    },
+    "A题/附件/附件1.xlsx": {
+      "git_blob_sha1": "7e6d9ff0c4b8493720d0acfb8fdbddef6d22fc33",
+      "bytes": 16586,
+      "local_binary_parsed": false
+    },
+    "A题/附件/附件2.xlsx": {
+      "git_blob_sha1": "0066c189b555f705df8b5bf0fe945cac7872fd3d",
+      "bytes": 11485,
+      "used_to_modify_Q123": false
+    },
+    "A题/附件/附件3/result1.xlsx": {
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "bytes": 10073,
+      "same_object_as_recovered_result2": true
+    },
+    "A题/附件/附件3/result2.xlsx": {
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+      "zip_crc_pass": true,
+      "sheets": [
+        {
+          "kind": "sheet",
+          "id": "ws/0t46i4",
+          "name": "温度",
+          "index": 0,
+          "range": "A1:F5",
+          "address": "A1:F5"
+        },
+        {
+          "kind": "sheet",
+          "id": "ws/j2wzk0",
+          "name": "水分浓度",
+          "index": 1,
+          "range": "A1:F5",
+          "address": "A1:F5"
+        }
+      ],
+      "tables": [
+        {
+          "kind": "table",
+          "sheet": "温度",
+          "address": "A1:F5",
+          "rows": 5,
+          "cols": 6,
+          "values": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "sheet": "水分浓度",
+          "address": "A1:F5",
+          "rows": 5,
+          "cols": 6,
+          "values": [
+            [
+              "时间\\到药材中心的距离",
+              0,
+              0.1,
+              0.2,
+              "…",
+              2
+            ],
+            [
+              1,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              2,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              3,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            [
+              "…",
+              null,
+              null,
+              null,
+              null,
+              null
+            ]
+          ]
+        }
+      ],
+      "findings": [
+        "No final time given in template",
+        "No z coordinate given",
+        "Example time rows start at 1, not 0",
+        "Result1/2 identical Git objects; only result2 retrieved as binary",
+        "Result3 metadata/text read; binary NOT independently parsed"
+      ]
+    },
+    "A题/附件/附件3/result3.xlsx": {
+      "git_blob_sha1": "4fb701ec33d7705489e8f33231d3443fbd7ccf46",
+      "bytes": 9345,
+      "local_binary_parsed": false
+    }
+  },
+  "local_archive_evidence": {
+    "archive": "/mnt/data/q123_model_selection_reading_v1.zip",
+    "selected_members": 18,
+    "seven_key_files_matched_to_online_git_objects": true,
+    "inventory": "validation/local_source_inventory.json",
+    "all_other_archive_members_online_verified": false,
+    "old_PDE_rerun_this_round": false,
+    "full_previous_NPZ_independently_revalidated": false
+  },
+  "external_primary_sources": [
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e0k.htm",
+      "method": "web.open",
+      "status": "SUCCESS",
+      "scope": "Annex3 (3-1), units and original air-temperature convention"
+    },
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "method": "web.open",
+      "status": "SUCCESS",
+      "scope": "supporting normal-temperature saturation formula context; no drug isotherm"
+    },
+    {
+      "url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "method": "web.open",
+      "status": "SUCCESS",
+      "scope": "original HTML discussion of interface evaporation and material desorption; PDF visual equation inspection not complete"
+    }
+  ],
+  "failures_and_truncations": [
+    {
+      "url": "https://raw.githubusercontent.com/Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/README.md",
+      "method": "container requests GET",
+      "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'raw.githubusercontent.com\\', port=443): Max retries exceeded with url: /Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/README.md (Caused by NameResolutionError(\"HTTPSConnection(host=\\'raw.githubusercontent.com\\', port=443): Failed to resolve \\'raw.githubusercontent.com\\' ([Errno -3] Temporary failure in name resolution)\"))'))",
+      "elapsed_s": 0.007451295852661133,
+      "http_status": null,
+      "note": "Container DNS failure; not a GitHub connector authorization failure."
+    },
+    {
+      "method": "web.open",
+      "url": "https://raw.githubusercontent.com/Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/A%E9%A2%98/A%E9%A2%98.pdf",
+      "error": "Failed to fetch https://raw.githubusercontent.com/Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/A%E9%A2%98/A%E9%A2%98.pdf: Cache miss",
+      "http_status": null,
+      "exact_underlying_HTTP_error_known": false
+    },
+    {
+      "method": "container.download",
+      "url": "https://raw.githubusercontent.com/Hel10o/libai/dc5d9cb5f47e783f57b78d07d6bac37cf269c658/A%E9%A2%98/A%E9%A2%98.pdf",
+      "attempts": 2,
+      "error": "download failed because url not viewed in conversation before. open the file or url using web.run first.",
+      "http_status": null
+    },
+    {
+      "method": "web.click",
+      "source_url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "link_id": 66,
+      "error": "Internal Error ()",
+      "http_status": null,
+      "scope": "PDF download link; not original article HTML"
+    },
+    {
+      "method": "GitHub.fetch_file",
+      "scope": "root README; initial handoff request; initial full/base64 template responses",
+      "error": "Response output was truncated at a line boundary to fit the tool response budget.",
+      "resolution": "Read bounded line windows; full task coverage and template SHA recovered. No fabricated HTTP error."
+    }
+  ],
+  "execution": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 python source/review_checks.py --out validation/review_checks_final.json",
+    "log": "validation/review_checks_final.log",
+    "exit_status": 0,
+    "elapsed_s": 5.511336551000113,
+    "scope": "source/template/constitutive algebra plus synthetic contract tests; NO PDE"
+  },
+  "repository_write_actions": [],
+  "historical_results_overwritten": false,
+  "delivery_scope": "Model/requirements adjudication, candidate equations and targeted follow-up gates, not a new complete numeric answer."
+}

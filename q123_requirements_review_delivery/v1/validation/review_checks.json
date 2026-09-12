@@ -1,0 +1,343 @@
+{
+  "scope": "Source, template, constitutive algebra and synthetic API checks only. No PDE, no new drying time.",
+  "github_commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "command": [
+    "/mnt/data/q123_requirements_review_delivery/v1/source/review_checks.py",
+    "--out",
+    "/mnt/data/q123_requirements_review_delivery/v1/validation/review_checks.json"
+  ],
+  "verified_sources": [
+    {
+      "path": "模型推导与假设契约.md",
+      "bytes": 8133,
+      "sha256": "03fd4cab83b989d5554209f0d29d7dd8cdfeecd336f81d67c377e6d42e1105a0",
+      "git_blob_sha1": "e5c102634f6fe528e2b590aeebc86a343e62fff9",
+      "github_blob_sha1": "e5c102634f6fe528e2b590aeebc86a343e62fff9",
+      "matches": true
+    },
+    {
+      "path": "前三问二维与潜热影响评估.md",
+      "bytes": 12340,
+      "sha256": "c2f8b1437c4f5715dbf4ed22f9500c015542e58b1fba48f10727c302f77a0e72",
+      "git_blob_sha1": "af17e81b2df180e37793ebb4f160e1d141c5804f",
+      "github_blob_sha1": "af17e81b2df180e37793ebb4f160e1d141c5804f",
+      "matches": true
+    },
+    {
+      "path": "最终建模思路.md",
+      "bytes": 8490,
+      "sha256": "25fea1bcc1fe1f0d7f9d595caa1b31fc468dbf5de78e70c77578c5e8b81cf19f",
+      "git_blob_sha1": "c2023686fa64be16717b18b48769322c563f3396",
+      "github_blob_sha1": "c2023686fa64be16717b18b48769322c563f3396",
+      "matches": true
+    },
+    {
+      "path": "参数与文献证据表.md",
+      "bytes": 5939,
+      "sha256": "7ca27ab346aff416c17f3e074113d5eb6252233d1460a6eee0efa687d5e8cc2f",
+      "git_blob_sha1": "d732bd5cef6de8440bda65b35002f52f8044f37c",
+      "github_blob_sha1": "d732bd5cef6de8440bda65b35002f52f8044f37c",
+      "matches": true
+    },
+    {
+      "path": "最终模型选择表.csv",
+      "bytes": 1409,
+      "sha256": "4d5c9aaeaa3a426810e606ef7d7381162a8cf12e954d5fd5b289b6b8fbf1133c",
+      "git_blob_sha1": "9344e49ba454b2190d65817ec23cc6fbd3071ce2",
+      "github_blob_sha1": "9344e49ba454b2190d65817ec23cc6fbd3071ce2",
+      "matches": true
+    },
+    {
+      "path": "source/model.py",
+      "bytes": 7758,
+      "sha256": "120d2f76741f45325c79c42efa8a366b6ad14808b00f26577aeae856c0f299fb",
+      "git_blob_sha1": "ef9bb86adec1a878aef1c6f3ef54af7d438f9fb5",
+      "github_blob_sha1": "ef9bb86adec1a878aef1c6f3ef54af7d438f9fb5",
+      "matches": true
+    },
+    {
+      "path": "inputs/environment_extracted.csv",
+      "bytes": 18123,
+      "sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e",
+      "git_blob_sha1": "d55880786a62ff55933c045998a6a7de033b83c5",
+      "github_blob_sha1": "d55880786a62ff55933c045998a6a7de033b83c5",
+      "matches": true
+    }
+  ],
+  "environment": {
+    "records": 241,
+    "time_range_s": [
+      0.0,
+      14400.0
+    ],
+    "last_hour_61_sample_mean": [
+      49.99893442622951,
+      0.04998754098360656
+    ],
+    "status": "Extracted CSV matched to current Git blob; original attachment1.xlsx NOT independently parsed this round."
+  },
+  "template": {
+    "bytes": 10073,
+    "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+    "git_blob_sha1": "03cefc945518800f20cdec88f821ebc6c76edcfb",
+    "zip_crc_pass": true,
+    "sheets": [
+      {
+        "kind": "sheet",
+        "id": "ws/o7fe5c",
+        "name": "温度",
+        "index": 0,
+        "range": "A1:F5",
+        "address": "A1:F5"
+      },
+      {
+        "kind": "sheet",
+        "id": "ws/u81v2r",
+        "name": "水分浓度",
+        "index": 1,
+        "range": "A1:F5",
+        "address": "A1:F5"
+      }
+    ],
+    "tables": [
+      {
+        "kind": "table",
+        "sheet": "温度",
+        "address": "A1:F5",
+        "rows": 5,
+        "cols": 6,
+        "values": [
+          [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          [
+            1,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            2,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "…",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "kind": "table",
+        "sheet": "水分浓度",
+        "address": "A1:F5",
+        "rows": 5,
+        "cols": 6,
+        "values": [
+          [
+            "时间\\到药材中心的距离",
+            0,
+            0.1,
+            0.2,
+            "…",
+            2
+          ],
+          [
+            1,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            2,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            3,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          [
+            "…",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ]
+      }
+    ],
+    "findings": [
+      "No final time given in template",
+      "No z coordinate given",
+      "Example time rows start at 1, not 0",
+      "Result1/2 identical Git objects; only result2 retrieved as binary",
+      "Result3 metadata/text read; binary NOT independently parsed"
+    ]
+  },
+  "algebra": {
+    "Q1_additive_dry_component_heat_capacity": "-1444.30",
+    "status": "Rejects only an imposed additive constant-free-water composition, not the given cp.",
+    "identities": [
+      {
+        "C": "0.15",
+        "dry_density_from_empirical": "581.9130434782608695652173913",
+        "cp_equivalence_difference": "0E-24"
+      },
+      {
+        "C": "1",
+        "dry_density_from_empirical": "389",
+        "cp_equivalence_difference": "0"
+      },
+      {
+        "C": "2.55",
+        "dry_density_from_empirical": "275.0422535211267605633802817",
+        "cp_equivalence_difference": "0E-24"
+      }
+    ]
+  },
+  "property_comparison": [
+    {
+      "question": 1,
+      "T_degC": 28.0,
+      "C": 2.55,
+      "S_given_J_m3_K": 2132000.0,
+      "S_F_J_m3_K": 2800542.5352112674,
+      "ratio_F_to_given": 1.313575297941495,
+      "rho_given": 820.0,
+      "cp_given": 2600.0,
+      "k_equal": true,
+      "D_equal": true
+    },
+    {
+      "question": 1,
+      "T_degC": 50.0,
+      "C": 0.15,
+      "S_given_J_m3_K": 2132000.0,
+      "S_F_J_m3_K": 479965.63380281697,
+      "ratio_F_to_given": 0.22512459371614305,
+      "rho_given": 820.0,
+      "cp_given": 2600.0,
+      "k_equal": true,
+      "D_equal": true
+    },
+    {
+      "question": 2,
+      "T_degC": 28.0,
+      "C": 2.55,
+      "S_given_J_m3_K": 3334694.7943661967,
+      "S_F_J_m3_K": 3334694.794366197,
+      "ratio_F_to_given": 1.0000000000000002,
+      "rho_given": 976.4,
+      "cp_given": 3415.295774647887,
+      "k_equal": true,
+      "D_equal": true
+    },
+    {
+      "question": 2,
+      "T_degC": 50.0,
+      "C": 0.15,
+      "S_given_J_m3_K": 1209157.1130434782,
+      "S_F_J_m3_K": 571510.2985915494,
+      "ratio_F_to_given": 0.4726518104442556,
+      "rho_given": 669.2,
+      "cp_given": 1806.8695652173913,
+      "k_equal": true,
+      "D_equal": true
+    },
+    {
+      "question": 3,
+      "T_degC": 28.0,
+      "C": 2.55,
+      "S_given_J_m3_K": 3334694.7943661967,
+      "S_F_J_m3_K": 3334694.794366197,
+      "ratio_F_to_given": 1.0000000000000002,
+      "rho_given": 976.4,
+      "cp_given": 3415.295774647887,
+      "k_equal": true,
+      "D_equal": true
+    },
+    {
+      "question": 3,
+      "T_degC": 50.0,
+      "C": 0.15,
+      "S_given_J_m3_K": 1209157.1130434782,
+      "S_F_J_m3_K": 571510.2985915494,
+      "ratio_F_to_given": 0.4726518104442556,
+      "rho_given": 669.2,
+      "cp_given": 1806.8695652173913,
+      "k_equal": true,
+      "D_equal": true
+    }
+  ],
+  "synthetic_tests": [
+    {
+      "test": "Missing equilibrium mapping rejected",
+      "passed": true,
+      "message": "Missing material-side equilibrium mapping; no arbitrary C_eq default is permitted."
+    },
+    {
+      "test": "outward",
+      "passed": true,
+      "synthetic_Ce": 2.4,
+      "j_kg_m2_s": 2.7718309859154914e-05,
+      "latent_W_m2": 67.49109092957742,
+      "status": "Synthetic sign test only; NOT a material parameter"
+    },
+    {
+      "test": "zero",
+      "passed": true,
+      "synthetic_Ce": 2.55,
+      "j_kg_m2_s": 0.0,
+      "latent_W_m2": 0.0,
+      "status": "Synthetic sign test only; NOT a material parameter"
+    },
+    {
+      "test": "inward",
+      "passed": true,
+      "synthetic_Ce": 2.7,
+      "j_kg_m2_s": -2.7718309859154995e-05,
+      "latent_W_m2": -67.49109092957762,
+      "status": "Synthetic sign test only; NOT a material parameter"
+    }
+  ],
+  "preserved_source_files": 20,
+  "sources_unchanged": true,
+  "elapsed_s": 5.788404449000041,
+  "current_PDE_run": false,
+  "inherited_PDE_results_revalidated": false
+}

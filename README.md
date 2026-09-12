@@ -2,9 +2,9 @@
 
 项目题目、建模资料、前三问计算交付，以及独立核验和第一、二问论文阶段稿。
 
-当前交给 Pro 的任务是[前三问模型选择质疑与题意约束重分析](q123_requirements_review_handoff/README.md)：重新审视第一问比热、第二三问经验密度、潜热、边界假设与一维/二维选型，优先落实原题参数和输出要求。[完整交接文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)与[最新提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)为本轮入口。
+当前交给 Pro 的任务是[完成第四问并收尾前三问](q4_pro_handoff/README.md)：依据附件2的半径变化、附录4物性和项目中的收缩/动网格论文，实际完成第四问求解、表6、result4.xlsx和正文；同时补齐第二问完整导出与前三问针对目标的一维/二维证据。[完整交接提示词](q4_pro_handoff/第四问与前三问收尾_Pro交接提示词.md)、[直接发送的提示词](q4_pro_handoff/发给Pro的提示词.txt)、[论文必读位置](q4_pro_handoff/第四问论文阅读清单.md)及[离线输入包](q4_pro_handoff/q4_inputs.zip)配套使用。
 
-已收到[上轮四种情况的 Pro 交付 v1](q123_model_selection_delivery/v1/README.md)，本机尚未复算其数值；本轮同步原始材料，并将其作为待重新裁定的条件模型分析，不自动替换旧正式答案。[上一轮二维与潜热任务](q123_model_selection_handoff/README.md)及历史物理闭合交接继续保留为背景，本轮不要求立即定稿全部 Excel 和论文。
+用户已选择保留题给物性、一维径向有效传热—传质、无显式潜热的主线；二维检验目标输出和全域达标，潜热放在扩展与局限讨论。已收到[题意复审交付](q123_requirements_review_delivery/README.md)，其尚未闭合的含潜热候选R_L和[此前四组F比较](q123_model_selection_delivery/v1/README.md)均保留为背景，不覆盖用户当前选择。旧结果仍按原假设保留，不能声称官方公式已经包含潜热。
 
 ## 通过 ChatGPT 的 GitHub 连接读取
 
@@ -50,7 +50,9 @@
 - [前三问物理闭合Pro交接入口](q123_physics_pro_handoff/README.md)、[完整修正计算任务书](q123_physics_pro_handoff/前三问物理闭合与修正计算_Pro交接文档.md)及[简短启动提示词](q123_physics_pro_handoff/发给Pro的简短提示词.txt)。
 - [Pro部分交付诊断与离线恢复](q123_physics_recovery_20260911/README.md)、[可直接上传的离线输入包](q123_physics_recovery_20260911/q123_physics_offline_inputs.zip)及[恢复执行提示词](q123_physics_recovery_20260911/恢复执行提示词.txt)。
 - [前三问四组模型 Pro 交付 v1](q123_model_selection_delivery/v1/README.md)、[影响评估](q123_model_selection_delivery/v1/前三问二维与潜热影响评估.md)及[模型假设契约](q123_model_selection_delivery/v1/模型推导与假设契约.md)。
-- [当前模型选择质疑交接](q123_requirements_review_handoff/README.md)、[完整重分析文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)及[发送给 Pro 的提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)。
+- [历史模型选择质疑交接](q123_requirements_review_handoff/README.md)、[完整重分析文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)及[对应历史提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)。
+- [题意复审 Pro 原交付](q123_requirements_review_delivery/v1/README.md)及[原始ZIP](q123_requirements_review_delivery/q123_requirements_review_delivery_v1.zip)。
+- [第四问与前三问收尾交接](q4_pro_handoff/README.md)、[项目论文阅读清单](q4_pro_handoff/第四问论文阅读清单.md)及[离线输入包](q4_pro_handoff/q4_inputs.zip)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
@@ -82,15 +84,21 @@ Pro 可直接从当前 GitHub 仓库读取上述目录。ZIP 是便于上传的�
 
 最新审核表明：第一问条件失水的潜热约45.59kJ，是原无潜热基线对流输入约4.801kJ的9.50倍；第二三问若在固定体积内把经验密度视为真实湿体密度，隐含干质量分别在3h和结束时增加约26.87%、115.39%。这两项属于实质物理闭合问题。将经验ρcp用于有效热容量可以明确简化口径，但不能声称真实质量—能量闭合已完成。
 
-前三问原解及新版第三问可作为已声明有效模型的条件数值结果。下一阶段应优先统一空气/药材质量基准、气固平衡、同一蒸发通量和能量收支，再讨论守恒修正与时长变化；潜热影响不能仅凭题面未列参数而略去，也不能保持原失水轨迹只扣潜热便称为真实修正答案。详见[前三问现状与物理闭合审核](review_q123_physics_20260911/前三问现状与物理闭合审核.md)。现有论文未在本轮改写或重新编译。
+前三问原解及新版第三问可作为已声明有效模型的条件数值结果。此前物理审核提出统一空气/药材质量基准、气固平衡、同一蒸发通量和能量收支的扩展路线；用户现选择先保留有效模型推进第四问，这些物理问题继续作为适用范围和扩展讨论，不声称已经解决。详见[前三问现状与物理闭合审核](review_q123_physics_20260911/前三问现状与物理闭合审核.md)。本轮交接准备没有改写或重新编译历史论文。
 
 ## 四组比较交付与当前重新分析
 
 2026-09-12 收到的 `q123_model_selection_delivery/v1` 保留四组比较文档、源码、配置、输出、日志和原清单。其报告认为潜热效应显著、中截面可降维，但整根失水和全域终点需分别讨论。这些是 Pro 在新增边界与物性解释下的条件结论，本机本轮未运行求解或数值验收。
 
-当前质疑集中在：第一问 F 未保留题给 2600 比热，第二三问 F 只以经验密度初值确定固定干密度，且新增了未标定的平衡含水率与气膜假设。请按[最新交接](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)重新确定主模型；既不预设旧无潜热基线正确，也不因物理扩展更复杂而直接采纳新答案。约 73.44 h 不作为本轮新验收的正式时长。
+随后质疑集中在：第一问 F 未保留题给 2600 比热，第二三问 F 只以经验密度初值确定固定干密度，且新增了未标定的平衡含水率与气膜假设。[题意复审交付](q123_requirements_review_delivery/v1/README.md)恢复题给物性，但推荐的R_L仍缺材料边界关系，没有新PDE解。本机只接收和阅读该包，未运行其检查器或复算；约73.44h不作为新验收的正式时长。
 
 上轮包内关于 ZIP 分发、运行与验证的说明按原样保存；本次收到的是解压后的目录，GitHub 同步该目录，没有重新制作上轮同名 ZIP。新增材料的传输与字节检查不等于数值验收。
+
+## 第四问当前任务
+
+前三问按已声明的无显式潜热有效模型作为当前主线，保留其物理局限。第四问使用附件2的收缩半径与附录4，不把第三问的干燥结束状态当初态，也不只替换代码中的半径常数。Pro需阅读白萝卜动网格、Adrover移动边界、da Silva圆柱收缩论文，完成变量转换、实际求解和必要的独立检查；具体合同见[第四问交接](q4_pro_handoff/第四问与前三问收尾_Pro交接提示词.md)。
+
+新成果预定进入 `q4_complete_delivery/v1/`，其中 `q123_closeout/` 保存第二问完整逐秒导出及前三问几何证据收尾。此次只准备任务、输入包并接收最新Pro分析，没有运行第四问。
 
 ## 获取大PDF原件
 

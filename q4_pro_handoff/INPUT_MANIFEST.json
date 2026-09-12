@@ -1,0 +1,1029 @@
+{
+  "purpose": "Inputs and selected references for Q4 completion and Q1-Q3 closeout",
+  "repository": "https://github.com/Hel10o/libai.git",
+  "base_commit_before_this_handoff": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "version_note": "The base commit precedes this handoff; byte hashes identify exact bundled content. Record the actual GitHub commit when reading online.",
+  "byte_policy": "Tracked inputs use Git index bytes after checking for unstaged input changes; untracked inputs use file bytes. Original received evidence is protected by -text attributes. Stage sources before rebuilding and verify the bundle against the final index before committing.",
+  "excluded": [
+    "Chupawa 2022 large LFS PDF (all readable text included)",
+    "Historical full raw numerical fields and complete runtime environments",
+    "Cache, bytecode, build products, the bundle itself"
+  ],
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 2571,
+      "sha256": "e023f7faf848b3597a420b4b16e503c471449f5fc577a92cbb5e78b7436aaa75"
+    },
+    {
+      "path": "A题/A题.pdf",
+      "bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    },
+    {
+      "path": "A题/附件/附件1.xlsx",
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "A题/附件/附件2.xlsx",
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "A题/附件/附件3/result1.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "A题/附件/附件3/result2.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "A题/附件/附件3/result3.xlsx",
+      "bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "A题/附件/附件3/result4.xlsx",
+      "bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/analysis/factorial_contrasts.csv",
+      "bytes": 12102,
+      "sha256": "e8980095b3c68fecba1adb1c47200279f03ff335f0ba9175e303ba96b5684f47"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/README.md",
+      "bytes": 6988,
+      "sha256": "1c8d1058da426e25a285457e319bbcff11387db05ec6052b0e24990708954f05"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/前三问二维与潜热影响评估.md",
+      "bytes": 12340,
+      "sha256": "c2f8b1437c4f5715dbf4ed22f9500c015542e58b1fba48f10727c302f77a0e72"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/参数与文献证据表.md",
+      "bytes": 5939,
+      "sha256": "7ca27ab346aff416c17f3e074113d5eb6252233d1460a6eee0efa687d5e8cc2f"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/最终建模思路.md",
+      "bytes": 8490,
+      "sha256": "25fea1bcc1fe1f0d7f9d595caa1b31fc468dbf5de78e70c77578c5e8b81cf19f"
+    },
+    {
+      "path": "q123_model_selection_delivery/v1/模型推导与假设契约.md",
+      "bytes": 8133,
+      "sha256": "03fd4cab83b989d5554209f0d29d7dd8cdfeecd336f81d67c377e6d42e1105a0"
+    },
+    {
+      "path": "q123_requirements_review_delivery/README.md",
+      "bytes": 652,
+      "sha256": "f27fe273a1e31bdd4bf0cdaa77e50fad28cc29665073a8552e8b37d6fdcb9b30"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/configs/review_contract.json",
+      "bytes": 1114,
+      "sha256": "9ae1e273e4748ebf38275f70e8310f1c48071997b3c3c4b4583118711fc181b0"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/MANIFEST.json",
+      "bytes": 7254,
+      "sha256": "abb1cbb32a6ce0357bd0b6fa25a1ed7ba03e6d428865d66a81a9b55d4bd7fb2c"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/README.md",
+      "bytes": 3203,
+      "sha256": "e8ae9d37fd56a33afcc96593939601eda2a6dfe7638f6cd971cb8ec6fbefc0b1"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/requirements.txt",
+      "bytes": 26,
+      "sha256": "3d655a75a8f48f668c3576093f64a578ecbc7df28b1e4c10ffe038e8a50ef650"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/source/given_model.py",
+      "bytes": 4268,
+      "sha256": "c77932ac4a3c70b9ceb91b68ef00dcf82218dd4aee538bb9dd054a6c6cea019c"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/source/review_checks.py",
+      "bytes": 7975,
+      "sha256": "d3675d9196668de8629f06292bf846f48209a3b3e2fbbc1adcf730615c0c016b"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/source/verify_manifest.py",
+      "bytes": 677,
+      "sha256": "a3d8393d65bed6aaf5a48f20049017827e76dcd7e094cdabe7d60e9c894c8cfc"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/source_access.json",
+      "bytes": 16541,
+      "sha256": "a920108e580f7d4b57c162aa7a5f602f5427f99da4cfd24f097f5a3b2ecce55f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/conservation_runs.csv",
+      "bytes": 7118,
+      "sha256": "c6a695618f7d6fe8fcb0ea32d464204b37e795f6fd67f1492813855611929d65"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/equilibrium_sensitivity.csv",
+      "bytes": 2315,
+      "sha256": "150ab372fcae6f7978459144883098bec8b1f1497ef5eddb7a927bd5452fe099"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/event_times.csv",
+      "bytes": 542,
+      "sha256": "3e7d77bcad88243bbecd49baea2f4d432c00270a769ce37e512d826351ec170c"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/factorial_contrasts.csv",
+      "bytes": 12102,
+      "sha256": "e8980095b3c68fecba1adb1c47200279f03ff335f0ba9175e303ba96b5684f47"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/midplane_difference_norms.csv",
+      "bytes": 1498,
+      "sha256": "c408e4440a696de2f25532c29c17f7148d3922bb04d0d91267932e3f2bf92e1a"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/paired_convergence.csv",
+      "bytes": 1445,
+      "sha256": "51b0b7c176f0700b93d81a3b07cc68e6f50c5918947f4db6bf58b611196ca41c"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/sampled_fields.csv",
+      "bytes": 45604,
+      "sha256": "d8b114b9a2ab9aef8c11446a1bff89a5eeb94b1e0c2af2bac952515eb78e3b1f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/separate_axis_radial_refinement.csv",
+      "bytes": 375,
+      "sha256": "350764e349b4ebc38352316c43c8313d3ce08ab9524affcabff339311cf981c7"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/analysis/stage_summary.csv",
+      "bytes": 4665,
+      "sha256": "11a9941f12271d485e02523d3d246cf992c4987f99f9d0e93888418e6361d5e4"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/inputs/environment_extracted.csv",
+      "bytes": 18123,
+      "sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/README.md",
+      "bytes": 6988,
+      "sha256": "1c8d1058da426e25a285457e319bbcff11387db05ec6052b0e24990708954f05"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/source/model.py",
+      "bytes": 7758,
+      "sha256": "120d2f76741f45325c79c42efa8a366b6ad14808b00f26577aeae856c0f299fb"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/source_access.json",
+      "bytes": 15399,
+      "sha256": "933aba83deca3cd93ca8976777b806d40aeec7ad76fa16daec0f08fea4c1f668"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/前三问二维与潜热影响评估.md",
+      "bytes": 12340,
+      "sha256": "c2f8b1437c4f5715dbf4ed22f9500c015542e58b1fba48f10727c302f77a0e72"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/参数与文献证据表.md",
+      "bytes": 5939,
+      "sha256": "7ca27ab346aff416c17f3e074113d5eb6252233d1460a6eee0efa687d5e8cc2f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/最终建模思路.md",
+      "bytes": 8490,
+      "sha256": "25fea1bcc1fe1f0d7f9d595caa1b31fc468dbf5de78e70c77578c5e8b81cf19f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/最终模型选择表.csv",
+      "bytes": 1409,
+      "sha256": "4d5c9aaeaa3a426810e606ef7d7381162a8cf12e954d5fd5b289b6b8fbf1133c"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/previous_delivery/模型推导与假设契约.md",
+      "bytes": 8133,
+      "sha256": "03fd4cab83b989d5554209f0d29d7dd8cdfeecd336f81d67c377e6d42e1105a0"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/result2_retrieved.b64",
+      "bytes": 13656,
+      "sha256": "dac58a63db4b6208e93ed32be7ec81afa3e99e9889ca9474fc756b7b7f4b1808"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/sources/result2_retrieved.xlsx",
+      "bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/delivery_review.json",
+      "bytes": 387,
+      "sha256": "7c95172b4d6d448055a54a6e0dcafd6a0982fcaed4a0b93093b6788f78379aad"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/first_download.json",
+      "bytes": 602,
+      "sha256": "6b20368dd4df492810f988c8466517642fa348bc787919f217544c104316c34d"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/historical_preservation.json",
+      "bytes": 1097,
+      "sha256": "a2a1e808322b26d11e842c63ad5fdbb6f0527b259f6428e7369bb6d3cc9ad413"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/local_source_inventory.json",
+      "bytes": 5711,
+      "sha256": "1e47ddf5cee0492d8aa48ce684cfe49d6f97650619e71a3788eb8eaaa7caccbd"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/review_checks.json",
+      "bytes": 9213,
+      "sha256": "3d683f3633583d4beb44485233de4419067a6dec7e5a607e906a86fce93017dc"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/review_checks.log",
+      "bytes": 183,
+      "sha256": "220a681cfe7293f1658b8e05e82bbfa8d66747f548bdee0b67d5e06153b7d015"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/review_checks_final.json",
+      "bytes": 9673,
+      "sha256": "8652d7f7054f0c5eff03a4309bb77275f9664edbfc7525fcd433dbb58b36887f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/validation/review_checks_final.log",
+      "bytes": 203,
+      "sha256": "d936f172ffe0bac3c0c02b0661f53c2bf00d588aef460693a975404af541083a"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/必要补算与未决条件.md",
+      "bytes": 7845,
+      "sha256": "3519e482cd8330a9ab3cef3c245bfead6344a7688363b0eccfd5ee73ae10414f"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/按题给物性的前三问模型.md",
+      "bytes": 13711,
+      "sha256": "56f1e5bb4171598be43aaeaf7589926027bc44033103a728a60de0b7d783a55e"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/最终选型与论文路线.md",
+      "bytes": 8541,
+      "sha256": "dab16cbb913da35f832769d8e9f5cdd4c8e312222e232b26685ef9a09f8bbe9e"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/本轮最终选型表.csv",
+      "bytes": 700,
+      "sha256": "6216bcabbd01b12afd879a2a059518860c165bf73a962d72faee3d99ee954eb1"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/来源与阅读索引.md",
+      "bytes": 5981,
+      "sha256": "30eb7186367a28ef2fd8209f21a1aef8e0bc2e98a6a950283af79924e8aff4ce"
+    },
+    {
+      "path": "q123_requirements_review_delivery/v1/题意约束与逐项质疑答复.md",
+      "bytes": 15781,
+      "sha256": "c3687f294ccb7e33d5e1099cb13e53085ba2742341295f048ff59909e2ec190d"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/README.md",
+      "bytes": 5726,
+      "sha256": "1b69a72246bad862b746776dbd04f44f51815d4f395bd443ae12c8f6f441642d"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/requirements.txt",
+      "bytes": 311,
+      "sha256": "cf007907bf18ebd2db9be38e98a6c77d4b83f216e84b83efb73b5ee9fec996d3"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/run_all.py",
+      "bytes": 3358,
+      "sha256": "3f78714ddee2a026ac2f8335015ca82719666a0902679063632f78e48218a135"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/paper_template.md",
+      "bytes": 25918,
+      "sha256": "f1ac44b7e28e8f7bfefc03b9a73be661e1218bb67a7b9a9bcc8c9dcab4267358"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_excel.py",
+      "bytes": 10245,
+      "sha256": "d2e14289bd909ed8cacddc74e2c7e984ff6439094dbc184f6ca1a34a40d21f01"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_refine.py",
+      "bytes": 5465,
+      "sha256": "3d484fab094a60c31d16a9f121d5c1a5bc228bb2d5bcf0890c0a698a7a095253"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_report.py",
+      "bytes": 8683,
+      "sha256": "675f5ad1f8ab8e7510e4b759fd3f86720ddcc382a5b96b2d958726f3dafc66c1"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_rounding_audit.py",
+      "bytes": 1551,
+      "sha256": "79ee9622118400270c0ed8401821f3f7e8475a94ce17fbd42fecafa194e7d0ca"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "bytes": 15435,
+      "sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_validate.py",
+      "bytes": 12849,
+      "sha256": "ca44f90660d56d887667e47cebb9d64d7095cd9d9a424482cf882a54b2d4e4c9"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/references_used.bib",
+      "bytes": 1513,
+      "sha256": "433ebc126263b1b71d0ee238e95350605f2c13ba9ba3520fa8dcdc2a23677d41"
+    },
+    {
+      "path": "q2_final_delivery/analysis_decisions.md",
+      "bytes": 4096,
+      "sha256": "38e248d92db86dd826d7120459ae7511a86b901db373f8e4891f23c4d8d4b5ed"
+    },
+    {
+      "path": "q2_final_delivery/README.md",
+      "bytes": 7781,
+      "sha256": "2197762a328be0cbeebb312f8b613bd7eb47a49dad156adcd5dc53da65f0c21b"
+    },
+    {
+      "path": "q2_final_delivery/requirements.txt",
+      "bytes": 284,
+      "sha256": "1438fcb9cc35de5ee5361c2ab64e10e98955e5c277572d399cea07488fb8b87c"
+    },
+    {
+      "path": "q2_final_delivery/run_all.py",
+      "bytes": 6432,
+      "sha256": "479cacbe2e455e1398d1c6d87d9aeef9e5955554e060273a69c7237713dfcc9f"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_audit.py",
+      "bytes": 4241,
+      "sha256": "aa221a43d425ce5737e9dc8471d35120fe530bd41af9e9b7827c6310652ebd0c"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_axisymmetric.py",
+      "bytes": 7363,
+      "sha256": "4f747534ed9c419a6b731897f814f03a3d4bd2220deaa5fabb4c983d3ace512b"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "bytes": 16233,
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_excel.py",
+      "bytes": 4555,
+      "sha256": "81213778fde7d1cbc755dbc6ce58f4bea79148e72ee27d847964c19c42700219"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_finalize.py",
+      "bytes": 10636,
+      "sha256": "b28e735826ae9be7b3b2f28d3c9435ee9920054a56c2c68f8f0873a3fbfec8de"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_geometry_tests.py",
+      "bytes": 1263,
+      "sha256": "39a07dd3e8d99661bc18d87499d3e38210793a4587f0b3c6fe633a3386394f76"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_preview.py",
+      "bytes": 1057,
+      "sha256": "2ace86a098bcb95c2f2e23b884d6e34e615dc387fc04a8a4a752499cdc9d9043"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_report.py",
+      "bytes": 27748,
+      "sha256": "6ebe219cadf9ed2de4255a2500fed6e7c56adcfe3823c3672da2363920175a0a"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_spectral.py",
+      "bytes": 8959,
+      "sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_tests.py",
+      "bytes": 9684,
+      "sha256": "822d28b2e6a88c82ad91479d95cfc3353d31006baa49b69effdc2647e7004654"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_xlsx_portable.py",
+      "bytes": 5169,
+      "sha256": "817d71222006476ac007ecf399e9968a605bced7ae4a6336ad942531477d08a0"
+    },
+    {
+      "path": "q3_refinement_delivery/output/end_event.json",
+      "bytes": 1083,
+      "sha256": "65667636ff37ff8170354e4fe9280a8dda9ebbad6389f017f1d329fb2edc5491"
+    },
+    {
+      "path": "q3_refinement_delivery/output/result3.xlsx",
+      "bytes": 924899,
+      "sha256": "acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17"
+    },
+    {
+      "path": "q3_refinement_delivery/output/table5.csv",
+      "bytes": 1043,
+      "sha256": "9d2afb24b8797a5c5b9895d33a4a9ec6b589f415d8f5fc64eacbe5734e5be050"
+    },
+    {
+      "path": "q3_refinement_delivery/README.md",
+      "bytes": 2465,
+      "sha256": "745ce1e76135a7bc719feb4eaa367db3f2ca56076b0c06d0a9012ffd9661670c"
+    },
+    {
+      "path": "q3_refinement_delivery/requirements.txt",
+      "bytes": 166,
+      "sha256": "df9f79a2b19a70000a632b7fff7330c1bffbfaa7c6955e55eee5e2c066ae9449"
+    },
+    {
+      "path": "q3_refinement_delivery/run_all.py",
+      "bytes": 2116,
+      "sha256": "d0c1f3737b38c557f17fea864b4dbc3d5b18c89b3f76ece6985fb334d8b58991"
+    },
+    {
+      "path": "q3_refinement_delivery/source/build_documents.py",
+      "bytes": 13715,
+      "sha256": "b40d0732e6cfc3e902449ce82bb5475f46bb919e9def866d665f140e932523ba"
+    },
+    {
+      "path": "q3_refinement_delivery/source/export_workbook.py",
+      "bytes": 5923,
+      "sha256": "af1d710f011c14248496e374ff85858637412c952eee4f1b173b831168719224"
+    },
+    {
+      "path": "q3_refinement_delivery/source/future_scenarios_from_checkpoint.py",
+      "bytes": 3987,
+      "sha256": "30ffe81f0543ccf582879cfe97efb9cdd7ddc19cda1802c6df2c05a836d85a86"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_reference.py",
+      "bytes": 8667,
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_reference_legacy.py",
+      "bytes": 8667,
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_refined_reference.py",
+      "bytes": 10677,
+      "sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_solver.py",
+      "bytes": 19331,
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6"
+    },
+    {
+      "path": "q3_refinement_delivery/source/q3_solver_legacy.py",
+      "bytes": 19331,
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6"
+    },
+    {
+      "path": "q3_refinement_delivery/source/runtime_selftests.py",
+      "bytes": 4527,
+      "sha256": "7f45b64354fd7646751a152cbae70447335258e6c31357908a7101323f69c95c"
+    },
+    {
+      "path": "q3_refinement_delivery/source/validate_xlsx.py",
+      "bytes": 5419,
+      "sha256": "753512f76f382c297b13388e7c2f0cd36a6b69b07b32ccfb0ecc0fb98db399c3"
+    },
+    {
+      "path": "q3_refinement_delivery/source/verify_frozen.py",
+      "bytes": 2870,
+      "sha256": "4356acb19ffaaa59bd8b2d95b6e91dbfa8c93f586fe08f7a393dbd0f5c06b91e"
+    },
+    {
+      "path": "q3_refinement_delivery/第三问最终复审与答案.md",
+      "bytes": 3907,
+      "sha256": "6d794b75fc1d982f5481b64d64385c7c85a62f2a4e497a599659b0f477c05fd9"
+    },
+    {
+      "path": "q4_pro_handoff/input_facts.json",
+      "bytes": 1393,
+      "sha256": "5038ba7575929787678d8dc2d0551e218d31b579065d3e3439bad42eac64b40c"
+    },
+    {
+      "path": "q4_pro_handoff/inputs/environment_from_xlsx.csv",
+      "bytes": 5318,
+      "sha256": "a22a8133969fcddb480a82183f54af1dd41afeb0365f697305498cffbca2c7fb"
+    },
+    {
+      "path": "q4_pro_handoff/inputs/radius_from_xlsx.csv",
+      "bytes": 2029,
+      "sha256": "078db79d653f054495be3e0279bda38915c92d944662b22959c96c03460923bf"
+    },
+    {
+      "path": "q4_pro_handoff/README.md",
+      "bytes": 1874,
+      "sha256": "8540affaab88e20faa508a33b8243ced1cb2b3c3b3ddd3ff0f5f9a58bfb2f18b"
+    },
+    {
+      "path": "q4_pro_handoff/发给Pro的提示词.txt",
+      "bytes": 2492,
+      "sha256": "b63b3d24814d12cfc75fecf50472bbaf13d8ad7a924a20ada38f48ee124bb1b8"
+    },
+    {
+      "path": "q4_pro_handoff/第四问与前三问收尾_Pro交接提示词.md",
+      "bytes": 12311,
+      "sha256": "dd6dd4934db86100a65f5fed11e0c44f382c187e615bc21d4a54f84cc2507c5c"
+    },
+    {
+      "path": "q4_pro_handoff/第四问论文阅读清单.md",
+      "bytes": 5750,
+      "sha256": "6fdd8b75da7c14d59bd8cbd1b973f7aeb34e144e2d333e625e96e8cd4c6f66fd"
+    },
+    {
+      "path": "readable/manifest.json",
+      "bytes": 22085,
+      "sha256": "0839b12fa613168c5ce5716f91622b732be16b5220ec773ef8c1689704ed5a98"
+    },
+    {
+      "path": "readable/papers/adrover-2020/fulltext.md",
+      "bytes": 67073,
+      "sha256": "80ab920c10f111c11df8f4db11da0318df708ba3974b62f520eb08796a86fe01"
+    },
+    {
+      "path": "readable/papers/adrover-2020/layout.txt",
+      "bytes": 106443,
+      "sha256": "07a08b0450a38a172bafc1e4a052d713632e04b3f0a4b6915d9ef5a25fff0078"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/001.md",
+      "bytes": 4488,
+      "sha256": "e7ac24852e3dd894fd202e4dd766d7b8c08eee7ebb62675102b25d2b9c1a5bc5"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/002.md",
+      "bytes": 5281,
+      "sha256": "12e6c19584867f9d47d5d541269bfc2ae2ab5da1d46283bccdf9c77549506c0d"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/003.md",
+      "bytes": 2671,
+      "sha256": "c6216200215486e9e4585400b6ebeef8ce43ad73d397f708a321d28477747c36"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/004.md",
+      "bytes": 3468,
+      "sha256": "5782ab54a7c8297db80a5044bf222bc12c544c551d35df5db42ecb34a88bf4c5"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/005.md",
+      "bytes": 3597,
+      "sha256": "aaaa9f8ab256db576286b869d00665d6974d5889a4c2805e6f46cd2c973394ad"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/006.md",
+      "bytes": 3816,
+      "sha256": "75d8d8f9440d220ed101165db10758a17ab047c649a9e9c69a1be4d955e7d432"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/007.md",
+      "bytes": 4181,
+      "sha256": "32bb89a99b44b2a4852ea39d369b9a6822b32262989e5af4793a862dc9db5ee3"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/008.md",
+      "bytes": 3844,
+      "sha256": "50e7eba287f72466ce3c3cbb531d87099c584ac853ae41597c9de88837cb8433"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/009.md",
+      "bytes": 3634,
+      "sha256": "a946eebda72825e54542e893fe54e6a58f996fc6e3fb28a05a50949cefd3b224"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/010.md",
+      "bytes": 3194,
+      "sha256": "f26052e20a09ccc370df25727893c1f261e599f0542b76d55d591116aaad4192"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/011.md",
+      "bytes": 3263,
+      "sha256": "8df1f14cc7f19e59fafc3a2a443d898aac6043fa1e32cf3d2b2b0da6a0660961"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/012.md",
+      "bytes": 3283,
+      "sha256": "94ef5eeb1ffc9f6f939dc75190d9a6463f746335ce79e8954a68397a43b19a03"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/013.md",
+      "bytes": 3735,
+      "sha256": "1739ad266eae60d95a4242130f8ee4e2e1cada3f475cdff3aa25b9d4c7e3d8dd"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/014.md",
+      "bytes": 3487,
+      "sha256": "817027d8afb003bf020b1633fc03385839c339f8851ebf95eb2e4648a734a132"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/015.md",
+      "bytes": 4175,
+      "sha256": "4cc857fd2e869a36544db1c2e9e2e2e506286d6b1f97ebeb985103bef825d30b"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/016.md",
+      "bytes": 3082,
+      "sha256": "368f409872dac8ccd9b51c6d6453f6514b2ff3279ae4acb646a5063b83a24f29"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/017.md",
+      "bytes": 2866,
+      "sha256": "ee5151a82086ba5cd0737a1ad9a3d036c0f9da8d3376482e5c4f6988ef56ec08"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/018.md",
+      "bytes": 3148,
+      "sha256": "a099148a7efcf6df576dc3174b56487ac5003bbe386689efa74869bdf24d30e5"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/019.md",
+      "bytes": 2579,
+      "sha256": "509da00a8fe983b60e6401b3167528efb76507d7b07a042593d5cbb1662c6799"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/020.md",
+      "bytes": 3159,
+      "sha256": "d5ba2041514ed7bf9eae507d2b8d5a17bceade961a1d0151608eac5261ca5985"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/021.md",
+      "bytes": 4860,
+      "sha256": "69682b380de912bae91765b1eaa21d41dd7a5582612635fd6f433d50c59a187c"
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/022.md",
+      "bytes": 5298,
+      "sha256": "8e789ca1f833c6d14ad4501aac4054732956cc2a78ebd447e4a090e22c2003e5"
+    },
+    {
+      "path": "readable/papers/adrover-2020/README.md",
+      "bytes": 1609,
+      "sha256": "cb6790d6f8db1f2e7069d6010a01475969c3d63c4db07dc3573b9b9c9664d1e7"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/fulltext.md",
+      "bytes": 62848,
+      "sha256": "3d447b023ded929b81adbb36b4d7fec350e7f2b9179b41a2f7fa84ee9eeea3cb"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/layout.txt",
+      "bytes": 96790,
+      "sha256": "0d2b4abfd4f240e60a39c303d7ed691b25c92699d221c1ac2c942f2863ef7240"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/001.md",
+      "bytes": 5216,
+      "sha256": "32e880ba84ea47ca97261121dbd2cd1d0e8b6fad82bf16756af0b84953c6e8b8"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/002.md",
+      "bytes": 5308,
+      "sha256": "cf4bff90bc1deb1d733bd3d8aa00010650ed660706e7de368b738fa24c2cd1a9"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/003.md",
+      "bytes": 4151,
+      "sha256": "3b82266eeea0b0bd60807abcf809356fd4d39de772edf3f3f835f1cb38ce4971"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/004.md",
+      "bytes": 3896,
+      "sha256": "fe3f33b0ed3846e7e2ccecadb51904483f1bece3127829115872297bb76b13e4"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/005.md",
+      "bytes": 3851,
+      "sha256": "8cfdc820ddfa4a6b5a265affdb16d134640c413592f5247a7eaababf6610039c"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/006.md",
+      "bytes": 4049,
+      "sha256": "d38339d75a659ae634bfdb09761f972b2e2c371eb18409f233c04cb0492b969d"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/007.md",
+      "bytes": 2422,
+      "sha256": "adcbfd45ccdf8d0dec262cbc75a7d140f378336a25e7867e4c65f2ffacc23485"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/008.md",
+      "bytes": 3947,
+      "sha256": "7f6eb1eb4464f43b11dfb881b1c23ebd28fa650c3e4baeb896c7851812315b46"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/009.md",
+      "bytes": 2803,
+      "sha256": "f8689f9653d7fa356945f711b3dd33fa955aff25965f6e2b8482257022464c01"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/010.md",
+      "bytes": 3766,
+      "sha256": "1ecdca1cae15d1ca97d3c4896c565c4664d1d5be000558af51e638b99d02f5fd"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/011.md",
+      "bytes": 3439,
+      "sha256": "8e1784c970a227d4a62e84e282b4e1fe2bf14f01a36c07a4f02474c067f5388f"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/012.md",
+      "bytes": 2508,
+      "sha256": "5ba02bc9542134c546944a304301fe9a1b6a776e1d6acaa4e11de890ca2440e1"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/013.md",
+      "bytes": 3689,
+      "sha256": "6a93c32f20efc3bf092a3ead784b5f9e2f878f70cace45342518c0bc66a14abe"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/014.md",
+      "bytes": 4477,
+      "sha256": "5bc0e67d952a66bc450f8387c595500521a899ad5a3988e9d355bef372716499"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/015.md",
+      "bytes": 2079,
+      "sha256": "cdb951e957b6764a68451d27984046e34a07f72e849b38fde9394cfb9c5440f1"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/016.md",
+      "bytes": 3811,
+      "sha256": "2adc8c402dd3d7b524368c4a2a0e57b63432cca90c422577a673d9e4c6b76e1a"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/017.md",
+      "bytes": 5126,
+      "sha256": "f617dd265f7b385dcaf661dddebb21379bf6e55f1dc84a9d693e40db626358db"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/018.md",
+      "bytes": 6321,
+      "sha256": "69d4dc87a9b69ecfcccfb92d977e05612105c8541ed51bb85df58eb3d8b78c4f"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/019.md",
+      "bytes": 4661,
+      "sha256": "08aa871841ed75cfd578a24aa9ecfb7eae44a52e3f661efb8a6d172b25e765a3"
+    },
+    {
+      "path": "readable/papers/chupawa-2022/README.md",
+      "bytes": 1549,
+      "sha256": "c8c0ff80f29941d5b58c2e2f983e0e5ba6384225e4bd3836ecd8a56b2e3cff73"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/fulltext.md",
+      "bytes": 49350,
+      "sha256": "ac498bfa56f1ca1eea0118607019637d3cbf48b3a4d7b76b182e398582ad1653"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/layout.txt",
+      "bytes": 74311,
+      "sha256": "23422e693719ed97090469c50e57e4e35123d2c05be463ead60d46a52734fee7"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/001.md",
+      "bytes": 6049,
+      "sha256": "c290fd5cc496cfa4388be204f35063405b7f9ec590be2b00c939d9cc4813df00"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/002.md",
+      "bytes": 6168,
+      "sha256": "9abf4d04714750251d76d269489f04c9506c97e8f6c701e1dc228c2869a18757"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/003.md",
+      "bytes": 6036,
+      "sha256": "9706623446f89e0d7bad7ae6bddc794924946a5b8586c7944a1abd3264e25832"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/004.md",
+      "bytes": 6971,
+      "sha256": "4f1d260c4bcd03ea7ebe0bcc5887459207a679c37aca6c4d1d451f04ee879c62"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/005.md",
+      "bytes": 7346,
+      "sha256": "5a9f5e8905944ffdb195aacd2b4e33b57af5ffd826fea330d11cb95c7594b7ed"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/006.md",
+      "bytes": 3295,
+      "sha256": "1a3139cc22a6ca05425918841b102ae440d7e3c78444cd6ecf05763a943e369d"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/007.md",
+      "bytes": 3483,
+      "sha256": "88a2fe53d27939eca298e951f2471547d03f8f14e7c5bd7f81ce2d6f37742a1f"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/008.md",
+      "bytes": 9570,
+      "sha256": "50e7364125d1fde813ba5d3565cb657cb8c30dc77060850967a7ed3cfa8de63e"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/009.md",
+      "bytes": 6097,
+      "sha256": "cf2292944bb3f2ef1316eb5303858fccf4f2713381337967a1e3a286b4b59077"
+    },
+    {
+      "path": "readable/papers/da-silva-2014/README.md",
+      "bytes": 1249,
+      "sha256": "e4045d6ab1efbcffd87f043230fec0dfaea7ff0fb38a783b5004295abd6c9f59"
+    },
+    {
+      "path": "readable/papers/wu-2022/fulltext.md",
+      "bytes": 66995,
+      "sha256": "2ddf3e32b177df252408f392a2da961597eb9a86b85ee8acdd0c3977e3b01077"
+    },
+    {
+      "path": "readable/papers/wu-2022/layout.txt",
+      "bytes": 95134,
+      "sha256": "e5a0d7503f8d105372b143eaff99c4a228fe4770879bdbcbf28546d32f9157bb"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/001.md",
+      "bytes": 9391,
+      "sha256": "2cffa3abacb1cba7a409711c12af97c6d72ea0c2eef81cababc2d3f26cb4eca4"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/002.md",
+      "bytes": 7860,
+      "sha256": "6e67a02dec35faca838d195afaab0b3ae0be622a4e827067382b49da5baa24d5"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/003.md",
+      "bytes": 5690,
+      "sha256": "16823ca3d9546d56cea1b9cfc148e62ebc4884cc4da48c32745cd071d37d87d0"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/004.md",
+      "bytes": 5073,
+      "sha256": "c4903e5de5e9b5cd0e90d5de0f9e767e9c284c62a3ef5db4754029fe21cd2281"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/005.md",
+      "bytes": 5808,
+      "sha256": "4151c40cc81a3ae8ecb6c7ec9e8809d0d1504c2d14a404896e04d7afea485c9a"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/006.md",
+      "bytes": 5845,
+      "sha256": "317d756e7a3704c69d66b2fc0ed665d2ba127e0077993a8e7b19491b7b0bf7b9"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/007.md",
+      "bytes": 6149,
+      "sha256": "319017353e1df4835625d3bf1ba4a787521277355402bdaacaafdf5aa7120f64"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/008.md",
+      "bytes": 5006,
+      "sha256": "2dfdc5a6ebc9d3c7d3ccfba066de28eb01ab3ba30cf31826ec4eb6732d7eeae8"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/009.md",
+      "bytes": 7089,
+      "sha256": "9fa4e0b3fdb0429b59d98ae21209d3c4a3c0f1f1c430540dba317ba692436fde"
+    },
+    {
+      "path": "readable/papers/wu-2022/pages/010.md",
+      "bytes": 16132,
+      "sha256": "d78ddd2d246e49d03dfd4990841e91929b2130b8634d38af40ef17645d75d262"
+    },
+    {
+      "path": "readable/papers/wu-2022/README.md",
+      "bytes": 1369,
+      "sha256": "6443779ebf7ebbd67c9ec99fecbfb8d02001879f388c09562d46d731ab7b7797"
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "bytes": 7063,
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b"
+    },
+    {
+      "path": "readable/problem/layout.txt",
+      "bytes": 8288,
+      "sha256": "e99c5f8ccb5bea312b953a2fd9dde5579008dfc6183c9ca511fa9c5cb02e4065"
+    },
+    {
+      "path": "readable/problem/pages/001.md",
+      "bytes": 2317,
+      "sha256": "eb5fdf44ada26b24378120d24e5d3cd8f7295c9992e62d147818005992cfb8a2"
+    },
+    {
+      "path": "readable/problem/pages/002.md",
+      "bytes": 2138,
+      "sha256": "5a1c6f46430e37b1b60f9213392e414b31da13942ced1f8f356f41941b649157"
+    },
+    {
+      "path": "readable/problem/pages/003.md",
+      "bytes": 2625,
+      "sha256": "8dc9304476f9c09d0e20e9336c3e1822c21a39c18d1c6c56e88e0a17f277eacf"
+    },
+    {
+      "path": "readable/problem/pages/004.md",
+      "bytes": 1651,
+      "sha256": "12cf3d28b46fb8f2a770275f7ecf3fdeb4b14790b8ea3d598d6884b1bc529b4d"
+    },
+    {
+      "path": "readable/problem/README.md",
+      "bytes": 858,
+      "sha256": "32d406fc713a4effb7ea40b0bcdb2cdc3e53aec91fcd5046243c9f8779ddeab3"
+    },
+    {
+      "path": "readable/QUALITY.md",
+      "bytes": 2232,
+      "sha256": "5d5162b40d007f7b24cf5f2f7065729121a004f0474de258d7a5c351dae01599"
+    },
+    {
+      "path": "readable/README.md",
+      "bytes": 3819,
+      "sha256": "2b5cd0b3a61213ccb3729702ac2afc1d739175c31b5d5ac206d9e0e3fa522311"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15451,
+      "sha256": "543c0f79568fe9c6f9267ab1d24e24bce2964f9d0ec5558289486b541a17aeef"
+    },
+    {
+      "path": "review_q123_physics_20260911/README.md",
+      "bytes": 2697,
+      "sha256": "e229b3e68a16a79f45f2fdca3b751d37a8820a199d915f18531050129280943f"
+    },
+    {
+      "path": "review_q123_physics_20260911/runtime/runtime_review.md",
+      "bytes": 11491,
+      "sha256": "413c2077a28b3d165dab597231571d2b579736d881b5bfbe731e17b81dfd2d8a"
+    },
+    {
+      "path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "bytes": 12634,
+      "sha256": "3698604fbc66755910ea14a6ebef1e9c6fa2173f91db4201498d031c50534ed8"
+    },
+    {
+      "path": "review_q2_final_20260911/第二问最终核查报告.md",
+      "bytes": 9207,
+      "sha256": "b8a198f600dc4f1722c7fe3fe1573f4224cdee3be640ad59a86148b0c237b550"
+    },
+    {
+      "path": "review_q2_final_20260911/采纳与勘误.md",
+      "bytes": 3270,
+      "sha256": "28a1203dd02d158f489b9c2e716a0a286b8590547696b87c54b6bf177c49d36c"
+    },
+    {
+      "path": "分析与文献/01_题目分析.md",
+      "bytes": 17093,
+      "sha256": "59c830778b9ae931398e5ae3b1288f200846d946416f8007a3691464745cb26e"
+    },
+    {
+      "path": "分析与文献/02_相关论文.md",
+      "bytes": 12402,
+      "sha256": "e342740b5c7959f16791518a1cc0b954ce0b31a7e25c5e0b507325473a77e280"
+    },
+    {
+      "path": "分析与文献/1-s2.0-S0260877414002118-main.pdf",
+      "bytes": 1464267,
+      "sha256": "f366438e9b447e270ae210f0f7e8bcc59bb65c94e850736e8db992e8817deb5b"
+    },
+    {
+      "path": "分析与文献/evidence/attachment_audit.json",
+      "bytes": 20200,
+      "sha256": "f9366a17ac969cca980423a184f2ac0bafad4e92cb6979af0c16c1f7c4a24a03"
+    },
+    {
+      "path": "分析与文献/foods-09-01577.pdf",
+      "bytes": 1153307,
+      "sha256": "bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc"
+    },
+    {
+      "path": "分析与文献/references.bib",
+      "bytes": 3459,
+      "sha256": "4eb7e91def6c7fc6ac1f339e4a0a4f514ccbe5fc8fe5734fc23f2fefdd444001"
+    },
+    {
+      "path": "分析与文献/基于动网格的白萝卜热风干燥热质传递研究.pdf",
+      "bytes": 1988165,
+      "sha256": "7008d5825be39367014ca79762e637e883807a96a362c9f4a6d8ab931a7a72ab"
+    }
+  ]
+}

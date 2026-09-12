@@ -1,0 +1,12 @@
+{
+  "scope": "Source byte identity, raw XLSX input extraction, original review manifest, ZIP CRC and content checks only. No model execution.",
+  "base_commit": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "source_files": 203,
+  "zip_entries": 205,
+  "zip_bytes": 6053354,
+  "zip_sha256": "42e8a6a03b5511a49a7bbd1b633452aaa34ae1f3ec706995c2445e28c9899455",
+  "source_bytes": 7935747,
+  "review_manifest_entries_matched": 41,
+  "crc_ok": true,
+  "all_zip_payloads_match": true
+}

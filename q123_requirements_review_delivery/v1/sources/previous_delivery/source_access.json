@@ -1,0 +1,287 @@
+{
+  "repository": "Hel10o/libai",
+  "baseline_commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+  "task_commit": "f5c06bb276062b52b61c092f16c436c9d971f4f9",
+  "main_resolution": "Initial GitHub connector commits/main response resolved f5c06bb276062b52b61c092f16c436c9d971f4f9; subsequent task and README reads pinned to this commit.",
+  "created_utc": "2026-09-11T15:07:15.187382+00:00",
+  "offline_input_zip_received": false,
+  "offline_manifest_verified": false,
+  "entries": [
+    {
+      "path": "README.md",
+      "commit": "f5c06bb276062b52b61c092f16c436c9d971f4f9",
+      "url": "https://github.com/Hel10o/libai/blob/f5c06bb276062b52b61c092f16c436c9d971f4f9/README.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "311c62dc8a119e1d63a550df2c029761e55038f8",
+      "read_scope": "full root README in overlapping line ranges; later first 8 lines rechecked for blob identity",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q123_model_selection_handoff/前三问二维与潜热影响评估及最终建模路线_Pro任务书.md",
+      "commit": "f5c06bb276062b52b61c092f16c436c9d971f4f9",
+      "url": "https://github.com/Hel10o/libai/blob/f5c06bb276062b52b61c092f16c436c9d971f4f9/q123_model_selection_handoff/前三问二维与潜热影响评估及最终建模路线_Pro任务书.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "379212b98749d742a4420d53316f3fc3c75c2931",
+      "read_scope": "complete, lines1-65,65-130,130-end and overlapping earlier calls",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/README.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/README.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "c0c6ddfa5a08b8f9961be6f6924eae154e54cbd4",
+      "read_scope": "complete",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/QUALITY.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/QUALITY.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "29c9a22207711787316803dd7e7b078e0829c44f",
+      "read_scope": "complete",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/problem/fulltext.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "e97b7dabbd704ac4dfde3092467601546fe48c99",
+      "read_scope": "all four pages in overlapping chunks; equations crosschecked against actual source constants; PDF page images not downloaded",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/input/environment_extracted.csv",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q1_complete_delivery/q1_delivery/input/environment_extracted.csv",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "d55880786a62ff55933c045998a6a7de033b83c5",
+      "read_scope": "all 242 lines including header; locally reconstructed exact bytes and verified Git blob SHA1",
+      "local_full_binary_sha256": "39e167db1d74e95bc54c3b62f60da8faca487ad2d5e5e4715cbc208c9dfee76e",
+      "local_path": "inputs/environment_extracted.csv",
+      "bytes": 18123,
+      "local_git_blob_match": true
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "02adff297ad8256bac1c32afc155a34b8af3ecbd",
+      "read_scope": "lines1-155: parameters, OOXML/environment reader, radial FV and nonlinear water boundary",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q2_final_delivery/source/q2_core.py",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "1da48e84d908cbf4994e83bf79b4f07e17365813",
+      "read_scope": "lines1-150: properties, environment, radial fluxes/storage/boundary",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q2_final_delivery/source/q2_axisymmetric.py",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q2_final_delivery/source/q2_axisymmetric.py",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "3213312ba5fabd3dddd8e0a240cfc531737d91f1",
+      "read_scope": "complete returned source through solve_axisymmetric outputs",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "review_q123_physics_20260911/q1_heat_scale.json",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/review_q123_physics_20260911/q1_heat_scale.json",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "f2d1895d64353101135e556b7712900b130efb92",
+      "read_scope": "complete JSON",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q3_refinement_delivery/output/end_event.json",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q3_refinement_delivery/output/end_event.json",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "4dc7af9f4f93e0cdaec1d0a88a08979cb4b1f7ca",
+      "read_scope": "complete JSON",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "q3_refinement_delivery/validation/geometry/historical_geometry_comparison.json",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/q3_refinement_delivery/validation/geometry/historical_geometry_comparison.json",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "1e4d556136397ac6f7422cb39294c39c6fffc6a5",
+      "read_scope": "complete four-case historical JSON",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": null,
+      "read_scope": "read sections1-3.2; requested1-145 response truncated during moving-material discussion; NOT marked complete",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "review_q3_20260911/model/model_review.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/review_q3_20260911/model/model_review.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": null,
+      "read_scope": "read sections1-4.2; requested1-100 response truncated near execution-time discussion; NOT marked complete",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/adrover-2020/README.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/adrover-2020/README.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "4e51f4d6c81c3a7eab909da0c42567570aacd674",
+      "read_scope": "complete",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/005.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/adrover-2020/pages/005.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "30ec0d21494dcec840d264fab4356915fc518062",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/adrover-2020/pages/006.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/adrover-2020/pages/006.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "815843170be14962fc3da8e2b22e32afe769d2ed",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/003.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/da-silva-2014/pages/003.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "cd59594ff06306c67fa8f315fc9639a8e4802e23",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/004.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/da-silva-2014/pages/004.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "e8adb1c7bd58fcbc71966d293f0ed2c9e93953d8",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/005.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/da-silva-2014/pages/005.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "a37c98eb5efe068f6c98395763da007c9ebbc0bc",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    },
+    {
+      "path": "readable/papers/chupawa-2022/pages/003.md",
+      "commit": "1feb7686a371179bc6f545217e229f388a9bc379",
+      "url": "https://github.com/Hel10o/libai/blob/1feb7686a371179bc6f545217e229f388a9bc379/readable/papers/chupawa-2022/pages/003.md",
+      "method": "GitHub.fetch_file connector",
+      "status": "read_succeeded",
+      "git_blob_sha1_returned": "afff0e7591f8677f367e30ad5dfc061e213b1190",
+      "read_scope": "complete original-page extracted text; not a PDF-image visual audit",
+      "local_full_binary_sha256": null
+    }
+  ],
+  "web_reads": [
+    {
+      "url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "status": "primary HTML read",
+      "scope": "original paper nonisothermal model and appendix structure"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0260877414002118",
+      "status": "primary HTML read",
+      "scope": "original paper abstract; full methodological text read in repository pages"
+    },
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e0k.htm",
+      "status": "primary HTML read",
+      "scope": "Annex3 equation3-1 latent heat"
+    },
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "status": "primary HTML read",
+      "scope": "equation11 saturated vapor pressure"
+    },
+    {
+      "url": "https://handbook.ashrae.org/Handbooks/F17/IP/f17_ch01/f17_ch01_ip.aspx",
+      "status": "primary HTML read",
+      "scope": "humidity ratio and psychrometric definitions"
+    },
+    {
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch06/F21_Ch06_si.aspx",
+      "status": "primary HTML read",
+      "scope": "gas concentration transfer and Lewis relation, equations26 and39-46"
+    }
+  ],
+  "failed_access": [
+    {
+      "method": "container Python requests",
+      "raw_error": {
+        "url": "https://api.github.com/repos/Hel10o/libai/commits/main",
+        "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'api.github.com\\', port=443): Max retries exceeded with url: /repos/Hel10o/libai/commits/main (Caused by NameResolutionError(\"HTTPSConnection(host=\\'api.github.com\\', port=443): Failed to resolve \\'api.github.com\\' ([Errno -3] Temporary failure in name resolution)\"))'))"
+      },
+      "record": "validation/access_initial.json"
+    },
+    {
+      "method": "container curl --resolve direct IP",
+      "record": "validation/curl_direct.log",
+      "exit_code": 7
+    },
+    {
+      "method": "GitHub.fetch_file encoding=base64 for original XLSX",
+      "status": "partial payloads obtained; local complete XLSX reconstruction not achieved; not used as numerical input",
+      "raw_partial_payloads": "validation/access_failed_source_raw/",
+      "note": "No invented HTTP failure code: connector text retrieval worked, binary transfer/reconstruction did not complete."
+    }
+  ],
+  "uncompleted": [
+    "Independent original XLSX binary parsing",
+    "Frozen Q1/Q2/Q3 NPZ full-byte download and elementwise review",
+    "Original PDF page-image visual equation verification",
+    "Full reading of every old implementation, audit and paper file listed by task; actual partial ranges recorded rather than claimed complete",
+    "Experimental identification of water activity, partial enthalpies and material/gas resistances",
+    "Shrinking-domain Q4 or external airflow CFD",
+    "All official result1/2/3 workbooks and manuscript final layout, outside current primary scope"
+  ],
+  "evidence_separation": "New PDE results, inherited JSON evidence, synthetic software probes, rejected/failed runs and unexecuted work are separately labelled. No old scalar partial-package calculation used as new physical evidence."
+}
