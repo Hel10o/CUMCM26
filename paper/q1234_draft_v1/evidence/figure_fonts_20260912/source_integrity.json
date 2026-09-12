@@ -1,0 +1,35 @@
+{
+  "baseline_commit": "b314e2d0939623d68e916925582e73d18222e610",
+  "only_graphic_path_changes_in_tex": true,
+  "checked_tex_files": 16,
+  "changed_tex_files": [
+    "paper/q1234_draft_v1/sections/problem_model.tex",
+    "paper/q1234_draft_v1/sections/q1.tex",
+    "paper/q1234_draft_v1/sections/q2.tex",
+    "paper/q1234_draft_v1/sections/q3.tex",
+    "paper/q1234_draft_v1/sections/q4.tex",
+    "paper/q1234_draft_v1/sections/validation_limits.tex"
+  ],
+  "main_tex_byte_identical": true,
+  "frozen_inputs_unchanged": 30,
+  "generated_artifacts_verified": 19,
+  "historical_drawing_sources_unchanged": true,
+  "checks_by_source": {
+    "paper/q1234_draft_v1/main.tex": true,
+    "paper/q1234_draft_v1/ai_details.tex": true,
+    "paper/q1234_draft_v1/sections/appendix.tex": true,
+    "paper/q1234_draft_v1/sections/problem_model.tex": true,
+    "paper/q1234_draft_v1/sections/q1.tex": true,
+    "paper/q1234_draft_v1/sections/q2.tex": true,
+    "paper/q1234_draft_v1/sections/q3.tex": true,
+    "paper/q1234_draft_v1/sections/q4.tex": true,
+    "paper/q1234_draft_v1/sections/references.tex": true,
+    "paper/q1234_draft_v1/sections/validation_limits.tex": true,
+    "paper/q1234_draft_v1/tables/q1_moisture.tex": true,
+    "paper/q1234_draft_v1/tables/q1_temperature.tex": true,
+    "paper/q1234_draft_v1/tables/q2_moisture.tex": true,
+    "paper/q1234_draft_v1/tables/q2_temperature.tex": true,
+    "paper/q1234_draft_v1/tables/q3_moisture.tex": true,
+    "paper/q1234_draft_v1/tables/q4_moisture.tex": true
+  }
+}

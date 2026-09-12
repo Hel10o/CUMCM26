@@ -1,0 +1,7 @@
+findfont: Failed to find font weight bold, now using 400.
+findfont: Failed to find font weight bold, now using 400.
+{"group": "process", "frozen_inputs": 2, "outputs": 6, "inputs_unchanged": true}
+{"group": "geometry", "frozen_inputs": 7, "outputs": 6, "inputs_unchanged": true}
+{"group": "validation", "frozen_inputs": 17, "outputs": 4, "inputs_unchanged": true}
+{"group": "workflow", "frozen_inputs": 5, "outputs": 3, "inputs_unchanged": true}
+Seven figures saved with unchanged content and updated fonts.

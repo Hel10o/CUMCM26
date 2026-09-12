@@ -1,0 +1,453 @@
+{
+  "baseline_commit": "b314e2d0939623d68e916925582e73d18222e610",
+  "reviewer": "independent figure_font_audit agent",
+  "method": "Read original and new figure PDFs independently with PyMuPDF; compare all extracted text after whitespace removal, ordered numeric tokens, page dimensions, individual character font assignments, actual embedded font bytes and visible character bounding boxes. No solver execution or original file edits.",
+  "all_checks_passed": true,
+  "total_checks": 56,
+  "passed_checks": 56,
+  "figures": [
+    {
+      "figure": "model_workflow",
+      "prior_pdf": "paper/q1234_draft_v1/figures/workflow_spacing/model_workflow.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/model_workflow.pdf",
+      "prior_sha256": "3207cbfef3dbf6b3e80b45c02656afad53e87a6217d20aab9542a81764bbf8d6",
+      "new_sha256": "009819901576e56f713102cfbb055206b35cd7d4d63a6a18e54e7f19e2042f3b",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "chinese": 237,
+        "other": 93,
+        "latin_digit": 102
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 237
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPS-BoldMT",
+          "characters": 22
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 80
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 17
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPS-BoldMT",
+          "characters": 22
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 54
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "HKBGUR+SimSun",
+          "embedded_font_bytes": 264480,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "CGKJOY+TimesNewRomanPSMT",
+          "embedded_font_bytes": 145040,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "EJPTEH+TimesNewRomanPS-BoldMT",
+          "embedded_font_bytes": 129416,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "q1_profiles",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_refinement/q1_profiles.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/q1_profiles.pdf",
+      "prior_sha256": "7cf5c782b87723c469b04d4564addf7a0a7f68a72890b561a594e5f28cf1dfc4",
+      "new_sha256": "c3c90557b9bb29b216cf6cdb6b6e600251b0a88bb4c4192fb4f65219d082b1af",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "latin_digit": 112,
+        "chinese": 60,
+        "other": 70
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 60
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 112
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 2
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 68
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "FLIEVM+SimSun",
+          "embedded_font_bytes": 233992,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "MBIZQP+TimesNewRomanPSMT",
+          "embedded_font_bytes": 145784,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "q2_profiles",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_refinement/q2_profiles.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/q2_profiles.pdf",
+      "prior_sha256": "b5879111546f1fad87dc4de656e075c12b06a7ff4685a89c7bb5ff4686431bcf",
+      "new_sha256": "d2e98eb035d31241055e83906d441c110af754d34a0587bd24aee4abf78e2e24",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "latin_digit": 84,
+        "chinese": 43,
+        "other": 60
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 43
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 84
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 2
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 58
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "ERAOFW+SimSun",
+          "embedded_font_bytes": 233308,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "RIJFAK+TimesNewRomanPSMT",
+          "embedded_font_bytes": 143792,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "q3_q4_drying",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_refinement/q3_q4_drying.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/q3_q4_drying.pdf",
+      "prior_sha256": "a9518b852d1c284b49d412c895c6fc04622068ab0daf27a68420c4669f9429ed",
+      "new_sha256": "530a5a995b2207d637742a1db62fd8b23b5689b39a4bdae4caab8d80c6436de4",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "latin_digit": 119,
+        "chinese": 96,
+        "other": 67
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 96
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 119
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 9
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 58
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "GTKXYX+SimSun",
+          "embedded_font_bytes": 243816,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "GBWLXR+TimesNewRomanPSMT",
+          "embedded_font_bytes": 141764,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "q4_shrinkage",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_refinement/q4_shrinkage.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/q4_shrinkage.pdf",
+      "prior_sha256": "a80eb4c009453c0f6a8c7bf1cb0dd7959387d7df09505f05467983d23e009bed",
+      "new_sha256": "33c1935a1c3d74f8e30ac55856ea1af62c8c3d8dd858d94af32eae0f88897379",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "latin_digit": 119,
+        "chinese": 129,
+        "other": 72
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 129
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 119
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 1
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 71
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "EJGKBQ+SimSun",
+          "embedded_font_bytes": 247224,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "BGABPG+TimesNewRomanPSMT",
+          "embedded_font_bytes": 142912,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "dimension_reduction",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_revision/dimension_reduction.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/dimension_reduction.pdf",
+      "prior_sha256": "02c1089461ebd2a02c902269eb64777977093b31909a5f420d7363adebd02a21",
+      "new_sha256": "5f71b9835f2da48eb2b45b29730b8f09c70a0a6bede5d43c645b3ef1660a13d3",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "latin_digit": 153,
+        "chinese": 95,
+        "other": 113
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 95
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPS-ItalicMT",
+          "characters": 6
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 147
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 5
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 108
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "EZYBOQ+SimSun",
+          "embedded_font_bytes": 239168,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "HFZIJT+TimesNewRomanPSMT",
+          "embedded_font_bytes": 145776,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "CBYVNA+TimesNewRomanPS-ItalicMT",
+          "embedded_font_bytes": 14052,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    },
+    {
+      "figure": "environment_sensitivity",
+      "prior_pdf": "paper/q1234_draft_v1/figures/visual_revision/environment_sensitivity.pdf",
+      "new_pdf": "paper/q1234_draft_v1/figures/font_revision/environment_sensitivity.pdf",
+      "prior_sha256": "03778029c913409499bdc815e8e749b3734062967620475430049b0b348fa747",
+      "new_sha256": "7d0cd2c546d4a52b508079af3892e2809dc73cb13809a35d8b2df03204ea9291",
+      "checks": {
+        "single_page": true,
+        "page_size_unchanged": true,
+        "text_without_whitespace_identical": true,
+        "numeric_tokens_identical": true,
+        "chinese_and_latin_digit_fonts_correct": true,
+        "all_fonts_embedded": true,
+        "no_yahei_or_dejavu_fonts": true,
+        "visible_characters_inside_page": true
+      },
+      "character_counts": {
+        "other": 57,
+        "latin_digit": 78,
+        "chinese": 65
+      },
+      "font_assignments": [
+        {
+          "kind": "chinese",
+          "font": "SimSun",
+          "characters": 65
+        },
+        {
+          "kind": "latin_digit",
+          "font": "TimesNewRomanPSMT",
+          "characters": 78
+        },
+        {
+          "kind": "other",
+          "font": "SimSun",
+          "characters": 4
+        },
+        {
+          "kind": "other",
+          "font": "TimesNewRomanPSMT",
+          "characters": 53
+        }
+      ],
+      "fonts": [
+        {
+          "base_font": "BJEMUH+SimSun",
+          "embedded_font_bytes": 238952,
+          "font_type": "Type0"
+        },
+        {
+          "base_font": "GPBGYO+TimesNewRomanPSMT",
+          "embedded_font_bytes": 137452,
+          "font_type": "Type0"
+        }
+      ],
+      "font_errors": [],
+      "outside_page": []
+    }
+  ],
+  "limitations": [
+    "This review checks figure PDF contents and font embedding; the parent agent separately checks the compiled paper, scientific arrays, source scope, page count and source package.",
+    "SimSun has no native bold face on this host; Chinese characters in formerly bold headings use SimSun regular while their Latin characters use Times New Roman bold."
+  ],
+  "visual_inspection": {
+    "files": [
+      "figures/font_revision/model_workflow.png",
+      "figures/font_revision/dimension_reduction.png"
+    ],
+    "performed": true,
+    "findings": "Visually inspected rendered PNGs: workflow text remains clear with preserved line spacing and no text-box collisions; reduction plot Chinese/math title, axis labels and numerical annotations are legible, with no missing glyphs or observed overlap."
+  }
+}

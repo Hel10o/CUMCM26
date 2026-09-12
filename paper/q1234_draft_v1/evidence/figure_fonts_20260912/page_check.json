@@ -1,0 +1,46 @@
+{
+  "checks": {
+    "pages_157": true,
+    "only_seven_figure_pages_changed": true,
+    "abstract_unchanged": true,
+    "appendix_unchanged": true,
+    "no_undefined_references": true,
+    "no_overfull_boxes": true,
+    "published_pdf_matches_reviewed_build": true
+  },
+  "changed_physical_pages": [
+    2,
+    9,
+    14,
+    18,
+    23,
+    25,
+    26
+  ],
+  "pixel_comparison_dpi": 72,
+  "pixel_identical_pages": 150,
+  "paper_pdf_sha256": "9c2c497c6ab32dc9fb137fe82d08e15823ea0ca889659b31845f5cdfa84d8c12",
+  "prior_pdf_sha256": "d5930757014058d46b1cef9ce32a77ccdf4b54c491afab2310fb61b396e63767",
+  "visual_review": {
+    "figure_pngs_reviewed": [
+      "model_workflow",
+      "q1_profiles",
+      "q2_profiles",
+      "q3_q4_drying",
+      "q4_shrinkage",
+      "dimension_reduction",
+      "environment_sensitivity"
+    ],
+    "compiled_pages_reviewed": [
+      2,
+      9,
+      14,
+      18,
+      23,
+      25,
+      26
+    ],
+    "compiled_page_renderer": "Poppler at 110 dpi",
+    "result": "七图和七个改动页均已目视：字体正确，无缺字、重叠、截断或图注碰撞；原有字号、图宽高和页面位置保持。"
+  }
+}
