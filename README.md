@@ -2,6 +2,8 @@
 
 项目题目、建模资料、四问计算交付、独立核验，以及四问 LaTeX 论文初稿。
 
+论文摘要现已按每问“模型方法—主要结果—结果解释”重写，并明确温湿反馈分解、极值终点判定及干基守恒收缩处理的方法特色，见[摘要修订记录](paper/q1234_draft_v1/evidence/abstract_revision_20260912/摘要修订说明.md)。
+
 最新论文入口：[四问论文初稿 PDF](paper/q1234_draft_v1/四问论文初稿_v1.pdf)、[LaTeX 主文件](paper/q1234_draft_v1/main.tex)、[构建与验收说明](paper/q1234_draft_v1/README.md)、[AI工具使用详情](paper/q1234_draft_v1/AI工具使用详情.pdf)。本版根据实际读取的 `ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377` 四问结果及整体复审整理，采用 2026 年官方电子稿格式，保留条件模型的适用范围与 Q4 二维补证限制；是待队员人工审阅的完整初稿，尚不等同于完成最终提交验收。旧论文阶段稿保留。
 
 第四问交付已接收并完成[本机针对性核查](review_q4_20260912/README.md)，随后已完成[四问整体批判性模型复审](q1234_overall_review_delivery/v1/README.md)。复审基于提交 `bbf7658` 的实际题面、现行答案、代码和数组，新增有限环境情景、二维正式点续算及物理闭合诊断；结论和下一轮行动见[整体结论](q1234_overall_review_delivery/v1/四问整体复审结论.md)、[P0/P1/P2清单](q1234_overall_review_delivery/v1/问题清单与改进优先级.md)、[论文修订表](q1234_overall_review_delivery/v1/统一模型假设与论文修订表.md)和[三个补算合同](q1234_overall_review_delivery/v1/最小补算计划.md)。[本轮报告与证据ZIP](q1234_overall_review_delivery/四问整体复审报告_v1.zip)只包含新增复审成果；此前[完整交接与离线输入包](q1234_overall_review_handoff/README.md)保留为本轮输入合同，原交付未覆盖。

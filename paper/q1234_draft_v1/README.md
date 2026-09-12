@@ -2,6 +2,8 @@
 
 本版把四问现行结果、机制分析、独立数值证据和整体批判性复审整理为一篇可编辑论文。实际读取的基线提交：`ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377`。本轮未修改正式答案或重新冷启动全部历史求解。
 
+摘要已按“任务、模型方法、方法特色、结果及解释”修订，四问分别成段。该修订基于已完成初稿提交 `bd9fe6333c709373800d5decdc4d2986b90c2b70`；[本次修订与验收](evidence/abstract_revision_20260912/摘要修订说明.md)及[最新PDF检查](evidence/abstract_revision_20260912/pdf_validation.json)优先于下方初稿原验收记录。
+
 - [论文 PDF](四问论文初稿_v1.pdf)
 - [LaTeX 主文件](main.tex)与[可编辑源稿 ZIP](四问论文LaTeX源稿_v1.zip)
 - [AI工具使用详情 PDF](AI工具使用详情.pdf)与[对应 LaTeX](ai_details.tex)

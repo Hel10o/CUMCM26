@@ -1,0 +1,17 @@
+{
+  "input_commit": "bd9fe6333c709373800d5decdc4d2986b90c2b70",
+  "paper_pages": 146,
+  "changed_rendered_pages": [
+    1
+  ],
+  "unchanged_rendered_pages": 145,
+  "render_method": "PyMuPDF RGB 96 dpi, pixel-exact comparison of all pages",
+  "source_changes_restricted_to_abstract": true,
+  "question_paragraphs": 4,
+  "pdf_sha256": "47f49618435f514cbec36e8188966262ae7a4ff17c021176e720666b161ff290",
+  "pdf_bytes": 1072403,
+  "main_tex_sha256": "1e8a2e1f118b8796ecf822acb647e530952a6cdb9d8e54d4fb265ea75cf38d7d",
+  "guidance_sha256": "d791619cedd2da985c352148e45d745bf2a9bee757ae42798588e1f79c141bec",
+  "paragraph_count": 6,
+  "visual_check": "First page rendered at 108 dpi and inspected; title, six paragraphs and keywords fit on one page without clipping"
+}
