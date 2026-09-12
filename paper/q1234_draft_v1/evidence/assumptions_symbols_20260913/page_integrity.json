@@ -1,0 +1,186 @@
+{
+  "baseline_sha": "b361bf98b5005063617dd7aef5c7d5dd763d76a4",
+  "checks": {
+    "full158_body30": true,
+    "abstract_pixels_unchanged": true,
+    "all127_appendix_pages_pixels_unchanged": true,
+    "preview_matches_full_first31": true,
+    "twelve_main_chapters": true,
+    "all_main_headings_centered": true,
+    "future_keeps_equation1": true,
+    "front_tables_keep_s1_s2": true,
+    "chapter_refs_shift_correctly": true,
+    "workflows_same_page_as_question_titles": true,
+    "no_reference_overflow_glyph_warnings": true
+  },
+  "all_passed": true,
+  "pdf_sha256": "98832a8e29b2789de72e30fe2857cc4c0395a6bbad3ab1f6dbb5e891a969cb2d",
+  "preview_sha256": "baa99daf51606c8e8117c7c58dacddf3fc86a323a8a3f8a54fd615e60d2ec826",
+  "pages": {
+    "before": 158,
+    "after": 158,
+    "body": 30,
+    "abstract": 1,
+    "appendix": 127
+  },
+  "headings": [
+    {
+      "title": "问题重述",
+      "page": 2,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "问题分析",
+      "page": 2,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "模型假设",
+      "page": 3,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "符号说明",
+      "page": 4,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "统一传热传质模型与数值方法",
+      "page": 5,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "第一问：预热阶段的径向分布",
+      "page": 7,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "第二问：变物性热质耦合与全过程输出",
+      "page": 11,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "问题三：由全域含水率约束确定干燥时长",
+      "page": 16,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "问题四：观测收缩下的干燥过程",
+      "page": 20,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "模型检验：降维有效性与后段环境灵敏度",
+      "page": 25,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "模型评价、适用范围与推广",
+      "page": 28,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    },
+    {
+      "title": "结论",
+      "page": 30,
+      "center_errors_pt": [
+        -0.002
+      ],
+      "passed": true
+    }
+  ],
+  "labels": {
+    "eq:future": {
+      "number": "1",
+      "page": 4
+    },
+    "tab:symbols": {
+      "number": "S1",
+      "page": 4
+    },
+    "tab:properties": {
+      "number": "S2",
+      "page": 5
+    },
+    "sec:limitations": {
+      "number": "11.3",
+      "page": 29
+    },
+    "sec:data-needs": {
+      "number": "11.4",
+      "page": 30
+    },
+    "sec:environment-scenarios": {
+      "number": "10.2",
+      "page": 27
+    },
+    "sec:q1": {
+      "number": "六",
+      "page": 7
+    },
+    "fig:q1-workflow": {
+      "number": "1",
+      "page": 7
+    },
+    "sec:q2": {
+      "number": "七",
+      "page": 11
+    },
+    "fig:q2-workflow": {
+      "number": "3",
+      "page": 11
+    },
+    "sec:q3": {
+      "number": "八",
+      "page": 16
+    },
+    "fig:q3-workflow": {
+      "number": "5",
+      "page": 16
+    },
+    "sec:q4": {
+      "number": "九",
+      "page": 20
+    },
+    "fig:q4-workflow": {
+      "number": "7",
+      "page": 20
+    }
+  },
+  "preview_mismatch_pages": [],
+  "appendix_mismatch_relative_pages": [],
+  "pixel_resolution_dpi": 72,
+  "compile_problem_lines": []
+}

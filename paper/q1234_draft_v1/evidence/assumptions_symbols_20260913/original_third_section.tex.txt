@@ -1,0 +1,53 @@
+\section{数据处理、基本假设与符号}
+\subsection{数据时域与插值}
+附件1含0--14400\unit{s}的环境记录，采样间隔为60\unit{s}。对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。为计算数十小时干燥过程，4\unit{h}后采用末小时61点的算术均值：
+\begin{equation}
+T_a=49.9989344262\celsius,\qquad b=0.04998754098\unit{kg/kg}.
+\label{eq:future}
+\end{equation}
+其中$b$的含义见下一节。这是数据之外的环境延拓假设。使用时间加权均值、名义平台或其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。
+
+附件2含145个半径记录，采样间隔为1800\unit{s}，覆盖0--72\unit{h}。半径由\unit{cm}换算为\unit{m}后分段线性插值；它保持记录点和单调性，避免引入未经证实的过冲。第四问主终点位于观测区间内，无须外推半径。时间积分在环境与半径的折点处分段重启，以免跨折点的光滑性假设影响误差控制。
+
+\subsection{共同假设与有效量解释}
+\begin{enumerate}
+\item 药材近似轴对称连续介质，初始温度和含水率均匀；分问物性在当前位置按局部状态取值。主径向模型忽略端面，二维验证包含侧面和端面交换。
+\item 材料干基含水率为$C=m_w/m_d$。附件空气量记为$y_a$，表面采用有效映射$b=g(y_a,T_s,\ldots)$；现行计算取$g(y_a,\ldots)=y_a$。它是未经材料标定的恒等映射，不能把$b$直接称为实测药材平衡含水率。
+\item 换热、传质系数取$h_T=25\unit{W/(m^2K)}$、$h_m=8\times10^{-7}\unit{m/s}$。题面在附录2给出两系数，后问未另给时沿用该值；$h_m$属于材料干基驱动力标度，不自动等于气相浓度模型中的气膜系数。
+\item 题给$\rho c_p$用于有效热容量，记为$\rhoe c_p$；真实干质量另由$\rhod$账本描述。不同时强制$\rho/(1+C)$为真实干密度。本模型无显式蒸发潜热、液态扩散携焓和机械功项，不能据有效热方程宣称真实能量闭合。
+\item 前三问固定几何、干骨架静止；第四问取长度$L=L_0$、均匀径向材料收缩，边界按附件2给定。内部仿射运动是额外假设，单凭外半径不能唯一识别。
+\end{enumerate}
+
+\begin{table}[htbp]
+\centering\small
+\caption{主要符号及单位}\label{tab:symbols}
+\begin{tabularx}{\linewidth}{@{}lXl@{}}
+\toprule 符号&含义&单位\\\midrule
+$T,T_K$&材料摄氏温度、绝对温度，$T_K=T+273.15$&$^\circ\mathrm C,\mathrm K$\\
+$C,b$&材料干基含水率、有效材料边界值&$\mathrm{kg/kg}$\\
+$r,z,R,L$&半径坐标、轴向坐标、当前外半径、总长度&$\mathrm m$\\
+$\rhoe,\rhod$&有效容量中的密度、单位当前体积的干物质密度&$\mathrm{kg/m^3}$\\
+$c_p,k,D$&比热容、导热系数、有效水分扩散系数&见表\ref{tab:properties}\\
+$v_s,J$&材料速度、材料映射的体积雅可比&$\mathrm{m/s},1$\\
+$\xi,x$&参考坐标$\xi=r/R$、配点坐标$x=\xi^2$&$1$\\
+$t_*,t_{\mathrm{exec}}$&最大含水率等于阈值的根、正式执行时刻&$\mathrm s$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{分问物性}
+表\ref{tab:properties}保留题给公式。所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。
+\begin{table}[htbp]
+\centering\small
+\caption{题给物性与本文使用方式}\label{tab:properties}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}lXXX@{}}
+\toprule&问题一&问题二、三&问题四\\\midrule
+$\rhoe\ (\mathrm{kg/m^3})$&$820$&$650+128C$&$760+90C$\\
+$c_p\ (\mathrm{J/(kg\,K)})$&$2600$&$1450+\dfrac{2736C}{1+C}$&$1850+\dfrac{2150C}{1+C}$\\[5pt]
+$k\ (\mathrm{W/(m\,K)})$&$0.36$&$0.21+\dfrac{0.38C}{1+C}$&$0.12+\dfrac{0.20C}{1+C}$\\[5pt]
+$D\ (\mathrm{m^2/s})$&$7\times10^{-9}e^{-0.89/C}$&$\begin{gathered}2.4\times10^{-3}e^{-0.45/C}\\{}\times e^{-3850/T_K}\end{gathered}$&$\begin{gathered}4.2\times10^{-4}e^{-0.30/C}\\{}\times e^{-3850/T_K}\end{gathered}$\\
+\bottomrule
+\end{tabularx}
+\end{table}
+

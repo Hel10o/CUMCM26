@@ -26,39 +26,49 @@
 
 题表距离采用中截面径向解释，并由二维对照检验，不视为题面已指定的位置。有限圆柱全域终点还需结合相应二维证据判断，不能由一维阈值事件直接推出；统一适用边界见第\ref{sec:limitations}节。
 
-\section{数据处理、基本假设与符号}
-\subsection{数据时域与插值}
-附件1含0--14400\unit{s}的环境记录，采样间隔为60\unit{s}。对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。为计算数十小时干燥过程，4\unit{h}后采用末小时61点的算术均值：
-\begin{equation}
-T_a=49.9989344262\celsius,\qquad b=0.04998754098\unit{kg/kg}.
-\label{eq:future}
-\end{equation}
-其中$b$的含义见下一节。这是数据之外的环境延拓假设。使用时间加权均值、名义平台或其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。
-
-附件2含145个半径记录，采样间隔为1800\unit{s}，覆盖0--72\unit{h}。半径由\unit{cm}换算为\unit{m}后分段线性插值；它保持记录点和单调性，避免引入未经证实的过冲。第四问主终点位于观测区间内，无须外推半径。时间积分在环境与半径的折点处分段重启，以免跨折点的光滑性假设影响误差控制。
-
-\subsection{共同假设与有效量解释}
+\section{模型假设}
 \begin{enumerate}
 \item 药材近似轴对称连续介质，初始温度和含水率均匀；分问物性在当前位置按局部状态取值。主径向模型忽略端面，二维验证包含侧面和端面交换。
 \item 材料干基含水率为$C=m_w/m_d$。附件空气量记为$y_a$，表面采用有效映射$b=g(y_a,T_s,\ldots)$；现行计算取$g(y_a,\ldots)=y_a$。它是未经材料标定的恒等映射，不能把$b$直接称为实测药材平衡含水率。
 \item 换热、传质系数取$h_T=25\unit{W/(m^2K)}$、$h_m=8\times10^{-7}\unit{m/s}$。题面在附录2给出两系数，后问未另给时沿用该值；$h_m$属于材料干基驱动力标度，不自动等于气相浓度模型中的气膜系数。
 \item 题给$\rho c_p$用于有效热容量，记为$\rhoe c_p$；真实干质量另由$\rhod$账本描述。不同时强制$\rho/(1+C)$为真实干密度。本模型无显式蒸发潜热、液态扩散携焓和机械功项，不能据有效热方程宣称真实能量闭合。
 \item 前三问固定几何、干骨架静止；第四问取长度$L=L_0$、均匀径向材料收缩，边界按附件2给定。内部仿射运动是额外假设，单凭外半径不能唯一识别。
+\item 环境观测结束后保持末小时61点的算术均值，即4\unit{h}后取
+\begin{equation}
+T_a=49.9989344262\celsius,\qquad b=0.04998754098\unit{kg/kg}.
+\label{eq:future}
+\end{equation}
+这是观测范围外的环境延拓假设；使用其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。
 \end{enumerate}
 
-\begin{table}[htbp]
+\Needspace{22\baselineskip}
+\section{符号说明}
+\subsection{主要符号}
+\begin{table}[H]
 \centering\small
 \caption{主要符号及单位}\label{tab:symbols}
+\renewcommand{\arraystretch}{1.10}
 \begin{tabularx}{\linewidth}{@{}lXl@{}}
 \toprule 符号&含义&单位\\\midrule
-$T,T_K$&材料摄氏温度、绝对温度，$T_K=T+273.15$&$^\circ\mathrm C,\mathrm K$\\
-$C,b$&材料干基含水率、有效材料边界值&$\mathrm{kg/kg}$\\
-$r,z,R,L$&半径坐标、轴向坐标、当前外半径、总长度&$\mathrm m$\\
-$\rhoe,\rhod$&有效容量中的密度、单位当前体积的干物质密度&$\mathrm{kg/m^3}$\\
-$c_p,k,D$&比热容、导热系数、有效水分扩散系数&见表\ref{tab:properties}\\
-$v_s,J$&材料速度、材料映射的体积雅可比&$\mathrm{m/s},1$\\
-$\xi,x$&参考坐标$\xi=r/R$、配点坐标$x=\xi^2$&$1$\\
-$t_*,t_{\mathrm{exec}}$&最大含水率等于阈值的根、正式执行时刻&$\mathrm s$\\
+$T$&材料摄氏温度&$^\circ\mathrm C$\\
+$T_K$&材料绝对温度，$T_K=T+273.15$&$\mathrm K$\\
+$C$&材料干基含水率&$\mathrm{kg/kg}$\\
+$b$&有效材料边界值&$\mathrm{kg/kg}$\\
+$r$&径向坐标&$\mathrm m$\\
+$z$&轴向坐标&$\mathrm m$\\
+$R$&当前外半径&$\mathrm m$\\
+$L$&药材总长度&$\mathrm m$\\
+$\rhoe$&有效热容量采用的经验密度&$\mathrm{kg/m^3}$\\
+$\rhod$&单位当前体积的干物质密度&$\mathrm{kg/m^3}$\\
+$c_p$&比热容&$\mathrm{J/(kg\cdot K)}$\\
+$k$&导热系数&$\mathrm{W/(m\cdot K)}$\\
+$D$&有效水分扩散系数&$\mathrm{m^2/s}$\\
+$v_s$&材料速度&$\mathrm{m/s}$\\
+$J$&材料映射的体积雅可比&$1$\\
+$\xi$&参考坐标，$\xi=r/R$&$1$\\
+$x$&配点坐标，$x=\xi^2$&$1$\\
+$t_*$&最大含水率等于阈值的临界时刻&$\mathrm s$\\
+$t_{\mathrm{exec}}$&正式执行时刻&$\mathrm s$\\
 \bottomrule
 \end{tabularx}
 \end{table}

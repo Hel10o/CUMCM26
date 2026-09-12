@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": {
+    "crc": true,
+    "no_duplicate_members": true,
+    "manifest_member_set": true,
+    "inner_outer_manifest_equal": true,
+    "all_members_match_disk": true,
+    "current_revision_included": true,
+    "no_build_or_cache": true,
+    "zip_hash_matches": true,
+    "sidecar_matches": true,
+    "formal_pdf_matches_build": true
+  },
+  "member_count": 468,
+  "source_file_count": 467,
+  "mismatched_members": [],
+  "source_zip_sha256": "adb8731d18030df3748d735996e499b966560f7d71560a6ef075d753c831f08f",
+  "paper_pdf_sha256": "98832a8e29b2789de72e30fe2857cc4c0395a6bbad3ab1f6dbb5e891a969cb2d",
+  "not_run": [
+    "PDE or parameter scenarios",
+    "recompiling an extracted ZIP",
+    "physical printing"
+  ]
+}
