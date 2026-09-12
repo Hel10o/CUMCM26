@@ -2,7 +2,7 @@
 
 项目题目、建模资料、四问计算交付、独立核验，以及四问 LaTeX 论文初稿。
 
-论文摘要现已按每问“模型方法—主要结果—结果解释”重写，并明确温湿反馈分解、极值终点判定及干基守恒收缩处理的方法特色，见[摘要修订记录](paper/q1234_draft_v1/evidence/abstract_revision_20260912/摘要修订说明.md)。摘要中的核心方法、比较前提与主要执行时长已选择性加粗，见[重点排版与核验记录](paper/q1234_draft_v1/evidence/abstract_emphasis_20260912/摘要重点排版说明.md)。
+论文摘要现已按每问“模型方法—主要结果—结果解释”重写，并明确温湿反馈分解、极值终点判定及干基守恒收缩处理的方法特色，见[摘要修订记录](paper/q1234_draft_v1/evidence/abstract_revision_20260912/摘要修订说明.md)。摘要中的核心方法、比较前提与主要执行时长已选择性加粗，见[重点排版与核验记录](paper/q1234_draft_v1/evidence/abstract_emphasis_20260912/摘要重点排版说明.md)；现版采用 11.5 pt 字号、18 pt 行距和 5 pt 段间距，保留摘要单页，见[间距调整与官方规范核验](paper/q1234_draft_v1/evidence/abstract_spacing_20260912/摘要间距调整说明.md)。
 
 最新论文入口：[四问论文初稿 PDF](paper/q1234_draft_v1/四问论文初稿_v1.pdf)、[LaTeX 主文件](paper/q1234_draft_v1/main.tex)、[构建与验收说明](paper/q1234_draft_v1/README.md)、[AI工具使用详情](paper/q1234_draft_v1/AI工具使用详情.pdf)。本版根据实际读取的 `ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377` 四问结果及整体复审整理，采用 2026 年官方电子稿格式，保留条件模型的适用范围与 Q4 二维补证限制；是待队员人工审阅的完整初稿，尚不等同于完成最终提交验收。旧论文阶段稿保留。
 

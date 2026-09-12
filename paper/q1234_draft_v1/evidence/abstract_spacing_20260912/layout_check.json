@@ -1,0 +1,31 @@
+{
+  "baseline_commit": "d9974e81a557bb95183634fa1488630287c0a3b6",
+  "scope": "Local abstract font and spacing only",
+  "requested_font_size_tex_pt": 11.5,
+  "requested_baseline_tex_pt": 18,
+  "requested_paragraph_skip_tex_pt": 5,
+  "margins_cm": 3,
+  "tex_unchanged_except_local_layout_settings": true,
+  "pdf_abstract_text_unchanged_ignoring_whitespace": true,
+  "question_paragraphs": 4,
+  "bold_regions_preserved": 12,
+  "abstract_pages": 1,
+  "pdf_pages": 146,
+  "pixel_comparison_dpi": 96,
+  "changed_pdf_pages": [
+    1
+  ],
+  "unchanged_body_and_appendix_pages": 145,
+  "keyword_bbox_pdf_pt": [
+    85.03897094726562,
+    692.3235473632812,
+    119.40997314453125,
+    703.780517578125
+  ],
+  "pdf_sha256": "d48ef530d561f7c4980f41499cb6faed31ca9377211dcf15b56e1fe8b70f25ab",
+  "pdf_bytes": 1074042,
+  "scientific_solver_rerun": false,
+  "official_format_rechecked_date": "2026-09-12",
+  "official_format_url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+  "official_rule_scope": "National 2026 format rules; no regional supplemental rules supplied"
+}

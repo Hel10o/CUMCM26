@@ -4,7 +4,7 @@
 
 摘要已按“任务、模型方法、方法特色、结果及解释”修订，四问分别成段。该修订基于已完成初稿提交 `bd9fe6333c709373800d5decdc4d2986b90c2b70`，见[摘要文字修订与验收](evidence/abstract_revision_20260912/摘要修订说明.md)。
 
-现版在文字修订提交 `2bca5dd6065ee1f3bb07b61d9181299cef34f089` 上，仅为摘要中的核心方法、比较前提与主要执行时长添加粗体；见[重点排版说明](evidence/abstract_emphasis_20260912/摘要重点排版说明.md)、[摘要重点版](evidence/abstract_emphasis_20260912/摘要重点版.md)及[最新 PDF 检查](evidence/abstract_emphasis_20260912/pdf_validation.json)。以下历次验收记录保留，当前 PDF 状态以上述最新检查为准。
+摘要中的核心方法、比较前提与主要执行时长已添加粗体；见[重点排版说明](evidence/abstract_emphasis_20260912/摘要重点排版说明.md)与[摘要重点版](evidence/abstract_emphasis_20260912/摘要重点版.md)。现版在提交 `d9974e81a557bb95183634fa1488630287c0a3b6` 上，将摘要局部改为 11.5 pt 字号、18 pt 行距、5 pt 段间距，以增加行间和段落留白；见[摘要间距调整与规范核验](evidence/abstract_spacing_20260912/摘要间距调整说明.md)及[最新 PDF 检查](evidence/abstract_spacing_20260912/pdf_validation.json)。以下历次验收记录保留，当前 PDF 状态以上述最新检查为准。
 
 - [论文 PDF](四问论文初稿_v1.pdf)
 - [LaTeX 主文件](main.tex)与[可编辑源稿 ZIP](四问论文LaTeX源稿_v1.zip)
