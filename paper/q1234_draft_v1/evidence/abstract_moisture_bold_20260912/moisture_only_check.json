@@ -1,0 +1,34 @@
+{
+  "baseline_commit": "50e7b544aff9082c6c4cbfa7f9b226c98feaa1ec",
+  "change": "Only bold wrappers added around the two Q1 abstract moisture values",
+  "source_reverted_wrappers_byte_identical": true,
+  "abstract_text_unchanged": true,
+  "bold_pdf_spans": {
+    "1.5102": [
+      {
+        "text": "1.5102",
+        "font": "LMRoman12-Bold",
+        "flags": 20
+      }
+    ],
+    "2.55": [
+      {
+        "text": "2.55",
+        "font": "LMRoman12-Bold",
+        "flags": 20
+      }
+    ]
+  },
+  "total_pages": 155,
+  "body_pages": 27,
+  "abstract_pages": 1,
+  "changed_raster_pages": [
+    1
+  ],
+  "unchanged_body_and_appendix_raster_pages": 154,
+  "raster_dpi": 72,
+  "compile_exit_code": 0,
+  "final_log_issues": [],
+  "pdf_sha256": "6eefc46757d250a546d7efe20802570c1908ea9c9ae88a62d5cd62f7a1a6b974",
+  "pde_or_scenarios_run": false
+}

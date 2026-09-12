@@ -1,0 +1,69 @@
+{
+  "baseline_commit": "50e7b544aff9082c6c4cbfa7f9b226c98feaa1ec",
+  "change": "Six bold wrappers only: two Q1 moisture values and the four question conclusions including their limitations",
+  "source_reverted_wrappers_byte_identical": true,
+  "added_bold_wrappers": 6,
+  "abstract_text_unchanged": true,
+  "total_pages": 155,
+  "body_pages": 27,
+  "abstract_pages": 1,
+  "changed_raster_pages": [
+    1
+  ],
+  "unchanged_body_and_appendix_raster_pages": 154,
+  "raster_dpi": 72,
+  "compile_exit_code": 0,
+  "final_log_issues": [],
+  "pdf_sha256": "76f7a0fd4036e08299ab34bcc469716750ab46b52d0602d769d159bb953cc60b",
+  "pde_or_scenarios_run": false,
+  "bold_pdf_text_checks": [
+    {
+      "text": "1.5102",
+      "fonts": [
+        "LMRoman12-Bold"
+      ],
+      "all_characters_bold": true
+    },
+    {
+      "text": "2.55",
+      "fonts": [
+        "LMRoman12-Bold"
+      ],
+      "all_characters_bold": true
+    },
+    {
+      "text": "结果表明，热量已传入内部而失水仍集中于外层，传热与水分扩散具有不同的时间尺度。",
+      "fonts": [
+        "SimHei"
+      ],
+      "all_characters_bold": true
+    },
+    {
+      "text": "说明温度趋匀并不代表干燥均匀，升温也不能持续抵消失水造成的扩散衰减。",
+      "fonts": [
+        "SimHei"
+      ],
+      "all_characters_bold": true
+    },
+    {
+      "text": "最湿轴心控制终止，表面先达标不足以判断整根干燥完成；二维终点节点场支持该时长的保守方向，但不构成连续全域严格误差界。",
+      "fonts": [
+        "SimHei"
+      ],
+      "all_characters_bold": true
+    },
+    {
+      "text": "施加观测收缩后，模型临界时间缩短约60.65%。该差异包含几何尺度与干基边界标度变化，不能全部归因于扩散距离缩短；全域达标仍需精细二维直接核验。",
+      "fonts": [
+        "LMRoman12-Bold",
+        "SimHei"
+      ],
+      "all_characters_bold": true
+    }
+  ],
+  "visual_review": {
+    "page": 1,
+    "render_dpi": 150,
+    "observed": "All six additions are bold; conclusions and limitations visible; no clipping or overlap; abstract remains one page"
+  }
+}
