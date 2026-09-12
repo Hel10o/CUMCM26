@@ -1,0 +1,274 @@
+{
+  "baseline_sha": "9c26eb4b13a236326e6605106934e35325c1a748",
+  "automated_passed": true,
+  "checks": [
+    {
+      "check": "protected_tracked_files_unchanged",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "formal_excel_sha256",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "abstract_four_paragraphs_exact",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "conclusion_original_two_paragraphs_preserved",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "main_only_two_identical_plain_sentence_insertions",
+      "passed": true,
+      "evidence": [
+        "第三、四问的一维条件执行时长57.4741\\unit{h}与51.0921\\unit{h}分别约为2.39天与2.13天，均落在题目所述2--3天区间内，量级一致。",
+        "第三、四问的一维条件执行时长57.4741\\unit{h}与51.0921\\unit{h}分别约为2.39天与2.13天，均落在题目所述2--3天区间内，量级一致。"
+      ]
+    },
+    {
+      "check": "ai_block_exact_and_before_references",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "ten_body_sections",
+      "passed": true,
+      "evidence": [
+        "结论",
+        "问题重述与建模思路",
+        "数据处理、基本假设与符号",
+        "统一传热传质模型与数值方法",
+        "第一问：预热阶段的径向分布",
+        "第二问：变物性热质耦合与全过程输出",
+        "问题三：由全域含水率约束确定干燥时长",
+        "问题四：观测收缩下的干燥过程",
+        "模型检验：降维有效性与后段环境灵敏度",
+        "模型评价、适用范围与推广"
+      ]
+    },
+    {
+      "check": "no_hardcoded_9_2_9_3_refs",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "check": "source_redlines_zero",
+      "passed": true,
+      "evidence": {
+        "能耗": 0,
+        "节能": 0,
+        "可忽略": 0,
+        "题面指定中截面": 0
+      }
+    },
+    {
+      "check": "numeric_source_total_not_decreased",
+      "passed": true,
+      "evidence": {
+        "baseline": 1156,
+        "final": 1200
+      }
+    },
+    {
+      "check": "numeric_lexeme_multiplicities_not_decreased",
+      "passed": true,
+      "evidence": {}
+    },
+    {
+      "check": "q1_equation_blocks_exact",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "q2_equation_blocks_exact",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "q3_equation_blocks_exact",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "q4_equation_blocks_exact",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "check": "four_required_scope_statements_exact",
+      "passed": true,
+      "evidence": {
+        "sections/q1.tex": [],
+        "sections/q2.tex": [],
+        "sections/q3.tex": [],
+        "sections/q4.tex": []
+      }
+    },
+    {
+      "check": "chapter9_four_ordered_subsections",
+      "passed": true,
+      "evidence": [
+        "模型优点",
+        "模型推广",
+        "适用范围与主要限制",
+        "改进方向与数据需求"
+      ]
+    }
+  ],
+  "review_required": {
+    "scale_sentences": [
+      "第三、四问的一维条件执行时长57.4741\\unit{h}与51.0921\\unit{h}分别约为2.39天与2.13天，均落在题目所述2--3天区间内，量级一致。",
+      "在本文工况与模型假设下，第三、四问的一维条件执行时长分别为57.4741\\unit{h}和51.0921\\unit{h}。二维证据支持中截面降维，并要求对整根失水和全域终点另作检查；特别是第四问精细二维直接终点与误差裕量尚未补齐，不能据现有估计宣称连续有限圆柱严格保证。后段环境情景显示，实际工况稳定性对执行时间的影响值得优先检验。第三、四问的一维条件执行时长57.4741\\unit{h}与51.0921\\unit{h}分别约为2.39天与2.13天，均落在题目所述2--3天区间内，量级一致。"
+    ],
+    "numeric_sentences_changed": {
+      "sections/q1.tex": [],
+      "sections/q2.tex": [],
+      "sections/q3.tex": [],
+      "sections/q4.tex": []
+    },
+    "protection_sentences_changed": {
+      "sections/q1.tex": [],
+      "sections/q2.tex": [
+        "这是人为设定的确定性情景，不是参数置信区间，也不能用它替代空气量与材料平衡含水率的基准识别。"
+      ],
+      "sections/q3.tex": [],
+      "sections/q4.tex": [
+        "热式仍为无显式潜热的容量型有效方程，不能仅凭数值积分闭合将其解释为真实组分总焓守恒。",
+        "这属于输入重建敏感性，不能当作半径测量误差的置信区间。",
+        "此外，$R(t)$本身是施加的观测，复现该曲线不能作为温湿预测的独立验证；更换环境或交换系数而仍使用原$R(t)$，只能解释为该几何历程下的条件响应。"
+      ]
+    },
+    "chapter_end_inventories": {
+      "sections/q1.tex": {
+        "last_natural_paragraph": [
+          "同物理条件的$80\\times128$有限圆柱二维配对，在前$1800\\unit{s}$已检查采样点的中截面最大温湿差约为$5.65\\times10^{-8}\\unit{K}$与$4.09\\times10^{-9}\\unit{kg/kg}$，支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。",
+          "以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度及无显式潜热假设引入的物理不确定性。"
+        ],
+        "last_subsection": [
+          "接近舍入分界的数值必须逐项核对，不能仅凭最大误差小于半个末位单位推断整张表四位一致。",
+          "同物理条件的$80\\times128$有限圆柱二维配对，在前$1800\\unit{s}$已检查采样点的中截面最大温湿差约为$5.65\\times10^{-8}\\unit{K}$与$4.09\\times10^{-9}\\unit{kg/kg}$，支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。",
+          "以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度及无显式潜热假设引入的物理不确定性。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "sections/q2.tex": {
+        "last_natural_paragraph": [
+          "热账本核对的是有效热容量积分与边界热流，即比较$\\int\\!\\intS(C)T_t\\,\\mathrmdV\\mathrmdt$与累计边界热量，相对残差约$3.11\\times10^{-11}$，并非$\\intST\\,\\mathrmdV$的末初差，更不构成潜热、携焓及真实总能量已经闭合的证明。",
+          "这支持中截面的工程近似，但不能保证降维后所有四位显示相同；长期全域达标须结合第三问终点证据，不能直接沿用前3小时的几何误差。"
+        ],
+        "last_subsection": [
+          "有限体积外推是这一前3小时交叉验证的来源，不是完整工作簿的生成方法。",
+          "当前869万余格工作簿与同源未舍入轨迹的舍入核对全部通过，该检查支持导出一致性；高阶独立参考覆盖的是所列采样点，不能把导出一致性误写成全部逐秒状态均另作了独立求解。",
+          "热账本核对的是有效热容量积分与边界热流，即比较$\\int\\!\\intS(C)T_t\\,\\mathrmdV\\mathrmdt$与累计边界热量，相对残差约$3.11\\times10^{-11}$，并非$\\intST\\,\\mathrmdV$的末初差，更不构成潜热、携焓及真实总能量已经闭合的证明。",
+          "这支持中截面的工程近似，但不能保证降维后所有四位显示相同；长期全域达标须结合第三问终点证据，不能直接沿用前3小时的几何误差。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "sections/q3.tex": {
+        "last_natural_paragraph": [
+          "故57.4741\\unit{h}应与环境平台和有效气固边界共同报告，不能仅凭小数位数给出真实工况下的确定性保证。"
+        ],
+        "last_subsection": [
+          "这一差值用于识别端部效应，不能把粗网格二维绝对根直接替代精细一维根。",
+          "该节点结果与配对根差支持$57.4741\\unit{h}$的工程保守方向；局部续算仍继承前史离散误差，尚不构成连续二维域的严格数学误差界，也不将该时长解释为精确的二维最短时间。",
+          "故57.4741\\unit{h}应与环境平台和有效气固边界共同报告，不能仅凭小数位数给出真实工况下的确定性保证。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "sections/q4.tex": {
+        "last_natural_paragraph": [
+          "输入重建差不能当作半径测量误差的置信区间，适用边界见第节。",
+          "复现给定的观测$R(t)$不能作为温湿预测的独立验证；改变环境或交换系数而沿用该半径历程时，结果仅为条件响应。"
+        ],
+        "last_subsection": [
+          "第三、四问还更换了整套物性，故图两问约6.382\\unit{h}的净差不能全部归因于收缩。",
+          "所以模型临界时间缩短60.6526\\%是同一有效方程内的条件对照结果，不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。",
+          "输入重建差不能当作半径测量误差的置信区间，适用边界见第节。",
+          "复现给定的观测$R(t)$不能作为温湿预测的独立验证；改变环境或交换系数而沿用该半径历程时，结果仅为条件响应。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "problem_model:问题重述与建模思路": {
+        "last_natural_paragraph": [
+          "已有干燥研究使用材料输运与移动网格组织热质耦合，但其他材料的平衡含水率、孔隙关系和经验收缩系数不能直接迁移。"
+        ],
+        "last_subsection": [
+          "热风干燥通过外界换热和水分交换改变药材内部状态，外表面的变化不能直接代表轴心或整根的状态。",
+          "该解释由数值对照检验，不能作为题面已经指定中截面的事实。",
+          "已有干燥研究使用材料输运与移动网格组织热质耦合，但其他材料的平衡含水率、孔隙关系和经验收缩系数不能直接迁移。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "problem_model:数据处理、基本假设与符号": {
+        "last_natural_paragraph": [
+          "所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。"
+        ],
+        "last_subsection": [
+          "所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      },
+      "problem_model:统一传热传质模型与数值方法": {
+        "last_natural_paragraph": [],
+        "last_subsection": [
+          "等号事件和严格执行分别满足停止判断使用未舍入值；显示为0.1500的表格数不能区分阈值两侧。",
+          "对配点解，除检查节点外，还利用式的单调性查找重构多项式的全部实驻点，避免只看轴心而漏掉内部极值。",
+          "连续二维严格界则需进一步控制空间、时间及重构误差，不能由节点值直接推出。"
+        ],
+        "status": "semantic_review_required; no automatic <=2 pass"
+      }
+    },
+    "claim_strength": {
+      "main.tex": [
+        "%!TEXprogram=xelatex\\documentclass[UTF8,a4paper,zihao=-4,fontset=windows]{ctexart}\\usepackage[margin=3cm]{geometry}\\usepackage{amsmath,amssymb,booktabs,array,tabularx,longtable,graphicx}\\usepackage{enumitem,caption,float,placeins,xcolor,fancyhdr,fvextra,needspace}\\usepackage{xurl}\\usepackage[hidelinks,unicode]{hyperref}\\usepackage{microtype}\\setmonofont{Consolas}\\xeCJKDeclareCharClass{CJK}{\"2103}\\setlength{\\parindent}{2em}\\setlength{\\parskip}{0.12em}\\setlength{\\emergencystretch}{3em}\\linespread{1.12}\\setlist{nosep,leftmargin=2em}\\captionsetup{font=small,labelfont=bf,labelsep=quad,skip=5pt}\\ctexset{section={format=\\Large\\bfseries,beforeskip=1.1explus.4ex,afterskip=.65ex},subsection={format=\\large\\bfseries,beforeskip=.85explus.3ex,afterskip=.5ex},subsubsection={format=\\normalsize\\bfseries}}\\pagestyle{fancy}\\fancyhf{}\\fancyfoot[C]{\\thepage}\\renewcommand{\\headrulewidth}{0pt}\\setlength{\\headheight}{14pt}\\setlength{\\footskip}{18pt}\\renewcommand{\\arraystretch}{1.18}\\renewcommand{\\topfraction}{0.95}\\renewcommand{\\bottomfraction}{0.9}\\renewcommand{\\textfraction}{0.05}\\renewcommand{\\floatpagefraction}{0.8}\\setcounter{topnumber}{4}\\setcounter{totalnumber}{5}\\setlength{\\textfloatsep}{11ptplus2ptminus2pt}\\setlength{\\floatsep}{9ptplus2ptminus2pt}\\newcommand{\\unit}[1]{\\ensuremath{\\,\\mathrm{#1}}}\\newcommand{\\celsius}{\\ensuremath{\\,{}^\\circ\\mathrm{C}}}\\newcommand{\\Cmax}{C_{\\max}}\\newcommand{\\rhoe}{\\rho_{\\mathrm{eff}}}\\newcommand{\\rhod}{\\rho_{\\mathrmd}}\\newcommand{\\Ds}{\\mathrmD_{\\mathrms}}\\newcommand{\\dd}{\\mathop{}\\!\\mathrmd}\\newcommand{\\sourcecode}[2]{\\noindent{\\footnotesize\\nolinkurl{#2}}\\par\\smallskip\\VerbatimInput[fontsize=\\fontsize{8}{9.5}\\selectfont,breaklines=true,breakanywhere=true,numbers=left,numbersep=4pt,xleftmargin=1.6em,frame=single,framesep=3pt]{#2}\\par}\\newcommand{\\codegroup}[1]{}\\hypersetup{pdftitle={考虑变物性与径向收缩的圆柱药材干燥模型},pdfauthor={},pdfsubject={四问论文初稿},pdfkeywords={药材干燥,变物性,材料坐标,有限体积,严格阈值}}\\begin{document}\\begin{center}{\\LARGE\\bfseries考虑变物性与径向收缩的\\par圆柱药材干燥模型\\par}\\vspace{0.7em}{\\large\\bfseries摘\\quad要}\\end{center}\\begingroup\\linespread{1}\\fontsize{11.5}{18}\\selectfont\\setlength{\\parindent}{2em}\\setlength{\\parskip}{5pt}围绕圆柱药材的温湿分布与干燥时长问题，依据题给物性建立径向等效传热传质模型，采用有效湿度边界且不显式计入潜热，并结合二维计算检验中截面近似与全域终点。",
+        "\\textbf{最湿轴心控制终止，表面先达标不足以判断整根干燥完成；二维终点节点场支持该时长的保守方向，但不构成连续全域严格误差界。",
+        "该差异包含几何尺度与干基边界标度变化，不能全部归因于扩散距离缩短；全域达标仍需精细二维直接核验。",
+        "二维证据支持中截面降维，并要求对整根失水和全域终点另作检查；特别是第四问精细二维直接终点与误差裕量尚未补齐，不能据现有估计宣称连续有限圆柱严格保证。"
+      ],
+      "sections/q3.tex": [
+        "问题三要求药材各处的干基含水率严格低于$C_{\\mathrm{lim}}=0.15\\unit{kg/kg}$。",
+        "等号根是严格达标时间集合的边界，根本身不满足题设严格不等式；有限圆柱中“各处”的含义则由后述二维计算另行检验。",
+        "为检验“各处”的空间含义，在长度0.25\\unit{m}的有限圆柱上增加轴向传递，侧面与端面保持相同物性和交换系数。",
+        "以80个径向区间、256个轴向区间的同网格一维/二维配对计算比较事件根，二维比配对一维提前约7.4740\\unit{s}。",
+        "这一差值用于识别端部效应，不能把粗网格二维绝对根直接替代精细一维根。",
+        "再从临界附近已保存的二维场推进至式的执行时刻，得到全节点最大含水率$0.149998606290\\unit{kg/kg}$，最湿点位于中截面轴心，离散场已经达标。",
+        "该节点结果与配对根差支持$57.4741\\unit{h}$的工程保守方向；局部续算仍继承前史离散误差，尚不构成连续二维域的严格数学误差界，也不将该时长解释为精确的二维最短时间。",
+        "故57.4741\\unit{h}应与环境平台和有效气固边界共同报告，不能仅凭小数位数给出真实工况下的确定性保证。"
+      ],
+      "sections/q4.tex": [
+        "二维模型在式中加入轴向通量散度，端面使用相同交换系数，长度仍为$L_0$。",
+        "在80个径向区间、128个轴向区间的配对计算中，二维事件根为183934.287166\\unit{s}，同径向网格的一维根为183934.321385\\unit{s}，相差约$-0.034218\\unit{s}$。",
+        "精细一维根加该差值得到二维临界根估计183931.177445--183931.183083\\unit{s}，但这不是严格上下界。",
+        "直接将已有80$\\times$128二维场推进至183931.56\\unit{s}时，其全节点最大含水率为0.150001406623\\unit{kg/kg}，仍略高于阈值；该局部续算继承原粗网格前史，不能消除上述共同径向误差。",
+        "因此，本文保留51.0921\\unit{h}作为一维条件执行值，配对估计提供其二维保守方向的支持；进一步作出充分的有限圆柱全域达标结论，仍需精细二维正式点及误差与正裕量对照。",
+        "这一证据范围不等于用粗网格结果推翻精细主解，也不等于已经取得连续二维的数学保证。"
+      ]
+    },
+    "60_percent_contexts": [
+      {
+        "file": "main.tex",
+        "text": "\\textbf{针对问题四}，根据附件2的观测半径，在恒长度、均匀径向收缩假设下，由\\textbf{干物质守恒}构建\\textbf{材料坐标模型}，将移动边界转化为固定参考域，避免重复加入干基含水率的体积浓缩项。采用该问物性从初态求解，在相同后段环境假设下得到一维条件执行时长\\textbf{51.0921\\unit{h}}。进一步设置\\textbf{同物性恒半径对照}，其临界时间为129.8484\\unit{h}；\\textbf{施加观测收缩后，模型临界时间缩短约60.65\\%。该差异包含几何尺度与干基边界标度变化，不能全部归因于扩散距离缩短；全域达标仍需精细二维直接核验。}"
+      },
+      {
+        "file": "sections/q4.tex",
+        "text": "模型临界时间缩短78.7564\\unit{h}，约60.6526\\%。"
+      },
+      {
+        "file": "sections/q4.tex",
+        "text": "所以模型临界时间缩短60.6526\\%是同一有效方程内的条件对照结果，"
+      }
+    ]
+  },
+  "not_executed_by_this_script": [
+    "PDE or scenario integration",
+    "figure generation",
+    "PDF compilation or visual review",
+    "AUX/PDF page and reference validation",
+    "semantic certification of claim strength and limitation counts"
+  ]
+}

@@ -7,7 +7,7 @@ import zipfile
 BASE = Path(__file__).resolve().parent
 OUT = BASE / "四问论文LaTeX源稿_v1.zip"
 roots = ["main.tex", "ai_details.tex", "body_preview.tex", "build.ps1",
-         "build_assets.py", "validate_paper.py", "package_source.py", "README.md"]
+         "build_assets.py", "build_dimension_reduction.py", "figures/dimension_reduction.png", "validate_paper.py", "package_source.py", "README.md"]
 files = [BASE / name for name in roots]
 for path in (BASE / "evidence").rglob("*"):
     if path.is_file() and path.suffix in {".md", ".json", ".txt", ".pdf", ".html"} and path.name != "source_package.json":

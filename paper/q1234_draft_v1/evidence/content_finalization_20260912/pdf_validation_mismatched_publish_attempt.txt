@@ -1,0 +1,24 @@
+PDF validation: failed
+Scope: full_document
+Paper: D:\Desktop\CUMCM26\paper\q1234_draft_v1\四问论文初稿_v1.pdf
+AI details: D:\Desktop\CUMCM26\paper\q1234_draft_v1\AI工具使用详情.pdf
+Checks: {'pass': 35, 'fail': 2, 'info': 2}
+Counted body pages: 28
+Full document validated: False
+Submission-ready certification: not provided (visual and human factual review remain external).
+FAIL paper.end_boundary: document:end agrees with the actual final physical PDF page.
+{"label_page": 156, "pdf_pages": 155}
+FAIL paper.ai_before_references: Exactly one references heading follows the AI declaration, with appendix afterwards.
+[{"page": 27, "y": 716.5320434570312}]
+TABLE q1_temperature: pass; matched cells=42
+TABLE q1_moisture: pass; matched cells=42
+TABLE q2_temperature: pass; matched cells=36
+TABLE q2_moisture: pass; matched cells=36
+TABLE q3_moisture: pass; matched cells=60
+TABLE q4_moisture: pass; matched cells=63
+
+Limitations:
+Text and geometry audit does not replace rendered-page visual inspection.
+Unknown author/school/team identifiers require human anonymity review.
+AI disclosure truthfulness and complete human review cannot be certified by this script.
+Table checks compare rendered strings with the supplied expected manifest; numerical model validity is outside scope.

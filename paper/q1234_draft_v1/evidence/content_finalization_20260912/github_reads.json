@@ -1,0 +1,25 @@
+{
+  "repository": "Hel10o/libai",
+  "commit_sha": "9c26eb4b13a236326e6605106934e35325c1a748",
+  "method": "GitHub connector fetch_file at immutable main SHA",
+  "files": [
+    {
+      "path": "q1234_paper_content_handoff/论文内容改进与定稿_模型指示文档.md",
+      "git_blob_sha": "00d7048f425fec6dcf0e0246c55f787aa779bd75",
+      "url": "https://github.com/Hel10o/libai/blob/9c26eb4b13a236326e6605106934e35325c1a748/q1234_paper_content_handoff/%E8%AE%BA%E6%96%87%E5%86%85%E5%AE%B9%E6%94%B9%E8%BF%9B%E4%B8%8E%E5%AE%9A%E7%A8%BF_%E6%A8%A1%E5%9E%8B%E6%8C%87%E7%A4%BA%E6%96%87%E6%A1%A3.md",
+      "full_content_read": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/evidence/structure_revision_20260912/论文结构与表述修订记录.md",
+      "git_blob_sha": "d955d6c7f7efb36cc5eac64325cf70bcc2470bee",
+      "url": "https://github.com/Hel10o/libai/blob/9c26eb4b13a236326e6605106934e35325c1a748/paper/q1234_draft_v1/evidence/structure_revision_20260912/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E4%B8%8E%E8%A1%A8%E8%BF%B0%E4%BF%AE%E8%AE%A2%E8%AE%B0%E5%BD%95.md",
+      "full_content_read": true
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "2bcc63c37c446119432a5be5b675aac0882a2660",
+      "url": "https://github.com/Hel10o/libai/blob/9c26eb4b13a236326e6605106934e35325c1a748/README.md",
+      "full_content_read": true
+    }
+  ]
+}

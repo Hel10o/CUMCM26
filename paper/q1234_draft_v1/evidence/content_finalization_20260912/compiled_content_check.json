@@ -1,0 +1,369 @@
+{
+  "baseline_sha": "9c26eb4b13a236326e6605106934e35325c1a748",
+  "scope": "Independent read-only final third-build PDF/AUX/log/source and figure text checks; no compilation or numerical solver execution",
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "pymupdf": "1.28.0"
+  },
+  "inputs": {
+    "main.tex": {
+      "bytes": 8733,
+      "sha256": "11564d8746de28c05ff0e8d6ce0c4af20a6598d0ea6bf6e0b972ecf2aa7a1d40"
+    },
+    "sections/problem_model.tex": {
+      "bytes": 10524,
+      "sha256": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd"
+    },
+    "sections/q1.tex": {
+      "bytes": 7993,
+      "sha256": "ea1a252ea4be77eec1d22db448d6f33f29601800303582609f558bfa129c3cfd"
+    },
+    "sections/q2.tex": {
+      "bytes": 10823,
+      "sha256": "0e0551131c86a113b58c91ead05014f4d3facb4d9fd946ca0b2d14d6f98a6e03"
+    },
+    "sections/q3.tex": {
+      "bytes": 8543,
+      "sha256": "3b70b95fc73263544483985ed6c680ce0807792032ba8a80d4ab2ae85ef2227a"
+    },
+    "sections/q4.tex": {
+      "bytes": 12657,
+      "sha256": "4e9f0528c70cbba2e8ec0d0e2d7ad5c64f44a933564c3ab3e8d701819048d343"
+    },
+    "sections/validation_limits.tex": {
+      "bytes": 13266,
+      "sha256": "aab25cd6b11af479ceaa9d4e08b0f4436e41fd4521091d11638d1febf3bcbd90"
+    },
+    "sections/appendix.tex": {
+      "bytes": 7804,
+      "sha256": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7"
+    },
+    "sections/references.tex": {
+      "bytes": 1744,
+      "sha256": "426d2e5f53b72f9823fa1314e844b260d6217aeba8759fb348096b5d4b35740e"
+    },
+    "build/content_finalization/main.pdf": {
+      "bytes": 1163676,
+      "sha256": "9012365c7252904b182a7a00f0b408e36a7ec1acfd25da53a0198acccfb9126b"
+    },
+    "build/content_finalization/main.aux": {
+      "bytes": 27869,
+      "sha256": "0ad62f59e1af19289289d2b7a170b4a09ad04a2b7cfa91ce70d0dfdee4cf53a6"
+    },
+    "build/content_finalization/main.log": {
+      "bytes": 51032,
+      "sha256": "48da0e91d12eab488ebd52cf7c878ebadfa83825229c656a9ffd4328705adef9"
+    }
+  },
+  "passed": true,
+  "checks": [
+    {
+      "id": "static_final_source_checks",
+      "passed": true,
+      "evidence": {
+        "check_count": 17
+      }
+    },
+    {
+      "id": "all_ref_eqref_resolve_uniquely",
+      "passed": true,
+      "evidence": {
+        "uses": 98,
+        "distinct_targets": 51,
+        "invalid": []
+      }
+    },
+    {
+      "id": "all_aux_labels_unique",
+      "passed": true,
+      "evidence": {
+        "labels": 74,
+        "duplicates": []
+      }
+    },
+    {
+      "id": "all_citations_have_unique_bib_entry",
+      "passed": true,
+      "evidence": {
+        "uses": 20,
+        "distinct_targets": 7,
+        "invalid": []
+      }
+    },
+    {
+      "id": "ten_numbered_body_sections",
+      "passed": true,
+      "evidence": [
+        [
+          "一",
+          "问题重述与建模思路",
+          "2",
+          "1"
+        ],
+        [
+          "二",
+          "数据处理、基本假设与符号",
+          "2",
+          "2"
+        ],
+        [
+          "三",
+          "统一传热传质模型与数值方法",
+          "4",
+          "3"
+        ],
+        [
+          "四",
+          "第一问：预热阶段的径向分布",
+          "6",
+          "4"
+        ],
+        [
+          "五",
+          "第二问：变物性热质耦合与全过程输出",
+          "10",
+          "5"
+        ],
+        [
+          "六",
+          "问题三：由全域含水率约束确定干燥时长",
+          "14",
+          "6"
+        ],
+        [
+          "七",
+          "问题四：观测收缩下的干燥过程",
+          "18",
+          "7"
+        ],
+        [
+          "八",
+          "模型检验：降维有效性与后段环境灵敏度",
+          "23",
+          "8"
+        ],
+        [
+          "九",
+          "模型评价、适用范围与推广",
+          "26",
+          "9"
+        ],
+        [
+          "十",
+          "结论",
+          "28",
+          "10"
+        ]
+      ]
+    },
+    {
+      "id": "chapter9_subsections_9_1_to_9_4",
+      "passed": true,
+      "evidence": [
+        [
+          "9.1",
+          "模型优点",
+          "26"
+        ],
+        [
+          "9.2",
+          "模型推广",
+          "26"
+        ],
+        [
+          "9.3",
+          "适用范围与主要限制",
+          "27"
+        ],
+        [
+          "9.4",
+          "改进方向与数据需求",
+          "28"
+        ]
+      ]
+    },
+    {
+      "id": "q1_q2_latent_references_resolve_9_3",
+      "passed": true,
+      "evidence": {
+        "number": "9.3",
+        "page": 27
+      }
+    },
+    {
+      "id": "new_figure_5_environment_6",
+      "passed": true,
+      "evidence": {
+        "fig:q1-profiles": {
+          "number": "1",
+          "page": 9
+        },
+        "fig:q2-profiles": {
+          "number": "2",
+          "page": 13
+        },
+        "fig:q3-q4-drying": {
+          "number": "3",
+          "page": 17
+        },
+        "fig:q4-shrinkage": {
+          "number": "4",
+          "page": 22
+        },
+        "fig:dimension-reduction": {
+          "number": "5",
+          "page": 24
+        },
+        "fig:environment": {
+          "number": "6",
+          "page": 25
+        }
+      }
+    },
+    {
+      "id": "final_log_no_unresolved_or_missing_glyph",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "body_pages_at_most_30",
+      "passed": true,
+      "evidence": {
+        "total": 156,
+        "abstract_page": 1,
+        "body_first": 2,
+        "body_last": 29,
+        "body_pages": 28,
+        "appendix_first": 30,
+        "appendix_pages": 127
+      }
+    },
+    {
+      "id": "redlines_zero_in_all_156_pdf_pages",
+      "passed": true,
+      "evidence": {
+        "能耗": [],
+        "节能": [],
+        "可忽略": [],
+        "题面指定中截面": []
+      }
+    },
+    {
+      "id": "all_pdf_pages_no_unresolved_placeholders",
+      "passed": true,
+      "evidence": []
+    },
+    {
+      "id": "ai_statement_precedes_references_in_pdf",
+      "passed": true,
+      "evidence": {
+        "ai_title": [
+          [
+            29,
+            0
+          ]
+        ],
+        "references_title": [
+          [
+            29,
+            174
+          ]
+        ],
+        "ai_aux": {
+          "number": "十",
+          "page": 29
+        }
+      }
+    },
+    {
+      "id": "new_figure_pdf_percentages_exact",
+      "passed": true,
+      "evidence": {
+        "page": 24,
+        "percent_strings": [
+          "7.2533",
+          "4.7118",
+          "2.7379"
+        ]
+      }
+    },
+    {
+      "id": "three_figure_percentages_match_source_table",
+      "passed": true,
+      "evidence": {
+        "table_decimal_values": [
+          "2.274929",
+          "2.293532",
+          "7.2533",
+          "1.327482",
+          "1.382492",
+          "4.7118",
+          "1.024545",
+          "1.065198",
+          "2.7379"
+        ],
+        "expected": [
+          "7.2533",
+          "4.7118",
+          "2.7379"
+        ]
+      }
+    },
+    {
+      "id": "standalone_figure_has_only_three_percentages",
+      "passed": true,
+      "evidence": [
+        "7.2533",
+        "4.7118",
+        "2.7379"
+      ]
+    },
+    {
+      "id": "weighting_assumption_in_rendered_caption",
+      "passed": true,
+      "evidence": {
+        "page": 24
+      }
+    },
+    {
+      "id": "sixty_percent_time_context",
+      "passed": true,
+      "evidence": [
+        {
+          "page": 1,
+          "context": "1.0921h。进一步设置同物性恒半径对照，其临界时间为129.8484h；施加观测收缩后，模型临界时间缩短约60.65%。该差异包含几何尺度与干基边界标度变化，不能全部归因于扩散距离缩短；全域达标仍需精细二维直接核验。第三、四问的一维条件执行时长57.4741"
+        },
+        {
+          "page": 22,
+          "context": "129.848360839h；施加观测收缩后为51.092003254h，模型临界时间缩短78.7564h，约60.6526%。这反映当前模型中缩短扩散路径与改变边界交换标度的综合作用。第三、四问还更换了整套物性，故图3两问约6.382h的净差不能全部归因于收缩。2"
+        },
+        {
+          "page": 23,
+          "context": "0=0.6时，KC为初始的2.7778倍，式(40)中的2hm/R为初始的1.6667倍。所以模型临界时间缩短60.6526%是同一有效方程内的条件对照结果，不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。半径重建方式也影响终时。将线性插"
+        }
+      ]
+    },
+    {
+      "id": "inputs_stable_during_audit",
+      "passed": true,
+      "evidence": null
+    }
+  ],
+  "source_sha256": {
+    "main.tex": "11564d8746de28c05ff0e8d6ce0c4af20a6598d0ea6bf6e0b972ecf2aa7a1d40",
+    "sections/problem_model.tex": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd",
+    "sections/q1.tex": "ea1a252ea4be77eec1d22db448d6f33f29601800303582609f558bfa129c3cfd",
+    "sections/q2.tex": "0e0551131c86a113b58c91ead05014f4d3facb4d9fd946ca0b2d14d6f98a6e03",
+    "sections/q3.tex": "3b70b95fc73263544483985ed6c680ce0807792032ba8a80d4ab2ae85ef2227a",
+    "sections/q4.tex": "4e9f0528c70cbba2e8ec0d0e2d7ad5c64f44a933564c3ab3e8d701819048d343",
+    "sections/validation_limits.tex": "aab25cd6b11af479ceaa9d4e08b0f4436e41fd4521091d11638d1febf3bcbd90",
+    "sections/appendix.tex": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7",
+    "sections/references.tex": "426d2e5f53b72f9823fa1314e844b260d6217aeba8759fb348096b5d4b35740e"
+  },
+  "superseded_check": "compiled_second_check.json",
+  "limitations": [
+    "PDF extraction checks are not a replacement for rendered-page visual review.",
+    "I1 limitation-sentence upper bound remains partially unmet; this report does not turn it into a pass.",
+    "No new PDE, fine 2D endpoint or parameter scenario was run."
+  ]
+}

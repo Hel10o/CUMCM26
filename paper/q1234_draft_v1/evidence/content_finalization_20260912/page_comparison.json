@@ -1,0 +1,59 @@
+{
+  "baseline_pdf_sha256": "76f7a0fd4036e08299ab34bcc469716750ab46b52d0602d769d159bb953cc60b",
+  "current_pdf_sha256": "9012365c7252904b182a7a00f0b408e36a7ec1acfd25da53a0198acccfb9126b",
+  "old_total_pages": 155,
+  "new_total_pages": 156,
+  "body_start": 2,
+  "appendix_start": 30,
+  "body_pages": 28,
+  "all_pages_rendered_dpi": 72,
+  "body_and_abstract_detail_render_dpi": 130,
+  "appendix_count": 127,
+  "appendix_content_pixels_identical_after_offset": true,
+  "appendix_note": "New pages30-156 vs old29-155, entire page compared except a narrow central rectangle containing only footer numbers; code bottom lines included.",
+  "second_compile_changed_pages": [
+    28
+  ],
+  "first_15_reviewed_rasters_match_final": true,
+  "final_renders_match_pdf": true,
+  "appendix_comparison_regions_points": [
+    [
+      0,
+      0,
+      595.280029296875,
+      766
+    ],
+    [
+      0,
+      781,
+      595.280029296875,
+      841.8900146484375
+    ],
+    [
+      0,
+      766,
+      277.6400146484375,
+      781
+    ],
+    [
+      317.6400146484375,
+      766,
+      595.280029296875,
+      781
+    ]
+  ],
+  "appendix_excluded_footer_box": [
+    277.6400146484375,
+    766.0,
+    317.6400146484375,
+    781.0
+  ],
+  "excluded_box_nonfooter_words": [],
+  "preexisting_orphan_lines": {
+    "pages": [
+      12,
+      13
+    ],
+    "full_page_pixels_identical_to_baseline": true
+  }
+}

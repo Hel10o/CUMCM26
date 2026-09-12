@@ -1,0 +1,248 @@
+#!/usr/bin/env python3
+"""Read-only content audit; --freeze writes only independent_baseline.json.
+
+No numerical libraries or project solver modules are imported. Normal audit prints
+JSON to stdout and creates no files. Semantic review items are not auto-passes.
+"""
+from pathlib import Path
+from collections import Counter
+import argparse
+import difflib
+import hashlib
+import json
+import re
+import subprocess
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8")
+HERE = Path(__file__).resolve().parent
+BASE = HERE.parents[1]
+ROOT = BASE.parents[1]
+SHA = "9c26eb4b13a236326e6605106934e35325c1a748"
+BASELINE = HERE / "independent_baseline.json"
+PAPER = "paper/q1234_draft_v1/"
+READ_SOURCES = ["main.tex", "sections/problem_model.tex", "sections/q1.tex",
+                "sections/q2.tex", "sections/q3.tex", "sections/q4.tex",
+                "sections/validation_limits.tex", "sections/appendix.tex",
+                "sections/references.tex"]
+FORMAL = ["q1_complete_delivery/q1_delivery/output/result1.xlsx",
+          "q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+          "q3_refinement_delivery/output/result3.xlsx",
+          "q4_complete_delivery/v1/output/result4.xlsx"]
+MUTABLE = {"README.md", "q1234_paper_content_handoff/README.md"}
+MUTABLE.update(PAPER + x for x in ["README.md", "main.tex", "package_source.py",
+    "sections/q1.tex", "sections/q2.tex", "sections/q3.tex", "sections/q4.tex",
+    "sections/validation_limits.tex", "四问论文初稿_v1.pdf",
+    "四问论文LaTeX源稿_v1.zip", "四问论文LaTeX源稿_v1.zip.sha256",
+    "evidence/source_package.json"])
+SCIENCE_EXT = {".npz", ".npy", ".json", ".log", ".py", ".js", ".mjs", ".xlsx"}
+REDLINES = ["能耗", "节能", "可忽略", "题面指定中截面"]
+
+
+def git(*args):
+    return subprocess.check_output(["git", *args], cwd=ROOT)
+
+
+def sha256(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def file_sha256(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for block in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
+def old_source(name):
+    return git("show", SHA + ":" + PAPER + name).decode("utf-8")
+
+
+def paragraphs(text):
+    return [x for x in re.split(r"\r?\n[ \t]*\r?\n", text) if x.strip()]
+
+
+def abstract_paragraphs(text):
+    return [x for x in paragraphs(text) if x.startswith(r"\textbf{针对问题")]
+
+
+def conclusion(text):
+    return text.split(r"\section{结论}", 1)[1].split(r"\Needspace{", 1)[0].strip()
+
+
+def ai_block(text):
+    return text.split(r"\section*{AI工具使用声明}", 1)[1].split(r"\input{sections/references}", 1)[0]
+
+
+def numeric_tokens(text):
+    # This is a lexical source metric, not a claim of semantic numerical identity.
+    # Remove nonprinted labels, citation keys and file paths to avoid q3 in labels.
+    text = re.sub(r"\\(?:label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}", "", text)
+    return re.findall(r"\d+(?:\.\d+)?", text)
+
+
+def normalize(text):
+    return re.sub(r"\s+", "", text)
+
+
+def prose_sentences(text):
+    text = re.sub(r"\\begin\{(equation\*?|align\*?|table|figure)\}.*?\\end\{\1\}", "", text, flags=re.S)
+    text = re.sub(r"\\(?:section|subsection|label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}", "", text)
+    text = re.sub(r"\\(?:FloatBarrier|Needspace\{[^}]*\})", "", text)
+    return [normalize(x) for x in re.findall(r"[^。！？]+[。！？]", text) if normalize(x)]
+
+
+def hardcoded_refs(sources):
+    return [{"file": p, "line": i, "text": line}
+            for p, text in sources.items() for i, line in enumerate(text.splitlines(), 1)
+            if re.search(r"(?<![\d.])9[.．][23](?!\d)", line)]
+
+
+def tree_records():
+    rows = []
+    for record in git("ls-tree", "-r", "-l", "-z", SHA).decode("utf-8").split("\0"):
+        if not record:
+            continue
+        meta, path = record.split("\t", 1)
+        mode, kind, oid, size = meta.split()
+        rows.append({"path": path, "git_blob_oid": oid, "bytes": int(size)})
+    return rows
+
+
+def freeze():
+    if BASELINE.exists():
+        raise SystemExit("Refusing to overwrite the existing baseline evidence.")
+    sources = {p: old_source(p) for p in READ_SOURCES}
+    tree = tree_records()
+    protected = [r for r in tree if r["path"] not in MUTABLE]
+    current_formal = {p: {"bytes": (ROOT / p).stat().st_size,
+                         "sha256": file_sha256(ROOT / p),
+                         "git_blob_equals_baseline": git("hash-object", "--", p).decode().strip()
+                             == next(r["git_blob_oid"] for r in tree if r["path"] == p)}
+                      for p in FORMAL}
+    record = {"baseline_sha": SHA, "scope": "Immutable Git baseline plus read-only working-tree Excel hashes; no numerical execution",
+              "git_object_hash_algorithm": "Git SHA-1 blob object id includes the blob header; not raw-file SHA256",
+              "initial_worktree_status": git("status", "--short").decode("utf-8"),
+              "tracked_file_count": len(tree), "protected_file_count": len(protected),
+              "scientific_file_count": sum(Path(r["path"]).suffix in SCIENCE_EXT for r in protected),
+              "historical_paper_evidence_count": sum(r["path"].startswith(PAPER + "evidence/") for r in protected),
+              "formal_excel": current_formal, "protected_git_blobs": protected,
+              "paper_sources_sha256": {p: sha256(s.encode("utf-8")) for p, s in sources.items()},
+              "abstract_four_original_paragraphs": abstract_paragraphs(sources["main.tex"]),
+              "conclusion_two_original_paragraphs": paragraphs(conclusion(sources["main.tex"])),
+              "ai_original_block": ai_block(sources["main.tex"]),
+              "hardcoded_9_2_9_3_references": hardcoded_refs(sources),
+              "numeric_metric_description": "Decimal source lexemes after removing label/ref/eqref/cite/input/includegraphics arguments; repeated occurrences count separately",
+              "numeric_tokens_by_source": {p: numeric_tokens(s) for p, s in sources.items()},
+              "numeric_prose_sentences_for_review": {p: [s for s in prose_sentences(t) if re.search(r"\d", s)] for p, t in sources.items() if p.startswith("sections/q")},
+              "protection_prose_sentences_for_review": {p: [s for s in prose_sentences(t) if re.search("不能|不等于|不构成|不消除|不含环境|不替代|不推翻|仍需|尚不|不足以|不作为|不是.*(?:保证|上界|置信)", s)] for p, t in sources.items() if p.startswith("sections/q")},
+              "check_design": {
+                "1": "Count main plus included body sections, excluding appendix; compare four abstract paragraphs byte-for-byte including bold macros; check only one plain appended scale sentence.",
+                "2": "Compare numeric token multisets and inspect changed numeric sentences; report both final-natural-paragraph and final-subsection limitation sentence inventories. Hard evidence/protection preservation takes priority over the <=2 editorial target; semantic counts require review.",
+                "3": "Read final figure text and figure dependency manifest; compare three annotated percentages to the frozen tab:wholebody and verify saved-array hashes; no PDE rerun.",
+                "4": "Scan source and final extracted PDF for redline phrases, inspect every 60.65/60.6526 context; do not scan archival instructions as paper prose.",
+                "5": "Semantically compare abstract Q3/Q4, chapters 6/7 and preserved conclusion; keywords alone cannot establish equal claim strength.",
+                "6": "Parse chapter 9 four subsection names and inspect final AUX numbering; inspect extension prose against existing capabilities, with no assertion of new validation.",
+                "7": "Resolve all source ref/eqref keys to unique final AUX labels, inspect final compilation log and PDF unresolved placeholders; verify new Q1/Q2 references resolve to final 9.3.",
+                "8": "Use final AUX body:start and appendix:start plus physical PDF page count; include AI statement and references in <=30 body pages; inspect rendered pages.",
+                "9": "Compare original AI block and verify it remains before references in source and final PDF."
+              }}
+    BASELINE.write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"written": str(BASELINE), "baseline_sha": SHA,
+                      "protected_files": len(protected), "scientific_files": record["scientific_file_count"],
+                      "historical_evidence": record["historical_paper_evidence_count"],
+                      "hardcoded_references": record["hardcoded_9_2_9_3_references"],
+                      "formal_excel_all_match_git": all(v["git_blob_equals_baseline"] for v in current_formal.values())}, ensure_ascii=False, indent=2))
+
+
+def audit():
+    b = json.loads(BASELINE.read_text(encoding="utf-8"))
+    sources = {p: (BASE / p).read_bytes().decode("utf-8") for p in READ_SOURCES}
+    original = {p: old_source(p) for p in READ_SOURCES}
+    checks, review = [], {}
+    def check(name, passed, evidence=None):
+        checks.append({"check": name, "passed": bool(passed), "evidence": evidence})
+    changed = set(filter(None, git("diff", SHA, "--name-only", "-z").decode("utf-8").split("\0")))
+    protected = {r["path"] for r in b["protected_git_blobs"]}
+    check("protected_tracked_files_unchanged", not (changed & protected), sorted(changed & protected))
+    check("formal_excel_sha256", all(file_sha256(ROOT/p) == r["sha256"] for p, r in b["formal_excel"].items()))
+    check("abstract_four_paragraphs_exact", abstract_paragraphs(sources["main.tex"]) == b["abstract_four_original_paragraphs"])
+    newcon = conclusion(sources["main.tex"])
+    oldcon = b["conclusion_two_original_paragraphs"]
+    check("conclusion_original_two_paragraphs_preserved", len(oldcon) == 2 and newcon.startswith(oldcon[0]) and oldcon[1] in newcon)
+    main = sources["main.tex"]
+    main_ops = difflib.SequenceMatcher(a=original["main.tex"], b=main, autojunk=False).get_opcodes()
+    additions = [main[k:l].strip() for op, i, j, k, l in main_ops if op != "equal"]
+    check("main_only_two_identical_plain_sentence_insertions",
+          all(op in {"equal", "insert"} for op, *_ in main_ops)
+          and len(additions) == 2 and additions[0] == additions[1]
+          and additions[0].count("。") == 1 and "区间内" in additions[0]
+          and "验证" not in additions[0] and r"\textbf" not in additions[0]
+          and r"\bfseries" not in additions[0], additions)
+    review["scale_sentences"] = [x for x in main.splitlines() if "区间内" in x]
+    check("ai_block_exact_and_before_references", ai_block(main) == b["ai_original_block"] and main.index(r"\section*{AI工具使用声明}") < main.index(r"\input{sections/references}"))
+    body_names = [p for p in READ_SOURCES if p not in {"sections/appendix.tex", "sections/references.tex"}]
+    section_names = [x for p in body_names for x in re.findall(r"\\section\{([^}]*)\}", sources[p])]
+    check("ten_body_sections", len(section_names) == 10, section_names)
+    check("no_hardcoded_9_2_9_3_refs", not hardcoded_refs(sources), hardcoded_refs(sources))
+    allsrc = "\n".join(sources.values())
+    check("source_redlines_zero", not any(x in allsrc for x in REDLINES), {x: allsrc.count(x) for x in REDLINES})
+    baseline_nums = Counter(x for p in READ_SOURCES for x in b["numeric_tokens_by_source"][p])
+    final_nums = Counter(x for s in sources.values() for x in numeric_tokens(s))
+    missing = baseline_nums - final_nums
+    check("numeric_source_total_not_decreased", sum(final_nums.values()) >= sum(baseline_nums.values()), {"baseline": sum(baseline_nums.values()), "final": sum(final_nums.values())})
+    check("numeric_lexeme_multiplicities_not_decreased", not missing, dict(missing))
+    # All equation environments in Q1--Q4 must remain the original raw strings.
+    eqre = re.compile(r"\\begin\{equation\}.*?\\end\{equation\}", re.S)
+    for q in range(1, 5):
+        p = f"sections/q{q}.tex"
+        check(f"q{q}_equation_blocks_exact", eqre.findall(sources[p]) == eqre.findall(original[p]))
+    required_markers = {
+        "sections/q1.tex": ["以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度及无显式潜热假设引入的物理不确定性。"],
+        "sections/q2.tex": ["该检查支持导出一致性；高阶独立参考覆盖的是所列采样点，不能把导出一致性误写成全部逐秒状态均另作了独立求解。"],
+        "sections/q3.tex": ["这里的经验余量用于当前方程的数值选择，不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。"],
+        "sections/q4.tex": ["该局部续算继承原粗网格前史，不能消除上述共同径向误差。", "这一证据范围不等于用粗网格结果推翻精细主解，也不等于已经取得连续二维的数学保证。"]}
+    check("four_required_scope_statements_exact", all(x in normalize(sources[p]) for p, markers in required_markers.items() for x in markers),
+          {p: [x for x in markers if x not in normalize(sources[p])] for p, markers in required_markers.items()})
+    limits = sources["sections/validation_limits.tex"].split(r"\section{模型评价、适用范围与推广}", 1)[1]
+    names = re.findall(r"\\subsection\{([^}]*)\}", limits)
+    check("chapter9_four_ordered_subsections", names == ["模型优点", "模型推广", "适用范围与主要限制", "改进方向与数据需求"], names)
+    review["numeric_sentences_changed"] = {}
+    review["protection_sentences_changed"] = {}
+    review["chapter_end_inventories"] = {}
+    for p in [f"sections/q{q}.tex" for q in range(1, 5)]:
+        current_sentences = set(prose_sentences(sources[p]))
+        review["numeric_sentences_changed"][p] = [s for s in b["numeric_prose_sentences_for_review"][p] if s not in current_sentences]
+        review["protection_sentences_changed"][p] = [s for s in b["protection_prose_sentences_for_review"][p] if s not in current_sentences]
+        lastsub = re.split(r"\\subsection\{[^}]*\}", sources[p])[-1]
+        paras = [x for x in paragraphs(lastsub) if re.search(r"[\u4e00-\u9fff]", x)]
+        pattern = "不能|不等于|不构成|不消除|不含环境|不替代|不推翻|仍需|尚不|不足以|不是|不确定|假设|仅|只"
+        review["chapter_end_inventories"][p] = {
+            "last_natural_paragraph": [s for s in prose_sentences(paras[-1] if paras else "") if re.search(pattern, s)],
+            "last_subsection": [s for s in prose_sentences(lastsub) if re.search(pattern, s)],
+            "status": "semantic_review_required; no automatic <=2 pass"}
+    first_three = re.split(r"\\section\{([^}]*)\}", sources["sections/problem_model.tex"])
+    for i in range(1, len(first_three), 2):
+        title, chapter = first_three[i], first_three[i + 1]
+        lastsub = re.split(r"\\subsection\{[^}]*\}", chapter)[-1]
+        paras = [x for x in paragraphs(lastsub) if re.search(r"[\u4e00-\u9fff]", x)]
+        review["chapter_end_inventories"][f"problem_model:{title}"] = {
+            "last_natural_paragraph": [s for s in prose_sentences(paras[-1] if paras else "") if re.search(pattern, s)],
+            "last_subsection": [s for s in prose_sentences(lastsub) if re.search(pattern, s)],
+            "status": "semantic_review_required; no automatic <=2 pass"}
+    review["claim_strength"] = {p: [s for s in prose_sentences(sources[p]) if re.search("全域|二维|各处|保守|保证", s)] for p in ["main.tex", "sections/q3.tex", "sections/q4.tex"]}
+    review["60_percent_contexts"] = [{"file": p, "text": x} for p, s in sources.items() for x in s.splitlines() if re.search(r"60\.65(?:26)?", x)]
+    print(json.dumps({"baseline_sha": SHA, "automated_passed": all(c["passed"] for c in checks), "checks": checks, "review_required": review,
+        "not_executed_by_this_script": ["PDE or scenario integration", "figure generation", "PDF compilation or visual review", "AUX/PDF page and reference validation", "semantic certification of claim strength and limitation counts"]}, ensure_ascii=False, indent=2))
+    return 0 if all(c["passed"] for c in checks) else 1
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--freeze", action="store_true")
+    args = parser.parse_args()
+    if args.freeze:
+        freeze()
+    else:
+        raise SystemExit(audit())
