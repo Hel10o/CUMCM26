@@ -1,0 +1,19 @@
+{
+  "old_pages": 157,
+  "new_pages": 157,
+  "old_appendix_start": 31,
+  "new_appendix_start": 31,
+  "comparison_dpi": 72,
+  "footer_mask_points": null,
+  "body_render_dpi": 130,
+  "appendix_count": 127,
+  "appendix_changed_excluding_footer": [],
+  "abstract_pixels_identical": true,
+  "all_pages_rendered": 157,
+  "body_pages_rendered": 30,
+  "appendix_comparison_passed": true,
+  "all_checks_passed": true,
+  "visual_review_is_separate": true,
+  "appendix_all_pixels_including_footer_identical": true,
+  "new_pdf_sha256": "32a1affe690d0146bfb282baac909b66ab5486382bd12a4563416489d1f30b60"
+}

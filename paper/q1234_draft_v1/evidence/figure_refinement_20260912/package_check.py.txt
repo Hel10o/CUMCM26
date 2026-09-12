@@ -1,0 +1,48 @@
+"""Read back the new source ZIP and bind its exact files to the final PDF."""
+from pathlib import Path
+import hashlib,json,zipfile,ast
+
+BASE=Path(__file__).resolve().parents[2]
+E=BASE/'evidence/figure_refinement_20260912'
+H=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+archive=BASE/'四问论文LaTeX源稿_v1.zip'
+outer=json.loads((BASE/'evidence/source_package.json').read_text(encoding='utf-8'))
+checks={}
+with zipfile.ZipFile(archive) as z:
+    manifest=json.loads(z.read('SOURCE_MANIFEST.json'))
+    checks['crc']=z.testzip() is None
+    checks['no_duplicate_members']=len(z.namelist())==len(set(z.namelist()))
+    checks['member_set_matches_manifest']=set(z.namelist())==set(manifest)|{'SOURCE_MANIFEST.json'}
+    checks['outer_inner_manifests_match']=outer['sources']==manifest
+    bad=[n for n,s in manifest.items() if hashlib.sha256(z.read(n)).hexdigest()!=s or H(BASE/n)!=s]
+    checks['zip_and_disk_all_hashes_match']=not bad
+    checks['no_cache_or_compile_intermediates']=not any('__pycache__' in n or '/build/' in n or n.endswith(('.pyc','.aux','.log','.xdv')) for n in manifest)
+    names=['q1_profiles','q2_profiles','q3_q4_drying','q4_shrinkage','dimension_reduction','environment_sensitivity']
+    required=['build_visual_assets.py','visual_revision/common.py','visual_revision/process.py','visual_revision/geometry.py','visual_revision/validation.py','visual_revision/README.md']
+    required += [f'figures/visual_revision/{n}.{ext}' for n in names for ext in ('pdf','png')]
+    required += ['evidence/figure_revision_20260912/图表与上下文联动修订记录.md','evidence/figure_revision_20260912/六图新旧对照.pdf']
+    required += ['build_refined_assets.py', 'support/图表来源清单.md', 'visual_refinement/README.md', 'evidence/figure_refinement_20260912/现有图细修与流程图修订记录.md']
+    required += ['visual_refinement/'+n+'.py' for n in ['common','process','geometry','workflow']]
+    required += [f'figures/visual_refinement/{n}.{ext}' for n in ['model_workflow']+names[:4] for ext in ('pdf','svg','png')]
+    checks['new_assets_scripts_and_records_in_zip']=all(n in manifest for n in required)
+checks['archive_hash_matches_outer']=H(archive)==outer['sha256']
+checks['sidecar_hash_matches']=archive.with_suffix('.zip.sha256').read_text(encoding='utf-8').split()[0]==H(archive)
+checks['published_pdf_matches_compiled']=H(BASE/'四问论文初稿_v1.pdf')==H(BASE/'build/figure_refinement/main.pdf')
+checks['new_python_sources_parse']=all(ast.parse((BASE/n).read_text(encoding='utf-8')) is not None for n in required if n.endswith('.py'))
+sources={}
+source_manifests=[E/(n+'_sources.json') for n in ['process','geometry','workflow']]+[BASE/'evidence/figure_revision_20260912/validation_sources.json']
+for p in source_manifests:
+    data=json.loads(p.read_text(encoding='utf-8'))
+    sources.update(data['sources'])
+    checks['script_hash_'+p.stem]=H(BASE.parents[1]/data['script'])==data['script_sha256']
+    checks['outputs_hash_'+p.stem]=all(H(BASE.parents[1]/n)==v['sha256'] for n,v in data['outputs'].items())
+checks['all_unique_frozen_inputs_unchanged']=all(H(BASE.parents[1]/p)==v['sha256'] for p,v in sources.items())
+result={'passed':all(checks.values()),'checks':checks,'member_count':len(manifest),'mismatched_members':bad,
+        'source_zip':{'bytes':archive.stat().st_size,'sha256':H(archive)},
+        'paper_pdf':{'sha256':H(BASE/'四问论文初稿_v1.pdf'),'bytes':(BASE/'四问论文初稿_v1.pdf').stat().st_size},
+        'unique_frozen_input_count':len(sources),
+        'purpose':'External archive audit; this file named source_package.json is deliberately excluded from the ZIP to avoid self-reference.',
+        'not_run':['PDE or parameter scenarios','compilation from an extracted standalone ZIP']}
+(E/'source_package.json').write_bytes(json.dumps(result,ensure_ascii=False,indent=2).encode('utf-8'))
+print(json.dumps(result,ensure_ascii=False,indent=2))
+raise SystemExit(0 if result['passed'] else 1)

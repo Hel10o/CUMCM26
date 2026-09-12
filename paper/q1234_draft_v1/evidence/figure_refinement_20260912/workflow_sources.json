@@ -1,0 +1,668 @@
+{
+  "baseline_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+  "scope": "Read frozen arrays and evidence; graphical postprocessing only, no PDE or scenario execution.",
+  "script": "paper/q1234_draft_v1/visual_refinement/workflow.py",
+  "script_sha256": "16f27c51a54d6e0aa0e2dfcc2c4cceb35b306e765c2a3024961ce1a68588a5a4",
+  "common_sha256": "faada64af48890a4726dd4e8c6fe2cd79de475478d744109299bef96cda2e456",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0"
+  },
+  "sources": {
+    "q1_complete_delivery/q1_delivery/source/q1_solver.py": {
+      "sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+      "purpose": "Read-only evidence: initial state, constant thermal parameters, D(C), and 1800 s solver contract."
+    },
+    "q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py": {
+      "sha256": "a1b15f34ee4926d43ec4a1258b2560368f7b12c581c1a2b4b0d74b0a5f921e1a",
+      "purpose": "Read-only evidence: shared Appendix 3 cold-start coupled trajectory, environment, event and unrounded outputs."
+    },
+    "q4_complete_delivery/v1/q123_closeout/source/audit_unified_q23.py": {
+      "sha256": "e437de3ebc4d0d381bd5d8841c1b2c373d86af08f5b74acc55217c1ecee50580",
+      "purpose": "Read-only evidence: relation of unified trajectory to historical Q2 and Q3 exports, not executed this round."
+    },
+    "q4_complete_delivery/v1/source/run_q4.py": {
+      "sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+      "purpose": "Read-only evidence: independent cold start, prescribed radius, material coordinate and event output."
+    },
+    "q4_complete_delivery/v1/source/package_workbooks.py": {
+      "sha256": "01b9bff1d7af11e0f880ae6d73cc66022f420b407a8a5e84240129084a8a88c0",
+      "purpose": "Read-only evidence: official Q2 and Q4 workbook input contracts; no workbook regenerated."
+    }
+  },
+  "outputs": {
+    "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.pdf": {
+      "sha256": "dce22435dd7447f8ed6bfcf08d6799f8fda227374abcceb0d1d54ccb2cc2d100",
+      "bytes": 94868
+    },
+    "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.svg": {
+      "sha256": "02c8d6f14e97d6501cf24fadbfabf024ae677d9fa09233964d8cc66caab6e099",
+      "bytes": 186139
+    },
+    "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.png": {
+      "sha256": "0d97ff6775f26fcc0776a00ca61af2a149e0b07e6eb0a3761b0324005276fee3",
+      "bytes": 531646
+    }
+  },
+  "details": {
+    "figure_kind": "Deterministic vector workflow, not a computed scientific field or a historical file-build graph.",
+    "dimensions_cm": [
+      15,
+      6.4
+    ],
+    "font": "Microsoft YaHei",
+    "minimum_font_pt": 7.4,
+    "scope": "One requested overview figure. No numerical arrays, solver modules, scenario jobs, workbook edits or TeX edits.",
+    "baseline_paper_texts": {
+      "paper/q1234_draft_v1/sections/problem_model.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd",
+        "excerpts": [
+          {
+            "line": 102,
+            "text": "当$C_s>b$时外向失水为正；若边界关系改变导致$C_s<b$，不能继续强制只许失水。轴线和二维中面满足零法向梯度。初态统一为",
+            "matched": "初态统一"
+          },
+          {
+            "line": 4,
+            "text": "四问在机制和输出要求上递进，初态并不首尾串接。问题二和三共享从初态开始的附录3轨迹；问题四另从初态使用附录4。计算采用两层空间描述：把题表的到中心距离解释为轴向中截面内的半径，以一维径向模型输出；同时计算有限长圆柱的轴对称二维场，检查中截面、端部与全域最湿位置。该解释由数值对照检验，不能作为题面已经指定中截面的事实。",
+            "matched": "初态并不首尾串接"
+          },
+          {
+            "line": 10,
+            "text": "附件1含0--14400\\unit{s}的环境记录，采样间隔为60\\unit{s}。对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。为计算数十小时干燥过程，4\\unit{h}后采用末小时61点的算术均值：",
+            "matched": "末小时"
+          },
+          {
+            "line": 10,
+            "text": "附件1含0--14400\\unit{s}的环境记录，采样间隔为60\\unit{s}。对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。为计算数十小时干燥过程，4\\unit{h}后采用末小时61点的算术均值：",
+            "matched": "线性插值"
+          },
+          {
+            "line": 17,
+            "text": "附件2含145个半径记录，采样间隔为1800\\unit{s}，覆盖0--72\\unit{h}。半径由\\unit{cm}换算为\\unit{m}后分段线性插值；它保持记录点和单调性，避免引入未经证实的过冲。第四问主终点位于观测区间内，无须外推半径。时间积分在环境与半径的折点处分段重启，以免跨折点的光滑性假设影响误差控制。",
+            "matched": "线性插值"
+          }
+        ]
+      },
+      "paper/q1234_draft_v1/sections/q1.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "e369c7f00a51f2a16155376096fb31bc0afeafd15dfb4e65f99afb35fa3e5fc3",
+        "excerpts": [
+          {
+            "line": 5,
+            "text": "第一问在前$1800\\unit{s}$内使用附录2参数\\cite{problem}。固定骨架使",
+            "matched": "1800"
+          },
+          {
+            "line": 97,
+            "text": "五个径向位置。\\texttt{result1.xlsx}从第1秒至第1800秒，每隔",
+            "matched": "1800"
+          },
+          {
+            "line": 115,
+            "text": "$1800\\unit{s}$时轴心、表面温度分别为33.5753\\celsius{}和",
+            "matched": "1800"
+          },
+          {
+            "line": 155,
+            "text": "同物理条件的$80\\times128$有限圆柱二维配对，在前$1800\\unit{s}$",
+            "matched": "1800"
+          },
+          {
+            "line": 4,
+            "text": "\\subsection{常热物性方程与初边值条件}",
+            "matched": "常热物性"
+          }
+        ]
+      },
+      "paper/q1234_draft_v1/sections/q2.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "b4e6a333cf63d7b5d6c26a3be95eebd583441aa9c1b4326cd61b56c2f2272910",
+        "excerpts": [
+          {
+            "line": 84,
+            "text": "两式的正号来自将外向Robin通量移至同一侧。由于求导矩阵的行和为零，",
+            "matched": "同一"
+          },
+          {
+            "line": 108,
+            "text": "式\\eqref{eq:q2-radau}从而在同一步内处理温度与含水率反馈。",
+            "matched": "同一"
+          },
+          {
+            "line": 114,
+            "text": "第二问与第三问采用同一条温湿联合轨迹，积分至第三问执行端点",
+            "matched": "同一"
+          },
+          {
+            "line": 157,
+            "text": "图\\ref{fig:q2-profiles}左图把升温与失水放在同一路径中，轴心初期以升温为主，表面则较早出现含水率下降；右图表明，初期失水集中于外层，随后内部含水率逐步",
+            "matched": "同一"
+          },
+          {
+            "line": 158,
+            "text": "降低。第二问$0.5\\unit{h}$轴心温度32.1892\\celsius，低于第一问同一",
+            "matched": "同一"
+          },
+          {
+            "line": 182,
+            "text": "在同一320区间有限体积网格上单独扰动交换系数，$h_m$降低、提高20\\%",
+            "matched": "同一"
+          },
+          {
+            "line": 195,
+            "text": "长时段另与已完成的160阶BDF轨迹在全部60秒采样点及同一执行端点比较，",
+            "matched": "同一"
+          },
+          {
+            "line": 129,
+            "text": "\\caption{3小时内药材中截面温度（$^\\circ$C）}",
+            "matched": "3小时"
+          },
+          {
+            "line": 136,
+            "text": "\\caption{3小时内药材中截面干基含水率（kg/kg）}",
+            "matched": "3小时"
+          },
+          {
+            "line": 152,
+            "text": "\\caption{第二问前3小时的温湿状态路径与径向含水率。左图以温度、干基含水率为坐标，分别连接轴心和表面的已保存状态，箭头表示时间推进；右图保留对应时刻的中截面径向剖面。}",
+            "matched": "3小时"
+          },
+          {
+            "line": 180,
+            "text": "的竞争随阶段变化，前3小时的累计主导关系不能直接用于判定末期干燥瓶颈。",
+            "matched": "3小时"
+          },
+          {
+            "line": 189,
+            "text": "前3小时已有节点有限体积逐级加密至2560区间及Richardson外推，",
+            "matched": "3小时"
+          },
+          {
+            "line": 190,
+            "text": "另用独立空间离散与Radau积分核对。全程轨迹与该外推轨迹在前3小时",
+            "matched": "3小时"
+          },
+          {
+            "line": 192,
+            "text": "$8.41\\times10^{-8}\\unit{kg/kg}$；前3小时温湿表及规定60个论文表值四位一致。",
+            "matched": "3小时"
+          },
+          {
+            "line": 193,
+            "text": "有限体积外推是这一前3小时交叉验证的来源，不是完整工作簿的生成方法。",
+            "matched": "3小时"
+          },
+          {
+            "line": 206,
+            "text": "同物理$80\\times256$二维配对在前3小时已检查采样点的中截面最大温湿差",
+            "matched": "3小时"
+          },
+          {
+            "line": 209,
+            "text": "达标须结合第三问终点证据，不能直接沿用前3小时的几何误差。",
+            "matched": "3小时"
+          }
+        ]
+      },
+      "paper/q1234_draft_v1/sections/q3.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "214290c5d18d1d73b600593c6645bdf7354a87bbb5bd9f6b45ed6969f05af4db",
+        "excerpts": [
+          {
+            "line": 45,
+            "text": "临界附近同时检查径向重构极值和边界值，确认最大含水率位于轴心。",
+            "matched": "极值"
+          },
+          {
+            "line": 49,
+            "text": "\\subsection{由重构空间极值到时间事件}",
+            "matched": "极值"
+          },
+          {
+            "line": 55,
+            "text": "每一时刻的极值候选集为",
+            "matched": "极值"
+          },
+          {
+            "line": 68,
+            "text": "数值加密检验，不能把多项式极值的求全等同于连续模型严格误差为零。",
+            "matched": "极值"
+          },
+          {
+            "line": 12,
+            "text": "新增的求解任务是从时间轨迹中定位满足全径向约束的执行点。",
+            "matched": "执行"
+          },
+          {
+            "line": 73,
+            "text": "对$g_{\\rm node}(t)=0$作Brent括区求根，再在候选根和执行点按",
+            "matched": "执行"
+          },
+          {
+            "line": 75,
+            "text": "本算例确认根与执行点的重构最大值均位于轴心，节点候选根才可用于所述径向终点。",
+            "matched": "执行"
+          },
+          {
+            "line": 95,
+            "text": "为区分数值根、执行点和四位小时显示值，",
+            "matched": "执行"
+          },
+          {
+            "line": 113,
+            "text": "执行点比临界根晚约0.3701\\unit{s}。",
+            "matched": "执行"
+          },
+          {
+            "line": 133,
+            "text": "并在最后一个完整分钟206880\\unit{s}之后补入执行点206906.76\\unit{s}。",
+            "matched": "执行"
+          },
+          {
+            "line": 145,
+            "text": " 纵轴为对数刻度，水平线为0.15\\unit{kg/kg}阈值，终点标记对应各自正式执行时刻。",
+            "matched": "执行"
+          },
+          {
+            "line": 146,
+            "text": " 下排以各自临界根为时间原点，仅标示已存临界根与执行点，并列出执行最大值。",
+            "matched": "执行"
+          },
+          {
+            "line": 153,
+            "text": "图\\ref{fig:q3-q4-drying}上排展示表面先失水、轴心控制尾段的过程；下排将等号临界根与已选执行点分开，时间差直接取自原事件记录。",
+            "matched": "执行"
+          },
+          {
+            "line": 164,
+            "text": "再从临界附近已保存的二维场推进至式\\eqref{eq:q3-execution}的执行时刻，",
+            "matched": "执行"
+          }
+        ]
+      },
+      "paper/q1234_draft_v1/sections/q4.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "39eaa5737207b1ceaa9d50a7335a8236f9c8b8c984eac61b649cf5365a4349b7",
+        "excerpts": [
+          {
+            "line": 8,
+            "text": "温度和含水率从28\\celsius、2.55\\unit{kg/kg}的共同初态重新求解，",
+            "matched": "共同初态"
+          },
+          {
+            "line": 256,
+            "text": "为分离施加收缩历程的作用，另保持附录4和其余条件不变，",
+            "matched": "其余条件不变"
+          },
+          {
+            "line": 178,
+            "text": "按式\\eqref{eq:q3-execution}相同的0.36\\unit{s}量子向上选择执行点，得",
+            "matched": "执行"
+          },
+          {
+            "line": 211,
+            "text": "并补入实际执行点；域外单元格留空，另保留表面值与当前半径。",
+            "matched": "执行"
+          },
+          {
+            "line": 234,
+            "text": "因此，本文保留51.0921\\unit{h}作为一维条件执行值，",
+            "matched": "执行"
+          },
+          {
+            "line": 248,
+            "text": " \\caption{规定收缩下的径向有效模型场与观测输入。(a)当前实际半径坐标中的含水率色图，仅显示至正式执行时刻，采用对数色标，材料域外留白；边界线与空心点区分输入半径及抽样观测记录。(b)附录4下不同时间的径向含水率剖面。(c)完整观测半径历程。",
+            "matched": "执行"
+          },
+          {
+            "line": 249,
+            "text": " 半径图标出正式执行时刻；剖面采用当前实际半径坐标，",
+            "matched": "执行"
+          },
+          {
+            "line": 255,
+            "text": "图\\ref{fig:q4-shrinkage}在当前实际半径坐标中展示规定收缩与含水率演化；上方色图止于正式执行时刻，左下剖面止于各时刻的材料表面，右下小图保留完整半径观测输入。",
+            "matched": "执行"
+          }
+        ]
+      },
+      "paper/q1234_draft_v1/sections/validation_limits.tex": {
+        "git_commit": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+        "sha256": "d31f172cb329af148228c40ae12496a54f83e80ef845d9b7b405ddefb584d24f",
+        "excerpts": [
+          {
+            "line": 4,
+            "text": "中截面配对需要保持相同物性、环境与边界，才能识别额外轴向交换的影响。问题一80$\\times$128二维对照在0--1800\\unit{s}中截面采样的最大温度差约为$5.65\\times10^{-8}\\unit K$，含水率差约为$4.09\\times10^{-9}\\unit{kg/kg}$。问题二采用最终80$\\times$256对照，在前10800\\unit{s}的对应差为$1.69165\\times10^{-3}\\unit K$与$2.24706\\times10^{-5}\\unit{kg/kg}$，支持中截面工程近似，但不能宣称所有四位单元均一致。",
+            "matched": "二维"
+          },
+          {
+            "line": 6,
+            "text": "另一方面，端面交换会改变整根失水。按二维控制体权重与一维圆环权重积分得到表\\ref{tab:wholebody}。表中“失水增加”定义为$(C_0-\\overline C_{2D})/(C_0-\\overline C_{1D})-1$，不是平均含水率的相对误差。在空间均匀干密度的共同假设下，体积权重平均等于干质量权重平均。",
+            "matched": "二维"
+          },
+          {
+            "line": 11,
+            "text": "\\toprule 情形与时刻&二维网格&$\\overline C_{2D}$&$\\overline C_{1D}$&失水增加/\\%\\\\\\midrule",
+            "matched": "二维"
+          },
+          {
+            "line": 20,
+            "text": "图\\ref{fig:dimension-reduction}上排直接显示各时窗终点的中截面含水率差，下排并列对应的整根平均与失水增加，显示局部近似与总体失水应分别判断。上排各面板注明各自量级；下排各行时窗不同，只在同行的一维、二维之间作配对比较。",
+            "matched": "二维"
+          },
+          {
+            "line": 23,
+            "text": "\\caption{已保存一维、二维配对场的降维证据：上排为问题一1800\\unit{s}、问题二10800\\unit{s}及问题四21600\\unit{s}的中截面径向含水率差$\\Delta C=C_{2D}-C_{1D}$；下排为各时窗终点的整根体积加权平均，圆点、方点分别表示二维和配对一维，终点失水增加与表\\ref{tab:wholebody}一致。",
+            "matched": "二维"
+          },
+          {
+            "line": 27,
+            "text": "来源：\\nolinkurl{q4_complete_delivery/v1/validation/geometry/}下的\\nolinkurl{q1_80x128/q1_80x0}、\\nolinkurl{q23_80x256_integral/q23_80x0_integral}及\\nolinkurl{q4_80x128_integral/q4_80x0_integral}配对\\texttt{.npz}文件；二维半柱坐标的$z=0$为中截面对称面。}",
+            "matched": "二维"
+          },
+          {
+            "line": 31,
+            "text": "中截面差小与整根总量差可见并不矛盾。若用于全长平均、总失水或端部状态，应采用二维积分或明确忽略端面的近似，不能把中截面表格的精度扩展到全部工程指标。",
+            "matched": "二维"
+          },
+          {
+            "line": 33,
+            "text": "打开端面后，配对算例显示最湿点更早达到阈值，但这尚不是一般比较定理。温度场与含水率相互耦合；即使$D$随温度增加，两个解之间的变系数通量散度也未必具有统一符号。因此问题三、四的一维执行值、二维节点场、配对校正与连续严格界分别报告。",
+            "matched": "二维"
+          },
+          {
+            "line": 70,
+            "text": "\\item \\textbf{验证与输出来源分层可追溯。}第\\ref{sec:q1}、\\ref{sec:q2}节以独立算法和加密结果交叉核验，规定表值由对应未舍入数组生成；二维节点、配对估计与连续严格界分开报告，便于辨认结论由哪一级证据支持。",
+            "matched": "二维"
+          },
+          {
+            "line": 77,
+            "text": "几何推广可从第\\ref{sec:dimension-validation}节的一维径向与轴对称二维配对出发，在共同收支方程中替换散度算子、控制体权重及边界面。其他几何仍须重新处理对称条件、表面交换和网格检验，不能沿用本题的降维精度。对于以空间最大值限制工艺终点的其他状态量，若有可求极值的空间重构和明确的时间穿越方向，可移植“空间极值搜索、等号根定位、执行裕量复核”的事件流程，并按该变量重新设置阈值与误差预算。",
+            "matched": "二维"
+          },
+          {
+            "line": 99,
+            "text": "\\textbf{数值证据与工况的适用层级。}第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。后段人为情景的幅度与用途见第\\ref{sec:environment-scenarios}节，数值余量不覆盖环境、气固映射与物性假设的不确定性。",
+            "matched": "二维"
+          },
+          {
+            "line": 104,
+            "text": "数值层面，最直接的补强是第四问正式时刻的精细二维场，配合径向加密、时间紧化及起点前史误差检查，使正阈值裕量覆盖相称误差。仅把粗网格晚期场插值到细网格，不能消除共同继承偏差；普通收敛检验也不同于连续数学误差界。",
+            "matched": "二维"
+          },
+          {
+            "line": 66,
+            "text": "\\item \\textbf{圆环离散可核查总量收支。}第一问相邻控制体共享面通量，内部交换在求和时抵消，式\\eqref{eq:q1-balance}将加权平均变化与表面交换对应，可用于检查离散总量一致性。",
+            "matched": "离散"
+          },
+          {
+            "line": 75,
+            "text": "对具有同类有效物性与交换系数的圆柱形农产品，可将物性公式、环境记录和目标含水率作为替换接口，沿用控制体收支、离散组装与终点检测流程；迁移前须核对参数的单位、质量基准及适用温湿区间。本文未用其他物料作验证。",
+            "matched": "离散"
+          }
+        ]
+      }
+    },
+    "arrow_evidence": [
+      {
+        "id": "A1",
+        "relation": "Common initial state and measured environment to Q1",
+        "sources": [
+          "q1_solver.py:21-35,82,167-198",
+          "problem_model.tex baseline excerpts"
+        ],
+        "meaning": "Q1 starts independently at 28 degC and 2.55 kg/kg; no post-4h assumption is used in its 1800s horizon."
+      },
+      {
+        "id": "A2",
+        "relation": "Common initial state and environment to the shared Q2/Q3 model",
+        "sources": [
+          "solve_unified_q23.py:1-6,46-60"
+        ],
+        "meaning": "One Appendix 3 fully coupled cold start; pre-4h observation interpolation and explicitly assumed last-hour mean platform thereafter."
+      },
+      {
+        "id": "A3",
+        "relation": "Common initial state and environment to Q4",
+        "sources": [
+          "run_q4.py:1-5,20-26",
+          "q4.tex baseline excerpts"
+        ],
+        "meaning": "An independent Appendix 4 cold start with prescribed attachment2 R(t), not a continuation of Q3."
+      },
+      {
+        "id": "A4",
+        "relation": "Q1 model to Q1 1800s output",
+        "sources": [
+          "q1_solver.py:167-198,240",
+          "q1.tex baseline excerpts"
+        ],
+        "meaning": "Constant thermal properties only; moisture diffusivity remains D(C), as q1_solver.py:140 explicitly computes."
+      },
+      {
+        "id": "A5",
+        "relation": "Shared Q2/Q3 trajectory branches to Q2 reporting",
+        "sources": [
+          "solve_unified_q23.py:46-81",
+          "package_workbooks.py:234-240,288",
+          "q2.tex baseline excerpts"
+        ],
+        "meaning": "Q2 required first-three-hour tables and full-trajectory workbook derive from unrounded coupled states."
+      },
+      {
+        "id": "A6",
+        "relation": "Shared Q2/Q3 trajectory branches to Q3 event and output",
+        "sources": [
+          "solve_unified_q23.py:58-60,72-81",
+          "audit_unified_q23.py:59-68",
+          "q3.tex baseline excerpts"
+        ],
+        "meaning": "Spatial extrema are checked for the equality event and execution margin. Historical result3 packaging is not asserted to be generated by solve_unified_q23.py; this is the paper model/output relation."
+      },
+      {
+        "id": "A7",
+        "relation": "Q4 model to Q4 event and output",
+        "sources": [
+          "run_q4.py:29-54,92-94",
+          "package_workbooks.py:218-230",
+          "q4.tex baseline excerpts"
+        ],
+        "meaning": "One-dimensional reconstructed extrema/equality event and execution point; no continuous two-dimensional guarantee is added."
+      },
+      {
+        "id": "D1",
+        "relation": "Q4 model associated with same-property fixed-radius control",
+        "sources": [
+          "run_q4.py:100-102",
+          "q4.tex baseline excerpts"
+        ],
+        "meaning": "Independent conditional comparison at common material/environment/boundary settings; not a Q3/Q4 property comparison or a state continuation. Dashed line has no arrowhead."
+      },
+      {
+        "id": "D2-D4",
+        "relation": "Models associated with parallel numerical and geometric checks",
+        "sources": [
+          "problem_model.tex baseline excerpts",
+          "validation_limits.tex baseline excerpts"
+        ],
+        "meaning": "Validation/applicability evidence; not the source of official workbooks. Dashed, arrowless associations do not encode a state pipeline or a continuous-domain certificate."
+      }
+    ],
+    "input_encoding": "Observed first-4h data and assumed later plateau are separate text lines; the assumption is explicitly named and amber. The common frame itself is solid.",
+    "text_extent_check": [
+      {
+        "text": "共同初态：28 °C、2.55 kg/kg；附件1：前 4 h 环境观测",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "长时延拓假设（Q2 / Q3 / Q4）：4 h 后取末小时均值平台",
+        "font_pt": 7.6,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q1 · 附录2",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "一维径向；常热物性",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "D(C) 随含水率变化",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q2 / Q3 · 附录3，固定半径",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "一维径向温湿联立（变物性）",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "共用同一未舍入全过程轨迹",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q4 · 附录4 + 附件2 R(t)",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "一维材料域温湿联立",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "从共同初态独立计算",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q1 输出",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "独立计算至 1800 s",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "表1–2",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "result1.xlsx",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q2 输出",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "前 3 h 规定表3–4",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "全过程输出",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "result2.xlsx",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q3 阈值事件",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "空间极值 → 等号根",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "加余量 → 执行点",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "表5 / result3.xlsx",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "Q4 阈值事件与输出",
+        "font_pt": 8.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "空间极值 → 等号根",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "加余量 → 执行点",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "表6 / result4.xlsx",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "同物性恒半径条件对照",
+        "font_pt": 7.5,
+        "inside_canvas": true
+      },
+      {
+        "text": "其余条件保持一致",
+        "font_pt": 7.5,
+        "inside_canvas": true
+      },
+      {
+        "text": "并行校核：独立离散、网格 / 时间加密、二维中截面与全域节点检查",
+        "font_pt": 7.7,
+        "inside_canvas": true
+      },
+      {
+        "text": "用于数值可信度和适用范围；正式工作簿由各问主轨迹输出",
+        "font_pt": 7.5,
+        "inside_canvas": true
+      },
+      {
+        "text": "实线箭头：主流程",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      },
+      {
+        "text": "虚线：校核 / 条件对照关系",
+        "font_pt": 7.4,
+        "inside_canvas": true
+      }
+    ],
+    "numerical_recalculation": false,
+    "pde_or_scenario_execution": false,
+    "new_strong_claims": false
+  },
+  "all_input_hashes_unchanged": true
+}

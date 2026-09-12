@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": {
+    "crc": true,
+    "no_duplicate_members": true,
+    "member_set_matches_manifest": true,
+    "outer_inner_manifests_match": true,
+    "zip_and_disk_all_hashes_match": true,
+    "no_cache_or_compile_intermediates": true,
+    "new_assets_scripts_and_records_in_zip": true,
+    "archive_hash_matches_outer": true,
+    "sidecar_hash_matches": true,
+    "published_pdf_matches_compiled": true,
+    "new_python_sources_parse": true,
+    "script_hash_process_sources": true,
+    "outputs_hash_process_sources": true,
+    "script_hash_geometry_sources": true,
+    "outputs_hash_geometry_sources": true,
+    "script_hash_workflow_sources": true,
+    "outputs_hash_workflow_sources": true,
+    "script_hash_validation_sources": true,
+    "outputs_hash_validation_sources": true,
+    "all_unique_frozen_inputs_unchanged": true
+  },
+  "member_count": 327,
+  "mismatched_members": [],
+  "source_zip": {
+    "bytes": 27154516,
+    "sha256": "222ef7021fa7c1645f59cefc14adaf269d5704db183d242ccecdd48b24a44cb5"
+  },
+  "paper_pdf": {
+    "sha256": "32a1affe690d0146bfb282baac909b66ab5486382bd12a4563416489d1f30b60",
+    "bytes": 1758706
+  },
+  "unique_frozen_input_count": 30,
+  "purpose": "External archive audit; this file named source_package.json is deliberately excluded from the ZIP to avoid self-reference.",
+  "not_run": [
+    "PDE or parameter scenarios",
+    "compilation from an extracted standalone ZIP"
+  ]
+}

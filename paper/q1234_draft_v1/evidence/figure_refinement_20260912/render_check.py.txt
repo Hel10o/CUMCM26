@@ -1,0 +1,60 @@
+"""Render delivered paper and compare preserved abstract/appendix with baseline."""
+from pathlib import Path
+import json, re, hashlib
+import fitz
+import numpy as np
+from PIL import Image, ImageOps, ImageDraw
+
+BASE=Path(__file__).resolve().parents[2]
+BUILD=BASE/'build/figure_refinement'
+OUT=BUILD/'rendered'
+OUT.mkdir(parents=True,exist_ok=True)
+old=fitz.open(BUILD/'baseline.pdf')
+new=fitz.open(BUILD/'main.pdf')
+aux=(BUILD/'main.aux').read_text(encoding='utf-8')
+start=int(re.search(r'\\newlabel\{appendix:start\}\{\{[^}]*\}\{(\d+)\}',aux).group(1))
+report={'old_pages':len(old),'new_pages':len(new),'old_appendix_start':31,'new_appendix_start':start,
+        'comparison_dpi':72,'footer_mask_points':None,
+        'body_render_dpi':130,'appendix_count':len(new)-start+1,'appendix_changed_excluding_footer':[]}
+for i,page in enumerate(new):
+    pix=page.get_pixmap(dpi=72,alpha=False)
+    pix.save(OUT/f'all-{i+1:03}.png')
+    if i<start-1:
+        page.get_pixmap(dpi=130,alpha=False).save(OUT/f'body-{i+1:02}.png')
+    if i==0:
+        report['abstract_pixels_identical']=pix.samples==old[0].get_pixmap(dpi=72,alpha=False).samples
+    if i>=start-1:
+        j=i-(start-1)+30
+        a=np.asarray(Image.frombytes('RGB',[pix.width,pix.height],pix.samples)).copy()
+        before=old[j].get_pixmap(dpi=72,alpha=False)
+        b=np.asarray(Image.frombytes('RGB',[before.width,before.height],before.samples)).copy()
+        # Same page count: compare all appendix pixels, including footer.
+        if a.shape!=b.shape or not np.array_equal(a,b):
+            report['appendix_changed_excluding_footer'].append({'old':j+1,'new':i+1})
+for first in range(1,start,12):
+    sheet=Image.new('RGB',(4*330,3*490),'#d8dfe2');d=ImageDraw.Draw(sheet)
+    for k,p in enumerate(range(first,min(first+12,start))):
+        im=Image.open(OUT/f'body-{p:02}.png');im.thumbnail((320,456))
+        x=(k%4)*330+5;y=(k//4)*490+25
+        sheet.paste(im,(x,y));d.text((x,y-18),f'Page {p}',fill='black')
+    sheet.save(OUT/f'contact-{first:02}.png')
+names=['q1_profiles','q2_profiles','q3_q4_drying','q4_shrinkage','dimension_reduction','environment_sensitivity']
+for n in names:
+    oldfig=fitz.open(BASE/'figures/visual_revision'/f'{n}.pdf');newfig=fitz.open(BASE/('figures/visual_refinement' if n in names[:4] else 'figures/visual_revision')/f'{n}.pdf')
+    imgs=[]
+    for doc in (oldfig,newfig):
+        p=doc[0].get_pixmap(dpi=150,alpha=False)
+        im=Image.frombytes('RGB',(p.width,p.height),p.samples);im.thumbnail((960,850));imgs.append(im)
+    sheet=Image.new('RGB',(1960,max(im.height for im in imgs)+54),'white');d=ImageDraw.Draw(sheet)
+    for k,im in enumerate(imgs):
+        sheet.paste(im,(k*980+10,42));d.text((k*980+10,12),'BEFORE' if k==0 else 'AFTER',fill='black')
+    sheet.save(OUT/f'compare-{n}.png')
+report['all_pages_rendered']=len(new)
+report['body_pages_rendered']=start-1
+report['appendix_comparison_passed']=not report['appendix_changed_excluding_footer'] and len(new)-start+1==127
+report['all_checks_passed']=report['abstract_pixels_identical'] and report['appendix_comparison_passed']
+report['visual_review_is_separate']=True
+report['appendix_all_pixels_including_footer_identical']=report['appendix_comparison_passed']
+report['new_pdf_sha256']=hashlib.sha256((BUILD/'main.pdf').read_bytes()).hexdigest()
+(BASE/'evidence/figure_refinement_20260912/render_check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps(report,ensure_ascii=False))

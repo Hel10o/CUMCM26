@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-12",
+  "local_head": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+  "origin_main_at_start": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+  "github_read": {
+    "path": "README.md",
+    "ref": "e1ae2bc23917cbbbd357cb14ca795896f4a39f25",
+    "blob_sha": "c911ac0fdb104a6db14a94aff8c3a7fb5d17bebe",
+    "url": "https://github.com/Hel10o/libai/blob/e1ae2bc23917cbbbd357cb14ca795896f4a39f25/README.md"
+  },
+  "user_document": {
+    "name": "四问论文_正文图片修改与新增方案.md",
+    "copied_as": "用户图表方案_原件.md",
+    "sha256": "2e053f622945db3d61bd1e632fe1bc3ca5a1834a5ef10a9faf657af0f333d072",
+    "source_version": "155 pages / 5 figures, older than actual baseline"
+  },
+  "baseline_pdf": {
+    "sha256": "f70a1bb14ed72d64d9bca0f54ba5d64aa068b2ecf2b0c56d5e540921b75a2b50",
+    "pages": 157,
+    "abstract": 1,
+    "body": 29,
+    "appendix": 127
+  },
+  "preexisting_untracked": [
+    "template/"
+  ],
+  "scope": "Existing figures selectively refine; one workflow; source caption; preserve scientific text, results, formatting and exact page counts."
+}

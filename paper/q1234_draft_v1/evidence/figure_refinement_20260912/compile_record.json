@@ -1,0 +1,24 @@
+{
+  "exit_code": 0,
+  "command": "latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error -outdir=build/figure_refinement main.tex",
+  "initial_candidate_total_pages": 158,
+  "final_total_pages": 157,
+  "layout_adjustment": "Remove only the local Q2 figure FloatBarrier; add Needspace{7\\baselineskip} before two intact paragraphs to prevent floats interrupting sentences. Global formatting unchanged.",
+  "overfull_lines": [],
+  "underfull_lines": [
+    "Underfull \\hbox (badness 1509) in paragraph at lines 272--103",
+    "Underfull \\hbox (badness 1122) in paragraph at lines 16--20"
+  ],
+  "fonts_margins_line_spacing_changed": false,
+  "pde_or_scenarios_run": false,
+  "publish_note": "WPS PDF initially held file; replaced successfully after user closed it.",
+  "final_pdf_sha256": "32a1affe690d0146bfb282baac909b66ab5486382bd12a4563416489d1f30b60",
+  "new_vs_previous_candidate_changed_pages": [
+    8,
+    9,
+    13,
+    14,
+    15,
+    23
+  ]
+}
