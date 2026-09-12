@@ -1,0 +1,32 @@
+{
+  "baseline_commit": "aa055a3c07b99fc1d569b590290f67a507e7c4dd",
+  "remote_main_at_start": "aa055a3c07b99fc1d569b590290f67a507e7c4dd",
+  "checks": {
+    "only_authorized_sentence_and_separator_changed": true,
+    "number_tokens_preserved": true,
+    "bold_count_preserved": true,
+    "section_sources_unchanged": true,
+    "pdf_pages_157": true,
+    "only_abstract_page_pixels_changed": true,
+    "abstract_sentence_and_keywords_on_page_one": true,
+    "no_unresolved_references": true,
+    "no_overfull_boxes": true,
+    "published_pdf_matches_reviewed_build": true
+  },
+  "number_token_count": 142,
+  "bold_count": 24,
+  "source_sha256": "74a620ef1e44dd713fd22b2797bdb9a00fd8329f2337b945ca2980f9cf266f6f",
+  "pdf_pages": 157,
+  "pixel_comparison_dpi": 72,
+  "changed_physical_pages": [
+    1
+  ],
+  "identical_physical_pages": "2-157",
+  "pdf_sha256": "d5930757014058d46b1cef9ce32a77ccdf4b54c491afab2310fb61b396e63767",
+  "prior_pdf_sha256": "1121075687d610ecdbd15ed0dafaa5b63d4b16dbeb1ea430dd37b3c3267242f1",
+  "visual_review": {
+    "renderer": "Poppler pdftoppm at 120 dpi",
+    "page": 1,
+    "result": "已目视确认摘要单页、结论句加粗、关键词完整，无溢出或重叠；其他页面采用72 dpi新旧像素比较。"
+  }
+}
