@@ -1,0 +1,16 @@
+{
+  "scope": "Root author resolutions after independent physics and geometry review; no new PDE runs",
+  "review_records": ["reviews/main_geometry_review.md", "reviews/physics/main_report_review.md"],
+  "resolutions": [
+    {"issue": "E1 cannot remove common inherited error merely by two restart times from the same coarse history", "status": "adopted", "change": "Requires fine/coarse or independent reference initial difference and justified error propagation/residual control; full two-level Q4 solve remains preferred"},
+    {"issue": "80 radial nodes misnames nr=80 grid", "status": "adopted", "change": "80 radial intervals, 81 nodes"},
+    {"issue": "0.0122 s versus moisture margin unit ambiguity", "status": "adopted", "change": "Compares 6.26e-9 with 1.41e-6 in moisture units; separately states equivalent local time"},
+    {"issue": "Unrun E2 B endpoint hm incorrectly predetermined", "status": "adopted", "change": "2.88e-7 m/s applies at original official R=1.2 cm; B endpoint depends on its own event radius"},
+    {"issue": "Zero latent limit reference undefined", "status": "adopted", "change": "Uses candidate model's same-density same-boundary zero-latent baseline; cannot restore present mainline if other assumptions change"},
+    {"issue": "Ceq validation should allow evidence of unreachable target", "status": "adopted", "change": "Requires checking reachability and reporting unreachable if supported; no tuning to force Ceq below target"},
+    {"issue": "Mass normalization phrasing could imply measured actual flux", "status": "adopted", "change": "E2 output explicitly called conditional flux under stated initial dry-mass normalization"},
+    {"issue": "Historical manuscript issues should not force official result changes", "status": "adopted", "change": "Paper issues PAP-01/02/03 categorized P1; no confirmed numeric P0 identified"}
+  ],
+  "unresolved_report_defects_from_these_reviews": [],
+  "unresolved_model_work_remains": true
+}

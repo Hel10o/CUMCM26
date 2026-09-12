@@ -1,0 +1,152 @@
+{
+  "base_commit": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "local": [
+    {
+      "path": "README.md",
+      "sha256": "edd749b023d9536212b0ba0adadacd78065d97bb361b592e2dddb4cc13acf8c4",
+      "actual_scope": "current authoritative overview; full"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "e023f7faf848b3597a420b4b16e503c471449f5fc577a92cbb5e78b7436aaa75",
+      "actual_scope": "project synchronization instructions; full"
+    },
+    {
+      "path": "q1234_overall_review_handoff/四问整体结果与建模改进_Pro交接文档.md",
+      "sha256": "3d55cd0e6555449989c98d277428fff51ec5fdff4bf7181873ea2551d0eff1d1",
+      "actual_scope": "full task contract"
+    },
+    {
+      "path": "review_q4_20260912/第四问接收核查与整体复审要点.md",
+      "sha256": "093a313d7705a170542e3421a5b4f03ca66b44ef37a68f9583aeac380d7f24ca",
+      "actual_scope": "full current receiving audit"
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "actual_scope": "full extracted problem; visual check of page 4 separately"
+    },
+    {
+      "path": "review_q4_20260912/problem_pages/problem-4.png",
+      "sha256": "636dbe3298f0e60576eed749f109ac0472a8dd817b6f580d649dfd784f6b6f95",
+      "actual_scope": "visual: original problem page 4"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+      "actual_scope": "parameters/model excerpts; not all solver code"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+      "sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+      "actual_scope": "actual saved arrays read by diagnostic script"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/validation/validation.json",
+      "sha256": "068823b8c41a9aafd9b9109e3a04e349c3d980a0aed90b9af82c6bc99e9f3768",
+      "actual_scope": "targeted latent and energy records"
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "actual_scope": "parameters, properties and RHS through line 180"
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/q4_common.py",
+      "sha256": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b",
+      "actual_scope": "full"
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/q4_spectral.py",
+      "sha256": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892",
+      "actual_scope": "full"
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/run_q4.py",
+      "sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+      "actual_scope": "full"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问模型与文献采用.md",
+      "sha256": "ecb2c679f63ceb20a87c9874e59c32ef34181c71b124cc090bd1cfa7a413a6ab",
+      "actual_scope": "full"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问分析与答案.md",
+      "sha256": "a6cec4afb3fdb218799d9ad02763711ec9068e74e40739d6f4c127e5a64e019b",
+      "actual_scope": "targeted physical and attribution paragraphs"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问论文正文.md",
+      "sha256": "a7cb5eebced816bec186c4b5b99df12c058dcfbc35de5430e85e2af87e7ef298",
+      "actual_scope": "targeted physical and attribution paragraphs"
+    },
+    {
+      "path": "q4_complete_delivery/v1/output/main.npz",
+      "sha256": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+      "actual_scope": "actual saved arrays read by diagnostic script"
+    },
+    {
+      "path": "q4_complete_delivery/v1/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "actual_scope": "all numeric rows; future platform recomputed"
+    },
+    {
+      "path": "q4_complete_delivery/v1/inputs/attachment2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "actual_scope": "hashed; radius behavior read from source and stored arrays"
+    },
+    {
+      "path": "review_q123_physics_20260911/model/物理闭合审查.md",
+      "sha256": "cdfcd01c5f5caf64505e0cf2cdccec95fe90a45b5f51a648b70c43d943c4c2b0",
+      "actual_scope": "prior review; read physics sections, not claimed new PDE evidence"
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_review.md",
+      "sha256": "99e03398e41768c8766e55fb63130d6b089bb636ae27a21014779d4593de0580",
+      "actual_scope": "existing review; text"
+    },
+    {
+      "path": "readable/README.md",
+      "sha256": "2b5cd0b3a61213ccb3729702ac2afc1d739175c31b5d5ac206d9e0e3fa522311",
+      "actual_scope": "full literature index"
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_pages/adrover_05.png",
+      "sha256": "1ceadb1cb92ee90aa035c7259cf680559b22f8ee193a253d04bac1725db35a85",
+      "actual_scope": "actual original page visual reading"
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_pages/silva_04.png",
+      "sha256": "168e013f6ec2e3b3b21878d19761e9d5cab0a0f26fb83e9fe3b721a2c9dc989e",
+      "actual_scope": "actual original page visual reading"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_limits.tex",
+      "sha256": "88cc24eefdfe26e2cc673a7d36ddffb9fa251744af1686e5f3f9d5dd9982b20f",
+      "actual_scope": "targeted latent and boundary paragraphs"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_limits.tex",
+      "sha256": "964ce9b5be17d75857009ec339d40af50d65391315a6ab75f665dc7b69691c6f",
+      "actual_scope": "targeted boundary, density, energy paragraphs"
+    }
+  ],
+  "web": [
+    {
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "status": "read official page on 2026-09-12",
+      "scope": "humidity ratio definition; ideal mixture pressure and relative humidity"
+    },
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "status": "read official page on 2026-09-12",
+      "scope": "latent heat 2.45 MJ/kg approximation; saturation pressure eq11"
+    },
+    {
+      "url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "status": "open failed; not claimed read online",
+      "scope": "used locally stored original page 5 instead"
+    }
+  ]
+}

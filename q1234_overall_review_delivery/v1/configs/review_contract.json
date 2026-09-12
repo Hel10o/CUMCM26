@@ -1,0 +1,43 @@
+{
+  "review_date": "2026-09-12",
+  "source_commit": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "repository": "https://github.com/Hel10o/libai.git",
+  "source_mode": "Complete local checkout, initially clean and equal to origin/main; no fallback input ZIP used",
+  "scope": "Critical review plus bounded targeted continuations and saved-field diagnostics; official answers not modified",
+  "official_execution_seconds": {"q3": 206906.76, "q4": 183931.56},
+  "environment_probes": {
+    "start_s": 14400,
+    "same_frozen_interior_state": true,
+    "initial_projection": "exact nested Chebyshev nodes; changed boundary surface re-solved, degree-reduction error remains",
+    "scenarios_T_K_b": {"baseline": [0, 0], "temperature_minus_1K": [-1, 0], "temperature_plus_1K": [1, 0], "boundary_minus_0p005": [0, -0.005], "boundary_plus_0p005": [0, 0.005]},
+    "scenarios_status": "Analyst-selected stress sizes, not measurement uncertainties, confidence or prediction intervals",
+    "primary_n": 40,
+    "refinement": {"q3_n": 80, "q4_n": 60, "scenarios": ["baseline", "temperature_minus_1K"]},
+    "method": "Radau",
+    "rtol": 2e-9,
+    "atol_T_C": [2e-10, 2e-12],
+    "max_step_s": 300,
+    "restart_spacing_s": 1800,
+    "q4_radius": "original measured R(t) fixed across scenarios; no continuation beyond 72 h",
+    "executed_command_arguments": [
+      "--case q3 --n 40 --scenario all --out q1234_overall_review_delivery/v1/evidence/environment",
+      "--case q4 --n 40 --scenario all --out q1234_overall_review_delivery/v1/evidence/environment",
+      "--case q3 --n 80 --scenario baseline --out q1234_overall_review_delivery/v1/evidence/environment",
+      "--case q3 --n 80 --scenario temperature_minus_1K --out q1234_overall_review_delivery/v1/evidence/environment",
+      "--case q4 --n 60 --scenario baseline --out q1234_overall_review_delivery/v1/evidence/environment",
+      "--case q4 --n 60 --scenario temperature_minus_1K --out q1234_overall_review_delivery/v1/evidence/environment"
+    ],
+    "exit_codes": [0, 0, 0, 0, 0, 0]
+  },
+  "geometry_runs": {
+    "source_and_config": "reviews/geometry/audit_geometry_endpoints.py; reviews/geometry/endpoint_audit.json",
+    "q3_start_s": 206900.97520476772,
+    "q4_start_s": 172800,
+    "shared_frozen_operator": true,
+    "new_full_cold_start": false,
+    "continuum_error_bound_established": false
+  },
+  "algebra_only": ["reviews/physics/diagnose_saved_fields.py", "reviews/geometry/audit_saved_geometry_scope.py", "reviews/environment_check/audit_environment_evidence.py"],
+  "not_run": ["E1 fine 2D execution validation", "E2 fixed effective hm versus fixed rho_d*hm", "E3 additional joint or periodic environments", "closed latent-heat model", "full historic suite", "new complete paper build"],
+  "numerical_runtime": {"python": "3.13.14", "numpy": "2.5.3", "scipy": "1.18.1", "OPENBLAS_NUM_THREADS": "1"}
+}

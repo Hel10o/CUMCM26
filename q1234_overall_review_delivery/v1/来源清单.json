@@ -1,0 +1,537 @@
+{
+  "source_commit": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "repository": "https://github.com/Hel10o/libai.git",
+  "mode": "Full local checkout; initially clean and matched origin/main; no input ZIP fallback used",
+  "scope_note": "Reading levels are per file. Source equality proves identity, not physical validity. New outputs are separately hashed by MANIFEST.",
+  "sources": [
+    {
+      "path": "AGENTS.md",
+      "baseline_sha256": "e023f7faf848b3597a420b4b16e503c471449f5fc577a92cbb5e78b7436aaa75",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "project synchronization instructions; full"
+      ]
+    },
+    {
+      "path": "A题/A题.pdf",
+      "baseline_sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "read_scopes": [
+        "Original PDF identity checked; full extracted text read and acquired original page 2-4 renders visually inspected; not all PDF pages visually re-read"
+      ]
+    },
+    {
+      "path": "README.md",
+      "baseline_sha256": "edd749b023d9536212b0ba0adadacd78065d97bb361b592e2dddb4cc13acf8c4",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "current authoritative overview; full"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/README.md",
+      "baseline_sha256": "052da1279eb8537b3313f401be26bb52df7af3acbd30bbbe2888b9ab88b8637f",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/main.tex",
+      "baseline_sha256": "955a0153a77408e1b784f8a1754ffde84b2fcadc88079e0e322cf886af3d4c5f",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/preliminaries.tex",
+      "baseline_sha256": "86ac745921d952be4b8ed5fd128070866cfa6b2956db1e3ecf2593c04ed30c60",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_limits.tex",
+      "baseline_sha256": "88cc24eefdfe26e2cc673a7d36ddffb9fa251744af1686e5f3f9d5dd9982b20f",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "targeted latent and boundary paragraphs"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_model.tex",
+      "baseline_sha256": "d14358c4e3df324568724750aac6f7097dbd9b11dc4df03fbbd1f864d401511b",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_limits.tex",
+      "baseline_sha256": "964ce9b5be17d75857009ec339d40af50d65391315a6ab75f665dc7b69691c6f",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "targeted boundary, density, energy paragraphs"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_model.tex",
+      "baseline_sha256": "6894c877de1904cdb35e3a2ccb7aaf64ff1bcdc001ff15db38dc55c0a7a2d839",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_results.tex",
+      "baseline_sha256": "43c09edc073ff358ff4bbccfa504d2d7add64b9b4d032595607272f0d20b7979",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q1234_overall_review_handoff/四问整体结果与建模改进_Pro交接文档.md",
+      "baseline_sha256": "3d55cd0e6555449989c98d277428fff51ec5fdff4bf7181873ea2551d0eff1d1",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "full task contract"
+      ]
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+      "baseline_sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+      "read_scopes": [
+        "actual saved arrays read by diagnostic script",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve"
+      ]
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/result1.xlsx",
+      "baseline_sha256": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+      "read_scopes": [
+        "Current official workbook: baseline bytes checked; ZIP XML headers read this review, full-cell agreement relies on acquired earlier audit"
+      ]
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/validation/validation.json",
+      "baseline_sha256": "068823b8c41a9aafd9b9109e3a04e349c3d980a0aed90b9af82c6bc99e9f3768",
+      "read_scopes": [
+        "targeted latent and energy records"
+      ]
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/第一问论文正文.md",
+      "baseline_sha256": "dded0ba2aa81dcfd2648e1a862120ada89a0587774f50c596277de796be89d13",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "baseline_sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+      "read_scopes": [
+        "parameters/model excerpts; not all solver code",
+        "Read parameter, boundary and PDE sections"
+      ]
+    },
+    {
+      "path": "q2_final_delivery/output/第二问论文正文.md",
+      "baseline_sha256": "191332dfb9c783159efb04f929cc9170226eb03e7a7d1012c912d421c59e4b20",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q2_final_delivery/source/q2_core.py",
+      "baseline_sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "read_scopes": [
+        "parameters, properties and RHS through line 180",
+        "Read local coefficients, boundary and coupled PDE implementation"
+      ]
+    },
+    {
+      "path": "q3_refinement_delivery/output/result3.xlsx",
+      "baseline_sha256": "acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17",
+      "read_scopes": [
+        "Current official workbook: baseline bytes checked; ZIP XML headers read this review, full-cell agreement relies on acquired earlier audit"
+      ]
+    },
+    {
+      "path": "q3_refinement_delivery/第三问最终复审与答案.md",
+      "baseline_sha256": "6d794b75fc1d982f5481b64d64385c7c85a62f2a4e497a599659b0f477c05fd9",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/README.md",
+      "baseline_sha256": "fd7ef70e813ceffe74db38b5fce430b42e9b59443bbd22a463c12645d2d46d3d",
+      "read_scopes": [
+        "Read current Q4 version and pipeline status"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/inputs/attachment1.xlsx",
+      "baseline_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "read_scopes": [
+        "all numeric rows; future platform recomputed",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/inputs/attachment2.xlsx",
+      "baseline_sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "read_scopes": [
+        "hashed; radius behavior read from source and stored arrays",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/output/main.npz",
+      "baseline_sha256": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+      "read_scopes": [
+        "actual saved arrays read by diagnostic script",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve",
+        "Read frozen full 4 h T/C state for conditional continuation"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/output/result4.xlsx",
+      "baseline_sha256": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+      "read_scopes": [
+        "Current official workbook: baseline bytes checked; ZIP XML headers read this review, full-cell agreement relies on acquired earlier audit"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/README.md",
+      "baseline_sha256": "b11467f0424f00afb23c6e315e128c673d4564a8a5412edaf55f8059d61e0db0",
+      "read_scopes": [
+        "Read Q2/Q3 full-process closeout and source contract"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+      "baseline_sha256": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "read_scopes": [
+        "Read frozen full 4 h T/C state for conditional continuation"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+      "baseline_sha256": "88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870",
+      "read_scopes": [
+        "Current official workbook: baseline bytes checked; ZIP XML headers read this review, full-cell agreement relies on acquired earlier audit"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/source/legacy_q3/q3_reference.py",
+      "baseline_sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "read_scopes": [
+        "Read and reused audited coupled spectral operator"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/一维二维适用范围.md",
+      "baseline_sha256": "fa8903d935643865439c0029ab01bc2e2e458685b2c57e819bfe916e592d70c5",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/第二问全时域收尾.md",
+      "baseline_sha256": "17bd0c39daf875236b819ab16acac357fcec3d52b5a08fafb5e88ffa2dc5b3f7",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/check_numerics.py",
+      "baseline_sha256": "957c081cd7fc363300049b00de15d0334c69d9cf6163dc7dfcd9e0b642c1ee65",
+      "read_scopes": [
+        "Read default output behavior; not executed"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/q4_common.py",
+      "baseline_sha256": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b",
+      "read_scopes": [
+        "full",
+        "Read Environment/Radius and input functions; loaded attachments"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/q4_spectral.py",
+      "baseline_sha256": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892",
+      "read_scopes": [
+        "full",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve",
+        "Read and reused audited coupled spectral operator",
+        "Read complete main operator and extrema reconstruction"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/source/run_q4.py",
+      "baseline_sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+      "read_scopes": [
+        "full",
+        "Read solver and event pipeline; not re-executed"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/README.md",
+      "baseline_sha256": "0549f46ec9d43ba70568d89311ea06ae2ceef86e55a5af706d4fd5fc37cae3ba",
+      "read_scopes": [
+        "Read dimensional comparison contract and evidence index"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/corrected_global_event_estimates.json",
+      "baseline_sha256": "56bca2e1925c1529eff0c21c35e3ce04e2f02ecda5f935cecd084f0e03ff64d2",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/geometry_comparison.json",
+      "baseline_sha256": "a9d3e6fa8820fe42e1d9b84975817f585e4fe347a1e841a7dadb8263ed88ecae",
+      "read_scopes": [
+        "Read current paired dimensional comparison statistics"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q1_80x0.npz",
+      "baseline_sha256": "b0844d5f7339355d04712c66122610cd03032d62acf0359efecd81909f58b9dd",
+      "read_scopes": [
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q1_80x128.npz",
+      "baseline_sha256": "4ae0f6e60ac095c265f7356fe73a3c6804acaaf6e7fafcc70c769fc6e0dee947",
+      "read_scopes": [
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q23_80x0_integral.npz",
+      "baseline_sha256": "2e26d3d392d207092bbbdd3f0b49d94d4aa01585a45e8c4de51c988d8d5444c2",
+      "read_scopes": [
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q23_80x256_integral.json",
+      "baseline_sha256": "487b8bb2d55a5818de030a91e6a3fc7c96ad950c74407390afec0d7c007489ed",
+      "read_scopes": [
+        "Read full stored fields/statistics; used as targeted 2D continuation initial history"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q23_80x256_integral.npz",
+      "baseline_sha256": "acfc056a0bc68ff617f19ce01712e5ffa83437e9dcfacb4f09da957070ae598a",
+      "read_scopes": [
+        "Read full stored fields/statistics; used as targeted 2D continuation initial history",
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q4_80x0_integral.npz",
+      "baseline_sha256": "165f497a9fed52b9072ba3f5afa0a1c2c2d5fbf31300472df71cc36994e8fcaa",
+      "read_scopes": [
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q4_80x128_integral.json",
+      "baseline_sha256": "67066e537c755374a4d405dffe89740e535ceee2d2b01e1d51840ba87565913b",
+      "read_scopes": [
+        "Read full stored fields/statistics; used as targeted 2D continuation initial history"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/q4_80x128_integral.npz",
+      "baseline_sha256": "3aad109b0d5af3fa33b1d95e334a7a02be8afb21353d16f9286f9a63aa1d2c8e",
+      "read_scopes": [
+        "Read full stored fields/statistics; used as targeted 2D continuation initial history",
+        "Read stored snapshots and volume weights for new integration"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_pages/adrover_05.png",
+      "baseline_sha256": "1ceadb1cb92ee90aa035c7259cf680559b22f8ee193a253d04bac1725db35a85",
+      "read_scopes": [
+        "actual original page visual reading"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_pages/silva_04.png",
+      "baseline_sha256": "168e013f6ec2e3b3b21878d19761e9d5cab0a0f26fb83e9fe3b721a2c9dc989e",
+      "read_scopes": [
+        "actual original page visual reading"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/literature_review.md",
+      "baseline_sha256": "99e03398e41768c8766e55fb63130d6b089bb636ae27a21014779d4593de0580",
+      "read_scopes": [
+        "existing review; text"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/numeric_comparison.json",
+      "baseline_sha256": "be5b80853ba3a7642bf1f7701c106ea1b5fa1ea29e63aca4a35d00469db1c914",
+      "read_scopes": [
+        "Read existing convergence and solver comparison evidence, not newly solved"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问分析与答案.md",
+      "baseline_sha256": "a6cec4afb3fdb218799d9ad02763711ec9068e74e40739d6f4c127e5a64e019b",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "targeted physical and attribution paragraphs"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问模型与文献采用.md",
+      "baseline_sha256": "ecb2c679f63ceb20a87c9874e59c32ef34181c71b124cc090bd1cfa7a413a6ab",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "full",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问论文正文.md",
+      "baseline_sha256": "a7cb5eebced816bec186c4b5b99df12c058dcfbc35de5430e85e2af87e7ef298",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "targeted physical and attribution paragraphs"
+      ]
+    },
+    {
+      "path": "readable/README.md",
+      "baseline_sha256": "2b5cd0b3a61213ccb3729702ac2afc1d739175c31b5d5ac206d9e0e3fa522311",
+      "read_scopes": [
+        "full literature index"
+      ]
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/003.md",
+      "baseline_sha256": "9706623446f89e0d7bad7ae6bddc794924946a5b8586c7944a1abd3264e25832",
+      "read_scopes": [
+        "Read local primary-paper extracted page; targeted equations"
+      ]
+    },
+    {
+      "path": "readable/papers/da-silva-2014/pages/004.md",
+      "baseline_sha256": "4f1d260c4bcd03ea7ebe0bcc5887459207a679c37aca6c4d1d451f04ee879c62",
+      "read_scopes": [
+        "Read local primary-paper extracted page; targeted dry-basis/equilibrium sections"
+      ]
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "baseline_sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "full extracted problem; visual check of page 4 separately",
+        "Used by saved-field algebra/quadrature diagnostics; no PDE solve"
+      ]
+    },
+    {
+      "path": "review_q123_physics_20260911/model/物理闭合审查.md",
+      "baseline_sha256": "cdfcd01c5f5caf64505e0cf2cdccec95fe90a45b5f51a648b70c43d943c4c2b0",
+      "read_scopes": [
+        "prior review; read physics sections, not claimed new PDE evidence"
+      ]
+    },
+    {
+      "path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "baseline_sha256": "3698604fbc66755910ea14a6ebef1e9c6fa2173f91db4201498d031c50534ed8",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/agent_q4/saved_q4_audit.json",
+      "baseline_sha256": "933e73d7d570a5931b4d6d0e5fc141fd8a00f83fe715661477c1c42cc6bd07fd",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/artifacts/artifact_audit.json",
+      "baseline_sha256": "af4bdfef9c754459f61a7f9b15a24d972b41ee8f3fc92b7801574e7c9bd0d820",
+      "read_scopes": [
+        "Read prior full-cell audit; this release rechecks frozen hashes and workbook headers only"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/numeric/numeric_audit.json",
+      "baseline_sha256": "39d847ef595ff88905eb9dbf13a9cd6a58377642c6b6bfa1f4eda6d8f6cf8262",
+      "read_scopes": [
+        "Read earlier local numerical unit/degeneration checks; not rerun as full PDE"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/problem_pages/problem-2.png",
+      "baseline_sha256": "f2a07886deccb61e9fce25ff38eddb85651e12a646694466f379154f418fe509",
+      "read_scopes": [
+        "Visually read original problem page 2: Q2 full process, Q3 everywhere threshold and Q4 introduction"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/problem_pages/problem-3.png",
+      "baseline_sha256": "19127bc224d8b2698845e0706f3f684ecd5d5df82f9af95182fb3808b4d4442e",
+      "read_scopes": [
+        "Visually read original page 3: templates and Appendix 2 constants"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/problem_pages/problem-4.png",
+      "baseline_sha256": "636dbe3298f0e60576eed749f109ac0472a8dd817b6f580d649dfd784f6b6f95",
+      "read_scopes": [
+        "visual: original problem page 4",
+        "Visually read original page 4: Appendix 3/4 coefficients and Kelvin convention"
+      ]
+    },
+    {
+      "path": "review_q4_20260912/第四问接收核查与整体复审要点.md",
+      "baseline_sha256": "093a313d7705a170542e3421a5b4f03ca66b44ef37a68f9583aeac380d7f24ca",
+      "read_scopes": [
+        "Text read; some long files were targeted sections/searches, not full original-media review",
+        "full current receiving audit"
+      ]
+    }
+  ],
+  "web_sources_from_physics_review": [
+    {
+      "url": "https://handbook.ashrae.org/Handbooks/F21/SI/F21_Ch01/F21_Ch01_si.aspx",
+      "status": "read official page on 2026-09-12",
+      "scope": "humidity ratio definition; ideal mixture pressure and relative humidity"
+    },
+    {
+      "url": "https://www.fao.org/4/X0490E/x0490e07.htm",
+      "status": "read official page on 2026-09-12",
+      "scope": "latent heat 2.45 MJ/kg approximation; saturation pressure eq11"
+    },
+    {
+      "url": "https://www.mdpi.com/2304-8158/9/11/1577",
+      "status": "open failed; not claimed read online",
+      "scope": "used locally stored original page 5 instead"
+    }
+  ],
+  "additional_primary_lookup": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7692062/",
+      "scope": "Primary article excerpts available through search; direct open returned browser challenge, not a full online read"
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0260877414002118",
+      "scope": "Publisher metadata/abstract from search; direct open 403. Used acquired local primary-paper pages for equations"
+    }
+  ],
+  "official_workbooks": [
+    "q1_complete_delivery/q1_delivery/output/result1.xlsx",
+    "q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+    "q3_refinement_delivery/output/result3.xlsx",
+    "q4_complete_delivery/v1/output/result4.xlsx"
+  ]
+}

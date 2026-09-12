@@ -1,0 +1,680 @@
+{
+  "status": "PASS",
+  "git_commit_read": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "scope": "Independent artifact and polynomial/boundary postprocessing only. No PDE solve, no independent physical calibration.",
+  "pairs_checked": 14,
+  "scenarios_n40": 10,
+  "refinement_runs": 4,
+  "records": [
+    {
+      "name": "q3_baseline_n40",
+      "case": "q3",
+      "scenario": "baseline",
+      "n": 40,
+      "critical_s": 206906.38700623615,
+      "critical_h": 57.47399639062115,
+      "event_independent": {
+        "max_C": 0.15000000000000013,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 2.8927756214153578e-11,
+        "moisture_boundary_residual_m_s": -1.8967251445840925e-21,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.14999989135572755,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14999989135572744,
+        "heat_boundary_residual_W_m2": -1.5667009453922335e-12,
+        "moisture_boundary_residual_m_s": -7.225422650650697e-22,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.453606003346266,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": -1.1048844304750727e-10,
+        "moisture_boundary_residual_m_s": 2.533687303474426e-19,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00010214927620921799,
+        1.0091566660097584e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": -0.002926091867266223,
+      "difference_from_same_n_baseline_s": 0.0,
+      "difference_from_same_n_baseline_h": 0.0
+    },
+    {
+      "name": "q3_baseline_n80",
+      "case": "q3",
+      "scenario": "baseline",
+      "n": 80,
+      "critical_s": 206906.3899323401,
+      "critical_h": 57.47399720342781,
+      "event_independent": {
+        "max_C": 0.14999999999999983,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 1.7754001322267125e-10,
+        "moisture_boundary_residual_m_s": -3.6389329507432793e-20,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.14999989220803053,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14999989220803064,
+        "heat_boundary_residual_W_m2": -6.331740577948214e-11,
+        "moisture_boundary_residual_m_s": -5.0546112100971586e-20,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462606,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": -4.2509367900733785e-10,
+        "moisture_boundary_residual_m_s": -1.0611840521438688e-17,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -2.5555092449280892e-05,
+        2.5687941440644124e-08
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": 1.2078089639544487e-08,
+      "difference_from_same_n_baseline_s": 0.0,
+      "difference_from_same_n_baseline_h": 0.0
+    },
+    {
+      "name": "q3_boundary_minus_0p005_n40",
+      "case": "q3",
+      "scenario": "boundary_minus_0p005",
+      "n": 40,
+      "critical_s": 206577.89179483376,
+      "critical_h": 57.38274772078716,
+      "event_independent": {
+        "max_C": 0.15000000000000013,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 2.955107189577635e-12,
+        "moisture_boundary_residual_m_s": 1.0517601488611747e-21,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.14990431493474027,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14990431493474005,
+        "heat_boundary_residual_W_m2": 1.8813045787854266e-11,
+        "moisture_boundary_residual_m_s": 1.881008712945585e-21,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462674,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": -6.681231609628746e-11,
+        "moisture_boundary_residual_m_s": -5.3331311941498885e-19,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00010214927651475136,
+        -3.946787378139582e-06
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": -328.49521140239085,
+      "difference_from_same_n_baseline_h": -0.09124866983399746
+    },
+    {
+      "name": "q3_boundary_plus_0p005_n40",
+      "case": "q3",
+      "scenario": "boundary_plus_0p005",
+      "n": 40,
+      "critical_s": 207302.80651004316,
+      "critical_h": 57.58411291945643,
+      "event_independent": {
+        "max_C": 0.15000000000000002,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": -6.263932427748319e-11,
+        "moisture_boundary_residual_m_s": -3.860865509091257e-21,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.15011547241625478,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15011547241625467,
+        "heat_boundary_residual_W_m2": -8.013941271166615e-11,
+        "moisture_boundary_residual_m_s": 3.8960206851247603e-22,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462666,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": 1.3457178947573478e-10,
+        "moisture_boundary_residual_m_s": -7.887994321305672e-20,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00010214927589657918,
+        4.148607630094503e-06
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 396.4195038070029,
+      "difference_from_same_n_baseline_h": 0.11011652883527859
+    },
+    {
+      "name": "q3_temperature_minus_1K_n40",
+      "case": "q3",
+      "scenario": "temperature_minus_1K",
+      "n": 40,
+      "critical_s": 213628.5903750217,
+      "critical_h": 59.341275104172695,
+      "event_independent": {
+        "max_C": 0.15000000000000022,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": -6.307772999867849e-11,
+        "moisture_boundary_residual_m_s": -8.271806125530277e-22,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.15194518922395508,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15194518922395497,
+        "heat_boundary_residual_W_m2": -7.973007749082091e-11,
+        "moisture_boundary_residual_m_s": -1.6117614235595744e-21,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462666,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": 4.668621045311738e-11,
+        "moisture_boundary_residual_m_s": -1.7184180917421618e-19,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.0007172633615653012,
+        8.686429608939505e-08
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 6722.203368785558,
+      "difference_from_same_n_baseline_h": 1.867278713551544
+    },
+    {
+      "name": "q3_temperature_minus_1K_n80",
+      "case": "q3",
+      "scenario": "temperature_minus_1K",
+      "n": 80,
+      "critical_s": 213628.5933252793,
+      "critical_h": 59.3412759236887,
+      "event_independent": {
+        "max_C": 0.14999999999999983,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 8.008956736131683e-11,
+        "moisture_boundary_residual_m_s": -3.344746165888795e-20,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.15194519010992674,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.1519451901099269,
+        "heat_boundary_residual_W_m2": 5.063518232575226e-11,
+        "moisture_boundary_residual_m_s": -2.2787171514610806e-20,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462608,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": 5.464713126457355e-10,
+        "moisture_boundary_residual_m_s": -6.85874341127329e-18,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00017944064303065943,
+        2.4808391119179873e-08
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 6722.2033929392055,
+      "difference_from_same_n_baseline_h": 1.8672787202608905
+    },
+    {
+      "name": "q3_temperature_plus_1K_n40",
+      "case": "q3",
+      "scenario": "temperature_plus_1K",
+      "n": 40,
+      "critical_s": 200478.08583252024,
+      "critical_h": 55.68835717570007,
+      "event_independent": {
+        "max_C": 0.1500000000000002,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 8.546918065096655e-13,
+        "moisture_boundary_residual_m_s": -2.067124350770016e-21,
+        "radius_m": 0.02
+      },
+      "official_independent": {
+        "max_C": 0.1481152417689653,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14811524176896518,
+        "heat_boundary_residual_W_m2": -2.6947636426425888e-11,
+        "moisture_boundary_residual_m_s": 2.482369018271636e-21,
+        "radius_m": 0.02
+      },
+      "initial_independent": {
+        "max_C": 1.4536060033462672,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 1.4536060033462637,
+        "heat_boundary_residual_W_m2": -1.3208989457780262e-10,
+        "moisture_boundary_residual_m_s": 6.534859188066927e-19,
+        "radius_m": 0.02
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        0.0005129648039172707,
+        1.1496666518784338e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": -6428.30117371591,
+      "difference_from_same_n_baseline_h": -1.7856392149210862
+    },
+    {
+      "name": "q4_baseline_n40",
+      "case": "q4",
+      "scenario": "baseline",
+      "n": 40,
+      "critical_s": 183931.21153967263,
+      "critical_h": 51.09200320546462,
+      "event_independent": {
+        "max_C": 0.1500000000000002,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 3.80607484294784e-11,
+        "moisture_boundary_residual_m_s": 1.5716431638507526e-22,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.1499998210710352,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.149999821071035,
+        "heat_boundary_residual_W_m2": 3.0047130908681387e-12,
+        "moisture_boundary_residual_m_s": 8.763978589999328e-22,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.2418753997008607,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": 7.068054475034558e-11,
+        "moisture_boundary_residual_m_s": -7.282895159610881e-19,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00014863803787790175,
+        4.1151986263088247e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": -0.00017581650172360241,
+      "difference_from_same_n_baseline_s": 0.0,
+      "difference_from_same_n_baseline_h": 0.0
+    },
+    {
+      "name": "q4_baseline_n60",
+      "case": "q4",
+      "scenario": "baseline",
+      "n": 60,
+      "critical_s": 183931.2117103925,
+      "critical_h": 51.092003252886805,
+      "event_independent": {
+        "max_C": 0.15000000000000005,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 5.127503634398348e-11,
+        "moisture_boundary_residual_m_s": 2.089582304400831e-20,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.1499998211586964,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14999982115869634,
+        "heat_boundary_residual_W_m2": -7.519696687971464e-11,
+        "moisture_boundary_residual_m_s": 2.8000063734919987e-20,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.241875399700853,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": -1.8668799839360872e-10,
+        "moisture_boundary_residual_m_s": 5.21195254313332e-18,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -6.610568438958353e-05,
+        1.856214366657838e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": -5.0966336857527494e-06,
+      "difference_from_same_n_baseline_s": 0.0,
+      "difference_from_same_n_baseline_h": 0.0
+    },
+    {
+      "name": "q4_boundary_minus_0p005_n40",
+      "case": "q4",
+      "scenario": "boundary_minus_0p005",
+      "n": 40,
+      "critical_s": 183577.7446526579,
+      "critical_h": 50.993817959071635,
+      "event_independent": {
+        "max_C": 0.15000000000000008,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": -8.162980465758748e-12,
+        "moisture_boundary_residual_m_s": -1.344995676011223e-21,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.14981835145319122,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14981835145319106,
+        "heat_boundary_residual_W_m2": -3.5436143522683453e-11,
+        "moisture_boundary_residual_m_s": -2.3702860452707008e-21,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.2418753997008602,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": -6.111700034949763e-11,
+        "moisture_boundary_residual_m_s": -1.4812488665109577e-19,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.0001486380562027989,
+        -1.609503637234333e-05
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": -353.4668870147434,
+      "difference_from_same_n_baseline_h": -0.09818524639298427
+    },
+    {
+      "name": "q4_boundary_plus_0p005_n40",
+      "case": "q4",
+      "scenario": "boundary_plus_0p005",
+      "n": 40,
+      "critical_s": 184387.51086300134,
+      "critical_h": 51.218753017500376,
+      "event_independent": {
+        "max_C": 0.15000000000000027,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": -2.1453117355962136e-12,
+        "moisture_boundary_residual_m_s": -2.6097548326048023e-22,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.15023399708996985,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15023399708996962,
+        "heat_boundary_residual_W_m2": -4.663784614493717e-11,
+        "moisture_boundary_residual_m_s": -3.680953725860973e-22,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.2418753997008607,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": 2.9356031494565116e-11,
+        "moisture_boundary_residual_m_s": -6.526388858594384e-19,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.00014863801956011002,
+        1.691783107371503e-05
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 456.2993233287125,
+      "difference_from_same_n_baseline_h": 0.12674981203575347
+    },
+    {
+      "name": "q4_temperature_minus_1K_n40",
+      "case": "q4",
+      "scenario": "temperature_minus_1K",
+      "n": 40,
+      "critical_s": 189825.64581437074,
+      "critical_h": 52.72934605954743,
+      "event_independent": {
+        "max_C": 0.15000000000000022,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 5.487664146621269e-11,
+        "moisture_boundary_residual_m_s": 1.0385252590603262e-21,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.153025636646643,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15302563664664276,
+        "heat_boundary_residual_W_m2": -3.696284344818343e-11,
+        "moisture_boundary_residual_m_s": -5.662051292925474e-22,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.241875399700862,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": 4.139977249906224e-11,
+        "moisture_boundary_residual_m_s": 1.7120653446377546e-19,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.0010436942080715994,
+        3.541480423363552e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 5894.434274698113,
+      "difference_from_same_n_baseline_h": 1.6373428540828092
+    },
+    {
+      "name": "q4_temperature_minus_1K_n60",
+      "case": "q4",
+      "scenario": "temperature_minus_1K",
+      "n": 60,
+      "critical_s": 189825.6459881714,
+      "critical_h": 52.729346107825386,
+      "event_independent": {
+        "max_C": 0.14999999999999997,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": -1.2372943614563492e-10,
+        "moisture_boundary_residual_m_s": 2.5757990684595005e-20,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.15302563674720676,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15302563674720665,
+        "heat_boundary_residual_W_m2": -7.24151326173174e-11,
+        "moisture_boundary_residual_m_s": 2.1710182357066764e-20,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.2418753997008554,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": 3.112532453997119e-11,
+        "moisture_boundary_residual_m_s": 5.599417176942959e-18,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        -0.0004641754239145257,
+        1.7425848264362997e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": 5894.434277778899,
+      "difference_from_same_n_baseline_h": 1.6373428549385831
+    },
+    {
+      "name": "q4_temperature_plus_1K_n40",
+      "case": "q4",
+      "scenario": "temperature_plus_1K",
+      "n": 40,
+      "critical_s": 178291.2346804548,
+      "critical_h": 49.525342966793,
+      "event_independent": {
+        "max_C": 0.15000000000000024,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.15,
+        "heat_boundary_residual_W_m2": 9.590719300077866e-12,
+        "moisture_boundary_residual_m_s": 3.6892255319865034e-22,
+        "radius_m": 0.012
+      },
+      "official_independent": {
+        "max_C": 0.14710252129915383,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 0.14710252129915374,
+        "heat_boundary_residual_W_m2": 3.875804966095217e-12,
+        "moisture_boundary_residual_m_s": -2.193269394184353e-21,
+        "radius_m": 0.012
+      },
+      "initial_independent": {
+        "max_C": 2.241875399700859,
+        "x_at_max": 0.0,
+        "stationary_points": 0,
+        "node_max_C": 2.2418753997008523,
+        "heat_boundary_residual_W_m2": 2.148681232938543e-11,
+        "moisture_boundary_residual_m_s": -8.374508870384861e-19,
+        "radius_m": 0.014770000000000002
+      },
+      "surface_TC_reset_from_source_at_4h": [
+        0.0007464180895695449,
+        4.6888947879963894e-07
+      ],
+      "source_initial_interior_max_difference": 0.0,
+      "baseline_error_vs_frozen_root_s": null,
+      "difference_from_same_n_baseline_s": -5639.97685921783,
+      "difference_from_same_n_baseline_h": -1.5666602386716193
+    }
+  ],
+  "refinement": {
+    "q3": {
+      "coarse_n": 40,
+      "fine_n": 80,
+      "baseline_refinement_change_s": 0.0029261039453558624,
+      "minus1K_refinement_change_s": 0.0029502575926017016,
+      "minus1K_effect_coarse_s": 6722.203368785558,
+      "minus1K_effect_fine_s": 6722.2033929392055,
+      "effect_refinement_change_s": 2.4153647245839238e-05,
+      "effect_fine_h": 1.8672787202608905,
+      "fine_baseline_error_vs_frozen_root_s": 1.2078089639544487e-08
+    },
+    "q4": {
+      "coarse_n": 40,
+      "fine_n": 60,
+      "baseline_refinement_change_s": 0.00017071986803784966,
+      "minus1K_refinement_change_s": 0.0001738006540108472,
+      "minus1K_effect_coarse_s": 5894.434274698113,
+      "minus1K_effect_fine_s": 5894.434277778899,
+      "effect_refinement_change_s": 3.080785972997546e-06,
+      "effect_fine_h": 1.6373428549385831,
+      "fine_baseline_error_vs_frozen_root_s": -5.0966336857527494e-06
+    }
+  },
+  "sha256": {
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_baseline_n40.json": "fdfba57f2aa82dcc99ff2be8f35b6a7bacadd5bf1ab9f143a1827c7110bf590e",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_baseline_n40.npz": "6f15b6e6417555373b5e7ddf1891a7d46cb424ff665056b8d69bf3da18cc5e04",
+    "q4_complete_delivery\\v1\\q123_closeout\\output\\q23_unified.npz": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\legacy_q3\\q3_reference.py": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+    "q1234_overall_review_delivery\\v1\\source\\environment_probe.py": "8e479ee8f2ff48e8ec43e6d7883af5145bf46197251240a2c6834cd339daf4bb",
+    "q4_complete_delivery\\v1\\inputs\\attachment1.xlsx": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "q4_complete_delivery\\v1\\inputs\\attachment2.xlsx": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_baseline_n80.json": "cff78b411cef7abc4ab54a205a44b6af80f1f2d5893cb39b42fe22ee5ae88543",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_baseline_n80.npz": "9964d16b84080a6b1e1461a2d7e36c4dd4c0bde7d834f6ed13b1d0cd808af961",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_boundary_minus_0p005_n40.json": "d4e3f74329ad2448d0570446b8ae8e6920b69b50c3b8e1b6023e0dca4666e314",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_boundary_minus_0p005_n40.npz": "77fd234820a934a512be0e09cc36ccb6bcaf09bdd43d0ed316a0c5a96e266fc5",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_boundary_plus_0p005_n40.json": "3fd5c6d8db56f6824acbd816c766468fe4119566a9ac35a17e68b1b06af57510",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_boundary_plus_0p005_n40.npz": "694221062d7af00d56a73e651da1e2dee72071cf1a51a65ef532db132f7447c2",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_minus_1K_n40.json": "6a2eaa9a400519bd2b8f0cb57efe56277c4c726b1832d218f9470ebe28d7a144",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_minus_1K_n40.npz": "f7581728b36e90a9abd0f8fbe28168056fc6d89f850e2e02bdaf130eedd6e6a8",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_minus_1K_n80.json": "66b0f6e77c478c5288feaeb09006345feb564f5408db06ccb49013a6a8d34145",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_minus_1K_n80.npz": "17bca6930454d28758997dc750539c63bc005fe124e561055afbdda76c1337f6",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_plus_1K_n40.json": "192350d1182ec96f4c1be23165b4252761c00f33b9813d132c6489bf0a57bc8d",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q3_temperature_plus_1K_n40.npz": "dff70339172aa6b13cca0c646c0c289a0d4372085028bbacf1bea6deb96b228f",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_baseline_n40.json": "ab7255bbc7ae660c66cb8e7bd09c9d1e7d8c8d3f432c43b5a46b066615a405e6",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_baseline_n40.npz": "c3862c5a3b2322220638f2cf540ec77c10a838bd2305830e0abb88b9dd712679",
+    "q4_complete_delivery\\v1\\output\\main.npz": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+    "q4_complete_delivery\\v1\\source\\q4_spectral.py": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_baseline_n60.json": "418c7f3798f19ab5aa0d9321f1c73a712300f5df2abdbc5636c26d2cc4935b48",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_baseline_n60.npz": "0bb5c7ee7bb17a015ed838801d5e0dbc0bb49b8f931c4f66f6a90e7c15e74f62",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_boundary_minus_0p005_n40.json": "9481945c0f8a3a7b9f0ed765debe897f9499ebc67ba4944ef5a774521f25bdd0",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_boundary_minus_0p005_n40.npz": "8dcf8369bf30d58ebf6971ffe5035f6d13ba2f9cef207f52ea58b568f557aa6b",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_boundary_plus_0p005_n40.json": "05ad79248567af35a56c27e3a66b11b7c5268fbd083281d94ad6f5201b0ec24c",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_boundary_plus_0p005_n40.npz": "6e345516a1de48b2a292bc93ec63aa4dc9cd547dd886f449857b4d8ee825b3d5",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_minus_1K_n40.json": "cc9913d83b8620b7d7b8cfc628dd42549e8356366821d51daa206a2ccd5fef5c",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_minus_1K_n40.npz": "5cfcf3efd65259824ba5e7dc79878c917f7d6ac0b389fddfc4a176fb17ed7b47",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_minus_1K_n60.json": "dc1c88dbe034efb936a113428fb9c83d8db982df0b8868c95e48882ebb37cf17",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_minus_1K_n60.npz": "772dcf23de900792510bdf255927a868291285f1a9fc8ed13759f5d6bdfa2263",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_plus_1K_n40.json": "93f6d15b6ba5fa1267cfcdf2961cfd89fa24fe79bd24e7ca85266b7a7c8fdb81",
+    "q1234_overall_review_delivery\\v1\\evidence\\environment\\q4_temperature_plus_1K_n40.npz": "219021158f1ccbd5ac30471b83104e875db1ec117a96959315c70aa7ba55743c"
+  },
+  "limitations": [
+    "Nested node restriction is exact at retained nodes, not an error-free lower-degree representation.",
+    "Only baseline and minus-1 K were spatially refined; no temporal refinement was added in this audit.",
+    "Events were detected at interior nodes; independent whole-radial primitive-polynomial extrema validate the saved event states, not continuum maxima.",
+    "4 h future-platform changes are step interventions. Surface is algebraically reset; bulk state is unchanged.",
+    "Q4 radius is held to observed R(t) under each changed environment, so results are conditional, not feedback predictions."
+  ]
+}

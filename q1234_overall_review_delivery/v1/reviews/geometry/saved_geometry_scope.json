@@ -1,0 +1,71 @@
+[
+  {
+    "two_dimensional": "q1_80x128",
+    "paired_one_dimensional": "q1_80x0",
+    "saved_time_s": 1800,
+    "mean_T_C_2d": [
+      35.42743659405181,
+      2.274929394517667
+    ],
+    "mean_T_C_1d": [
+      35.168039307760495,
+      2.2935317716076713
+    ],
+    "mean_T_C_2d_minus_1d": [
+      0.25939728629131764,
+      -0.01860237709000412
+    ],
+    "normalized_water_loss_2d_relative_increase": 0.07253287164111177,
+    "source_sha256": {
+      "q4_complete_delivery\\v1\\validation\\geometry\\q1_80x128.npz": "4ae0f6e60ac095c265f7356fe73a3c6804acaaf6e7fafcc70c769fc6e0dee947",
+      "q4_complete_delivery\\v1\\validation\\geometry\\q1_80x0.npz": "b0844d5f7339355d04712c66122610cd03032d62acf0359efecd81909f58b9dd"
+    },
+    "interpretation": "Postprocessing saved states, not new PDE runs. Volume means equal dry-mass means only for the current spatially uniform dry density assumption. Thermal mean is arithmetic volume mean, not enthalpy."
+  },
+  {
+    "two_dimensional": "q23_80x256_integral",
+    "paired_one_dimensional": "q23_80x0_integral",
+    "saved_time_s": 10800,
+    "mean_T_C_2d": [
+      49.92780430783142,
+      1.3274816028351906
+    ],
+    "mean_T_C_1d": [
+      49.90434063327037,
+      1.3824922999742328
+    ],
+    "mean_T_C_2d_minus_1d": [
+      0.02346367456105014,
+      -0.055010697139042275
+    ],
+    "normalized_water_loss_2d_relative_increase": 0.04711805938224489,
+    "source_sha256": {
+      "q4_complete_delivery\\v1\\validation\\geometry\\q23_80x256_integral.npz": "acfc056a0bc68ff617f19ce01712e5ffa83437e9dcfacb4f09da957070ae598a",
+      "q4_complete_delivery\\v1\\validation\\geometry\\q23_80x0_integral.npz": "2e26d3d392d207092bbbdd3f0b49d94d4aa01585a45e8c4de51c988d8d5444c2"
+    },
+    "interpretation": "Postprocessing saved states, not new PDE runs. Volume means equal dry-mass means only for the current spatially uniform dry density assumption. Thermal mean is arithmetic volume mean, not enthalpy."
+  },
+  {
+    "two_dimensional": "q4_80x128_integral",
+    "paired_one_dimensional": "q4_80x0_integral",
+    "saved_time_s": 21600,
+    "mean_T_C_2d": [
+      49.9989275520168,
+      1.0245452390726868
+    ],
+    "mean_T_C_1d": [
+      49.998924388446724,
+      1.065197964201787
+    ],
+    "mean_T_C_2d_minus_1d": [
+      3.1635700779020226e-06,
+      -0.04065272512910023
+    ],
+    "normalized_water_loss_2d_relative_increase": 0.0273792223804743,
+    "source_sha256": {
+      "q4_complete_delivery\\v1\\validation\\geometry\\q4_80x128_integral.npz": "3aad109b0d5af3fa33b1d95e334a7a02be8afb21353d16f9286f9a63aa1d2c8e",
+      "q4_complete_delivery\\v1\\validation\\geometry\\q4_80x0_integral.npz": "165f497a9fed52b9072ba3f5afa0a1c2c2d5fbf31300472df71cc36994e8fcaa"
+    },
+    "interpretation": "Postprocessing saved states, not new PDE runs. Volume means equal dry-mass means only for the current spatially uniform dry density assumption. Thermal mean is arithmetic volume mean, not enthalpy."
+  }
+]

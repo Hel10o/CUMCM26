@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "pairs_checked": 14,
+  "refinement": {
+    "q3": {
+      "coarse_n": 40,
+      "fine_n": 80,
+      "baseline_refinement_change_s": 0.0029261039453558624,
+      "minus1K_refinement_change_s": 0.0029502575926017016,
+      "minus1K_effect_coarse_s": 6722.203368785558,
+      "minus1K_effect_fine_s": 6722.2033929392055,
+      "effect_refinement_change_s": 2.4153647245839238e-05,
+      "effect_fine_h": 1.8672787202608905,
+      "fine_baseline_error_vs_frozen_root_s": 1.2078089639544487e-08
+    },
+    "q4": {
+      "coarse_n": 40,
+      "fine_n": 60,
+      "baseline_refinement_change_s": 0.00017071986803784966,
+      "minus1K_refinement_change_s": 0.0001738006540108472,
+      "minus1K_effect_coarse_s": 5894.434274698113,
+      "minus1K_effect_fine_s": 5894.434277778899,
+      "effect_refinement_change_s": 3.080785972997546e-06,
+      "effect_fine_h": 1.6373428549385831,
+      "fine_baseline_error_vs_frozen_root_s": -5.0966336857527494e-06
+    }
+  }
+}
+q3_baseline_n40: 57.4739963906 h; delta same-grid baseline 0.000000000 s; official Cmax 0.149999891356
+q3_baseline_n80: 57.4739972034 h; delta same-grid baseline 0.000000000 s; official Cmax 0.149999892208
+q3_boundary_minus_0p005_n40: 57.3827477208 h; delta same-grid baseline -328.495211402 s; official Cmax 0.149904314935
+q3_boundary_plus_0p005_n40: 57.5841129195 h; delta same-grid baseline 396.419503807 s; official Cmax 0.150115472416
+q3_temperature_minus_1K_n40: 59.3412751042 h; delta same-grid baseline 6722.203368786 s; official Cmax 0.151945189224
+q3_temperature_minus_1K_n80: 59.3412759237 h; delta same-grid baseline 6722.203392939 s; official Cmax 0.151945190110
+q3_temperature_plus_1K_n40: 55.6883571757 h; delta same-grid baseline -6428.301173716 s; official Cmax 0.148115241769
+q4_baseline_n40: 51.0920032055 h; delta same-grid baseline 0.000000000 s; official Cmax 0.149999821071
+q4_baseline_n60: 51.0920032529 h; delta same-grid baseline 0.000000000 s; official Cmax 0.149999821159
+q4_boundary_minus_0p005_n40: 50.9938179591 h; delta same-grid baseline -353.466887015 s; official Cmax 0.149818351453
+q4_boundary_plus_0p005_n40: 51.2187530175 h; delta same-grid baseline 456.299323329 s; official Cmax 0.150233997090
+q4_temperature_minus_1K_n40: 52.7293460595 h; delta same-grid baseline 5894.434274698 s; official Cmax 0.153025636647
+q4_temperature_minus_1K_n60: 52.7293461078 h; delta same-grid baseline 5894.434277779 s; official Cmax 0.153025636747
+q4_temperature_plus_1K_n40: 49.5253429668 h; delta same-grid baseline -5639.976859218 s; official Cmax 0.147102521299

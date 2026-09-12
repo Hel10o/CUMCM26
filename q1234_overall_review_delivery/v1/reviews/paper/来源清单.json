@@ -1,0 +1,128 @@
+{
+  "baseline_commit": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "created": "2026-09-12",
+  "review": "paper/meaning/current prose",
+  "new_pde_runs": 0,
+  "source_files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e023f7faf848b3597a420b4b16e503c471449f5fc577a92cbb5e78b7436aaa75",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "README.md",
+      "sha256": "edd749b023d9536212b0ba0adadacd78065d97bb361b592e2dddb4cc13acf8c4",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q1234_overall_review_handoff/四问整体结果与建模改进_Pro交接文档.md",
+      "sha256": "3d55cd0e6555449989c98d277428fff51ec5fdff4bf7181873ea2551d0eff1d1",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "review_q4_20260912/第四问接收核查与整体复审要点.md",
+      "sha256": "093a313d7705a170542e3421a5b4f03ca66b44ef37a68f9583aeac380d7f24ca",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "readable/problem/fulltext.md",
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/第一问论文正文.md",
+      "sha256": "dded0ba2aa81dcfd2648e1a862120ada89a0587774f50c596277de796be89d13",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q2_final_delivery/output/第二问论文正文.md",
+      "sha256": "191332dfb9c783159efb04f929cc9170226eb03e7a7d1012c912d421c59e4b20",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q3_refinement_delivery/第三问最终复审与答案.md",
+      "sha256": "6d794b75fc1d982f5481b64d64385c7c85a62f2a4e497a599659b0f477c05fd9",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问论文正文.md",
+      "sha256": "a7cb5eebced816bec186c4b5b99df12c058dcfbc35de5430e85e2af87e7ef298",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问分析与答案.md",
+      "sha256": "a6cec4afb3fdb218799d9ad02763711ec9068e74e40739d6f4c127e5a64e019b",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/第四问模型与文献采用.md",
+      "sha256": "ecb2c679f63ceb20a87c9874e59c32ef34181c71b124cc090bd1cfa7a413a6ab",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/第二问全时域收尾.md",
+      "sha256": "17bd0c39daf875236b819ab16acac357fcec3d52b5a08fafb5e88ffa2dc5b3f7",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/一维二维适用范围.md",
+      "sha256": "fa8903d935643865439c0029ab01bc2e2e458685b2c57e819bfe916e592d70c5",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "q4_complete_delivery/v1/validation/geometry/corrected_global_event_estimates.json",
+      "sha256": "56bca2e1925c1529eff0c21c35e3ce04e2f02ecda5f935cecd084f0e03ff64d2",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/README.md",
+      "sha256": "052da1279eb8537b3313f401be26bb52df7af3acbd30bbbe2888b9ab88b8637f",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/main.tex",
+      "sha256": "955a0153a77408e1b784f8a1754ffde84b2fcadc88079e0e322cf886af3d4c5f",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/preliminaries.tex",
+      "sha256": "86ac745921d952be4b8ed5fd128070866cfa6b2956db1e3ecf2593c04ed30c60",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_model.tex",
+      "sha256": "d14358c4e3df324568724750aac6f7097dbd9b11dc4df03fbbd1f864d401511b",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q1_limits.tex",
+      "sha256": "88cc24eefdfe26e2cc673a7d36ddffb9fa251744af1686e5f3f9d5dd9982b20f",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_model.tex",
+      "sha256": "6894c877de1904cdb35e3a2ccb7aaf64ff1bcdc001ff15db38dc55c0a7a2d839",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_results.tex",
+      "sha256": "43c09edc073ff358ff4bbccfa504d2d7add64b9b4d032595607272f0d20b7979",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "paper/q1_q2_stage/sections/q2_limits.tex",
+      "sha256": "964ce9b5be17d75857009ec339d40af50d65391315a6ab75f665dc7b69691c6f",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "review_q4_20260912/agent_q4/saved_q4_audit.json",
+      "sha256": "933e73d7d570a5931b4d6d0e5fc141fd8a00f83fe715661477c1c42cc6bd07fd",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    },
+    {
+      "path": "review_q123_physics_20260911/前三问现状与物理闭合审核.md",
+      "sha256": "3698604fbc66755910ea14a6ebef1e9c6fa2173f91db4201498d031c50534ed8",
+      "read_scope": "Text read; some long files were targeted sections/searches, not full original-media review"
+    }
+  ]
+}

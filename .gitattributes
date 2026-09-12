@@ -29,6 +29,7 @@ q4_complete_delivery/** -text
 q4_complete_delivery/**/*.svg binary
 review_q4_20260912/** -text
 q1234_overall_review_handoff/** -text
+q1234_overall_review_delivery/** -text
 review_q2_20260911/** -text
 paper/** -text
 readable/** text eol=lf

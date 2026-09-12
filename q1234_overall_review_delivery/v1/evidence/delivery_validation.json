@@ -1,0 +1,1507 @@
+{
+  "status": "PASS",
+  "validated_utc": "2026-09-12T03:45:43.284554+00:00",
+  "source_commit": "bbf7658ea020f45564f40f90153f91960a16a40c",
+  "scope": "Artifact/source identity, prior frozen Q4 content hashes, raw workbook header read, new numerical records, nested manifests, Python syntax and Markdown targets. No PDE solve or full Excel cell re-audit.",
+  "source_files_checked": 67,
+  "frozen_q4_manifest_entries_checked": 277,
+  "official_workbook_headers": [
+    {
+      "path": "q1_complete_delivery/q1_delivery/output/result1.xlsx",
+      "sha256": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+      "sheets": [
+        {
+          "xml": "xl/worksheets/sheet1.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间/s \\ 径向距离/cm\n温度/℃"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.3"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "V2",
+                  "type": "n",
+                  "raw": "28.0002"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "xml": "xl/worksheets/sheet2.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间/s \\ 径向距离/cm\n干基含水率/(kg/kg)"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.3"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "V2",
+                  "type": "n",
+                  "raw": "2.5177"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sheet_names": [
+        "温度",
+        "水分浓度"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+      "sha256": "88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870",
+      "sheets": [
+        {
+          "xml": "xl/worksheets/sheet1.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间\\到药材中心的距离"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.30000000000000004"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6000000000000001"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7000000000000001"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2000000000000002"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4000000000000001"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7000000000000002"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9000000000000001"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "28"
+                },
+                {
+                  "ref": "V2",
+                  "type": "n",
+                  "raw": "28.0001"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "xml": "xl/worksheets/sheet2.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间\\到药材中心的距离"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.30000000000000004"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6000000000000001"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7000000000000001"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2000000000000002"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4000000000000001"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7000000000000002"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9000000000000001"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "V2",
+                  "type": "n",
+                  "raw": "2.5198"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sheet_names": [
+        "温度",
+        "水分浓度"
+      ]
+    },
+    {
+      "path": "q3_refinement_delivery/output/result3.xlsx",
+      "sha256": "acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17",
+      "sheets": [
+        {
+          "xml": "xl/worksheets/sheet1.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间/s\\到药材中心的距离/cm"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.30000000000000004"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6000000000000001"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7000000000000001"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2000000000000002"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4000000000000001"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7000000000000002"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9000000000000001"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "60"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "2.5500000000000007"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "2.549999999999998"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "2.549999999999999"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "2.5500000000000003"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "2.5499999999999994"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "2.5499999999999994"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "2.5499999999999994"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "2.5500000000000003"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "2.549999999999998"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "2.5500000000000003"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "2.5499999999999994"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "2.5499999999999856"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "2.549999999935411"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "2.5499999277276304"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "2.5499797168397675"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "2.548504487307348"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "2.518471507601392"
+                },
+                {
+                  "ref": "V2",
+                  "type": "n",
+                  "raw": "2.327084211304689"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sheet_names": [
+        "Sheet1"
+      ]
+    },
+    {
+      "path": "q4_complete_delivery/v1/output/result4.xlsx",
+      "sha256": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+      "sheets": [
+        {
+          "xml": "xl/worksheets/sheet1.xml",
+          "declared_dimension": null,
+          "first_two_rows_raw": [
+            {
+              "r": "1",
+              "cells": [
+                {
+                  "ref": "A1",
+                  "type": "str",
+                  "raw": "时间\\到药材中心的距离"
+                },
+                {
+                  "ref": "B1",
+                  "type": "n",
+                  "raw": "0"
+                },
+                {
+                  "ref": "C1",
+                  "type": "n",
+                  "raw": "0.1"
+                },
+                {
+                  "ref": "D1",
+                  "type": "n",
+                  "raw": "0.2"
+                },
+                {
+                  "ref": "E1",
+                  "type": "n",
+                  "raw": "0.3"
+                },
+                {
+                  "ref": "F1",
+                  "type": "n",
+                  "raw": "0.4"
+                },
+                {
+                  "ref": "G1",
+                  "type": "n",
+                  "raw": "0.5"
+                },
+                {
+                  "ref": "H1",
+                  "type": "n",
+                  "raw": "0.6"
+                },
+                {
+                  "ref": "I1",
+                  "type": "n",
+                  "raw": "0.7"
+                },
+                {
+                  "ref": "J1",
+                  "type": "n",
+                  "raw": "0.8"
+                },
+                {
+                  "ref": "K1",
+                  "type": "n",
+                  "raw": "0.9"
+                },
+                {
+                  "ref": "L1",
+                  "type": "n",
+                  "raw": "1"
+                },
+                {
+                  "ref": "M1",
+                  "type": "n",
+                  "raw": "1.1"
+                },
+                {
+                  "ref": "N1",
+                  "type": "n",
+                  "raw": "1.2"
+                },
+                {
+                  "ref": "O1",
+                  "type": "n",
+                  "raw": "1.3"
+                },
+                {
+                  "ref": "P1",
+                  "type": "n",
+                  "raw": "1.4"
+                },
+                {
+                  "ref": "Q1",
+                  "type": "n",
+                  "raw": "1.5"
+                },
+                {
+                  "ref": "R1",
+                  "type": "n",
+                  "raw": "1.6"
+                },
+                {
+                  "ref": "S1",
+                  "type": "n",
+                  "raw": "1.7"
+                },
+                {
+                  "ref": "T1",
+                  "type": "n",
+                  "raw": "1.8"
+                },
+                {
+                  "ref": "U1",
+                  "type": "n",
+                  "raw": "1.9"
+                },
+                {
+                  "ref": "V1",
+                  "type": "n",
+                  "raw": "2"
+                },
+                {
+                  "ref": "W1",
+                  "type": "str",
+                  "raw": "药材表面"
+                },
+                {
+                  "ref": "Y1",
+                  "type": "str",
+                  "raw": "实际半径R(t) / cm"
+                },
+                {
+                  "ref": "AA1",
+                  "type": "str",
+                  "raw": "输出说明"
+                }
+              ]
+            },
+            {
+              "r": "2",
+              "cells": [
+                {
+                  "ref": "A2",
+                  "type": "n",
+                  "raw": "60"
+                },
+                {
+                  "ref": "B2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "C2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "D2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "E2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "F2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "G2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "H2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "I2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "J2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "K2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "L2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "M2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "N2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "O2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "P2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "Q2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "R2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "S2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "T2",
+                  "type": "n",
+                  "raw": "2.55"
+                },
+                {
+                  "ref": "U2",
+                  "type": "n",
+                  "raw": "2.5486"
+                },
+                {
+                  "ref": "V2",
+                  "type": null,
+                  "raw": ""
+                },
+                {
+                  "ref": "W2",
+                  "type": "n",
+                  "raw": "2.0794"
+                },
+                {
+                  "ref": "Y2",
+                  "type": "n",
+                  "raw": "1.995766666666667"
+                },
+                {
+                  "ref": "AA2",
+                  "type": "str",
+                  "raw": "时间单位：秒；固定径向坐标单位：厘米。"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sheet_names": [
+        "Sheet1"
+      ]
+    }
+  ],
+  "environment_pair_count": 14,
+  "environment_total_solver_elapsed_s": 37.077916000003825,
+  "independent_environment_check": "PASS",
+  "nested_manifest_entries_checked": 22,
+  "python_ast_files_checked": 6,
+  "markdown_local_targets_checked": 52,
+  "unexpected_changed_baseline_paths": [],
+  "unresolved_model_work": [
+    "Fine direct Q4 2D validation",
+    "Physical calibration and closure",
+    "New combined paper"
+  ],
+  "model_review_complete_is_not_model_validation_complete": true
+}

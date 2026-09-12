@@ -2,9 +2,11 @@
 
 项目题目、建模资料、四问计算交付、独立核验，以及第一、二问论文阶段稿。
 
-第四问交付已接收并完成[本机针对性核查](review_q4_20260912/README.md)。当前交给 Pro 的任务是[四问整体结果与模型改进复审](q1234_overall_review_handoff/README.md)：评价题意、物理假设、结果可信范围和改进优先级。[完整交接文档](q1234_overall_review_handoff/四问整体结果与建模改进_Pro交接文档.md)、[直接发送的提示词](q1234_overall_review_handoff/发给Pro的提示词.txt)及[精选离线输入包](q1234_overall_review_handoff/四问整体复审输入包.zip)配套使用。此前[第四问求解任务书](q4_pro_handoff/README.md)保留为历史合同。
+第四问交付已接收并完成[本机针对性核查](review_q4_20260912/README.md)，随后已完成[四问整体批判性模型复审](q1234_overall_review_delivery/v1/README.md)。复审基于提交 `bbf7658` 的实际题面、现行答案、代码和数组，新增有限环境情景、二维正式点续算及物理闭合诊断；结论和下一轮行动见[整体结论](q1234_overall_review_delivery/v1/四问整体复审结论.md)、[P0/P1/P2清单](q1234_overall_review_delivery/v1/问题清单与改进优先级.md)、[论文修订表](q1234_overall_review_delivery/v1/统一模型假设与论文修订表.md)和[三个补算合同](q1234_overall_review_delivery/v1/最小补算计划.md)。[本轮报告与证据ZIP](q1234_overall_review_delivery/四问整体复审报告_v1.zip)只包含新增复审成果；此前[完整交接与离线输入包](q1234_overall_review_handoff/README.md)保留为本轮输入合同，原交付未覆盖。
 
 当前正式文件为：[Q1 result1](q1_complete_delivery/q1_delivery/output/result1.xlsx)、[Q2最新全程result2](q4_complete_delivery/v1/q123_closeout/result2.xlsx)、[Q3现行result3](q3_refinement_delivery/output/result3.xlsx)、[Q4 result4](q4_complete_delivery/v1/output/result4.xlsx)。Q3执行 **57.4741h**，Q4执行 **51.0921h**，均为已声明有效模型下的条件结果；二维配对校正属于估计，不是连续全域严格误差界。以下各节保留历次验收过程，现行版本优先按本段和整体复审版本表读取。
+
+整体复审未检出迫使重写现行四份Excel的确定性计算硬错。新直接续算中，Q3的80×256二维正式点全节点达标，Q4的80×128粗网格正式点仍略高于阈值，因此Q4精细二维直接补证仍需完成；这不等同于推翻精细一维与配对校正估计。人工后段降1K情景使Q3/Q4根分别延后约1.87h/1.64h，说明长期工况假设比末位数值更值得验证。湿度映射、真实密度和潜热闭合仍限制物理预测；本轮交付的是复审报告，尚未修改或编译四问合稿。
 
 用户已选择保留题给物性、一维径向有效传热—传质、无显式潜热的主线；二维检验目标输出和全域达标，潜热放在扩展与局限讨论。已收到[题意复审交付](q123_requirements_review_delivery/README.md)，其尚未闭合的含潜热候选R_L和[此前四组F比较](q123_model_selection_delivery/v1/README.md)均保留为背景，不覆盖用户当前选择。旧结果仍按原假设保留，不能声称官方公式已经包含潜热。
 
@@ -57,6 +59,7 @@
 - [第四问与前三问收尾交接](q4_pro_handoff/README.md)、[项目论文阅读清单](q4_pro_handoff/第四问论文阅读清单.md)及[离线输入包](q4_pro_handoff/q4_inputs.zip)。
 - [第四问完整交付](q4_complete_delivery/README.md)、[第四问论文正文](q4_complete_delivery/v1/第四问论文正文.md)、[表6](q4_complete_delivery/v1/output/表6.md)及[前三问收尾](q4_complete_delivery/v1/q123_closeout/README.md)。
 - [第四问本机接收核查](review_q4_20260912/第四问接收核查与整体复审要点.md)与[四问整体复审交接](q1234_overall_review_handoff/README.md)。
+- [四问整体模型复审交付](q1234_overall_review_delivery/v1/README.md)、[来源清单](q1234_overall_review_delivery/v1/来源清单.json)、[本轮报告ZIP](q1234_overall_review_delivery/四问整体复审报告_v1.zip)及[ZIP哈希](q1234_overall_review_delivery/四问整体复审报告_v1.zip.sha256)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
