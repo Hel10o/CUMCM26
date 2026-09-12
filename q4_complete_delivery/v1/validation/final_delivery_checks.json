@@ -1,0 +1,54 @@
+{
+  "required_files_present": [
+    "README.md",
+    "第四问模型与文献采用.md",
+    "第四问分析与答案.md",
+    "第四问论文正文.md",
+    "output/result4.xlsx",
+    "output/main.npz",
+    "output/end_event.json",
+    "output/表6.md",
+    "q123_closeout/README.md",
+    "q123_closeout/result2.xlsx",
+    "q123_closeout/一维二维适用范围.md",
+    "validation/workbook_result2.json",
+    "validation/workbook_result4.json",
+    "validation/geometry/q23_80x256_integral.npz",
+    "validation/geometry/q4_80x128_integral.npz"
+  ],
+  "archive_crc_checks": {
+    "output/result4.xlsx": null,
+    "q123_closeout/result2.xlsx": null,
+    "output/main.npz": null,
+    "q123_closeout/output/q23_unified.npz": null
+  },
+  "python_sources_parse": true,
+  "historical_directories_git_diff_exit_code": 0,
+  "historical_directories_checked": [
+    "q1_complete_delivery",
+    "q2_final_delivery",
+    "q3_refinement_delivery",
+    "q123_model_selection_delivery",
+    "q123_requirements_review_delivery",
+    "paper"
+  ],
+  "existing_output_refused": true,
+  "q4_execution_strict_1d": true,
+  "q3_execution_strict_1d": true,
+  "q4_2d_scope": "matched-grid correction and full event-state maximum; no claim raw coarse-grid endpoint directly qualifies at official time",
+  "spectral160_completed": true,
+  "q4_60s_workbook_all_values_checked_in": "workbook_result4.json",
+  "q2_all_second_workbook_all_values_checked_in": "workbook_result2.json",
+  "github_sync": "blocked by application HTTP403; no remote commit/ref created",
+  "resolution_of_review_notes": [
+    "end_event source now explicitly says official 1D endpoint",
+    "table6 domain blanks and rounded 0.1500 explanation added",
+    "Q4 80x128 and Q23 80x256 completed; paired-grid estimates labeled",
+    "numeric budget explicitly empirical, not physical or rigorous bound"
+  ],
+  "figures_png_svg_pairs_visually_reviewed": 5,
+  "not_executed_as_an_additional_run": "new run_all orchestration wrapper full chain; components actually executed separately",
+  "final_document_readback": "README, answer and paper read after final assembly; equations, source metrics and 1D/2D estimate labels checked",
+  "q23_80x256_completed": true,
+  "root_readme_updated": true
+}

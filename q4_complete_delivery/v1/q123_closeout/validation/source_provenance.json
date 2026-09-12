@@ -1,0 +1,78 @@
+{
+  "read_commit_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "copied_files": [
+    {
+      "local": "source/legacy_q3/q3_reference.py",
+      "origin_repository_path": "q3_refinement_delivery/source/q3_reference.py",
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "bytes": 8667,
+      "byte_identical": true
+    },
+    {
+      "local": "source/legacy_q3/q3_solver.py",
+      "origin_repository_path": "q3_refinement_delivery/source/q3_solver.py",
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "bytes": 19331,
+      "byte_identical": true
+    },
+    {
+      "local": "inputs/attachment1.xlsx",
+      "origin_repository_path": "q3_refinement_delivery/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586,
+      "byte_identical": true
+    }
+  ],
+  "frozen_comparison_inputs": [
+    {
+      "local": "inputs/historical_baseline/q2_final_delivery/output/q2_unrounded.npz",
+      "origin_repository_path": "q2_final_delivery/output/q2_unrounded.npz",
+      "bytes": 3299005,
+      "sha256": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec"
+    },
+    {
+      "local": "inputs/historical_baseline/q2_final_delivery/output/result2.xlsx",
+      "origin_repository_path": "q2_final_delivery/output/result2.xlsx",
+      "bytes": 2501564,
+      "sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0"
+    },
+    {
+      "local": "inputs/historical_baseline/q2_final_delivery/output/table_temperature.csv",
+      "origin_repository_path": "q2_final_delivery/output/table_temperature.csv",
+      "bytes": 295,
+      "sha256": "bdad441edb333126c2a205bfc9ffabdaa4cf84e884329d62f67059690ad577fe"
+    },
+    {
+      "local": "inputs/historical_baseline/q2_final_delivery/output/table_moisture.csv",
+      "origin_repository_path": "q2_final_delivery/output/table_moisture.csv",
+      "bytes": 265,
+      "sha256": "6ec3725f1c9d078fa41b23405d48865745194c0bba4e310a11ecfc8a94c75aa0"
+    },
+    {
+      "local": "inputs/historical_baseline/q3_refinement_delivery/output/solution.npz",
+      "origin_repository_path": "q3_refinement_delivery/output/solution.npz",
+      "bytes": 736909,
+      "sha256": "6dc8e7fb69b684162ef60016741200815fb797b6af5824b19ec1b8772553dfab"
+    }
+  ],
+  "frozen_reference160_inputs": [
+    {
+      "origin_repository_path": "q3_refinement_delivery/validation/numeric/reference160_bdf_historical.npz",
+      "local": "inputs/historical_baseline/q3_refinement_delivery/validation/numeric/reference160_bdf_historical.npz",
+      "sha256": "53440ab4a45fc887a1edeba500b25589e84f2ca2a557ca1871d41b04b250f7b4",
+      "bytes": 787473
+    },
+    {
+      "origin_repository_path": "q3_refinement_delivery/validation/numeric/reference160_official_endpoint_historical.npz",
+      "local": "inputs/historical_baseline/q3_refinement_delivery/validation/numeric/reference160_official_endpoint_historical.npz",
+      "sha256": "5c88f94169eebde19ddeb1b99a79aa5423429ba31ed0d7cb8eb38292dcda036c",
+      "bytes": 3137
+    },
+    {
+      "origin_repository_path": "q3_refinement_delivery/validation/numeric/reference160_bdf_historical.json",
+      "local": "inputs/historical_baseline/q3_refinement_delivery/validation/numeric/reference160_bdf_historical.json",
+      "sha256": "e1c9d15d5cee0b40d92dccb97f28fb7d98ec00086dfe8abd2ebb352a0f8eafe9",
+      "bytes": 3602
+    }
+  ]
+}

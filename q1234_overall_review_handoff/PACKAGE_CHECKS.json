@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "zip": "四问整体复审输入包.zip",
+  "zip_bytes": 77143181,
+  "zip_sha256": "cc751a342496f2dd19e74dd94dead48f0f951c5ed50418581c496e2486bd7ef9",
+  "manifest_sha256": "2f71856f55d0dea41ff998c82d10615791c39a36fc83f9b88335b7038ad41dd4",
+  "content_files_verified_byte_for_byte": 1034,
+  "extra_manifest_entries": 1,
+  "zip_crc_passed": true,
+  "source_files_match_archive": true,
+  "omitted_files_enumerated": 699,
+  "check_file_outside_zip_to_avoid_self_reference": true
+}

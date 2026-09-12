@@ -1,0 +1,24 @@
+q4_40x0_integral_rtol2e-11 t= 1800.0 max C= 2.55 elapsed= 1.52
+q4_40x0_integral_rtol2e-11 t= 10800.0 max C= 2.4540709475872107 elapsed= 8.28
+q4_40x0_integral_rtol2e-11 t= 14400.0 max C= 2.2415675404183855 elapsed= 11.48
+q4_40x0_integral_rtol2e-11 t= 21600.0 max C= 1.7196845368433236 elapsed= 11.84
+q4_40x0_integral_rtol2e-11 t= 43200.0 max C= 0.7377541485230613 elapsed= 12.69
+q4_40x0_integral_rtol2e-11 t= 64800.0 max C= 0.4087896436055748 elapsed= 13.44
+q4_40x0_integral_rtol2e-11 t= 86400.0 max C= 0.28514147967885 elapsed= 14.03
+q4_40x0_integral_rtol2e-11 t= 108000.0 max C= 0.22634112220389752 elapsed= 14.65
+q4_40x0_integral_rtol2e-11 t= 129600.0 max C= 0.19282996890472393 elapsed= 15.35
+q4_40x0_integral_rtol2e-11 t= 151200.0 max C= 0.17124735841468966 elapsed= 15.99
+q4_40x0_integral_rtol2e-11 t= 172800.0 max C= 0.1561564958370171 elapsed= 16.6
+{"case": "q4", "nr": 40, "nz": 0, "grading": 2.0, "zgrading": 2.0, "shrink": true, "end_transfer": true, "rtol": 2e-11, "atol_T": 1e-09, "atol_C": 1e-11, "max_step": 60.0, "nfev": 53447, "njev": 346, "nlu": 6534, "flux": "integral local coefficients, vertex dual finite volumes", "temperature": "coupled throughout; no isothermal projection", "environment_future": [49.99893442622951, 0.04998754098360656], "source_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020", "elapsed_s": 16.882456028999968, "event_root_s": 183943.90007518255, "end_s": 183943.90007518255, "end_max_C": 0.15, "end_max_location_r_z_m": [0.0, 0.0], "event_bracket_Cmax": [0.15000051345330145, 0.15, 0.1499994865543457], "source_sha256": "7f4fc1ecad068ff3f5af12f48374ec742b12bb5f85aa430d3c16c2cb8e24d80d"}
+q4_40x64_integral_rtol2e-11 t= 1800.0 max C= 2.55 elapsed= 26.27
+q4_40x64_integral_rtol2e-11 t= 10800.0 max C= 2.4540705002723753 elapsed= 179.33
+q4_40x64_integral_rtol2e-11 t= 14400.0 max C= 2.241566454491928 elapsed= 225.99
+q4_40x64_integral_rtol2e-11 t= 21600.0 max C= 1.7196836347152173 elapsed= 230.61
+q4_40x64_integral_rtol2e-11 t= 43200.0 max C= 0.7377538164203369 elapsed= 241.12
+q4_40x64_integral_rtol2e-11 t= 64800.0 max C= 0.4087895031086101 elapsed= 250.34
+q4_40x64_integral_rtol2e-11 t= 86400.0 max C= 0.28514140821295314 elapsed= 260.05
+q4_40x64_integral_rtol2e-11 t= 108000.0 max C= 0.22634107907986753 elapsed= 269.51
+q4_40x64_integral_rtol2e-11 t= 129600.0 max C= 0.19282993953053632 elapsed= 277.06
+q4_40x64_integral_rtol2e-11 t= 151200.0 max C= 0.1712473369679141 elapsed= 283.62
+q4_40x64_integral_rtol2e-11 t= 172800.0 max C= 0.15615647929697224 elapsed= 290.11
+{"case": "q4", "nr": 40, "nz": 64, "grading": 2.0, "zgrading": 2.0, "shrink": true, "end_transfer": true, "rtol": 2e-11, "atol_T": 1e-09, "atol_C": 1e-11, "max_step": 60.0, "nfev": 55117, "njev": 346, "nlu": 6645, "flux": "integral local coefficients, vertex dual finite volumes", "temperature": "coupled throughout; no isothermal projection", "environment_future": [49.99893442622951, 0.04998754098360656], "source_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020", "elapsed_s": 294.1259960409998, "event_root_s": 183943.8714427603, "end_s": 183943.8714427603, "end_max_C": 0.15, "end_max_location_r_z_m": [0.0, 0.0], "event_bracket_Cmax": [0.15000051345334026, 0.15, 0.14999948655443288], "source_sha256": "7f4fc1ecad068ff3f5af12f48374ec742b12bb5f85aa430d3c16c2cb8e24d80d"}

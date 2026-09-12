@@ -1,0 +1,16 @@
+# Run in the repository root. All destination stems must be new.
+# Avoid BLAS thread oversubscription; these operators are small dense systems.
+# Main complete cold start (actually completed):
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py --n 80 --method Radau --rtol 2e-13 --max-step 30 --out /absolute/new/path/q23_unified
+# Repackage already completed historical N160 BDF reference; NOT a new solve:
+python q4_complete_delivery/v1/q123_closeout/source/prepare_frozen_reference.py --out /absolute/new/path/frozen_reference160_common_outputs.npz
+# Read-only audit against included frozen inputs; no full old repo needed:
+python q4_complete_delivery/v1/q123_closeout/source/audit_unified_q23.py --new /absolute/new/path/q23_unified.npz --reference /absolute/new/path/frozen_reference160_common_outputs.npz --out /absolute/new/path/audit
+# Fresh early-time spatial checks actually run before the full export:
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py --n 80 --end 1800 --method BDF --out /absolute/new/path/preflight_n80
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py --n 160 --end 1800 --method BDF --out /absolute/new/path/preflight_n160
+# The solver accepts --input /absolute/path/attachment1.xlsx for standalone use.
+# q23_unified.npz contains profile_TC[sample, radius, field]; field 0=T, field 1=C.
+# Completed validations are listed in unified_audit/audit.json.
+# n160_radau_interrupted and n160_bdf_tight_interrupted were intentionally stopped;
+# neither is counted as validation, and neither needs repeating for this closeout.

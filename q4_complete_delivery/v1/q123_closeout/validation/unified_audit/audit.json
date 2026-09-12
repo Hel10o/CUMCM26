@@ -1,0 +1,178 @@
+{
+  "source_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "data_contract": {
+    "shape": [
+      206908,
+      21,
+      2
+    ],
+    "time_s_first_last": [
+      0.0,
+      206906.76
+    ],
+    "integer_seconds_0_through": 206906,
+    "extra_final_s": 206906.76,
+    "all_integer_seconds_present": true,
+    "radius_cm": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2000000000000002,
+      1.3,
+      1.4000000000000001,
+      1.5,
+      1.6,
+      1.7000000000000002,
+      1.8,
+      1.9000000000000001,
+      2.0
+    ],
+    "joint_fields": [
+      "temperature_degC",
+      "C_kg_water_per_kg_dry_solid"
+    ],
+    "finite": true
+  },
+  "historical_n160_BDF_reference_at_common_outputs": {
+    "max_abs_TC": [
+      3.271416915140435e-09,
+      9.331814709856445e-09
+    ],
+    "rms_TC": [
+      2.1039316200959396e-10,
+      8.316085447723143e-10
+    ],
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "values_per_field": 72450,
+    "argmax_TC": [
+      {
+        "t_s": 15060.0,
+        "radius_cm": 0.0,
+        "new": 49.99487420079621,
+        "comparison": 49.99487420406763
+      },
+      {
+        "t_s": 89760.0,
+        "radius_cm": 2.0,
+        "new": 0.06502552283645636,
+        "comparison": 0.06502553216827107
+      }
+    ],
+    "scope": "Previously completed and accepted independent 160-order BDF output, every 60s plus the same official execution endpoint; not every second and not claimed as newly run."
+  },
+  "old_Q2_first3h_unrounded": {
+    "max_abs_TC": [
+      1.0744116707428475e-09,
+      8.41234375492661e-08
+    ],
+    "rms_TC": [
+      1.3981216968105638e-10,
+      1.9326705152470228e-10
+    ],
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "values_per_field": 226821,
+    "argmax_TC": [
+      {
+        "t_s": 9481.0,
+        "radius_cm": 2.0,
+        "new": 49.78168930901144,
+        "comparison": 49.78168930793703
+      },
+      {
+        "t_s": 1.0,
+        "radius_cm": 2.0,
+        "new": 2.5198052314733577,
+        "comparison": 2.51980514734992
+      }
+    ]
+  },
+  "old_Q2_actual_workbook": {
+    "rows_per_sheet": 10800,
+    "values_per_sheet": 226800,
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "max_abs_new_rounded_vs_old_cells_TC": [
+      0.0,
+      0.0
+    ]
+  },
+  "old_Q3_timestamp_binary_max_difference_s": 2.9103830456733704e-11,
+  "old_Q3_common60s_and_endpoint": {
+    "max_abs_TC": [
+      1.7135448615590576e-10,
+      6.220135517764902e-12
+    ],
+    "rms_TC": [
+      6.212490447308409e-12,
+      3.1878318748868776e-13
+    ],
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "values_per_field": 72450,
+    "argmax_TC": [
+      {
+        "t_s": 15060.0,
+        "radius_cm": 0.0,
+        "new": 49.99487420079621,
+        "comparison": 49.99487420062486
+      },
+      {
+        "t_s": 16440.0,
+        "radius_cm": 0.0,
+        "new": 1.308395156995489,
+        "comparison": 1.3083951570017092
+      }
+    ]
+  },
+  "paper_table_difference_count_TC": [
+    0,
+    0
+  ],
+  "source_files": [
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+      "bytes": 37190828,
+      "sha256": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4"
+    },
+    {
+      "path": "q4_complete_delivery/v1/q123_closeout/validation/frozen_reference160_common_outputs.npz",
+      "bytes": 753647,
+      "sha256": "a900042f4c518d5dec7a197e45afbed1c41b675b9df4ee334058166112fd9133"
+    },
+    {
+      "path": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/q123_closeout/inputs/historical_baseline/q2_final_delivery/output/q2_unrounded.npz",
+      "bytes": 3299005,
+      "sha256": "7cc139408110efe5c192f879f2517a3a7a8712320ba3f7d2009f62b35c5776ec"
+    },
+    {
+      "path": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/q123_closeout/inputs/historical_baseline/q2_final_delivery/output/result2.xlsx",
+      "bytes": 2501564,
+      "sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0"
+    },
+    {
+      "path": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/q123_closeout/inputs/historical_baseline/q3_refinement_delivery/output/solution.npz",
+      "bytes": 736909,
+      "sha256": "6dc8e7fb69b684162ef60016741200815fb797b6af5824b19ec1b8772553dfab"
+    }
+  ],
+  "interpretation": "All new T,C originate from one Appendix 3 cold-start solution. Differences from old Q2 reflect finite-volume Richardson versus primitive-flux collocation output, not parameter or physical-model changes. These are 1D numerical checks, not a 2D geometry error bound."
+}

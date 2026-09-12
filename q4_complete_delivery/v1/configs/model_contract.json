@@ -1,0 +1,17 @@
+{
+  "source_commit": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "model": "dry-basis, coupled effective heat and moisture; no explicit latent heat",
+  "initial": {"T_degC": 28, "C_kg_per_kg_dry": 2.55, "radius_m": 0.02, "length_m": 0.25},
+  "geometry": {"radius": "attachment2 linear interpolation in seconds/metres", "length": "constant", "material_radial_velocity": "r R'(t)/R(t)", "grid_velocity": "same as material velocity", "beyond_observation": "hold final radius, not used by primary endpoint"},
+  "rho_effective": "760+90*C",
+  "cp": "1850+2150*C/(1+C)",
+  "k": "0.12+0.20*C/(1+C)",
+  "D": "4.2e-4*exp(-0.30/C)*exp(-3850/(T_degC+273.15))",
+  "hT_W_m2_K": 25,
+  "hm_m_s": 8e-7,
+  "environment": "0..4h piecewise linear; thereafter arithmetic mean of last-hour 61 observations",
+  "boundary_moisture": "equivalent dry-basis scale; no invented equilibrium/activity/film relation",
+  "criterion": "max over the current material domain C < 0.15; 1D evaluated polynomial maximum and matched-model 2D geometry check",
+  "official_quantum_s": 0.36,
+  "numerical_allowance": "derived from actual spectral, time-method and independent FV differences in finalize_q4.py; not a rigorous physical error bound"
+}

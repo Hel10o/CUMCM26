@@ -1,0 +1,160 @@
+{
+  "endpoint": {
+    "saved_output_states": 3067,
+    "formal_data_rows": 3066,
+    "last_time_s": 183931.56,
+    "execution_h": 51.0921,
+    "last_max_nodal_C": 0.14999982116131336,
+    "event_last_state_max_difference": 0.0,
+    "stored_polynomial_max_minus_axis_max_abs": 1.3322676295501878e-15,
+    "strict_under_frozen_1d_model": true,
+    "output_step_before_endpoint_max_deviation_from_60_s": 0.0
+  },
+  "mass": {
+    "mean_C_recomputed_max_abs_difference": 3.1086244689504383e-15,
+    "mean_C_end": 0.1184044217937191,
+    "stored_boundary_integral_end": 2.4315955782062297,
+    "end_balance_from_saved_integral": -5.10702591327572e-14,
+    "max_abs_saved_balance": 4.960476474025199e-13,
+    "scope": "Recomputed weighted mean using saved quadrature weights, and read saved boundary integral; no independent new flux integration or PDE run."
+  },
+  "domain": {
+    "outside_cells": 23165,
+    "outside_all_nan": true,
+    "inside_all_finite": true
+  },
+  "workbook": {
+    "sheet_names": [
+      "Sheet1"
+    ],
+    "header": [
+      "时间\\到药材中心的距离",
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1,
+      1.1,
+      1.2,
+      1.3,
+      1.4,
+      1.5,
+      1.6,
+      1.7,
+      1.8,
+      1.9,
+      2,
+      "药材表面",
+      null,
+      "实际半径R(t) / cm",
+      null,
+      "输出说明"
+    ],
+    "worksheet_rows": 3067,
+    "checked_cells": 76650,
+    "mismatch_count": 0,
+    "first_mismatches": []
+  },
+  "table6": [
+    {
+      "time_h": 6.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 12.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 18.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 24.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 30.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 36.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 42.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 48.0,
+      "matches_saved_array": true
+    },
+    {
+      "time_h": 51.0921,
+      "matches_saved_array": true
+    }
+  ],
+  "saved_run_comparisons": {
+    "spectral80": {
+      "common_times": 3067,
+      "max_abs_T": 2.1055441834505473e-09,
+      "max_abs_C": 8.001554974157443e-11,
+      "four_decimal_mismatch_count_TC": 0,
+      "critical_difference_s": -2.3178290575742722e-07
+    },
+    "spectral160": {
+      "common_times": 3067,
+      "max_abs_T": 2.788382857943361e-10,
+      "max_abs_C": 8.552270003292506e-12,
+      "four_decimal_mismatch_count_TC": 0,
+      "critical_difference_s": 1.1932570487260818e-08
+    },
+    "time120_bdf": {
+      "common_times": 3067,
+      "max_abs_T": 1.8495498466108984e-09,
+      "max_abs_C": 3.0763405711731195e-10,
+      "four_decimal_mismatch_count_TC": 0,
+      "critical_difference_s": -0.0005978488479740918
+    }
+  },
+  "physical_density_interpretation_diagnostic": {
+    "assumption_tested": "If appendix rho(C) were interpreted as actual current wet density, md(t)=integral rho(C)/(1+C) dV should be constant.",
+    "initial_dry_mass_ratio": 1.0000000000000002,
+    "final_dry_mass_ratio": 0.8902908365015562,
+    "min_ratio": 0.7195196363187163,
+    "min_time_h": 7.0,
+    "max_ratio": 1.0000000000000002,
+    "max_time_h": 0.0,
+    "meaning": "This exposes the need to justify the effective-density interpretation; it is not a numerical conservation failure of the submitted rho_d model."
+  },
+  "pure_shrinkage_saved_keys": [
+    "time_s",
+    "radius_m",
+    "full_TC",
+    "rho_d",
+    "jacobian",
+    "dry_mass",
+    "water_mass",
+    "relative_boundary_rate"
+  ],
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.4.6",
+    "PDE_rerun": false
+  },
+  "inspected_file_hashes": {
+    "output/main.npz": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+    "output/main.json": "c73e5a2ca90b36745fee3cebf3ef0e501dd6f6dda73d6d53af3f75dcb3787473",
+    "output/end_event.json": "13b737e84266e1c89984b2cb970e212872abd0233683d86f09da24771f69a4ef",
+    "output/result4.xlsx": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+    "output/table6_unrounded.csv": "f52aff949b771ea3f18c494cd19a369f5fde305fd37ee8f749a923d8d4613351",
+    "第四问论文正文.md": "a7cb5eebced816bec186c4b5b99df12c058dcfbc35de5430e85e2af87e7ef298",
+    "第四问分析与答案.md": "a6cec4afb3fdb218799d9ad02763711ec9068e74e40739d6f4c127e5a64e019b",
+    "第四问模型与文献采用.md": "ecb2c679f63ceb20a87c9874e59c32ef34181c71b124cc090bd1cfa7a413a6ab"
+  }
+}

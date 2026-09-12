@@ -1,0 +1,101 @@
+{
+  "scope": "Frozen-array arithmetic and a new uniform-shrinkage ODE; no new full Q1-Q4 PDE solution.",
+  "environment": {
+    "python": "3.13.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  },
+  "python_sources_parsed": 22,
+  "checks": {
+    "saved_space_time_comparison": {
+      "spectral80": {
+        "common_times": 3067,
+        "max_abs_T": 2.1055441834505473e-09,
+        "max_abs_C": 8.001554974157443e-11,
+        "root_difference_s": -2.3178290575742722e-07
+      },
+      "spectral160": {
+        "common_times": 3067,
+        "max_abs_T": 2.788382857943361e-10,
+        "max_abs_C": 8.552270003292506e-12,
+        "root_difference_s": 1.1932570487260818e-08
+      },
+      "time120_bdf": {
+        "common_times": 3067,
+        "max_abs_T": 1.8495498466108984e-09,
+        "max_abs_C": 3.0763405711731195e-10,
+        "root_difference_s": -0.0005978488479740918
+      }
+    },
+    "event": {
+      "critical_s": 183931.21171548913,
+      "execution_s": 183931.56,
+      "execution_max_C": 0.14999982116131336,
+      "stored_event_and_last_state_identical": true,
+      "threshold_margin_C": 1.788386866374836e-07,
+      "scope": "Maximum of stored 1D nodes; continuous-polynomial and 2D scope reviewed separately."
+    },
+    "execution_rounding": {
+      "empirical_budget_s": 0.129,
+      "rigorous_bound": false
+    },
+    "saved_mass_ledger_arithmetic": {
+      "max_abs_mean_C_residual": 4.960476474025199e-13,
+      "scope": "Recomputes saved mean plus saved cumulative flux, not a new independent boundary integral."
+    },
+    "paired_geometry_arithmetic": {
+      "q4": {
+        "one_dimensional_grid_root_s": 183934.32138467926,
+        "two_dimensional_grid_root_s": 183934.2871664566,
+        "paired_shift_s": -0.03421822265954688
+      },
+      "q3": {
+        "one_dimensional_grid_root_s": 206909.4492094175,
+        "two_dimensional_grid_root_s": 206901.97520476772,
+        "paired_shift_s": -7.474004649790004
+      }
+    },
+    "sensitivity_arithmetic": {
+      "same_appendix_fixed_R_root_h": 129.84836083945225,
+      "shrinkage_reduction_percent": 60.65256201618598,
+      "pchip_minus_linear_s": -12.605804503633408
+    },
+    "new_uniform_shrinkage_fv_ode": {
+      "duration_s": 259200,
+      "outputs": 433,
+      "max_abs_T_C_departure": [
+        0.0,
+        0.0
+      ],
+      "nfev": 1766,
+      "max_relative_dry_mass_change": 4.440892098500626e-16,
+      "scope": "Zero exchange in a uniform state only; does not validate general drying energy closure."
+    }
+  },
+  "source_hashes": {
+    "q4_complete_delivery\\v1\\run_all.py": "e7f63f99310f2deee4e560baa5b6a46d7c044c5af13113114e55ab28d7b8a148",
+    "q4_complete_delivery\\v1\\source\\build_documents.py": "7f7f9fb5822fa609459e830c364acad4c8e185abd64d3fc31a9c84e8c9973725",
+    "q4_complete_delivery\\v1\\source\\check_numerics.py": "957c081cd7fc363300049b00de15d0334c69d9cf6163dc7dfcd9e0b642c1ee65",
+    "q4_complete_delivery\\v1\\source\\finalize_q4.py": "324d1b8821e4085122a9e2f69b159c02864b9e4162cc326b6993aaede3bc5bd0",
+    "q4_complete_delivery\\v1\\source\\geometry_analysis.py": "a4de40b1f7d85face0f7e2a8423722023472a467e6b3a5bd36088969cb75163e",
+    "q4_complete_delivery\\v1\\source\\geometry_checks.py": "57ac08dc310bc05e87d426dcf7088e3db877a24efc23f95a22f1d36aa424172c",
+    "q4_complete_delivery\\v1\\source\\geometry_figures.py": "da531008a700df948fda8799cda2549caf5e550dd3560152551b40b54adc6f10",
+    "q4_complete_delivery\\v1\\source\\geometry_report.py": "434a64a153269a5c96e7642309f80c6023ef55b1cc8e8eecfcfd91cd50d4aaa0",
+    "q4_complete_delivery\\v1\\source\\geometry_solver.py": "f5dd2ff398e17f03af12ce09e5880e90cf85ece9075f3105678f7b3646e152b8",
+    "q4_complete_delivery\\v1\\source\\geometry_solver_executed.py": "7f4fc1ecad068ff3f5af12f48374ec742b12bb5f85aa430d3c16c2cb8e24d80d",
+    "q4_complete_delivery\\v1\\source\\make_figures.py": "546c4e2c40b1ad347fe091c8bf7a0d6146117c47a1852fb3115978f9deb4b0c8",
+    "q4_complete_delivery\\v1\\source\\package_workbooks.py": "01b9bff1d7af11e0f880ae6d73cc66022f420b407a8a5e84240129084a8a88c0",
+    "q4_complete_delivery\\v1\\source\\q4_common.py": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b",
+    "q4_complete_delivery\\v1\\source\\q4_spectral.py": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892",
+    "q4_complete_delivery\\v1\\source\\run_q4.py": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+    "q4_complete_delivery\\v1\\validation\\pure_shrinkage_evolution.py": "528534b785a7cd09816360fa3175abf9e73574e7374b29933cc772d7bcac0c70",
+    "q4_complete_delivery\\v1\\validation\\review_model_code.py": "8e7baa10d36d854462d856d4c5e0f52854d7124f27ad8f264ff023b9ae57fd76",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\audit_unified_q23.py": "e437de3ebc4d0d381bd5d8841c1b2c373d86af08f5b74acc55217c1ecee50580",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\prepare_frozen_reference.py": "5c33d5055d73c0e78d69229fa503d1499c4fcec7fb599b90025ab865bf3bc901",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\solve_unified_q23.py": "a1b15f34ee4926d43ec4a1258b2560368f7b12c581c1a2b4b0d74b0a5f921e1a",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\legacy_q3\\q3_reference.py": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+    "q4_complete_delivery\\v1\\q123_closeout\\source\\legacy_q3\\q3_solver.py": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+    "review_q4_20260912\\audit_numeric.py": "a40ce731c6975da5cdd6cc63b29b5b6ee9da71d2637c8c243af8fce429a5a982"
+  },
+  "pass": true
+}

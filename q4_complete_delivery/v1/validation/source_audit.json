@@ -1,0 +1,9 @@
+{
+  "source_commit": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "offline_zip_sha256": "42e8a6a03b5511a49a7bbd1b633452aaa34ae1f3ec706995c2445e28c9899455",
+  "manifest_files_checked": 203,
+  "bad_files": [],
+  "manifest_base_before_handoff": "dc5d9cb5f47e783f57b78d07d6bac37cf269c658",
+  "git_status_before_work": "clean",
+  "note": "ZIP fetched at fixed current commit; embedded prior-base value is preserved, not treated as current HEAD."
+}

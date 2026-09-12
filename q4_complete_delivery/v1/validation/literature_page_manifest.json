@@ -1,0 +1,128 @@
+{
+  "repository": "Hel10o/libai",
+  "source_commit": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "github_reading_list_blob": "50481f9b688b0e4ba09ccf1d7d02155a3095d92c",
+  "records": [
+    {
+      "source_path": "分析与文献/基于动网格的白萝卜热风干燥热质传递研究.pdf",
+      "source_sha256": "7008d5825be39367014ca79762e637e883807a96a362c9f4a6d8ab931a7a72ab",
+      "source_bytes": 1988165,
+      "physical_pdf_pages_visually_read": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "render_method": "PyMuPDF, Matrix(1.5,1.5), full page",
+      "renders": [
+        {
+          "pdf_page": 3,
+          "path": "literature_pages/wu_03.png",
+          "sha256": "9f40f1b23b239afdbc78c003da72e85e01642efae75880f2c2c43d9bcac12f9f"
+        },
+        {
+          "pdf_page": 4,
+          "path": "literature_pages/wu_04.png",
+          "sha256": "03d279d8b835a3c06b30fa529a295c7ef7f11fc0f51c10b149d56fed84b20d11"
+        },
+        {
+          "pdf_page": 5,
+          "path": "literature_pages/wu_05.png",
+          "sha256": "31eb58666a91b73760f7bf7c08789d7d1be186035974d2efd4cdd8f065298337"
+        },
+        {
+          "pdf_page": 6,
+          "path": "literature_pages/wu_06.png",
+          "sha256": "9ca4076d830f3442294de77c162cd3ceb2708e72540ad794db5d64f1b021c6f3"
+        },
+        {
+          "pdf_page": 7,
+          "path": "literature_pages/wu_07.png",
+          "sha256": "024481053d9f84d2f183a86552c9b9f34349bdc1f8fb783504725add4896c7ea"
+        }
+      ]
+    },
+    {
+      "source_path": "分析与文献/foods-09-01577.pdf",
+      "source_sha256": "bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc",
+      "source_bytes": 1153307,
+      "physical_pdf_pages_visually_read": [
+        4,
+        5,
+        6,
+        7,
+        18
+      ],
+      "render_method": "PyMuPDF, Matrix(1.5,1.5), full page",
+      "renders": [
+        {
+          "pdf_page": 4,
+          "path": "literature_pages/adrover_04.png",
+          "sha256": "84fe92e3c34322e2c9d6b3821535553e110935136077fe288bb0be0ebb794d1e"
+        },
+        {
+          "pdf_page": 5,
+          "path": "literature_pages/adrover_05.png",
+          "sha256": "1ceadb1cb92ee90aa035c7259cf680559b22f8ee193a253d04bac1725db35a85"
+        },
+        {
+          "pdf_page": 6,
+          "path": "literature_pages/adrover_06.png",
+          "sha256": "9aa5501c80ef03571529cc030edbc04acede03b65f7376d7d4496602a2e55453"
+        },
+        {
+          "pdf_page": 7,
+          "path": "literature_pages/adrover_07.png",
+          "sha256": "a31fe2b8d94f7bae6e18ce702081e2c57ecdceaa8d524fa4bbff8895d12a3543"
+        },
+        {
+          "pdf_page": 18,
+          "path": "literature_pages/adrover_18.png",
+          "sha256": "ebae101f6ee86616ce8d07d682648e77154b5ec64bbbcd35fb2347b1a2ae4834"
+        }
+      ]
+    },
+    {
+      "source_path": "分析与文献/1-s2.0-S0260877414002118-main.pdf",
+      "source_sha256": "f366438e9b447e270ae210f0f7e8bcc59bb65c94e850736e8db992e8817deb5b",
+      "source_bytes": 1464267,
+      "physical_pdf_pages_visually_read": [
+        3,
+        4,
+        5
+      ],
+      "render_method": "PyMuPDF, Matrix(1.5,1.5), full page",
+      "renders": [
+        {
+          "pdf_page": 3,
+          "path": "literature_pages/silva_03.png",
+          "sha256": "241759ecb873790c058af3426939c442b0f8f315d4aeaa52b132a354bd6c77ff"
+        },
+        {
+          "pdf_page": 4,
+          "path": "literature_pages/silva_04.png",
+          "sha256": "168e013f6ec2e3b3b21878d19761e9d5cab0a0f26fb83e9fe3b721a2c9dc989e"
+        },
+        {
+          "pdf_page": 5,
+          "path": "literature_pages/silva_05.png",
+          "sha256": "7d89e9b052ad4617312e57148f1b6fe4d28b1a65652062c531b452ff3754a6e7"
+        }
+      ]
+    },
+    {
+      "source_path": "分析与文献/foods-11-04045-v2.pdf",
+      "status": "LFS pointer only; not a PDF",
+      "pointer_bytes": 134,
+      "lfs_oid_sha256": "e66167e5a5c7a2ee32fce3bd1aa9230636f8905749303a2377cae85ce178151e",
+      "expected_bytes": 125968980,
+      "text_pages_fully_read": [
+        3,
+        4,
+        5
+      ],
+      "physical_pdf_pages_visually_read": []
+    }
+  ]
+}

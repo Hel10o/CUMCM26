@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/run_all.py", line 52, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/run_all.py", line 18, in main
+    if out.exists():raise FileExistsError('Choose a new output directory; no existing result is overwritten')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: Choose a new output directory; no existing result is overwritten

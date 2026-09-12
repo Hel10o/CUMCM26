@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "attempt": "existing formal result4.xlsx overwrite rejected",
+  "exit_code": 1,
+  "sha256_before": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+  "sha256_after": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/source/package_workbooks.py\", line 289, in <module>\n    main()\n  File \"/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/source/package_workbooks.py\", line 201, in main\n    if target.exists(): raise FileExistsError(f\"Refusing to overwrite {target}; choose a new --out-dir\")\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileExistsError: Refusing to overwrite /workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/output/result4.xlsx; choose a new --out-dir\n"
+}

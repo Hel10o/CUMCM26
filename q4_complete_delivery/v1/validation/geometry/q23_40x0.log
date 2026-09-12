@@ -1,0 +1,4 @@
+q23_40x0 t= 1800.0 max C= 2.549914732343718 elapsed= 0.51
+q23_40x0 t= 10800.0 max C= 1.766292057163425 elapsed= 2.66
+q23_40x0 t= 14400.0 max C= 1.4536884380505382 elapsed= 3.56
+{"case": "q23", "nr": 40, "nz": 0, "grading": 2.0, "zgrading": 2.0, "shrink": false, "end_transfer": true, "rtol": 2e-09, "atol_T": 1e-09, "atol_C": 1e-11, "max_step": 240.0, "nfev": 23888, "njev": 256, "nlu": 3291, "flux": "harmonic local coefficients, vertex dual finite volumes", "temperature": "coupled throughout; no isothermal projection", "environment_future": [49.99893442622951, 0.04998754098360656], "source_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020", "elapsed_s": 5.109045307000088, "event_root_s": 207329.15384687702, "end_s": 207329.15384687702, "end_max_C": 0.15, "end_max_location_r_z_m": [0.0, 0.0], "event_bracket_Cmax": [0.15000029034341059, 0.15, 0.14999970965958379], "source_sha256": "ae8887e12f10cf81375678ccdec66d155823f157673aa3f769c84a75713bc7eb"}

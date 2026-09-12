@@ -1,0 +1,27 @@
+{
+  "case": "Uniform state, shrinking measured radius, equal boundary environment; true relative exchange is zero throughout actual ODE evolution.",
+  "duration_s": 259200.0,
+  "n": 12,
+  "method": "Radau",
+  "outputs": 433,
+  "nfev": 1766,
+  "nlu": 882,
+  "radius_initial_final_m": [
+    0.02,
+    0.01198
+  ],
+  "rho_d0_arbitrary_normalization_kg_dry_m3": 1.0,
+  "max_C_departure": 0.0,
+  "max_T_departure_C": 0.0,
+  "max_relative_dry_mass_change": 4.440892098500626e-16,
+  "max_relative_water_mass_change": 4.440892098500626e-16,
+  "max_rho_d_J_minus_rho_d0": 3.3306690738754696e-16,
+  "max_mean_C_boundary_rate_abs_s1": 0.0,
+  "final_current_volume_water_concentration_kg_m3": 7.107003603668887,
+  "initial_current_volume_water_concentration_kg_m3": 2.55,
+  "source_sha256": {
+    "q4_spectral.py": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892",
+    "q4_common.py": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b"
+  },
+  "pass": true
+}

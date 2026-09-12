@@ -25,6 +25,10 @@ q123_model_selection_delivery/** -text
 q123_requirements_review_handoff/** -text
 q123_requirements_review_delivery/** -text
 q4_pro_handoff/** -text
+q4_complete_delivery/** -text
+q4_complete_delivery/**/*.svg binary
+review_q4_20260912/** -text
+q1234_overall_review_handoff/** -text
 review_q2_20260911/** -text
 paper/** -text
 readable/** text eol=lf

@@ -1,0 +1,25 @@
+{"stage":"template_import","elapsed_s":1.034,"rss_MB":298.56640625,"name":"result2.xlsx"}
+{"kind":"table","sheet":"温度","address":"A1:F5","rows":5,"cols":6,"values":[["时间\\到药材中心的距离",0,0.1,0.2,"…",2],[1,null,null,null,null,null],[2,null,null,null,null,null],[3,null,null,null,null,null],["…",null,null,null,null,null]]}
+{"kind":"table","sheet":"水分浓度","address":"A1:F5","rows":5,"cols":6,"values":[["时间\\到药材中心的距离",0,0.1,0.2,"…",2],[1,null,null,null,null,null],[2,null,null,null,null,null],[3,null,null,null,null,null],["…",null,null,null,null,null]]}
+{"stage":"template_import","elapsed_s":1.257,"rss_MB":308.94140625,"name":"result4.xlsx"}
+{"kind":"table","sheet":"Sheet1","address":"A1:F5","rows":5,"cols":6,"values":[["时间\\到药材中心的距离",0,0.1,0.2,"…","药材表面"],[60,null,null,null,null,null],[120,null,null,null,null,null],[180,null,null,null,null,null],["…",null,null,null,null,null]]}
+{"stage":"probe_populated","elapsed_s":9.456,"rss_MB":643.5703125,"sheet":"capacity_probe_T","rows":20000}
+{"stage":"probe_populated","elapsed_s":17.087,"rss_MB":913.51171875,"sheet":"capacity_probe_C","rows":20000}
+{"stage":"probe_recalculate","elapsed_s":17.087,"rss_MB":913.51171875}
+
+<--- Last few GCs --->
+
+[5:0x27508000]    24590 ms: Mark-Compact 1011.5 (1026.2) -> 1009.5 (1030.8) MB, pooled: 0 MB, 430.21 / 0.00 ms  (average mu = 0.146, current mu = 0.047) allocation failure; scavenge might not succeed
+[5:0x27508000]    25048 ms: Mark-Compact (reduce) 1010.9 (1030.8) -> 1010.0 (1024.0) MB, pooled: 0 MB, 418.05 / 0.00 ms  (+ 0.0 ms in 0 steps since start of marking, biggest step 0.0 ms, walltime since start of marking 419 ms) (average mu = 0.117, current
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+----- Native stack trace -----
+
+ 1: 0x75356c node::OOMErrorHandler(char const*, v8::OOMDetails const&) [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 2: 0xc52cd0  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 3: 0xc52dbf  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 4: 0xef6695  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 5: 0xef66c2  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 6: 0xef69ba  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 7: 0xf076ba  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 8: 0xf0ba60  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]
+ 9: 0x199e0d1  [/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node]

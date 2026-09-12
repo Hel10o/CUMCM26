@@ -1,0 +1,16 @@
+{
+  "synthetic_probe_only": true,
+  "rows_per_sheet": 20000,
+  "sheets": 2,
+  "numeric_cells": 880000,
+  "population_elapsed_s": 16.254,
+  "population_rss_MB": 960.8671875,
+  "export_elapsed_s": 58.964,
+  "export_rss_MB": 5019.15625,
+  "saved_elapsed_s": 61.027,
+  "saved_rss_MB": 5260.109375,
+  "lower_heap_probe_MB": 1024,
+  "lower_heap_probe_exit_code": 134,
+  "full_size_single_export_attempted": false,
+  "decision": "artifact-tool 10000-row chunks; verbatim OOXML row packaging"
+}

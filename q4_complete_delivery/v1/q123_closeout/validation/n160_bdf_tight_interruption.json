@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_not_validation",
+  "reason": "Unnecessary full per-second higher-order rerun became inefficient at very tight tolerances; use completed fresh early-time spatial check plus already accepted historical N160 BDF trajectory. No incomplete run is counted as a pass.",
+  "last_logged_progress": "{\"n\": 160, \"t_s\": 43200.0, \"Cmax\": 0.4561493819998734, \"elapsed_s\": 170.22713849899992}"
+}

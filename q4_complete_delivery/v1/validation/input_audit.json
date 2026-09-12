@@ -1,0 +1,78 @@
+{
+  "attachment1.xlsx": {
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+    "headers": [
+      "时间",
+      "温度",
+      "水分浓度"
+    ],
+    "rows": 241,
+    "first": [
+      0.0,
+      28.0,
+      0.01963
+    ],
+    "last": [
+      14400.0,
+      50.165,
+      0.04986
+    ],
+    "missing": 0,
+    "time_step_unique_s": [
+      60.0
+    ],
+    "min": [
+      0.0,
+      28.0,
+      0.01963
+    ],
+    "max": [
+      14400.0,
+      50.246,
+      0.05025
+    ]
+  },
+  "attachment2.xlsx": {
+    "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "headers": [
+      "时间",
+      "半径"
+    ],
+    "rows": 145,
+    "first": [
+      0.0,
+      2.0
+    ],
+    "last": [
+      259200.0,
+      1.198
+    ],
+    "missing": 0,
+    "time_step_unique_s": [
+      1800.0
+    ],
+    "min": [
+      0.0,
+      1.198
+    ],
+    "max": [
+      259200.0,
+      2.0
+    ]
+  },
+  "radius": {
+    "units_input": "cm",
+    "units_internal": "m",
+    "monotone_nonincreasing": true,
+    "plateau_intervals": 92,
+    "measurement_increment_cm": 0.001,
+    "primary_interpolation": "piecewise linear, no overshoot; restart at knots",
+    "beyond_72h": "hold last observed radius; conditional extension only if needed",
+    "length_m": 0.25,
+    "length_assumption": "constant; homogeneous radial material contraction"
+  },
+  "future_environment": [
+    49.99893442622951,
+    0.04998754098360656
+  ]
+}

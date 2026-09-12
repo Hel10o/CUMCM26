@@ -1,0 +1,42 @@
+{
+  "checked_files_sha256": {
+    "output/main.json": "c73e5a2ca90b36745fee3cebf3ef0e501dd6f6dda73d6d53af3f75dcb3787473",
+    "output/main.npz": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+    "output/end_event.json": "13b737e84266e1c89984b2cb970e212872abd0233683d86f09da24771f69a4ef",
+    "output/表6.md": "5b41ad2ef185645767ef83047588ba8321452be604b138feabd13ee6fd33b10c",
+    "output/result4.xlsx": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+    "validation/numeric_comparison.json": "0039ebd888ac10ea937d3a7bea7130c8b39faf5d08d836f2a477c29ec65df6f7",
+    "第四问模型与文献采用.md": "868edce4ec4b1bbb3f12c6ec22ccdd052f9dee29dc13de79c8902489e945e0c7"
+  },
+  "one_dimensional_endpoint": {
+    "critical_s": 183931.21171548913,
+    "execution_s": 183931.56,
+    "execution_h": 51.0921,
+    "last_saved_time_s": 183931.56,
+    "execution_max_C": 0.14999982116131336,
+    "strict_threshold_verified": true,
+    "budget_is_rigorous_bound": false
+  },
+  "mass": {
+    "mean_C_end": 0.1184044217937191,
+    "integrated_loss_per_kg_dry": 2.4315955782062297,
+    "residual_end_kgwater_per_kgdry": -5.10702591327572e-14,
+    "residual_max_kgwater_per_kgdry": 4.960476474025199e-13,
+    "mean_plus_integrated_loss": 2.5499999999999488
+  },
+  "table6": {
+    "rows": 9,
+    "numeric_or_domain_mismatches": []
+  },
+  "result4": {
+    "data_rows": 3066,
+    "domain_outside_blanks": 23165,
+    "value_or_domain_mismatches": [],
+    "max_R_metadata_difference_cm": 0
+  },
+  "scope_findings": [
+    "end_event.json source sentence already claims separately verified full 2D material-domain maximum; final geometry report and matched event checks must substantiate this before final delivery.",
+    "Empirical execution budget excludes physical uncertainty and is not a rigorous PDE/geometric bound.",
+    "README and final answer/paper draft were not yet present at this review snapshot; their final prose was not reviewed."
+  ]
+}

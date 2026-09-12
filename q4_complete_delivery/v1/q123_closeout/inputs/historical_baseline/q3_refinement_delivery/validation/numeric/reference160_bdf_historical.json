@@ -1,0 +1,153 @@
+{
+  "n": 160,
+  "method": "BDF",
+  "rtol": 2e-11,
+  "atol_C": 2e-13,
+  "max_step": 120.0,
+  "event": {
+    "critical_s": 206906.3883501266,
+    "critical_h": 57.473996763924056,
+    "t_minus_s": 206906.3783501266,
+    "max_minus": 0.1500000029127689,
+    "t_plus_s": 206906.3983501266,
+    "max_plus": 0.14999999708723136,
+    "slope": -2.9127688006755925e-07,
+    "polynomial_extrema": {
+      "max_C": 0.15,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838808060050374e-07
+    }
+  },
+  "elapsed_s": 59.455764460999944,
+  "nsteps": 31275,
+  "nfev": 79283,
+  "nlu": 14629,
+  "min_scalar_boundary_derivative": 5.949308901844298e-06,
+  "max_boundary_residual": 1.1386452151702746e-17,
+  "max_boundary_newton": 5,
+  "boundary_fallbacks": 0,
+  "dense_U_overshoot": 1.3322676295501878e-15,
+  "global_C_min": 0.0526469452942252,
+  "extrema": [
+    {
+      "t_s": 1800.0,
+      "max_C": 2.549934100211941,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.815321373597256
+    },
+    {
+      "t_s": 3600.0,
+      "max_C": 2.5257376140835954,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.6823210320227913
+    },
+    {
+      "t_s": 5400.0,
+      "max_C": 2.3860642628334587,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5925751937221251
+    },
+    {
+      "t_s": 7200.0,
+      "max_C": 2.170851543189287,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.5104323966657389
+    },
+    {
+      "t_s": 9000.0,
+      "max_C": 1.9566417571473738,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.43244858607978953
+    },
+    {
+      "t_s": 10800.0,
+      "max_C": 1.7661771010472669,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.36141801904112475
+    },
+    {
+      "t_s": 14400.0,
+      "max_C": 1.4536060033578715,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.2439015441456937
+    },
+    {
+      "t_s": 21600.0,
+      "max_C": 1.0169683554587514,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.09991302818223374
+    },
+    {
+      "t_s": 43200.0,
+      "max_C": 0.4561493821776543,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 0.0024050384425760123
+    },
+    {
+      "t_s": 64800.0,
+      "max_C": 0.29884259646782874,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 5.777241203314479e-05
+    },
+    {
+      "t_s": 86400.0,
+      "max_C": 0.23779952175369606,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 8.887003024789578e-06
+    },
+    {
+      "t_s": 108000.0,
+      "max_C": 0.20582402155918905,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 3.4672590714913097e-06
+    },
+    {
+      "t_s": 129600.0,
+      "max_C": 0.18587794493616797,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 2.0532872070633777e-06
+    },
+    {
+      "t_s": 151200.0,
+      "max_C": 0.17206627880135214,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.492491234648518e-06
+    },
+    {
+      "t_s": 172800.0,
+      "max_C": 0.16182768652034957,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.2115745243136342e-06
+    },
+    {
+      "t_s": 194400.0,
+      "max_C": 0.15386733263110064,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 1.048983734139525e-06
+    },
+    {
+      "t_s": 206906.3983501266,
+      "max_C": 0.14999999708723136,
+      "x_max": 0.0,
+      "stationary_points": 0,
+      "minimum_U": 9.838807599848835e-07
+    }
+  ]
+}

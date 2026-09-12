@@ -1,0 +1,12 @@
+{
+  "executed_integral_source_file": "../../source/geometry_solver_executed.py",
+  "executed_integral_source_sha256": "7f4fc1ecad068ff3f5af12f48374ec742b12bb5f85aa430d3c16c2cb8e24d80d",
+  "preliminary_harmonic_original_source_sha256": "ae8887e12f10cf81375678ccdec66d155823f157673aa3f769c84a75713bc7eb",
+  "interface_revision_scope": [
+    "add explicit out-dir",
+    "read packaged attachment copies when present, with explicit input-dir option",
+    "refuse existing JSON or NPZ",
+    "capture source hash at run start"
+  ],
+  "source_hash_note": "Original run source_sha256 fields measured the on-disk source at completion. For runs already in flight at interface revision, the loaded physical source is the archived executed snapshot, even if completion-path hash reports the later interface revision. Preliminary Q4 harmonic was already in flight during addition of the integral branch; its actual loaded source was the listed preliminary hash."
+}

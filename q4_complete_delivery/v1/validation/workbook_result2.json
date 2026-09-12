@@ -1,0 +1,30 @@
+{
+  "file": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+  "sha256": "88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870",
+  "rounding": "decimal ROUND_HALF_UP, 4 places; time unrounded",
+  "sheets": {
+    "温度": {
+      "data_rows": 206907,
+      "expected_data_rows": 206907,
+      "numeric_cells_compared": 4345047,
+      "time_mismatches": 0,
+      "value_mismatches": 0,
+      "max_abs_difference_after_rounding": 0.0,
+      "non_numeric_cells": 0,
+      "first_time_s": 1.0,
+      "last_time_s": 206906.76
+    },
+    "水分浓度": {
+      "data_rows": 206907,
+      "expected_data_rows": 206907,
+      "numeric_cells_compared": 4345047,
+      "time_mismatches": 0,
+      "value_mismatches": 0,
+      "max_abs_difference_after_rounding": 0.0,
+      "non_numeric_cells": 0,
+      "first_time_s": 1.0,
+      "last_time_s": 206906.76
+    }
+  },
+  "passed": true
+}

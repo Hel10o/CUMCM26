@@ -1,0 +1,26 @@
+{
+  "critical_s": 183931.21171548913,
+  "critical_h": 51.09200325430254,
+  "critical_display_h": 51.092,
+  "execution_s": 183931.56,
+  "execution_h": 51.0921,
+  "execution_max_C": 0.14999982116131336,
+  "actual_margin_s": 0.348284510866506,
+  "empirical_budget_s": 0.129,
+  "budget_rule": "ceil(2*max(recorded discrepancies), 0.001 s)",
+  "budget_is_rigorous_bound": false,
+  "discrepancies": {
+    "spectral80_to_main_s": 2.3178290575742722e-07,
+    "same_n_time_method_change_s": 0.0005978488479740918,
+    "independent_fv_extrapolation_to_main_s": 0.012868868507212028,
+    "independent_fv_temporal_change_s": 0.06410773846437223,
+    "independent_fv_last_spatial_correction_s": 0.04986840547644533
+  },
+  "fv_extrapolated_root_s": 183931.19884662062,
+  "one_second_before_max_C": 0.1500005134888404,
+  "one_second_after_max_C": 0.14999948651764602,
+  "radius_m": 0.012,
+  "length_m": 0.25,
+  "domain": "0<=r<=R(t); -0.125<=z<=0.125 m",
+  "source": "output/main.npz; official 1D endpoint, matched 2D applicability and whole-domain evidence are reported separately"
+}

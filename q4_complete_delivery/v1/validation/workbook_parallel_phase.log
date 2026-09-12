@@ -1,0 +1,8 @@
+{"stage": "chunk_complete", "lo": 1, "hi": 10001, "elapsed_s": 0.0007249800000863615}
+{"stage": "chunk_complete", "lo": 10001, "hi": 20001, "elapsed_s": 0.0010082379999403202}
+{"stage": "chunk_complete", "lo": 20001, "hi": 30001, "elapsed_s": 73.06925114900014}
+{"stage": "chunk_complete", "lo": 30001, "hi": 40001, "elapsed_s": 78.5291146530003}
+{"stage": "chunk_complete", "lo": 40001, "hi": 50001, "elapsed_s": 176.29030068200018}
+{"stage": "chunk_complete", "lo": 50001, "hi": 60001, "elapsed_s": 182.67165631900025}
+{"stage": "chunk_complete", "lo": 60001, "hi": 70001, "elapsed_s": 230.7843244390001}
+{"stage": "chunk_complete", "lo": 70001, "hi": 80001, "elapsed_s": 239.364298298}

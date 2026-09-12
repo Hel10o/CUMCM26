@@ -1,0 +1,12 @@
+{
+  "case": "q23",
+  "nr": 160,
+  "nz": 128,
+  "status": "interrupted_not_completed",
+  "reason": "Parent requested stopping optional largest grid to release memory for workbook export; no result or test pass is claimed.",
+  "pid": 11970,
+  "known_last_log": "See q23_160x128_integral.log; this run did not yet save a completed trajectory.",
+  "time_utc": "2026-09-12T02:23:38Z",
+  "termination_confirmed": "write_stdin Ctrl-C on unified exec session 68306; exit_code 130",
+  "note": "An earlier shell kill by reported PID could not find the process; session interruption then succeeded."
+}

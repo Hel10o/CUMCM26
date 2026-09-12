@@ -1,0 +1,211 @@
+{
+  "reviewed_sources": {
+    "q4_common.py": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b",
+    "run_q4.py": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+    "q4_spectral.py": "68f87ff9990cad0e092eaee1bec070d00e5952c912b1f1970aa7971390883892"
+  },
+  "checks": {
+    "grid_derivative_x2_max_abs": 5.773159728050814e-15,
+    "primitive_derivative_relative_error": 4.5041028554566e-10,
+    "jacobian_finite_difference": [
+      {
+        "t_s": 0.0,
+        "max_abs_error": 5.848709850748957e-08,
+        "max_scaled_error": 0.0006467460902975013,
+        "relative_frobenius_error": 8.783899721889927e-08
+      },
+      {
+        "t_s": 21600.0,
+        "max_abs_error": 6.800425491064639e-08,
+        "max_scaled_error": 0.0002831328761846241,
+        "relative_frobenius_error": 9.516089168801754e-08
+      },
+      {
+        "t_s": 150000.0,
+        "max_abs_error": 4.5436432229714954e-08,
+        "max_scaled_error": 0.0003727077304277666,
+        "relative_frobenius_error": 7.074899577900951e-08
+      }
+    ],
+    "surface_boundary": [
+      {
+        "t_s": 0.0,
+        "thermal_residual_W_m2": -7.899458864812914e-12,
+        "moisture_residual_m_s": -9.952637130238029e-21
+      },
+      {
+        "t_s": 21600.0,
+        "thermal_residual_W_m2": -7.297273896256229e-12,
+        "moisture_residual_m_s": -1.5881867761018131e-22
+      },
+      {
+        "t_s": 150000.0,
+        "thermal_residual_W_m2": -4.694911126534862e-12,
+        "moisture_residual_m_s": 1.0587911840678754e-22
+      }
+    ],
+    "uniform_equal_environment_pure_geometry": [
+      {
+        "radius_m": 0.02,
+        "rhs_max_abs": 0.0
+      },
+      {
+        "radius_m": 0.017,
+        "rhs_max_abs": 0.0
+      },
+      {
+        "radius_m": 0.012,
+        "rhs_max_abs": 0.0
+      }
+    ],
+    "input_geometry": {
+      "rows": 145,
+      "radius_min_m": 0.01198,
+      "radius_max_m": 0.02,
+      "last_R_m": 0.01198,
+      "max_derivative_m_s": 0.0,
+      "future_env": [
+        49.99893442622951,
+        0.04998754098360656
+      ],
+      "future_sample_count": 61
+    },
+    "spectral80_event_audit": {
+      "source_npz_sha256": "da5790ce14c3122c6444a6fb5f399baac80be5d340fd9b22b94713e0c3dda7d0",
+      "rows": 3067,
+      "maximum_saved_wettest_radius_m": 0.0164710947754563,
+      "max_saved_extrema_minus_axis_C": 2.220446049250313e-15,
+      "independent_polynomial_recalculations": [
+        {
+          "t_s": 60.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.6811227758871783,
+          "stationary_points": 51
+        },
+        {
+          "t_s": 11520.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 23040.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 34500.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 46020.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 57480.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 69000.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 80460.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 91980.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 103500.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 114960.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 126480.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 137940.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 149460.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 160920.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 172440.0,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        },
+        {
+          "t_s": 183931.56,
+          "max_C_error_against_saved": 0.0,
+          "x_max": 0.0,
+          "stationary_points": 0
+        }
+      ],
+      "root_extrema": {
+        "max_C": 0.15,
+        "x_max": 0.0,
+        "stationary_points": 0,
+        "minimum_U": 2.3459041020892826e-05
+      },
+      "critical_s": 183931.21171525735,
+      "mass_balance_audit_present": false
+    }
+  },
+  "findings": [
+    {
+      "severity": "conditional_event_check",
+      "location": "run_q4.py::ev / event_info.root_extrema",
+      "detail": "ODE trigger uses maximum internal node C. Final polynomial extrema and 2D full-domain event must prove this is the same root or final event must be refined.",
+      "status": "Resolved for spectral80: all stored extrema and axis C agree within 2.23e-15; 17 independent extrema recalc agree; root has no interior stationary points. Early near-uniform plateau argmax locations have roundoff ambiguity. Retain event check for final selected finer run and 2D."
+    },
+    {
+      "severity": "provisional_output",
+      "location": "run_q4.py::preliminary_execution_s",
+      "detail": "0.36 s rounded endpoint is marked preliminary and must not be final before convergence/2D evidence sets the safety margin."
+    },
+    {
+      "severity": "audit_scope",
+      "location": "run_q4.py::rate_checks",
+      "detail": "Spatial quadrature flux identities are not an independent total energy trajectory balance; cumulative boundary mass quadrature is a separate trajectory check."
+    }
+  ],
+  "pass_bounded_numerical_checks": true
+}

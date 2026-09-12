@@ -1,0 +1,68 @@
+{
+  "old_q2_unrounded": {
+    "max_abs_TC": [
+      1.0744116707428475e-09,
+      8.41234375492661e-08
+    ],
+    "rms_TC": [
+      1.3981216968105638e-10,
+      1.9326705152470228e-10
+    ],
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "values_per_field": 226821,
+    "argmax_TC": [
+      {
+        "t_s": 9481.0,
+        "radius_cm": 2.0,
+        "new": 49.78168930901144,
+        "comparison": 49.78168930793703
+      },
+      {
+        "t_s": 1.0,
+        "radius_cm": 2.0,
+        "new": 2.5198052314733577,
+        "comparison": 2.51980514734992
+      }
+    ]
+  },
+  "old_actual_q2_workbook_round4_diff_TC": [
+    0,
+    0
+  ],
+  "old_q3_common_outputs": {
+    "max_abs_TC": [
+      1.7135448615590576e-10,
+      6.220135517764902e-12
+    ],
+    "rms_TC": [
+      6.212490447308409e-12,
+      3.1878318748868776e-13
+    ],
+    "four_decimal_difference_count_TC": [
+      0,
+      0
+    ],
+    "values_per_field": 72450,
+    "argmax_TC": [
+      {
+        "t_s": 15060.0,
+        "radius_cm": 0.0,
+        "new": 49.99487420079621,
+        "comparison": 49.99487420062486
+      },
+      {
+        "t_s": 16440.0,
+        "radius_cm": 0.0,
+        "new": 1.308395156995489,
+        "comparison": 1.3083951570017092
+      }
+    ]
+  },
+  "paper_table_difference_count_TC": [
+    0,
+    0
+  ]
+}

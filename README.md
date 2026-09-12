@@ -1,8 +1,10 @@
 # libai
 
-项目题目、建模资料、前三问计算交付，以及独立核验和第一、二问论文阶段稿。
+项目题目、建模资料、四问计算交付、独立核验，以及第一、二问论文阶段稿。
 
-当前交给 Pro 的任务是[完成第四问并收尾前三问](q4_pro_handoff/README.md)：依据附件2的半径变化、附录4物性和项目中的收缩/动网格论文，实际完成第四问求解、表6、result4.xlsx和正文；同时补齐第二问完整导出与前三问针对目标的一维/二维证据。[完整交接提示词](q4_pro_handoff/第四问与前三问收尾_Pro交接提示词.md)、[直接发送的提示词](q4_pro_handoff/发给Pro的提示词.txt)、[论文必读位置](q4_pro_handoff/第四问论文阅读清单.md)及[离线输入包](q4_pro_handoff/q4_inputs.zip)配套使用。
+第四问交付已接收并完成[本机针对性核查](review_q4_20260912/README.md)。当前交给 Pro 的任务是[四问整体结果与模型改进复审](q1234_overall_review_handoff/README.md)：评价题意、物理假设、结果可信范围和改进优先级。[完整交接文档](q1234_overall_review_handoff/四问整体结果与建模改进_Pro交接文档.md)、[直接发送的提示词](q1234_overall_review_handoff/发给Pro的提示词.txt)及[精选离线输入包](q1234_overall_review_handoff/四问整体复审输入包.zip)配套使用。此前[第四问求解任务书](q4_pro_handoff/README.md)保留为历史合同。
+
+当前正式文件为：[Q1 result1](q1_complete_delivery/q1_delivery/output/result1.xlsx)、[Q2最新全程result2](q4_complete_delivery/v1/q123_closeout/result2.xlsx)、[Q3现行result3](q3_refinement_delivery/output/result3.xlsx)、[Q4 result4](q4_complete_delivery/v1/output/result4.xlsx)。Q3执行 **57.4741h**，Q4执行 **51.0921h**，均为已声明有效模型下的条件结果；二维配对校正属于估计，不是连续全域严格误差界。以下各节保留历次验收过程，现行版本优先按本段和整体复审版本表读取。
 
 用户已选择保留题给物性、一维径向有效传热—传质、无显式潜热的主线；二维检验目标输出和全域达标，潜热放在扩展与局限讨论。已收到[题意复审交付](q123_requirements_review_delivery/README.md)，其尚未闭合的含潜热候选R_L和[此前四组F比较](q123_model_selection_delivery/v1/README.md)均保留为背景，不覆盖用户当前选择。旧结果仍按原假设保留，不能声称官方公式已经包含潜热。
 
@@ -53,12 +55,16 @@
 - [历史模型选择质疑交接](q123_requirements_review_handoff/README.md)、[完整重分析文档](q123_requirements_review_handoff/前三问模型选择质疑与题意约束重分析_Pro交接文档.md)及[对应历史提示词](q123_requirements_review_handoff/发给Pro的提示词.txt)。
 - [题意复审 Pro 原交付](q123_requirements_review_delivery/v1/README.md)及[原始ZIP](q123_requirements_review_delivery/q123_requirements_review_delivery_v1.zip)。
 - [第四问与前三问收尾交接](q4_pro_handoff/README.md)、[项目论文阅读清单](q4_pro_handoff/第四问论文阅读清单.md)及[离线输入包](q4_pro_handoff/q4_inputs.zip)。
+- [第四问完整交付](q4_complete_delivery/README.md)、[第四问论文正文](q4_complete_delivery/v1/第四问论文正文.md)、[表6](q4_complete_delivery/v1/output/表6.md)及[前三问收尾](q4_complete_delivery/v1/q123_closeout/README.md)。
+- [第四问本机接收核查](review_q4_20260912/第四问接收核查与整体复审要点.md)与[四问整体复审交接](q1234_overall_review_handoff/README.md)。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
 继续审查第一问模型假设时，建议先读最新审核入口，再对照原题、现有模型与原始结果。原交付中的历史运行记录和旧阅读说明保留原样，最新核验状态以审核报告为准。
 
 ## 第二问当前状态与继续审查
+
+2026-09-12收到的新[完整result2](q4_complete_delivery/v1/q123_closeout/result2.xlsx)已经覆盖逐秒全过程至206906.76s，每张表206907个数据行。本机全量核对8,690,094个温湿数值与同源未舍入轨迹的四位舍入一致；旧前3h表格保留。全时域模型与输出解释见[收尾说明](q4_complete_delivery/v1/q123_closeout/第二问全时域收尾.md)。下面关于“前3h”的内容描述历史验收范围，不再表示现行完整Excel仅到3h。
 
 第二问已在本机新目录完成十阶段复现，并以独立径向离散与 Radau 方法复算；453600 个输出的四位小数和两张论文表 60 个数值全部一致。验收支持“附录3有效物性、固定几何中截面、前3h完整采样”口径下的数值答案。3h 时轴心/表面温度为 49.8495/49.9664 ℃，干基含水率为 1.7662/1.0081 kg/kg。
 
@@ -94,11 +100,13 @@ Pro 可直接从当前 GitHub 仓库读取上述目录。ZIP 是便于上传的�
 
 上轮包内关于 ZIP 分发、运行与验证的说明按原样保存；本次收到的是解压后的目录，GitHub 同步该目录，没有重新制作上轮同名 ZIP。新增材料的传输与字节检查不等于数值验收。
 
-## 第四问当前任务
+## 第四问当前交付与整体复审
 
-前三问按已声明的无显式潜热有效模型作为当前主线，保留其物理局限。第四问使用附件2的收缩半径与附录4，不把第三问的干燥结束状态当初态，也不只替换代码中的半径常数。Pro需阅读白萝卜动网格、Adrover移动边界、da Silva圆柱收缩论文，完成变量转换、实际求解和必要的独立检查；具体合同见[第四问交接](q4_pro_handoff/第四问与前三问收尾_Pro交接提示词.md)。
+第四问已交付在[q4_complete_delivery/v1](q4_complete_delivery/v1/README.md)。采用附录4、附件2线性半径、均匀径向材料收缩和恒长度，从题给初态重新求解；一维临界183931.211715489s，严格执行183931.56s=51.0921h，末态最大C=0.14999982116131336。表6、3066行result4、正文和未舍入轨迹齐备，本机已核对对应关系并完成定向算子/纯收缩检查。
 
-新成果预定进入 `q4_complete_delivery/v1/`，其中 `q123_closeout/` 保存第二问完整逐秒导出及前三问几何证据收尾。此次只准备任务、输入包并接收最新Pro分析，没有运行第四问。
+同包`q123_closeout/`补齐第二问完整逐秒导出与前三问同物理几何证据。Q3端部配对根差约−7.4740s；Q4约−0.03s。Q4原粗二维根仍含径向误差，正式时刻的二维达标结论使用配对校正估计，不能称为精细二维直接求值。此次未在本机重跑整套四问PDE，也未合并重编历史论文。
+
+整体复审优先处理有效密度/干质量口径、空气含水率边界、潜热和能量解释、4h后环境、收缩假设及一维适用范围。原交付中的403同步说明保持原样；本机新接收状态与Pro新任务以[最新核查报告](review_q4_20260912/第四问接收核查与整体复审要点.md)和[整体复审交接](q1234_overall_review_handoff/README.md)为准。
 
 ## 获取大PDF原件
 

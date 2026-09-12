@@ -1,0 +1,6 @@
+{
+  "status": "interrupted_not_validation",
+  "run": "n160 Radau rtol=2e-12 full trajectory",
+  "reason": "High-order Radau slowed markedly after 4h; use established n80 Radau main and n160 BDF reference, both with tighter temporal settings than historical Q3.",
+  "last_logged_progress": "{\"n\": 160, \"t_s\": 21600.0, \"Cmax\": 1.0169683554430518, \"elapsed_s\": 97.67521211900021}"
+}

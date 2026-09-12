@@ -1,0 +1,10 @@
+{
+  "data_xlsx_AST_unchanged": true,
+  "properties_AST_unchanged": true,
+  "primitive_difference_AST_unchanged": true,
+  "GeometryFV_AST_unchanged": true,
+  "cold_start_exit": 0,
+  "repeat_exit": 1,
+  "repeat_rejected_without_file_change": true,
+  "new_source_sha256": "f5dd2ff398e17f03af12ce09e5880e90cf85ece9075f3105678f7b3646e152b8"
+}

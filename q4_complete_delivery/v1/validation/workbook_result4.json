@@ -1,0 +1,18 @@
+{
+  "file": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/output/result4.xlsx",
+  "sha256": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+  "rounding": "decimal ROUND_HALF_UP, 4 places; time unrounded",
+  "data_rows": 3066,
+  "expected_data_rows": 3066,
+  "numeric_moisture_cells_compared": 44287,
+  "outside_domain_blank_cells": 23165,
+  "surface_coincidences_checked": 967,
+  "time_grid": "60 s, 120 s, ... plus actual final time",
+  "first_time_s": 60.0,
+  "last_time_s": 183931.56,
+  "radius_metadata_max_abs_error_cm": 0.0,
+  "errors": [],
+  "passed": true,
+  "input_json_sha256": "99b86e85c360f98ab593e73cf06828210661488de3ba06d6a9da100a29dda4f3",
+  "template_sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+}

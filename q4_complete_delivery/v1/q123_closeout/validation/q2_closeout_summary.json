@@ -1,0 +1,41 @@
+{
+  "source_sha": "dbb8845a783fda4eaf754ff4c906d1922cab8020",
+  "main_raw": "output/q23_unified.npz",
+  "main_raw_shape": [
+    206908,
+    21,
+    2
+  ],
+  "official_workbook_rows_per_sheet": 206907,
+  "official_workbook_values": 8690094,
+  "time_first_raw_s": 0,
+  "time_first_workbook_s": 1,
+  "time_end_s": 206906.76,
+  "critical_s": 206906.38993232802,
+  "strict_end_max_C": 0.14999989220802712,
+  "cold_start_elapsed_s": 324.6816569380003,
+  "old_workbook_four_decimal_differences_TC": [
+    0,
+    0
+  ],
+  "old_paper_table_four_decimal_differences_TC": [
+    0,
+    0
+  ],
+  "old_q3_four_decimal_differences_TC": [
+    0,
+    0
+  ],
+  "historical_n160_common_output_differences_TC": [
+    0,
+    0
+  ],
+  "historical_n160_scope": "every60s and same endpoint, previously completed run; not every second",
+  "new_fresh_spatial_check_scope": "0..1800s every second, n80 vs n160 BDF",
+  "uncompleted_checks": [
+    "n160 Radau full per-second rerun",
+    "n160 BDF rtol2e-13 full per-second rerun"
+  ],
+  "workbook_status": "Excel creation and final readback handled by workbook agent separately",
+  "geometry_status": "same-model 1D/2D comparisons handled by geometry agent separately"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/source/geometry_solver.py", line 219, in <module>
+    a=p.parse_args();run(a.case,a.nr,a.nz,a.end,a.rtol,a.max_step,not a.fixed,not a.sealed_ends,a.flux,a.out_dir,a.input_dir)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/source/geometry_solver.py", line 158, in run
+    if any((dest/(label+suffix)).exists() for suffix in ('.json','.npz')):raise FileExistsError(label)
+                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileExistsError: q1_4x0_integral

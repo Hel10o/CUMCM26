@@ -1,0 +1,57 @@
+{
+  "method": "matched 2D-minus-1D event correction applied to converged 1D; Cmax uses local event linearization. Estimates, not full-field evaluations at official execution time.",
+  "q3_converged_1d_root_s": 206906.38993232802,
+  "q3_corrected_2d_root_range_s": [
+    206898.87964436325,
+    206898.91592767823
+  ],
+  "q4_converged_1d_root_s": 183931.21171548913,
+  "q4_matched_geometry_shift_range_s": [
+    -0.03427030841703527,
+    -0.028632422239752486
+  ],
+  "q4_corrected_2d_root_range_s": [
+    183931.1774451807,
+    183931.1830830669
+  ],
+  "q4_execution_s": 183931.56,
+  "q4_linearized_Cmax_estimate_at_execution": [
+    0.14999980356361017,
+    0.14999980645858352
+  ],
+  "q4_1d_critical_slope": -5.13485597171401e-07,
+  "all_completed_q3_q4_event_wettest_locations_r_z_m": {
+    "q23_40x64": [
+      0.0,
+      0.0
+    ],
+    "q23_80x128_integral": [
+      0.0,
+      0.0
+    ],
+    "q23_80x256_integral": [
+      0.0,
+      0.0
+    ],
+    "q4_40x64": [
+      0.0,
+      0.0
+    ],
+    "q4_40x64_integral": [
+      0.0,
+      0.0
+    ],
+    "q4_40x128_integral": [
+      0.0,
+      0.0
+    ],
+    "q4_80x128_integral": [
+      0.0,
+      0.0
+    ],
+    "q4_40x64_integral_rtol2e-11": [
+      0.0,
+      0.0
+    ]
+  }
+}

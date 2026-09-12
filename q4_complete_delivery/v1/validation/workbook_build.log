@@ -1,0 +1,22 @@
+{"stage": "chunk_complete", "lo": 10001, "hi": 20001, "elapsed_s": 0.032833120000304916}
+{"stage": "chunk_complete", "lo": 1, "hi": 10001, "elapsed_s": 0.035353622999991785}
+{"stage": "chunk_complete", "lo": 20001, "hi": 30001, "elapsed_s": 0.05870540500018251}
+{"stage": "chunk_complete", "lo": 30001, "hi": 40001, "elapsed_s": 0.059826088000136224}
+{"stage": "chunk_complete", "lo": 50001, "hi": 60001, "elapsed_s": 0.08232264700018277}
+{"stage": "chunk_complete", "lo": 40001, "hi": 50001, "elapsed_s": 0.08351614499997595}
+{"stage": "chunk_complete", "lo": 60001, "hi": 70001, "elapsed_s": 0.10590569400028471}
+{"stage": "chunk_complete", "lo": 70001, "hi": 80001, "elapsed_s": 0.10788708200016117}
+{"stage": "chunk_complete", "lo": 80001, "hi": 90001, "elapsed_s": 40.716248864000136}
+{"stage": "chunk_complete", "lo": 90001, "hi": 100001, "elapsed_s": 80.46970345}
+{"stage": "chunk_complete", "lo": 110001, "hi": 120001, "elapsed_s": 120.59920698699989}
+{"stage": "chunk_complete", "lo": 120001, "hi": 130001, "elapsed_s": 160.42081613500022}
+{"stage": "chunk_complete", "lo": 100001, "hi": 110001, "elapsed_s": 168.637843943}
+{"stage": "chunk_complete", "lo": 130001, "hi": 140001, "elapsed_s": 203.85896451899998}
+{"stage": "chunk_complete", "lo": 140001, "hi": 150001, "elapsed_s": 211.20587409000018}
+{"stage": "chunk_complete", "lo": 150001, "hi": 160001, "elapsed_s": 247.42285127700006}
+{"stage": "chunk_complete", "lo": 160001, "hi": 170001, "elapsed_s": 255.03958215800003}
+{"stage": "chunk_complete", "lo": 170001, "hi": 180001, "elapsed_s": 291.29807256899994}
+{"stage": "chunk_complete", "lo": 180001, "hi": 190001, "elapsed_s": 299.7845499140003}
+{"stage": "chunk_complete", "lo": 200001, "hi": 206908, "elapsed_s": 331.262836292}
+{"stage": "chunk_complete", "lo": 190001, "hi": 200001, "elapsed_s": 339.21988230900024}
+{"stage": "result2_validated", "report": {"file": "/workspace/scratch/ec19c7b46f92/libai/q4_complete_delivery/v1/q123_closeout/result2.xlsx", "sha256": "88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870", "rounding": "decimal ROUND_HALF_UP, 4 places; time unrounded", "sheets": {"温度": {"data_rows": 206907, "expected_data_rows": 206907, "numeric_cells_compared": 4345047, "time_mismatches": 0, "value_mismatches": 0, "max_abs_difference_after_rounding": 0.0, "non_numeric_cells": 0, "first_time_s": 1.0, "last_time_s": 206906.76}, "水分浓度": {"data_rows": 206907, "expected_data_rows": 206907, "numeric_cells_compared": 4345047, "time_mismatches": 0, "value_mismatches": 0, "max_abs_difference_after_rounding": 0.0, "non_numeric_cells": 0, "first_time_s": 1.0, "last_time_s": 206906.76}}, "passed": true}}

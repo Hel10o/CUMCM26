@@ -1,0 +1,27 @@
+{
+  "reviewed": true,
+  "font": "Noto Sans CJK SC",
+  "q4_views": [
+    "result4_head.png",
+    "result4_tail.png",
+    "result4_notes_Sheet1.png"
+  ],
+  "q2_views": [
+    "result2_温度_head.png",
+    "result2_水分浓度_head.png",
+    "result2_tail_温度.png",
+    "result2_tail_水分浓度.png",
+    "result2_tail_time_水分浓度.png"
+  ],
+  "q2_preview_source": "artifact-authored first and last chunks; those XML data rows are transported verbatim to final workbook",
+  "checks": {
+    "Chinese_headers_legible": true,
+    "four_decimal_values_legible": true,
+    "final_fractional_seconds_legible": true,
+    "q4_outside_domain_blanks_visible": true,
+    "q4_radius_and_notes_legible": true,
+    "header_and_time_column_freeze_serialized": true
+  },
+  "native_Microsoft_Excel_open_test_performed": false,
+  "saved_file_validation": "Complete final files read using openpyxl read_only; all requested numeric cells and times compared against source arrays"
+}
