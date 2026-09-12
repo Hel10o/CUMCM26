@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "f609ab4a364b5a86ccaae0f0d7b105da5e277832",
+  "source_at_start_sha256": "9edc47ab70b8751c1a12be83ad9ad6693f4dfd8bfa616e8a7f10164f71a30ea9",
+  "user_pdf_at_start_sha256": "e4fa4d2ef6f5db55d4615ff4ceca96468ea4f49cad506b474783f5f80e7d09e2",
+  "only_added_indent_prefix": true,
+  "scope": "Preserve the user-written introductory paragraph; replace two ordinary leading spaces with an explicit 2em first-line indent.",
+  "pdf_pages": 158,
+  "starting_user_pdf_pages": 158,
+  "changed_physical_pages_from_user_pdf": [
+    1
+  ],
+  "indent_first_line_x_pt": 107.9530029296875,
+  "question_one_first_line_x_pt": 107.9530029296875,
+  "pdf_sha256": "c8f841419b17acef89db590f945712abd69e8eeb21403b648ada83a9f3972924",
+  "abstract_keywords_on_page": 2
+}

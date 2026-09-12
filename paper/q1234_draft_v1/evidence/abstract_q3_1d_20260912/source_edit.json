@@ -1,0 +1,11 @@
+{
+  "baseline_commit": "f609ab4a364b5a86ccaae0f0d7b105da5e277832",
+  "start_source_sha256": "f4e4e6ad67f6286a96531e5fb2a94b0beb051efbfeee4beb2fce5c8e1c42764d",
+  "new_source_sha256": "c42bd5075247bb24ba8cd33a9e96fb264ef0b1c0ebc09ebb210e50e6d861e84b",
+  "preserved_starting_changes": [
+    "User-approved opening paragraph",
+    "Explicit two-character first-line indent",
+    "User removal of standalone day-equivalence sentence before keywords"
+  ],
+  "only_changed_q3_since_turn_start": true
+}

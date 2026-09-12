@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": {
+    "pdf_total_157": true,
+    "keywords_on_abstract_page": true,
+    "q3_exact_conclusion_rendered": true,
+    "q3_1d_result_rendered": true,
+    "no_2d_abstract": true,
+    "only_abstract_page_differs_from_commit": true,
+    "intro_first_line_aligned_with_q1": true,
+    "no_reference_or_overfull_warnings": true
+  },
+  "pdf_pages": 157,
+  "baseline_pdf_pages": 157,
+  "changed_physical_pages": [
+    1
+  ],
+  "pixel_comparison_dpi": 72,
+  "unchanged_pages": 156,
+  "first_line_x_pt": 107.9530029296875,
+  "question_one_first_line_x_pt": 107.9530029296875,
+  "abstract_keywords_on_page": 1,
+  "warnings": [],
+  "pdf_sha256": "cbf5fddf36b6bdce38e2bc61587dbfdf6c7dc018155a14765253f50121500cba",
+  "baseline_pdf_sha256": "dbcd56ef23d4c86a8d5334a597ed757824c4c56765378d524e2d967bc60ffa52"
+}

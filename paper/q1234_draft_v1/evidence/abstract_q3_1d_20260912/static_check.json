@@ -1,0 +1,35 @@
+{
+  "checks": {
+    "only_q3_paragraph_changed_since_turn_start": true,
+    "outside_abstract_equals_committed_baseline": true,
+    "q3_bold_count_unchanged": true,
+    "abstract_bold_count_unchanged": true,
+    "intro_indent_kept": true,
+    "spacing_kept": true,
+    "accepted_q3_final_sentence": true,
+    "q3_only_1d": true,
+    "q3_key_result_kept": true,
+    "q3_threshold_kept": true,
+    "q3_environment_kept": true,
+    "starting_user_day_sentence_deletion_kept": true,
+    "all_tracked_sections_tables_figures_support_byte_identical": true
+  },
+  "passed": true,
+  "unchanged_protected_directories": [
+    "sections",
+    "tables",
+    "figures",
+    "support"
+  ],
+  "changed_protected_files": [],
+  "baseline_commit": "f609ab4a364b5a86ccaae0f0d7b105da5e277832",
+  "abstract_bold_block_count": 24,
+  "q3_bold_block_count": 4,
+  "intentionally_removed_from_abstract": [
+    "2D node maximum 0.149998606290 kg/kg",
+    "80 x 256 paired mesh",
+    "7.4740 s paired root difference"
+  ],
+  "numeric_result_changes": false,
+  "source_sha256": "c42bd5075247bb24ba8cd33a9e96fb264ef0b1c0ebc09ebb210e50e6d861e84b"
+}
