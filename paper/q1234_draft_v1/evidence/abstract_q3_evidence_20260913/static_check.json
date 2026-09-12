@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "checks": {
+    "only_q3_paragraph_changed": true,
+    "starting_source_equals_commit": true,
+    "all_source_numeric_tokens_identical": true,
+    "body_and_conclusion_byte_identical": true,
+    "intro_indent_preserved": true,
+    "q3_bold_matches_approved_draft": true,
+    "q3_no_2d_comparison": true,
+    "post_4h_assumption_preserved": true,
+    "q3_time_result_is_final_sentence": true
+  },
+  "baseline_commit": "d7f3b610c0d9293ca12a0d3f72620d73cd959057",
+  "source_sha256": "791a727fd249bee69f36928ce783999c501ac91ac9d307ad2c9ba184d7c851af",
+  "abstract_bold_blocks_before": 24,
+  "abstract_bold_blocks_after": 23,
+  "q3_source_numeric_tokens": [
+    "0.15",
+    "4",
+    "57.4741"
+  ]
+}

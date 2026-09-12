@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": {
+    "pages_157_unchanged": true,
+    "only_page_1_pixels_changed": true,
+    "keywords_page_1": true,
+    "calculated_axial_maximum_rendered": true,
+    "final_time_result_rendered": true,
+    "no_reference_or_overfull_warnings": true
+  },
+  "pdf_pages": 157,
+  "changed_physical_pages": [
+    1
+  ],
+  "unchanged_pages": 156,
+  "comparison_dpi": 72,
+  "warnings": [],
+  "pdf_sha256": "5c3e9f5fafb51b4dc6e8d2b06ee66cbc8b7b155f1f5fd2785161bd064e2aabf7"
+}
