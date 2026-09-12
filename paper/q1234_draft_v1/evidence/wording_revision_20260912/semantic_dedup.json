@@ -1,0 +1,2761 @@
+{
+  "task": "Task C semantic deduplication",
+  "date": "2026-09-12",
+  "baseline_commit": "ff5011e441e7ba47904549db0cc754a506b4a4d9",
+  "github_read_by_this_subagent": false,
+  "read_method": "local git show immutable baseline; full current source reading; main agent records remote GitHub reads",
+  "read_files": [
+    "q1234_paper_wording_handoff/摘要语气与措辞修订_模型指示文档.md",
+    "paper/q1234_draft_v1/evidence/content_finalization_20260912/论文内容改进与定稿记录.md",
+    "paper/q1234_draft_v1/sections/problem_model.tex",
+    "paper/q1234_draft_v1/sections/q1.tex",
+    "paper/q1234_draft_v1/sections/q2.tex",
+    "paper/q1234_draft_v1/sections/q3.tex",
+    "paper/q1234_draft_v1/sections/q4.tex",
+    "paper/q1234_draft_v1/sections/validation_limits.tex"
+  ],
+  "scope": "Reviewed chapters 1–7 against 9.3 and 8.2; only q2/q3/q4 would be editable; no source changed",
+  "method": "Manual full-text semantic review; exact sentence excerpts located by cues in immutable baseline; no sentence count cap, deletion quota, punctuation changes, or solver execution",
+  "candidates": [
+    {
+      "id": "C001",
+      "chapter": 1,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 2,
+        "line_end": 2,
+        "text": "热风干燥通过外界换热和水分交换改变药材内部状态，外表面的变化不能直接代表轴心或整根的状态。"
+      },
+      "new_text": "热风干燥通过外界换热和水分交换改变药材内部状态，外表面的变化不能直接代表轴心或整根的状态。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "外表与整根的区别是题意范围保护，不能以集中终点说明代替。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C002",
+      "chapter": 1,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 4,
+        "line_end": 4,
+        "text": "四问在机制和输出要求上递进，初态并不首尾串接。"
+      },
+      "new_text": "四问在机制和输出要求上递进，初态并不首尾串接。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "共同初态不首尾串接是问间接口保护，9.3没有同义替代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C003",
+      "chapter": 1,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 4,
+        "line_end": 4,
+        "text": "该解释由数值对照检验，不能作为题面已经指定中截面的事实。"
+      },
+      "new_text": "该解释由数值对照检验，不能作为题面已经指定中截面的事实。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "题面归属保护必须在建模解释处保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C004",
+      "chapter": 1,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 6,
+        "line_end": 6,
+        "text": "已有干燥研究使用材料输运与移动网格组织热质耦合\\cite{adrover2020,wu2022}，但其他材料的平衡含水率、孔隙关系和经验收缩系数不能直接迁移。"
+      },
+      "new_text": "已有干燥研究使用材料输运与移动网格组织热质耦合\\cite{adrover2020,wu2022}，但其他材料的平衡含水率、孔隙关系和经验收缩系数不能直接迁移。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "相关模型采用平衡干基含水率或气相/解吸关系\\cite{dasilva2014,adrover2020}，未提供本药材标定值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "防止跨材料迁移参数，中央标定缺口不能解除该保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C005",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 10,
+        "line_end": 10,
+        "text": "对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。"
+      },
+      "new_text": "对记录点之间的温度和空气水分量分别线性插值，保留原采样值，不作反向参数拟合。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "保留采样并非反向拟合的来源说明，9.3没有同义替代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C006",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 15,
+        "line_end": 15,
+        "text": "这是数据之外的环境延拓假设。"
+      },
+      "new_text": "这是数据之外的环境延拓假设。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "说明实测与外推分界，虽无数字仍是工况来源保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C007",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 15,
+        "line_end": 15,
+        "text": "使用时间加权均值、名义平台或其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。"
+      },
+      "new_text": "使用时间加权均值、名义平台或其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "包含2--3天且禁止按时长反选参数，整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C008",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 17,
+        "line_end": 17,
+        "text": "半径由\\unit{cm}换算为\\unit{m}后分段线性插值；它保持记录点和单调性，避免引入未经证实的过冲。"
+      },
+      "new_text": "半径由\\unit{cm}换算为\\unit{m}后分段线性插值；它保持记录点和单调性，避免引入未经证实的过冲。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "distinct_method_or_local_context",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "具体单位转换与插值方法不等于中央输入不确定性限制，不能当成同义删除。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C009",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 17,
+        "line_end": 17,
+        "text": "第四问主终点位于观测区间内，无须外推半径。"
+      },
+      "new_text": "第四问主终点位于观测区间内，无须外推半径。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "positive_result_lead_in",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "观测时域内无需外推是正面覆盖事实，不是重复限制。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C010",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 17,
+        "line_end": 17,
+        "text": "时间积分在环境与半径的折点处分段重启，以免跨折点的光滑性假设影响误差控制。"
+      },
+      "new_text": "时间积分在环境与半径的折点处分段重启，以免跨折点的光滑性假设影响误差控制。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "distinct_method_or_local_context",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "输入折点积分机制没有9.3/8.2同义句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C011",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 22,
+        "line_end": 22,
+        "text": "它是未经材料标定的恒等映射，不能把$b$直接称为实测药材平衡含水率。"
+      },
+      "new_text": "它是未经材料标定的恒等映射，不能把$b$直接称为实测药材平衡含水率。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "相关模型采用平衡干基含水率或气相/解吸关系\\cite{dasilva2014,adrover2020}，未提供本药材标定值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "禁止把映射当作实测材料平衡量，是直接保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C012",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 23,
+        "line_end": 23,
+        "text": "题面在附录2给出两系数，后问未另给时沿用该值；$h_m$属于材料干基驱动力标度，不自动等于气相浓度模型中的气膜系数。"
+      },
+      "new_text": "题面在附录2给出两系数，后问未另给时沿用该值；$h_m$属于材料干基驱动力标度，不自动等于气相浓度模型中的气膜系数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "仅当$c_{v,s}-c_{v,a}\\approx K(C_s-b)$时，才能建立$\\rhod h_m=k_gK$，不能直接交换系数数值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含附录数字并保护继承假设及传质驱动力基准。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C013",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 24,
+        "line_end": 24,
+        "text": "题给$\\rho c_p$用于有效热容量，记为$\\rhoe c_p$；真实干质量另由$\\rhod$账本描述。"
+      },
+      "new_text": "题给$\\rho c_p$用于有效热容量，记为$\\rhoe c_p$；真实干质量另由$\\rhod$账本描述。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "本文仅将题给$\\rho$用于有效容量，是建模处置而非题面规定。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "两类密度的核心定义不可从假设表删掉。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C014",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 24,
+        "line_end": 24,
+        "text": "不同时强制$\\rho/(1+C)$为真实干密度。"
+      },
+      "new_text": "不同时强制$\\rho/(1+C)$为真实干密度。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "这与前三问固定骨架的恒定干密度、第四问仿射收缩的空间均匀干密度不相容。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含公式常数且防止互斥质量解释，必须保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C015",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 24,
+        "line_end": 24,
+        "text": "本模型无显式蒸发潜热、液态扩散携焓和机械功项，不能据有效热方程宣称真实能量闭合。"
+      },
+      "new_text": "本模型无显式蒸发潜热、液态扩散携焓和机械功项，不能据有效热方程宣称真实能量闭合。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "真实能量闭合边界，硬约束直接保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C016",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 25,
+        "line_end": 25,
+        "text": "内部仿射运动是额外假设，单凭外半径不能唯一识别。"
+      },
+      "new_text": "内部仿射运动是额外假设，单凭外半径不能唯一识别。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "外半径不唯一识别内部运动，与中央观测非验证相关但不可删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C017",
+      "chapter": 2,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 46,
+        "line_end": 46,
+        "text": "所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。"
+      },
+      "new_text": "所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "温标与干湿基量定义保护，不是9.3的重复议论。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C018",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 77,
+        "line_end": 78,
+        "text": "式\\eqref{eq:heat}采用上述有效容量闭合，没有蒸发潜热或组分携焓项，\n不是对真实总焓守恒的证明。"
+      },
+      "new_text": "式\\eqref{eq:heat}采用上述有效容量闭合，没有蒸发潜热或组分携焓项，\n不是对真实总焓守恒的证明。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "式\\eqref{eq:heat}未显式计入相变能量，有限的$\\rhoe c_p$不能在近等温持续失水时自动补充汽化功率。"
+        },
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "真实总焓边界必须保留在通用方程处。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C019",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 96,
+        "line_end": 96,
+        "text": "在固定骨架或本文均匀径向收缩假设下，$\\rhod$空间均匀，可以从水分方程约去；时间变化的体积不应再向干基变量额外添加浓缩源。"
+      },
+      "new_text": "在固定骨架或本文均匀径向收缩假设下，$\\rhod$空间均匀，可以从水分方程约去；时间变化的体积不应再向干基变量额外添加浓缩源。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "这与前三问固定骨架的恒定干密度、第四问仿射收缩的空间均匀干密度不相容。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "既有干密度条件及不重复浓缩的数学保护，不能替换为密度反例。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C020",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 102,
+        "line_end": 102,
+        "text": "当$C_s>b$时外向失水为正；若边界关系改变导致$C_s<b$，不能继续强制只许失水。"
+      },
+      "new_text": "当$C_s>b$时外向失水为正；若边界关系改变导致$C_s<b$，不能继续强制只许失水。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "仅当$c_{v,s}-c_{v,a}\\approx K(C_s-b)$时，才能建立$\\rhod h_m=k_gK$，不能直接交换系数数值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "通量方向保护，中央系数对应不完整覆盖。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C021",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 107,
+        "line_end": 107,
+        "text": "变系数保留在散度内部，不能将$k(C)$或$D(T,C)$简单提出算子；$\\rhoe c_p$乘温度变化率也不能直接改写为$\\partial_t(\\rhoe c_pT)$。"
+      },
+      "new_text": "变系数保留在散度内部，不能将$k(C)$或$D(T,C)$简单提出算子；$\\rhoe c_p$乘温度变化率也不能直接改写为$\\partial_t(\\rhoe c_pT)$。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "算子与容量率的数学边界，不是中央物理限制重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C022",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 127,
+        "line_end": 128,
+        "text": "各问分别报告主离散、独立对照及结果误差；导出一致性、数值精度和物理\n模型正确性是不同层级的检验，不用单一求解成功标记替代。"
+      },
+      "new_text": "各问分别报告主离散、独立对照及结果误差；导出一致性、数值精度和物理\n模型正确性是不同层级的检验，不用单一求解成功标记替代。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "防止将求解成功混同物理验证，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C023",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 136,
+        "line_end": 136,
+        "text": "停止判断使用未舍入值；显示为0.1500的表格数不能区分阈值两侧。"
+      },
+      "new_text": "停止判断使用未舍入值；显示为0.1500的表格数不能区分阈值两侧。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含0.1500且保护阈值两侧的判定。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C024",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 136,
+        "line_end": 136,
+        "text": "对配点解，除检查节点外，还利用式\\eqref{eq:primitive}的单调性查找重构多项式的全部实驻点，避免只看轴心而漏掉内部极值。"
+      },
+      "new_text": "对配点解，除检查节点外，还利用式\\eqref{eq:primitive}的单调性查找重构多项式的全部实驻点，避免只看轴心而漏掉内部极值。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "完整驻点检查为算法保护，9.3只说明证据等级，非同义替代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C025",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 136,
+        "line_end": 136,
+        "text": "连续二维严格界则需进一步控制空间、时间及重构误差，不能由节点值直接推出。"
+      },
+      "new_text": "连续二维严格界则需进一步控制空间、时间及重构误差，不能由节点值直接推出。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "连续严格界与节点结果的边界，不能删除。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C026",
+      "chapter": 3,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+        "line_start": 138,
+        "line_end": 138,
+        "text": "每个情景保存未舍入数组、求解配置和图表数据，论文中的规定四位表值由对应数组生成，避免从图像或已舍入中间表反算。"
+      },
+      "new_text": "每个情景保存未舍入数组、求解配置和图表数据，论文中的规定四位表值由对应数组生成，避免从图像或已舍入中间表反算。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "防止图像或舍入中间表反算的来源保护，不在9.3重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C027",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 28,
+        "line_end": 30,
+        "text": "本问的$D$不依赖温度，热方程也\n不依赖含水率，因此两个场分别求解；水分场仍是非线性的，因为其散度\n展开后为$D(C)(C_{rr}+C_r/r)+D'(C)C_r^2$，不能按常扩散率处理。"
+      },
+      "new_text": "本问的$D$不依赖温度，热方程也\n不依赖含水率，因此两个场分别求解；水分场仍是非线性的，因为其散度\n展开后为$D(C)(C_{rr}+C_r/r)+D'(C)C_r^2$，不能按常扩散率处理。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含导数指数，且禁止将非线性通量当常扩散率。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C028",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 31,
+        "line_end": 32,
+        "text": "均匀初态与式\\eqref{eq:q1-bc}在初始表面角点不相容，故保留题给初值，\n允许$t>0$形成早期边界层，不人为调整初始表面含水率。"
+      },
+      "new_text": "均匀初态与式\\eqref{eq:q1-bc}在初始表面角点不相容，故保留题给初值，\n允许$t>0$形成早期边界层，不人为调整初始表面含水率。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含t>0且保护原初态，不是9.3同义限制。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C029",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 92,
+        "line_end": 93,
+        "text": "正式径向区间数为10240，相对容差$2\\times10^{-12}$，最大步长$3\\unit{s}$；\n$1\\unit{s}$是输出间隔，不是积分固定步长。"
+      },
+      "new_text": "正式径向区间数为10240，相对容差$2\\times10^{-12}$，最大步长$3\\unit{s}$；\n$1\\unit{s}$是输出间隔，不是积分固定步长。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "网格容差步长数字及输出间隔区别整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C030",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 97,
+        "line_end": 99,
+        "text": "\\texttt{result1.xlsx}从第1秒至第1800秒，每隔\n$0.1\\unit{cm}$输出21个位置的温度和干基含水率，共75600个数值；\n计算不提前舍入，输出统一显示四位小数。"
+      },
+      "new_text": "\\texttt{result1.xlsx}从第1秒至第1800秒，每隔\n$0.1\\unit{cm}$输出21个位置的温度和干基含水率，共75600个数值；\n计算不提前舍入，输出统一显示四位小数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "正式输出数量与不提前舍入整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C031",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 118,
+        "line_end": 120,
+        "text": "同期表面含水率降至$1.5102\\unit{kg/kg}$，轴心实际含水率约为\n$2.5499924\\unit{kg/kg}$，四位显示仍为2.5500；因此不能把表中轴心数字\n未变解释为水分数学上严格不变。"
+      },
+      "new_text": "同期表面含水率降至$1.5102\\unit{kg/kg}$，轴心实际含水率约为\n$2.5499924\\unit{kg/kg}$，四位显示仍为2.5500；因此不能把表中轴心数字\n未变解释为水分数学上严格不变。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "数值及不能据四位显示推断数学不变的保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C032",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 131,
+        "line_end": 132,
+        "text": "这里不存在严格截断的\n扩散前沿；描述受影响层厚度时需要先规定含水率变化阈值。"
+      },
+      "new_text": "这里不存在严格截断的\n扩散前沿；描述受影响层厚度时需要先规定含水率变化阈值。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "扩散前沿定义保护，9.3未提供同义说明。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C033",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 138,
+        "line_end": 139,
+        "text": "这解释了预热阶段热响应快于水分响应；因失水使$D$\n继续减小，初始扩散时间不是最终烘干时长。"
+      },
+      "new_text": "这解释了预热阶段热响应快于水分响应；因失水使$D$\n继续减小，初始扩散时间不是最终烘干时长。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "初始尺度不是最终时长的数学解释保护，不是中央终点证据重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C034",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 140,
+        "line_end": 142,
+        "text": "圆柱平均须按$r\\,\\mathrm dr$加权，得到末时中截面平均温度\n35.1679\\celsius、平均含水率$2.2936\\unit{kg/kg}$；它们不替代最湿点，\n也不能直接当作包含端部效应的整根平均量。"
+      },
+      "new_text": "圆柱平均须按$r\\,\\mathrm dr$加权，得到末时中截面平均温度\n35.1679\\celsius、平均含水率$2.2936\\unit{kg/kg}$；它们不替代最湿点，\n也不能直接当作包含端部效应的整根平均量。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含平均值且禁止平均量代替最湿点或整根平均，保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C035",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 152,
+        "line_end": 153,
+        "text": "接近舍入分界的数值必须逐项核对，不能仅凭最大误差小于半个末位单位\n推断整张表四位一致。"
+      },
+      "new_text": "接近舍入分界的数值必须逐项核对，不能仅凭最大误差小于半个末位单位\n推断整张表四位一致。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "四位舍入判定规则的保护，9.3未给同义证据。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C036",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 155,
+        "line_end": 158,
+        "text": "同物理条件的$80\\times128$有限圆柱二维配对，在前$1800\\unit{s}$\n已检查采样点的中截面最大温湿差约为\n$5.65\\times10^{-8}\\unit{K}$与$4.09\\times10^{-9}\\unit{kg/kg}$，\n支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。"
+      },
+      "new_text": "同物理条件的$80\\times128$有限圆柱二维配对，在前$1800\\unit{s}$\n已检查采样点的中截面最大温湿差约为\n$5.65\\times10^{-8}\\unit{K}$与$4.09\\times10^{-9}\\unit{kg/kg}$，\n支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含二维对照数值及中截面适用范围，整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C037",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 159,
+        "line_end": 160,
+        "text": "以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度\n及无显式潜热假设引入的物理不确定性。"
+      },
+      "new_text": "以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度\n及无显式潜热假设引入的物理不确定性。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        },
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "后段人为情景的幅度与用途见第\\ref{sec:environment-scenarios}节，数值余量不覆盖环境、气固映射与物性假设的不确定性。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "物理不确定性保护，即使与9.3相关也不得删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C038",
+      "chapter": 4,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "line_start": 161,
+        "line_end": 161,
+        "text": "本问预热段的相变能量缺口量级显著，相关诊断与解释范围见第\\ref{sec:limitations}节。"
+      },
+      "new_text": "本问预热段的相变能量缺口量级显著，相关诊断与解释范围见第\\ref{sec:limitations}节。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "distinct_method_or_local_context",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "在“初始湿密度确定干质量、全部等效失水均蒸发”的附加条件下，取诊断常数$\\lambda=2.45\\unit{MJ/kg}$\\cite{fao}，问题一1800\\unit{s}的潜热需求约45.59\\unit{kJ}，原轨迹对流输入约4.801\\unit{kJ}，比例约9.50。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "这是上一轮I4定位Q1时段的解释句，并非9.3可无损替代的局部落点；本专项也无q1编辑权。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C039",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 5,
+        "line_end": 6,
+        "text": "第二问从共同初态开始，全程使用附录3物性\\cite{problem}，不接续第一问\n末态，也不在$1800\\unit{s}$处切换公式。"
+      },
+      "new_text": "第二问从共同初态开始，全程使用附录3物性\\cite{problem}，不接续第一问\n末态，也不在$1800\\unit{s}$处切换公式。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含附录及时间数字，且保护问间初态不串接。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C040",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 31,
+        "line_end": 33,
+        "text": "例如第一式展开为$T_t=(k/S)(T_{rr}+T_r/r)+(k'(C)/S)C_rT_r$，\n显式给出含水率梯度对导热的反馈；不能将其改成\n$\\nabla\\cdot[(k/S)\\nabla T]$，否则会额外引入$S$的空间导数。"
+      },
+      "new_text": "例如第一式展开为$T_t=(k/S)(T_{rr}+T_r/r)+(k'(C)/S)C_rT_r$，\n显式给出含水率梯度对导热的反馈；不能将其改成\n$\\nabla\\cdot[(k/S)\\nabla T]$，否则会额外引入$S$的空间导数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "算子展开与不能换成另一散度算子的保护，无同义9.3句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C041",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 34,
+        "line_end": 35,
+        "text": "这里经验$\\rho_{\\rm eff}(C)$仅用于有效热容量，不同时充当固定体积下\n满足真实组成守恒的湿体密度。"
+      },
+      "new_text": "这里经验$\\rho_{\\rm eff}(C)$仅用于有效热容量，不同时充当固定体积下\n满足真实组成守恒的湿体密度。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "本文仅将题给$\\rho$用于有效容量，是建模处置而非题面规定。"
+        },
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "这与前三问固定骨架的恒定干密度、第四问仿射收缩的空间均匀干密度不相容。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "防止有效容量与真实湿密度混用，虽无结果数字仍须保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C042",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 47,
+        "line_end": 48,
+        "text": "有限的$v_x$自动满足轴线$v_r=0$，且$x=0$处右端取\n$4a(0)v_x(0)/R_0^2$，无需人为设置一个很小的替代半径。"
+      },
+      "new_text": "有限的$v_x$自动满足轴线$v_r=0$，且$x=0$处右端取\n$4a(0)v_x(0)/R_0^2$，无需人为设置一个很小的替代半径。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含坐标和原点处理公式，非中央限制重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C043",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 92,
+        "line_end": 93,
+        "text": "因此每次内部状态改变都会同步更新表面温湿，不能分别\n指定二者或用上一时刻的表面值替代；时间积分Jacobian也包含这一隐式响应。"
+      },
+      "new_text": "因此每次内部状态改变都会同步更新表面温湿，不能分别\n指定二者或用上一时刻的表面值替代；时间积分Jacobian也包含这一隐式响应。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "联合表面状态与Jacobian一致性保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C044",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 112,
+        "line_end": 113,
+        "text": "前$4\\unit{h}$采用附件1分段线性环境，之后按统一假设保持末小时61点\n算术均值：$T_a=49.9989344262\\celsius$、$b=0.04998754098$。"
+      },
+      "new_text": "前$4\\unit{h}$采用附件1分段线性环境，之后按统一假设保持末小时61点\n算术均值：$T_a=49.9989344262\\celsius$、$b=0.04998754098$。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "包含平台与时间数字的环境定义整句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C045",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 115,
+        "line_end": 116,
+        "text": "因此第二问的完整结果\n覆盖所选模型下的全过程，题设表3、表4对应的表\\ref{tab:q2-temperature}、\\ref{tab:q2-moisture}仅展示前$3\\unit{h}$。"
+      },
+      "new_text": "因此第二问的完整结果\n覆盖所选模型下的全过程，题设表3、表4对应的表\\ref{tab:q2-temperature}、\\ref{tab:q2-moisture}仅展示前$3\\unit{h}$。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含表号及时域且说明全过程与规定表范围，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C046",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 117,
+        "line_end": 117,
+        "text": "环境平台是超出观测范围的假设，不能将此完整时间覆盖称为数天实测验证。"
+      },
+      "new_text": "环境平台是超出观测范围的假设，不能将此完整时间覆盖称为数天实测验证。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "不得把外推当实测验证的保护，不能只剩中央声明。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C047",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 124,
+        "line_end": 124,
+        "text": "逐秒评价联合连续解，不将不同模型的温度、水分拼接。"
+      },
+      "new_text": "逐秒评价联合连续解，不将不同模型的温度、水分拼接。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "禁止拼接不同模型轨迹的来源保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C048",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 143,
+        "line_end": 144,
+        "text": "温度接近空间均匀时，水分仍有明显梯度，\n不能用均匀含水率的集中参数近似替代径向场。"
+      },
+      "new_text": "温度接近空间均匀时，水分仍有明显梯度，\n不能用均匀含水率的集中参数近似替代径向场。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "禁止均匀含水率近似代替径向场，与9.3并非同义。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C049",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 146,
+        "line_end": 147,
+        "text": "该比例是固定参考\n干密度下的有效水分减少比例，不是实测总质量损失率。"
+      },
+      "new_text": "该比例是固定参考\n干密度下的有效水分减少比例，不是实测总质量损失率。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "本文仅将题给$\\rho$用于有效容量，是建模处置而非题面规定。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "有效水分比例与实测总质量的口径保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C050",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 159,
+        "line_end": 159,
+        "text": "第一问和第二问是不同参数情形，不能共用一段预热轨迹。"
+      },
+      "new_text": "第一问和第二问是不同参数情形，不能共用一段预热轨迹。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "问间独立初态保护，没有9.3同义句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C051",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 172,
+        "line_end": 173,
+        "text": "$H$度量沿当前轨迹的累计温度贡献，$M$度量累计含水率贡献；这是代数\n分解，不能当作独立改变某一因素的因果贡献百分比。"
+      },
+      "new_text": "$H$度量沿当前轨迹的累计温度贡献，$M$度量累计含水率贡献；这是代数\n分解，不能当作独立改变某一因素的因果贡献百分比。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "代数分解不能作因果分摊的保护，非中央限制重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C052",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 178,
+        "line_end": 179,
+        "text": "温度变化和失水抑制\n的竞争随阶段变化，前3小时的累计主导关系不能直接用于判定末期干燥瓶颈。"
+      },
+      "new_text": "温度变化和失水抑制\n的竞争随阶段变化，前3小时的累计主导关系不能直接用于判定末期干燥瓶颈。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含前3小时，且禁止将早期机制推到末期。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C053",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 184,
+        "line_end": 185,
+        "text": "该对照为人为情景而非参数置信区间（见第\\ref{sec:environment-scenarios}节），\n不能替代气固水分基准识别\\cite{dasilva2014,adrover2020}。"
+      },
+      "new_text": "该对照为人为情景而非参数置信区间（见第\\ref{sec:environment-scenarios}节），\n不能替代气固水分基准识别\\cite{dasilva2014,adrover2020}。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "扰动幅度为人为选择的压力测试，没有作为测量不确定度或置信区间。"
+        },
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "相关模型采用平衡干基含水率或气相/解吸关系\\cite{dasilva2014,adrover2020}，未提供本药材标定值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "虽无具体数值，但非参数置信区间、不能替代气固基准均属保护；8.2对照因素也不同。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C054",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 192,
+        "line_end": 192,
+        "text": "有限体积外推是这一前3小时交叉验证的来源，不是完整工作簿的生成方法。"
+      },
+      "new_text": "有限体积外推是这一前3小时交叉验证的来源，不是完整工作簿的生成方法。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含具体时域且保护正式工作簿来源，9.3没有同义替代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C055",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 196,
+        "line_end": 198,
+        "text": "当前869万余格工作簿与同源未舍入轨迹的舍入核对全部通过，\n该检查支持导出一致性；高阶独立参考覆盖的是所列采样点，不能把导出\n一致性误写成全部逐秒状态均另作了独立求解。"
+      },
+      "new_text": "当前869万余格工作簿与同源未舍入轨迹的舍入核对全部通过，\n该检查支持导出一致性；高阶独立参考覆盖的是所列采样点，不能把导出\n一致性误写成全部逐秒状态均另作了独立求解。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含输出规模，且同源导出不等于独立求解是关键保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C056",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 201,
+        "line_end": 204,
+        "text": "热账本核对的是有效热容量积分与边界热流，即比较\n$\\int\\!\\int S(C)T_t\\,\\mathrm dV\\mathrm dt$与累计边界热量，\n相对残差约$3.11\\times10^{-11}$，并非$\\int ST\\,\\mathrm dV$的末初差，\n更不构成潜热、携焓及真实总能量已经闭合的证明。"
+      },
+      "new_text": "热账本核对的是有效热容量积分与边界热流，即比较\n$\\int\\!\\int S(C)T_t\\,\\mathrm dV\\mathrm dt$与累计边界热量，\n相对残差约$3.11\\times10^{-11}$，并非$\\int ST\\,\\mathrm dV$的末初差，\n更不构成潜热、携焓及真实总能量已经闭合的证明。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "式\\eqref{eq:heat}未显式计入相变能量，有限的$\\rhoe c_p$不能在近等温持续失水时自动补充汽化功率。"
+        },
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含3.11乘10的负11次方且明确真实能量边界，整体不可删除或拆句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C057",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 207,
+        "line_end": 208,
+        "text": "这支持中截面的工程近似，但不能保证降维后所有四位显示相同；长期全域\n达标须结合第三问终点证据，不能直接沿用前3小时的几何误差。"
+      },
+      "new_text": "这支持中截面的工程近似，但不能保证降维后所有四位显示相同；长期全域\n达标须结合第三问终点证据，不能直接沿用前3小时的几何误差。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        },
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含前3小时，且不能把早期几何证据推至长期全域，保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C058",
+      "chapter": 5,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "line_start": 209,
+        "line_end": 209,
+        "text": "本问早期大通量阶段亦受相变能量缺口约束，相关量级诊断与闭合限制见第\\ref{sec:limitations}节。"
+      },
+      "new_text": "本问早期大通量阶段亦受相变能量缺口约束，相关量级诊断与闭合限制见第\\ref{sec:limitations}节。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "在“初始湿密度确定干质量、全部等效失水均蒸发”的附加条件下，取诊断常数$\\lambda=2.45\\unit{MJ/kg}$\\cite{fao}，问题一1800\\unit{s}的潜热需求约45.59\\unit{kJ}，原轨迹对流输入约4.801\\unit{kJ}，比例约9.50。"
+        },
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "这是Q2物理解释受相变闭合限制的保护性落点，上一轮I4要求保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C059",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 8,
+        "line_end": 9,
+        "text": "本文沿用问题二的附录3物性、初态和环境条件，\n由同一温湿联立轨迹确定终点，而不以表面含水率或截面平均值代替最大值。"
+      },
+      "new_text": "本文沿用问题二的附录3物性、初态和环境条件，\n由同一温湿联立轨迹确定终点，而不以表面含水率或截面平均值代替最大值。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含附录数字并禁止表面/均值代替最大值，保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C060",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 20,
+        "line_end": 21,
+        "text": "等号根是严格达标时间集合的边界，根本身不满足题设严格不等式；\n有限圆柱中“各处”的含义则由后述二维计算另行检验。"
+      },
+      "new_text": "等号根是严格达标时间集合的边界，根本身不满足题设严格不等式；\n有限圆柱中“各处”的含义则由后述二维计算另行检验。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "严格不等式与有限圆柱各处的题意保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C061",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 23,
+        "line_end": 23,
+        "text": "附件1仅覆盖前4\\unit{h}，长时计算需延拓环境。"
+      },
+      "new_text": "附件1仅覆盖前4\\unit{h}，长时计算需延拓环境。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "实测时域含数字，必须保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C062",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 27,
+        "line_end": 27,
+        "text": "该平台是假设的后续工况，不是4\\unit{h}以后的观测记录。"
+      },
+      "new_text": "该平台是假设的后续工况，不是4\\unit{h}以后的观测记录。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "由于式\\eqref{eq:future}仅为4\\unit{h}后的延拓，保持短时实测过程不变，从保存的4\\unit{h}内部温湿场开展后段联立续算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含4小时且禁止误当后续观测，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C063",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 28,
+        "line_end": 29,
+        "text": "温度和含水率始终按式\\eqref{eq:heat}--\\eqref{eq:boundary}联立推进，\n不在温度接近环境后直接将温度场替换为常数。"
+      },
+      "new_text": "温度和含水率始终按式\\eqref{eq:heat}--\\eqref{eq:boundary}联立推进，\n不在温度接近环境后直接将温度场替换为常数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "禁止将联立温度场替成常数的算法保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C064",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 44,
+        "line_end": 44,
+        "text": "式\\eqref{eq:q3-primitive}只改写通量，不改变题给扩散系数。"
+      },
+      "new_text": "式\\eqref{eq:q3-primitive}只改写通量，不改变题给扩散系数。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "原通量未改的模型对应保护，不是中央物理限制重复。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C065",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 67,
+        "line_end": 68,
+        "text": "该式确定的是重构一维场的最大值；重构误差及与连续方程的差异仍需\n数值加密检验，不能把多项式极值的求全等同于连续模型严格误差为零。"
+      },
+      "new_text": "该式确定的是重构一维场的最大值；重构误差及与连续方程的差异仍需\n数值加密检验，不能把多项式极值的求全等同于连续模型严格误差为零。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "重构极值不等于连续模型严格无误差，硬约束保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C066",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 76,
+        "line_end": 76,
+        "text": "若重构出现更湿的内部点，就必须重新定位事件，不能直接接受节点根。"
+      },
+      "new_text": "若重构出现更湿的内部点，就必须重新定位事件，不能直接接受节点根。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "事件候选必须复核的算法保护，无同义中央替代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C067",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 86,
+        "line_end": 88,
+        "text": "已有事件记录给出末期斜率约\n$-2.9128\\times10^{-7}\\unit{(kg/kg)/s}$；因此显示到四位小数的0.1500\n不能支持亚秒级的达标判定。"
+      },
+      "new_text": "已有事件记录给出末期斜率约\n$-2.9128\\times10^{-7}\\unit{(kg/kg)/s}$；因此显示到四位小数的0.1500\n不能支持亚秒级的达标判定。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "斜率和舍入阈值数字整句不可删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C068",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 88,
+        "line_end": 89,
+        "text": "式\\eqref{eq:q3-local-event-scale}仅作局部误差尺度\n解释，正式时间预算仍取自网格与时间方法对照，不能由该线性近似给出严格界。"
+      },
+      "new_text": "式\\eqref{eq:q3-local-event-scale}仅作局部误差尺度\n解释，正式时间预算仍取自网格与时间方法对照，不能由该线性近似给出严格界。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "线性近似不提供严格界，直接保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C069",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 114,
+        "line_end": 115,
+        "text": "这里的经验余量用于当前方程的数值选择，\n不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。"
+      },
+      "new_text": "这里的经验余量用于当前方程的数值选择，\n不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "后段人为情景的幅度与用途见第\\ref{sec:environment-scenarios}节，数值余量不覆盖环境、气固映射与物性假设的不确定性。"
+        },
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 58,
+          "line_end": 58,
+          "text": "工程执行余量应建立在可用工况范围上，不能只依据四位小时的取整步长。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "无数字但包含环境/边界/物性不确定性及非实验安全上界，保护声明保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C070",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 120,
+        "line_end": 120,
+        "text": "因此，表面先达到要求并不能作为全体材料的终止依据。"
+      },
+      "new_text": "因此，表面先达到要求并不能作为全体材料的终止依据。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "不能以表面代替全体材料终止的关键保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C071",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 134,
+        "line_end": 135,
+        "text": "末行轴心显示为0.1500，是式\\eqref{eq:q3-end-moisture}的四位舍入值；\n达标判断使用未舍入场而不使用表格显示值。"
+      },
+      "new_text": "末行轴心显示为0.1500，是式\\eqref{eq:q3-end-moisture}的四位舍入值；\n达标判断使用未舍入场而不使用表格显示值。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "未舍入阈值判据含数整句。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C072",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 139,
+        "line_end": 139,
+        "text": "该结果支持已选方程的数值稳定性，不替代物理参数验证。"
+      },
+      "new_text": "该结果支持已选方程的数值稳定性，不替代物理参数验证。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "后段人为情景的幅度与用途见第\\ref{sec:environment-scenarios}节，数值余量不覆盖环境、气固映射与物性假设的不确定性。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "数值验证不替代物理参数验证的保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C073",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 146,
+        "line_end": 147,
+        "text": "两问采用各自附录物性，问题四另施加观测半径历程，\n 因而曲线差异不能全部归因于收缩。"
+      },
+      "new_text": "两问采用各自附录物性，问题四另施加观测半径历程，\n 因而曲线差异不能全部归因于收缩。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "图注中的收缩归因保护，不因位置在图注而删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C074",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 158,
+        "line_end": 159,
+        "text": "这一差值用于识别端部效应，不能把粗网格二维绝对根\n直接替代精细一维根。"
+      },
+      "new_text": "这一差值用于识别端部效应，不能把粗网格二维绝对根\n直接替代精细一维根。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "粗二维绝对根不得替代精细一维的保护，不能由中央简写取代。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C075",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 164,
+        "line_end": 166,
+        "text": "该节点结果与配对根差支持$57.4741\\unit{h}$的工程保守方向；\n局部续算仍继承前史离散误差，尚不构成连续二维域的严格数学误差界，\n也不将该时长解释为精确的二维最短时间。"
+      },
+      "new_text": "该节点结果与配对根差支持$57.4741\\unit{h}$的工程保守方向；\n局部续算仍继承前史离散误差，尚不构成连续二维域的严格数学误差界，\n也不将该时长解释为精确的二维最短时间。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        },
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含57.4741且包含继承前史、严格界和非精确最短时间，整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C076",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 167,
+        "line_end": 167,
+        "text": "上述证据层级集中见第\\ref{sec:limitations}节。"
+      },
+      "new_text": "上述证据层级集中见第\\ref{sec:limitations}节。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "navigation_not_repeated_restriction",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "纯导航不是重复限制；删除它不能算完成语义去重，保留有效定位。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C077",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 169,
+        "line_end": 169,
+        "text": "后段环境对终时的影响大于末位数值差。"
+      },
+      "new_text": "后段环境对终时的影响大于末位数值差。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "positive_result_lead_in",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 58,
+          "line_end": 58,
+          "text": "已有时间加权均值对照使问题三根变化约20.04\\unit{s}，问题四改用PCHIP半径插值使根提前约12.61\\unit{s}，二者也超过亚秒级一维经验数值预算。"
+        },
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 58,
+          "line_end": 58,
+          "text": "工程执行余量应建立在可用工况范围上，不能只依据四位小时的取整步长。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "是引出紧随定量情景的正面比较结论，不是与9.3同义的无信息限制。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C078",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 173,
+        "line_end": 173,
+        "text": "该单因素情景为人为设定而非观测误差范围（见第\\ref{sec:environment-scenarios}节）。"
+      },
+      "new_text": "该单因素情景为人为设定而非观测误差范围（见第\\ref{sec:environment-scenarios}节）。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 36,
+          "line_end": 36,
+          "text": "扰动幅度为人为选择的压力测试，没有作为测量不确定度或置信区间。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "非观测误差范围是保护声明，不能因无数字而删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C079",
+      "chapter": 6,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "line_start": 174,
+        "line_end": 175,
+        "text": "故57.4741\\unit{h}应与环境平台和有效气固边界共同报告，\n不能仅凭小数位数给出真实工况下的确定性保证。"
+      },
+      "new_text": "故57.4741\\unit{h}应与环境平台和有效气固边界共同报告，\n不能仅凭小数位数给出真实工况下的确定性保证。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "后段人为情景的幅度与用途见第\\ref{sec:environment-scenarios}节，数值余量不覆盖环境、气固映射与物性假设的不确定性。"
+        },
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含时长且明确不能作真实工况确定性保证，必须保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C080",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 8,
+        "line_end": 9,
+        "text": "温度和含水率从28\\celsius、2.55\\unit{kg/kg}的共同初态重新求解，\n不接续问题三的干燥末态。"
+      },
+      "new_text": "温度和含水率从28\\celsius、2.55\\unit{kg/kg}的共同初态重新求解，\n不接续问题三的干燥末态。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含初态数字，保护不串接问题三末态。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C081",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 16,
+        "line_end": 16,
+        "text": "外半径只规定边界位置，不能唯一确定内部材料运动。"
+      },
+      "new_text": "外半径只规定边界位置，不能唯一确定内部材料运动。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "不能唯一确定材料运动是模型解释保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C082",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 26,
+        "line_end": 26,
+        "text": "该材料映射是一项附加假设，而不是半径记录直接测得的内部变形。"
+      },
+      "new_text": "该材料映射是一项附加假设，而不是半径记录直接测得的内部变形。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "禁止把仿射映射当实测内部变形的保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C083",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 81,
+        "line_end": 81,
+        "text": "式\\eqref{eq:q4-reference-pde}没有额外的几何浓缩源。"
+      },
+      "new_text": "式\\eqref{eq:q4-reference-pde}没有额外的几何浓缩源。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "distinct_method_or_local_context",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "干基变量推导结论，并非9.3限制；不能把数学结果当重复免责删去。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C084",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 84,
+        "line_end": 84,
+        "text": "若再加入$-2R'C/R$或另一个网格对流项，就会重复计算已经包含的材料运动。"
+      },
+      "new_text": "若再加入$-2R'C/R$或另一个网格对流项，就会重复计算已经包含的材料运动。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含公式数值，且防止重复材料运动项，保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C085",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 85,
+        "line_end": 86,
+        "text": "附录$\\rho_{\\mathrm{eff}}$用于有效热容量，$\\rho_d$用于上述质量账本；\n二者不能同时通过$\\rho_d=\\rho_{\\mathrm{eff}}/(1+C)$强制等同为真实组分密度。"
+      },
+      "new_text": "附录$\\rho_{\\mathrm{eff}}$用于有效热容量，$\\rho_d$用于上述质量账本；\n二者不能同时通过$\\rho_d=\\rho_{\\mathrm{eff}}/(1+C)$强制等同为真实组分密度。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "这与前三问固定骨架的恒定干密度、第四问仿射收缩的空间均匀干密度不相容。"
+        },
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "本文仅将题给$\\rho$用于有效容量，是建模处置而非题面规定。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含1+C关系，保护有效容量与干质量定义不混用。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C086",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 87,
+        "line_end": 87,
+        "text": "热式仍无显式潜热，数值闭合不构成真实组分总焓守恒的证明（见第\\ref{sec:limitations}节）。"
+      },
+      "new_text": "热式仍无显式潜热，数值闭合不构成真实组分总焓守恒的证明（见第\\ref{sec:limitations}节）。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "式\\eqref{eq:heat}未显式计入相变能量，有限的$\\rhoe c_p$不能在近等温持续失水时自动补充汽化功率。"
+        },
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "真实组分总焓守恒边界，虽无结果数字仍一律保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C087",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 98,
+        "line_end": 101,
+        "text": "表面交换系数沿用$h_T=25\\unit{W/(m^2\\cdot K)}$、\n$h_m=8\\times10^{-7}\\unit{m/s}$，\n式\\eqref{eq:q4-reference-boundary}中的质量通量相对于材料界面，\n不另将表面扫过的体积计为蒸发失水。"
+      },
+      "new_text": "表面交换系数沿用$h_T=25\\unit{W/(m^2\\cdot K)}$、\n$h_m=8\\times10^{-7}\\unit{m/s}$，\n式\\eqref{eq:q4-reference-boundary}中的质量通量相对于材料界面，\n不另将表面扫过的体积计为蒸发失水。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "仅当$c_{v,s}-c_{v,a}\\approx K(C_s-b)$时，才能建立$\\rhod h_m=k_gK$，不能直接交换系数数值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "系数数字和不重复表面扫体积的条件整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C088",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 155,
+        "line_end": 156,
+        "text": "这两项检验针对已选干基守恒与材料运动，\n不把经验密度的物理解释也视为已验证。"
+      },
+      "new_text": "这两项检验针对已选干基守恒与材料运动，\n不把经验密度的物理解释也视为已验证。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 经验密度与材料质量的相容性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 94,
+          "line_end": 94,
+          "text": "本文仅将题给$\\rho$用于有效容量，是建模处置而非题面规定。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "不把数值不变量检查当物理密度验证的保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C089",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 165,
+        "line_end": 166,
+        "text": "前两类检验显示谱解已稳定，有限体积外推提供不同离散方法的支持，\n外推差仍是经验数值指标而非严格误差界。"
+      },
+      "new_text": "前两类检验显示谱解已稳定，有限体积外推提供不同离散方法的支持，\n外推差仍是经验数值指标而非严格误差界。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "经验数值指标不等于严格界的边界，保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C090",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 198,
+        "line_end": 199,
+        "text": "当$r_j>R(t)$时不作域外外推；当前表面取$x=1$另列，\n不能当作固定2\\unit{cm}位置。"
+      },
+      "new_text": "当$r_j>R(t)$时不作域外外推；当前表面取$x=1$另列，\n不能当作固定2\\unit{cm}位置。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含固定2厘米且保护域外处理，中央限制不同。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C091",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 209,
+        "line_end": 209,
+        "text": "表中域外位置以“—”表示不适用，不能解释成零含水率。"
+      },
+      "new_text": "表中域外位置以“—”表示不适用，不能解释成零含水率。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "禁止空白当零含水率的表格读取保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C092",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 212,
+        "line_end": 213,
+        "text": "末行轴心四位显示0.1500，严格不等式判断仍基于\n式\\eqref{eq:q4-execution}的未舍入值。"
+      },
+      "new_text": "末行轴心四位显示0.1500，严格不等式判断仍基于\n式\\eqref{eq:q4-execution}的未舍入值。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含舍入数字并保护原阈值判据。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C093",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 223,
+        "line_end": 225,
+        "text": "这说明端部交换使该配对事件略提前；\n两个粗网格绝对根共同含有约3.1\\unit{s}的径向偏差，\n不能把它全算成几何影响。"
+      },
+      "new_text": "这说明端部交换使该配对事件略提前；\n两个粗网格绝对根共同含有约3.1\\unit{s}的径向偏差，\n不能把它全算成几何影响。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含3.1秒粗网格偏差且限制几何归因，整句保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C094",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 228,
+        "line_end": 230,
+        "text": "精细一维根加该差值得到二维临界根估计\n183931.177445--183931.183083\\unit{s}，\n但这不是严格上下界。"
+      },
+      "new_text": "精细一维根加该差值得到二维临界根估计\n183931.177445--183931.183083\\unit{s}，\n但这不是严格上下界。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含根估计区间，明确非严格上下界，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C095",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 231,
+        "line_end": 233,
+        "text": "直接将已有80$\\times$128二维场推进至183931.56\\unit{s}时，\n其全节点最大含水率为0.150001406623\\unit{kg/kg}，仍略高于阈值；\n该局部续算继承原粗网格前史，不能消除上述共同径向误差。"
+      },
+      "new_text": "直接将已有80$\\times$128二维场推进至183931.56\\unit{s}时，\n其全节点最大含水率为0.150001406623\\unit{kg/kg}，仍略高于阈值；\n该局部续算继承原粗网格前史，不能消除上述共同径向误差。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        },
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含正式时刻及粗二维未通过结果，原前史解释不得删。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C096",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 234,
+        "line_end": 237,
+        "text": "因此，本文保留51.0921\\unit{h}作为一维条件执行值，\n配对估计提供其二维保守方向的支持；\n进一步作出充分的有限圆柱全域达标结论，\n仍需精细二维正式点及误差与正裕量对照。"
+      },
+      "new_text": "因此，本文保留51.0921\\unit{h}作为一维条件执行值，\n配对估计提供其二维保守方向的支持；\n进一步作出充分的有限圆柱全域达标结论，\n仍需精细二维正式点及误差与正裕量对照。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含条件执行值和精细二维待核验，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C097",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 238,
+        "line_end": 239,
+        "text": "这一证据范围不等于用粗网格结果推翻精细主解，\n也不等于已经取得连续二维的数学保证。"
+      },
+      "new_text": "这一证据范围不等于用粗网格结果推翻精细主解，\n也不等于已经取得连续二维的数学保证。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "两问均未取得连续二维严格误差界，也不能把条件时长作为实际工况保证。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "不推翻精细主解和未取得连续保证均是硬保护。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C098",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 240,
+        "line_end": 240,
+        "text": "上述证据层级集中见第\\ref{sec:limitations}节。"
+      },
+      "new_text": "上述证据层级集中见第\\ref{sec:limitations}节。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "navigation_not_repeated_restriction",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 98,
+          "line_end": 98,
+          "text": "第三问57.4741\\unit{h}的工程保守方向由二维终点节点场和配对根差支持，局部续算继承的前史误差仍需区分，不能将该时长解释为精确的二维最短时间；第四问51.0921\\unit{h}保留为一维条件执行值，全域终点尚需精细二维直接核验。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "只是中央证据段导航，不是重复限制，不为制造编辑删除定位。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C099",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 262,
+        "line_end": 263,
+        "text": "第三、四问还更换了整套物性，故图\\ref{fig:q3-q4-drying}两问约6.382\\unit{h}的净差\n不能全部归因于收缩。"
+      },
+      "new_text": "第三、四问还更换了整套物性，故图\\ref{fig:q3-q4-drying}两问约6.382\\unit{h}的净差\n不能全部归因于收缩。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [],
+      "pairing_scope": "no_same_meaning_central_statement",
+      "reason": "含6.382小时，且禁止把跨问差全归因收缩。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C100",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 265,
+        "line_end": 265,
+        "text": "固定$h_m$保持的是材料干基Robin系数。"
+      },
+      "new_text": "固定$h_m$保持的是材料干基Robin系数。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "distinct_method_or_local_context",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "仅当$c_{v,s}-c_{v,a}\\approx K(C_s-b)$时，才能建立$\\rhod h_m=k_gK$，不能直接交换系数数值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "边界系数定义及归因机制不等于中央气相系数转换限制。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C101",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 271,
+        "line_end": 272,
+        "text": "所以模型临界时间缩短60.6526\\%是同一有效方程内的条件对照结果，\n不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。"
+      },
+      "new_text": "所以模型临界时间缩短60.6526\\%是同一有效方程内的条件对照结果，\n不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": true,
+      "paired_central_statements": [
+        {
+          "section": "9.3 相变能量与可报告的指标",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 96,
+          "line_end": 96,
+          "text": "现稿可报告有效模型的温湿分布、阈值事件和条件时长差，不能据此推断真实热量收支或执行保证。"
+        },
+        {
+          "section": "9.3 气固边界与目标可达性",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 87,
+          "line_end": 87,
+          "text": "仅当$c_{v,s}-c_{v,a}\\approx K(C_s-b)$时，才能建立$\\rhod h_m=k_gK$，不能直接交换系数数值。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "含百分比且禁止推断真实热量或纯路径效应，完整保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C102",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 274,
+        "line_end": 274,
+        "text": "半径重建方式也影响终时。"
+      },
+      "new_text": "半径重建方式也影响终时。",
+      "decision": "retain",
+      "protected_statement": false,
+      "classification": "positive_result_lead_in",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        },
+        {
+          "section": "8.2 后段环境的受控情景",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 58,
+          "line_end": 58,
+          "text": "已有时间加权均值对照使问题三根变化约20.04\\unit{s}，问题四改用PCHIP半径插值使根提前约12.61\\unit{s}，二者也超过亚秒级一维经验数值预算。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "是紧随PCHIP定量结果的主题句；9.3只说明不确定性解释，非可删重复保护说明。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C103",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 277,
+        "line_end": 277,
+        "text": "输入重建差不能当作半径测量误差的置信区间，适用边界见第\\ref{sec:limitations}节。"
+      },
+      "new_text": "输入重建差不能当作半径测量误差的置信区间，适用边界见第\\ref{sec:limitations}节。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "非测量置信区间是保护声明，即使中央同义也必须保留。",
+      "deletion_safe": false
+    },
+    {
+      "id": "C104",
+      "chapter": 7,
+      "source": {
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "line_start": 278,
+        "line_end": 278,
+        "text": "复现给定的观测$R(t)$不能作为温湿预测的独立验证；改变环境或交换系数而沿用该半径历程时，结果仅为条件响应。"
+      },
+      "new_text": "复现给定的观测$R(t)$不能作为温湿预测的独立验证；改变环境或交换系数而沿用该半径历程时，结果仅为条件响应。",
+      "decision": "retain",
+      "protected_statement": true,
+      "classification": "protected_or_numeric",
+      "has_arabic_numeric_literal_excluding_reference_keys": false,
+      "paired_central_statements": [
+        {
+          "section": "9.3 数值证据与工况的适用层级",
+          "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+          "line_start": 99,
+          "line_end": 99,
+          "text": "半径重建方案间的差异属于输入处理敏感性，不给出测量置信区间；复现规定的观测半径也不验证温湿预测，改变工况而沿用该历程时仅能报告条件响应。"
+        }
+      ],
+      "pairing_scope": "related_or_same_topic_checked; see reason for equivalence limits",
+      "reason": "非独立验证及固定半径下仅条件响应两层保护，完整保留。",
+      "deletion_safe": false
+    }
+  ],
+  "deletions": [],
+  "deletion_count": 0,
+  "source_checks": [
+    {
+      "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_git_blob": "7844259abdbf1dc9f657ccb1247b042d87a34379",
+      "baseline_sha256": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd",
+      "current_sha256": "d1cf60a785ce6567a952ee313a0fe97e4332dd12a3044dc114e26e1ebefe79bd",
+      "byte_identical": true,
+      "numeric_tokens_before": 99,
+      "numeric_tokens_after": 99,
+      "numeric_sequence_identical": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q1.tex",
+      "baseline_git_blob": "f5607fbe1bb95de82b536a5fb2545fe84bd9de05",
+      "baseline_sha256": "ea1a252ea4be77eec1d22db448d6f33f29601800303582609f558bfa129c3cfd",
+      "current_sha256": "ea1a252ea4be77eec1d22db448d6f33f29601800303582609f558bfa129c3cfd",
+      "byte_identical": true,
+      "numeric_tokens_before": 189,
+      "numeric_tokens_after": 189,
+      "numeric_sequence_identical": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q2.tex",
+      "baseline_git_blob": "9ec2c93a5f2228e30c6a9318107caf762ba9ea39",
+      "baseline_sha256": "0e0551131c86a113b58c91ead05014f4d3facb4d9fd946ca0b2d14d6f98a6e03",
+      "current_sha256": "0e0551131c86a113b58c91ead05014f4d3facb4d9fd946ca0b2d14d6f98a6e03",
+      "byte_identical": true,
+      "numeric_tokens_before": 210,
+      "numeric_tokens_after": 210,
+      "numeric_sequence_identical": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q3.tex",
+      "baseline_git_blob": "248979ae6cafe0440b409068ed5a6e101570501e",
+      "baseline_sha256": "3b70b95fc73263544483985ed6c680ce0807792032ba8a80d4ab2ae85ef2227a",
+      "current_sha256": "3b70b95fc73263544483985ed6c680ce0807792032ba8a80d4ab2ae85ef2227a",
+      "byte_identical": true,
+      "numeric_tokens_before": 129,
+      "numeric_tokens_after": 129,
+      "numeric_sequence_identical": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q4.tex",
+      "baseline_git_blob": "29ac75838cfc66725ecb876e78492dd2abdb50f3",
+      "baseline_sha256": "4e9f0528c70cbba2e8ec0d0e2d7ad5c64f44a933564c3ab3e8d701819048d343",
+      "current_sha256": "4e9f0528c70cbba2e8ec0d0e2d7ad5c64f44a933564c3ab3e8d701819048d343",
+      "byte_identical": true,
+      "numeric_tokens_before": 213,
+      "numeric_tokens_after": 213,
+      "numeric_sequence_identical": true
+    }
+  ],
+  "chapter_decisions": [
+    {
+      "chapter": 1,
+      "candidate_count": 4,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 2,
+      "candidate_count": 13,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 3,
+      "candidate_count": 9,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 4,
+      "candidate_count": 12,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 5,
+      "candidate_count": 20,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 6,
+      "candidate_count": 21,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    },
+    {
+      "chapter": 7,
+      "candidate_count": 25,
+      "safe_deletion_count": 0,
+      "decision": "retain_all_reviewed_source"
+    }
+  ],
+  "not_run": [
+    "PDE",
+    "parameter scenarios",
+    "numerical postprocessing",
+    "compilation",
+    "PDF page checking",
+    "package creation",
+    "git commit/push"
+  ],
+  "process_note": "First candidate-print attempt failed only because Python stdout was cp1252; reran with python -X utf8 successfully. No source writes occurred in either attempt."
+}

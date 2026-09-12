@@ -1,0 +1,25 @@
+{
+  "read_commit": "ff5011e441e7ba47904549db0cc754a506b4a4d9",
+  "branch": "main",
+  "local_status": "tracked clean; template/ pre-existing untracked, untouched",
+  "github_reads": [
+    {
+      "path": "q1234_paper_wording_handoff/摘要语气与措辞修订_模型指示文档.md",
+      "blob_sha": "283a5d0fffa809bc43742c3e108b0b14f3e41552",
+      "url": "https://github.com/Hel10o/libai/blob/ff5011e441e7ba47904549db0cc754a506b4a4d9/q1234_paper_wording_handoff/%E6%91%98%E8%A6%81%E8%AF%AD%E6%B0%94%E4%B8%8E%E6%8E%AA%E8%BE%9E%E4%BF%AE%E8%AE%A2_%E6%A8%A1%E5%9E%8B%E6%8C%87%E7%A4%BA%E6%96%87%E6%A1%A3.md",
+      "read_scope": "full file"
+    },
+    {
+      "path": "paper/q1234_draft_v1/evidence/content_finalization_20260912/论文内容改进与定稿记录.md",
+      "blob_sha": "f2c2dab7468a1377a73366d7d19bce69a0a8c737",
+      "url": "https://github.com/Hel10o/libai/blob/ff5011e441e7ba47904549db0cc754a506b4a4d9/paper/q1234_draft_v1/evidence/content_finalization_20260912/%E8%AE%BA%E6%96%87%E5%86%85%E5%AE%B9%E6%94%B9%E8%BF%9B%E4%B8%8E%E5%AE%9A%E7%A8%BF%E8%AE%B0%E5%BD%95.md",
+      "read_scope": "full file"
+    },
+    {
+      "path": "README.md",
+      "blob_sha": "96315df3cc849f7d23f6d45fe2aeea64bc3fcc4a",
+      "url": "https://github.com/Hel10o/libai/blob/ff5011e441e7ba47904549db0cc754a506b4a4d9/README.md",
+      "read_scope": "full file"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "pdf_sha256": "4f2a1098f16a6abcfb272ba01ee8a814a56ecbd6e950e93b2da4a5583add4e0b",
+  "main_agent_actual_views": [
+    {
+      "page": 1,
+      "path": "build/wording_revision/after_001_130.png",
+      "dpi": 130,
+      "sha256": "79dff274874ff141f035170c1aa56886db19b33569a239c03f66fcc0a83f4113"
+    },
+    {
+      "page": 28,
+      "path": "build/wording_revision/after_028_130.png",
+      "dpi": 130,
+      "sha256": "0088315451482a35b6423beafc60c08faf0dfae69395176b190bada4efb9aa7d"
+    }
+  ],
+  "findings": {
+    "abstract_one_page": true,
+    "no_new_clipping_overlap_or_missing_glyphs_observed": true,
+    "conclusion_followon_sentence_readable": true,
+    "keywords_and_footer_clear": true,
+    "limitations_remain_visible_in_body": true
+  },
+  "unchanged_page_check": "All 156 pages raster-compared at 72 dpi; 154 pixel-identical; changed pages1/28 shown at130dpi. See page_comparison.json.",
+  "independent_abstract_review": "abstract_visual_review.md",
+  "scope_limit": "Rendered-page and source review by agents; not a team member factual sign-off. Unchanged pages were pixel-compared rather than individually reread in this round."
+}

@@ -1,0 +1,251 @@
+#!/usr/bin/env python3
+"""Read-only wording audit. --freeze writes only baseline_integrity.json.
+
+Normal mode prints JSON; optional --pdf-dir reads compiled PDF/AUX/log. No model
+module, numerical integration or plotting code is imported or executed.
+"""
+from pathlib import Path
+from collections import Counter
+import argparse
+import hashlib
+import json
+import re
+import subprocess
+import sys
+
+sys.stdout.reconfigure(encoding="utf-8")
+HERE = Path(__file__).resolve().parent
+BASE = HERE.parents[1]
+ROOT = BASE.parents[1]
+SHA = "ff5011e441e7ba47904549db0cc754a506b4a4d9"
+PREFIX = "paper/q1234_draft_v1/"
+BASELINE = HERE / "baseline_integrity.json"
+SOURCES = ["main.tex", "sections/problem_model.tex", "sections/q1.tex", "sections/q2.tex",
+           "sections/q3.tex", "sections/q4.tex", "sections/validation_limits.tex",
+           "sections/references.tex", "sections/appendix.tex"]
+C_SOURCES = [p for p in SOURCES if p not in {"main.tex", "sections/references.tex", "sections/appendix.tex"}]
+MUTABLE = {"README.md", "q1234_paper_wording_handoff/README.md"}
+MUTABLE.update(PREFIX + p for p in ["README.md", "main.tex", "sections/problem_model.tex",
+    "sections/q1.tex", "sections/q2.tex", "sections/q3.tex", "sections/q4.tex",
+    "sections/validation_limits.tex", "evidence/source_package.json", "四问论文初稿_v1.pdf",
+    "四问论文LaTeX源稿_v1.zip", "四问论文LaTeX源稿_v1.zip.sha256"])
+FORMAL = ["q1_complete_delivery/q1_delivery/output/result1.xlsx", "q4_complete_delivery/v1/q123_closeout/result2.xlsx",
+          "q3_refinement_delivery/output/result3.xlsx", "q4_complete_delivery/v1/output/result4.xlsx"]
+RED = ["能耗", "节能", "可忽略", "题面指定中截面"]
+
+
+def git(*args):
+    return subprocess.check_output(["git", *args], cwd=ROOT)
+
+
+def H(data):
+    return hashlib.sha256(data).hexdigest()
+
+
+def FH(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for x in iter(lambda: f.read(1024 * 1024), b""):
+            h.update(x)
+    return h.hexdigest()
+
+
+def old(p):
+    return git("show", SHA + ":" + PREFIX + p).decode("utf-8")
+
+
+def norm(text):
+    return re.sub(r"\s+", "", text)
+
+
+def numbers(text):
+    text = re.sub(r"\\(?:label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}", "", text)
+    return re.findall(r"\d+(?:\.\d+)?", text)
+
+
+def sentences(text):
+    text = re.sub(r"\\begin\{(equation\*?|align\*?|table|figure)\}.*?\\end\{\1\}", "", text, flags=re.S)
+    text = re.sub(r"\\(?:section|subsection|label|ref|eqref|cite|input|includegraphics)(?:\[[^\]]*\])?\{[^}]*\}", "", text)
+    text = re.sub(r"\\(?:FloatBarrier|Needspace\{[^}]*\})", "", text)
+    return [norm(x) for x in re.findall(r"[^。！？]+[。！？]", text) if norm(x)]
+
+
+def abstract(text):
+    return text[:text.index(r"\label{body:start}")]
+
+
+def qparagraph(text, q):
+    m = re.search(r"\\textbf\{针对问题" + q + r"\}.*?(?=\r?\n\s*\r?\n)", text, re.S)
+    if not m:
+        raise ValueError("Missing abstract paragraph " + q)
+    return m
+
+
+def permitted_slots(text):
+    """Mask only Q3/Q4 abstract paragraphs, abstract final paragraph, conclusion final sentence."""
+    q3, q4 = qparagraph(text, "三"), qparagraph(text, "四")
+    abst_end = text.index(r"\vspace{0.7em}", q4.end())
+    tail = text[q4.end():abst_end]
+    m = re.search(r"\S(?:.*\S)?", tail, re.S)
+    if not m:
+        raise ValueError("Missing abstract closing sentence")
+    closing = (q4.end() + m.start(), q4.end() + m.end())
+    cs = text.index(r"\section{结论}") + len(r"\section{结论}")
+    ce = text.index(r"\Needspace{", cs)
+    cb = text[cs:ce]
+    final_stop = cb.rfind("。")
+    previous_stop = cb.rfind("。", 0, final_stop)
+    if previous_stop < 0:
+        raise ValueError("Missing conclusion sentence boundary")
+    conclusion_tail = (cs + previous_stop + 1, cs + final_stop + 1)
+    slots = {"abstract_q3": (q3.start(), q3.end()), "abstract_q4": (q4.start(), q4.end()),
+             "abstract_closing": closing, "conclusion_closing": conclusion_tail}
+    masked = text
+    for name, (start, end) in sorted(slots.items(), key=lambda x: x[1][0], reverse=True):
+        masked = masked[:start] + "@@" + name + "@@" + masked[end:]
+    return masked, {k: text[a:b] for k, (a, b) in slots.items()}
+
+
+def bold_args(text):
+    args, start = [], 0
+    while True:
+        at = text.find(r"\textbf{", start)
+        if at < 0:
+            break
+        i, depth = at + len(r"\textbf{"), 1
+        begin = i
+        while i < len(text) and depth:
+            if text[i] == "{" and (i == 0 or text[i - 1] != "\\"):
+                depth += 1
+            elif text[i] == "}" and (i == 0 or text[i - 1] != "\\"):
+                depth -= 1
+            i += 1
+        if depth:
+            raise ValueError("Unbalanced textbf braces")
+        args.append(text[begin:i - 1])
+        start = i
+    return args
+
+
+def bold_metrics(text):
+    args = bold_args(abstract(text))
+    def visible(x):
+        x = x.replace(r"\celsius", "℃").replace(r"\%", "%")
+        x = re.sub(r"\\[A-Za-z]+", "", x)
+        return re.sub(r"[{}$\s]", "", x)
+    return {"blocks": len(args), "raw_argument_nonspace_chars": sum(len(norm(x)) for x in args),
+            "visible_char_proxy": sum(len(visible(x)) for x in args), "arguments": args,
+            "method": "Balanced textbf arguments within abstract; visible proxy removes macro names/braces/whitespace, keeps contents and maps celsius to one character. Title styling outside textbf is unchanged by masked-main check."}
+
+
+def freeze():
+    if BASELINE.exists():
+        raise SystemExit("Refusing to overwrite frozen baseline")
+    tree = []
+    for raw in git("ls-tree", "-r", "-l", "-z", SHA).decode("utf-8").split("\0"):
+        if raw:
+            meta, path = raw.split("\t", 1)
+            mode, kind, oid, size = meta.split()
+            tree.append({"path": path, "git_blob_oid": oid, "bytes": int(size)})
+    src = {p: old(p) for p in SOURCES}
+    masked, slots = permitted_slots(src["main.tex"])
+    protect = [r for r in tree if r["path"] not in MUTABLE]
+    result = {"baseline_sha": SHA, "git_hash_method": "Git SHA-1 blob object IDs; raw SHA256 separately supplied for source and Excel",
+       "scope": "Read-only immutable Git snapshot, raw source fingerprints and four workbook hashes; no solver execution",
+       "initial_status": git("status", "--short").decode("utf-8"), "protected_git_blobs": protect,
+       "protected_count": len(protect), "science_count": sum(Path(r["path"]).suffix in {".py", ".js", ".mjs", ".npz", ".npy", ".json", ".log", ".xlsx"} for r in protect),
+       "old_paper_evidence_count": sum(r["path"].startswith(PREFIX + "evidence/") for r in protect),
+       "formal_excel": {p: {"bytes": (ROOT / p).stat().st_size, "sha256": FH(ROOT / p), "git_blob_matches": git("hash-object", "--", p).decode().strip() == next(x["git_blob_oid"] for x in tree if x["path"] == p)} for p in FORMAL},
+       "source_sha256": {p: H(s.encode("utf-8")) for p, s in src.items()},
+       "main_masked_sha256": H(masked.encode("utf-8")), "authorized_main_slots": slots,
+       "q1_q2_abstract_paragraphs": {q: qparagraph(src["main.tex"], q).group(0) for q in ["一", "二"]},
+       "abstract_bold": bold_metrics(src["main.tex"]),
+       "numbers_by_source": {p: numbers(s) for p, s in src.items()},
+       "C_numeric_sentences": {p: [s for s in sentences(src[p]) if re.search(r"\d", s)] for p in C_SOURCES},
+       "C_protection_sentences": {p: [s for s in sentences(src[p]) if re.search("不能|不等于|不构成|不消除|不含环境|不替代|不推翻|仍需|尚不|不足以|未取得|不是.*(?:保证|上界|置信)", s)] for p in C_SOURCES},
+       "numeric_count_interpretation": "Report raw all-source numeric occurrence delta honestly. A/B authorize removal of duplicate time occurrences only in four masked main slots. C uses per-file preserved sequence and whole numeric sentences; do not add repetitions to force a nondecreasing full count.",
+       "claim_review_standard": "D: abstract must not be stronger than body. Omission of unfinished fine-2D tasks from abstract is authorized; body limitations remain. No continuous strict bound, actual guarantee or unqualified full-domain success may be introduced."}
+    BASELINE.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"protected": len(protect), "science": result["science_count"], "old_evidence": result["old_paper_evidence_count"], "bold": {k:v for k,v in result["abstract_bold"].items() if k not in {"arguments", "method"}}, "four_excel_match": all(v["git_blob_matches"] for v in result["formal_excel"].values())}, ensure_ascii=False, indent=2))
+
+
+def run(pdf_dir=None):
+    b = json.loads(BASELINE.read_text(encoding="utf-8"))
+    src = {p: (BASE/p).read_bytes().decode("utf-8") for p in SOURCES}
+    checks, review = [], {}
+    def C(name, passed, evidence=None):
+        checks.append({"id": name, "passed": bool(passed), "evidence": evidence})
+    changed = set(filter(None, git("diff", SHA, "--name-only", "-z").decode("utf-8").split("\0")))
+    forbidden = changed & {x["path"] for x in b["protected_git_blobs"]}
+    C("protected_files_unchanged", not forbidden, sorted(forbidden))
+    C("four_formal_excel_sha256", all(FH(ROOT/p)==r["sha256"] for p,r in b["formal_excel"].items()))
+    masked, slots = permitted_slots(src["main.tex"])
+    C("main_only_four_authorized_slots", H(masked.encode("utf-8")) == b["main_masked_sha256"])
+    C("q1_q2_abstract_entire_paragraphs_exact", all(qparagraph(src["main.tex"],q).group(0)==s for q,s in b["q1_q2_abstract_paragraphs"].items()))
+    bm = bold_metrics(src["main.tex"])
+    for key in ["blocks", "raw_argument_nonspace_chars", "visible_char_proxy"]:
+        C("abstract_bold_"+key+"_not_increased", bm[key] <= b["abstract_bold"][key], {"old":b["abstract_bold"][key],"new":bm[key]})
+    C("closing_abstract_sentence_not_bold", r"\textbf" not in slots["abstract_closing"] and r"\bfseries" not in slots["abstract_closing"])
+    body_names=[p for p in SOURCES if p not in {"sections/references.tex","sections/appendix.tex"}]
+    C("ten_body_sections", sum(len(re.findall(r"\\section\{",src[p])) for p in body_names)==10)
+    C("source_redlines_zero", not any(x in "\n".join(src.values()) for x in RED), {x:sum(s.count(x) for s in src.values()) for x in RED})
+    eqre=re.compile(r"\\begin\{equation\}.*?\\end\{equation\}",re.S)
+    for p in C_SOURCES:
+        C("C_numbers_exact:"+p,numbers(src[p])==b["numbers_by_source"][p])
+        now=set(sentences(src[p])); missing=[s for s in b["C_numeric_sentences"][p] if s not in now]
+        C("C_numeric_sentences_retained:"+p,not missing,missing)
+        C("equations_exact:"+p,eqre.findall(src[p])==eqre.findall(old(p)))
+    oldall=Counter(x for ns in b["numbers_by_source"].values() for x in ns)
+    newall=Counter(x for s in src.values() for x in numbers(s))
+    review["numeric_count_scopes"]={"all_source_old":sum(oldall.values()),"all_source_new":sum(newall.values()),"raw_removed_occurrences":dict(oldall-newall),"raw_added_occurrences":dict(newall-oldall),"A_B_slots":{k:{"old":numbers(b["authorized_main_slots"][k]),"new":numbers(s)} for k,s in slots.items()},"interpretation":b["numeric_count_interpretation"]}
+    review["C_changed_protection_sentences"]={p:[s for s in b["C_protection_sentences"][p] if s not in set(sentences(src[p]))] for p in C_SOURCES}
+    review["C_source_bytes_identical_to_baseline"]={p:H(src[p].encode("utf-8"))==b["source_sha256"][p] for p in C_SOURCES}
+    expected_samples={"一":["33.5753","36.7856","1.5102","2.55"],"二":["0.1169","0.7581"],"三":["57.4741","0.149998606290","80","256","7.4740"],"四":["129.8484","60.65","51.0921"]}
+    C("abstract_required_numeric_samples",all(x in numbers(qparagraph(src["main.tex"],q).group(0)) for q,xs in expected_samples.items() for x in xs),expected_samples)
+    review["main_slots_new"] = slots
+    review["abstract_new_bold_arguments"] = bm["arguments"]
+    review["claim_review_standard"] = b["claim_review_standard"]
+    review["sixty_percent_contexts"]=[{"file":p,"text":line} for p,s in src.items() for line in s.splitlines() if re.search(r"60\.65(?:26)?",line)]
+    reviewed_inputs={p:{"bytes":(BASE/p).stat().st_size,"sha256":FH(BASE/p)} for p in SOURCES}
+    if pdf_dir:
+        import fitz
+        bd=Path(pdf_dir).resolve(); aux=(bd/'main.aux').read_text(encoding='utf-8'); log=(bd/'main.log').read_text(encoding='utf-8')
+        labels_raw=re.findall(r'\\newlabel\{([^}]+)\}\{\{([^{}]*)\}\{([^{}]*)\}',aux)
+        counts=Counter(k for k,n,p in labels_raw); labels={k:{'number':n,'page':int(p) if p.isdigit() else p} for k,n,p in labels_raw}
+        refs=[k for s in src.values() for k in re.findall(r'\\(?:ref|eqref)\{([^}]+)\}',s)]
+        C('references_unique_resolved',all(counts[k]==1 for k in refs),{'uses':len(refs),'distinct':len(set(refs)),'invalid':[k for k in set(refs) if counts[k]!=1]})
+        C('all_aux_labels_unique',all(v==1 for v in counts.values()),{'labels':len(counts),'duplicates':[k for k,v in counts.items() if v!=1]})
+        section_rows=re.findall(r'\\contentsline \{section\}\{\\numberline \{([^}]+)\}([^}]*)\}\{(\d+)\}\{section\.(\d+)\}',aux)
+        C('compiled_ten_body_sections',len(section_rows)==10 and [int(x[3]) for x in section_rows]==list(range(1,11)),section_rows)
+        sub9=re.findall(r'\\contentsline \{subsection\}\{\\numberline \{(9\.\d+)\}([^}]*)\}\{(\d+)\}',aux)
+        C('compiled_chapter9_order',[(a,n) for a,n,p in sub9]==[('9.1','模型优点'),('9.2','模型推广'),('9.3','适用范围与主要限制'),('9.4','改进方向与数据需求')],sub9)
+        cites=[k.strip() for s in src.values() for g in re.findall(r'\\cite(?:\[[^]]*\])?\{([^}]+)\}',s) for k in g.split(',')]
+        bib=Counter(re.findall(r'\\bibcite\{([^}]+)\}',aux))
+        C('citations_unique_resolved',all(bib[k]==1 for k in cites),{'uses':len(cites),'distinct':len(set(cites))})
+        logbad=[s for s in log.splitlines() if re.search(r'undefined references|Reference .* undefined|Citation .* undefined|multiply defined|Missing character',s,re.I)]
+        C('final_log_clean_refs_and_glyphs',not logbad,logbad)
+        with fitz.open(bd/'main.pdf') as doc:
+            text=[p.get_text() for p in doc]; compact=[norm(x) for x in text]
+            bs=labels['body:start']['page']; aps=labels['appendix:start']['page']
+            C('abstract_one_page_and_body_le_30',bs==2 and aps-bs<=30 and labels['document:end']['page']==len(doc),{'total':len(doc),'body_start':bs,'body_end':aps-1,'body_pages':aps-bs,'appendix_start':aps})
+            C('all_pdf_redlines_zero',not any(x in s for s in compact for x in RED),{x:[i+1 for i,s in enumerate(compact) if x in s] for x in RED})
+            bad=[i+1 for i,s in enumerate(text) if '??' in s or '[?]' in s or '\ufffd' in s]
+            C('all_pdf_placeholders_zero',not bad,bad)
+            ai=[(i+1,s.find('AI工具使用声明')) for i,s in enumerate(compact) if 'AI工具使用声明' in s]
+            br=[(i+1,s.find('参考文献')) for i,s in enumerate(compact) if '参考文献' in s]
+            C('AI_before_references_in_PDF',bool(ai and br) and ai[0]<br[0],{'ai':ai,'refs':br})
+            review['abstract_pdf_text']=text[0]
+            review['pdf_sixty_percent_contexts']=[{'page':i+1,'text':s[max(0,m.start()-70):m.end()+70]} for i,s in enumerate(compact) for m in re.finditer(r'60\.65(?:26)?%',s)]
+            C('PDF_sixty_percent_model_time_contexts',len(review['pdf_sixty_percent_contexts'])==3 and all('模型临界时间缩短' in x['text'] for x in review['pdf_sixty_percent_contexts']),review['pdf_sixty_percent_contexts'])
+        reviewed_inputs.update({str(bd/p):{'bytes':(bd/p).stat().st_size,'sha256':FH(bd/p)} for p in ['main.pdf','main.aux','main.log']})
+    C('inputs_stable',all(FH(Path(p) if Path(p).is_absolute() else BASE/p)==r['sha256'] for p,r in reviewed_inputs.items()))
+    result={'baseline_sha':SHA,'automatic_passed':all(c['passed'] for c in checks),'checks':checks,'inputs':reviewed_inputs,'review_required':review,'not_executed':['PDE or scenario integration','numerical result generation','semantic deletion legitimacy certified by code','rendered-page visual review']}
+    print(json.dumps(result,ensure_ascii=False,indent=2))
+    return 0 if result['automatic_passed'] else 1
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--freeze',action='store_true');p.add_argument('--pdf-dir')
+    a=p.parse_args()
+    if a.freeze:freeze()
+    else:raise SystemExit(run(a.pdf_dir))
