@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "2bca5dd6065ee1f3bb07b61d9181299cef34f089",
+  "scope": "Abstract emphasis only; content and numerical results unchanged",
+  "tex_identical_after_removing_bold_wrappers": true,
+  "question_paragraph_count": 4,
+  "total_abstract_paragraph_count": 6,
+  "bold_region_count": 12,
+  "abstract_pages": 1,
+  "pdf_pages": 146,
+  "pixel_comparison_dpi": 96,
+  "changed_pdf_pages": [
+    1
+  ],
+  "unchanged_body_and_appendix_pages": 145,
+  "pdf_sha256": "13cda791c1ff41255b4500d85f81efb6da3b99af464f90f8edf7c68d3d2de4bf",
+  "pdf_bytes": 1074038,
+  "scientific_solver_rerun": false
+}
