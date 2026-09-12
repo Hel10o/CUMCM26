@@ -1,0 +1,19 @@
+{
+  "commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+  "source_sha256": {
+    "main.tex": "791a727fd249bee69f36928ce783999c501ac91ac9d307ad2c9ba184d7c851af",
+    "sections/problem_model.tex": "a12fcfb3b13a656090f50f4d57aabf7534d5051d0ffb1051259ae76014d040b7",
+    "sections/q1.tex": "5f51f49803234f5e23345b1d007aba59dd5e043e37478d1402dbdddfeeeb49c8",
+    "sections/q2.tex": "c9afff5deb2c937318ed1f99f87fe171ae98ace1f218c595b0297e3bb4a57765",
+    "sections/q3.tex": "951e9e692c8ae20e2d669d25de42eb273a7c34b670dbc45effce924735a43b0a",
+    "sections/q4.tex": "7905dc99c21781393bc356747ab169e28af5dfc91d8b42a894699c87523eb7ff",
+    "sections/validation_limits.tex": "de9abb5c32a3ad6237d938f973dbc2ab3e974b03d1bd053ebeb7b2f1b26943cb",
+    "package_source.py": "8f93d6dbb401a3270d1bcdd6dca33a23fe1eca9b6b72f1a05aa44e60896fc960"
+  },
+  "prior_pdf_sha256": "5c3e9f5fafb51b4dc6e8d2b06ee66cbc8b7b155f1f5fd2785161bd064e2aabf7",
+  "untouched_untracked": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ],
+  "requested_change": "Replace overview workflow in paper with four per-question left-to-right workflows; no numerical recomputation."
+}

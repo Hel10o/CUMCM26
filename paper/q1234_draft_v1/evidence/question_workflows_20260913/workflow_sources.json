@@ -1,0 +1,1001 @@
+{
+  "baseline_commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+  "diagram_dimensions_cm": [
+    15.0,
+    3.2
+  ],
+  "font_size_pt": 9.2,
+  "fonts": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "script_sha256": "e98838aa04dfced5fbc148864fa05df0de9974d74c6fbce5d772631ea27a7733",
+  "scope": "Schematic workflows from existing text. No numerical arrays, solver imports, PDE runs or scenarios.",
+  "figures": {
+    "q1_workflow": {
+      "title": "问题一求解流程",
+      "nodes": [
+        {
+          "id": "input",
+          "x": 1.52,
+          "y": 1.59,
+          "w": 2.8,
+          "h": 1.46,
+          "text": "几何与初态\n环境记录\n附录2物性",
+          "kind": "input"
+        },
+        {
+          "id": "heat",
+          "x": 5.39,
+          "y": 2.38,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "常热物性\n导热方程",
+          "kind": "process"
+        },
+        {
+          "id": "water",
+          "x": 5.39,
+          "y": 0.8,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "非线性水分扩散\nD(C)",
+          "kind": "process"
+        },
+        {
+          "id": "heat_solve",
+          "x": 9.19,
+          "y": 2.38,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "圆环有限体积\nBDF隐式积分",
+          "kind": "process"
+        },
+        {
+          "id": "water_solve",
+          "x": 9.19,
+          "y": 0.8,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "圆环有限体积\nBDF隐式积分",
+          "kind": "process"
+        },
+        {
+          "id": "temperature",
+          "x": 13.12,
+          "y": 2.38,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "径向温度分布\n1800 s",
+          "kind": "output"
+        },
+        {
+          "id": "moisture",
+          "x": 13.12,
+          "y": 0.8,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "径向含水率分布\n1800 s",
+          "kind": "output"
+        }
+      ],
+      "edges": [
+        {
+          "from": "input",
+          "to": "heat",
+          "points": [
+            [
+              2.92,
+              1.59
+            ],
+            [
+              3.4,
+              1.59
+            ],
+            [
+              3.4,
+              2.38
+            ],
+            [
+              3.88,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "input",
+          "to": "water",
+          "points": [
+            [
+              2.92,
+              1.59
+            ],
+            [
+              3.4,
+              1.59
+            ],
+            [
+              3.4,
+              0.8
+            ],
+            [
+              3.88,
+              0.8
+            ]
+          ]
+        },
+        {
+          "from": "heat",
+          "to": "heat_solve",
+          "points": [
+            [
+              6.8999999999999995,
+              2.38
+            ],
+            [
+              7.68,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "water",
+          "to": "water_solve",
+          "points": [
+            [
+              6.8999999999999995,
+              0.8
+            ],
+            [
+              7.68,
+              0.8
+            ]
+          ]
+        },
+        {
+          "from": "heat_solve",
+          "to": "temperature",
+          "points": [
+            [
+              10.7,
+              2.38
+            ],
+            [
+              11.405,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "water_solve",
+          "to": "moisture",
+          "points": [
+            [
+              10.7,
+              0.8
+            ],
+            [
+              11.405,
+              0.8
+            ]
+          ]
+        }
+      ],
+      "source_lines": [
+        [
+          5,
+          30
+        ],
+        [
+          34,
+          40
+        ],
+        [
+          76,
+          93
+        ],
+        [
+          95,
+          103
+        ]
+      ],
+      "meaning": "Two separate integrations: Q1 D depends on C, not on T; no arrow transfers a thermal solution to the moisture solver.",
+      "checks": [
+        {
+          "node": "input",
+          "text_inside_node": true
+        },
+        {
+          "node": "heat",
+          "text_inside_node": true
+        },
+        {
+          "node": "water",
+          "text_inside_node": true
+        },
+        {
+          "node": "heat_solve",
+          "text_inside_node": true
+        },
+        {
+          "node": "water_solve",
+          "text_inside_node": true
+        },
+        {
+          "node": "temperature",
+          "text_inside_node": true
+        },
+        {
+          "node": "moisture",
+          "text_inside_node": true
+        }
+      ],
+      "outputs": {
+        "figures/question_workflows/q1_workflow.pdf": "5e41320aec3ea03b3eb0d431bee648835a5d661809ecbbc4b63b479de4e62f2e",
+        "figures/question_workflows/q1_workflow.svg": "9ccdf1d0c05ef621e776d102f0739a06c4ae96e86874131216031a22b9a8c5e8",
+        "figures/question_workflows/q1_workflow.png": "6da3eecb418aecb3374a566450289cf85e8757d229d1d7dc0393761d8b812fe5"
+      },
+      "source": {
+        "commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+        "path": "paper/q1234_draft_v1/sections/q1.tex",
+        "sha256": "5f51f49803234f5e23345b1d007aba59dd5e043e37478d1402dbdddfeeeb49c8",
+        "excerpts": [
+          {
+            "start": 5,
+            "end": 30,
+            "text": "第一问在前$1800\\unit{s}$内使用附录2参数\\cite{problem}。固定骨架使\n式\\eqref{eq:heat}--\\eqref{eq:moisture}中的材料导数退化为时间偏导数，\n空间均匀的干密度从水分方程约去。再取中截面径向描述并代入物性，得到\n\\begin{equation}\n\\begin{aligned}\nT_t&=\\alpha\\frac{1}{r}\\frac{\\partial}{\\partial r}(rT_r),\n&\\alpha&=\\frac{0.36}{820\\times2600},\\\\\nC_t&=\\frac{1}{r}\\frac{\\partial}{\\partial r}\\bigl(rD(C)C_r\\bigr),\n&D(C)&=7\\times10^{-9}e^{-0.89/C}.\n\\end{aligned}\n\\label{eq:q1-pde}\n\\end{equation}\n式\\eqref{eq:q1-pde}定义在$0<r<R=0.02\\unit{m}$，初态为\n$T(r,0)=28\\celsius$、$C(r,0)=2.55\\unit{kg/kg}$。式\\eqref{eq:boundary}\n在轴线对称性和圆柱表面外法向下具体写为\n\\begin{equation}\n\\begin{aligned}\nT_r(0,t)&=C_r(0,t)=0,\\\\\n-0.36T_r(R,t)&=25[T(R,t)-T_a(t)],\\\\\n-D(C_s)C_r(R,t)&=8\\times10^{-7}[C_s-b(t)],\\qquad C_s=C(R,t).\n\\end{aligned}\n\\label{eq:q1-bc}\n\\end{equation}\n其中$T_a,b$由环境记录线性插值得到。本问的$D$不依赖温度，热方程也\n不依赖含水率，因此两个场分别求解；水分场仍是非线性的，因为其散度\n展开后为$D(C)(C_{rr}+C_r/r)+D'(C)C_r^2$，不能按常扩散率处理。"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "text": "\\subsection{圆环守恒离散与隐式求解}\n为同时说明两个场的计算，记$u=T$时$a(u)=\\alpha$、\n$\\beta=25/(820\\times2600)$、$u_a=T_a$；$u=C$时$a(u)=D(u)$、\n$\\beta=8\\times10^{-7}$、$u_a=b$。取节点$r_i=i\\Delta r$，\n$i=0,\\ldots,N$、$\\Delta r=R/N$，内部控制体面位于相邻节点中点，\n两端面分别为$r_{-1/2}=0$、$r_{N+1/2}=R$。令外向加权通量\n$G=-ra(u)u_r$，将式\\eqref{eq:q1-pde}乘$r$并在圆环控制体内积分，得"
+          },
+          {
+            "start": 76,
+            "end": 93,
+            "text": "使用自适应隐式BDF方法\\cite{scipy}。每步的新状态由隐式残量及Newton修正确定：\n\\begin{equation}\n\\begin{aligned}\n\\boldsymbol{\\mathcal R}(\\boldsymbol u^{n+1})\n&=\\gamma_n\\boldsymbol u^{n+1}-\\boldsymbol q_n\n-\\Delta t_n\\boldsymbol F(t_{n+1},\\boldsymbol u^{n+1})=\\boldsymbol0,\\\\\n\\left[\\gamma_n I-\\Delta t_n J_F\\right]\\delta\\boldsymbol u\n&=-\\boldsymbol{\\mathcal R}.\n\\end{aligned}\n\\label{eq:q1-bdf}\n\\end{equation}\n这里$\\gamma_n,\\boldsymbol q_n$由积分阶数、步长和已知历史状态确定；\n实际采用SciPy的变阶BDF实现及其精度修正，式\\eqref{eq:q1-bdf}表示共同的\n隐式求解结构。解析稀疏Jacobian $J_F=\\partial\\boldsymbol F/\\partial\\boldsymbol u$\n保留$D'(C)=0.89D(C)/C^2$及调和平均的导数，\n在非线性迭代中更新扩散率。积分在每个环境输入折点重启并传递末态。\n正式径向区间数为10240，相对容差$2\\times10^{-12}$，最大步长$3\\unit{s}$；\n$1\\unit{s}$是输出间隔，不是积分固定步长。"
+          },
+          {
+            "start": 95,
+            "end": 103,
+            "text": "\\subsection{规定结果与预热规律}\n表\\ref{tab:q1-temperature}和表\\ref{tab:q1-moisture}给出规定的七个时刻、\n五个径向位置。\\texttt{result1.xlsx}从第1秒至第1800秒，每隔\n$0.1\\unit{cm}$输出21个位置的温度和干基含水率，共75600个数值；\n计算不提前舍入，输出统一显示四位小数。\n\n\\begin{table}[htbp]\n\\centering\\small\n\\caption{30分钟内药材中截面温度（$^\\circ$C）}"
+          }
+        ]
+      }
+    },
+    "q2_workflow": {
+      "title": "问题二求解流程",
+      "nodes": [
+        {
+          "id": "initial",
+          "x": 1.52,
+          "y": 2.38,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "共同初态\n环境记录与延拓",
+          "kind": "input"
+        },
+        {
+          "id": "properties",
+          "x": 1.52,
+          "y": 0.8,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "固定半径\n附录3物性",
+          "kind": "input"
+        },
+        {
+          "id": "model",
+          "x": 5.39,
+          "y": 1.59,
+          "w": 3.02,
+          "h": 1.13,
+          "text": "径向热质耦合\n表面Robin闭合",
+          "kind": "process"
+        },
+        {
+          "id": "solve",
+          "x": 9.19,
+          "y": 1.59,
+          "w": 3.02,
+          "h": 1.13,
+          "text": "Chebyshev配点\nRadau联立积分",
+          "kind": "process"
+        },
+        {
+          "id": "output",
+          "x": 13.12,
+          "y": 2.38,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "前3 h规定结果\n温度与含水率",
+          "kind": "output"
+        },
+        {
+          "id": "trajectory",
+          "x": 13.12,
+          "y": 0.8,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "未舍入全程轨迹\n供问题三判定",
+          "kind": "output"
+        }
+      ],
+      "edges": [
+        {
+          "from": "initial",
+          "to": "model",
+          "points": [
+            [
+              2.92,
+              2.38
+            ],
+            [
+              3.4,
+              2.38
+            ],
+            [
+              3.4,
+              1.59
+            ],
+            [
+              3.88,
+              1.59
+            ]
+          ]
+        },
+        {
+          "from": "properties",
+          "to": "model",
+          "points": [
+            [
+              2.92,
+              0.8
+            ],
+            [
+              3.4,
+              0.8
+            ],
+            [
+              3.4,
+              1.59
+            ],
+            [
+              3.88,
+              1.59
+            ]
+          ]
+        },
+        {
+          "from": "model",
+          "to": "solve",
+          "points": [
+            [
+              6.8999999999999995,
+              1.59
+            ],
+            [
+              7.68,
+              1.59
+            ]
+          ]
+        },
+        {
+          "from": "solve",
+          "to": "output",
+          "points": [
+            [
+              10.7,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              2.38
+            ],
+            [
+              11.405,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "solve",
+          "to": "trajectory",
+          "points": [
+            [
+              10.7,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              0.8
+            ],
+            [
+              11.405,
+              0.8
+            ]
+          ]
+        }
+      ],
+      "source_lines": [
+        [
+          5,
+          9
+        ],
+        [
+          38,
+          56
+        ],
+        [
+          73,
+          106
+        ],
+        [
+          110,
+          128
+        ]
+      ],
+      "meaning": "Independent common-state start, with jointly closed surface states inside the coupled Radau system; one trajectory supplies both Q2 and Q3.",
+      "checks": [
+        {
+          "node": "initial",
+          "text_inside_node": true
+        },
+        {
+          "node": "properties",
+          "text_inside_node": true
+        },
+        {
+          "node": "model",
+          "text_inside_node": true
+        },
+        {
+          "node": "solve",
+          "text_inside_node": true
+        },
+        {
+          "node": "output",
+          "text_inside_node": true
+        },
+        {
+          "node": "trajectory",
+          "text_inside_node": true
+        }
+      ],
+      "outputs": {
+        "figures/question_workflows/q2_workflow.pdf": "0d73e56149c539c38640fa1bc0633ec5810fe7a2cfbb550909aad2dbca8bd211",
+        "figures/question_workflows/q2_workflow.svg": "3a28a656b5690d1c1230123ebbfd35cfe7445ed0f1c3e3c9635063af2ea4cc78",
+        "figures/question_workflows/q2_workflow.png": "6b657b77f572c3c7bc959f2a75c481f5c1f2ca078ad9dd7d73f88dcc9bf81f14"
+      },
+      "source": {
+        "commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+        "path": "paper/q1234_draft_v1/sections/q2.tex",
+        "sha256": "c9afff5deb2c937318ed1f99f87fe171ae98ace1f218c595b0297e3bb4a57765",
+        "excerpts": [
+          {
+            "start": 5,
+            "end": 9,
+            "text": "第二问从共同初态开始，全程使用附录3物性\\cite{problem}，不接续第一问\n末态，也不在$1800\\unit{s}$处切换公式。有效热容量\n$S(C)=\\rho_{\\rm eff}(C)c_p(C)$和导热率随局部含水率改变，扩散率同时\n依赖局部绝对温度$T_K=T+273.15$和$C$。升温改变扩散，失水又通过热容量\n及导热率反馈温度，因此需联立推进两个场。"
+          },
+          {
+            "start": 38,
+            "end": 56,
+            "text": "\\subsection{坐标变换、表面闭合与联合积分}\n为避免直接计算$r=0$处的$1/r$，令$x=(r/R_0)^2$。对任意光滑径向场\n$v$及系数$a$，由链式法则得到\n\\begin{equation}\n\\partial_r=\\frac{2r}{R_0^2}\\partial_x,\\qquad\n\\frac1r\\partial_r(ra\\partial_rv)\n=\\frac4{R_0^2}\\partial_x(xa\\partial_xv).\n\\label{eq:q2-coordinate}\n\\end{equation}\n有限的$v_x$自动满足轴线$v_r=0$，且$x=0$处右端取\n$4a(0)v_x(0)/R_0^2$，无需人为设置一个很小的替代半径。\n按式\\eqref{eq:primitive}取$U(C)=\\int_0^C e^{-0.45/s}\\dd s$，\n则$U'(C)=e^{-0.45/C}>0$，水分通量中的$D C_x$恰好等于$A(T)U_x$。\n这保留局部温度依赖，并使求导作用于较平缓的原函数场。\n\n在$x_j=[1-\\cos(j\\pi/N)]/2$，$j=0,\\ldots,N$上插值，\n记$\\mathsf D_x=(\\ell'_j(x_i))$为Lagrange插值求导矩阵，\n$\\mathsf X=\\operatorname{diag}(x_j)$；$\\mathsf D_x$与物性扩散率$D$含义不同。\n对包含表面的节点向量，令"
+          },
+          {
+            "start": 73,
+            "end": 106,
+            "text": "其中$\\mathsf I$是单位矩阵，下标$I$表示取待积分节点；表面$j=N$\n不另设演化方程。由式\\eqref{eq:boundary}及$\\partial_r=(2/R_0)\\partial_x$\n在表面联立求解\n\\begin{equation}\n\\begin{aligned}\n\\gamma k(C_s)(\\mathsf D_x\\boldsymbol T)_N+h_T(T_s-T_a)&=0,\\\\\n\\gamma A(T_s)(\\mathsf D_x\\boldsymbol U)_N+h_m(C_s-b)&=0,\n\\qquad\\gamma=\\frac2{R_0}.\n\\end{aligned}\n\\label{eq:q2-robin}\n\\end{equation}\n两式的正号来自将外向Robin通量移至同一侧。由于求导矩阵的行和为零，\n记$g_T=\\sum_{j<N}(\\mathsf D_x)_{Nj}(T_j-T_a)$，第一式可消去表面温度：\n\\begin{equation}\nT_s(C_s)=T_a-\n\\frac{\\gamma k(C_s)g_T}{\\gamma k(C_s)(\\mathsf D_x)_{NN}+h_T}.\n\\label{eq:q2-surface-elimination}\n\\end{equation}\n代入第二式便得到关于$C_s>0$的一个非线性方程，用阻尼Newton法求根，\n再回代$T_s$。因此每次内部状态改变都会同步更新表面温湿，不能分别\n指定二者或用上一时刻的表面值替代；时间积分Jacobian也包含这一隐式响应。\n\n将式\\eqref{eq:q2-semidscrete}记为$\\dot{\\boldsymbol y}=\\boldsymbol F(t,\\boldsymbol y)$，\n其中$\\boldsymbol y=(T_0,C_0,\\ldots,T_{N-1},C_{N-1})^{\\mathsf T}$。\n采用三阶段Radau隐式积分\\cite{scipy}，每步联立求解阶段状态并更新：\n\\begin{equation}\n\\begin{aligned}\n\\boldsymbol Y_i&=\\boldsymbol y_n+\\Delta t\\sum_{j=1}^3\na_{ij}\\boldsymbol F(t_n+c_j\\Delta t,\\boldsymbol Y_j),\\quad i=1,2,3,\\\\\n\\boldsymbol y_{n+1}&=\\boldsymbol y_n+\\Delta t\\sum_{i=1}^3\nb_i\\boldsymbol F(t_n+c_i\\Delta t,\\boldsymbol Y_i).\n\\end{aligned}\n\\label{eq:q2-radau}\n\\end{equation}"
+          },
+          {
+            "start": 110,
+            "end": 128,
+            "text": "\\subsection{全过程输出与规定结果}\n\n前$4\\unit{h}$采用附件1分段线性环境，之后按统一假设保持末小时61点\n算术均值：$T_a=49.9989344262\\celsius$、$b=0.04998754098$。\n第二问与第三问采用同一条温湿联合轨迹，积分至第三问执行端点\n$206906.76\\unit{s}$，即$57.4741\\unit{h}$。因此第二问的完整结果\n覆盖所选模型下的全过程，题设表3、表4对应的表\\ref{tab:q2-temperature}、\\ref{tab:q2-moisture}仅展示前$3\\unit{h}$。\n环境平台是超出观测范围的假设，不能将此完整时间覆盖称为数天实测验证。\n\n全程轨迹采用80阶Chebyshev配点、原函数形式水分通量和Radau隐式\n时间积分，表面温湿由Robin条件联合确定；相对容差$2\\times10^{-13}$，\n最大步长$30\\unit{s}$，前$4\\unit{h}$限制为$20\\unit{s}$。\n\\texttt{result2.xlsx}包含两张表，每表从1秒起保存206907个时刻，即\n整数秒至206906秒并追加206906.76秒；21个规定半径合计8,690,094个\n温湿数值。逐秒评价联合连续解，不将不同模型的温度、水分拼接。\n\n\\subsection{规定表格及空间规律}\n\\begin{table}[htbp]\n\\centering\\small"
+          }
+        ]
+      }
+    },
+    "q3_workflow": {
+      "title": "问题三求解流程",
+      "nodes": [
+        {
+          "id": "trajectory",
+          "x": 1.52,
+          "y": 2.38,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "问题二温湿轨迹\n阈值0.15 kg/kg",
+          "kind": "input"
+        },
+        {
+          "id": "checks",
+          "x": 1.52,
+          "y": 0.8,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "网格加密\n独立积分对照",
+          "kind": "input"
+        },
+        {
+          "id": "candidate",
+          "x": 5.39,
+          "y": 2.38,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "下降穿越检测\n括区定位候选根",
+          "kind": "process"
+        },
+        {
+          "id": "margin",
+          "x": 5.39,
+          "y": 0.8,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "设置经验\n数值余量",
+          "kind": "process"
+        },
+        {
+          "id": "root",
+          "x": 9.19,
+          "y": 2.38,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "径向重构极值\n复核等号根",
+          "kind": "process"
+        },
+        {
+          "id": "execution",
+          "x": 9.19,
+          "y": 0.8,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "向上选取执行点\n复核严格不等式",
+          "kind": "process"
+        },
+        {
+          "id": "output",
+          "x": 13.12,
+          "y": 1.59,
+          "w": 3.43,
+          "h": 1.46,
+          "text": "模型干燥时长\n57.4741 h\n径向含水率分布",
+          "kind": "output"
+        }
+      ],
+      "edges": [
+        {
+          "from": "trajectory",
+          "to": "candidate",
+          "points": [
+            [
+              2.92,
+              2.38
+            ],
+            [
+              3.88,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "candidate",
+          "to": "root",
+          "points": [
+            [
+              6.8999999999999995,
+              2.38
+            ],
+            [
+              7.68,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "checks",
+          "to": "margin",
+          "points": [
+            [
+              2.92,
+              0.8
+            ],
+            [
+              3.88,
+              0.8
+            ]
+          ]
+        },
+        {
+          "from": "margin",
+          "to": "execution",
+          "points": [
+            [
+              6.8999999999999995,
+              0.8
+            ],
+            [
+              7.68,
+              0.8
+            ]
+          ]
+        },
+        {
+          "from": "root",
+          "to": "execution",
+          "points": [
+            [
+              9.19,
+              1.91
+            ],
+            [
+              9.19,
+              1.27
+            ]
+          ]
+        },
+        {
+          "from": "execution",
+          "to": "output",
+          "points": [
+            [
+              10.7,
+              0.8
+            ],
+            [
+              11.052499999999998,
+              0.8
+            ],
+            [
+              11.052499999999998,
+              1.59
+            ],
+            [
+              11.405,
+              1.59
+            ]
+          ]
+        }
+      ],
+      "source_lines": [
+        [
+          6,
+          28
+        ],
+        [
+          49,
+          76
+        ],
+        [
+          93,
+          138
+        ]
+      ],
+      "meaning": "Node crossing first gives a candidate, then reconstructed radial extrema are checked; an empirical margin and upward time quantization give a separately rechecked execution point. This is the one-dimensional event procedure, not a continuous 2D guarantee.",
+      "checks": [
+        {
+          "node": "trajectory",
+          "text_inside_node": true
+        },
+        {
+          "node": "checks",
+          "text_inside_node": true
+        },
+        {
+          "node": "candidate",
+          "text_inside_node": true
+        },
+        {
+          "node": "margin",
+          "text_inside_node": true
+        },
+        {
+          "node": "root",
+          "text_inside_node": true
+        },
+        {
+          "node": "execution",
+          "text_inside_node": true
+        },
+        {
+          "node": "output",
+          "text_inside_node": true
+        }
+      ],
+      "outputs": {
+        "figures/question_workflows/q3_workflow.pdf": "6efcf69451b4fae7f1b9dd23f50c42b672d2652b7509887914adcd0fa019f887",
+        "figures/question_workflows/q3_workflow.svg": "152db7b7b5e823d04331a014a37836cf56770e6e224c06edebce3f243cd2b130",
+        "figures/question_workflows/q3_workflow.png": "eba6c5b2ebedd1a11c97e9b19c21d2188b4be6515dbfe40fe2b4917ca398c81e"
+      },
+      "source": {
+        "commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+        "path": "paper/q1234_draft_v1/sections/q3.tex",
+        "sha256": "951e9e692c8ae20e2d669d25de42eb273a7c34b670dbc45effce924735a43b0a",
+        "excerpts": [
+          {
+            "start": 6,
+            "end": 28,
+            "text": "问题三要求药材各处的干基含水率严格低于\n$C_{\\mathrm{lim}}=0.15\\unit{kg/kg}$\\cite{problem}。\n本文沿用问题二的附录3物性、初态和环境条件，\n由同一温湿联立轨迹确定终点，而不以表面含水率或截面平均值代替最大值。\n因此，本问直接沿用式\\eqref{eq:q2-radial}的控制方程及\n式\\eqref{eq:q2-semidscrete}、\\eqref{eq:q2-robin}的离散闭合，\n新增的求解任务是从时间轨迹中定位满足全径向约束的执行点。\n在一维径向近似中定义\n\\begin{equation}\n M_1(t)=\\max_{0\\le r\\le R_0}C(r,t),\\qquad\n M_1(t_{*,3})=C_{\\mathrm{lim}}.\n \\label{eq:q3-event}\n\\end{equation}\n所取事件为结束附近的下降穿越。\n等号根是严格达标时间集合的边界，根本身不满足题设严格不等式；\n有限圆柱中“各处”的含义则由后述二维计算另行检验。\n\n附件1仅覆盖前4\\unit{h}，长时计算需延拓环境。\n本文保持前述末小时61点算术均值平台，\n即环境温度49.9989344262\\celsius、有效边界值\n$b=0.04998754098\\unit{kg/kg}$。\n该平台是假设的后续工况，不是4\\unit{h}以后的观测记录。\n温度和含水率始终按式\\eqref{eq:heat}--\\eqref{eq:boundary}联立推进，"
+          },
+          {
+            "start": 49,
+            "end": 76,
+            "text": "\\subsection{由重构空间极值到时间事件}\n\n令$P_U(x,t)=\\sum_{j=0}^N F_3(C_j(t))\\ell_j(x)$为包含表面状态的\n原函数插值多项式，$x=(r/R_0)^2$。在$P_U>0$的物理解支上，含水率重构为\n$C_N(x,t)=F_3^{-1}[P_U(x,t)]$。由于$F_3'(C)>0$，\n有$\\partial_x C_N=\\partial_xP_U/F_3'(C_N)$，故两者的内部驻点相同。\n每一时刻的极值候选集为\n\\begin{equation}\n \\mathcal X(t)=\\{0,1\\}\\cup\n \\{x\\in(0,1):\\partial_xP_U(x,t)=0\\}.\n \\label{eq:q3-extrema-candidates}\n\\end{equation}\n求出式\\eqref{eq:q3-extrema-candidates}中的全部实根，并比较候选点值，得到\n\\begin{equation}\n \\widehat M_1(t)=\\max_{x\\in\\mathcal X(t)}C_N(x,t)\n =F_3^{-1}\\!\\left[\\max_{x\\in\\mathcal X(t)}P_U(x,t)\\right].\n \\label{eq:q3-reconstructed-max}\n\\end{equation}\n该式确定的是重构一维场的最大值；重构误差及与连续方程的差异仍需\n数值加密检验，不能把多项式极值的求全等同于连续模型严格误差为零。\n\n实际程序先以内部节点事件$g_{\\rm node}(t)=\\max_{j<N}C_j(t)-C_{\\rm lim}$\n检测下降穿越。当相邻接受步满足\n$g_{\\rm node}(t_a)>0$、$g_{\\rm node}(t_b)\\le0$时，利用Radau的步内连续插值\n对$g_{\\rm node}(t)=0$作Brent括区求根，再在候选根和执行点按\n式\\eqref{eq:q3-reconstructed-max}复核，并用根两侧节点值检查下降穿越。\n本算例确认根与执行点的重构最大值均位于轴心，节点候选根才可用于所述径向终点。\n若重构出现更湿的内部点，就必须重新定位事件，不能直接接受节点根。"
+          },
+          {
+            "start": 93,
+            "end": 138,
+            "text": "一维模型的临界根为\n$t_{*,3}=206906.389932328\\unit{s}$，即约57.4739972\\unit{h}。\n为区分数值根、执行点和四位小时显示值，\n取显示时间量子$\\Delta t=0.0001\\unit{h}=0.36\\unit{s}$，\n并按空间、时间及独立方法差异设置\n$\\varepsilon_{t,3}=0.03\\unit{s}$的经验数值余量，选择\n\\begin{equation}\n t_{\\mathrm{exec},3}\n =\\Delta t\\left\\lceil\n \\frac{t_{*,3}+\\varepsilon_{t,3}}{\\Delta t}\\right\\rceil\n =206906.76\\unit{s}\n =\\boxed{57.4741\\unit{h}}.\n \\label{eq:q3-execution}\n\\end{equation}\n在该实际时刻重新代入未舍入一维场，得到\n\\begin{equation}\n M_1(t_{\\mathrm{exec},3})\n =0.149999892208\\unit{kg/kg}<0.15\\unit{kg/kg}.\n \\label{eq:q3-end-moisture}\n\\end{equation}\n执行点比临界根晚约0.3701\\unit{s}。\n这里的经验余量用于当前方程的数值选择，\n不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。\n\n题设表5要求的每6\\unit{h}及结束时刻的径向含水率见表\\ref{tab:q3-moisture}。\n18\\unit{h}时，表面已降至0.0845\\unit{kg/kg}，\n轴心仍为0.2988\\unit{kg/kg}；54\\unit{h}时轴心仍为0.1539\\unit{kg/kg}。\n因此，表面先达到要求并不能作为全体材料的终止依据。\n末期水分向低湿表面迁移，而局部扩散系数随含水率下降，\n共同形成中心缓慢趋近阈值的尾段。\n\n\\begin{table}[htbp]\n \\centering\n \\caption{题设表5：固定半径时的径向干基含水率（\\unit{kg/kg}）}\n \\label{tab:q3-moisture}\n \\small\n \\input{tables/q3_moisture.tex}\n\\end{table}\n\n完整的\\texttt{result3.xlsx}以60\\unit{s}为间隔、0.1\\unit{cm}为径向间隔输出，\n并在最后一个完整分钟206880\\unit{s}之后补入执行点206906.76\\unit{s}。\n末行轴心显示为0.1500，是式\\eqref{eq:q3-end-moisture}的四位舍入值；\n达标判断使用未舍入场而不使用表格显示值。\n160阶空间加密参考和另一隐式时间方法在全部72429个规定水分输出上四位一致，\n其中空间加密参考与正式轨迹的最大未舍入差约\n$9.33\\times10^{-9}\\unit{kg/kg}$。"
+          }
+        ]
+      }
+    },
+    "q4_workflow": {
+      "title": "问题四求解流程",
+      "nodes": [
+        {
+          "id": "input",
+          "x": 1.52,
+          "y": 2.38,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "半径与环境观测\n共同初态、附录4",
+          "kind": "input"
+        },
+        {
+          "id": "conservation",
+          "x": 1.52,
+          "y": 0.8,
+          "w": 2.8,
+          "h": 0.94,
+          "text": "恒长度径向收缩\n干物质守恒",
+          "kind": "input"
+        },
+        {
+          "id": "coordinate",
+          "x": 5.39,
+          "y": 2.38,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "半径历程插值\n材料坐标变换",
+          "kind": "process"
+        },
+        {
+          "id": "model",
+          "x": 5.39,
+          "y": 0.8,
+          "w": 3.02,
+          "h": 0.94,
+          "text": "参考域热质耦合\n表面交换条件",
+          "kind": "process"
+        },
+        {
+          "id": "solve",
+          "x": 9.19,
+          "y": 1.59,
+          "w": 3.02,
+          "h": 1.13,
+          "text": "Chebyshev配点\nRadau独立积分",
+          "kind": "process"
+        },
+        {
+          "id": "event",
+          "x": 13.12,
+          "y": 2.38,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "阈值事件与余量\n执行点复核",
+          "kind": "process"
+        },
+        {
+          "id": "output",
+          "x": 13.12,
+          "y": 0.8,
+          "w": 3.43,
+          "h": 0.94,
+          "text": "51.0921 h\n实际径向含水率",
+          "kind": "output"
+        }
+      ],
+      "edges": [
+        {
+          "from": "input",
+          "to": "coordinate",
+          "points": [
+            [
+              2.92,
+              2.38
+            ],
+            [
+              3.88,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "conservation",
+          "to": "model",
+          "points": [
+            [
+              2.92,
+              0.8
+            ],
+            [
+              3.88,
+              0.8
+            ]
+          ]
+        },
+        {
+          "from": "coordinate",
+          "to": "model",
+          "points": [
+            [
+              5.39,
+              1.91
+            ],
+            [
+              5.39,
+              1.27
+            ]
+          ]
+        },
+        {
+          "from": "model",
+          "to": "solve",
+          "points": [
+            [
+              6.8999999999999995,
+              0.8
+            ],
+            [
+              7.289999999999999,
+              0.8
+            ],
+            [
+              7.289999999999999,
+              1.59
+            ],
+            [
+              7.68,
+              1.59
+            ]
+          ]
+        },
+        {
+          "from": "solve",
+          "to": "event",
+          "points": [
+            [
+              10.7,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              1.59
+            ],
+            [
+              11.052499999999998,
+              2.38
+            ],
+            [
+              11.405,
+              2.38
+            ]
+          ]
+        },
+        {
+          "from": "event",
+          "to": "output",
+          "points": [
+            [
+              13.12,
+              1.91
+            ],
+            [
+              13.12,
+              1.27
+            ]
+          ]
+        }
+      ],
+      "source_lines": [
+        [
+          6,
+          25
+        ],
+        [
+          32,
+          78
+        ],
+        [
+          89,
+          101
+        ],
+        [
+          106,
+          139
+        ],
+        [
+          168,
+          213
+        ]
+      ],
+      "meaning": "Independent initial-state integration in the moving material reference domain; event detection, margin and verification precede current-radius outputs. The conditional fixed-radius comparison and 2D validation remain in the body and are not drawn as state-transfer steps.",
+      "checks": [
+        {
+          "node": "input",
+          "text_inside_node": true
+        },
+        {
+          "node": "conservation",
+          "text_inside_node": true
+        },
+        {
+          "node": "coordinate",
+          "text_inside_node": true
+        },
+        {
+          "node": "model",
+          "text_inside_node": true
+        },
+        {
+          "node": "solve",
+          "text_inside_node": true
+        },
+        {
+          "node": "event",
+          "text_inside_node": true
+        },
+        {
+          "node": "output",
+          "text_inside_node": true
+        }
+      ],
+      "outputs": {
+        "figures/question_workflows/q4_workflow.pdf": "0749f122ef134f8c1fd919d0173cbe917fbea8cad3f84277c9a8e1dc327c47c1",
+        "figures/question_workflows/q4_workflow.svg": "e4ac7d52101c35666722b1b76c82612609a53b12b0e672118b14d5a4e327d28f",
+        "figures/question_workflows/q4_workflow.png": "b9f898ee7d1f0d6c34db7795ee9b563c262318f0a968c15e35060d75eb590830"
+      },
+      "source": {
+        "commit": "c11fa40c72e1555a10dedf666b98b19ec0a5e863",
+        "path": "paper/q1234_draft_v1/sections/q4.tex",
+        "sha256": "7905dc99c21781393bc356747ab169e28af5dfc91d8b42a894699c87523eb7ff",
+        "excerpts": [
+          {
+            "start": 6,
+            "end": 25,
+            "text": "问题四将附录4物性代入式\\eqref{eq:heat}--\\eqref{eq:boundary}，\n并根据附件2把固定几何改为运动材料域\\cite{problem}。\n温度和含水率从28\\celsius、2.55\\unit{kg/kg}的共同初态重新求解，\n不接续问题三的干燥末态。\n附件2含0--72\\unit{h}的145个半径记录，间隔1800\\unit{s}，\n半径由2\\unit{cm}降至1.198\\unit{cm}。\n本文将半径转换为米后分段线性插值为$R(t)$，\n保持其单调性和平台段；所求主终点位于观测时域内。\n环境继续采用前4\\unit{h}观测插值及之后的共同均值平台。\n\n外半径只规定边界位置，不能唯一确定内部材料运动。\n采用均匀径向收缩、长度$L=L_0$不变的运动学闭合，\n定义材料标记$\\xi$及映射\n\\begin{equation}\n r=R(t)\\xi,\\quad z=Z,\\qquad\n v_{s,r}=\\frac{R'(t)}{R(t)}r=w_r,\\quad v_{s,z}=0,\n \\qquad J=\\left(\\frac{R(t)}{R_0}\\right)^2.\n \\label{eq:radius-map}\n\\end{equation}\n其中$w_r=\\partial r/\\partial t|_\\xi$为网格速度，$J$为体积Jacobian。"
+          },
+          {
+            "start": 32,
+            "end": 78,
+            "text": "当前体积水浓度为$\\rho_d C$。\n对干物质与水分别写守恒式，并采用相对材料的扩散通量，得\n\\begin{equation}\n \\begin{aligned}\n  &\\partial_t\\rho_d+\\nabla\\cdot(\\rho_d\\boldsymbol v_s)=0,\\\\\n  &\\partial_t(\\rho_d C)\n   +\\nabla\\cdot(\\rho_d C\\boldsymbol v_s+\\boldsymbol j_w)=0,\n  \\qquad \\boldsymbol j_w=-\\rho_dD\\nabla C.\n \\end{aligned}\n \\label{eq:q4-component-balance}\n\\end{equation}\n第二式减去第一式的$C$倍，即得到式\\eqref{eq:moisture}。\n由初始干密度均匀和式\\eqref{eq:radius-map}，\n$\\rho_d J=\\rho_{d,0}$，所以\n$\\rho_d(t)=\\rho_{d,0}[R_0/R(t)]^2$为空间常数，可从干基水分方程中约去。\n对任一场量$f(r,t)=\\widehat f(\\xi,t)$，链式法则给出\n\\begin{equation}\n \\left.\\partial_t f\\right|_r\n =\\left.\\partial_t\\widehat f\\right|_\\xi\n   -\\frac{R'}R\\xi\\partial_\\xi\\widehat f,\n \\qquad\n v_{s,r}\\partial_r f=\\frac{R'}R\\xi\\partial_\\xi\\widehat f.\n \\label{eq:q4-chain-rule}\n\\end{equation}\n两项中的材料运动恰好抵消，故$\\Ds f/\\dd t=\\partial_t\\widehat f|_\\xi$。\n再将$\\partial_r=R^{-1}\\partial_\\xi$代入式\\eqref{eq:heat}和\\eqref{eq:moisture}，\n省略场量帽号后，一维参考域方程为\n\\begin{equation}\n \\begin{aligned}\n  \\left.\\partial_t C\\right|_\\xi\n   &=\\frac{1}{R(t)^2\\xi}\\partial_\\xi\n     \\left[\\xi D(T,C)\\partial_\\xi C\\right],\\\\\n  \\rho_{\\mathrm{eff}}(C)c_p(C)\n   \\left.\\partial_t T\\right|_\\xi\n   &=\\frac{1}{R(t)^2\\xi}\\partial_\\xi\n     \\left[\\xi k(C)\\partial_\\xi T\\right].\n \\end{aligned}\n \\label{eq:q4-reference-pde}\n\\end{equation}\n轴线取正则对称条件；将同一空间导数变换代入式\\eqref{eq:boundary}，\n当前侧表面的边界式为\n\\begin{equation}\n -\\frac{D(T_s,C_s)}{R}\\left.\\partial_\\xi C\\right|_1=h_m(C_s-b),\n \\qquad\n -\\frac{k_s}{R}\\left.\\partial_\\xi T\\right|_1=h_T(T_s-T_a).\n \\label{eq:q4-reference-boundary}\n\\end{equation}"
+          },
+          {
+            "start": 89,
+            "end": 101,
+            "text": "附录4的局部扩散系数为\n\\begin{equation}\n D(T,C)=4.2\\times10^{-4}\n \\exp(-0.30/C)\n \\exp\\!\\left[-\\frac{3850}{T+273.15}\\right].\n \\label{eq:q4-diffusivity}\n\\end{equation}\n全部热物性也在各空间位置按当前$C$更新，\n温湿两场继续联立求解。\n表面交换系数沿用$h_T=25\\unit{W/(m^2\\cdot K)}$、\n$h_m=8\\times10^{-7}\\unit{m/s}$，\n式\\eqref{eq:q4-reference-boundary}中的质量通量相对于材料界面，\n不另将表面扫过的体积计为蒸发失水。"
+          },
+          {
+            "start": 106,
+            "end": 139,
+            "text": "\\begin{equation}\n \\frac{1}{R^2\\xi}\\partial_\\xi(a\\xi\\partial_\\xi f)\n =\\frac4{R^2}\\partial_x(ax\\partial_x f)\n =\\frac4{R^2}\\bigl[q+x\\partial_xq\\bigr],\n \\qquad q=a\\partial_xf.\n \\label{eq:q4-x-operator}\n\\end{equation}\n该式消去轴线显式奇点，在$x=0$处直接取$4q(0)/R^2$。\n依式\\eqref{eq:primitive}定义$F_4'(C)=\\exp(-0.30/C)$、$F_4(0)=0$，\n并令$A_4(T)=4.2\\times10^{-4}\\exp[-3850/(T+273.15)]$。\n沿用问题二的Chebyshev微分矩阵$\\mathsf D_x$，\n记$q_{T,i}=k(C_i)(\\mathsf D_x\\boldsymbol T)_i$、\n$q_{C,i}=A_4(T_i)[\\mathsf D_x F_4(\\boldsymbol C)]_i$\n及$S_i=\\rho_{\\mathrm{eff}}(C_i)c_p(C_i)$，则内部节点方程为\n\\begin{equation}\n \\begin{aligned}\n  \\dot T_i&=\\frac4{R(t)^2S_i}\n       \\bigl[q_{T,i}+x_i(\\mathsf D_x\\boldsymbol q_T)_i\\bigr],\\\\\n  \\dot C_i&=\\frac4{R(t)^2}\n       \\bigl[q_{C,i}+x_i(\\mathsf D_x\\boldsymbol q_C)_i\\bigr].\n \\end{aligned}\n \\label{eq:q4-semidiscrete}\n\\end{equation}\n其中$i=0,\\ldots,N-1$，表面$i=N$由式\\eqref{eq:q4-reference-boundary}确定：\n\\begin{equation}\n \\frac2R q_{T,N}+h_T(T_N-T_a)=0,\n \\qquad\n \\frac2R q_{C,N}+h_m(C_N-b)=0.\n \\label{eq:q4-discrete-robin}\n\\end{equation}\n这里$\\partial_\\xi=2\\xi\\partial_x$使表面因子成为$2/R$，\n而内部演化因子为$4/R^2$；二者均随观测半径更新。\n取$N=120$，联立求解表面温湿代数方程后用Radau推进内部未知量，\n在环境及半径输入节点处分段重启。"
+          },
+          {
+            "start": 168,
+            "end": 213,
+            "text": "终点检测先由内部节点最大值产生等号候选事件，\n再将式\\eqref{eq:q3-extrema-candidates}--\\eqref{eq:q3-reconstructed-max}\n中的原函数替换为$F_4$，检查重构多项式的全部内部实驻点及两端点。\n由于$F_4'(C)>0$，该检查同时给出重构含水率的最大值；\n本算例在候选根和相邻时刻均确认最大值位于轴心。\n一维径向极值下降至阈值时，临界根为\n$t_{*,4}=183931.211715489\\unit{s}$。\n根前后1\\unit{s}的最大值分别约为0.150000513489和0.149999486518，\n最大位置在轴心。\n采用$\\varepsilon_{t,4}=0.129\\unit{s}$的经验数值预算，\n按式\\eqref{eq:q3-execution}相同的0.36\\unit{s}量子向上选择执行点，得\n\\begin{equation}\n \\begin{aligned}\n  t_{\\mathrm{exec},4}&=183931.56\\unit{s}\n      =\\boxed{51.0921\\unit{h}},\\\\\n  \\max_{0\\le r\\le R(t_{\\mathrm{exec},4})}C(r,t_{\\mathrm{exec},4})\n      &=0.149999821161\\unit{kg/kg}<0.15\\unit{kg/kg}.\n \\end{aligned}\n \\label{eq:q4-execution}\n\\end{equation}\n该点晚于一维根约0.3483\\unit{s}，当前半径为1.2000\\unit{cm}。\n题设表6的规定采样见表\\ref{tab:q4-moisture}。\n对规定的实际位置$r_j$，以$P_{U,4}(x,t)$表示$F_4(C)$的配点插值多项式，\n导出值按下式由当前材料场重构：\n\\begin{equation}\n C(r_j,t)=F_4^{-1}\\!\\left[\n P_{U,4}\\!\\left(\\frac{r_j^2}{R(t)^2},t\\right)\\right],\n \\qquad 0\\le r_j\\le R(t).\n \\label{eq:q4-output-map}\n\\end{equation}\n当$r_j>R(t)$时不作域外外推；当前表面取$x=1$另列，\n不能当作固定2\\unit{cm}位置。\n\n\\begin{table}[htbp]\n \\centering\n \\caption{题设表6：收缩过程中的干基含水率（\\unit{kg/kg}）}\n \\label{tab:q4-moisture}\n \\small\n \\input{tables/q4_moisture.tex}\n\\end{table}\n\n表中域外位置以“—”表示不适用，不能解释成零含水率。\n\\texttt{result4.xlsx}按60\\unit{s}、0.1\\unit{cm}导出，\n并补入实际执行点；域外单元格留空，另保留表面值与当前半径。\n末行轴心四位显示0.1500，严格不等式判断仍基于\n式\\eqref{eq:q4-execution}的未舍入值。"
+          }
+        ]
+      }
+    }
+  }
+}

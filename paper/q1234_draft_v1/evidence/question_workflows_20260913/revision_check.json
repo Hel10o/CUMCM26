@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "checks": {
+    "pages_157": true,
+    "abstract_pixel_identical": true,
+    "all_127_appendix_pages_pixel_identical": true,
+    "final_body_equals_reviewed_preview": true,
+    "workflow_on_same_page_as_question_heading": true,
+    "ten_sequential_figure_numbers": true,
+    "no_old_workflow_label": true,
+    "no_reference_or_overfull_warnings": true
+  },
+  "pdf_pages": 157,
+  "body_pages": 29,
+  "appendix_pages": 127,
+  "pixel_comparison_dpi": 72,
+  "changed_physical_pages": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "workflow_labels": {
+    "fig:q1-workflow": {
+      "number": "1",
+      "page": 6
+    },
+    "fig:q2-workflow": {
+      "number": "3",
+      "page": 10
+    },
+    "fig:q3-workflow": {
+      "number": "5",
+      "page": 15
+    },
+    "fig:q4-workflow": {
+      "number": "7",
+      "page": 19
+    },
+    "sec:q1": {
+      "number": "四",
+      "page": 6
+    },
+    "sec:q2": {
+      "number": "五",
+      "page": 10
+    },
+    "sec:q3": {
+      "number": "六",
+      "page": 15
+    },
+    "sec:q4": {
+      "number": "七",
+      "page": 19
+    }
+  },
+  "figure_labels": {
+    "fig:q1-workflow": "1",
+    "fig:q1-profiles": "2",
+    "fig:q2-workflow": "3",
+    "fig:q2-profiles": "4",
+    "fig:q3-workflow": "5",
+    "fig:q3-q4-drying": "6",
+    "fig:q4-workflow": "7",
+    "fig:q4-shrinkage": "8",
+    "fig:dimension-reduction": "9",
+    "fig:environment": "10"
+  },
+  "warnings": [],
+  "pdf_sha256": "0eede196df4b9c66fd4564dab06ac7c6c6f56fb0f3f953ee3262779daf198455",
+  "visual_review": "Pages1-15 reviewed independently,16-30 by main agent; pages23-30 re-rendered and reviewed after final orphan-line adjustment; all four standalone workflows also viewed."
+}

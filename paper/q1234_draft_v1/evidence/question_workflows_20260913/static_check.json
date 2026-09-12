@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": {
+    "main_tex_byte_identical": true,
+    "q1_scientific_text_unchanged": true,
+    "q1_numeric_tokens_unchanged": true,
+    "q2_scientific_text_unchanged": true,
+    "q2_numeric_tokens_unchanged": true,
+    "q3_scientific_text_unchanged": true,
+    "q3_numeric_tokens_unchanged": true,
+    "q4_scientific_text_unchanged": true,
+    "q4_numeric_tokens_unchanged": true,
+    "validation_limits_scientific_text_unchanged": true,
+    "validation_limits_numeric_tokens_unchanged": true,
+    "problem_model_only_overview_removed": true,
+    "existing_tables_figures_support_unchanged_before_docs": true,
+    "workflow_actual_fonts_correct": true
+  },
+  "changed_protected_files": [],
+  "actual_pdf_fonts": {
+    "q1_workflow.pdf": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ],
+    "q2_workflow.pdf": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ],
+    "q3_workflow.pdf": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ],
+    "q4_workflow.pdf": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ]
+  },
+  "font_mismatches": [],
+  "note": "Whitespace, the four new workflow blocks and declared local float/spacing commands excluded from scientific text comparison."
+}
