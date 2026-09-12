@@ -1,0 +1,30 @@
+{
+  "baseline_commit": "573348fd60e1ea26ff9874c570f8fe2f1c0f690f",
+  "scope": "Abstract prose and emphasis only; layout, body, appendix and scientific results unchanged",
+  "tex_outside_abstract_unchanged": true,
+  "question_paragraphs": 4,
+  "intro_paragraphs": 1,
+  "bold_regions_in_abstract_prose": 17,
+  "abstract_pages": 1,
+  "pdf_pages": 150,
+  "pixel_comparison_dpi": 96,
+  "changed_pdf_pages": [
+    1
+  ],
+  "unchanged_body_and_appendix_pages": 149,
+  "final_first_page_matches_reviewed_preview": true,
+  "keyword_bbox_pdf_pt": [
+    85.03912353515625,
+    651.4765625,
+    119.41012573242188,
+    662.9335327148438
+  ],
+  "font_size_tex_pt": 11.5,
+  "baseline_tex_pt": 18,
+  "paragraph_skip_tex_pt": 5,
+  "pdf_sha256": "37fe344b74f9e976ee694e31b5b1544f24ac0de3b04b20282088b0f64f0c5dac",
+  "pdf_bytes": 1076456,
+  "scientific_solver_rerun": false,
+  "official_rule_reference": "../official_sources.json",
+  "supplied_image_role": "Writing structure and selective emphasis reference only; no model or result imported"
+}
