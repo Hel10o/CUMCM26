@@ -2,9 +2,11 @@
 
 项目题目、建模资料、四问计算交付、独立核验，以及四问 LaTeX 论文初稿。
 
+最新结构修订基于实际读取的 GitHub main 提交 `b51ca5671e693c01bb04db7d312ce548cf621d89`：第八章改为“模型检验：降维有效性与后段环境灵敏度”，第九章改为“模型评价、适用范围与推广”并列出六项有证据的优点，结论保留两段，附录增加代码导览。摘要、所有数值与求解源码保持；正文仍为 10 个一级标题、27 页（含 AI 声明及参考文献）。见[本轮修订记录与九项检查](paper/q1234_draft_v1/evidence/structure_revision_20260912/论文结构与表述修订记录.md)。
+
 当前论文已补齐“通用方程→分问代入与化简→离散与求解→结果”的推导链，四问均有与实际代码相符的求解公式，见[四问推导补充说明](paper/q1234_draft_v1/evidence/derivations_20260912/四问公式推导补充说明.md)和[公式与代码对应表](paper/q1234_draft_v1/evidence/derivations_20260912/公式与代码对应表.md)。正文含 AI 声明及参考文献共 27 页，低于 30 页上限；保留小四字号与放宽后的行距、段距、公式和图表留白，见此前[正文排版修订](paper/q1234_draft_v1/evidence/body_spacing_20260912/正文排版修订说明.md)。10 个一级标题继续以“一、二、三……”编号并各占一行，见[一级标题修订记录](paper/q1234_draft_v1/evidence/section_titles_20260912/一级标题调整说明.md)。
 
-论文摘要参照用户给出的范文，以加粗“针对问题一／二／三／四”各自起段，按“任务与建模、求解方法、主要结果、结果解释”展开，并选择性加粗真实方法、比较前提与关键数值，见[当前摘要](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写稿.md)及[仿写修订记录](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写说明.md)。摘要采用 11.5 pt 字号、18 pt 行距和 5 pt 段间距，保留单页，沿用此前[间距调整与官方规范核验](paper/q1234_draft_v1/evidence/abstract_spacing_20260912/摘要间距调整说明.md)；本轮推导补充未修改摘要、附录源代码及科学结果。
+论文摘要参照用户给出的范文，以加粗“针对问题一／二／三／四”各自起段，按“任务与建模、求解方法、主要结果、结果解释”展开，并选择性加粗真实方法、比较前提与关键数值，见[当前摘要](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写稿.md)及[仿写修订记录](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写说明.md)。摘要采用 11.5 pt 字号、18 pt 行距和 5 pt 段间距，保留单页，沿用此前[间距调整与官方规范核验](paper/q1234_draft_v1/evidence/abstract_spacing_20260912/摘要间距调整说明.md)；本轮结构修订亦未修改摘要、附录源代码及科学结果。
 
 最新论文入口：[四问论文初稿 PDF](paper/q1234_draft_v1/四问论文初稿_v1.pdf)、[LaTeX 主文件](paper/q1234_draft_v1/main.tex)、[构建与验收说明](paper/q1234_draft_v1/README.md)、[AI工具使用详情](paper/q1234_draft_v1/AI工具使用详情.pdf)。本版根据实际读取的 `ad9c6766d6db2f21ee61d6d5a1a7a9c54c28f377` 四问结果及整体复审整理，采用 2026 年官方电子稿格式，保留条件模型的适用范围与 Q4 二维补证限制；是待队员人工审阅的完整初稿，尚不等同于完成最终提交验收。旧论文阶段稿保留。
 
@@ -67,7 +69,7 @@
 - [第四问完整交付](q4_complete_delivery/README.md)、[第四问论文正文](q4_complete_delivery/v1/第四问论文正文.md)、[表6](q4_complete_delivery/v1/output/表6.md)及[前三问收尾](q4_complete_delivery/v1/q123_closeout/README.md)。
 - [第四问本机接收核查](review_q4_20260912/第四问接收核查与整体复审要点.md)与[四问整体复审交接](q1234_overall_review_handoff/README.md)。
 - [四问整体模型复审交付](q1234_overall_review_delivery/v1/README.md)、[来源清单](q1234_overall_review_delivery/v1/来源清单.json)、[本轮报告ZIP](q1234_overall_review_delivery/四问整体复审报告_v1.zip)及[ZIP哈希](q1234_overall_review_delivery/四问整体复审报告_v1.zip.sha256)。
-- [四问论文结构与表述修订交接](q1234_paper_structure_handoff/README.md)、[完整模型指示文档](q1234_paper_structure_handoff/论文结构与表述修订_模型指示文档.md)及[可发送提示词](q1234_paper_structure_handoff/发给模型的提示词.txt)。该轮为**论文编辑修订**：不改数值、不重跑求解、不改摘要；四项修改为第八章标题补"模型检验"、第九章改为"模型评价、适用范围与推广"并新增模型优点、第十章结论去重、附录加代码导览。**尚未执行**，现稿结构保持原样。
+- [四问论文结构与表述修订交接](q1234_paper_structure_handoff/README.md)、[完整模型指示文档](q1234_paper_structure_handoff/论文结构与表述修订_模型指示文档.md)及[可发送提示词](q1234_paper_structure_handoff/发给模型的提示词.txt)。该轮为**论文编辑修订**：不改数值、不重跑求解、不改摘要；四项修改为第八章标题补"模型检验"、第九章改为"模型评价、适用范围与推广"并新增模型优点、第十章结论去重、附录加代码导览。**已完成编辑、编译和九项一致性检查**，修订后的结构与验收证据见[本轮记录](paper/q1234_draft_v1/evidence/structure_revision_20260912/论文结构与表述修订记录.md)。该提示词保留为本轮输入合同。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 

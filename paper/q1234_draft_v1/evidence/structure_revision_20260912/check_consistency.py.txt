@@ -1,0 +1,103 @@
+"""Read-only source/PDF audit; no model imports or numerical integration.
+Run from repository root: python paper/q1234_draft_v1/evidence/structure_revision_20260912/check_consistency.py.txt
+"""
+from pathlib import Path
+from collections import Counter
+import hashlib, json, re, subprocess
+import fitz
+
+ROOT = Path.cwd()
+P = ROOT / 'paper/q1234_draft_v1'
+E = P / 'evidence/structure_revision_20260912'
+B = P / 'build/structure_revision'
+SHA = 'b51ca5671e693c01bb04db7d312ce548cf621d89'
+def old(path):
+    return subprocess.check_output(['git', 'show', SHA + ':' + path], cwd=ROOT)
+def sha(b):
+    return hashlib.sha256(b).hexdigest()
+def text(path):
+    return (P/path).read_text(encoding='utf-8')
+def norm(b):
+    return b.decode('utf-8').replace('\r\n','\n')
+def before(path):
+    return norm(old('paper/q1234_draft_v1/'+path))
+checks={}
+def check(name, condition, **evidence):
+    checks[name]={'passed':bool(condition), **evidence}
+main=text('main.tex'); prior=before('main.tex')
+abstract=lambda s:s.split('\\begin{document}',1)[1].split('\\label{body:start}',1)[0]
+check('abstract_source_bytes', abstract(main)==abstract(prior), sha256=sha(abstract(main).encode()))
+check('main_only_removes_third_conclusion_paragraph', main==prior.replace('后续改进应先明确空气与材料水分的对应关系、核查终点平衡可达性，继而在相容质量基准上联立同一界面水通量与能量。现有规定半径只能支撑条件响应，不能单独识别另一工况下的收缩反馈。上述数据需求比无依据增加模型复杂度更直接地关系到真实过程预测。\n\n',''))
+conclusion=lambda s:s.split('\\section{结论}',1)[1].split('\\Needspace',1)[0].strip().split('\n\n')
+check('conclusion_two_original_paragraphs',len(conclusion(main))==2 and conclusion(main)==conclusion(prior)[:2])
+ai=lambda s:s.split('\\section*{AI工具使用声明}',1)[1].split('\\input{sections/references}',1)[0]
+check('ai_declaration_unchanged_and_before_references',ai(main)==ai(prior) and main.index('AI工具使用声明')<main.index('\\input{sections/references}'))
+v=text('sections/validation_limits.tex'); ov=before('sections/validation_limits.tex')
+check('chapter8_only_title_changed',v.split('\\section{模型评价、适用范围与推广}')[0]==ov.split('\\section{模型适用范围与改进方向}')[0].replace('降维检验与环境敏感性','模型检验：降维有效性与后段环境灵敏度',1))
+nv9=v.split('\\subsection{适用范围与主要限制}',1)[1]
+ov9=ov.split('\\section{模型适用范围与改进方向}',1)[1]
+numeric=lambda s:re.findall(r'\d+(?:\.\d+)?',re.sub(r'\\(?:eqref|ref|label|cite)\{[^}]*\}', '', s))
+check('chapter9_all_previous_numeric_tokens_in_order',numeric(nv9)==numeric(ov9),previous_tokens=numeric(ov9),current_tokens=numeric(nv9))
+mathblocks=lambda s:re.findall(r'\\begin\{equation\}.*?\\end\{equation\}',s,re.S)
+check('chapter9_equations_unchanged',mathblocks(nv9)==mathblocks(ov9))
+check('chapter9_three_target_subsections',re.findall(r'\\subsection\{([^}]+)\}',v.split('\\section{模型评价、适用范围与推广}')[1])==['模型优点','适用范围与主要限制','改进方向与数据需求'])
+check('chapter9_six_strengths',v.split('\\subsection{适用范围与主要限制}')[0].count('\\item ')==6)
+q4=text('sections/q4.tex'); oq4=before('sections/q4.tex')
+check('chapter7_numeric_tokens_unchanged',numeric(q4)==numeric(oq4))
+nav=lambda s:'\n'.join(line for line in s.splitlines() if line.startswith('代码导览：'))
+app=text('sections/appendix.tex'); oapp=before('sections/appendix.tex')
+check('appendix_only_one_navigation_sentence',len(nav(app).splitlines())==1 and app.replace(nav(app)+'\n\n','')==oapp)
+body_sources=['sections/problem_model.tex','sections/q1.tex','sections/q2.tex','sections/q3.tex','sections/q4.tex','sections/validation_limits.tex','sections/references.tex']
+alltext=main+'\n'+'\n'.join(text(f) for f in body_sources)
+titles=[]
+for f in body_sources:
+    titles+=re.findall(r'\\section\{([^}]+)\}',text(f))
+titles+=['结论']
+check('ten_top_level_titles',len(titles)==10 and titles[7:]==['模型检验：降维有效性与后段环境灵敏度','模型评价、适用范围与推广','结论'],titles=titles)
+check('chinese_title_format_unchanged',r'\ctexset{section={number=\chinese{section},aftername=、,runin=false}}' in main)
+check('frozen_definitions_and_chapters',all((P/f).read_bytes()==old('paper/q1234_draft_v1/'+f) for f in ['sections/problem_model.tex','sections/q1.tex','sections/q2.tex','sections/q3.tex','sections/references.tex','ai_details.tex']))
+forbidden=['能耗','节能','可忽略','题面指定中截面']
+check('paper_tex_redlines',all(x not in alltext for x in forbidden),hits={x:alltext.count(x) for x in forbidden})
+percent_lines=[line for line in alltext.splitlines() if re.search(r'60\.65',line)]
+check('all_60_65_contexts_model_critical_time',len(percent_lines)==3 and all('模型临界时间缩短' in line for line in percent_lines),contexts=percent_lines)
+aux=(B/'main.aux').read_text(encoding='utf-8')
+labels=re.findall(r'\\newlabel\{([^}]+)\}',aux)
+refs=re.findall(r'\\(?:eqref|ref)\{([^}]+)\}',alltext+app)
+missing=sorted(set(refs)-set(labels));dups=[k for k,n in Counter(labels).items() if n>1]
+check('cross_references_all_resolve',not missing and not dups,reference_occurrences=len(refs),unique_references=len(set(refs)),missing=missing,duplicate_labels=dups)
+log=(B/'main.log').read_text(encoding='utf-8',errors='replace')
+warnings=[line for line in log.splitlines() if re.search(r'undefined|multiply defined|Overfull|Missing character',line,re.I)]
+check('final_compile_no_unresolved_or_overflow',not warnings,matched_lines=warnings,underfull_count=log.count('Underfull'))
+page_labels={k:int(n) for k,n in re.findall(r'\\newlabel\{(body:start|appendix:start|ai:declaration|document:end)\}\{\{[^{}]*\}\{(\d+)\}',aux)}
+doc=fitz.open(B/'main.pdf'); olddoc=fitz.open(P/'build/structure_baseline.pdf')
+pdftext='\n'.join(page.get_text() for page in doc)
+compact=re.sub(r'\s+','',pdftext)
+check('entire_pdf_redlines_including_code_appendix',all(x not in compact for x in forbidden),pages=len(doc),hits={x:compact.count(x) for x in forbidden})
+check('pdf_no_unresolved_placeholders', '??' not in pdftext and '[?]' not in pdftext)
+bodypages=page_labels['appendix:start']-page_labels['body:start']
+check('body_at_most_30_pages',bodypages<=30 and page_labels['body:start']==2,body_pages=bodypages,page_labels=page_labels,total_pages=len(doc),appendix_pages=len(doc)-page_labels['appendix:start']+1)
+pix=lambda d,i: d[i].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).samples
+check('abstract_pixels_unchanged',pix(doc,0)==pix(olddoc,0),dpi=108)
+check('ai_before_references_pdf',page_labels['ai:declaration']<page_labels['appendix:start'],ai_page=page_labels['ai:declaration'])
+headings=[]
+for i in range(page_labels['body:start']-1,page_labels['appendix:start']-1):
+    lines=doc[i].get_text('dict')['blocks']
+    for block in lines:
+        for line in block.get('lines',[]):
+            s=''.join(x['text'] for x in line['spans'])
+            if re.match(r'^[一二三四五六七八九十]+、',s):headings.append({'page':i+1,'text':s,'bbox':line['bbox']})
+check('pdf_ten_headings_each_on_one_line',len(headings)==10 and all(x['text'].split('、',1)[1].strip() for x in headings),headings=headings)
+# Git diff verifies protected tracked paths; formal workbooks also receive explicit SHA256 checks.
+tracked=subprocess.check_output(['git','ls-tree','-r','-z',SHA],cwd=ROOT)
+allowed={'README.md','q1234_paper_structure_handoff/README.md','paper/q1234_draft_v1/README.md','paper/q1234_draft_v1/main.tex','paper/q1234_draft_v1/sections/appendix.tex','paper/q1234_draft_v1/sections/q4.tex','paper/q1234_draft_v1/sections/validation_limits.tex','paper/q1234_draft_v1/四问论文初稿_v1.pdf','paper/q1234_draft_v1/四问论文LaTeX源稿_v1.zip','paper/q1234_draft_v1/四问论文LaTeX源稿_v1.zip.sha256','paper/q1234_draft_v1/evidence/source_package.json'}
+changed=subprocess.check_output(['git','-c','core.quotepath=false','diff','--name-only',SHA,'--'],cwd=ROOT).decode().splitlines()
+unexpected=[p for p in changed if p not in allowed and not p.startswith('paper/q1234_draft_v1/evidence/structure_revision_20260912/')]
+check('tracked_changes_within_authorized_scope',not unexpected,unexpected=unexpected)
+formal=['q1_complete_delivery/q1_delivery/output/result1.xlsx','q4_complete_delivery/v1/q123_closeout/result2.xlsx','q3_refinement_delivery/output/result3.xlsx','q4_complete_delivery/v1/output/result4.xlsx']
+expected=['250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22','88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870','acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17','d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672']
+hashes={f:sha((ROOT/f).read_bytes()) for f in formal}
+check('four_formal_workbook_hashes_unchanged',list(hashes.values())==expected,sha256=hashes)
+report={'baseline_commit':SHA,'scope':'Static text, bytes, PDF layout/text and references only; no PDE or scenario execution','checks':checks,'passed':all(x['passed'] for x in checks.values()),'semantic_checks':'See independent_wording_review.md; automatic strings do not prove semantic equivalence.'}
+(E/'consistency_check.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps({'passed':report['passed'],'checks':len(checks),'failed':[k for k,v in checks.items() if not v['passed']],'body_pages':bodypages,'total_pages':len(doc)},ensure_ascii=False))
+raise SystemExit(0 if report['passed'] else 1)

@@ -1,0 +1,22 @@
+{
+  "branch": "main",
+  "commit_sha": "b51ca5671e693c01bb04db7d312ce548cf621d89",
+  "entries": [
+    {
+      "path": "README.md",
+      "commit_sha": "b51ca5671e693c01bb04db7d312ce548cf621d89",
+      "blob_sha": "6ec7a1d252dc0386f180151a29b08a1ea5c1ae77",
+      "url": "https://github.com/Hel10o/libai/blob/b51ca5671e693c01bb04db7d312ce548cf621d89/README.md",
+      "access": "GitHub connector fetch_file at fetched origin/main SHA",
+      "full_content_read": true
+    },
+    {
+      "path": "q1234_paper_structure_handoff/论文结构与表述修订_模型指示文档.md",
+      "commit_sha": "b51ca5671e693c01bb04db7d312ce548cf621d89",
+      "blob_sha": "99dee74b4ed9fb5f5df89a5dbd41a34f2bdeac48",
+      "url": "https://github.com/Hel10o/libai/blob/b51ca5671e693c01bb04db7d312ce548cf621d89/q1234_paper_structure_handoff/%E8%AE%BA%E6%96%87%E7%BB%93%E6%9E%84%E4%B8%8E%E8%A1%A8%E8%BF%B0%E4%BF%AE%E8%AE%A2_%E6%A8%A1%E5%9E%8B%E6%8C%87%E7%A4%BA%E6%96%87%E6%A1%A3.md",
+      "access": "GitHub connector fetch_file at fetched origin/main SHA",
+      "full_content_read": true
+    }
+  ]
+}

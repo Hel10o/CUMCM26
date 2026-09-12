@@ -9,6 +9,8 @@
 \codegroup{运行顺序与代码范围}
 首先运行\texttt{python support/launch.py smoke}，该入口只解析语法、核查副本哈希并执行白名单程序的\texttt{--help}，不会积分。完整复现须使用新的工作目录：先以附件1重建第一问和第二、三问轨迹，再用第三问专用轨迹导出表5；第四问读取附件2，完成主解、谱节点和时间算法对照、有限体积与二维对照后才能执行终点预算和工作簿导出。参数情景在各自同网格基线上比较；二维校正和直接离散场判定仍须分别报告。
 
+代码导览：第一问见\nolinkurl{q1_solver.py}；第二、三问全程见\nolinkurl{solve_unified_q23.py}，第三问现行表见\nolinkurl{q3_refined_reference.py}与\nolinkurl{export_workbook.py}；第四问见\nolinkurl{q4_spectral.py}，二维检验见\nolinkurl{geometry_solver_executed.py}。
+
 第二问机制诊断依赖已验收未舍入轨迹及320单元有限体积参数情景。本文表3、表4及全程\texttt{result2.xlsx}采用后续统一轨迹；机制诊断的旧前三小时数组不替代该正式工作簿。环境敏感性程序从同一个4小时完整状态继续积分；本次编稿不重新生成这些状态。
 
 体积较大的\texttt{NPZ}数组和正式工作簿未重复放入代码快照；复现说明列出必需外部证据及其相对路径。部分历史后处理程序没有输出参数且会在镜像目录写文件，必须在工作副本中运行；没有\texttt{--help}保护的脚本只检查语法。工作簿批量导出另需\texttt{@oai/artifact-tool}及对应Node运行时；本次没有执行此导出链。

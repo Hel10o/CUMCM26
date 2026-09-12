@@ -1,0 +1,291 @@
+{
+  "baseline_commit": "b51ca5671e693c01bb04db7d312ce548cf621d89",
+  "scope": "Static text, bytes, PDF layout/text and references only; no PDE or scenario execution",
+  "checks": {
+    "abstract_source_bytes": {
+      "passed": true,
+      "sha256": "f842c6d8440d2e73063ed2ec8a8e3fd9468391c2a328b179c63d2d3cc72a3e75"
+    },
+    "main_only_removes_third_conclusion_paragraph": {
+      "passed": true
+    },
+    "conclusion_two_original_paragraphs": {
+      "passed": true
+    },
+    "ai_declaration_unchanged_and_before_references": {
+      "passed": true
+    },
+    "chapter8_only_title_changed": {
+      "passed": true
+    },
+    "chapter9_all_previous_numeric_tokens_in_order": {
+      "passed": true,
+      "previous_tokens": [
+        "0.15",
+        "15",
+        "1",
+        "1",
+        "2",
+        "7",
+        "0.71952",
+        "0.89029",
+        "25",
+        "34.7454",
+        "28.0807",
+        "2.45",
+        "1800",
+        "45.59",
+        "4.801",
+        "9.50",
+        "12",
+        "164.10",
+        "2",
+        "3",
+        "4"
+      ],
+      "current_tokens": [
+        "0.15",
+        "15",
+        "1",
+        "1",
+        "2",
+        "7",
+        "0.71952",
+        "0.89029",
+        "25",
+        "34.7454",
+        "28.0807",
+        "2.45",
+        "1800",
+        "45.59",
+        "4.801",
+        "9.50",
+        "12",
+        "164.10",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "chapter9_equations_unchanged": {
+      "passed": true
+    },
+    "chapter9_three_target_subsections": {
+      "passed": true
+    },
+    "chapter9_six_strengths": {
+      "passed": true
+    },
+    "chapter7_numeric_tokens_unchanged": {
+      "passed": true
+    },
+    "appendix_only_one_navigation_sentence": {
+      "passed": true
+    },
+    "ten_top_level_titles": {
+      "passed": true,
+      "titles": [
+        "问题重述与建模思路",
+        "数据处理、基本假设与符号",
+        "统一传热传质模型与数值方法",
+        "第一问：预热阶段的径向分布",
+        "第二问：变物性热质耦合与全过程输出",
+        "问题三：由全域含水率约束确定干燥时长",
+        "问题四：观测收缩下的干燥过程",
+        "模型检验：降维有效性与后段环境灵敏度",
+        "模型评价、适用范围与推广",
+        "结论"
+      ]
+    },
+    "chinese_title_format_unchanged": {
+      "passed": true
+    },
+    "frozen_definitions_and_chapters": {
+      "passed": true
+    },
+    "paper_tex_redlines": {
+      "passed": true,
+      "hits": {
+        "能耗": 0,
+        "节能": 0,
+        "可忽略": 0,
+        "题面指定中截面": 0
+      }
+    },
+    "all_60_65_contexts_model_critical_time": {
+      "passed": true,
+      "contexts": [
+        "\\textbf{针对问题四}，根据附件2的观测半径，在恒长度、均匀径向收缩假设下，由\\textbf{干物质守恒}构建\\textbf{材料坐标模型}，将移动边界转化为固定参考域，避免重复加入干基含水率的体积浓缩项。采用该问物性从初态求解，在相同后段环境假设下得到一维条件执行时长\\textbf{51.0921\\unit{h}}。进一步设置\\textbf{同物性恒半径对照}，其临界时间为129.8484\\unit{h}；施加观测收缩后，模型临界时间缩短约60.65\\%。该差异包含几何尺度与干基边界标度变化，不能全部归因于扩散距离缩短；全域达标仍需精细二维直接核验。",
+        "模型临界时间缩短78.7564\\unit{h}，约60.6526\\%。",
+        "所以模型临界时间缩短60.6526\\%是同一有效方程内的条件对照结果，"
+      ]
+    },
+    "cross_references_all_resolve": {
+      "passed": true,
+      "reference_occurrences": 85,
+      "unique_references": 47,
+      "missing": [],
+      "duplicate_labels": []
+    },
+    "final_compile_no_unresolved_or_overflow": {
+      "passed": false,
+      "matched_lines": [
+        "Overfull \\hbox (21.53197pt too wide) in paragraph at lines 12--13"
+      ],
+      "underfull_count": 2
+    },
+    "entire_pdf_redlines_including_code_appendix": {
+      "passed": true,
+      "pages": 155,
+      "hits": {
+        "能耗": 0,
+        "节能": 0,
+        "可忽略": 0,
+        "题面指定中截面": 0
+      }
+    },
+    "pdf_no_unresolved_placeholders": {
+      "passed": true
+    },
+    "body_at_most_30_pages": {
+      "passed": true,
+      "body_pages": 27,
+      "page_labels": {
+        "body:start": 2,
+        "ai:declaration": 27,
+        "appendix:start": 29,
+        "document:end": 155
+      },
+      "total_pages": 155,
+      "appendix_pages": 127
+    },
+    "abstract_pixels_unchanged": {
+      "passed": true,
+      "dpi": 108
+    },
+    "ai_before_references_pdf": {
+      "passed": true,
+      "ai_page": 27
+    },
+    "pdf_ten_headings_each_on_one_line": {
+      "passed": true,
+      "headings": [
+        {
+          "page": 2,
+          "text": "一、问题重述与建模思路",
+          "bbox": [
+            85.03900146484375,
+            86.33600616455078,
+            283.03900146484375,
+            104.33600616455078
+          ]
+        },
+        {
+          "page": 2,
+          "text": "二、数据处理、基本假设与符号",
+          "bbox": [
+            85.03900146484375,
+            453.7859802246094,
+            337.03900146484375,
+            471.7859802246094
+          ]
+        },
+        {
+          "page": 4,
+          "text": "三、统一传热传质模型与数值方法",
+          "bbox": [
+            85.03900146484375,
+            270.9649963378906,
+            355.03900146484375,
+            288.9649963378906
+          ]
+        },
+        {
+          "page": 6,
+          "text": "四、第一问：预热阶段的径向分布",
+          "bbox": [
+            85.03900146484375,
+            265.5589904785156,
+            355.03900146484375,
+            283.5589904785156
+          ]
+        },
+        {
+          "page": 10,
+          "text": "五、第二问：变物性热质耦合与全过程输出",
+          "bbox": [
+            85.03900146484375,
+            146.89898681640625,
+            427.03900146484375,
+            164.89898681640625
+          ]
+        },
+        {
+          "page": 14,
+          "text": "六、问题三：由全域含水率约束确定干燥时长",
+          "bbox": [
+            85.03900146484375,
+            562.2080688476562,
+            445.03900146484375,
+            580.2080688476562
+          ]
+        },
+        {
+          "page": 18,
+          "text": "七、问题四：观测收缩下的干燥过程",
+          "bbox": [
+            85.03900146484375,
+            393.2900085449219,
+            373.03900146484375,
+            411.2900085449219
+          ]
+        },
+        {
+          "page": 23,
+          "text": "八、模型检验：降维有效性与后段环境灵敏度",
+          "bbox": [
+            85.03900146484375,
+            302.9989929199219,
+            445.03900146484375,
+            320.9989929199219
+          ]
+        },
+        {
+          "page": 25,
+          "text": "九、模型评价、适用范围与推广",
+          "bbox": [
+            85.03900146484375,
+            265.5589904785156,
+            337.03900146484375,
+            283.5589904785156
+          ]
+        },
+        {
+          "page": 27,
+          "text": "十、结论",
+          "bbox": [
+            85.03900146484375,
+            300.0279846191406,
+            157.03900146484375,
+            318.0279846191406
+          ]
+        }
+      ]
+    },
+    "tracked_changes_within_authorized_scope": {
+      "passed": true,
+      "unexpected": []
+    },
+    "four_formal_workbook_hashes_unchanged": {
+      "passed": true,
+      "sha256": {
+        "q1_complete_delivery/q1_delivery/output/result1.xlsx": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+        "q4_complete_delivery/v1/q123_closeout/result2.xlsx": "88b45e2228ceea5f7a67103dcfadc33335454b1d89defab5e14ae7a7b9097870",
+        "q3_refinement_delivery/output/result3.xlsx": "acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17",
+        "q4_complete_delivery/v1/output/result4.xlsx": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672"
+      }
+    }
+  },
+  "passed": false,
+  "semantic_checks": "See independent_wording_review.md; automatic strings do not prove semantic equivalence."
+}

@@ -1,0 +1,14 @@
+{
+  "commit": "b51ca5671e693c01bb04db7d312ce548cf621d89",
+  "pre_edit_sha256": {
+    "main.tex": "42fdb0af8b57e432719b09fe5048e569d1c06f3230a4c2160ba9d1ddf8844193",
+    "sections/validation_limits.tex": "c3f1bd26eb3a0fdc2cb237805a9685d82627ce4f55e26e6e73a4886da04f97ad",
+    "sections/q4.tex": "56d6ab75c0ad43a2b48dbec4c97490abaa1db55714f524885579148a857dd51e",
+    "sections/appendix.tex": "34f8c5c164eb90d02dce1b924c2a538c5a43c126d5744793792faf71a0e38d74"
+  },
+  "baseline_pdf_sha256": "9afd4449a0a80c4b9047e55d1714e69fc3ae0871cacf223d8f90b4f8b705e03f",
+  "initial_untracked": [
+    "template/"
+  ],
+  "protected_notice": "No solver, numeric output, tables, figures or historical evidence edited."
+}
