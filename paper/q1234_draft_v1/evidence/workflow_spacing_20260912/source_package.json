@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": {
+    "crc": true,
+    "no_duplicate_members": true,
+    "member_set_matches_manifest": true,
+    "inner_and_outer_manifest_equal": true,
+    "every_member_matches_disk_and_manifest": true,
+    "new_workflow_and_evidence_included": true,
+    "no_build_or_cache_files": true,
+    "archive_hash_matches_outer": true,
+    "archive_hash_matches_sidecar": true,
+    "published_pdf_is_reviewed_build": true,
+    "five_frozen_sources_unchanged": true,
+    "three_figure_outputs_match_sources": true,
+    "script_hash_matches_sources": true,
+    "common_hash_matches_sources": true
+  },
+  "member_count": 343,
+  "mismatched_members": [],
+  "source_zip": {
+    "bytes": 27855188,
+    "sha256": "128556f9bfe61e18aae4664ad83111b3ac3c10f73aedf4feb36fd4dbeba2bb42"
+  },
+  "paper_pdf_sha256": "1121075687d610ecdbd15ed0dafaa5b63d4b16dbeb1ea430dd37b3c3267242f1",
+  "scope": "This external source_package.json is excluded from the ZIP to avoid self-reference.",
+  "not_run": [
+    "PDE solving or scenarios",
+    "compilation from an extracted ZIP",
+    "physical printing"
+  ]
+}

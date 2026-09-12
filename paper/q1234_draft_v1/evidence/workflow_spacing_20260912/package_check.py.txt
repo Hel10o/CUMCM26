@@ -1,0 +1,41 @@
+"""Read back the editable source archive and current workflow evidence."""
+from pathlib import Path
+import hashlib
+import json
+import zipfile
+
+BASE = Path(__file__).resolve().parents[2]
+E = BASE / 'evidence/workflow_spacing_20260912'
+H = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+archive = BASE / '四问论文LaTeX源稿_v1.zip'
+outer = json.loads((BASE / 'evidence/source_package.json').read_text(encoding='utf-8'))
+checks = {}
+with zipfile.ZipFile(archive) as z:
+    manifest = json.loads(z.read('SOURCE_MANIFEST.json'))
+    checks['crc'] = z.testzip() is None
+    checks['no_duplicate_members'] = len(z.namelist()) == len(set(z.namelist()))
+    checks['member_set_matches_manifest'] = set(z.namelist()) == set(manifest) | {'SOURCE_MANIFEST.json'}
+    checks['inner_and_outer_manifest_equal'] = manifest == outer['sources']
+    bad = [n for n, s in manifest.items() if H(BASE / n) != s or hashlib.sha256(z.read(n)).hexdigest() != s]
+    checks['every_member_matches_disk_and_manifest'] = not bad
+    required = ['build_workflow_spacing.py', 'workflow_spacing/common.py', 'workflow_spacing/workflow.py', 'workflow_spacing/README.md',
+                'evidence/workflow_spacing_20260912/流程图行间距修订记录.md', 'evidence/workflow_spacing_20260912/independent_review.md']
+    required += [f'figures/workflow_spacing/model_workflow.{ext}' for ext in ['pdf', 'svg', 'png']]
+    checks['new_workflow_and_evidence_included'] = all(n in manifest for n in required)
+    checks['no_build_or_cache_files'] = not any('/build/' in n or '__pycache__' in n or n.endswith(('.aux', '.log', '.xdv', '.pyc')) for n in manifest)
+checks['archive_hash_matches_outer'] = H(archive) == outer['sha256']
+checks['archive_hash_matches_sidecar'] = archive.with_suffix('.zip.sha256').read_text(encoding='utf-8').split()[0] == H(archive)
+checks['published_pdf_is_reviewed_build'] = H(BASE / '四问论文初稿_v1.pdf') == H(BASE / 'build/workflow_spacing/main.pdf')
+sources = json.loads((E / 'workflow_sources.json').read_text(encoding='utf-8'))
+checks['five_frozen_sources_unchanged'] = len(sources['sources']) == 5 and all(H(BASE.parents[1] / n) == r['sha256'] for n, r in sources['sources'].items())
+checks['three_figure_outputs_match_sources'] = len(sources['outputs']) == 3 and all(H(BASE.parents[1] / n) == r['sha256'] for n, r in sources['outputs'].items())
+checks['script_hash_matches_sources'] = H(BASE / 'workflow_spacing/workflow.py') == sources['script_sha256']
+checks['common_hash_matches_sources'] = H(BASE / 'workflow_spacing/common.py') == sources['common_sha256']
+result = {'passed': all(checks.values()), 'checks': checks, 'member_count': len(manifest), 'mismatched_members': bad,
+          'source_zip': {'bytes': archive.stat().st_size, 'sha256': H(archive)},
+          'paper_pdf_sha256': H(BASE / '四问论文初稿_v1.pdf'),
+          'scope': 'This external source_package.json is excluded from the ZIP to avoid self-reference.',
+          'not_run': ['PDE solving or scenarios', 'compilation from an extracted ZIP', 'physical printing']}
+(E / 'source_package.json').write_bytes(json.dumps(result, ensure_ascii=False, indent=2).encode('utf-8'))
+print(json.dumps(result, ensure_ascii=False, indent=2))
+raise SystemExit(0 if result['passed'] else 1)

@@ -1,5 +1,7 @@
 # libai
 
+最新一轮仅增加原流程图行间距：图高6.4→8.0 cm，图宽、33条文字、字号和箭头关系不变。正文与图注不改，仍为157页；除第2页外，其余156页像素一致。见[行间距修订记录](paper/q1234_draft_v1/evidence/workflow_spacing_20260912/流程图行间距修订记录.md)与[重绘入口](paper/q1234_draft_v1/workflow_spacing/README.md)。
+
 项目题目、建模资料、四问计算交付、独立核验，以及四问 LaTeX 论文初稿。
 
 本轮现有图细修读取 GitHub 与本地共同基线 `e1ae2bc23917cbbbd357cb14ca795896f4a39f25`，按用户新方案比较取舍：四张图强化关键注释及同物性临界根对照，降维和环境两图保留，另加一张全模型流程图。第25页长目录改为简短来源说明，完整路径与哈希移至支撑清单。科学结果、摘要、结论、公式、规定表及全局格式保持。最终核验与页面信息见[本轮记录](paper/q1234_draft_v1/evidence/figure_refinement_20260912/现有图细修与流程图修订记录.md)、[七图入口](paper/q1234_draft_v1/visual_refinement/README.md)和[图表来源清单](paper/q1234_draft_v1/support/图表来源清单.md)。

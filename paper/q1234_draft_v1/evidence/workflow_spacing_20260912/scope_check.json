@@ -1,0 +1,43 @@
+{
+  "baseline_sha": "f93cc9d88b0b3f344c02048f4fad66b8c42224e4",
+  "passed": true,
+  "checks": {
+    "all_33_text_items_and_font_sizes_exact": true,
+    "all_156_other_pages_pixel_identical": true,
+    "total_pages_157": true,
+    "frozen_solver_sources_unchanged": true,
+    "diagram_output_hashes_match": true,
+    "problem_model_only_asset_path_changed": true,
+    "no_other_TeX_changed": true,
+    "drawing_logic_only_figure_height_changed": true
+  },
+  "pdf_sha256": "1121075687d610ecdbd15ed0dafaa5b63d4b16dbeb1ea430dd37b3c3267242f1",
+  "old_pdf_sha256": "32a1affe690d0146bfb282baac909b66ab5486382bd12a4563416489d1f30b60",
+  "changed_physical_pages": [
+    2
+  ],
+  "pixel_comparison_dpi": 96,
+  "pages_compared": 157,
+  "page_count": {
+    "abstract": 1,
+    "body": 29,
+    "appendix": 127,
+    "total": 157
+  },
+  "old_cm": [
+    15,
+    6.4
+  ],
+  "new_cm": [
+    15,
+    8.0
+  ],
+  "vertical_spacing_ratio": 1.25,
+  "text_item_count": 33,
+  "actual_compile_exit": 0,
+  "visual_review": "Page 2 color rendered at 150 dpi and opened by primary agent; diagram and caption fully fit, no collisions or footer overlap. Independent review separate.",
+  "not_run": [
+    "PDE or parameter scenarios",
+    "physical printing"
+  ]
+}
