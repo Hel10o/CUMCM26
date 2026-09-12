@@ -1,0 +1,159 @@
+{
+  "baseline_commit": "4ac28432334b34f5d20d33d35115cf88d39a129c",
+  "scope": "Body section heading display only",
+  "main_tex_unchanged_except_one_ctex_setting": true,
+  "heading_count": 10,
+  "all_major_headings_single_line": true,
+  "major_heading_pdf_font_pt": 18,
+  "headings": [
+    {
+      "heading": "一、问题重述与建模思路",
+      "page": 2,
+      "bbox": [
+        85.03900146484375,
+        86.33600616455078,
+        283.03900146484375,
+        104.33600616455078
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "二、数据处理、基本假设与符号",
+      "page": 2,
+      "bbox": [
+        85.03900146484375,
+        453.7859802246094,
+        337.03900146484375,
+        471.7859802246094
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "三、统一传热传质模型与数值方法",
+      "page": 4,
+      "bbox": [
+        85.03900146484375,
+        270.9649963378906,
+        355.03900146484375,
+        288.9649963378906
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "四、第一问：预热阶段的径向分布",
+      "page": 6,
+      "bbox": [
+        85.03900146484375,
+        86.47600555419922,
+        355.03900146484375,
+        104.47600555419922
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "五、第二问：变物性热质耦合与全过程输出",
+      "page": 8,
+      "bbox": [
+        85.03900146484375,
+        423.4410095214844,
+        427.03900146484375,
+        441.4410095214844
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "六、问题三：由全域含水率约束确定干燥时长",
+      "page": 11,
+      "bbox": [
+        85.03900146484375,
+        520.9509887695312,
+        445.03900146484375,
+        538.9509887695312
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "七、问题四：观测收缩下的干燥过程",
+      "page": 14,
+      "bbox": [
+        85.03900146484375,
+        393.2900085449219,
+        373.03900146484375,
+        411.2900085449219
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "八、降维检验与环境敏感性",
+      "page": 19,
+      "bbox": [
+        85.03900146484375,
+        86.47600555419922,
+        301.03900146484375,
+        104.47600555419922
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "九、模型适用范围与改进方向",
+      "page": 21,
+      "bbox": [
+        85.03900146484375,
+        86.40599822998047,
+        319.03900146484375,
+        104.40599822998047
+      ],
+      "single_line": true
+    },
+    {
+      "heading": "十、结论",
+      "page": 22,
+      "bbox": [
+        85.03900146484375,
+        511.0289611816406,
+        157.03900146484375,
+        529.0289916992188
+      ],
+      "single_line": true
+    }
+  ],
+  "subsection_numbers_unchanged": [
+    "2.1",
+    "2.2",
+    "2.3",
+    "3.1",
+    "3.2",
+    "3.3",
+    "4.1",
+    "4.2",
+    "4.3",
+    "5.1",
+    "5.2",
+    "5.3",
+    "5.4",
+    "6.1",
+    "6.2",
+    "6.3",
+    "7.1",
+    "7.2",
+    "7.3",
+    "7.4",
+    "7.5",
+    "8.1",
+    "8.2",
+    "9.1",
+    "9.2",
+    "9.3",
+    "9.4"
+  ],
+  "body_pages_including_ai_and_references": 22,
+  "abstract_pages": 1,
+  "appendix_pages": 127,
+  "pdf_pages": 150,
+  "abstract_and_appendix_pixel_identical": true,
+  "comparison_dpi": 96,
+  "pdf_sha256": "7eb01286e4369bd80950bdd27d202b112e535098e1ac1da0658f19439d1fecf6",
+  "pdf_bytes": 1076013,
+  "scientific_solver_rerun": false,
+  "preexisting_untracked_directory_excluded": "template/ (separate template/cumcm Git repository)"
+}
