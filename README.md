@@ -67,6 +67,7 @@
 - [第四问完整交付](q4_complete_delivery/README.md)、[第四问论文正文](q4_complete_delivery/v1/第四问论文正文.md)、[表6](q4_complete_delivery/v1/output/表6.md)及[前三问收尾](q4_complete_delivery/v1/q123_closeout/README.md)。
 - [第四问本机接收核查](review_q4_20260912/第四问接收核查与整体复审要点.md)与[四问整体复审交接](q1234_overall_review_handoff/README.md)。
 - [四问整体模型复审交付](q1234_overall_review_delivery/v1/README.md)、[来源清单](q1234_overall_review_delivery/v1/来源清单.json)、[本轮报告ZIP](q1234_overall_review_delivery/四问整体复审报告_v1.zip)及[ZIP哈希](q1234_overall_review_delivery/四问整体复审报告_v1.zip.sha256)。
+- [四问论文结构与表述修订交接](q1234_paper_structure_handoff/README.md)、[完整模型指示文档](q1234_paper_structure_handoff/论文结构与表述修订_模型指示文档.md)及[可发送提示词](q1234_paper_structure_handoff/发给模型的提示词.txt)。该轮为**论文编辑修订**：不改数值、不重跑求解、不改摘要；四项修改为第八章标题补"模型检验"、第九章改为"模型评价、适用范围与推广"并新增模型优点、第十章结论去重、附录加代码导览。**尚未执行**，现稿结构保持原样。
 
 第一问结果的模型假设、验证范围和局限见交付说明、论文正文和最新审核报告。2026-09-10 的审核已在本机新目录完整复现，并独立核对热解、输出文件及四位小数；新证据保存在 `review_q1_20260910`。这支持当前假设下的数值正确性，不代表已经完成真实药材实验验证。
 
