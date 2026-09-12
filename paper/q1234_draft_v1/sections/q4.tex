@@ -3,7 +3,8 @@
 
 \subsection{半径历程与材料运动}
 
-问题四使用附录4物性，并根据附件2计入尺寸变化\cite{problem}。
+问题四将附录4物性代入式\eqref{eq:heat}--\eqref{eq:boundary}，
+并根据附件2把固定几何改为运动材料域\cite{problem}。
 温度和含水率从28\celsius、2.55\unit{kg/kg}的共同初态重新求解，
 不接续问题三的干燥末态。
 附件2含0--72\unit{h}的145个半径记录，间隔1800\unit{s}，
@@ -43,10 +44,18 @@
 由初始干密度均匀和式\eqref{eq:radius-map}，
 $\rho_d J=\rho_{d,0}$，所以
 $\rho_d(t)=\rho_{d,0}[R_0/R(t)]^2$为空间常数，可从干基水分方程中约去。
-同时
-$\Ds f/\dd t=\partial_t f|_\xi+(v_{s,r}-w_r)\partial_r f
-=\partial_t f|_\xi$，
-从而一维参考域方程为
+对任一场量$f(r,t)=\widehat f(\xi,t)$，链式法则给出
+\begin{equation}
+ \left.\partial_t f\right|_r
+ =\left.\partial_t\widehat f\right|_\xi
+   -\frac{R'}R\xi\partial_\xi\widehat f,
+ \qquad
+ v_{s,r}\partial_r f=\frac{R'}R\xi\partial_\xi\widehat f.
+ \label{eq:q4-chain-rule}
+\end{equation}
+两项中的材料运动恰好抵消，故$\Ds f/\dd t=\partial_t\widehat f|_\xi$。
+再将$\partial_r=R^{-1}\partial_\xi$代入式\eqref{eq:heat}和\eqref{eq:moisture}，
+省略场量帽号后，一维参考域方程为
 \begin{equation}
  \begin{aligned}
   \left.\partial_t C\right|_\xi
@@ -59,7 +68,8 @@ $\Ds f/\dd t=\partial_t f|_\xi+(v_{s,r}-w_r)\partial_r f
  \end{aligned}
  \label{eq:q4-reference-pde}
 \end{equation}
-轴线取正则对称条件；当前侧表面的边界式为
+轴线取正则对称条件；将同一空间导数变换代入式\eqref{eq:boundary}，
+当前侧表面的边界式为
 \begin{equation}
  -\frac{D(T_s,C_s)}{R}\left.\partial_\xi C\right|_1=h_m(C_s-b),
  \qquad
@@ -93,12 +103,41 @@ $h_m=8\times10^{-7}\unit{m/s}$，
 
 \subsection{数值求解、账本与结束状态}
 
-令$x=\xi^2$，径向算子化为
-$(4/R^2)\partial_x[x(\cdot)]$，消去轴线显式奇点。
-采用120阶Chebyshev配点与Radau时间推进，
-在环境及半径输入节点处分段积分，表面温湿由非线性边界联立确定。
-水分通量用$F_4'(C)=\exp(-0.30/C)$的原函数梯度表示，
-并检查其插值多项式的全部内部实驻点及两端点，以确定全径向极值。
+令$x=\xi^2$，对任意扩散系数$a$和场量$f$有
+\begin{equation}
+ \frac{1}{R^2\xi}\partial_\xi(a\xi\partial_\xi f)
+ =\frac4{R^2}\partial_x(ax\partial_x f)
+ =\frac4{R^2}\bigl[q+x\partial_xq\bigr],
+ \qquad q=a\partial_xf.
+ \label{eq:q4-x-operator}
+\end{equation}
+该式消去轴线显式奇点，在$x=0$处直接取$4q(0)/R^2$。
+依式\eqref{eq:primitive}定义$F_4'(C)=\exp(-0.30/C)$、$F_4(0)=0$，
+并令$A_4(T)=4.2\times10^{-4}\exp[-3850/(T+273.15)]$。
+沿用问题二的Chebyshev微分矩阵$\mathsf D_x$，
+记$q_{T,i}=k(C_i)(\mathsf D_x\boldsymbol T)_i$、
+$q_{C,i}=A_4(T_i)[\mathsf D_x F_4(\boldsymbol C)]_i$
+及$S_i=\rho_{\mathrm{eff}}(C_i)c_p(C_i)$，则内部节点方程为
+\begin{equation}
+ \begin{aligned}
+  \dot T_i&=\frac4{R(t)^2S_i}
+       \bigl[q_{T,i}+x_i(\mathsf D_x\boldsymbol q_T)_i\bigr],\\
+  \dot C_i&=\frac4{R(t)^2}
+       \bigl[q_{C,i}+x_i(\mathsf D_x\boldsymbol q_C)_i\bigr].
+ \end{aligned}
+ \label{eq:q4-semidiscrete}
+\end{equation}
+其中$i=0,\ldots,N-1$，表面$i=N$由式\eqref{eq:q4-reference-boundary}确定：
+\begin{equation}
+ \frac2R q_{T,N}+h_T(T_N-T_a)=0,
+ \qquad
+ \frac2R q_{C,N}+h_m(C_N-b)=0.
+ \label{eq:q4-discrete-robin}
+\end{equation}
+这里$\partial_\xi=2\xi\partial_x$使表面因子成为$2/R$，
+而内部演化因子为$4/R^2$；二者均随观测半径更新。
+取$N=120$，联立求解表面温湿代数方程后用Radau推进内部未知量，
+在环境及半径输入节点处分段重启。
 
 参考圆环的当前体积与固定干质量分别为
 $V_i=\pi R^2L_0(\xi_e^2-\xi_w^2)$、$m_{d,i}=\rho_d V_i$。
@@ -127,6 +166,11 @@ $5.98\times10^{-4}\unit{s}$。
 前两类检验显示谱解已稳定，有限体积外推提供不同离散方法的支持，
 外推差仍是经验数值指标而非严格误差界。
 
+终点检测先由内部节点最大值产生等号候选事件，
+再将式\eqref{eq:q3-extrema-candidates}--\eqref{eq:q3-reconstructed-max}
+中的原函数替换为$F_4$，检查重构多项式的全部内部实驻点及两端点。
+由于$F_4'(C)>0$，该检查同时给出重构含水率的最大值；
+本算例在候选根和相邻时刻均确认最大值位于轴心。
 一维径向极值下降至阈值时，临界根为
 $t_{*,4}=183931.211715489\unit{s}$。
 根前后1\unit{s}的最大值分别约为0.150000513489和0.149999486518，
@@ -144,8 +188,16 @@ $t_{*,4}=183931.211715489\unit{s}$。
 \end{equation}
 该点晚于一维根约0.3483\unit{s}，当前半径为1.2000\unit{cm}。
 题设表6的规定采样见表\ref{tab:q4-moisture}。
-与固定几何时不同，必须先将材料坐标转换回实际$r$，
-再判断该位置是否仍在药材内；当前表面另列，不能当作固定2\unit{cm}位置。
+对规定的实际位置$r_j$，以$P_{U,4}(x,t)$表示$F_4(C)$的配点插值多项式，
+导出值按下式由当前材料场重构：
+\begin{equation}
+ C(r_j,t)=F_4^{-1}\!\left[
+ P_{U,4}\!\left(\frac{r_j^2}{R(t)^2},t\right)\right],
+ \qquad 0\le r_j\le R(t).
+ \label{eq:q4-output-map}
+\end{equation}
+当$r_j>R(t)$时不作域外外推；当前表面取$x=1$另列，
+不能当作固定2\unit{cm}位置。
 
 \begin{table}[htbp]
  \centering

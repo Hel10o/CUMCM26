@@ -1,22 +1,96 @@
 \section{第一问：预热阶段的径向分布}
 \label{sec:q1}
 
-\subsection{常热物性与非线性水分扩散}
-第一问在前$1800\unit{s}$内使用附录2参数\cite{problem}。将共用方程
-\eqref{eq:heat}--\eqref{eq:boundary}中的热容量、导热率分别取为
-$820\times2600\unit{J/(m^3\cdot K)}$和$0.36\unit{W/(m\cdot K)}$，
-水分扩散系数取$D(C)=7\times10^{-9}\exp(-0.89/C)\unit{m^2/s}$。
-本问的$D$不依赖温度，热方程也不依赖含水率，因此两个场可分别求解，
-不将其称为双向热质耦合模型。水分方程仍为非线性方程；对光滑解，
-散度项除$D$乘拉普拉斯算子外还含$D'(C)C_r^2$，不能删去此项。
+\subsection{常热物性方程与初边值条件}
+第一问在前$1800\unit{s}$内使用附录2参数\cite{problem}。固定骨架使
+式\eqref{eq:heat}--\eqref{eq:moisture}中的材料导数退化为时间偏导数，
+空间均匀的干密度从水分方程约去。再取中截面径向描述并代入物性，得到
+\begin{equation}
+\begin{aligned}
+T_t&=\alpha\frac{1}{r}\frac{\partial}{\partial r}(rT_r),
+&\alpha&=\frac{0.36}{820\times2600},\\
+C_t&=\frac{1}{r}\frac{\partial}{\partial r}\bigl(rD(C)C_r\bigr),
+&D(C)&=7\times10^{-9}e^{-0.89/C}.
+\end{aligned}
+\label{eq:q1-pde}
+\end{equation}
+式\eqref{eq:q1-pde}定义在$0<r<R=0.02\unit{m}$，初态为
+$T(r,0)=28\celsius$、$C(r,0)=2.55\unit{kg/kg}$。式\eqref{eq:boundary}
+在轴线对称性和圆柱表面外法向下具体写为
+\begin{equation}
+\begin{aligned}
+T_r(0,t)&=C_r(0,t)=0,\\
+-0.36T_r(R,t)&=25[T(R,t)-T_a(t)],\\
+-D(C_s)C_r(R,t)&=8\times10^{-7}[C_s-b(t)],\qquad C_s=C(R,t).
+\end{aligned}
+\label{eq:q1-bc}
+\end{equation}
+其中$T_a,b$由环境记录线性插值得到。本问的$D$不依赖温度，热方程也
+不依赖含水率，因此两个场分别求解；水分场仍是非线性的，因为其散度
+展开后为$D(C)(C_{rr}+C_r/r)+D'(C)C_r^2$，不能按常扩散率处理。
+均匀初态与式\eqref{eq:q1-bc}在初始表面角点不相容，故保留题给初值，
+允许$t>0$形成早期边界层，不人为调整初始表面含水率。
 
-采用以轴心和表面为真实节点的圆环有限体积离散，每个内部界面的通量在
-相邻控制体中符号相反；圆柱轴心用积分极限处理，不直接计算$1/r$。
-时间推进使用隐式BDF方法\cite{scipy}，在每个环境输入折点重新启动积分并
-传递末态。正式径向区间数为10240，相对容差$2\times10^{-12}$，最大步长
-$3\unit{s}$。规定的$1\unit{s}$是输出间隔，不是积分固定步长。
-均匀初态与初始表面Robin条件在角点不相容，计算保留题给初值，允许在
-$t>0$形成早期边界层，不人为降低初始表面含水率。
+\subsection{圆环守恒离散与隐式求解}
+为同时说明两个场的计算，记$u=T$时$a(u)=\alpha$、
+$\beta=25/(820\times2600)$、$u_a=T_a$；$u=C$时$a(u)=D(u)$、
+$\beta=8\times10^{-7}$、$u_a=b$。取节点$r_i=i\Delta r$，
+$i=0,\ldots,N$、$\Delta r=R/N$，内部控制体面位于相邻节点中点，
+两端面分别为$r_{-1/2}=0$、$r_{N+1/2}=R$。令外向加权通量
+$G=-ra(u)u_r$，将式\eqref{eq:q1-pde}乘$r$并在圆环控制体内积分，得
+\begin{equation}
+\frac{\dd}{\dd t}\int_{r_{i-1/2}}^{r_{i+1/2}}ru\,\dd r
+=G(r_{i-1/2},t)-G(r_{i+1/2},t).
+\label{eq:q1-ring}
+\end{equation}
+真实体积中的公因子$2\pi L$已约去。以节点值近似式\eqref{eq:q1-ring}
+的储存量，权重为$w_i=(r_{i+1/2}^2-r_{i-1/2}^2)/2$，因此轴心和
+表面节点均保留各自控制体容量。把相邻两半格的扩散阻力串联相加，
+即$\Delta r/\widehat a=(\Delta r/2)/a(u_i)+(\Delta r/2)/a(u_{i+1})$，
+内部面得到调和平均及通量：
+\begin{equation}
+\widehat a_{i+1/2}=\frac{2a(u_i)a(u_{i+1})}{a(u_i)+a(u_{i+1})},\qquad
+G_{i+1/2}=r_{i+1/2}\widehat a_{i+1/2}\frac{u_i-u_{i+1}}{\Delta r}.
+\label{eq:q1-flux}
+\end{equation}
+同一式\eqref{eq:q1-flux}同时用于相邻两格，结合式\eqref{eq:q1-bc}
+即得到实际积分的常微分方程组
+\begin{equation}
+\begin{aligned}
+w_i\dot u_i&=G_{i-1/2}-G_{i+1/2},\qquad i=0,\ldots,N,\\
+G_{-1/2}&=0,\qquad G_{N+1/2}=R\beta(u_N-u_a).
+\end{aligned}
+\label{eq:q1-ode}
+\end{equation}
+轴心内面通量自然为零，式\eqref{eq:q1-ode}无须计算奇异的$1/r$。
+逐格求和后内部面通量抵消，由$\sum_iw_i=R^2/2$可得
+\begin{equation}
+\frac{\dd}{\dd t}\left(\frac{2}{R^2}\sum_{i=0}^Nw_i u_i\right)
+=-\frac{2\beta}{R}(u_N-u_a).
+\label{eq:q1-balance}
+\end{equation}
+式\eqref{eq:q1-balance}把圆柱加权平均的变化与表面交换直接对应，
+也是数值程序累计边界通量、检查离散总量一致性的依据。
+
+将式\eqref{eq:q1-ode}写为$\dot{\boldsymbol u}=\boldsymbol F(t,\boldsymbol u)$，
+使用自适应隐式BDF方法\cite{scipy}。每步的新状态由隐式残量及Newton修正确定：
+\begin{equation}
+\begin{aligned}
+\boldsymbol{\mathcal R}(\boldsymbol u^{n+1})
+&=\gamma_n\boldsymbol u^{n+1}-\boldsymbol q_n
+-\Delta t_n\boldsymbol F(t_{n+1},\boldsymbol u^{n+1})=\boldsymbol0,\\
+\left[\gamma_n I-\Delta t_n J_F\right]\delta\boldsymbol u
+&=-\boldsymbol{\mathcal R}.
+\end{aligned}
+\label{eq:q1-bdf}
+\end{equation}
+这里$\gamma_n,\boldsymbol q_n$由积分阶数、步长和已知历史状态确定；
+实际采用SciPy的变阶BDF实现及其精度修正，式\eqref{eq:q1-bdf}表示共同的
+隐式求解结构。解析稀疏Jacobian $J_F=\partial\boldsymbol F/\partial\boldsymbol u$
+保留$D'(C)=0.89D(C)/C^2$及调和平均的导数，
+在非线性迭代中更新扩散率。积分在每个环境输入折点重启并传递末态。
+正式径向区间数为10240，相对容差$2\times10^{-12}$，最大步长$3\unit{s}$；
+$1\unit{s}$是输出间隔，不是积分固定步长。
 
 \subsection{规定结果与预热规律}
 表\ref{tab:q1-temperature}和表\ref{tab:q1-moisture}给出规定的七个时刻、

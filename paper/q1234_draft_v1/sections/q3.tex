@@ -7,6 +7,9 @@
 $C_{\mathrm{lim}}=0.15\unit{kg/kg}$\cite{problem}。
 本文沿用问题二的附录3物性、初态和环境条件，
 由同一温湿联立轨迹确定终点，而不以表面含水率或截面平均值代替最大值。
+因此，本问直接沿用式\eqref{eq:q2-radial}的控制方程及
+式\eqref{eq:q2-semidscrete}、\eqref{eq:q2-robin}的离散闭合，
+新增的求解任务是从时间轨迹中定位满足全径向约束的执行点。
 在一维径向近似中定义
 \begin{equation}
  M_1(t)=\max_{0\le r\le R_0}C(r,t),\qquad
@@ -32,7 +35,7 @@ $\exp(-0.45/C)$迅速减小，长时低含水率阶段需要保留局部非线�
  \begin{aligned}
  a_3(T)&=2.4\times10^{-3}
  \exp\!\left[-\frac{3850}{T+273.15}\right],\\
- F_3'(C)&=\exp(-0.45/C),\qquad
+ F_3(C)&=\int_0^C\exp(-0.45/s)\,\dd s,\qquad
  D\nabla C=a_3(T)\nabla F_3(C).
  \end{aligned}
  \label{eq:q3-primitive}
@@ -42,6 +45,48 @@ $\exp(-0.45/C)$迅速减小，长时低含水率阶段需要保留局部非线�
 临界附近同时检查径向重构极值和边界值，确认最大含水率位于轴心。
 空间加密与不同隐式时间方法作为交叉核验，
 规定表格和完整结果均由同一未舍入轨迹生成。
+
+\subsection{由重构空间极值到时间事件}
+
+令$P_U(x,t)=\sum_{j=0}^N F_3(C_j(t))\ell_j(x)$为包含表面状态的
+原函数插值多项式，$x=(r/R_0)^2$。在$P_U>0$的物理解支上，含水率重构为
+$C_N(x,t)=F_3^{-1}[P_U(x,t)]$。由于$F_3'(C)>0$，
+有$\partial_x C_N=\partial_xP_U/F_3'(C_N)$，故两者的内部驻点相同。
+每一时刻的极值候选集为
+\begin{equation}
+ \mathcal X(t)=\{0,1\}\cup
+ \{x\in(0,1):\partial_xP_U(x,t)=0\}.
+ \label{eq:q3-extrema-candidates}
+\end{equation}
+求出式\eqref{eq:q3-extrema-candidates}中的全部实根，并比较候选点值，得到
+\begin{equation}
+ \widehat M_1(t)=\max_{x\in\mathcal X(t)}C_N(x,t)
+ =F_3^{-1}\!\left[\max_{x\in\mathcal X(t)}P_U(x,t)\right].
+ \label{eq:q3-reconstructed-max}
+\end{equation}
+该式确定的是重构一维场的最大值；重构误差及与连续方程的差异仍需
+数值加密检验，不能把多项式极值的求全等同于连续模型严格误差为零。
+
+实际程序先以内部节点事件$g_{\rm node}(t)=\max_{j<N}C_j(t)-C_{\rm lim}$
+检测下降穿越。当相邻接受步满足
+$g_{\rm node}(t_a)>0$、$g_{\rm node}(t_b)\le0$时，利用Radau的步内连续插值
+对$g_{\rm node}(t)=0$作Brent括区求根，再在候选根和执行点按
+式\eqref{eq:q3-reconstructed-max}复核，并用根两侧节点值检查下降穿越。
+本算例确认根与执行点的重构最大值均位于轴心，节点候选根才可用于所述径向终点。
+若重构出现更湿的内部点，就必须重新定位事件，不能直接接受节点根。
+
+为解释时间裕量的尺度，在根附近作一阶展开：
+\begin{equation}
+ \widehat M_1(t_*+\delta t)-C_{\rm lim}
+ \approx\dot{\widehat M}_1(t_*)\,\delta t,
+ \qquad
+ |\delta t|\approx\frac{|\delta M|}{|\dot{\widehat M}_1(t_*)|}.
+ \label{eq:q3-local-event-scale}
+\end{equation}
+这里$\delta M$为含水率的局部数值差。已有事件记录给出末期斜率约
+$-2.9128\times10^{-7}\unit{(kg/kg)/s}$；因此显示到四位小数的0.1500
+不能支持亚秒级的达标判定。式\eqref{eq:q3-local-event-scale}仅作局部误差尺度
+解释，正式时间预算仍取自网格与时间方法对照，不能由该线性近似给出严格界。
 
 \subsection{结束时长与径向水分分布}
 
@@ -100,8 +145,9 @@ $9.33\times10^{-9}\unit{kg/kg}$。
  纵轴为对数刻度，水平线为0.15\unit{kg/kg}阈值，终点标记对应各自正式执行时刻。
  两问采用各自附录物性，问题四另施加观测半径历程，
  因而曲线差异不能全部归因于收缩。}
- \label{fig:q3-q4-drying}
+\label{fig:q3-q4-drying}
 \end{figure}
+\FloatBarrier
 
 \subsection{有限圆柱检验与工况条件}
 
