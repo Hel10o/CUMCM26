@@ -1,0 +1,26 @@
+{
+  "baseline_commit": "0ded36f1099c5bf521214c8e7b7ed5f7de89dfc9",
+  "checks": {
+    "only_two_keyword_replacements": true,
+    "numbers_unchanged": true,
+    "q4_material_coordinate_term_kept": true,
+    "bold_count_unchanged": true,
+    "all_section_and_figure_files_unchanged": true,
+    "pdf_pages_157": true,
+    "only_abstract_page_changed": true,
+    "visible_keyword_updated": true,
+    "pdf_metadata_keyword_updated": true,
+    "no_undefined_references": true,
+    "no_overfull_boxes": true,
+    "published_pdf_matches_reviewed_build": true
+  },
+  "pdf_pages": 157,
+  "changed_physical_pages": [
+    1
+  ],
+  "pixel_comparison_dpi": 72,
+  "identical_pages": "2-157",
+  "pdf_keywords": "药材干燥,变物性,热质耦合,有限体积,严格阈值",
+  "pdf_sha256": "dbcd56ef23d4c86a8d5334a597ed757824c4c56765378d524e2d967bc60ffa52",
+  "visual_review": "Poppler 110 dpi 摘要页已目视，关键词为热质耦合，仍为单页，无溢出或重叠。"
+}
