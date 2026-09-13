@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-13T10:48:05.328512+00:00",
+  "created_at_utc": "2026-09-13T10:54:36.179044+00:00",
   "validation_scope": "full_document",
   "full_document_validated": true,
   "submission_ready": false,
@@ -8,14 +8,14 @@
     "pdf": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.pdf",
       "exists": true,
-      "bytes": 1885315,
-      "sha256": "9ba43b353e3ce5db68c5f23627a6fc288a21a2af635f9d6989904ba0f1e8f6e5"
+      "bytes": 1884102,
+      "sha256": "f75bd8692eab6276aafcf39e81a5cba19b776eaafe01c22a8e39b1d533a51b0c"
     },
     "aux": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.aux",
       "exists": true,
-      "bytes": 31661,
-      "sha256": "a3845f98f4c7003a9d8e2d7565eff595c86faefebfda9559ce5c967fdef71a07"
+      "bytes": 31549,
+      "sha256": "0f6b957eba5187e5821edbb20ed8817a78d5071ace39a27b5355bcb456c5f643"
     },
     "ai_pdf": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\ai_details.pdf",
@@ -56,7 +56,7 @@
       "status": "pass",
       "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
       "evidence": {
-        "bytes": 1885315,
+        "bytes": 1884102,
         "limit_bytes_exclusive": 20000000
       }
     },
@@ -192,8 +192,8 @@
       "message": "Exactly one references heading follows the AI declaration, with appendix afterwards.",
       "evidence": [
         {
-          "page": 31,
-          "y": 86.33600616455078
+          "page": 30,
+          "y": 483.60699462890625
         }
       ]
     },
@@ -203,11 +203,11 @@
       "message": "CJK text-size distribution, weighted by character count; equations, captions, and tables may use other sizes.",
       "evidence": {
         "cjk_character_counts_by_pt": {
-          "12.0": 12864,
+          "12.0": 12588,
           "10.5": 1269,
           "10.0": 317,
           "15.0": 281,
-          "18.0": 141,
+          "18.0": 137,
           "9.7": 79,
           "9.59": 72,
           "9.72": 61,
@@ -1253,7 +1253,7 @@
         "keywords": "药材干燥,变物性,热质耦合,有限体积,严格阈值",
         "creator": "LaTeX with hyperref",
         "producer": "xdvipdfmx (20260113)",
-        "creationDate": "D:20260913184759+08'00'",
+        "creationDate": "D:20260913185429+08'00'",
         "modDate": "",
         "trapped": "",
         "encryption": null
@@ -1317,7 +1317,7 @@
       "page": 24
     },
     "ai:declaration": {
-      "number": "十二",
+      "number": "11.2",
       "page": 30
     },
     "appendix:start": {
