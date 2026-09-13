@@ -1,9 +1,9 @@
 PDF validation: automated_checks_passed
 Scope: full_document
 Paper: D:\Desktop\CUMCM26\paper\q1234_draft_v1\build\main.pdf
-AI details: D:\Desktop\CUMCM26\paper\q1234_draft_v1\build\ai_details.pdf
+AI details: D:\Desktop\CUMCM26\paper\q1234_draft_v1\AI工具使用详情.pdf
 Checks: {'pass': 37, 'info': 2}
-Counted body pages: 30
+Counted body pages: 29
 Full document validated: True
 Submission-ready certification: not provided (visual and human factual review remain external).
 TABLE q1_temperature: pass; matched cells=42

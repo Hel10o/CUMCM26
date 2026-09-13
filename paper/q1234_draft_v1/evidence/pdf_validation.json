@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-13T10:54:36.179044+00:00",
+  "created_at_utc": "2026-09-13T11:22:10.464374+00:00",
   "validation_scope": "full_document",
   "full_document_validated": true,
   "submission_ready": false,
@@ -8,17 +8,17 @@
     "pdf": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.pdf",
       "exists": true,
-      "bytes": 1884102,
-      "sha256": "f75bd8692eab6276aafcf39e81a5cba19b776eaafe01c22a8e39b1d533a51b0c"
+      "bytes": 1882026,
+      "sha256": "09594ff7c8e9ab4418eddb5eb27117fb0e41795f0889f933db5742118cee0924"
     },
     "aux": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.aux",
       "exists": true,
-      "bytes": 31549,
-      "sha256": "0f6b957eba5187e5821edbb20ed8817a78d5071ace39a27b5355bcb456c5f643"
+      "bytes": 31389,
+      "sha256": "98c006b63516c362d652f15f0d3df28ecad9bfa987db0eeb8aef2ca49f94b098"
     },
     "ai_pdf": {
-      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\ai_details.pdf",
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\AI工具使用详情.pdf",
       "exists": true,
       "bytes": 117631,
       "sha256": "cfca7f5a6b3b5600d355926ffec66d26018f40cd128335f502dca7c7147b845d"
@@ -56,7 +56,7 @@
       "status": "pass",
       "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
       "evidence": {
-        "bytes": 1884102,
+        "bytes": 1882026,
         "limit_bytes_exclusive": 20000000
       }
     },
@@ -142,8 +142,8 @@
       "message": "Full validation requires an appendix:start label after the body and within the PDF.",
       "evidence": {
         "body_start": 2,
-        "appendix_start": 32,
-        "pdf_pages": 158
+        "appendix_start": 31,
+        "pdf_pages": 157
       }
     },
     {
@@ -151,8 +151,8 @@
       "status": "pass",
       "message": "document:end agrees with the actual final physical PDF page.",
       "evidence": {
-        "label_page": 158,
-        "pdf_pages": 158
+        "label_page": 157,
+        "pdf_pages": 157
       }
     },
     {
@@ -161,8 +161,8 @@
       "message": "Body, references, and AI declaration together occupy at most 30 pages, excluding abstract and appendix.",
       "evidence": {
         "body_start": 2,
-        "body_end": 31,
-        "body_pages": 30,
+        "body_end": 30,
+        "body_pages": 29,
         "maximum": 30
       }
     },
@@ -193,7 +193,7 @@
       "evidence": [
         {
           "page": 30,
-          "y": 483.60699462890625
+          "y": 360.96697998046875
         }
       ]
     },
@@ -203,10 +203,10 @@
       "message": "CJK text-size distribution, weighted by character count; equations, captions, and tables may use other sizes.",
       "evidence": {
         "cjk_character_counts_by_pt": {
-          "12.0": 12588,
+          "12.0": 12304,
           "10.5": 1269,
           "10.0": 317,
-          "15.0": 281,
+          "15.0": 270,
           "18.0": 137,
           "9.7": 79,
           "9.59": 72,
@@ -316,7 +316,7 @@
       "message": "Caption- and vector-rule-bounded PDF cells match all expected strings, including times and domain-outside dashes.",
       "evidence": {
         "pages": [
-          24
+          23
         ],
         "matched_cells": 63,
         "mismatch_count": 0
@@ -1076,67 +1076,67 @@
       "expected_table_number": "6",
       "segments": [
         {
-          "page": 24,
+          "page": 23,
           "clip": [
             160.41799926757812,
-            166.45098876953125,
+            560.5059814453125,
             431.3609924316406,
-            364.3080139160156
+            758.3629760742188
           ],
           "row_bboxes": [
             [
               176.30799865722656,
-              176.55599975585938,
+              570.6099853515625,
               425.3785400390625,
-              187.05599975585938
+              581.1099853515625
             ],
             [
               171.05799865722656,
-              197.85000610351562,
+              591.9049682617188,
               425.3785400390625,
-              208.35000610351562
+              602.4049682617188
             ],
             [
               171.05799865722656,
-              219.14401245117188,
+              613.198974609375,
               425.3785400390625,
-              229.64401245117188
+              623.698974609375
             ],
             [
               171.05799865722656,
-              240.43801879882812,
+              634.4929809570312,
               425.3785400390625,
-              250.93801879882812
+              644.9929809570312
             ],
             [
               171.05799865722656,
-              261.73199462890625,
+              655.7869873046875,
               425.3785400390625,
-              272.23199462890625
+              666.2869873046875
             ],
             [
               171.05799865722656,
-              283.0260009765625,
+              677.0809936523438,
               425.3785400390625,
-              293.5260009765625
+              687.5809936523438
             ],
             [
               171.05799865722656,
-              304.32000732421875,
+              698.375,
               425.3785400390625,
-              314.82000732421875
+              708.875
             ],
             [
               171.05799865722656,
-              325.614013671875,
+              719.6690063476562,
               425.3785400390625,
-              336.114013671875
+              730.1690063476562
             ],
             [
               171.05799865722656,
-              346.90802001953125,
+              740.9630126953125,
               425.3785400390625,
-              357.40802001953125
+              751.4630126953125
             ]
           ],
           "rows": [
@@ -1225,13 +1225,13 @@
         }
       ],
       "caption": {
-        "page": 24,
+        "page": 23,
         "text": "表6 题设表6：收缩过程中的干基含水率（kg/kg）",
         "bbox": [
           177.16500854492188,
-          89.47850036621094,
+          483.53350830078125,
           424.0580139160156,
-          100.79192352294922
+          494.846923828125
         ]
       },
       "expected_row_count": 9,
@@ -1244,7 +1244,7 @@
   },
   "documents": {
     "paper": {
-      "page_count": 158,
+      "page_count": 157,
       "metadata": {
         "format": "PDF 1.7",
         "title": "考虑变物性与径向收缩的圆柱药材干燥模型",
@@ -1253,7 +1253,7 @@
         "keywords": "药材干燥,变物性,热质耦合,有限体积,严格阈值",
         "creator": "LaTeX with hyperref",
         "producer": "xdvipdfmx (20260113)",
-        "creationDate": "D:20260913185429+08'00'",
+        "creationDate": "D:20260913192051+08'00'",
         "modDate": "",
         "trapped": "",
         "encryption": null
@@ -1314,7 +1314,7 @@
     },
     "tab:q4-moisture": {
       "number": "6",
-      "page": 24
+      "page": 23
     },
     "ai:declaration": {
       "number": "11.2",
@@ -1322,14 +1322,14 @@
     },
     "appendix:start": {
       "number": "",
-      "page": 32
+      "page": 31
     },
     "document:end": {
       "number": "A.51",
-      "page": 158
+      "page": 157
     }
   },
-  "body_page_count": 30,
+  "body_page_count": 29,
   "failed_check_ids": [],
   "passed": true,
   "status": "automated_checks_passed",

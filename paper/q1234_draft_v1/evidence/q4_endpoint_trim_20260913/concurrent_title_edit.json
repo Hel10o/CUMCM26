@@ -1,0 +1,5 @@
+{
+  "observed_existing_edit": "Removed the forced paragraph break inside the paper title during source-package consistency checks; retained and incorporated into the final build.",
+  "file": "paper/q1234_draft_v1/main.tex",
+  "sha256_before_final_compile": "4802cbb02f1cedba05ce8b2ca7f90f549c607851e1ecc2d8ebbc6fc84808dcb5"
+}

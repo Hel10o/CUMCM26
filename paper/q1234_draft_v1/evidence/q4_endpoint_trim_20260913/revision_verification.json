@@ -1,0 +1,29 @@
+{
+  "baseline_commit": "fea3607783fee0ad946c45facd9e1a9926ebf5c8",
+  "protected_files_checked": 62,
+  "protected_files_changed": [],
+  "old_pdf_pages": 158,
+  "new_pdf_pages": 157,
+  "old_body_pages": 30,
+  "new_body_pages": 29,
+  "new_appendix_start_page": 31,
+  "appendix_pages": 127,
+  "appendix_content_pixel_identical_excluding_footer": true,
+  "body_same_position_changed_pages": [
+    1,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "expected_heading_and_scope_texts_present": true,
+  "deleted_heading_and_detailed_endpoint_value_absent_from_main_text": true,
+  "model_or_export_run": false,
+  "pdf_sha256": "09594ff7c8e9ab4418eddb5eb27117fb0e41795f0889f933db5742118cee0924",
+  "retained_concurrent_title_edit": true,
+  "last_title_edit_changed_only_page_1": true
+}

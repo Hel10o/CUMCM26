@@ -110,3 +110,5 @@ Q3 `export_workbook.py` 的 `--root` 需包含 `output/solution.npz` 与 `inputs
 提交ZIP的顶层目录为 `支撑材料/`。`results/` 中有 `result1.xlsx` 至 `result4.xlsx`：其中 `result2.xlsx` 保存前3小时网格，完整全过程逐秒结果另存于同目录的 `result2_全程轨迹_206907x21.npz`。该NPZ包含 `time_s`、`radius_cm`、`temperature_TC`、`moisture_C`；温度与含水率数组均为206907×21。代码、输入和模板在本 `support/` 目录，图形在 `figures/`，AI说明和成员清单在顶层，参考文献在 `literature/`。论文PDF不包含在此支撑ZIP中。
 
 图表来源清单中的 `../evidence/` 链接指向完整版LaTeX源稿的历史核验记录；精简提交ZIP未重复包含该目录。历史数据与数值内核未改，本文档所述历史检查不代表本次打包重新运行了求解或验证。
+
+第四问二维终点的详细讨论已从正文移除，现有核查记录随包保留于 [二维终点记录](evidence/q4_endpoint_20260912/README.md)。其中JSON与NPZ均为已有结果的原字节副本，配有来源与哈希清单；正文第11.3节保留粗网格正式点略高于阈值、全域达标尚待进一步验证的限制说明。此次整理没有重新积分。
