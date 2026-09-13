@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "167a27455a5f2655cf07dc30471febcb67bd7a12",
+  "archive": "paper/q1234_draft_v1/四问论文LaTeX源稿_v1.zip",
+  "archive_sha256": "30a84413f7b1e03dd53af590549e626f74af6853f2b30e8dede7255bde2d0e77",
+  "archive_bytes": 32766850,
+  "source_files": 509,
+  "archive_entries_including_inner_manifest": 510,
+  "crc_pass": true,
+  "duplicate_entries": false,
+  "inner_outer_manifests_equal": true,
+  "all_archive_source_disk_hashes_equal": true,
+  "zip_sha256_sidecar_equal": true,
+  "formal_pdf_sha256": "77199330726ac83dfde71e380116d7b37741f4517b1dcbe1ee304cddcd68bce1",
+  "formal_pdf_matches_final_validation": true,
+  "temporary_files_excluded": true,
+  "this_file_excluded_by_existing_packager_rule": true,
+  "verified_before_commit": true
+}

@@ -1,0 +1,111 @@
+{
+  "baseline_commit": "167a27455a5f2655cf07dc30471febcb67bd7a12",
+  "pdf_sha256": "77199330726ac83dfde71e380116d7b37741f4517b1dcbe1ee304cddcd68bce1",
+  "scope": "handoff section 5, final full PDF and final sources",
+  "checks": [
+    {
+      "id": "1",
+      "name": "八条编号及引用",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "环境等式原位及引用",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "免责逐条落位",
+      "pass": true,
+      "details": "删除前核对见disclaimer_precheck.json；五处已有11.2/11.3覆盖，两处缺口迁入11.3/11.4。第六旧条选参句已查8.2、11.3/11.4，无对应后迁入。",
+      "evidence": [
+        "disclaimer_precheck.json",
+        "semantic_audit.md",
+        "semantic_audit.json"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "限制量化内容不变",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "八条假设与实际方程一致",
+      "pass": true,
+      "details": "Robin驱动、相对干骨架扩散、有效热容量和独立干质量与第五章及Q4材料运动核对。仅审原实现口径，不重算或新增物理验证。",
+      "evidence": [
+        "semantic_audit.md",
+        "semantic_audit.json"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "禁用措辞零命中",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "编译、引用、正文页数",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "摘要保持",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "AI声明顺序",
+      "pass": true,
+      "evidence": [
+        "source_integrity.json",
+        "pdf_validation.json",
+        "page_integrity.json"
+      ]
+    }
+  ],
+  "passed": true,
+  "pdf_checks": {
+    "pass": 37,
+    "info": 2
+  },
+  "table_display_cells": 279,
+  "body_pages": 30,
+  "total_pages": 158,
+  "limitations": [
+    "源文和渲染检查不是重新验证物理模型。",
+    "未重跑PDE或参数情景。",
+    "未取得参赛队员逐项人工核验。"
+  ]
+}

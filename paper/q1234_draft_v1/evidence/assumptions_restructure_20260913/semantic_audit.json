@@ -1,0 +1,299 @@
+{
+  "status": "source_semantics_passed_layout_pending",
+  "baseline_commit": "167a27455a5f2655cf07dc30471febcb67bd7a12",
+  "audited_at_utc": "2026-09-13T02:53:49.072456+00:00",
+  "source_snapshots": {
+    "problem_model": {
+      "file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "sha256": "7759d1d604014d4ea7e210a5ca2cd6395f0fc95e0f12b5404c641fff0bfaafd0",
+      "line_ending": "LF"
+    },
+    "validation_limits": {
+      "file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "sha256": "4b21cd0b8f0073874fc3254dfadf3dc207dcf74c34de904a17f98ad84727576f",
+      "line_ending": "LF"
+    },
+    "q4": {
+      "file": "paper/q1234_draft_v1/sections/q4.tex",
+      "sha256": "272a9267c1cf21bb6b854476202df20d816de7319e194db8f6ab900589ac10a7",
+      "line_ending": "LF"
+    }
+  },
+  "assumptions": [
+    {
+      "item": 1,
+      "line": 32,
+      "heading": "药材视为初始温湿均匀的轴对称连续介质，采用中截面径向模型：",
+      "pass": true,
+      "assessment": "仅陈述轴对称、中截面径向、均匀初态及局部物性依赖；二维校核的地位保留在11.3和第十章。"
+    },
+    {
+      "item": 2,
+      "line": 34,
+      "heading": "表面交换采用线性Robin形式：",
+      "pass": true,
+      "assessment": "温差与有效含水率差作为驱动力，与现有Robin边界相符。"
+    },
+    {
+      "item": 3,
+      "line": 36,
+      "heading": "各问沿用同一组表面交换系数：",
+      "pass": true,
+      "assessment": "后问未另给时沿用同组系数；不另列辐射项，不声称已独立验证辐射。"
+    },
+    {
+      "item": 4,
+      "line": 38,
+      "heading": "表面传质以有效材料干基驱动表示：",
+      "pass": true,
+      "assessment": "保留现行恒等映射；未标定、不同水分基准和真实气膜解释由11.3限定。"
+    },
+    {
+      "item": 5,
+      "line": 40,
+      "heading": "内部相对干骨架的传质仅为扩散：",
+      "pass": true,
+      "assessment": "明确仅排除相对干骨架的额外内部对流，不排除第四问的材料运动；与材料导数及相对扩散通量一致。"
+    },
+    {
+      "item": 6,
+      "line": 42,
+      "heading": "题给密度仅用于有效热容量，干质量独立记账：",
+      "pass": true,
+      "assessment": "有效热容量与干质量分别处理；潜热、液态扩散携焓和机械功未显式计入的披露留在假设中。"
+    },
+    {
+      "item": 7,
+      "line": 44,
+      "heading": "前三问几何固定，第四问为恒长度均匀径向收缩：",
+      "pass": true,
+      "assessment": "同比例径向运动对应r=R(t)xi，恒长度对应z=Z；与Q4的仿射映射一致，不是每点位移相同。"
+    },
+    {
+      "item": 8,
+      "line": 46,
+      "heading": "环境与半径输入采用分段线性插值和后段均值平台：",
+      "pass": true,
+      "assessment": "规定分段线性输入和4h后末小时61点算术均值；原平台等式仍在第三章最后一条、符号说明之前。"
+    }
+  ],
+  "disclaimer_mapping": [
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 32,
+      "baseline_quote": "它是未经材料标定的恒等映射，不能把$b$直接称为实测药材平衡含水率。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 90,
+      "section": "11.3",
+      "assessment": "未提供本药材标定值，未经标定边界情景不能称为实测；新假设4继续明确恒等映射。",
+      "disposition": "existing_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 33,
+      "baseline_quote": "$h_m$属于材料干基驱动力标度，不自动等于气相浓度模型中的气膜系数。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 90,
+      "section": "11.3",
+      "assessment": "只有符合气固映射条件才可建立rho_d*h_m=k_g*K，不能直接交换系数数值。",
+      "disposition": "existing_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 34,
+      "baseline_quote": "不同时强制$\\rho/(1+C)$为真实干密度。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 97,
+      "section": "11.3",
+      "assessment": "原湿密度解释公式、不相容性说明及完整量化反例覆盖该限制。",
+      "disposition": "existing_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 34,
+      "baseline_quote": "不能据有效热方程宣称真实能量闭合。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 99,
+      "section": "11.3",
+      "assessment": "相变能量缺口尚未闭合，不得据有效模型推断真实热量收支或执行保证。",
+      "disposition": "existing_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 37,
+      "baseline_quote": "内部仿射运动是额外假设，单凭外半径不能唯一识别。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 77,
+      "section": "11.2",
+      "assessment": "内部运动仍需独立依据，仅有外半径不能唯一确定内部变形；Q4第25–35行亦保留。",
+      "disposition": "existing_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 43,
+      "baseline_quote": "这是观测范围外的环境延拓假设；使用其他后段工况会形成不同情景，不因某情景更接近通常2--3天而选择其参数。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 110,
+      "section": "11.4",
+      "assessment": "迁入11.4工况段，将‘这是’明确为eq:future，其余原句含2--3天选参限制保留。",
+      "disposition": "moved_equivalent",
+      "covered": true
+    },
+    {
+      "baseline_file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_line": 27,
+      "baseline_quote": "题表距离采用中截面径向解释，并由二维对照检验，不视为题面已指定的位置。",
+      "final_file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "final_line": 83,
+      "section": "11.3",
+      "assessment": "等义迁入11.3开头，保留二维校核及并非题面指定的位置；第二章使用ass:midsection动态回指。",
+      "disposition": "moved_equivalent",
+      "covered": true
+    }
+  ],
+  "definition_and_equation_locations": {
+    "C_definition": 64,
+    "given_parameters": 136,
+    "eq_future": 50,
+    "eq_boundary": 125,
+    "relative_flux": 104,
+    "material_derivative": 93,
+    "q4_radius_map": 32
+  },
+  "checks": {
+    "eight_assumptions": true,
+    "eight_bold_leads": true,
+    "definition_in_symbols_not_assumptions": true,
+    "nineteen_symbol_rows": true,
+    "supplied_exchange_values_in_5_2": true,
+    "air_symbol_in_5_2": true,
+    "future_equation_text_exact_eol_normalized": true,
+    "future_in_last_assumption": true,
+    "future_unique_definition": true,
+    "all_original_display_equations_text_exact_eol_normalized": true,
+    "original_11_3_body_raw_bytes_exact": true,
+    "quantitative_paragraph_raw_bytes_and_numbers_exact": true,
+    "property_table_text_exact_except_float_placement": true,
+    "other_tex_unchanged_eol_normalized": true,
+    "q4_motion_unchanged_eol_normalized": true,
+    "twelve_body_sections": true,
+    "no_missing_refs": true,
+    "no_duplicate_labels": true,
+    "unique_assumption_label": true,
+    "one_dynamic_midsection_ref": true,
+    "all_disclaimer_mappings_covered": true
+  },
+  "passed_checks": 21,
+  "check_count": 21,
+  "quantitative_paragraphs": [
+    {
+      "lead": "这与前三问固定骨架的恒定干密度",
+      "baseline_line": 93,
+      "final_line": 97,
+      "raw_bytes_equal_including_line_ending": true,
+      "baseline_sha256": "2e98b23ef2cfaf71a9f10c4ae958d8034b796d20c74399fe126eb481a022141c",
+      "final_sha256": "2e98b23ef2cfaf71a9f10c4ae958d8034b796d20c74399fe126eb481a022141c",
+      "numeric_multisets_equal": true
+    },
+    {
+      "lead": "\\textbf{相变能量与可报告的指标。}",
+      "baseline_line": 95,
+      "final_line": 99,
+      "raw_bytes_equal_including_line_ending": true,
+      "baseline_sha256": "58c1460d6ee1e8f123456fe1dfa0d0e739f14e4e461a0f78dec712423170f41f",
+      "final_sha256": "58c1460d6ee1e8f123456fe1dfa0d0e739f14e4e461a0f78dec712423170f41f",
+      "numeric_multisets_equal": true
+    },
+    {
+      "lead": "\\textbf{数值证据与工况的适用层级。}",
+      "baseline_line": 97,
+      "final_line": 101,
+      "raw_bytes_equal_including_line_ending": true,
+      "baseline_sha256": "6a4a5c89cd59d3c24ccf29d712688d4558359b5945c41709359e915709591deb",
+      "final_sha256": "6a4a5c89cd59d3c24ccf29d712688d4558359b5945c41709359e915709591deb",
+      "numeric_multisets_equal": true
+    }
+  ],
+  "original_11_3_body": {
+    "raw_bytes_equal": true,
+    "baseline_sha256": "212a2f71cee8ea77087309e1875cb22c945524b326cc817f2933f15900107372",
+    "final_sha256": "212a2f71cee8ea77087309e1875cb22c945524b326cc817f2933f15900107372",
+    "numeric_count_before": 23,
+    "numeric_count_after": 23,
+    "numeric_multisets_equal": true
+  },
+  "refs": {
+    "eq_future_definition_count": 1,
+    "eq_future_reference_count": 2,
+    "eq_future_reference_locations": [
+      [
+        "paper/q1234_draft_v1/sections/validation_limits.tex",
+        35
+      ],
+      [
+        "paper/q1234_draft_v1/sections/validation_limits.tex",
+        110
+      ]
+    ],
+    "missing": [],
+    "duplicate_labels": []
+  },
+  "other_tex_comparisons": {
+    "paper/q1234_draft_v1/main.tex": true,
+    "paper/q1234_draft_v1/sections/appendix.tex": true,
+    "paper/q1234_draft_v1/sections/q1.tex": true,
+    "paper/q1234_draft_v1/sections/q2.tex": true,
+    "paper/q1234_draft_v1/sections/q3.tex": true,
+    "paper/q1234_draft_v1/sections/q4.tex": true,
+    "paper/q1234_draft_v1/sections/references.tex": true
+  },
+  "two_files_raw_numeric_tokens": {
+    "before": 260,
+    "after": 263,
+    "added": {
+      "2": 1,
+      "0": 1,
+      "3": 1,
+      "6": 1,
+      "-4": 1
+    },
+    "removed": {
+      "1": 1,
+      "4": 1
+    }
+  },
+  "layout_macros_current": {
+    "needspace": [
+      "\\Needspace{22\\baselineskip}",
+      "\\Needspace{7\\baselineskip}",
+      "\\Needspace{15\\baselineskip}"
+    ],
+    "intextsep": [
+      "\\setlength{\\intextsep}{6pt}"
+    ],
+    "validation_parskip": [
+      "\\setlength{\\parskip}{0pt}"
+    ],
+    "property_table_placement": "H"
+  },
+  "not_run": [
+    "PDF compilation",
+    "PDF page count or visual review",
+    "PDE or parameter scenarios",
+    "Numerical recomputation",
+    "ZIP validation",
+    "GitHub synchronization"
+  ],
+  "notes": [
+    "Original 11.3 body and quantitative paragraph checks compare raw bytes including line endings. Equation/table/other TeX text checks normalize LF/CRLF.",
+    "Property table placement/local intextsep and Needspace may change for layout. Table caption, settings within the table, cells and formulas are compared after removing only the table placement specifier.",
+    "No assertion that the whole-paper numeric multiset is unchanged: disclaimer relocation, last-hour 3--4h explanation and local layout parameters affect occurrences.",
+    "Original future equation is in chapter 3 before symbols, now assumption 8; source line numbers naturally change.",
+    "Review is bound to the captured source hashes; refresh lines/hashes after further local layout changes."
+  ]
+}

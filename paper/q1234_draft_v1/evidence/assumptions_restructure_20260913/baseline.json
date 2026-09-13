@@ -1,0 +1,26 @@
+{
+  "actual_read_sha": "167a27455a5f2655cf07dc30471febcb67bd7a12",
+  "origin_main": "167a27455a5f2655cf07dc30471febcb67bd7a12",
+  "handoff_writing_baseline": "bfb04e8",
+  "github_readback_confirmed": [
+    "README.md",
+    "q1234_assumptions_handoff/模型假设重构_模型指示文档.md"
+  ],
+  "baseline_pdf_sha256": "3c3e18bcee955af20a895efe8274d51f15e15988652fb625a63f04b8a72c8a1b",
+  "read_files_sha256": {
+    "README.md": "1d53370290941f13a1dee9d1ea69105c6fa1b82cf8f74cabaafb9833b9734b1c",
+    "q1234_assumptions_handoff/模型假设重构_模型指示文档.md": "0fba2e41839a59712759737e9dd5b296f8cfab460ee00c93ce03e37344a9b378",
+    "q1234_assumptions_handoff/README.md": "8e82763567a1c69508ef482d30a53cb60c966b5e8f17dd25bd921d5a86297158",
+    "paper/q1234_draft_v1/sections/problem_model.tex": "0aa316378402cb884c79c277b466c7b869ccd613beed859d841fbb44fcbe9391",
+    "paper/q1234_draft_v1/sections/validation_limits.tex": "d38a935a4101b1ad2b0695269319e0a413a0bce8326ed3567fc0ef4afd161119",
+    "paper/q1234_draft_v1/sections/q3.tex": "731e6fddc8a8df4a1e7a2ce5c52570c81405a2f689d08a6a74510c7de47cbcc4",
+    "paper/q1234_draft_v1/sections/q4.tex": "272a9267c1cf21bb6b854476202df20d816de7319e194db8f6ab900589ac10a7",
+    "paper/q1234_draft_v1/main.tex": "813e4fc7b8d122c92ae64bf5ebfaaadf740100595a0097de1ff8d429b5476ccf"
+  },
+  "actual_baseline_body_pages": 30,
+  "handoff_stale_body_pages": 28,
+  "untracked_preserved": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}
