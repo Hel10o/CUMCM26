@@ -1,0 +1,16 @@
+{
+  "total_pages": 158,
+  "changed_pages": [
+    20,
+    21,
+    22,
+    23,
+    24,
+    30,
+    31
+  ],
+  "unchanged_count": 151,
+  "comparison_resolution_dpi": 108,
+  "baseline_pdf_sha256": "2fa6585f08da271f",
+  "current_pdf_sha256": "9ba43b353e3ce5db68c5f23627a6fc288a21a2af635f9d6989904ba0f1e8f6e5"
+}
