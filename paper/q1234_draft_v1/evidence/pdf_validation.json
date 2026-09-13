@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_at_utc": "2026-09-13T10:06:37.905005+00:00",
+  "created_at_utc": "2026-09-13T10:48:05.328512+00:00",
   "validation_scope": "full_document",
   "full_document_validated": true,
   "submission_ready": false,
@@ -8,20 +8,20 @@
     "pdf": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.pdf",
       "exists": true,
-      "bytes": 1888071,
-      "sha256": "75640fd600e7347673ad1cc9f2d982c4eca38b2f366abe28141e6da2b3bbf8f5"
+      "bytes": 1885315,
+      "sha256": "9ba43b353e3ce5db68c5f23627a6fc288a21a2af635f9d6989904ba0f1e8f6e5"
     },
     "aux": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\main.aux",
       "exists": true,
-      "bytes": 31884,
-      "sha256": "ccb1495fa55c5bfd73bf9ee39d0684ef1051cea3856e3af589939100a4c125b2"
+      "bytes": 31661,
+      "sha256": "a3845f98f4c7003a9d8e2d7565eff595c86faefebfda9559ce5c967fdef71a07"
     },
     "ai_pdf": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\ai_details.pdf",
       "exists": true,
-      "bytes": 119379,
-      "sha256": "819e9d88909b3e5f49fb3706c25b4eb280e4d7f49d065dcef26dbf79e455e08d"
+      "bytes": 117631,
+      "sha256": "cfca7f5a6b3b5600d355926ffec66d26018f40cd128335f502dca7c7147b845d"
     },
     "expected": {
       "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\evidence\\table_expected.json",
@@ -56,7 +56,7 @@
       "status": "pass",
       "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
       "evidence": {
-        "bytes": 1888071,
+        "bytes": 1885315,
         "limit_bytes_exclusive": 20000000
       }
     },
@@ -171,7 +171,7 @@
       "status": "pass",
       "message": "AI declaration is included in the counted body pages.",
       "evidence": {
-        "ai_declaration_page": 31
+        "ai_declaration_page": 30
       }
     },
     {
@@ -193,7 +193,7 @@
       "evidence": [
         {
           "page": 31,
-          "y": 384.66900634765625
+          "y": 86.33600616455078
         }
       ]
     },
@@ -203,10 +203,10 @@
       "message": "CJK text-size distribution, weighted by character count; equations, captions, and tables may use other sizes.",
       "evidence": {
         "cjk_character_counts_by_pt": {
-          "12.0": 13158,
+          "12.0": 12864,
           "10.5": 1269,
           "10.0": 317,
-          "15.0": 290,
+          "15.0": 281,
           "18.0": 141,
           "9.7": 79,
           "9.59": 72,
@@ -327,7 +327,7 @@
       "status": "pass",
       "message": "PDF must be smaller than 20 MB (conservative decimal-byte threshold).",
       "evidence": {
-        "bytes": 119379,
+        "bytes": 117631,
         "limit_bytes_exclusive": 20000000
       }
     },
@@ -1253,7 +1253,7 @@
         "keywords": "药材干燥,变物性,热质耦合,有限体积,严格阈值",
         "creator": "LaTeX with hyperref",
         "producer": "xdvipdfmx (20260113)",
-        "creationDate": "D:20260913175716+08'00'",
+        "creationDate": "D:20260913184759+08'00'",
         "modDate": "",
         "trapped": "",
         "encryption": null
@@ -1269,7 +1269,7 @@
         "keywords": "",
         "creator": "LaTeX with hyperref",
         "producer": "xdvipdfmx (20260113)",
-        "creationDate": "D:20260913174922+08'00'",
+        "creationDate": "D:20260913183503+08'00'",
         "modDate": "",
         "trapped": "",
         "encryption": null
@@ -1318,7 +1318,7 @@
     },
     "ai:declaration": {
       "number": "十二",
-      "page": 31
+      "page": 30
     },
     "appendix:start": {
       "number": "",
