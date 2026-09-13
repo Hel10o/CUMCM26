@@ -1,20 +1,17 @@
 {
-  "operation": "Replace only 支撑材料/AI工具使用详情.pdf; keep all other members byte-identical",
-  "prior_zip_sha256": "8f17955fd4622d553a900a3e9d2998a1e26194cead6fafa91c164a24939200d3",
-  "zip": "D:\\Desktop\\CUMCM26\\q1234_submission_support_20260913\\out\\A题_支撑材料.zip",
-  "zip_bytes": 11255621,
-  "zip_mb": 10.74,
+  "operation": "Replace only AI工具使用详情.pdf after user trim",
+  "prior_zip_sha256": "707f55909541942d055b6b0fecf0f54a655bb12a78fc0d1e42f4252c7aa009aa",
+  "zip_bytes": 11249947,
+  "zip_mb": 10.73,
   "zip_within_20mb": true,
-  "zip_sha256": "707f55909541942d055b6b0fecf0f54a655bb12a78fc0d1e42f4252c7aa009aa",
+  "zip_sha256": "8409a3c6358c994d5897cc023de809050e1dc37270d77f2384cde219e78662d8",
   "member_count": 94,
   "changed_members": [
     "支撑材料/AI工具使用详情.pdf"
   ],
-  "ai_pdf_sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da",
-  "ai_pdf_bytes": 125296,
+  "ai_pdf_sha256": "819e9d88909b3e5f49fb3706c25b4eb280e4d7f49d065dcef26dbf79e455e08d",
+  "ai_pdf_bytes": 119379,
   "other_members_byte_identical": true,
   "zip_crc_check": "passed",
-  "identity_raw_binary_findings": [],
-  "pde_or_parameter_scenarios_run": false,
-  "workbooks_or_arrays_reexported": false
+  "pde_or_parameter_scenarios_run": false
 }
