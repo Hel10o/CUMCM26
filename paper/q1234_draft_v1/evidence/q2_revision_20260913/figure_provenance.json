@@ -1,0 +1,453 @@
+{
+  "baseline_commit": "218d741426a87794fa00560d0631a918d68c7bf3",
+  "operation": "Diagram redraw and frozen-array graphical postprocessing only.",
+  "PDE_solvers_or_parameter_scenarios_run": false,
+  "builder": "paper/q1234_draft_v1/build_q2_revision_assets.py",
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0"
+  },
+  "font_files": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "figures": {
+    "q2_workflow": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "text_bounds_checks": [
+        {
+          "text": "统一传热传质模型 → 问题二条件与参数代入",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        },
+        {
+          "text": "几何与共同初态\n环境记录\n附录3物性",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "固定半径径向模型\n变物性温湿耦合\nRobin交换边界",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "Chebyshev配点\nRadau隐式积分\n温湿场联立求解",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "前3 h规定表格\n径向温湿分布",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "全程温湿轨迹\n供问题三终点判定",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        }
+      ],
+      "outputs": {
+        "paper/q1234_draft_v1/figures/q2_revision/q2_workflow.pdf": {
+          "sha256": "311495f4379b487103efb386a152d63c5aa4994cb31c32f59d0854c443e18475",
+          "bytes": 43525
+        },
+        "paper/q1234_draft_v1/figures/q2_revision/q2_workflow.svg": {
+          "sha256": "7310af90aab6943c073a31e2029ba06542e20d07ad033c4c37183ae60d5de13f",
+          "bytes": 104597
+        },
+        "paper/q1234_draft_v1/figures/q2_revision/q2_workflow.png": {
+          "sha256": "8b3174fb79c53d2bddfc6891055fb3930361700409bc87b0a865f26a860c253c",
+          "bytes": 231758
+        }
+      },
+      "node_checks": [
+        {
+          "node": "inputs",
+          "text_inside_node": true,
+          "fill": "white",
+          "font_pt": 9.2
+        },
+        {
+          "node": "coupled_system",
+          "text_inside_node": true,
+          "fill": "white",
+          "font_pt": 9.2
+        },
+        {
+          "node": "joint_integration",
+          "text_inside_node": true,
+          "fill": "white",
+          "font_pt": 9.2
+        },
+        {
+          "node": "first_3h",
+          "text_inside_node": true,
+          "fill": "white",
+          "font_pt": 9.2
+        },
+        {
+          "node": "full_trajectory",
+          "text_inside_node": true,
+          "fill": "white",
+          "font_pt": 9.2
+        }
+      ],
+      "semantics": "Common initial state and annex 3 properties specialize the fixed-radius coupled radial model. Joint temperature/moisture integration supplies the first-three-hour tables and the assumed-environment full trajectory reused by Q3.",
+      "no_continuation_from_q1_1800s": true,
+      "numerical_trajectory_displayed": false,
+      "pdf_fonts": [
+        [
+          15,
+          "ttf",
+          "Type0",
+          "BQZTQF+SimSun",
+          "F1",
+          "Identity-H",
+          0
+        ],
+        [
+          22,
+          "ttf",
+          "Type0",
+          "DOCJDA+TimesNewRomanPSMT",
+          "F2",
+          "Identity-H",
+          0
+        ]
+      ],
+      "pdf_font_check": "SimSun and Times New Roman embedded as Type0 font subsets.",
+      "visual_review": {
+        "performed": true,
+        "method": "Viewed generated 600 dpi PNG with view_image after final build.",
+        "result": "No clipped labels, missing Chinese glyphs, or node text overlap seen; flow boxes white and panel titles centered."
+      }
+    },
+    "q2_mechanism": {
+      "dimensions_cm": [
+        15.0,
+        5.5
+      ],
+      "text_bounds_checks": [
+        {
+          "text": "2.46 h",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 / h",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "−0.25",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.25",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.50",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.75",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.00",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "2.02 h",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 / h",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "−0.25",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.25",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.50",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.75",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.00",
+          "font_pt": 9.0,
+          "inside_canvas": true
+        },
+        {
+          "text": "(a) 轴心",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        },
+        {
+          "text": "(b) 表面",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        },
+        {
+          "text": "对数分解项",
+          "font_pt": 9.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "温度项 H",
+          "font_pt": 9.1,
+          "inside_canvas": true
+        },
+        {
+          "text": "含水率项 M",
+          "font_pt": 9.1,
+          "inside_canvas": true
+        },
+        {
+          "text": "合计 H+M",
+          "font_pt": 9.1,
+          "inside_canvas": true
+        }
+      ],
+      "outputs": {
+        "paper/q1234_draft_v1/figures/q2_revision/q2_mechanism.pdf": {
+          "sha256": "1232f3159f306b7f5358823ad1092e57e3be67d281b47eb079c9398e5652aa43",
+          "bytes": 33875
+        },
+        "paper/q1234_draft_v1/figures/q2_revision/q2_mechanism.svg": {
+          "sha256": "caa087e00137798f648b282520af38c3e61dd04669ae2c8d842bad210447d33c",
+          "bytes": 59217
+        },
+        "paper/q1234_draft_v1/figures/q2_revision/q2_mechanism.png": {
+          "sha256": "28e6dc73d7ece773b10f629a834c2b025676d66abd33180c5642bbeb21069abd",
+          "bytes": 229994
+        }
+      },
+      "source": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+      "source_sha256_before": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "source_sha256_after": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "source_byte_unchanged": true,
+      "source_keys_used": [
+        "time_s",
+        "radius_cm",
+        "profile_TC"
+      ],
+      "time_s": {
+        "shape": [
+          10801
+        ],
+        "dtype": "float64",
+        "sha256": "39cfb888bc1791f655fbea8eadc69e42124e77da29119854bef2ba5b05d068d8"
+      },
+      "sample_count": 10801,
+      "window_s": [
+        0,
+        10800
+      ],
+      "temperature_conversion": "T_K = stored profile_TC[..., 0] + 273.15",
+      "moisture_definition": "stored dry-basis C = profile_TC[..., 1]",
+      "formulas": {
+        "H": "3850*(1/301.15-1/T_K)",
+        "M": "0.45*(1/2.55-1/C)",
+        "D": "2.4e-3*exp(-3850/T_K-0.45/C)",
+        "D0": "2.4e-3*exp(-3850/301.15-0.45/2.55)"
+      },
+      "D0_unrounded_for_identity": 5.641680373025668e-09,
+      "D0_display_rounded_existing_paper": "5.64168037e-9",
+      "max_abs_log_identity_residual": 4.218847493575595e-15,
+      "panel_titles_centered_over_axes": true,
+      "panels": [
+        {
+          "location": "轴心",
+          "radial_index": 0,
+          "all_10801_per_second_points_plotted": true,
+          "sample_peak_time_s": 8856.0,
+          "sample_peak_time_h": 2.46,
+          "sample_peak_annotation_h": "2.46",
+          "sample_peak_sum": 0.7972939393120845,
+          "D_over_D0_at_3h": 2.19566835845665,
+          "decrease_percent_2_5h_to_3h": 1.0612444259143428,
+          "H_negative_one_second_differences": 0,
+          "state": {
+            "shape": [
+              10801,
+              2
+            ],
+            "dtype": "float64",
+            "sha256": "7adfa9bdcc8b158ab1c05d4e2b63729bdb98618453c25bc10d12116efbe2664b"
+          },
+          "H": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "0449e847bf76734357d05867829fdc0c0e3353856f3c7bc50b97d1a22be95d30"
+          },
+          "M": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "46858334c82d15d1683040cb762c47d4e8b4af6770c1be39083dcfb51e489733"
+          },
+          "H_plus_M": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "80a67fc2c12bcabf5796ca6e6179b04db15925967d2c9fb22b6e103c8ca4ff41"
+          }
+        },
+        {
+          "location": "表面",
+          "radial_index": -1,
+          "all_10801_per_second_points_plotted": true,
+          "sample_peak_time_s": 7262.0,
+          "sample_peak_time_h": 2.0172222222222222,
+          "sample_peak_annotation_h": "2.02",
+          "sample_peak_sum": 0.644797104628575,
+          "D_over_D0_at_3h": 1.8206853990777971,
+          "decrease_percent_2_5h_to_3h": 3.159584586633346,
+          "H_negative_one_second_differences": 929,
+          "state": {
+            "shape": [
+              10801,
+              2
+            ],
+            "dtype": "float64",
+            "sha256": "404ebd57df8939d1415c8f5abf1f7c6cf0e7af57cfa36b1e225c191a455f765b"
+          },
+          "H": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "a1aa69f340072b36167dc8dcbc3d684d0183b5a7c5e00a0124138e595b47b922"
+          },
+          "M": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "e2c16ab45f2218b81355003169be885a0ef463a950d0b887513907f7de395f93"
+          },
+          "H_plus_M": {
+            "shape": [
+              10801
+            ],
+            "dtype": "float64",
+            "sha256": "5bb3260b0eb1ccd0db7f89116a9b71d08efd45fbf1e10088affe89068ee7bff0"
+          }
+        }
+      ],
+      "surface_initial_sample_minimum": {
+        "time_s": 144,
+        "D_over_D0": 0.9832815756343122
+      },
+      "peak_scope": "Maxima among saved one-second samples during 0-3 h, not certified continuous-time extrema.",
+      "interpretation_boundary": "Algebraic contributions along the saved coupled trajectory, not independent causal percentages. The surface curve initially dips and H is not asserted monotonic.",
+      "pdf_fonts": [
+        [
+          15,
+          "ttf",
+          "Type0",
+          "GEIBPO+SimSun",
+          "F2",
+          "Identity-H",
+          0
+        ],
+        [
+          22,
+          "ttf",
+          "Type0",
+          "CMSTGO+TimesNewRomanPSMT",
+          "F1",
+          "Identity-H",
+          0
+        ]
+      ],
+      "pdf_font_check": "SimSun and Times New Roman embedded as Type0 font subsets.",
+      "visual_review": {
+        "performed": true,
+        "method": "Viewed generated 600 dpi PNG with view_image after final build.",
+        "result": "No clipped labels, missing Chinese glyphs, or node text overlap seen; flow boxes white and panel titles centered."
+      }
+    }
+  },
+  "builder_sha256": "d8a7d1e851f19103c1a23f2b2348728cfe1121101bf5e5a0156dca4f81975df8"
+}

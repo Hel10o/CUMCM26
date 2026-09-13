@@ -1,0 +1,30 @@
+{
+  "baseline_commit": "218d741426a87794fa00560d0631a918d68c7bf3",
+  "origin_main_fetched_commit": "218d741426a87794fa00560d0631a918d68c7bf3",
+  "inputs": [
+    {
+      "name": "第7章 .docx",
+      "sha256": "3d9717f9fcd84c773ca28ac05128888ee1ecac52236e8d5d419c482264c560fa",
+      "bytes": 807836
+    },
+    {
+      "name": "第七章图片.zip",
+      "sha256": "a91e7f707153ab7b55d033f03958d1e561aa8f21340a2122ac66b32d9aa0722e",
+      "bytes": 573755
+    }
+  ],
+  "preexisting_local_q2_intro": true,
+  "local_before_pdf_sha256": "5999d27271d2d6f1d95d14c0d4d4e11762f308e72fed7243cc16d12b87d33d05",
+  "read_method": "Word OOXML paragraphs including math text; user ZIP entries and four supplied Q2 images visually inspected; original Word layout was not rendered.",
+  "image_zip_members": [
+    "第七章图片/",
+    "第七章图片/6-3.PNG",
+    "第七章图片/7-1.PNG",
+    "第七章图片/7-2.PNG",
+    "第七章图片/7-3.PNG",
+    "第七章图片/7-4.PNG",
+    "第七章图片/8-1.PNG"
+  ],
+  "concurrent_commit_preserved": "dfe7b2911672deacdea62096fc409bcf04855fdf",
+  "concurrent_change": "A separate task committed the previously pending Q2 introductory paragraph/PDF/source archive and submission support package while this revision was running. Its commit is retained; this revision builds on it."
+}

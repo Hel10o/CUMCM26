@@ -1,0 +1,12 @@
+{
+  "archive": "四问论文LaTeX源稿_v1.zip",
+  "sha256": "a7cf97e42da5a7e0c091cbcbd3bbc5acf77adeb160c3e5153c51647c8b3c56c5",
+  "bytes": 35685656,
+  "source_member_count": 614,
+  "zip_member_count_with_manifest": 615,
+  "CRC_passed": true,
+  "all_members_match_current_disk_and_both_manifests": true,
+  "sidecar_hash_matched": true,
+  "new_tex_figures_builder_and_revision_records_present": true,
+  "exclusion_note": "This verification report is intentionally external to the archive to avoid self-referential manifests."
+}

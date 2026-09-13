@@ -10,6 +10,8 @@ roots = ["main.tex", "ai_details.tex", "AI工具使用详情.pdf", "body_preview
          "build_assets.py", "build_dimension_reduction.py", "build_visual_assets.py", "build_refined_assets.py", "build_workflow_spacing.py", "build_font_assets.py", "build_question_workflows.py", "build_ch6_assets.py", "figures/dimension_reduction.png", "validate_paper.py", "package_source.py", "README.md"]
 files = [BASE / name for name in roots]
 files.append(BASE / 'build_q1_legibility.py')
+files.append(BASE / 'build_q2_revision_assets.py')
+files.extend((BASE / 'figures' / 'q2_revision').glob('*.png'))
 files.extend((BASE / 'figures' / 'q1_legibility').glob('*.png'))
 files.extend((BASE / "figures" / "visual_revision").glob("*.png"))
 files.extend((BASE / "figures" / "visual_refinement").glob("*.png"))
