@@ -1,9 +1,9 @@
 {
   "purpose": "Editable LaTeX source archive, not the final competition support package",
-  "file_count": 750,
-  "bytes": 42597004,
-  "sha256": "29c23fad26d0305c260015cfe5ab6e0687328d4486fa321db080777b247e719e",
-  "members_verified": 750,
+  "file_count": 752,
+  "bytes": 42604560,
+  "sha256": "f87fb87531952e9eb98397a3f55481a29562f2364516e62c8495661d9567a0d0",
+  "members_verified": 752,
   "sources": {
     "ai_details.tex": "6a20e837a67065aa01e54ecface58f377ce7f62332b76bc22df03d8a482e960b",
     "AI工具使用详情.pdf": "cfca7f5a6b3b5600d355926ffec66d26018f40cd128335f502dca7c7147b845d",
@@ -481,6 +481,8 @@
     "evidence/submission_zip_delivery_20260913/支撑材料ZIP交付记录.md": "0558d60c433d13ab2e75a44501758fad487a6660fcce556fa3b1cf8dacb17c9e",
     "evidence/table_expected.json": "1325c851255e6e23c90568217243f6eb9f1a5ac4e3a8b5b934956d5a80a4e445",
     "evidence/title_online_20260913/page_integrity.json": "450bed8de0303e1e3c4c70488e3cf1eceae9d2e503dfda508d053478d6db6c85",
+    "evidence/title_online_20260913/pdf_validation.json": "ed37883407ec432b7e50926e20c75a7313bf5d5de3a938c0aedac0c3457721d1",
+    "evidence/title_online_20260913/pdf_validation.txt": "3e10cb366cc6614cee22831c447d08cb037d1b1c578902fabf2af07a9285ef51",
     "evidence/title_online_20260913/修订记录.md": "35056f4f0beed5923efd45ea3418d0b5dcd3bd05fd6d3ae5e62c2d163baaf680",
     "evidence/validation_schema.md": "3225b9d41e66c0df2f17b048c18fa11f876607a1c64eb3b9caf454e6c715ba38",
     "evidence/wording_revision_20260912/abstract_after.tex.txt": "dbc19d79228afe8b0403beea6b150869ea69b0c8f513e2adc4dcba6fbe40df7d",
