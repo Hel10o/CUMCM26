@@ -1,12 +1,12 @@
 {
   "purpose": "Editable LaTeX source archive, not the final competition support package",
-  "file_count": 715,
-  "bytes": 42227375,
-  "sha256": "99da7e9747eff9a397534148b4d0fa73a60e97da451c1b44bedfa9b81416efbb",
-  "members_verified": 715,
+  "file_count": 716,
+  "bytes": 42722693,
+  "sha256": "368654bd76e77475b572d27684327ff177d53b3a5434114b3f08111365d492b8",
+  "members_verified": 716,
   "sources": {
-    "ai_details.tex": "6081f18954612748d335f6f9eecf34f434bfe5e4ab7237f0421b766dcd80d687",
-    "AI工具使用详情.pdf": "819e9d88909b3e5f49fb3706c25b4eb280e4d7f49d065dcef26dbf79e455e08d",
+    "ai_details.tex": "84142250c0e51e6a7ef21076dbb6cf5dae1c1c520c38aca92d4a6b01cfda51d0",
+    "AI工具使用详情.pdf": "ec5b326dcb42bd44e28efa2d15c93c8d7f87b7a8216aa15cb4873e5bcc180785",
     "body_preview.tex": "40c6feeabaa276bb09dd64d385589c9eaa25a347e5ccca654eabd9fe6d6a8c42",
     "build.ps1": "0e9c67af74d58a6424f6b46dc1c2d9b6bd115012b6c62dda883d52d5a8eff7c5",
     "build_assets.py": "0726a8383844d8d029cdd48331f56d860fa83197bed02f99141c379a03047e8d",
@@ -104,9 +104,9 @@
     "evidence/ai_details_contest_20260913/ai_pdf_check.json": "7d7a9fefe80638d0b44e06479a2a3e871820ec8af02890f22d9357d90f7fae99",
     "evidence/ai_details_contest_20260913/pdf_validation.json": "a8404e22b205b660aa9697dd4f9feb76a919ff599378007808a671eebad97196",
     "evidence/ai_details_contest_20260913/pdf_validation.txt": "32e5ef7bb2b7b667a43043e30847f52ace6aeddb5317932de14e821f68115963",
-    "evidence/ai_details_contest_20260913/support_refresh.json": "3d91f14e5c6c68f9dbc34491003e10d221d5f00d56f13ab4ef28eef67b8b090d",
+    "evidence/ai_details_contest_20260913/support_refresh.json": "f2ce723b35ebcbd3f99fe4f8b6275cae55500f30acd474e996d92ddb5032f2d3",
     "evidence/ai_details_contest_20260913/validation.json": "8ecbd1cf72c15e1fdab69d9cc5c200404aa5e8b72001064dbe08f1a61093bf9a",
-    "evidence/ai_details_contest_20260913/修订记录.md": "df645c2ad99e940500ac30a6a4754eced1edcb0a786a494e3a994e151b3de72c",
+    "evidence/ai_details_contest_20260913/修订记录.md": "ce7aea4a8bd48d3a44bdf5863b8e7263299d1c213a819a245980b06b392ca4b2",
     "evidence/ai_usage_20260913/ai_rules_2026.html": "5b80b9b932cac141f72d3b3932f82de0f5c5371180b7c471dab4f2028590af58",
     "evidence/ai_usage_20260913/baseline.json": "7766b1e3b7fcf90c5ee64feab35e101e9175a2c318df10fca24b0eebf1a86959",
     "evidence/ai_usage_20260913/delivery_baseline.json": "392e753b93c908a6505ed1ea4ddec64ea627a6b9fb2b22af0d8097361af54579",
@@ -719,6 +719,7 @@
     "visual_revision/validation.py": "26b793d167ce405ea0a4588165d0f392883688fd3567b2983f701f760b2ef393",
     "workflow_spacing/common.py": "bd7735e40bb9a9101de1fc6cf892ef770de365ed05d362b909a625fab30605d9",
     "workflow_spacing/README.md": "4ef71e49db7747ae536b05ce722ab0eeb034251db2cf3d5f5e8e44d9facfadb0",
-    "workflow_spacing/workflow.py": "bb529c130a759e6615c4c66df2a6e86b98665072f919aac64cc5cd5fd155a0b9"
+    "workflow_spacing/workflow.py": "bb529c130a759e6615c4c66df2a6e86b98665072f919aac64cc5cd5fd155a0b9",
+    "evidence/ai_details_contest_20260913/final-1.png": "fbf9c762faf714b9bcbb26ce656352d43eef895dca67e4883694048877896cc7"
   }
 }
