@@ -1,0 +1,25 @@
+{
+  "baseline_commit": "0b402a4b372c8f46cebc74abe0b63186a805d520",
+  "remote_main_at_start": "0b402a4b372c8f46cebc74abe0b63186a805d520",
+  "baseline_paper_sha256": "a6f09e673336eec0d57c0ccfc2e2d751d811754b29a77a563f0bd17baf5482b2",
+  "baseline_q1_sha256": "de16394ec00af7368375ae3b9c2aae71310adb83a52ffa9d40ff6ed0b87a5d77",
+  "user_inputs": {
+    "第6章.docx": {
+      "sha256": "6b2dde472a2ccd6e0fae16c97a04f8c2b7a2fd4970ca8c5fff51ccd92192d8a7",
+      "bytes": 270589
+    },
+    "bf71d50808a94476328075791034c206.png": {
+      "sha256": "bfeae12f730193805c259184e197e379cd66072058d180f7cdc1063d90a0b02e",
+      "bytes": 41299
+    },
+    "16f11b49eedb53bce6146e74b7cdb97b.png": {
+      "sha256": "ea36de432d3265f371f31d1a6366cadde9f8fcb7a9219ffce7043a037348a8c7",
+      "bytes": 40729
+    }
+  },
+  "scope": "User approved chapter 6 review text and three Q1 figure improvements. All solvers, results and other scientific chapters remain untouched.",
+  "preexisting_untracked": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}

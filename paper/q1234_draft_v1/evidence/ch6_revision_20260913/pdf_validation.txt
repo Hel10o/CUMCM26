@@ -1,0 +1,22 @@
+PDF validation: failed
+Scope: full_document
+Paper: D:\Desktop\CUMCM26\paper\q1234_draft_v1\build\main.pdf
+AI details: D:\Desktop\CUMCM26\paper\q1234_draft_v1\AI工具使用详情.pdf
+Checks: {'pass': 36, 'info': 2, 'fail': 1}
+Counted body pages: 30
+Full document validated: False
+Submission-ready certification: not provided (visual and human factual review remain external).
+FAIL ai_details.text_margins: Text lies inside the 25 mm margin box, allowing 2 pt for font bounding-box overhang; centered footer only is exempt.
+{"violation_count": 1, "violations": [{"page": 3, "text": "目标。论文据此保留现行答案，并说明气固边界映射、干质量口径、能量闭合与维度证据的限制；", "bbox": [76.53498840332031, 334.32550048828125, 526.4599609375, 344.82550048828125], "outside_25mm_box_pt": 2.046}], "margin_pt": 70.86614173228347, "glyph_bbox_tolerance_pt": 2.0}
+TABLE q1_temperature: pass; matched cells=42
+TABLE q1_moisture: pass; matched cells=42
+TABLE q2_temperature: pass; matched cells=36
+TABLE q2_moisture: pass; matched cells=36
+TABLE q3_moisture: pass; matched cells=60
+TABLE q4_moisture: pass; matched cells=63
+
+Limitations:
+Text and geometry audit does not replace rendered-page visual inspection.
+Unknown author/school/team identifiers require human anonymity review.
+AI disclosure truthfulness and complete human review cannot be certified by this script.
+Table checks compare rendered strings with the supplied expected manifest; numerical model validity is outside scope.

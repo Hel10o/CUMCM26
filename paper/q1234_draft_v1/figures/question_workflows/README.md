@@ -1,5 +1,7 @@
 # 四问求解流程图
 
+当前问题一已改用[第六章修订图](../ch6_revision/README.md)；本目录的问题一图保留为历史版本，问题二至四仍沿用本目录文件。下文记录原四图的绘制过程。
+
 按用户给出的横向流程图样式，移除正文总流程图，改为各问章节开头的四张示意图。输入使用圆角框，方程/算法和输出使用方框，箭头由左向右并按需上下连接；白底、深色细线，中文宋体，英文数字 Times New Roman。
 
 图宽15 cm、高3.2 cm，文字9.2 pt。四图共27个节点、23条箭头；只概括已有模型求解步骤，不包含新计算。
@@ -13,4 +15,4 @@
 
 重绘入口：[build_question_workflows.py](../../build_question_workflows.py)。脚本只读取固定基线提交中的正文，不导入求解器或读取计算数组。在完整Git仓库中运行 `python -X utf8 paper/q1234_draft_v1/build_question_workflows.py`。独立源稿ZIP已包含PDF，无须重绘即可编译；重绘时需要原Git提交及宋体/Times字体。
 
-节点、箭头、源文摘录、输入哈希和输出哈希见[workflow_sources.json](../../evidence/question_workflows_20260913/workflow_sources.json)。旧总流程图及其历史记录保持原字节，现行正文不再引用。六张既有数值图仍使用 figures/font_revision/ 的原文件。
+节点、箭头、源文摘录、输入哈希和输出哈希见[workflow_sources.json](../../evidence/question_workflows_20260913/workflow_sources.json)。旧总流程图及其历史记录保持原字节，现行正文不再引用。除问题一热图改用 ch6_revision 版本外，其余五张数值图仍使用 figures/font_revision/ 的原文件。

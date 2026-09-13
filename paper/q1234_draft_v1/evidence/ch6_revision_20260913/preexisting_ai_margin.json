@@ -1,0 +1,30 @@
+{
+  "ai_pdf_unchanged_from_baseline": true,
+  "baseline_and_current_sha256": "1205e7ca15f45487d766543719c9e4ee154aa3e1d9c9284c2a373e1d4a4bb9f5",
+  "existing_failed_check": [
+    {
+      "id": "ai_details.text_margins",
+      "status": "fail",
+      "message": "Text lies inside the 25 mm margin box, allowing 2 pt for font bounding-box overhang; centered footer only is exempt.",
+      "evidence": {
+        "violation_count": 1,
+        "violations": [
+          {
+            "page": 3,
+            "text": "目标。论文据此保留现行答案，并说明气固边界映射、干质量口径、能量闭合与维度证据的限制；",
+            "bbox": [
+              76.53498840332031,
+              334.32550048828125,
+              526.4599609375,
+              344.82550048828125
+            ],
+            "outside_25mm_box_pt": 2.046
+          }
+        ],
+        "margin_pt": 70.86614173228347,
+        "glyph_bbox_tolerance_pt": 2.0
+      }
+    }
+  ],
+  "note": "Validation explicitly used the unchanged official AI PDF, not the stale build/ai_details.pdf. The existing margin failure was neither fixed nor suppressed in this chapter-only revision."
+}

@@ -248,7 +248,8 @@ $t_{*,4}=183931.211715489\unit{s}$。
 也不等于已经取得连续二维的数学保证。
 上述证据层级集中见第\ref{sec:limitations}节。
 
-\Needspace{18\baselineskip}
+% Allow the existing figure to float while its explanation fills the page after the Q1 insertion.
+\Needspace{6\baselineskip}
 \subsection{收缩作用与模型解释}
 
 \begin{figure}[htbp]
@@ -257,8 +258,6 @@ $t_{*,4}=183931.211715489\unit{s}$。
  \caption{规定收缩下的径向有效模型场、观测输入与同物性条件对照。(a)当前实际半径坐标中的含水率色图仅显示至正式执行时刻，采用对数色标；全部观测点及分段线性半径输入保留至72\unit{h}，执行线之后只展示半径。(b)各时刻含水率剖面止于当时材料表面。(c)附录4同物性、同环境下的恒半径与规定收缩临界根对照。临界根与执行时刻分别标示；时间差包含扩散尺度和干基边界交换标度变化。}
  \label{fig:q4-shrinkage}
 \end{figure}
-\FloatBarrier
-
 \Needspace{3\baselineskip}
 图\ref{fig:q4-shrinkage}在当前实际半径坐标中展示规定收缩与含水率演化；上方色图止于正式执行时刻并保留完整半径观测输入，左下剖面止于各时刻的材料表面，右下对照原恒半径与规定收缩的临界时间。
 为分离施加收缩历程的作用，另保持附录4和其余条件不变，
@@ -279,6 +278,7 @@ $j_s=\rho_d(t)h_m(C_s-b)$，
 所以模型临界时间缩短60.6526\%是同一有效方程内的条件对照结果，
 不等于固定真实气膜条件下仅由缩短路径得到的效应，也不能据此推断真实热量收支。
 
+\Needspace{3\baselineskip}
 半径重建方式也影响终时。
 将线性插值改为保形PCHIP，临界时间为$51.088501642\unit{h}$，
 比主线提前约12.6058\unit{s}，明显大于单一插值方案内部的数值预算。

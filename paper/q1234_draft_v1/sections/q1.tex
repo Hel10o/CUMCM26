@@ -1,19 +1,47 @@
+% Local display/float spacing accommodates the boundary schematic; body type and leading are unchanged.
+\begingroup
+\setlength{\parskip}{0pt plus 1pt}
+\setlength{\abovedisplayskip}{4pt plus 2pt minus 1pt}
+\setlength{\belowdisplayskip}{4pt plus 2pt minus 1pt}
+\setlength{\abovedisplayshortskip}{4pt plus 1pt minus 1pt}
+\setlength{\belowdisplayshortskip}{4pt plus 1pt minus 1pt}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{8pt plus 2pt minus 2pt}
+\captionsetup{skip=5pt}
+\renewcommand{\arraystretch}{1.0}
 \section{问题一：预热阶段的径向分布}
 \label{sec:q1}
+
+问题一以第\ref{sec:common-model}节的统一模型为基础，在固定几何、常热物性条件下，
+采用附录2物性预测前$1800\unit{s}$的径向温度与含水率分布。
+水分扩散系数仍随含水率变化，两场分别求解；从参数代入到规定结果输出的过程如图\ref{fig:q1-workflow}所示。
 
 \begingroup
 \setlength{\intextsep}{10pt}
 \begin{figure}[H]
-\centering\includegraphics[width=\linewidth]{figures/question_workflows/q1_workflow.pdf}
-\caption{问题一求解流程}
+\centering\includegraphics[width=\linewidth]{figures/ch6_revision/q1_workflow.pdf}
+\caption{问题一由统一模型到径向预热模型的求解流程}
 \label{fig:q1-workflow}
 \end{figure}
 \endgroup
 
 \subsection{常热物性方程与初边值条件}
-第一问在前$1800\unit{s}$内使用附录2参数\cite{problem}。固定骨架使
-式\eqref{eq:heat}--\eqref{eq:moisture}中的材料导数退化为时间偏导数，
-空间均匀的干密度从水分方程约去。再取中截面径向描述并代入物性，得到
+题设圆柱药材长$25\unit{cm}$、半径$2\unit{cm}$\cite{problem}。
+本问取固定骨架$v_s=0$，式\eqref{eq:heat}、\eqref{eq:moisture}中的材料导数退化为时间偏导数。
+初始干密度空间均匀且干物质守恒，故固定骨架下干密度保持均匀，可从水分方程约去。
+
+依假设\ref{ass:midsection}取中截面径向近似并忽略端面影响，以$r,t$描述两场，
+计算区间为$0\leq r\leq R$。轴心取零径向梯度，表面通过线性换热、传质关系与环境相联系。
+几何与边界条件见图\ref{fig:q1-boundary}。
+
+\begin{figure}[htbp]
+\centering\includegraphics[width=\linewidth]{figures/ch6_revision/q1_boundary.pdf}
+\caption{问题一中截面径向模型与边界条件示意图}
+\label{fig:q1-boundary}
+\end{figure}
+
+代入附录2的常热物性参数与扩散系数关系，得到径向导热方程与非线性水分扩散方程：
 \begin{equation}
 \begin{aligned}
 T_t&=\alpha\frac{1}{r}\frac{\partial}{\partial r}(rT_r),
@@ -130,7 +158,7 @@ $2.5499924\unit{kg/kg}$，四位显示仍为2.5500；因此不能把表中轴心
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.94\textwidth]{figures/font_revision/q1_profiles.pdf}
+\includegraphics[width=0.94\textwidth]{figures/ch6_revision/q1_profiles.pdf}
 \caption{第一问的时间--径向温湿场。横轴为时间，纵轴为径向距离；左、右色标分别表示温度与干基含水率，均由已保存采样值着色。}
 \label{fig:q1-profiles}
 \end{figure}
@@ -152,10 +180,11 @@ $R^2/\alpha=2368.89\unit{s}$、$R^2/D(C_0)=81010.11\unit{s}$，
 35.1679\celsius、平均含水率$2.2936\unit{kg/kg}$；它们不替代最湿点，
 也不能直接当作包含端部效应的整根平均量。
 
-\subsection{数值可信范围}
-温度采用贝塞尔特征函数展开作独立参考，水分采用
-$x=(r/R)^2$变换的Chebyshev配点与非线性表面条件消元作独立空间参考。
-正式解与参考在全部规定输出点的最大温差为
+\subsection{数值验证与适用范围}
+采用独立参考方法检验预热阶段数值解：温度场采用贝塞尔特征函数展开；
+水分场经$x=(r/R)^2$变换，采用Chebyshev配点与非线性表面条件消元构造独立空间参考解。
+
+正式解与参考解在全部规定输出点上的最大温度差为
 $7.29\times10^{-9}\unit{K}$，含水率差为
 $1.52\times10^{-6}\unit{kg/kg}$；全部75600个正式输出四位一致。
 固定正式网格收紧时间控制后，温湿差分别约
@@ -163,11 +192,13 @@ $5.03\times10^{-10}\unit{K}$和$8.15\times10^{-11}\unit{kg/kg}$。
 接近舍入分界的数值必须逐项核对，不能仅凭最大误差小于半个末位单位
 推断整张表四位一致。
 
-同物理条件的$80\times128$有限圆柱二维配对，在前$1800\unit{s}$
-已检查采样点的中截面最大温湿差约为
+为进一步检验忽略端面影响后的中截面径向近似，采用同物理条件下的$80\times128$有限圆柱二维模型进行配对比较。
+在前$1800\unit{s}$已检查采样点上，中截面的最大温湿差分别约为
 $5.65\times10^{-8}\unit{K}$与$4.09\times10^{-9}\unit{kg/kg}$，
 支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。
+
 以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度
 及无显式潜热假设引入的物理不确定性。
 本问预热段的相变能量缺口量级显著，相关诊断与解释范围见第\ref{sec:limitations}节。
 \FloatBarrier
+\endgroup

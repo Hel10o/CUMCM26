@@ -1,0 +1,27 @@
+{
+  "checks": {
+    "zip_crc": true,
+    "unique_entries": true,
+    "inner_outer_manifest_equal": true,
+    "member_set_complete": true,
+    "every_member_equals_disk": true,
+    "all_hashes_match": true,
+    "archive_hash_matches": true,
+    "new_script_and_figures_included": true,
+    "official_pdf_matches_build": true,
+    "sha256_sidecar_matches": true
+  },
+  "all_passed": true,
+  "source_member_count": 578,
+  "zip_bytes": 34415183,
+  "zip_sha256": "18564306c5f4fdfa8221c25779c6ab8645e2c1270448e662fa41788a9a443b40",
+  "paper_sha256": "3879db2d5619b14cc86668935051bc8a109fd45f773a792445bce3041aef08b6",
+  "mismatches": [],
+  "not_included": [
+    "PDE reruns",
+    "preexisting untracked main.pdf",
+    "preexisting template/"
+  ],
+  "note": "This external verification file is excluded from the source ZIP by the existing source_package.json rule to avoid a self-reference.",
+  "packaging_note": "Final archive and manifest generation completed, but the existing packager raised Windows Errno 22 when rewriting the sidecar. The sidecar was then written successfully with System.IO.File.WriteAllText and read back; its hash string matches the final ZIP. No source archive member changed during this repair."
+}

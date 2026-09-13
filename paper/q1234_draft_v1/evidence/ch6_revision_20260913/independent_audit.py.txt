@@ -1,0 +1,346 @@
+#!/usr/bin/env python3
+"""Independent read-only chapter-six audit. Writes only this round's audit JSON/MD.
+Default: source-only preliminary check. Optional --pdf/--aux/--log add compiled checks.
+Does not execute numerical solvers or figure-generation scripts.
+"""
+from pathlib import Path
+import argparse, collections, datetime, hashlib, json, re, subprocess
+
+BASELINE = "0b402a4b372c8f46cebc74abe0b63186a805d520"
+PAPER = Path(__file__).resolve().parents[2]
+ROOT = PAPER.parents[1]
+PREFIX = PAPER.relative_to(ROOT).as_posix() + "/"
+OUT = Path(__file__).resolve().parent
+
+def sha(data):
+    return hashlib.sha256(data).hexdigest()
+
+def old_bytes(path):
+    return subprocess.check_output(["git", "show", BASELINE + ":" + path], cwd=ROOT)
+
+def compact(text):
+    return re.sub(r"\s+", "", text)
+
+def equations(text):
+    return re.findall(r"\\begin\{equation\}.*?\\end\{equation\}", text, re.S)
+
+def local_layout_free(text):
+    # Only local pagination/float spacing is waived; no global font/margin waiver.
+    text = re.sub(r"(\\begin\{table\})\[[Hhtbp!]+\]", r"\1", text)
+    text = re.sub(r"\\Needspace\{[^{}]*\}", "", text)
+    text = re.sub(r"\\(?:FloatBarrier|clearpage|newpage)\b", "", text)
+    text = re.sub(r"\\(?:vspace|hspace)\*?\{[^{}]*\}", "", text)
+    text = re.sub(r"\\setlength\{\\(?:intextsep|textfloatsep|floatsep)\}\{[^{}]*\}", "", text)
+    return text
+
+def body_source(baseline=False):
+    def read(name):
+        rel = PREFIX + name
+        return old_bytes(rel).decode("utf-8") if baseline else (ROOT / rel).read_text(encoding="utf-8")
+    main = read("main.tex")
+    body = main[main.index(r"\label{body:start}"):main.index(r"\appendix")]
+    return re.sub(r"\\input\{(sections/[^{}]+)\}",
+                  lambda m: read(m[1] if m[1].endswith(".tex") else m[1]+".tex"), body)
+
+def figure_labels(text):
+    result = {}
+    for number, block in enumerate(re.findall(r"\\begin\{figure\}.*?\\end\{figure\}", text, re.S), 1):
+        for label in re.findall(r"\\label\{([^{}]+)\}", block):
+            result[label] = number
+    return result
+
+def equation_labels(text):
+    return {label: number for number, block in enumerate(equations(text), 1)
+            for label in re.findall(r"\\label\{([^{}]+)\}", block)}
+
+def protected_q1(text):
+    at = text.index(r"\label{eq:q1-pde}")
+    start = text.rfind(r"\begin{equation}", 0, at)
+    fourth = list(re.finditer(r"\\subsection\{", text))[3].start()
+    segment = text[start:fourth]
+    # Q1 profiles is the only figure within the protected equation-9-to-6.3 segment.
+    segment = re.sub(r"\\begin\{figure\}.*?\\end\{figure\}", "", segment, flags=re.S)
+    return compact(local_layout_free(segment))
+
+def last_subsection(text):
+    return text[list(re.finditer(r"\\subsection\{", text))[3].start():]
+
+def numeric_tokens(text):
+    return re.findall(r"(?<![\d.])\d+(?:\.\d+)?(?![\d.])", local_layout_free(text))
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--pdf", type=Path)
+    parser.add_argument("--aux", type=Path)
+    parser.add_argument("--log", type=Path)
+    args = parser.parse_args()
+    checks = []
+    def check(key, passed, evidence=None):
+        checks.append({"id": key, "passed": bool(passed), "evidence": evidence})
+    rel = PREFIX + "sections/q1.tex"
+    baseline = old_bytes(rel)
+    snapshot = (ROOT / rel).read_bytes()
+    before, current = baseline.decode("utf-8"), snapshot.decode("utf-8")
+    source_before, source_current = body_source(True), body_source(False)
+    old_last, new_last = last_subsection(before), last_subsection(current)
+    check("q1_protected_scientific_body", protected_q1(before) == protected_q1(current),
+          "Equation 9 through end of 6.3; only figure environment/local pagination/whitespace excluded.")
+    check("q1_all_display_equations", equations(before) == equations(current),
+          {"baseline_count": len(equations(before)), "current_count": len(equations(current))})
+    check("q1_four_subsections", len(re.findall(r"\\subsection\{", current)) == 4)
+    check("q1_validation_numeric_sequence", numeric_tokens(old_last) == numeric_tokens(new_last),
+          {"baseline": numeric_tokens(old_last), "current": numeric_tokens(new_last)})
+    old_inline = re.findall(r"\$([^$]*)\$", old_last)
+    new_inline = re.findall(r"\$([^$]*)\$", new_last)
+    check("q1_validation_inline_math", [compact(x) for x in old_inline] == [compact(x) for x in new_inline],
+          {"baseline_count": len(old_inline), "current_count": len(new_inline)})
+    protected_sentences = [
+        "接近舍入分界的数值必须逐项核对，不能仅凭最大误差小于半个末位单位\n推断整张表四位一致。",
+        "支持本问中截面径向近似；端面局部差仍可较大，不能据此推广到整个圆柱。",
+        "以上验证支持所选有效方程的数值结果，不消除等效湿度边界、参考密度\n及无显式潜热假设引入的物理不确定性。",
+        r"本问预热段的相变能量缺口量级显著，相关诊断与解释范围见第\ref{sec:limitations}节。"
+    ]
+    for i, sentence in enumerate(protected_sentences, 1):
+        check("q1_validation_protected_sentence_" + str(i), compact(sentence) in compact(new_last),
+              sentence)
+    check("q1_constant_thermal_wording", "常物性" not in current and "常热物性" in current
+          and "水分扩散系数仍随含水率变化" in current)
+    check("q1_reduction_premises", all(term in current for term in [
+        "固定骨架", r"$v_s=0$", "初始干密度空间均匀", "干物质守恒", r"\ref{ass:midsection}",
+        "忽略端面影响"]) and any(term in current for term in ["径向梯度均为零", "零径向梯度"]))
+    font_commands = r"\\(?:fontsize|linespread|setmainfont|setCJKmainfont|ctexset)\b[^\n]*"
+    check("q1_font_and_leading_commands_unchanged", re.findall(font_commands,before) == re.findall(font_commands,current))
+    check("q1_no_new_broad_claims", not any(term in current for term in
+          ["能耗", "节能", "潜热影响很小", "已被cp吸收", "题面指定中截面",
+           "远离端面的区域", "各处达标已充分验证"]))
+    check("q1_initial_corner_caveat", compact(before[before.index("均匀初态与"):
+          before.index(r"\subsection{圆环守恒离散")]) in compact(current))
+    figures_before, figures_current = figure_labels(source_before), figure_labels(source_current)
+    expected_figures = {k: n if n == 1 else n+1 for k, n in figures_before.items()}
+    expected_figures["fig:q1-boundary"] = 2
+    check("figure_sequence_new_one", figures_current == expected_figures,
+          {"baseline": figures_before, "expected": expected_figures, "current": figures_current})
+    eq_before, eq_current = equation_labels(source_before), equation_labels(source_current)
+    check("all_equation_blocks_same", equations(source_before) == equations(source_current),
+          {"baseline_count": len(equations(source_before)), "current_count": len(equations(source_current))})
+    check("equation_numbers_source_order", eq_before == eq_current,
+          {"label_numbers": eq_current, "note": "Source order, not yet AUX unless supplied."})
+    check("twelve_primary_sections", len(re.findall(r"\\section\{", source_current)) == 12)
+    labels = re.findall(r"\\label\{([^{}]+)\}", source_current)
+    refs = re.findall(r"\\(?:eqref|ref)\{([^{}]+)\}", source_current)
+    bad = {key: labels.count(key) for key in set(refs) if labels.count(key) != 1}
+    check("all_source_refs_unique_defined", not bad,
+          {"reference_occurrences": len(refs), "unique_targets": len(set(refs)), "bad": bad})
+    cites = {k.strip() for group in re.findall(r"\\cite\{([^{}]+)\}", source_current) for k in group.split(",")}
+    bibliography = re.findall(r"\\bibitem(?:\[[^\]]+\])?\{([^{}]+)\}", source_current)
+    check("all_source_cites_defined", all(bibliography.count(k) == 1 for k in cites),
+          {"cited_keys": sorted(cites)})
+    used_images = re.findall(r"\\includegraphics(?:\[[^\]]*\])?\{([^{}]+)\}", source_current)
+    check("all_image_paths_exist", all((PAPER / p).is_file() for p in used_images), used_images)
+    layout_exceptions = {}
+    q4_path = PREFIX+"sections/q4.tex"
+    q4_old = old_bytes(q4_path).decode("utf-8")
+    q4_current = (ROOT/q4_path).read_bytes().decode("utf-8")
+    q4_expected = q4_old.replace(r"\Needspace{18\baselineskip}",
+        "% Allow the existing figure to float while its explanation fills the page after the Q1 insertion.\n"+r"\Needspace{6\baselineskip}",1)
+    q4_expected = q4_expected.replace("\\end{figure}\n\\FloatBarrier\n\n\\Needspace{3\\baselineskip}",
+                                      "\\end{figure}\n\\Needspace{3\\baselineskip}",1)
+    q4_expected = q4_expected.replace("半径重建方式也影响终时。", "\\Needspace{3\\baselineskip}\n半径重建方式也影响终时。",1)
+    check("q4_exact_authorized_layout_change",q4_current == q4_expected,
+          "Only Needspace18->6 with recorded comment; remove barrier directly after shrinkage figure (plus its blank line); add Needspace3 before the radius-reconstruction paragraph.")
+    layout_exceptions[q4_path] = {"matches_exact_allowed_transform":q4_current==q4_expected,
+        "change":"Needspace18->6; remove FloatBarrier immediately after q4_shrinkage; add explanatory comment; add Needspace3 immediately before 半径重建方式也影响终时。"}
+    ref_path = PREFIX+"sections/references.tex"
+    ref_old = old_bytes(ref_path).decode("utf-8")
+    ref_current = (ROOT/ref_path).read_bytes().decode("utf-8")
+    ref_expected = ref_old.replace(r"\setlength{\itemsep}{0.35em}",
+        "\\setlength{\\itemsep}{1pt}\n\\setlength{\\parsep}{0pt}\n\\setlength{\\parskip}{0pt}",1)
+    check("references_exact_authorized_spacing_change",ref_current == ref_expected,
+          "Only itemsep=.35em->1pt and added parsep/parskip=0pt; bibliography records otherwise unchanged.")
+    layout_exceptions[ref_path] = {"matches_exact_allowed_transform":ref_current==ref_expected,
+        "change":"itemsep=.35em->1pt; parsep=0pt; parskip=0pt."}
+    frozen = []
+    entries = subprocess.check_output(["git", "ls-tree", "-rz", BASELINE, "--",
+        PREFIX+"sections", PREFIX+"figures", PREFIX+"tables", PREFIX+"main.tex",
+        PREFIX+"validate_paper.py", PREFIX+"evidence/assumptions_unbold_20260913/page_integrity.json"], cwd=ROOT)
+    for entry in entries.split(b"\0"):
+        if not entry: continue
+        meta, path = entry.split(b"\t", 1)
+        path = path.decode("utf-8")
+        if path == rel or ("/figures/" in path and path.endswith(".md")): continue
+        old_oid = meta.decode().split()[2]
+        data = (ROOT/path).read_bytes()
+        oid = hashlib.sha1(b"blob "+str(len(data)).encode()+b"\0"+data).hexdigest()
+        frozen.append({"path": path, "baseline_git_blob": old_oid, "current_git_blob": oid,
+                       "sha256": sha(data), "equal": oid == old_oid,
+                       "authorized_layout_only":layout_exceptions.get(path,{}).get("matches_exact_allowed_transform",False)})
+    for group, selector in [
+        ("main_abstract_conclusion", lambda p: p == PREFIX+"main.tex"),
+        ("other_sections", lambda p: "/sections/" in p),
+        ("old_figure_assets", lambda p: "/figures/" in p),
+        ("six_result_tables", lambda p: "/tables/" in p),
+        ("validator_and_page_history", lambda p: "/evidence/" in p or p.endswith("validate_paper.py"))
+    ]:
+        subset = [f for f in frozen if selector(f["path"])]
+        check(group+"_frozen", all(f["equal"] or f["authorized_layout_only"] for f in subset),
+              {"files": len(subset), "byte_identical_count":sum(f["equal"] for f in subset),
+               "changed": [f["path"] for f in subset if not f["equal"]],
+               "authorized_layout_only":[f["path"] for f in subset if f["authorized_layout_only"]]})
+    allowed_changes = {
+        rel, q4_path, ref_path, "README.md", PREFIX+"README.md", PREFIX+"package_source.py",
+        PREFIX+"support/README.md", PREFIX+"support/图表来源清单.md",
+        PREFIX+"figures/font_revision/README.md", PREFIX+"figures/question_workflows/README.md",
+        PREFIX+"四问论文初稿_v1.pdf", PREFIX+"四问论文LaTeX源稿_v1.zip",
+        PREFIX+"四问论文LaTeX源稿_v1.zip.sha256", PREFIX+"evidence/source_package.json"}
+    diff = subprocess.check_output(["git", "diff", "--name-only", "-z", BASELINE], cwd=ROOT).decode().strip("\0").split("\0")
+    new_prefixes = [PREFIX+"evidence/ch6_revision_20260913/", PREFIX+"figures/ch6_revision/"]
+    disallowed = [p for p in diff if p and p not in allowed_changes
+                  and not any(p.startswith(x) for x in new_prefixes)
+                  and p != PREFIX+"build_ch6_assets.py"]
+    check("tracked_change_scope", not disallowed, {"changed_paths": diff, "unexpected": disallowed})
+    figure_manifest_path = OUT / "figure_sources.json"
+    figure_evidence = {"performed": False}
+    if figure_manifest_path.is_file():
+        manifest = json.loads(figure_manifest_path.read_text(encoding="utf-8"))
+        actual = []
+        for path, record in manifest["sources"].items():
+            data = (ROOT/path).read_bytes()
+            current_sha = sha(data)
+            baseline_data = old_bytes(path)
+            actual.append({"path": path, "sha256": current_sha,
+                           "manifest_matches": current_sha == record["sha256"],
+                           "baseline_bytes_equal": data == baseline_data})
+        check("figure_inputs_manifest_and_baseline", all(x["manifest_matches"] and x["baseline_bytes_equal"] for x in actual),
+              actual)
+        figure_evidence = {"performed": True, "manifest_sha256": sha(figure_manifest_path.read_bytes()),
+                          "scope": "Independent byte hashes only; generator not executed; visual/array-render relation not certified here."}
+    compiled = {"performed": False}
+    external_validation = {"reviewed":False}
+    external_page_integrity = {"reviewed":False}
+    if args.pdf or args.aux:
+        if not (args.pdf and args.aux):
+            parser.error("--pdf and --aux must be supplied together")
+        import fitz
+        raw_aux = args.aux.read_text(encoding="utf-8")
+        rows = re.findall(r"\\newlabel\{([^}]+)\}\{\{([^{}]*)\}\{([^{}]*)\}", raw_aux)
+        aux_labels = {k: {"number": n, "page": int(p) if p.isdigit() else p} for k,n,p in rows}
+        duplicates = [k for k,v in collections.Counter(k for k,_,_ in rows).items() if v>1]
+        check("aux_all_labels_unique", not duplicates, duplicates)
+        check("aux_all_source_refs_resolved", all(k in aux_labels for k in set(refs)),
+              sorted(set(refs)-set(aux_labels)))
+        check("aux_all_equation_numbers", all(aux_labels.get(k,{}).get("number") == str(n) for k,n in eq_before.items()))
+        check("aux_all_figure_numbers", all(aux_labels.get(k,{}).get("number") == str(n) for k,n in expected_figures.items()))
+        aux_cited = {k.strip() for g in re.findall(r"\\citation\{([^}]+)\}", raw_aux) for k in g.split(",")}
+        aux_bib = re.findall(r"\\bibcite\{([^}]+)\}", raw_aux)
+        check("aux_citations_defined_once", all(aux_bib.count(k)==1 for k in aux_cited))
+        with fitz.open(args.pdf) as doc:
+            b = aux_labels.get("body:start",{}).get("page")
+            a = aux_labels.get("appendix:start",{}).get("page")
+            e = aux_labels.get("document:end",{}).get("page")
+            ai = aux_labels.get("ai:declaration",{}).get("page")
+            check("pdf_abstract_one_page", b == 2)
+            check("pdf_body_at_most_30", isinstance(a,int) and isinstance(b,int) and 1 <= a-b <= 30,
+                  {"body_start": b, "appendix_start": a, "body_pages": a-b if isinstance(a,int) and isinstance(b,int) else None})
+            check("pdf_end_matches_aux", e == len(doc), {"actual_pages": len(doc), "end_label": e})
+            check("pdf_total_158", len(doc)==158, {"actual_pages":len(doc),"baseline":158})
+            all_text = "\n".join(page.get_text() for page in doc)
+            front = "\n".join(doc[i].get_text() for i in range(min(a-1 if isinstance(a,int) else len(doc),len(doc))))
+            check("pdf_front_no_unresolved", not any(x in front for x in ["??","[?]","\ufffd"]))
+            printed_equations = [int(n) for n in re.findall(r"(?m)^\s*\((\d+)\)\s*$", front)]
+            check("pdf_equations_printed_1_to_44",printed_equations == list(range(1,45)),printed_equations)
+            check("pdf_full_no_banned_terms", not any(x in compact(all_text) for x in ["能耗","节能"]))
+            headings = re.findall(r"(?m)^\s*[一二三四五六七八九十十二]+、",front)
+            check("pdf_twelve_primary_headings",len(headings)==12,{"found_count":len(headings)})
+            ai_at = compact(front).find("AI工具使用声明")
+            ref_at = compact(front).find("参考文献")
+            check("pdf_ai_before_references",0<=ai_at<ref_at and isinstance(ai,int) and b<=ai<a)
+            compiled = {"performed":True,"pdf":str(args.pdf.resolve()),"pdf_sha256":sha(args.pdf.read_bytes()),
+                        "aux":str(args.aux.resolve()),"aux_sha256":sha(args.aux.read_bytes()),
+                        "total_pages":len(doc),"body_pages":a-b if isinstance(a,int) and isinstance(b,int) else None,
+                        "appendix_pages":len(doc)-a+1 if isinstance(a,int) else None}
+        if args.log:
+            log=args.log.read_text(encoding="utf-8",errors="replace")
+            patterns=[r"Reference .+ undefined",r"Citation .+ undefined",r"There were undefined references",r"multiply defined"]
+            found=[p for p in patterns if re.search(p,log)]
+            check("latex_log_references",not found,found)
+            compiled["log_sha256"]=sha(args.log.read_bytes())
+        external_path = OUT/"pdf_validation.json"
+        if external_path.is_file():
+            report = json.loads(external_path.read_text(encoding="utf-8"))
+            bindings = {name:sha(Path(v["path"]).read_bytes())==v["sha256"]
+                        for name,v in report["inputs"].items()}
+            check("external_validator_input_bindings",all(bindings.values())
+                  and report["inputs"]["pdf"]["sha256"]==compiled["pdf_sha256"],bindings)
+            ai_path=Path(report["inputs"]["ai_pdf"]["path"])
+            ai_rel=ai_path.relative_to(ROOT).as_posix()
+            ai_data=ai_path.read_bytes()
+            ai_equal=ai_data==old_bytes(ai_rel)
+            check("existing_ai_details_frozen",ai_equal,
+                  {"path":ai_rel,"sha256":sha(ai_data),"baseline":BASELINE})
+            external_validation={"reviewed":True,"path":str(external_path),
+                "report_sha256":sha(external_path.read_bytes()),"reported_status":report["status"],
+                "reported_check_counts":report["check_counts"],
+                "reported_failures":[c for c in report["checks"] if c["status"]=="fail"],
+                "reported_table_matched_cells":sum(t["matched_cells"] for t in report["table_results"].values()),
+                "all_reported_table_statuses_pass":all(t["status"]=="pass" for t in report["table_results"].values()),
+                "ai_details_baseline_bytes_equal":ai_equal,
+                "scope":"Read the main-agent validator report and independently verified input hashes. Full validator not rerun by this script."}
+        page_path=OUT/"page_integrity.json"
+        if page_path.is_file():
+            report=json.loads(page_path.read_text(encoding="utf-8"))
+            check("external_pixel_report_pdf_binding",report.get("pdf_sha256")==compiled["pdf_sha256"])
+            external_page_integrity={"reviewed":True,"report_sha256":sha(page_path.read_bytes()),
+                "report":report,"scope":"Read and bound the supplied pixel report; did not independently render/compare pixels."}
+    check("q1_snapshot_stable", (ROOT/rel).read_bytes()==snapshot)
+    total=len(checks);passed=sum(c["passed"] for c in checks)
+    result={"phase":"source_and_compiled" if compiled["performed"] else "static_preliminary",
+            "baseline_commit":BASELINE,"q1_baseline_sha256":sha(baseline),"q1_sha256":sha(snapshot),
+            "checked_at_local":datetime.datetime.now().isoformat(timespec="seconds"),
+            "checks":checks,"passed":passed,"total":total,
+            "protected_files":frozen,"authorized_layout_exceptions":layout_exceptions,
+            "q1_local_layout_commands":re.findall(r"\\(?:setlength|renewcommand)\{[^\n]*|\\captionsetup\{[^\n]*",current[:current.index(r"\section{")]),
+            "figure_source_evidence":figure_evidence,"compiled":compiled,
+            "external_validation":external_validation,"external_page_integrity":external_page_integrity,
+            "not_run":["No PDE, parameter scenario, workbook export, or figure generator executed.",
+                       "No visual page inspection or ZIP/GitHub synchronization audit by this script."]+
+                      ([] if compiled["performed"] else ["No final AUX/PDF check; compilation and layout remain pending."])}
+    OUT.mkdir(parents=True,exist_ok=True)
+    (OUT/"independent_audit.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    failed=[c["id"] for c in checks if not c["passed"]]
+    md=f"""# 第六章独立审核
+
+状态：{'源码及编译产物核验' if compiled['performed'] else '静态初审；最终编译与分页待核'}。基线：`{BASELINE}`。
+受检 `q1.tex` SHA256：`{sha(snapshot)}`。
+
+实际完成 {passed}/{total} 项检查。未通过：{', '.join(failed) if failed else '无'}。逐项证据及保护文件哈希见配套 JSON。
+
+科学保护区从原式9开始至6.3末：比较时只豁免图环境、图表放置选项、局部分页/浮动间距及空白，不豁免科学文字、公式或数值。6.4另核对完整数字序列、全部内联数学、舍入声明、中截面证据边界与两句物理限定。源码以常热物性、固定骨架与初始干密度均匀作为约化条件。
+
+正文仍为12个一级章；源码顺序预期为11幅图：原图1不动，新增边界图为图2，原图2至10顺延为3至11。44个显示方程原块未改；标签编号由源码顺序核对，最终 AUX 另核。主文件、其他未调整章节、原图资产、六份结果表及旧页数证据单独作字节保护核验。
+
+额外布局豁免严格按已读取 diff 检查：Q4 仅 Needspace18→6、添加说明注释并删除紧接收缩图的 FloatBarrier 及一个空行，以及在“半径重建方式也影响终时。”段前添加 Needspace3；参考文献仅 itemsep=.35em→1pt、parsep/parskip=0pt。对两份文件分别将基线作上述精确替换后与当前全文比较，科学文字、公式、图注、文献记录均未豁免。它们不能称为整文件字节未变。
+
+Q1 采用章内局部段间距0pt plus 1pt、显示间距4pt、浮动间距8pt及表格arraystretch1.0；图注间距5pt。实际命令列于JSON。字号/行距命令未新增，全局 main.tex 保持。上述为局部布局变更，不称为排版参数完全不变。
+
+绘图输入检查仅独立比较文件哈希与基线、来源清单，不执行生成脚本，也不据清单布尔值冒充独立图像或数组渲染验证。
+
+"""
+    if compiled["performed"]:
+        md+=f"实际读取 PDF SHA256：`{compiled['pdf_sha256']}`；总页数 {compiled['total_pages']}，正文 {compiled['body_pages']}，附录 {compiled['appendix_pages']}。AUX 已核对引用目标、全部公式编号、全部图号及文献引用；PDF 已核对未解析符号、禁词与结构。未作逐页视觉审核。\n\n"
+    else:
+        md+="最终 PDF/AUX/页数与逐页视觉检查尚未执行，不能将静态初审称作最终编译通过。\n\n"
+    if external_validation["reviewed"]:
+        md+=f"另实际读取主代理的 pdf_validation.json，并独立核对其PDF、AUX、预期表清单及AI详情文件的输入哈希绑定。该整套验证的实际状态为 **{external_validation['reported_status']}**，计数 {external_validation['reported_check_counts']}；六表合计 {external_validation['reported_table_matched_cells']} 格通过。以上为已读取的主代理报告结果，不冒充本脚本重跑全套验证器。\n\n"
+        for failure in external_validation["reported_failures"]:
+            md+=f"未通过项：`{failure['id']}`。原始证据：{json.dumps(failure.get('evidence'),ensure_ascii=False)}。\n\n"
+        md+="该 AI工具使用详情.pdf 已独立确认与本轮基线原字节一致；第3页字形边框超25mm框2.046pt，超过2pt容差，属于既有文件的实际未通过项。本轮没有改动它，也没有放宽验证器阈值。因此本报告的独立专项检查通过不等于整套交付检查全部通过。\n\n"
+    if external_page_integrity["reviewed"]:
+        md+="另读取并绑定主代理72dpi页对比记录，其中摘要与127页附录像素不变；本脚本未重做该像素对比，不将其列作独立视觉通过。\n\n"
+    md+="本脚本仅写本轮 independent_audit.json 与 independent_audit.md；未编辑论文或旧证据，未运行 PDE、参数情景或任何结果重算，未检查 ZIP 或远程同步。\n"
+    (OUT/"independent_audit.md").write_text(md,encoding="utf-8")
+    print(json.dumps({"phase":result["phase"],"passed":passed,"total":total,"failed":failed,"q1_sha256":sha(snapshot),"compiled":compiled},ensure_ascii=False,indent=2))
+    return 0 if passed==total else 1
+
+if __name__ == "__main__":
+    raise SystemExit(main())
+
