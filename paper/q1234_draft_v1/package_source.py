@@ -6,7 +6,7 @@ import zipfile
 
 BASE = Path(__file__).resolve().parent
 OUT = BASE / "四问论文LaTeX源稿_v1.zip"
-roots = ["main.tex", "ai_details.tex", "body_preview.tex", "build.ps1",
+roots = ["main.tex", "ai_details.tex", "AI工具使用详情.pdf", "body_preview.tex", "build.ps1",
          "build_assets.py", "build_dimension_reduction.py", "build_visual_assets.py", "build_refined_assets.py", "build_workflow_spacing.py", "build_font_assets.py", "build_question_workflows.py", "figures/dimension_reduction.png", "validate_paper.py", "package_source.py", "README.md"]
 files = [BASE / name for name in roots]
 files.extend((BASE / "figures" / "visual_revision").glob("*.png"))

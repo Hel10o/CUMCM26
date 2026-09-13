@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-09-13T05:28:19.968627+00:00",
+  "delivery_baseline": "a99ca4b633f76d3d648c3a1e276696c92910cd3f",
+  "checks": {
+    "six_A4_pages": true,
+    "all_pages_have_text": true,
+    "consecutive_footer_numbers": true,
+    "no_missing_glyph_or_overflow_warning": true,
+    "no_replacement_glyphs": true,
+    "author_empty": true,
+    "no_personal_paths_or_account_identifiers": true,
+    "key_sections_and_status": true,
+    "all_fonts_embedded": true,
+    "published_pdf_equals_build": true,
+    "protected_files_unchanged_since_delivery_baseline": true,
+    "independent_review_matches_source": true,
+    "all_text_inside_page": true,
+    "unchanged_rendered_pages_match": true,
+    "all_explicit_source_paths_exist": true
+  },
+  "passed": true,
+  "pdf_pages": 6,
+  "pdf_bytes": 163725,
+  "pdf_sha256": "1205e7ca15f45487d766543719c9e4ee154aa3e1d9c9284c2a373e1d4a4bb9f5",
+  "source_sha256": "5c2ab1703d283a00932a1025cf10cdcbfbf5477de1b33e7c58314f22286dd344",
+  "paper_pdf_sha256": "a6f09e673336eec0d57c0ccfc2e2d751d811754b29a77a563f0bd17baf5482b2",
+  "protected_files_checked": 2893,
+  "unexpected_changed_files": [],
+  "compile_command": "latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error -outdir=build/ai_usage_20260913 ai_details.tex",
+  "compile_exit_code": 0,
+  "visual_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "method": "Poppler all-page render, contact sheet and full-page image inspection. Final affected pages 1,4,5 re-inspected; pages 2,3,6 pixel-identical to inspected version.",
+    "findings": "No clipping, missing characters, table overlap or orphan spill pages."
+  },
+  "boundaries": [
+    "Document verification only; no PDE rerun.",
+    "No new human scientific sign-off.",
+    "External Pro model unverified."
+  ]
+}

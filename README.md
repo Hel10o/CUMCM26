@@ -1,6 +1,8 @@
 # libai
 
-本轮按用户确认将第三章模型假设由八条改为六条，基线为 `d5787b1c21856049f6e234588cad389587b7f1eb`。保留批准文字及加粗，补明初始干密度均匀；题表空间解释、内部仅扩散、边界恒等映射及输入插值等约定迁入统一模型，原环境平台公式和引用保留。摘要、结论、四问结果、图表与限制章不改。PDF仍158页（摘要1页、正文30页、附录127页）；30项独立静态审核、37项PDF检查及六表279格核对通过，仅物理页3—6变化，其余154页像素一致。见[六条假设修订记录](paper/q1234_draft_v1/evidence/assumptions_six_20260913/模型假设六条版修订记录.md)、[新旧假设全文](paper/q1234_draft_v1/evidence/assumptions_six_20260913/assumptions_comparison.md)及[页面核验](paper/q1234_draft_v1/evidence/assumptions_six_20260913/page_integrity.json)。
+本轮将AI工具使用详情补全为6页，覆盖四问建模、专项及整体复审、论文起草和9月12—13日修订；补充真实任务节录、输出采纳与用户局部确认记录，保留外部Pro型号及全文人工核验记录尚待补齐的状态。说明与现有正文声明一致；本轮不修改论文正文与四问数值，并保留同期提交的模型假设取消加粗版本，论文仍158页。已完成独立内容审阅、六页PDF检查，并更新可编辑源稿包；该包现同时包含说明PDF与LaTeX。见[AI工具使用详情](paper/q1234_draft_v1/AI工具使用详情.pdf)、[本轮修订与核验](paper/q1234_draft_v1/evidence/ai_usage_20260913/修订记录.md)。
+
+此前一轮按用户确认将第三章模型假设由八条改为六条，基线为 `d5787b1c21856049f6e234588cad389587b7f1eb`。保留批准文字及加粗，补明初始干密度均匀；题表空间解释、内部仅扩散、边界恒等映射及输入插值等约定迁入统一模型，原环境平台公式和引用保留。摘要、结论、四问结果、图表与限制章不改。PDF仍158页（摘要1页、正文30页、附录127页）；30项独立静态审核、37项PDF检查及六表279格核对通过，仅物理页3—6变化，其余154页像素一致。见[六条假设修订记录](paper/q1234_draft_v1/evidence/assumptions_six_20260913/模型假设六条版修订记录.md)、[新旧假设全文](paper/q1234_draft_v1/evidence/assumptions_six_20260913/assumptions_comparison.md)及[页面核验](paper/q1234_draft_v1/evidence/assumptions_six_20260913/page_integrity.json)。
 
 此前一轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/page_integrity.json)。
 

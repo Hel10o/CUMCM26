@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-13T05:23:59.551175+00:00",
+  "checked_date": "2026-09-13",
+  "method": "Official web text inspection plus direct page snapshot; historical attachments preserved",
+  "sources": [
+    {
+      "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+      "file": "ai_rules_2026.html",
+      "status": 200,
+      "bytes": 8528,
+      "sha256": "5b80b9b932cac141f72d3b3932f82de0f5c5371180b7c471dab4f2028590af58"
+    },
+    {
+      "url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "file": "format_2026.html",
+      "status": 200,
+      "bytes": 12619,
+      "sha256": "2aa27a6c74ddc0385c924f29fac1d91ab1511f15a01042cdc2ee8a6d49293e8a"
+    }
+  ],
+  "ai_rule_scope": "Articles 2, 3 and 4; typical examples optional; full dialogue export not required; language polishing exception limited to article 4(4)."
+}

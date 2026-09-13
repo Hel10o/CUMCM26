@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-09-13T05:29:02.838718+00:00",
+  "checks": {
+    "zip_crc": true,
+    "unique_entries": true,
+    "inner_outer_manifest_equal": true,
+    "member_set_complete": true,
+    "every_member_equals_disk": true,
+    "all_hashes_match": true,
+    "current_AI_pdf_and_source_included": true,
+    "counts_match": true,
+    "size_matches": true,
+    "zip_hash_matches": true,
+    "sha_sidecar_matches": true,
+    "latest_assumptions_match": true
+  },
+  "source_count": 553,
+  "zip_entry_count": 554,
+  "zip_bytes": 33365823,
+  "zip_sha256": "ac2e5014bcaaf5e753bdb4bc0f59b898d2f963d643d9d5d9dda625ae67785ad1",
+  "ai_pdf_sha256": "1205e7ca15f45487d766543719c9e4ee154aa3e1d9c9284c2a373e1d4a4bb9f5",
+  "exclusion_note": "This source_package.json is excluded from ZIP by existing rule to avoid self-reference."
+}
