@@ -1,0 +1,13 @@
+{
+  "read_commit": "c22a44b7abdbe98a326b0e08054f4d51b57dd854",
+  "origin_main": "c22a44b7abdbe98a326b0e08054f4d51b57dd854",
+  "pdf_sha256": "62e51169824e5e856119994c18141c7b5e114dc8aaaaf4afca950b551abeee27",
+  "source_sha256_before": "f82bf1ab2f29d5c7b46430c0a0ceb7b59a29a09ae401ac7dc6e0116778b30037",
+  "source_sha256_after": "cf8f7dd7af292306fe85ebb8ce4b885bdaca69b6c677e457443e28c21e9938cf",
+  "user_reference": "C:/Users/libai/AppData/Local/Temp/codex-clipboard-4eca7db5-f10e-4f2d-9106-0eff1c604dd1.png",
+  "reference_used_for": "Numbered items with bold lead, colon, plain explanatory text; no subject matter imported",
+  "untracked_preserved": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}
