@@ -1,0 +1,18 @@
+{
+  "baseline_commit": "2206ae259332121e6392f0543fe8e7759595912f",
+  "q3_8_1_onward_bytes": 8842,
+  "preserved_numeric_tokens_in_8_1_onward": 104,
+  "other_original_scientific_sources_tables_figures_unchanged": 110,
+  "existing_caption_and_label_unchanged": true,
+  "body_font_or_line_spacing_changed": false,
+  "local_spacing_change": {
+    "parskip_pt": 2,
+    "abovedisplayskip_pt": 8,
+    "belowdisplayskip_pt": 8,
+    "abovedisplayshortskip_pt": 6,
+    "belowdisplayshortskip_pt": 6
+  },
+  "solvers_or_scenarios_run": false,
+  "q3_8_1_onward_text_identical_after_removing_single_mbox_wrapper": true,
+  "no_break_phrase": "其中空间加密参考"
+}

@@ -1,0 +1,12 @@
+{
+  "historical_files_byte_unchanged": 9,
+  "prior_report_git_json_match": true,
+  "zip_crc": "passed",
+  "figure_member_listing_exact": 12,
+  "other_figures_hash_match_prior": 11,
+  "current_source_list_match": true,
+  "numeric_members_hash_match_prior": 5,
+  "zip_bytes": 11288228,
+  "zip_sha256": "eceb65a8936b3a2b09182e3f37f71c7e61e79a96ed60bf9d880c2ba752f3c642",
+  "members": 94
+}

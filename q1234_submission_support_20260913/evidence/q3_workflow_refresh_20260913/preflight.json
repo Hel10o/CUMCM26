@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "2206ae259332121e6392f0543fe8e7759595912f",
+  "baseline_zip_sha256": "b127ea501b815e0032e396e6757b69668e27e98b0e7106b862c43f3aacd8a5bc",
+  "members": 94,
+  "figures": 12,
+  "old_q3_present": true,
+  "new_q3_absent": true,
+  "prepared_script_syntax": "passed",
+  "historical_files_sha256": {
+    "refresh_figures.py": "216431f445116c4d2df0e203a8b8de445476cb6fc26562c7b46dcfd2ca3c9e96",
+    "refresh_q2_heatmap.py": "80c51d08a61351a765c643b65451b812a8c62e7252ca51e046f235adb5d9e1d3",
+    "evidence/q2_figure_refresh_20260913/baseline_package_report.json": "65d1f6417951f9dba4074e33bed215d0f9fc2d9539bee5b0bcc491ae2160cb29",
+    "evidence/q2_figure_refresh_20260913/refresh_report.json": "44c25252103d4b4d3bf6ad9474078e721f4f9b2a8ffa22fca94f35b867b197eb",
+    "evidence/q2_figure_refresh_20260913/刷新记录.md": "2bacabcbd80966cb364cc5bc3633c5a18db597d30cb0d3887eb8da8da2af1f5e",
+    "evidence/q2_heatmap_refresh_20260913/final_readback.json": "7964d50b48f10b47e78ae84455741ab5d3ba5fa89e009274ac7beae953bb96a5",
+    "evidence/q2_heatmap_refresh_20260913/prior_report.json": "44c25252103d4b4d3bf6ad9474078e721f4f9b2a8ffa22fca94f35b867b197eb",
+    "evidence/q2_heatmap_refresh_20260913/refresh_report.json": "f6fdb67fc595ba709c1129f867fa9296396fcd0a94148c6d0a918329036aabeb",
+    "evidence/q2_heatmap_refresh_20260913/刷新记录.md": "65fa9c068e3f40e18c3cc19539cd476c76a4fc5498bd5adba4648c22cf0993ec"
+  },
+  "final_refresh_executed": false
+}

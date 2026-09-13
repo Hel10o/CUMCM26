@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "2206ae259332121e6392f0543fe8e7759595912f",
+  "local_and_remote_equal": true,
+  "working_tree_initially_clean": true,
+  "inputs": {
+    "D:\\Desktop\\CUMCM26\\AGENTS.md": {
+      "bytes": 2571,
+      "sha256": "e023f7faf848b3597a420b4b16e503c471449f5fc577a92cbb5e78b7436aaa75"
+    },
+    "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\sections\\q3.tex": {
+      "bytes": 9172,
+      "sha256": "731e6fddc8a8df4a1e7a2ce5c52570c81405a2f689d08a6a74510c7de47cbcc4"
+    },
+    "C:\\Users\\libai\\AppData\\Local\\Temp\\codex-clipboard-ab4802a7-32ee-4dfd-bbc6-75c5ee2098dc.png": {
+      "bytes": 122611,
+      "sha256": "bbc0ac5c66fe9045118aa811f67ee55a7b5a2bce0249b66ba74307912ef36f85"
+    },
+    "C:\\Users\\libai\\AppData\\Local\\Temp\\codex-clipboard-1cfa6cb9-e87b-42c5-b7c8-a8795bc42d92.png": {
+      "bytes": 133145,
+      "sha256": "82ce827f57f8ce90e43e9e51681f710b290d9f642127ea1ccf4c61c63c7744ef"
+    }
+  },
+  "before_pdf_sha256": "f8801469d3ee7f9a2b75633a54473138f2cc131e32fc68b023626710bf332e96"
+}

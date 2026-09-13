@@ -1,0 +1,421 @@
+{
+  "dimensions_cm": [
+    15.0,
+    3.2
+  ],
+  "text_bounds_checks": [
+    {
+      "text": "问题二温湿轨迹\n阈值0.15 kg/kg",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "网格加密\n独立积分对照",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "下降穿越检测\n括区定位候选根",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "设置经验\n数值余量",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "径向重构极值\n复核等号根",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "向上选取执行点\n复核严格不等式",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    },
+    {
+      "text": "模型干燥时长\n57.4741 h\n径向含水率分布",
+      "font_pt": 10.0,
+      "inside_canvas": true
+    }
+  ],
+  "outputs": {
+    "paper/q1234_draft_v1/figures/q3_intro/q3_workflow.pdf": {
+      "sha256": "360735eeb04898b7c4bdca66ad3c6409eb4cb4c533b93938915926c653740c1d",
+      "bytes": 38317
+    },
+    "paper/q1234_draft_v1/figures/q3_intro/q3_workflow.svg": {
+      "sha256": "32f561e2a901b9a1dd447778924bb1231bc6074d820eaeb0604628912419eae1",
+      "bytes": 99178
+    },
+    "paper/q1234_draft_v1/figures/q3_intro/q3_workflow.png": {
+      "sha256": "f7e75a55549b78d425ca3e69a68b1d39bb774f58d8f4f2979289724d15ba0735",
+      "bytes": 267486
+    }
+  },
+  "baseline_commit": "2206ae259332121e6392f0543fe8e7759595912f",
+  "source": {
+    "commit": "2206ae259332121e6392f0543fe8e7759595912f",
+    "path": "paper/q1234_draft_v1/sections/q3.tex",
+    "sha256": "731e6fddc8a8df4a1e7a2ce5c52570c81405a2f689d08a6a74510c7de47cbcc4",
+    "excerpts": [
+      {
+        "purpose": "shared_trajectory_and_threshold",
+        "start_line": 15,
+        "end_line": 29,
+        "text": "问题三要求药材各处的干基含水率严格低于\n$C_{\\mathrm{lim}}=0.15\\unit{kg/kg}$\\cite{problem}。\n本文沿用问题二的附录3物性、初态和环境条件，\n由同一温湿联立轨迹确定终点，而不以表面含水率或截面平均值代替最大值。\n因此，本问直接沿用式\\eqref{eq:q2-radial}的控制方程及\n式\\eqref{eq:q2-semidscrete}、\\eqref{eq:q2-robin}的离散闭合，\n新增的求解任务是从时间轨迹中定位满足全径向约束的执行点。\n在一维径向近似中定义\n\\begin{equation}\n M_1(t)=\\max_{0\\le r\\le R_0}C(r,t),\\qquad\n M_1(t_{*,3})=C_{\\mathrm{lim}}.\n \\label{eq:q3-event}\n\\end{equation}\n所取事件为结束附近的下降穿越。\n等号根是严格达标时间集合的边界，根本身不满足题设严格不等式；"
+      },
+      {
+        "purpose": "node_crossing_then_radial_reconstruction",
+        "start_line": 79,
+        "end_line": 85,
+        "text": "实际程序先以内部节点事件$g_{\\rm node}(t)=\\max_{j<N}C_j(t)-C_{\\rm lim}$\n检测下降穿越。当相邻接受步满足\n$g_{\\rm node}(t_a)>0$、$g_{\\rm node}(t_b)\\le0$时，利用Radau的步内连续插值\n对$g_{\\rm node}(t)=0$作Brent括区求根，再在候选根和执行点按\n式\\eqref{eq:q3-reconstructed-max}复核，并用根两侧节点值检查下降穿越。\n本算例确认根与执行点的重构最大值均位于轴心，节点候选根才可用于所述径向终点。\n若重构出现更湿的内部点，就必须重新定位事件，不能直接接受节点根。"
+      },
+      {
+        "purpose": "empirical_margin_and_upward_selection",
+        "start_line": 102,
+        "end_line": 125,
+        "text": "一维模型的临界根为\n$t_{*,3}=206906.389932328\\unit{s}$，即约57.4739972\\unit{h}。\n为区分数值根、执行点和四位小时显示值，\n取显示时间量子$\\Delta t=0.0001\\unit{h}=0.36\\unit{s}$，\n并按空间、时间及独立方法差异设置\n$\\varepsilon_{t,3}=0.03\\unit{s}$的经验数值余量，选择\n\\begin{equation}\n t_{\\mathrm{exec},3}\n =\\Delta t\\left\\lceil\n \\frac{t_{*,3}+\\varepsilon_{t,3}}{\\Delta t}\\right\\rceil\n =206906.76\\unit{s}\n =\\boxed{57.4741\\unit{h}}.\n \\label{eq:q3-execution}\n\\end{equation}\n在该实际时刻重新代入未舍入一维场，得到\n\\begin{equation}\n M_1(t_{\\mathrm{exec},3})\n =0.149999892208\\unit{kg/kg}<0.15\\unit{kg/kg}.\n \\label{eq:q3-end-moisture}\n\\end{equation}\n执行点比临界根晚约0.3701\\unit{s}。\n这里的经验余量用于当前方程的数值选择，\n不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。\n"
+      },
+      {
+        "purpose": "scope_of_margin",
+        "start_line": 123,
+        "end_line": 125,
+        "text": "这里的经验余量用于当前方程的数值选择，\n不含环境、边界映射和物性假设的不确定性，也不是实验安全上界。\n"
+      },
+      {
+        "purpose": "radial_output_and_independent_checks",
+        "start_line": 141,
+        "end_line": 150,
+        "text": "完整的\\texttt{result3.xlsx}以60\\unit{s}为间隔、0.1\\unit{cm}为径向间隔输出，\n并在最后一个完整分钟206880\\unit{s}之后补入执行点206906.76\\unit{s}。\n末行轴心显示为0.1500，是式\\eqref{eq:q3-end-moisture}的四位舍入值；\n达标判断使用未舍入场而不使用表格显示值。\n160阶空间加密参考和另一隐式时间方法在全部72429个规定水分输出上四位一致，\n其中空间加密参考与正式轨迹的最大未舍入差约\n$9.33\\times10^{-9}\\unit{kg/kg}$。\n该结果支持已选方程的数值稳定性，不替代物理参数验证。\n\n\\begin{figure}[htbp]"
+      }
+    ]
+  },
+  "script": "paper/q1234_draft_v1/build_q3_intro_workflow.py",
+  "script_sha256": "15dcbaf506365bbc1b8b9d1e658216e5446ada4145ff3d80d013f2319ae280e7",
+  "reused_layout_builder": {
+    "path": "paper/q1234_draft_v1/build_question_workflows.py",
+    "sha256": "e98838aa04dfced5fbc148864fa05df0de9974d74c6fbce5d772631ea27a7733",
+    "used": "Q3 specification, node columns and centers, and six-edge connector implementation."
+  },
+  "style_helper": {
+    "path": "paper/q1234_draft_v1/build_ch6_assets.py",
+    "sha256": "d88d2d06752c35755916224e27edfc87743025e5727bf397e2f4e3749588aa09",
+    "used": "Font configuration, canvas, text-bounds verification, deterministic vector/PDF/PNG save."
+  },
+  "font_size_pt": 10.0,
+  "line_spacing": 1.18,
+  "fonts": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "pdf_fonts": [
+    [
+      15,
+      "ttf",
+      "Type0",
+      "FOQVPO+SimSun",
+      "F1",
+      "Identity-H",
+      0
+    ],
+    [
+      22,
+      "ttf",
+      "Type0",
+      "DMCDBZ+TimesNewRomanPSMT",
+      "F2",
+      "Identity-H",
+      0
+    ]
+  ],
+  "pdf_font_check": "SimSun and Times New Roman embedded as Type0 font subsets.",
+  "nodes": [
+    {
+      "id": "trajectory",
+      "x": 1.52,
+      "y": 2.38,
+      "w": 2.8,
+      "h": 1.06,
+      "text": "问题二温湿轨迹\n阈值0.15 kg/kg",
+      "kind": "input",
+      "fill": "#F8DDE2",
+      "reference_letter": "A"
+    },
+    {
+      "id": "checks",
+      "x": 1.52,
+      "y": 0.8,
+      "w": 2.8,
+      "h": 1.06,
+      "text": "网格加密\n独立积分对照",
+      "kind": "input",
+      "fill": "#F1BAC5",
+      "reference_letter": "D"
+    },
+    {
+      "id": "candidate",
+      "x": 5.39,
+      "y": 2.38,
+      "w": 3.02,
+      "h": 1.06,
+      "text": "下降穿越检测\n括区定位候选根",
+      "kind": "process",
+      "fill": "#DFEEF5",
+      "reference_letter": "B"
+    },
+    {
+      "id": "margin",
+      "x": 5.39,
+      "y": 0.8,
+      "w": 3.02,
+      "h": 1.06,
+      "text": "设置经验\n数值余量",
+      "kind": "process",
+      "fill": "#BFE3F0",
+      "reference_letter": "E"
+    },
+    {
+      "id": "root",
+      "x": 9.19,
+      "y": 2.38,
+      "w": 3.02,
+      "h": 1.06,
+      "text": "径向重构极值\n复核等号根",
+      "kind": "process",
+      "fill": "#E1F0D8",
+      "reference_letter": "C"
+    },
+    {
+      "id": "execution",
+      "x": 9.19,
+      "y": 0.8,
+      "w": 3.02,
+      "h": 1.06,
+      "text": "向上选取执行点\n复核严格不等式",
+      "kind": "process",
+      "fill": "#C2E4AD",
+      "reference_letter": "F"
+    },
+    {
+      "id": "output",
+      "x": 13.12,
+      "y": 1.59,
+      "w": 3.43,
+      "h": 1.55,
+      "text": "模型干燥时长\n57.4741 h\n径向含水率分布",
+      "kind": "output",
+      "fill": "#FFF3CC",
+      "reference_letter": "G"
+    }
+  ],
+  "edges": [
+    {
+      "from": "trajectory",
+      "to": "candidate",
+      "from_letter": "A",
+      "to_letter": "B",
+      "kind": "direct",
+      "points": [
+        [
+          2.92,
+          2.38
+        ],
+        [
+          3.88,
+          2.38
+        ]
+      ]
+    },
+    {
+      "from": "candidate",
+      "to": "root",
+      "from_letter": "B",
+      "to_letter": "C",
+      "kind": "direct",
+      "points": [
+        [
+          6.8999999999999995,
+          2.38
+        ],
+        [
+          7.68,
+          2.38
+        ]
+      ]
+    },
+    {
+      "from": "checks",
+      "to": "margin",
+      "from_letter": "D",
+      "to_letter": "E",
+      "kind": "direct",
+      "points": [
+        [
+          2.92,
+          0.8
+        ],
+        [
+          3.88,
+          0.8
+        ]
+      ]
+    },
+    {
+      "from": "margin",
+      "to": "execution",
+      "from_letter": "E",
+      "to_letter": "F",
+      "kind": "direct",
+      "points": [
+        [
+          6.8999999999999995,
+          0.8
+        ],
+        [
+          7.68,
+          0.8
+        ]
+      ]
+    },
+    {
+      "from": "root",
+      "to": "execution",
+      "from_letter": "C",
+      "to_letter": "F",
+      "kind": "down",
+      "points": [
+        [
+          9.19,
+          1.8499999999999999
+        ],
+        [
+          9.19,
+          1.33
+        ]
+      ]
+    },
+    {
+      "from": "execution",
+      "to": "output",
+      "from_letter": "F",
+      "to_letter": "G",
+      "kind": "merge",
+      "points": [
+        [
+          10.7,
+          0.8
+        ],
+        [
+          11.052499999999998,
+          0.8
+        ],
+        [
+          11.052499999999998,
+          1.59
+        ],
+        [
+          11.405,
+          1.59
+        ]
+      ]
+    }
+  ],
+  "node_text_checks": [
+    {
+      "node": "trajectory",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 98.0,
+      "text_height_px": 29.80088975694443,
+      "node_width_px": 110.23622047244093,
+      "node_height_px": 41.73228346456695
+    },
+    {
+      "node": "checks",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 84.0,
+      "text_height_px": 29.800889756944443,
+      "node_width_px": 110.23622047244093,
+      "node_height_px": 41.73228346456693
+    },
+    {
+      "node": "candidate",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 97.99999999999997,
+      "text_height_px": 29.80088975694443,
+      "node_width_px": 118.89763779527556,
+      "node_height_px": 41.73228346456695
+    },
+    {
+      "node": "margin",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 56.0,
+      "text_height_px": 29.800889756944443,
+      "node_width_px": 118.89763779527556,
+      "node_height_px": 41.73228346456693
+    },
+    {
+      "node": "root",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 84.0,
+      "text_height_px": 29.80088975694443,
+      "node_width_px": 118.89763779527561,
+      "node_height_px": 41.73228346456695
+    },
+    {
+      "node": "execution",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 98.0,
+      "text_height_px": 29.800889756944443,
+      "node_width_px": 118.89763779527561,
+      "node_height_px": 41.73228346456693
+    },
+    {
+      "node": "output",
+      "text_inside_node": true,
+      "text_centered": true,
+      "font_pt": 10.0,
+      "line_spacing": 1.18,
+      "text_width_px": 98.0,
+      "text_height_px": 44.70133463541666,
+      "node_width_px": 135.03937007874015,
+      "node_height_px": 61.02362204724411
+    }
+  ],
+  "only_execution_point_feeds_output": true,
+  "meaning": "Node crossing first gives a candidate, then reconstructed radial extrema are checked; an empirical margin and upward time quantization give a separately rechecked execution point. This is the one-dimensional event procedure, not a continuous 2D guarantee.",
+  "scope": "Schematic of the existing one-dimensional event procedure. Empirical margin is not an experimental safety bound or a strict error bound. The final node reports the existing model time and radial output.",
+  "no_numerical_array_reads": true,
+  "PDE_solvers_integrators_or_parameter_scenarios_run": false,
+  "reference_image": {
+    "path": "C:\\Users\\libai\\AppData\\Local\\Temp\\codex-clipboard-1cfa6cb9-e87b-42c5-b7c8-a8795bc42d92.png",
+    "sha256": "82ce827f57f8ce90e43e9e51681f710b290d9f642127ea1ccf4c61c63c7744ef",
+    "adopted": "Two rows of three pastel rectangular nodes merging into a pale-yellow final node.",
+    "not_adopted": "Repeated placeholder text; actual labels and edges come from committed Q3 text.",
+    "actually_viewed": true
+  },
+  "visual_review": {
+    "performed": true,
+    "method": "Viewed generated 600 dpi q3_workflow.png using view_image after successful build.",
+    "result": "Seven nodes and six arrows visible; two three-node rows merge at execution-point check; only this node feeds the right output box. No clipped text or overlap seen. 10 pt labels fit with 1.18 line spacing; pastel rectangles match the requested layout."
+  }
+}

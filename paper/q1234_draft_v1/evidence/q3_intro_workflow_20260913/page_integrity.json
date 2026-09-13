@@ -1,0 +1,35 @@
+{
+  "pdf_sha256": "195b70528d212cf35e511e21cf26a65522a14b26906c85105e69fca98b273ac2",
+  "figure_sha256": "360735eeb04898b7c4bdca66ad3c6409eb4cb4c533b93938915926c653740c1d",
+  "compiled_and_delivered_pdf_identical": true,
+  "pages": 158,
+  "abstract_pages": 1,
+  "body_pages": 30,
+  "appendix_pages": 127,
+  "changed_physical_pages": [
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "unchanged_page_count": 153,
+  "pixel_comparison_dpi": 72,
+  "abstract_pixel_identical": true,
+  "appendix_all_127_pages_pixel_identical": true,
+  "all_label_names_and_numbers_identical": true,
+  "label_page_changes": {
+    "eq:q3-event": {
+      "before": 16,
+      "after": 17
+    }
+  },
+  "paper_validation_counts": {
+    "pass": 25,
+    "info": 1
+  },
+  "matched_table_cells": 279,
+  "log_issue_patterns": [],
+  "AI_details_or_solvers_run": false,
+  "final_pages_16_to_20_match_reviewed_preview": true
+}
