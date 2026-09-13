@@ -1,5 +1,7 @@
 # 四问 LaTeX 论文初稿 v1
 
+本轮按用户要求统一四问章节标题为“问题N：副标题”形式：第六章“第一问”改为“问题一”、第七章“第二问”改为“问题二”，第三、四问标题原本已为该形式故未改。另修复 `build.ps1` 缺 UTF-8 BOM 导致 Windows PowerShell 5.1 按 ANSI 解析、交付 PDF 被写到乱码文件名的问题，并删除两份乱码副本。数值、公式、图表、摘要与结论均未改动。PDF 仍 158 页（摘要1页、正文30页、附录127页）；37 项 PDF 检查与六表 279 格核对通过，仅物理页 7、11 变化，其余 156 页像素一致。见[本轮修订记录](evidence/section_titles_20260913/四问章节标题统一修订记录.md)与[页面核验](evidence/section_titles_20260913/page_integrity.json)。
+
 本轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](evidence/abstract_synthesis_20260913/page_integrity.json)。
 
 此前一轮依据实际读取的main提交 `167a27455a5f2655cf07dc30471febcb67bd7a12` 重构第三章模型假设：六条改为八条，只写假定内容；定义与题给系数分别移入S1/5.2，五处重复免责保留既有11.2/11.3落位，环境选参及中截面题意归属两句迁入11.4/11.3。原环境等式及11.3量化段逐字保持，摘要、结论、四问结果和全部图表数据不改。PDF仍158页（摘要1页、正文30页、附录127页）；九项一致性检查、37项PDF检查及六表279格核对通过。仅物理页3、4、6、29、30、31变化，其余152页像素一致；局部留白调整和完整免责核对见[本轮修订记录](evidence/assumptions_restructure_20260913/模型假设重构与免责落位修订记录.md)、[新旧条目全文](evidence/assumptions_restructure_20260913/assumptions_comparison.md)及[九项清单](evidence/assumptions_restructure_20260913/consistency_checklist.md)。

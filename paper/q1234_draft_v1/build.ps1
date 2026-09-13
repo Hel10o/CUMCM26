@@ -1,4 +1,4 @@
-param([switch]$BodyOnly)
+﻿param([switch]$BodyOnly)
 $ErrorActionPreference = 'Stop'
 Push-Location $PSScriptRoot
 try {
