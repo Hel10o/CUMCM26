@@ -1,0 +1,12 @@
+{
+  "read_commit": "b54834e1290f3514e776c4ca57765336d5d3340b",
+  "origin_main": "b54834e1290f3514e776c4ca57765336d5d3340b",
+  "baseline_pdf_sha256": "1fdddbf34eeb2ad46339dd1d2f120b9c27d43cf0ef389f1ba777a47e8750d03a",
+  "source_sha256_before": "cf8f7dd7af292306fe85ebb8ce4b885bdaca69b6c677e457443e28c21e9938cf",
+  "source_sha256_after": "0aa316378402cb884c79c277b466c7b869ccd613beed859d841fbb44fcbe9391",
+  "user_requested_format": "Bold actual assumption, then colon, then its purpose",
+  "untracked_preserved": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}
