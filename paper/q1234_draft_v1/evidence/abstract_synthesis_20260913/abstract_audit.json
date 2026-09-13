@@ -1,0 +1,874 @@
+{
+  "scope": "用户批准摘要综合版的独立静态审查",
+  "baseline_commit": "9623b9fdb24621f15323df163b7108be8ed324e3",
+  "source_path": "paper/q1234_draft_v1/main.tex",
+  "source_sha256": "fd04d19590e7b09bd1b696ae5f18cfc719c31af365d2605ded8f5bec85519320",
+  "approval_provenance": "父代理转发的本会话用户批准 Markdown 原文；用户随后答“好的，就这一版，修改”。审查人未将由 main.tex 生成的对照文件当作独立批准来源。",
+  "approved_markdown_sha256": "9dfaedfe52a49bbf598064e252bf9650cc17270accc47ee9567721d796545c6f",
+  "approved_markdown": "针对圆柱药材热风干燥过程中的内部温湿分布预测与干燥时间判定问题，本文依据题给环境记录、材料物性及观测半径，构建由常热物性到变物性、由固定几何到径向收缩的递进式传热传质模型。在有效湿度边界、不显式计入潜热及所设后段环境条件下，预测规定时刻与位置的温度和干基含水率，并确定达到规定含水率阈值所需的模型干燥时长。\n\n**针对问题一**，将药材近似为轴对称圆柱体，采用常热物性并考虑水分扩散系数随含水率变化，建立一维径向温湿传递模型。利用**圆环有限体积法**共享相邻单元面通量，并采用**隐式BDF方法**积分，求得预热阶段的径向温湿分布。计算得到1800 s时轴心与表面温度分别为**33.5753 ℃**和**36.7856 ℃**，表面含水率降至**1.5102 kg/kg**，轴心仍接近初始值**2.55 kg/kg**。**结果表明，热量已传入内部而失水仍集中于外层，传热与水分扩散具有不同的时间尺度。**\n\n**针对问题二**，进一步考虑热容量、导热率和扩散率随局部状态变化的反馈，从共同初态建立**变物性热质耦合模型**。采用Chebyshev配点与Radau隐式积分联立求解全过程温湿场，并通过**扩散系数的对数分解**区分升温促进与失水抑制作用。计算得到3 h时轴心与表面温差仅0.1169 K，含水率差仍为**0.7581 kg/kg**；2.5—3 h内两处扩散率均已回落。**结果表明，温度场趋于均匀时，含水率仍存在明显的径向梯度。**\n\n**针对问题三**，在第二问一维径向有效模型的基础上，以全径向最大含水率严格低于0.15 kg/kg为停止条件，建立干燥终点判定模型。采用**重构极值搜索**追踪径向含水率的最大值，计算发现临近干燥终点时轴心含水率仍为径向最大值，因此以轴心达标确定干燥终点。结合网格加密和独立时间积分检验设置数值裕量，在4 h后环境保持末小时均值的假设下，得到**达到规定含水率要求所需的模型干燥时长为57.4741 h。**\n\n**针对问题四**，根据附件2的观测半径，在恒长度、均匀径向收缩假设下，由**干物质守恒**构建**材料坐标模型**，将移动边界转化为固定参考域，避免重复加入干基含水率的体积浓缩项。采用该问物性从初态求解，在同一后段环境假设下得到执行时长**51.0921 h**。进一步设置**同物性恒半径对照**，其临界时间为129.8484 h；**施加观测收缩后，模型临界时间缩短约60.65%。**\n\n综合分析表明，圆柱药材干燥过程中存在明显的**温湿响应不同步**现象，内部最湿位置的失水进程决定所建径向模型的干燥终点；在同物性条件对照中，观测收缩通过几何尺度与干基边界标度的共同变化，显著缩短了模型临界时间。\n\n**关键词：** 药材干燥；变物性；热质耦合；径向收缩；阈值事件",
+  "comparison_normalization": [
+    "忽略排版空白",
+    "unit 宏转换为空格加相同单位",
+    "celsius 宏转换为 ℃",
+    "转义百分号转为 %",
+    "2.5--3 转为 2.5—3",
+    "textbf 转为 Markdown 双星号"
+  ],
+  "main_line_refs": {
+    "针对圆柱药材": 53,
+    "\\textbf{针对问题一}": 55,
+    "\\textbf{针对问题二}": 57,
+    "\\textbf{针对问题三}": 59,
+    "\\textbf{针对问题四}": 61,
+    "综合分析表明": 63,
+    "\\noindent\\textbf{关键词：}": 66
+  },
+  "checks": [
+    {
+      "id": "approved_text_and_markup",
+      "passed": true,
+      "detail": "仅规范化空白、单位宏、摄氏度宏、转义百分号及 2.5--3 到 2.5—3；其余文字和 Markdown 加粗边界逐字相同。"
+    },
+    {
+      "id": "approved_paragraphs",
+      "passed": true,
+      "detail": {
+        "paragraph_count": 7
+      }
+    },
+    {
+      "id": "approved_bold_spans",
+      "passed": true,
+      "detail": {
+        "current_count": 24,
+        "approved_count": 24,
+        "baseline_count": 23,
+        "ordered_current_spans": [
+          "针对问题一",
+          "圆环有限体积法",
+          "隐式BDF方法",
+          "33.5753℃",
+          "36.7856℃",
+          "1.5102kg/kg",
+          "2.55kg/kg",
+          "结果表明，热量已传入内部而失水仍集中于外层，传热与水分扩散具有不同的时间尺度。",
+          "针对问题二",
+          "变物性热质耦合模型",
+          "扩散系数的对数分解",
+          "0.7581kg/kg",
+          "结果表明，温度场趋于均匀时，含水率仍存在明显的径向梯度。",
+          "针对问题三",
+          "重构极值搜索",
+          "达到规定含水率要求所需的模型干燥时长为57.4741h。",
+          "针对问题四",
+          "干物质守恒",
+          "材料坐标模型",
+          "51.0921h",
+          "同物性恒半径对照",
+          "施加观测收缩后，模型临界时间缩短约60.65%。",
+          "温湿响应不同步",
+          "关键词："
+        ]
+      }
+    },
+    {
+      "id": "no_untranslated_macro",
+      "passed": true,
+      "detail": "规范化后无残留 TeX 命令或花括号。"
+    },
+    {
+      "id": "abstract_numeric_sequence",
+      "passed": true,
+      "detail": {
+        "baseline": [
+          "1800",
+          "33.5753",
+          "36.7856",
+          "1.5102",
+          "2.55",
+          "3",
+          "0.1169",
+          "0.7581",
+          "2.5",
+          "3",
+          "0.15",
+          "4",
+          "57.4741",
+          "2",
+          "51.0921",
+          "129.8484",
+          "60.65"
+        ],
+        "current": [
+          "1800",
+          "33.5753",
+          "36.7856",
+          "1.5102",
+          "2.55",
+          "3",
+          "0.1169",
+          "0.7581",
+          "2.5",
+          "3",
+          "0.15",
+          "4",
+          "57.4741",
+          "2",
+          "51.0921",
+          "129.8484",
+          "60.65"
+        ],
+        "count": 17
+      }
+    },
+    {
+      "id": "abstract_numeric_multiset",
+      "passed": true,
+      "detail": {
+        "removed": {},
+        "added": {}
+      }
+    },
+    {
+      "id": "main_prefix_bytes",
+      "passed": true,
+      "detail": "摘要正文前全部原始字节一致，包含全局配置、标题与摘要局部字号行距。"
+    },
+    {
+      "id": "main_suffix_bytes",
+      "passed": true,
+      "detail": "摘要正文后全部原始字节一致，包含正文导入、结论、AI、参考文献及附录。"
+    },
+    {
+      "id": "q3_unchanged",
+      "passed": true,
+      "detail": "问题三整段仅以规范化文本比较；下方亦检查原始段落字节。"
+    },
+    {
+      "id": "q3_raw_bytes",
+      "passed": true,
+      "detail": "问题三整段原始 UTF-8 字节一致。"
+    },
+    {
+      "id": "synthesis_exact",
+      "passed": true,
+      "detail": "批准的新综合分析段完整，保留径向模型与同物性条件对照范围。"
+    },
+    {
+      "id": "no_independent_days_sentence",
+      "passed": true,
+      "detail": "摘要没有独立天数总结句；未新增将不同物性结果视作收缩对照的句子。"
+    },
+    {
+      "id": "abstract_model_limits",
+      "passed": true,
+      "detail": "假设与条件对照仍显式限定；“递进式”未改为数值轨迹串接。"
+    },
+    {
+      "id": "abstract_redlines",
+      "passed": true,
+      "detail": "摘要未出现指定禁词或新增强断言；未据此宣称全文 PDF 扫描已完成。"
+    },
+    {
+      "id": "sections_baseline_blob_equal",
+      "passed": true,
+      "detail": {
+        "files": 8,
+        "mismatch": []
+      }
+    },
+    {
+      "id": "figures_baseline_blob_equal",
+      "passed": true,
+      "detail": {
+        "files": 75,
+        "mismatch": []
+      }
+    },
+    {
+      "id": "tables_baseline_blob_equal",
+      "passed": true,
+      "detail": {
+        "files": 6,
+        "mismatch": []
+      }
+    },
+    {
+      "id": "tracked_change_scope",
+      "passed": true,
+      "detail": {
+        "actual_modified_tracked_paths": [
+          "README.md",
+          "paper/q1234_draft_v1/README.md",
+          "paper/q1234_draft_v1/main.tex",
+          "paper/q1234_draft_v1/四问论文初稿_v1.pdf"
+        ],
+        "note": "主代理正在更新发布文件；本检查只将列出的交付文件视为可变，源文保护通过单独字节检查。"
+      }
+    },
+    {
+      "id": "source_snapshot_stable",
+      "passed": true,
+      "detail": "写入审查记录前再次读取 main.tex 与受检快照完全一致。"
+    }
+  ],
+  "passed": 19,
+  "total": 19,
+  "semantics": [
+    {
+      "topic": "首段物性及适用范围",
+      "finding": "常热物性与 D(C) 随含水率变化一致；有效湿度、不显式潜热、后段环境条件完整保留。",
+      "source_lines": [
+        53,
+        55
+      ]
+    },
+    {
+      "topic": "模型递进与初态",
+      "finding": "第二问共同初态、第四问该问物性从初态求解均显式保留；正文 q2:14–15、q4:15–18 未变，不将四问解释为连续拼接轨迹。"
+    },
+    {
+      "topic": "干燥终点强度",
+      "finding": "Q3 原整段保持；综合段限定为所建径向模型。正文 q4:243–246 及 validation_limits:101 的精细二维与连续界限制未改。"
+    },
+    {
+      "topic": "同物性缩短",
+      "finding": "Q4 同物性对照 129.8484 h 与执行 51.0921 h 的标签保持；60.65% 仍仅称模型临界时间缩短。综合段将几何尺度与干基边界标度共同变化写全，与 q4:264–280 条件对照一致，不用 Q3/Q4 不同物性时长差归因收缩。"
+    },
+    {
+      "topic": "加粗授权",
+      "finding": "逐项等于批准 Markdown；新增综合段的“温湿响应不同步”加粗来自用户批准，不能沿用前一轮“不新增任何加粗”的旧约束。"
+    }
+  ],
+  "protected_files": [
+    {
+      "path": "paper/q1234_draft_v1/figures/dimension_reduction.pdf",
+      "baseline_git_blob": "19821b1106caca871c3806046de20fe6f3ab4383",
+      "current_git_blob": "19821b1106caca871c3806046de20fe6f3ab4383",
+      "sha256": "31a918a8444e5baf5c82f78b816cb6ba1fc5728a7f7f13de669c8151ae4675b9",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/dimension_reduction.png",
+      "baseline_git_blob": "aab0975a8a28eccf44a1f8e2802a820846acf16c",
+      "current_git_blob": "aab0975a8a28eccf44a1f8e2802a820846acf16c",
+      "sha256": "f990578f362d8008a1b0f408eff1e9c9b01e146076c3c2706b420c0ccad842e8",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/environment_sensitivity.pdf",
+      "baseline_git_blob": "aaeceafc5ca381b1a27bff702cb742768e19977d",
+      "current_git_blob": "aaeceafc5ca381b1a27bff702cb742768e19977d",
+      "sha256": "12c43ad14aaa663e20d22070ac07ef302423acb6ce8a07a049b37ddca4799a8e",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/environment_sensitivity.png",
+      "baseline_git_blob": "5001518123fc33f903dcab8ba9cf202608eb634c",
+      "current_git_blob": "5001518123fc33f903dcab8ba9cf202608eb634c",
+      "sha256": "db8b335c71a2948335c4dfc7940666b3f0442e99d9efa753fea1bc8acc64ce71",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/README.md",
+      "baseline_git_blob": "c1c1e12dbae78f5dcc37d1f9b62df643d5c76590",
+      "current_git_blob": "c1c1e12dbae78f5dcc37d1f9b62df643d5c76590",
+      "sha256": "a4c094446247b4a90ed30d3dd5c542968c4016948d3ff8886caa5b0c3364f398",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/dimension_reduction.pdf",
+      "baseline_git_blob": "473e160ec4b72bab1589c70b9fcf15709a29cb45",
+      "current_git_blob": "473e160ec4b72bab1589c70b9fcf15709a29cb45",
+      "sha256": "5f71b9835f2da48eb2b45b29730b8f09c70a0a6bede5d43c645b3ef1660a13d3",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/dimension_reduction.png",
+      "baseline_git_blob": "b77768f3d9b7304668358c9053f4575452172d8a",
+      "current_git_blob": "b77768f3d9b7304668358c9053f4575452172d8a",
+      "sha256": "44cb194deda80982f9608b235419e6e91f1b5095f9182234eb7bc45f6834213b",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/environment_sensitivity.pdf",
+      "baseline_git_blob": "3aad1a8fdb6aeaa58edae7cb26f9d9afefd711de",
+      "current_git_blob": "3aad1a8fdb6aeaa58edae7cb26f9d9afefd711de",
+      "sha256": "7d0cd2c546d4a52b508079af3892e2809dc73cb13809a35d8b2df03204ea9291",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/environment_sensitivity.png",
+      "baseline_git_blob": "65487b965f6c000e5323954c639ea9bc83fb386f",
+      "current_git_blob": "65487b965f6c000e5323954c639ea9bc83fb386f",
+      "sha256": "6917d56c94cb73922794ce79d4e01142fdddf5b851ad1728cf68d9558771c875",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/model_workflow.pdf",
+      "baseline_git_blob": "1ce502b279c0c6be62f701702e9ade445d9e7a07",
+      "current_git_blob": "1ce502b279c0c6be62f701702e9ade445d9e7a07",
+      "sha256": "009819901576e56f713102cfbb055206b35cd7d4d63a6a18e54e7f19e2042f3b",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/model_workflow.png",
+      "baseline_git_blob": "da0ccb70ee9b6a0c30ebac83aea0f4e64cd364f0",
+      "current_git_blob": "da0ccb70ee9b6a0c30ebac83aea0f4e64cd364f0",
+      "sha256": "655a0b7aab06841c0216eaf6d54caa51823c7fdd8a3cddb2f6279d3e054c8a56",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/model_workflow.svg",
+      "baseline_git_blob": "1c265dccde92edf88975a626642ee520676c2550",
+      "current_git_blob": "1c265dccde92edf88975a626642ee520676c2550",
+      "sha256": "098dd26c40963764c6b846d3d83e2830a015048e17dc9bf5aea2e582bd5000b6",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q1_profiles.pdf",
+      "baseline_git_blob": "96218915be3179c92d4691f4ab5d978e6e3210fc",
+      "current_git_blob": "96218915be3179c92d4691f4ab5d978e6e3210fc",
+      "sha256": "c3c90557b9bb29b216cf6cdb6b6e600251b0a88bb4c4192fb4f65219d082b1af",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q1_profiles.png",
+      "baseline_git_blob": "1716ea0c4b5002d0bb975ee715d4c8b8bb133e22",
+      "current_git_blob": "1716ea0c4b5002d0bb975ee715d4c8b8bb133e22",
+      "sha256": "de3fff3a24053c9c8623f912fc754d6e12b83e4aaf3554a656582b6970c88784",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q1_profiles.svg",
+      "baseline_git_blob": "bb0c4b9f5c0e3b221a603f5c6ce3078dde0672fd",
+      "current_git_blob": "bb0c4b9f5c0e3b221a603f5c6ce3078dde0672fd",
+      "sha256": "ca72b3cdc3c1909cea1d05f29220c749bcb8bf8dd4801ea400f0a25917c031cb",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q2_profiles.pdf",
+      "baseline_git_blob": "80acef6c99c4d1d019b6f06b9b20b688f27569e8",
+      "current_git_blob": "80acef6c99c4d1d019b6f06b9b20b688f27569e8",
+      "sha256": "d2e98eb035d31241055e83906d441c110af754d34a0587bd24aee4abf78e2e24",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q2_profiles.png",
+      "baseline_git_blob": "d71d340b6d56dcbc3f372d7a710a2dd4bb793678",
+      "current_git_blob": "d71d340b6d56dcbc3f372d7a710a2dd4bb793678",
+      "sha256": "3cbca3ae5deebb6b2ba52f93e0e16e474ac1fbf4c549647139544f800012e255",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q2_profiles.svg",
+      "baseline_git_blob": "3a32724429cbdcf6f9cc09e1da43d4ba7b50cf14",
+      "current_git_blob": "3a32724429cbdcf6f9cc09e1da43d4ba7b50cf14",
+      "sha256": "96f1cc36c62d0274d1fb47ccca35d7161058053baa152c7ad9f406b1fa07bd53",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q3_q4_drying.pdf",
+      "baseline_git_blob": "e0a9eeb7b37ca5f8a6dd9623c65002658de966d2",
+      "current_git_blob": "e0a9eeb7b37ca5f8a6dd9623c65002658de966d2",
+      "sha256": "530a5a995b2207d637742a1db62fd8b23b5689b39a4bdae4caab8d80c6436de4",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q3_q4_drying.png",
+      "baseline_git_blob": "5e2e8e1009375380ff87fab0b745b911004ef398",
+      "current_git_blob": "5e2e8e1009375380ff87fab0b745b911004ef398",
+      "sha256": "60b2f74ebe02abad9de42df0e6d36a5b71459a157c3a45c873d0e766321bc69f",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q3_q4_drying.svg",
+      "baseline_git_blob": "4a9775c9ff5e094dada2f81f7d1caad705263ffb",
+      "current_git_blob": "4a9775c9ff5e094dada2f81f7d1caad705263ffb",
+      "sha256": "bb886b59940f05ce3ac7ef95e979b7fca3466b4b69b08dd40ff28b2e9dbe140d",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q4_shrinkage.pdf",
+      "baseline_git_blob": "c709b341ae3ebc559383c7f582ee64098a06dd18",
+      "current_git_blob": "c709b341ae3ebc559383c7f582ee64098a06dd18",
+      "sha256": "33c1935a1c3d74f8e30ac55856ea1af62c8c3d8dd858d94af32eae0f88897379",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q4_shrinkage.png",
+      "baseline_git_blob": "ea4b67ad17788e69b02f7322010d7179d6ef0dbd",
+      "current_git_blob": "ea4b67ad17788e69b02f7322010d7179d6ef0dbd",
+      "sha256": "65c6f74a218ccffe7a51f13aebd9d809cb26e881a5f55f60d826d4e93731aad6",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/font_revision/q4_shrinkage.svg",
+      "baseline_git_blob": "cb1c5f9b358027e82d1184105ea5d1b97eba4f41",
+      "current_git_blob": "cb1c5f9b358027e82d1184105ea5d1b97eba4f41",
+      "sha256": "9c86b90659d6b9f7015c1c5d7afcb8bfaf25fe8065af5f5134a2737a5135e1e5",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q1_profiles.pdf",
+      "baseline_git_blob": "72dbbb9df6f28eccc03584805cb60d8f55741407",
+      "current_git_blob": "72dbbb9df6f28eccc03584805cb60d8f55741407",
+      "sha256": "feee5cafdca386b6d90bdf80d930cff73ab306b9693380067bb256581f72cae5",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q1_profiles.png",
+      "baseline_git_blob": "81a5eda5fea67aec356e27e30ab60930fe53b03d",
+      "current_git_blob": "81a5eda5fea67aec356e27e30ab60930fe53b03d",
+      "sha256": "c554e1f802361017dd7bd42b0bc299d37cb7d2f8bf52fb1ba74c80eb7bde1ad1",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q2_profiles.pdf",
+      "baseline_git_blob": "1007f91d4d04907ee32ab8bf779b71626f2f9d2c",
+      "current_git_blob": "1007f91d4d04907ee32ab8bf779b71626f2f9d2c",
+      "sha256": "a89ae57e4085c83f8ee9cd67c3adea1297ec90612e4bfa2275010332dbcfff63",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q2_profiles.png",
+      "baseline_git_blob": "75e849d1d54c85d2a5ef3ac977cf89f3ef2ea133",
+      "current_git_blob": "75e849d1d54c85d2a5ef3ac977cf89f3ef2ea133",
+      "sha256": "3a40ce02a9e871db10c4e608f864308bbfb5964f1f8b182f847876cf3af7f5d6",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q3_q4_drying.pdf",
+      "baseline_git_blob": "29c041efcd5b63b55816141e6ea321a5325372a9",
+      "current_git_blob": "29c041efcd5b63b55816141e6ea321a5325372a9",
+      "sha256": "3a1fbd987c5e4eacdeda03ec00e3a5d1339c8a491b83949dabfe185f98025ebc",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q3_q4_drying.png",
+      "baseline_git_blob": "2fbe0e9e63a902906612c9c7ff8a74f54906b9b0",
+      "current_git_blob": "2fbe0e9e63a902906612c9c7ff8a74f54906b9b0",
+      "sha256": "bb21e4c533bca1b39efb4a7f90afcbcc997210dc1657a120964da186c6dab314",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q4_shrinkage.pdf",
+      "baseline_git_blob": "d2b475698f4b76f09c1a81e264db3c9d2e714623",
+      "current_git_blob": "d2b475698f4b76f09c1a81e264db3c9d2e714623",
+      "sha256": "6b6db91621f0ca08db93271898a0808efc0450cbd68d30a814c863ea4727ec14",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/q4_shrinkage.png",
+      "baseline_git_blob": "9242ef25a69a5c1909ea635ae5e16f09e605ac1c",
+      "current_git_blob": "9242ef25a69a5c1909ea635ae5e16f09e605ac1c",
+      "sha256": "25bc19f50f5835672a77c489eb1773b90ffdc71e6c42271d5d54ecf1a9e30180",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/README.md",
+      "baseline_git_blob": "a3d7f0fa06fa6edabf7f6f36a948202d0577d7e5",
+      "current_git_blob": "a3d7f0fa06fa6edabf7f6f36a948202d0577d7e5",
+      "sha256": "9f23a5c50163cb1eb96db5017d10057421554a90b36407ecffa897c867bce1f4",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q1_workflow.pdf",
+      "baseline_git_blob": "ec1cabcd9941ffa32d37be1b24ce9d175dd70971",
+      "current_git_blob": "ec1cabcd9941ffa32d37be1b24ce9d175dd70971",
+      "sha256": "5e41320aec3ea03b3eb0d431bee648835a5d661809ecbbc4b63b479de4e62f2e",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q1_workflow.png",
+      "baseline_git_blob": "9897e47899d7ee786685273d7a3fc451791020e0",
+      "current_git_blob": "9897e47899d7ee786685273d7a3fc451791020e0",
+      "sha256": "6da3eecb418aecb3374a566450289cf85e8757d229d1d7dc0393761d8b812fe5",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q1_workflow.svg",
+      "baseline_git_blob": "3d539189383a40ba63eeb1f0b3b7f75018d9a709",
+      "current_git_blob": "3d539189383a40ba63eeb1f0b3b7f75018d9a709",
+      "sha256": "9ccdf1d0c05ef621e776d102f0739a06c4ae96e86874131216031a22b9a8c5e8",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q2_workflow.pdf",
+      "baseline_git_blob": "858c919dc9d615f86b6480b02e9fe097c514fb98",
+      "current_git_blob": "858c919dc9d615f86b6480b02e9fe097c514fb98",
+      "sha256": "0d73e56149c539c38640fa1bc0633ec5810fe7a2cfbb550909aad2dbca8bd211",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q2_workflow.png",
+      "baseline_git_blob": "a1cf8c3e2db77d61d1e6a3acc8099d4f7ed1a957",
+      "current_git_blob": "a1cf8c3e2db77d61d1e6a3acc8099d4f7ed1a957",
+      "sha256": "6b657b77f572c3c7bc959f2a75c481f5c1f2ca078ad9dd7d73f88dcc9bf81f14",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q2_workflow.svg",
+      "baseline_git_blob": "e25a9b253dce9d9539ccd5ba797d0d9de49601e2",
+      "current_git_blob": "e25a9b253dce9d9539ccd5ba797d0d9de49601e2",
+      "sha256": "3a28a656b5690d1c1230123ebbfd35cfe7445ed0f1c3e3c9635063af2ea4cc78",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q3_workflow.pdf",
+      "baseline_git_blob": "57c71a2341c520f19836556afd4d89885a619e5c",
+      "current_git_blob": "57c71a2341c520f19836556afd4d89885a619e5c",
+      "sha256": "6efcf69451b4fae7f1b9dd23f50c42b672d2652b7509887914adcd0fa019f887",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q3_workflow.png",
+      "baseline_git_blob": "1dda6e2734a882f322c89cac9288cbdeb8b45ce4",
+      "current_git_blob": "1dda6e2734a882f322c89cac9288cbdeb8b45ce4",
+      "sha256": "eba6c5b2ebedd1a11c97e9b19c21d2188b4be6515dbfe40fe2b4917ca398c81e",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q3_workflow.svg",
+      "baseline_git_blob": "cc0fe07b6fb437deec600909d62eb76727ac8c9d",
+      "current_git_blob": "cc0fe07b6fb437deec600909d62eb76727ac8c9d",
+      "sha256": "152db7b7b5e823d04331a014a37836cf56770e6e224c06edebce3f243cd2b130",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q4_workflow.pdf",
+      "baseline_git_blob": "2985c5bb0af6fb47906586c41f4f8a8df83f603a",
+      "current_git_blob": "2985c5bb0af6fb47906586c41f4f8a8df83f603a",
+      "sha256": "0749f122ef134f8c1fd919d0173cbe917fbea8cad3f84277c9a8e1dc327c47c1",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q4_workflow.png",
+      "baseline_git_blob": "799569b8fecc3a18639730bbc3bafcf39e53b3d1",
+      "current_git_blob": "799569b8fecc3a18639730bbc3bafcf39e53b3d1",
+      "sha256": "b9f898ee7d1f0d6c34db7795ee9b563c262318f0a968c15e35060d75eb590830",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/question_workflows/q4_workflow.svg",
+      "baseline_git_blob": "24e74607ecd996b238943601912129f09d8f91d9",
+      "current_git_blob": "24e74607ecd996b238943601912129f09d8f91d9",
+      "sha256": "e4ac7d52101c35666722b1b76c82612609a53b12b0e672118b14d5a4e327d28f",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.pdf",
+      "baseline_git_blob": "dcf4b42dd28ce3f6e2f130c7954dac6699de52e3",
+      "current_git_blob": "dcf4b42dd28ce3f6e2f130c7954dac6699de52e3",
+      "sha256": "dce22435dd7447f8ed6bfcf08d6799f8fda227374abcceb0d1d54ccb2cc2d100",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.png",
+      "baseline_git_blob": "573b9de758ec813c53949ed52c664e2edfc3a2d3",
+      "current_git_blob": "573b9de758ec813c53949ed52c664e2edfc3a2d3",
+      "sha256": "0d97ff6775f26fcc0776a00ca61af2a149e0b07e6eb0a3761b0324005276fee3",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/model_workflow.svg",
+      "baseline_git_blob": "776394ce6a5d7d78b4366b25f09a0d38eb2f78d1",
+      "current_git_blob": "776394ce6a5d7d78b4366b25f09a0d38eb2f78d1",
+      "sha256": "02c8d6f14e97d6501cf24fadbfabf024ae677d9fa09233964d8cc66caab6e099",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q1_profiles.pdf",
+      "baseline_git_blob": "11fa0d83ead9e6670d53eccf7ad5e0f1bf7fd286",
+      "current_git_blob": "11fa0d83ead9e6670d53eccf7ad5e0f1bf7fd286",
+      "sha256": "7cf5c782b87723c469b04d4564addf7a0a7f68a72890b561a594e5f28cf1dfc4",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q1_profiles.png",
+      "baseline_git_blob": "1466b2b7dbdd166c385b65178dc843d4b63da1cf",
+      "current_git_blob": "1466b2b7dbdd166c385b65178dc843d4b63da1cf",
+      "sha256": "193038d475c911c2f0c2513f543902451434177243d5fc69fcee158d936c1d0d",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q1_profiles.svg",
+      "baseline_git_blob": "8764dad09e77085e7cf695519b21bd24e5c6b391",
+      "current_git_blob": "8764dad09e77085e7cf695519b21bd24e5c6b391",
+      "sha256": "83c561e69e10314628bc60f67aad35856e3592c9edc6fc8a3c1f5b6a329f6ebe",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q2_profiles.pdf",
+      "baseline_git_blob": "cd24acea0aa180b567f86bd61a940e45b5b6c251",
+      "current_git_blob": "cd24acea0aa180b567f86bd61a940e45b5b6c251",
+      "sha256": "b5879111546f1fad87dc4de656e075c12b06a7ff4685a89c7bb5ff4686431bcf",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q2_profiles.png",
+      "baseline_git_blob": "b45d1f628d93a9635db3d89a3e4f54f092b94033",
+      "current_git_blob": "b45d1f628d93a9635db3d89a3e4f54f092b94033",
+      "sha256": "4d984704aafdedcd7024a8538425e717aaccdb7ea90edbe3de7c96232e90c56c",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q2_profiles.svg",
+      "baseline_git_blob": "24b869504aafd904f57766529513789527cbeb68",
+      "current_git_blob": "24b869504aafd904f57766529513789527cbeb68",
+      "sha256": "3e3e1e79cce4868d0b19ead2c09d608519249f65679a08ee20ef2d386285d71f",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q3_q4_drying.pdf",
+      "baseline_git_blob": "2ee56d22f0e2e34865e0d9ffdc442a906c0de459",
+      "current_git_blob": "2ee56d22f0e2e34865e0d9ffdc442a906c0de459",
+      "sha256": "a9518b852d1c284b49d412c895c6fc04622068ab0daf27a68420c4669f9429ed",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q3_q4_drying.png",
+      "baseline_git_blob": "c3ff6d9f4e61e1ff120a6c83f2f81fbc3c35d970",
+      "current_git_blob": "c3ff6d9f4e61e1ff120a6c83f2f81fbc3c35d970",
+      "sha256": "6746528096445c766d9caec572f9d73c75a307a03b2f177c48e1231a37f42d8e",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q3_q4_drying.svg",
+      "baseline_git_blob": "442957a8ab2f64d99a5de607fcbf6f28fe023444",
+      "current_git_blob": "442957a8ab2f64d99a5de607fcbf6f28fe023444",
+      "sha256": "474c3853d3a11be38fb615f462fb3e9cc610dfc98d1a9665c1e7ad60a45a6343",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q4_shrinkage.pdf",
+      "baseline_git_blob": "b0278068c7d3b9e2aba7a5c8ec8bc1e553e6deb5",
+      "current_git_blob": "b0278068c7d3b9e2aba7a5c8ec8bc1e553e6deb5",
+      "sha256": "a80eb4c009453c0f6a8c7bf1cb0dd7959387d7df09505f05467983d23e009bed",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q4_shrinkage.png",
+      "baseline_git_blob": "a4221094c620b995f57b74ea7ee60ebf70b6e23e",
+      "current_git_blob": "a4221094c620b995f57b74ea7ee60ebf70b6e23e",
+      "sha256": "d6ad8841dfdd8c6068b5a8050c837ecf3a930b5e3bca1dfe1d378a804e10f10d",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_refinement/q4_shrinkage.svg",
+      "baseline_git_blob": "86a8c0944478f449a7ae662818727922eec56b25",
+      "current_git_blob": "86a8c0944478f449a7ae662818727922eec56b25",
+      "sha256": "734ebb478c1f56e9136b4b797e517e179b0813fb6ffc8e09a2291959f223f3a1",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/dimension_reduction.pdf",
+      "baseline_git_blob": "de06b9f39fef5669065e829842ed2049f2aad124",
+      "current_git_blob": "de06b9f39fef5669065e829842ed2049f2aad124",
+      "sha256": "02c1089461ebd2a02c902269eb64777977093b31909a5f420d7363adebd02a21",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/dimension_reduction.png",
+      "baseline_git_blob": "70a331122407cc4687966292e96ea80746acc812",
+      "current_git_blob": "70a331122407cc4687966292e96ea80746acc812",
+      "sha256": "ca33e35f850a662ee18a9597997a404b9fb4bc2cdea295c5308f0a9e0fc6fc1b",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/environment_sensitivity.pdf",
+      "baseline_git_blob": "c041d45afd0c3ce479d3e21214982b1684bf2f1e",
+      "current_git_blob": "c041d45afd0c3ce479d3e21214982b1684bf2f1e",
+      "sha256": "03778029c913409499bdc815e8e749b3734062967620475430049b0b348fa747",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/environment_sensitivity.png",
+      "baseline_git_blob": "711a1187cf8dad1ec987e56ac276fdb1f983a48b",
+      "current_git_blob": "711a1187cf8dad1ec987e56ac276fdb1f983a48b",
+      "sha256": "8063a19d4a0cb61e8b7c2c242a5e43bb09b03c6f7bea39be7a2d394ed99b6ab9",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q1_profiles.pdf",
+      "baseline_git_blob": "9ed31516b508d2b8e8a9ad9e06bdafe371d7ea8c",
+      "current_git_blob": "9ed31516b508d2b8e8a9ad9e06bdafe371d7ea8c",
+      "sha256": "a835535aa32ea84a7bd6be8930e52744ae1637794da166cd791a05a792d90c77",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q1_profiles.png",
+      "baseline_git_blob": "3255951bc461b4aa74d598cffab92a428f7ea42e",
+      "current_git_blob": "3255951bc461b4aa74d598cffab92a428f7ea42e",
+      "sha256": "754088d0174a9d895a49cba8054d6c5c14d3c8e1c0d2f475b140db06620b5715",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q2_profiles.pdf",
+      "baseline_git_blob": "954c55f14b96c191a81563e73ee6e73032251191",
+      "current_git_blob": "954c55f14b96c191a81563e73ee6e73032251191",
+      "sha256": "b1ef29ef2406df236cb43289ea57fb5b6ae7bd608dc86e250834a6d4a1bbd41b",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q2_profiles.png",
+      "baseline_git_blob": "2ccab7393574f0e3bd6594557c871f7fa34526bc",
+      "current_git_blob": "2ccab7393574f0e3bd6594557c871f7fa34526bc",
+      "sha256": "ca1d1b11c4bc39aeccde7b9d07be5e9348035360bf152ba5c2437277a95912bf",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.pdf",
+      "baseline_git_blob": "663165dbddde4057de5d4fe54a4a200b1b1b331f",
+      "current_git_blob": "663165dbddde4057de5d4fe54a4a200b1b1b331f",
+      "sha256": "63ab98afe1a69d04b24b0118d39adf028472d0b1caa17eb2f671583fc2b0b7bc",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q3_q4_drying.png",
+      "baseline_git_blob": "06df7ea6f709e68bbfca0aa462ffecdf3dff51fe",
+      "current_git_blob": "06df7ea6f709e68bbfca0aa462ffecdf3dff51fe",
+      "sha256": "ca69b1ea79e9ea0ff5be83d0aa71c06191a10d2d0b7b13d72c4ef2a9a3ee0001",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.pdf",
+      "baseline_git_blob": "c12ee5601b02fb2dc1ddb20d2e341bb4afef6aab",
+      "current_git_blob": "c12ee5601b02fb2dc1ddb20d2e341bb4afef6aab",
+      "sha256": "ce1e5e47efed77236448d5ba652164a185552117e37a379c610148716ff81c12",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/visual_revision/q4_shrinkage.png",
+      "baseline_git_blob": "3a5c5e748999710ecf4036083355ccd9784a723a",
+      "current_git_blob": "3a5c5e748999710ecf4036083355ccd9784a723a",
+      "sha256": "716cf43cfe8a0149b73b056d292be58d256ecf606ba101f17aa36c319faae864",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/workflow_spacing/model_workflow.pdf",
+      "baseline_git_blob": "8657e61342cb6bda3d2b1e22b5632c0a82e80fea",
+      "current_git_blob": "8657e61342cb6bda3d2b1e22b5632c0a82e80fea",
+      "sha256": "3207cbfef3dbf6b3e80b45c02656afad53e87a6217d20aab9542a81764bbf8d6",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/workflow_spacing/model_workflow.png",
+      "baseline_git_blob": "ac2b338eaeaaa8c643f3ef3ff19d7f9b8a427751",
+      "current_git_blob": "ac2b338eaeaaa8c643f3ef3ff19d7f9b8a427751",
+      "sha256": "18c7848ee832ccea60312a31d0c018af57fa55a30ee7c17ec60fca6893e8089c",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/figures/workflow_spacing/model_workflow.svg",
+      "baseline_git_blob": "2aeb6c8f1f981a5512128c3c4048789643b849e5",
+      "current_git_blob": "2aeb6c8f1f981a5512128c3c4048789643b849e5",
+      "sha256": "c8de93d71c01c6d1aa95c245457ddb029ecd069741e8b3baac4bb168336abfcf",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/appendix.tex",
+      "baseline_git_blob": "5a82b27d60384a21709986d410cb4e5dff90e363",
+      "current_git_blob": "5a82b27d60384a21709986d410cb4e5dff90e363",
+      "sha256": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "baseline_git_blob": "765af6a378902196fd24e0f32dcafbfbfd2cfa12",
+      "current_git_blob": "765af6a378902196fd24e0f32dcafbfbfd2cfa12",
+      "sha256": "7759d1d604014d4ea7e210a5ca2cd6395f0fc95e0f12b5404c641fff0bfaafd0",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q1.tex",
+      "baseline_git_blob": "dce29a595182f4b5f64166f1aa29aa2b2f1e5f8c",
+      "current_git_blob": "dce29a595182f4b5f64166f1aa29aa2b2f1e5f8c",
+      "sha256": "2dd125e5d97e7d97b81bfb49431e3a1cf1959c49a058155da428254e4854a6c1",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q2.tex",
+      "baseline_git_blob": "dc96c50a096b27b075368c7e5880a60a88a17fc1",
+      "current_git_blob": "dc96c50a096b27b075368c7e5880a60a88a17fc1",
+      "sha256": "0d22c970719bce87b8bd44574231b95be84d2940787ed81925d7050a8daa24e8",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q3.tex",
+      "baseline_git_blob": "4cfbf19bbf6476cfa399eb94422c18baea5631ae",
+      "current_git_blob": "4cfbf19bbf6476cfa399eb94422c18baea5631ae",
+      "sha256": "731e6fddc8a8df4a1e7a2ce5c52570c81405a2f689d08a6a74510c7de47cbcc4",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/q4.tex",
+      "baseline_git_blob": "d8e1aa9cef1012325cd46fd08e87a84c416b52dc",
+      "current_git_blob": "d8e1aa9cef1012325cd46fd08e87a84c416b52dc",
+      "sha256": "272a9267c1cf21bb6b854476202df20d816de7319e194db8f6ab900589ac10a7",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/references.tex",
+      "baseline_git_blob": "832a9b5de3d3947f51d71e67481c89d1e1d5597d",
+      "current_git_blob": "832a9b5de3d3947f51d71e67481c89d1e1d5597d",
+      "sha256": "426d2e5f53b72f9823fa1314e844b260d6217aeba8759fb348096b5d4b35740e",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "baseline_git_blob": "bc9e27baa28a2ab1339abedba0788e08197e07d3",
+      "current_git_blob": "bc9e27baa28a2ab1339abedba0788e08197e07d3",
+      "sha256": "4b21cd0b8f0073874fc3254dfadf3dc207dcf74c34de904a17f98ad84727576f",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q1_moisture.tex",
+      "baseline_git_blob": "43c4a1d39445bba81be0ee6da91aad084bce7a74",
+      "current_git_blob": "43c4a1d39445bba81be0ee6da91aad084bce7a74",
+      "sha256": "28f7297e44c10604f870d9568134ac7d3713fc1bcb8553da4371fac19672f8b3",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q1_temperature.tex",
+      "baseline_git_blob": "3811407820e7df8ae76685541b0cab1d5cfaf12b",
+      "current_git_blob": "3811407820e7df8ae76685541b0cab1d5cfaf12b",
+      "sha256": "1ed7a7b963bffc274ee112fe63b18e86ae095fb288a796f9f8a998d225ad811b",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q2_moisture.tex",
+      "baseline_git_blob": "4ce4634db42fc01baad9a148f527017ac539b672",
+      "current_git_blob": "4ce4634db42fc01baad9a148f527017ac539b672",
+      "sha256": "2a151adcad9f83659566e428a903fdd39fb217558bbc578ffc006118a15da919",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q2_temperature.tex",
+      "baseline_git_blob": "2a7bdc247331d7e61e15eed18520a9cb55075537",
+      "current_git_blob": "2a7bdc247331d7e61e15eed18520a9cb55075537",
+      "sha256": "e3aa114161029bfc9bbc00b08174413e614312c69c3fa7fd287ad959637bb2ac",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q3_moisture.tex",
+      "baseline_git_blob": "a2baf9837cc5e6bdc141c68b527ef42b591bdeb5",
+      "current_git_blob": "a2baf9837cc5e6bdc141c68b527ef42b591bdeb5",
+      "sha256": "fc5abb663e19d63fa8ce8ffe746c903ec99841bf074d3154566694e9e2ca572c",
+      "equal": true
+    },
+    {
+      "path": "paper/q1234_draft_v1/tables/q4_moisture.tex",
+      "baseline_git_blob": "fa679d69e7efd0853c55b52c59acc4801f7d3bf7",
+      "current_git_blob": "fa679d69e7efd0853c55b52c59acc4801f7d3bf7",
+      "sha256": "cac0f1258d72c809a03915fe409333f07b0230db712377c77bd20abb44637cf9",
+      "equal": true
+    }
+  ],
+  "not_run": [
+    "未编译或运行 PDF 页数、视觉和渲染核查",
+    "未运行任何 PDE、参数情景、求解或重新生成图表",
+    "未检查本轮源稿 ZIP、提交或远程同步；由主代理负责"
+  ],
+  "checked_at_local": "2026-09-13T11:44:03"
+}

@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-09-13T03:45:43.341674+00:00",
+  "checks": {
+    "zip_crc": true,
+    "unique_entries": true,
+    "inner_outer_manifests_identical": true,
+    "member_set_complete": true,
+    "every_member_equals_disk": true,
+    "all_source_and_zip_hashes_match": true,
+    "source_count_matches": true,
+    "size_matches": true,
+    "archive_hash_matches": true,
+    "sha_sidecar_matches": true,
+    "round_check_not_in_archive": true
+  },
+  "source_count": 520,
+  "zip_entry_count": 521,
+  "zip_bytes": 32814308,
+  "zip_sha256": "090dda7a2cf377c29d3d508c9b87cc4360f466644b13b3aca578ff0b21d6c761",
+  "pdf_sha256": "5ee5ab3f0e5064c2cdf92eb0ec47840ea0da097f15cfaa613275c9864e5b54ce",
+  "exclusion_note": "本独立核验文件按现有规则排除在ZIP外，避免自引用哈希。"
+}

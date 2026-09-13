@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "9623b9fdb24621f15323df163b7108be8ed324e3",
+  "origin_main_at_start": "9623b9fdb24621f15323df163b7108be8ed324e3",
+  "baseline_pdf_sha256": "77199330726ac83dfde71e380116d7b37741f4517b1dcbe1ee304cddcd68bce1",
+  "baseline_main_sha256": "813e4fc7b8d122c92ae64bf5ebfaaadf740100595a0097de1ff8d429b5476ccf",
+  "original_pdf_pages": 158,
+  "original_abstract_pages": 1,
+  "original_body_pages": 30,
+  "original_appendix_pages": 127,
+  "user_approval": "用户确认最后展示的完整综合稿；删除独立天数句，结尾保留综合分析。",
+  "untracked_preserved": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}
