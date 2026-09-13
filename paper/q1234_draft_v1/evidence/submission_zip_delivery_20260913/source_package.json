@@ -1,0 +1,26 @@
+{
+  "source_members_verified": 715,
+  "source_zip_sha256": "99da7e9747eff9a397534148b4d0fa73a60e97da451c1b44bedfa9b81416efbb",
+  "support_zip_sha256": "6cb9ee3634512acc93c157a4de20b4080f06c8c2e9142aa8fe59519946148bc3",
+  "source_and_support_README_match": true,
+  "result2_npz_header_and_shape_readback": {
+    "arrays": {
+      "time_s": [
+        206907
+      ],
+      "radius_cm": [
+        21
+      ],
+      "temperature_TC": [
+        206907,
+        21
+      ],
+      "moisture_C": [
+        206907,
+        21
+      ]
+    },
+    "final_time_s": 206906.76
+  },
+  "PDE_or_parameter_scenarios_run": false
+}

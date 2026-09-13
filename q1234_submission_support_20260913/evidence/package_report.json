@@ -1,62 +1,11 @@
 {
-  "operation": "Enlarge ten body figures; refresh only figure sources and the member list",
-  "figure_reference_scope": "main.tex and sections/*.tex only; ai_details.tex not read",
-  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
-  "integrated_ai_commit": "285f3d984190b0655e1a46b8cfffe91b656cc7ea",
-  "baseline_zip_sha256": "8409a3c6358c994d5897cc023de809050e1dc37270d77f2384cde219e78662d8",
-  "baseline_scope": "Paper baseline commit precedes the concurrent AI-only ZIP update; the inspected newer ZIP is retained as input",
-  "concurrent_ai_isolation": "figure_legibility_refresh_20260913/concurrent_ai_isolation.json",
-  "baseline_report": "figure_legibility_refresh_20260913/prior_report.json",
-  "frozen_inputs": "figure_legibility_refresh_20260913/frozen_inputs.json",
-  "pde_or_parameter_scenarios_run": false,
-  "workbooks_or_arrays_reexported": false,
-  "paper_table_numerical_validation": "not rerun; preserved numerical members compared byte for byte",
-  "figure_count": 12,
-  "changed_figure_count": 10,
-  "retained_figures": [
-    {
-      "name": "支撑材料/figures/q1_legibility/q1_profiles.pdf",
-      "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008"
-    },
-    {
-      "name": "支撑材料/figures/q3_white/q3_workflow.pdf",
-      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
-    }
-  ],
-  "all_figures_match_current_paper_bytes": true,
-  "ai_pdf_byte_identical_to_baseline_zip": true,
-  "ai_pdf_sha256": "819e9d88909b3e5f49fb3706c25b4eb280e4d7f49d065dcef26dbf79e455e08d",
-  "ai_pdf_page_count": 3,
-  "other_members_byte_identical_to_baseline_zip": true,
-  "other_members_count": 80,
-  "removed_members": [
-    "支撑材料/figures/ch6_revision/q1_boundary.pdf",
-    "支撑材料/figures/font_revision/dimension_reduction.pdf",
-    "支撑材料/figures/font_revision/environment_sensitivity.pdf",
-    "支撑材料/figures/font_revision/q3_q4_drying.pdf",
-    "支撑材料/figures/font_revision/q4_shrinkage.pdf",
-    "支撑材料/figures/q1_legibility/q1_workflow.pdf",
-    "支撑材料/figures/q2_heatmap/q2_fields.pdf",
-    "支撑材料/figures/q2_revision/q2_mechanism.pdf",
-    "支撑材料/figures/q2_revision/q2_workflow.pdf",
-    "支撑材料/figures/question_workflows/q4_workflow.pdf"
-  ],
-  "added_members": [
-    "支撑材料/figures/legibility_process/q3_q4_drying.pdf",
-    "支撑材料/figures/legibility_process/q4_shrinkage.pdf",
-    "支撑材料/figures/legibility_q2/q2_fields.pdf",
-    "支撑材料/figures/legibility_q2/q2_mechanism.pdf",
-    "支撑材料/figures/legibility_schematics/q1_boundary.pdf",
-    "支撑材料/figures/legibility_schematics/q1_workflow.pdf",
-    "支撑材料/figures/legibility_schematics/q2_workflow.pdf",
-    "支撑材料/figures/legibility_schematics/q4_workflow.pdf",
-    "支撑材料/figures/legibility_validation/dimension_reduction.pdf",
-    "支撑材料/figures/legibility_validation/environment_sensitivity.pdf"
-  ],
+  "operation": "Refresh submission guide and verify existing ZIP; no numerical rerun",
+  "baseline_commit": "13d939f07722bce4ee1d19a94992a91c83dce88f",
+  "baseline_zip_sha256": "031872a5738d2568803722b318c87c7842e51418aca08fdcf7d25cb10c778e2e",
   "changed_existing_members": [
-    "支撑材料/support/图表来源清单.md",
-    "支撑材料/支撑材料文件列表.md"
+    "支撑材料/support/README.md"
   ],
+  "unchanged_member_count": 93,
   "unchanged_numerical_members": [
     {
       "name": "支撑材料/results/result1.xlsx",
@@ -84,71 +33,10 @@
       "bytes": 327524
     }
   ],
-  "current_figure_hashes": [
-    {
-      "name": "支撑材料/figures/legibility_process/q3_q4_drying.pdf",
-      "sha256": "5ed8b1a1d528b66cb16a104f8188e5307e4d80dc422c817135bc50e750cafd04"
-    },
-    {
-      "name": "支撑材料/figures/legibility_process/q4_shrinkage.pdf",
-      "sha256": "10de05a98bf6afe8ac4b565fb9fb2a82a813c613a0d16048520cdc1036c296d3"
-    },
-    {
-      "name": "支撑材料/figures/legibility_q2/q2_fields.pdf",
-      "sha256": "48c7d39f68fb58b52e818e6f5989651376ed97028e438cdd6101edff6b69e153"
-    },
-    {
-      "name": "支撑材料/figures/legibility_q2/q2_mechanism.pdf",
-      "sha256": "93055441a0c2ace07a3d8101b9cf85950040452ef5c1c621482a67a62e8fd1e8"
-    },
-    {
-      "name": "支撑材料/figures/legibility_schematics/q1_boundary.pdf",
-      "sha256": "f6325ab8d665bcd2e21923983bf8c03f7944ddf2bc1c6df54aeaf8f8a67f92d1"
-    },
-    {
-      "name": "支撑材料/figures/legibility_schematics/q1_workflow.pdf",
-      "sha256": "333a05de66aa7c384def334aa1bde46a0593a7f4c2fc182f631ab99bd16e862c"
-    },
-    {
-      "name": "支撑材料/figures/legibility_schematics/q2_workflow.pdf",
-      "sha256": "227684694c332bb079f34e5ac3bc45e7472ba1b9fd25fbc55ea80081c3a9b3a1"
-    },
-    {
-      "name": "支撑材料/figures/legibility_schematics/q4_workflow.pdf",
-      "sha256": "3a28879bd58ae9ff8df45408f59ba9d16c3cb3eef05cbc817105bdb824bd4c69"
-    },
-    {
-      "name": "支撑材料/figures/legibility_validation/dimension_reduction.pdf",
-      "sha256": "eab97f7aba0ca2bd555f9959ce14069a66759b67cab61cfedae333f64bd684d1"
-    },
-    {
-      "name": "支撑材料/figures/legibility_validation/environment_sensitivity.pdf",
-      "sha256": "47826361a4a642d78e100373ccc0db7ad24bab97825f00c9828907b7a5aef56d"
-    },
-    {
-      "name": "支撑材料/figures/q1_legibility/q1_profiles.pdf",
-      "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008"
-    },
-    {
-      "name": "支撑材料/figures/q3_white/q3_workflow.pdf",
-      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
-    }
-  ],
-  "identity_raw_binary_findings": [],
-  "identity_pdf_metadata_findings": [],
-  "identity_scope": "literal token scan of uncompressed members and PDF metadata; not OCR or a full anonymity proof",
-  "workbook_docprops_members": {
-    "支撑材料/results/result1.xlsx": [],
-    "支撑材料/results/result2.xlsx": [],
-    "支撑材料/results/result3.xlsx": [],
-    "支撑材料/results/result4.xlsx": []
-  },
-  "zip_crc_check": "passed",
-  "zip": "D:\\Desktop\\CUMCM26\\q1234_submission_support_20260913\\out\\A题_支撑材料.zip",
-  "zip_bytes": 11188113,
-  "zip_mb": 10.67,
-  "zip_within_20mb": true,
-  "zip_sha256": "031872a5738d2568803722b318c87c7842e51418aca08fdcf7d25cb10c778e2e",
+  "figure_count": 12,
+  "support_files_matched_to_current": 70,
+  "all_figures_match_current_paper_bytes": true,
+  "AI_pdf_matches_current": true,
   "member_count": 94,
   "members": [
     {
@@ -263,8 +151,8 @@
     },
     {
       "name": "支撑材料/support/README.md",
-      "bytes": 12141,
-      "zip_bytes": 6011
+      "bytes": 12763,
+      "zip_bytes": 6259
     },
     {
       "name": "支撑材料/support/launch.py",
@@ -621,5 +509,14 @@
       "bytes": 2486,
       "zip_bytes": 1536
     }
-  ]
+  ],
+  "zip_crc_check": "passed",
+  "all_members_read_back": true,
+  "pde_or_parameter_scenarios_run": false,
+  "workbooks_or_arrays_reexported": false,
+  "zip_bytes": 11188361,
+  "zip_sha256": "6cb9ee3634512acc93c157a4de20b4080f06c8c2e9142aa8fe59519946148bc3",
+  "zip_decimal_mb": 11.19,
+  "zip_mib": 10.67,
+  "prior_checks": "Historical identity and numerical checks remain in prior_report.json; not rerun."
 }
