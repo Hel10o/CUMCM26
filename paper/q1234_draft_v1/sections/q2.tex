@@ -2,12 +2,19 @@
 \label{sec:q2}
 
 \begingroup
-\setlength{\intextsep}{10pt}
+\setlength{\parskip}{0pt}
+\setlength{\intextsep}{0pt}
+\captionsetup{skip=4pt}
+问题二采用附录3变物性，从共同初态联立求解固定半径下的径向温湿场，
+输出规定结果与所设环境延拓下的全程轨迹。求解流程见图\ref{fig:q2-workflow}。
+
 \begin{figure}[H]
-\centering\includegraphics[width=\linewidth]{figures/question_workflows/q2_workflow.pdf}
+\centering\includegraphics[trim=0 6bp 0 6bp,clip,width=\linewidth]{figures/question_workflows/q2_workflow.pdf}
 \caption{问题二求解流程}
 \label{fig:q2-workflow}
 \end{figure}
+% Rebalance only the opening block's white space; subsequent source is unchanged.
+\vspace{-11pt}
 \endgroup
 
 \subsection{从通用方程到变物性耦合系统}

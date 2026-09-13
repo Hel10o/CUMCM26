@@ -1,0 +1,40 @@
+{
+  "baseline_commit": "218d741426a87794fa00560d0631a918d68c7bf3",
+  "q2_7_1_and_all_following_source_bytes_unchanged": true,
+  "unchanged_other_source_files": [
+    "paper/q1234_draft_v1/main.tex",
+    "paper/q1234_draft_v1/sections/appendix.tex",
+    "paper/q1234_draft_v1/sections/problem_model.tex",
+    "paper/q1234_draft_v1/sections/q1.tex",
+    "paper/q1234_draft_v1/sections/q3.tex",
+    "paper/q1234_draft_v1/sections/q4.tex",
+    "paper/q1234_draft_v1/sections/references.tex",
+    "paper/q1234_draft_v1/sections/validation_limits.tex",
+    "paper/q1234_draft_v1/tables/q1_moisture.tex",
+    "paper/q1234_draft_v1/tables/q1_temperature.tex",
+    "paper/q1234_draft_v1/tables/q2_moisture.tex",
+    "paper/q1234_draft_v1/tables/q2_temperature.tex",
+    "paper/q1234_draft_v1/tables/q3_moisture.tex",
+    "paper/q1234_draft_v1/tables/q4_moisture.tex"
+  ],
+  "workflow_pdf_sha256": "0d73e56149c539c38640fa1bc0633ec5810fe7a2cfbb550909aad2dbca8bd211",
+  "workflow_asset_unchanged": true,
+  "workflow_clipping_only_blank_vertical_margins_bp": [
+    6,
+    6
+  ],
+  "all_strokes_and_text_inside_clip": true,
+  "all_aux_labels_unchanged": true,
+  "total_pages": 158,
+  "body_pages": 30,
+  "abstract_pages": 1,
+  "appendix_pages": 127,
+  "changed_physical_pages": [
+    11
+  ],
+  "other_157_pages_pixel_identical": true,
+  "pixel_comparison_dpi": 72,
+  "latex_issues": [],
+  "final_pdf_sha256": "5999d27271d2d6f1d95d14c0d4d4e11762f308e72fed7243cc16d12b87d33d05",
+  "solver_runs": 0
+}
