@@ -1,0 +1,15 @@
+{
+  "final_pdf_sha256": "2b26e33cbec3812822c518fae0e7003f94ad86e31bd7f5e167114ab13d77e121",
+  "total_pages": 158,
+  "abstract_pages": 1,
+  "body_pages": 30,
+  "appendix_pages": 127,
+  "changed_physical_pages": [
+    11
+  ],
+  "other_157_pages_pixel_identical": true,
+  "comparison_dpi": 72,
+  "all_aux_labels_unchanged": true,
+  "latex_errors_or_reference_or_overfull_issues": [],
+  "new_pde_runs": 0
+}
