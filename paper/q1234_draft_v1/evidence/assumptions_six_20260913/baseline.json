@@ -1,0 +1,13 @@
+{
+  "baseline_commit": "d5787b1c21856049f6e234588cad389587b7f1eb",
+  "origin_main_at_start": "d5787b1c21856049f6e234588cad389587b7f1eb",
+  "baseline_pdf_sha256": "dd18deed61c81b1a4b44ad8d25fd41e9605b27b3fc71f7436cc740b898872485",
+  "baseline_source_sha256": "7759d1d604014d4ea7e210a5ca2cd6395f0fc95e0f12b5404c641fff0bfaafd0",
+  "baseline_pdf_pages": 158,
+  "source_newlines": "LF",
+  "protected_user_untracked": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ],
+  "user_approval": "用户确认上一回复六条假设及必要约定迁入对应模型说明，环境公式与引用保留。"
+}

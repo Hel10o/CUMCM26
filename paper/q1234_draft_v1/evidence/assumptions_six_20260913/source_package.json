@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-09-13T05:06:34.191359+00:00",
+  "checks": {
+    "zip_crc": true,
+    "unique_entries": true,
+    "inner_outer_manifest_equal": true,
+    "member_set_complete": true,
+    "every_member_equals_disk": true,
+    "all_hashes_match": true,
+    "counts_match": true,
+    "size_matches": true,
+    "zip_hash_matches": true,
+    "sha_sidecar_matches": true,
+    "own_result_excluded": true
+  },
+  "source_count": 536,
+  "zip_entry_count": 537,
+  "zip_bytes": 32874796,
+  "zip_sha256": "9c7d61fbd3e5f028698b57714ad00fcc0de1b326881cbb164e04c3bd1f989174",
+  "pdf_sha256": "36e04d6c2e94e3ef6063cef4f0d409b8531186df667f5b76cd3015117073664a",
+  "exclusion_note": "本文件按现有打包规则排除在ZIP外，避免自引用哈希。"
+}

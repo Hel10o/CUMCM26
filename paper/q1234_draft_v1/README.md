@@ -1,8 +1,10 @@
 # 四问 LaTeX 论文初稿 v1
 
-本轮按用户要求统一四问章节标题为“问题N：副标题”形式：第六章“第一问”改为“问题一”、第七章“第二问”改为“问题二”，第三、四问标题原本已为该形式故未改。另修复 `build.ps1` 缺 UTF-8 BOM 导致 Windows PowerShell 5.1 按 ANSI 解析、交付 PDF 被写到乱码文件名的问题，并删除两份乱码副本。数值、公式、图表、摘要与结论均未改动。PDF 仍 158 页（摘要1页、正文30页、附录127页）；37 项 PDF 检查与六表 279 格核对通过，仅物理页 7、11 变化，其余 156 页像素一致。见[本轮修订记录](evidence/section_titles_20260913/四问章节标题统一修订记录.md)与[页面核验](evidence/section_titles_20260913/page_integrity.json)。
+本轮按用户确认将第三章模型假设由八条改为六条，基线为 `d5787b1c21856049f6e234588cad389587b7f1eb`。保留批准文字及加粗，补明初始干密度均匀；题表空间解释、内部仅扩散、边界恒等映射及输入插值等约定迁入统一模型，原环境平台公式和引用保留。摘要、结论、四问结果、图表与限制章不改。PDF仍158页（摘要1页、正文30页、附录127页）；30项独立静态审核、37项PDF检查及六表279格核对通过，仅物理页3—6变化，其余154页像素一致。见[六条假设修订记录](evidence/assumptions_six_20260913/模型假设六条版修订记录.md)、[新旧假设全文](evidence/assumptions_six_20260913/assumptions_comparison.md)及[页面核验](evidence/assumptions_six_20260913/page_integrity.json)。
 
-本轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](evidence/abstract_synthesis_20260913/page_integrity.json)。
+此前一轮按用户要求统一四问章节标题为“问题N：副标题”形式：第六章“第一问”改为“问题一”、第七章“第二问”改为“问题二”，第三、四问标题原本已为该形式故未改。另修复 `build.ps1` 缺 UTF-8 BOM 导致 Windows PowerShell 5.1 按 ANSI 解析、交付 PDF 被写到乱码文件名的问题，并删除两份乱码副本。数值、公式、图表、摘要与结论均未改动。PDF 仍 158 页（摘要1页、正文30页、附录127页）；37 项 PDF 检查与六表 279 格核对通过，仅物理页 7、11 变化，其余 156 页像素一致。见[本轮修订记录](evidence/section_titles_20260913/四问章节标题统一修订记录.md)与[页面核验](evidence/section_titles_20260913/page_integrity.json)。
+
+此前一轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](evidence/abstract_synthesis_20260913/page_integrity.json)。
 
 此前一轮依据实际读取的main提交 `167a27455a5f2655cf07dc30471febcb67bd7a12` 重构第三章模型假设：六条改为八条，只写假定内容；定义与题给系数分别移入S1/5.2，五处重复免责保留既有11.2/11.3落位，环境选参及中截面题意归属两句迁入11.4/11.3。原环境等式及11.3量化段逐字保持，摘要、结论、四问结果和全部图表数据不改。PDF仍158页（摘要1页、正文30页、附录127页）；九项一致性检查、37项PDF检查及六表279格核对通过。仅物理页3、4、6、29、30、31变化，其余152页像素一致；局部留白调整和完整免责核对见[本轮修订记录](evidence/assumptions_restructure_20260913/模型假设重构与免责落位修订记录.md)、[新旧条目全文](evidence/assumptions_restructure_20260913/assumptions_comparison.md)及[九项清单](evidence/assumptions_restructure_20260913/consistency_checklist.md)。
 
@@ -62,7 +64,7 @@
 
 摘要中的核心方法、比较前提与主要执行时长选择性加粗；当前用词见页首新旧摘要全文，历次[重点排版说明](evidence/abstract_emphasis_20260912/摘要重点排版说明.md)保留。摘要采用 11.5 pt 字号、18 pt 行距、5 pt 段间距，见[摘要间距调整与规范核验](evidence/abstract_spacing_20260912/摘要间距调整说明.md)。
 
-正文保留小四字号、1.30 行距系数及 5 pt 段间距，见此前[正文排版修订说明](evidence/body_spacing_20260912/正文排版修订说明.md)。当前 12 个正文一级标题为“一、”至“十二、”编号，居中并独占一行；二级编号采用 1.1、1.2、4.1 等形式，见[一级标题调整说明](evidence/section_titles_20260912/一级标题调整说明.md)。此前新增推导时，正文含 AI 声明和参考文献共 27 页；摘要 1 页、附录 127 页，总计 155 页。摘要不变，第三问结果图表位于有限圆柱检验之前；见[此前推导及页面核对](evidence/derivations_20260912/derivation_check.json)及[该轮 PDF 检查](evidence/derivations_20260912/pdf_validation.json)。以下历次验收记录保留，当前PDF状态以页首摘要综合稿替换记录为准。
+正文保留小四字号、1.30 行距系数及 5 pt 段间距，见此前[正文排版修订说明](evidence/body_spacing_20260912/正文排版修订说明.md)。当前 12 个正文一级标题为“一、”至“十二、”编号，居中并独占一行；二级编号采用 1.1、1.2、4.1 等形式，见[一级标题调整说明](evidence/section_titles_20260912/一级标题调整说明.md)。此前新增推导时，正文含 AI 声明和参考文献共 27 页；摘要 1 页、附录 127 页，总计 155 页。摘要不变，第三问结果图表位于有限圆柱检验之前；见[此前推导及页面核对](evidence/derivations_20260912/derivation_check.json)及[该轮 PDF 检查](evidence/derivations_20260912/pdf_validation.json)。以下历次验收记录保留，当前PDF状态以页首六条假设修订记录为准。
 
 - [论文 PDF](四问论文初稿_v1.pdf)
 - [LaTeX 主文件](main.tex)与[可编辑源稿 ZIP](四问论文LaTeX源稿_v1.zip)

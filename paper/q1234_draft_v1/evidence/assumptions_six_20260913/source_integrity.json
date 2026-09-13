@@ -1,0 +1,25 @@
+{
+  "baseline_commit": "d5787b1c21856049f6e234588cad389587b7f1eb",
+  "source_sha256": "0052a0fbde54b891959d18febca03dceaca3861154f7635fd8583f1e8177b253",
+  "old_assumption_count": 8,
+  "new_assumption_count": 6,
+  "future_equation_exact": true,
+  "future_within_assumptions": true,
+  "display_equations_exact_and_same_order": true,
+  "symbol_table_and_pagination_exact": true,
+  "main_abstract_conclusion_exact": true,
+  "limits_entire_source_exact": true,
+  "protected_file_count": 665,
+  "all_protected_bytes_equal": true,
+  "changed_protected_paths": [],
+  "new_crossrefs": [
+    "ass:midsection",
+    "eq:future"
+  ],
+  "no_numeric_result_changes": true,
+  "not_run": [
+    "PDE",
+    "parameter scenarios",
+    "figure generation"
+  ]
+}

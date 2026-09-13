@@ -1,6 +1,8 @@
 # libai
 
-本轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/page_integrity.json)。
+本轮按用户确认将第三章模型假设由八条改为六条，基线为 `d5787b1c21856049f6e234588cad389587b7f1eb`。保留批准文字及加粗，补明初始干密度均匀；题表空间解释、内部仅扩散、边界恒等映射及输入插值等约定迁入统一模型，原环境平台公式和引用保留。摘要、结论、四问结果、图表与限制章不改。PDF仍158页（摘要1页、正文30页、附录127页）；30项独立静态审核、37项PDF检查及六表279格核对通过，仅物理页3—6变化，其余154页像素一致。见[六条假设修订记录](paper/q1234_draft_v1/evidence/assumptions_six_20260913/模型假设六条版修订记录.md)、[新旧假设全文](paper/q1234_draft_v1/evidence/assumptions_six_20260913/assumptions_comparison.md)及[页面核验](paper/q1234_draft_v1/evidence/assumptions_six_20260913/page_integrity.json)。
+
+此前一轮按用户确认替换摘要综合稿，基线为本地与远程一致的 `9623b9fdb24621f15323df163b7108be8ed324e3`。首段交代问题、输入、递进模型与输出；结尾采用综合分析，不追加独立天数换算句。数值、关键词、正文、图表及全局排版不改。PDF仍158页（摘要1页、正文30页、附录127页）；37项PDF检查、六表279格核对通过，仅摘要页变化，其余157页含页脚像素一致。见[摘要综合稿替换记录](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/摘要综合稿确认与替换记录.md)、[新旧摘要全文](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/abstract_comparison.md)和[页面核验](paper/q1234_draft_v1/evidence/abstract_synthesis_20260913/page_integrity.json)。
 
 此前一轮依据实际读取的main提交 `167a27455a5f2655cf07dc30471febcb67bd7a12` 重构第三章模型假设：六条改为八条，只写假定内容；定义与题给系数分别移入S1/5.2，五处重复免责保留既有11.2/11.3落位，环境选参及中截面题意归属两句迁入11.4/11.3。原环境等式及11.3量化段逐字保持，摘要、结论、四问结果和全部图表数据不改。PDF仍158页（摘要1页、正文30页、附录127页）；九项一致性检查、37项PDF检查及六表279格核对通过。仅物理页3、4、6、29、30、31变化，其余152页像素一致；局部留白调整和完整免责核对见[本轮修订记录](paper/q1234_draft_v1/evidence/assumptions_restructure_20260913/模型假设重构与免责落位修订记录.md)、[新旧条目全文](paper/q1234_draft_v1/evidence/assumptions_restructure_20260913/assumptions_comparison.md)及[九项清单](paper/q1234_draft_v1/evidence/assumptions_restructure_20260913/consistency_checklist.md)。
 
@@ -44,7 +46,7 @@
 
 此前结构修订基于实际读取的 GitHub main 提交 `b51ca5671e693c01bb04db7d312ce548cf621d89`：第八章改为“模型检验：降维有效性与后段环境灵敏度”，第九章改为“模型评价、适用范围与推广”并列出六项有证据的优点，结论保留两段，附录增加代码导览。摘要、所有数值与求解源码保持；正文仍为 10 个一级标题、27 页（含 AI 声明及参考文献）。见[本轮修订记录与九项检查](paper/q1234_draft_v1/evidence/structure_revision_20260912/论文结构与表述修订记录.md)。
 
-当前论文已补齐“通用方程→分问代入与化简→离散与求解→结果”的推导链，四问均有与实际代码相符的求解公式，见[四问推导补充说明](paper/q1234_draft_v1/evidence/derivations_20260912/四问公式推导补充说明.md)和[公式与代码对应表](paper/q1234_draft_v1/evidence/derivations_20260912/公式与代码对应表.md)。当前正文为30页（含AI声明与参考文献），总PDF为158页，页面核验见页首摘要综合稿替换记录；保留小四字号与放宽后的行距、段距、公式和图表留白，见此前[正文排版修订](paper/q1234_draft_v1/evidence/body_spacing_20260912/正文排版修订说明.md)。12个一级标题以“一、二、三……”编号，均居中并各占一行，见[一级标题修订记录](paper/q1234_draft_v1/evidence/section_titles_20260912/一级标题调整说明.md)。
+当前论文已补齐“通用方程→分问代入与化简→离散与求解→结果”的推导链，四问均有与实际代码相符的求解公式，见[四问推导补充说明](paper/q1234_draft_v1/evidence/derivations_20260912/四问公式推导补充说明.md)和[公式与代码对应表](paper/q1234_draft_v1/evidence/derivations_20260912/公式与代码对应表.md)。当前正文为30页（含AI声明与参考文献），总PDF为158页，页面核验见页首六条假设修订记录；保留小四字号与放宽后的行距、段距、公式和图表留白，见此前[正文排版修订](paper/q1234_draft_v1/evidence/body_spacing_20260912/正文排版修订说明.md)。12个一级标题以“一、二、三……”编号，均居中并各占一行，见[一级标题修订记录](paper/q1234_draft_v1/evidence/section_titles_20260912/一级标题调整说明.md)。
 
 论文摘要参照用户给出的范文，以加粗“针对问题一／二／三／四”各自起段，按“任务与建模、求解方法、主要结果、结果解释”展开，并选择性加粗真实方法、比较前提与关键数值，见[此前仿写摘要](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写稿.md)及[仿写修订记录](paper/q1234_draft_v1/evidence/abstract_sample_20260912/摘要仿写说明.md)。摘要采用 11.5 pt 字号、18 pt 行距和 5 pt 段间距，保留单页，沿用此前[间距调整与官方规范核验](paper/q1234_draft_v1/evidence/abstract_spacing_20260912/摘要间距调整说明.md)；前次结构修订未修改摘要，此前摘要加粗轮只新增四问结论句和上述两项含水率的加粗格式，附录源代码及科学结果不变。
 
