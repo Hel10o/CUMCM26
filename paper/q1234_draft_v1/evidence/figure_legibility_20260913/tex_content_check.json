@@ -1,0 +1,61 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "all_tex_scientific_text_math_numbers_format_commands_unchanged": true,
+  "records": [
+    {
+      "file": "paper/q1234_draft_v1/sections/appendix.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7",
+      "current_sha256": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/problem_model.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "98d2dada6f97bf3e57786d323b0dd1385cd337dde65d88473124658c323ab4e0",
+      "current_sha256": "98d2dada6f97bf3e57786d323b0dd1385cd337dde65d88473124658c323ab4e0"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/q1.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "c30a6f069b0fc03f34017272797df9e9973861696bb98857850213504bb9b818",
+      "current_sha256": "64dc544dd00a79cfd44ee17fdb813645d932a6b7bcf869f25dc42ba96a62e843"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/q2.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "803ce46cc03063c7cccc2980fb2322be9a7e014a040d893971e93ea4e5b3f663",
+      "current_sha256": "b93f106dc8f038afa5052e47cd98721607c236bc7192b5af6589f8e944ce4dfd"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/q3.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "32a11747e8689f07ecda5264310dd81a0710e722f6ebc3723e292af4b5a34693",
+      "current_sha256": "2c4c406bcc29f0e1df88cab4478c79be6a6c35aaf14df3a378532510ea254edd"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/q4.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "40ad13221c575c72084b5125421813ddf457ef67e8b06867052c3e5e03f5e73d",
+      "current_sha256": "0c63f8aa0ae29a90736a7d88a345ac57a35b6c19ef0d74a2bf231777e6873512"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/references.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "7be9686c430fefc7e1e9a8c00ed9d7b5cc214b8ed5621271154127fde5c15d49",
+      "current_sha256": "7be9686c430fefc7e1e9a8c00ed9d7b5cc214b8ed5621271154127fde5c15d49"
+    },
+    {
+      "file": "paper/q1234_draft_v1/sections/validation_limits.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "4b21cd0b8f0073874fc3254dfadf3dc207dcf74c34de904a17f98ad84727576f",
+      "current_sha256": "c9ad308132e86c5b36f0a5cd767529bdc66beb9efff7b3203902dd730f07398f"
+    },
+    {
+      "file": "paper/q1234_draft_v1/main.tex",
+      "only_allowed_graphics_paths_changed": true,
+      "baseline_sha256": "2d989fea10445d7e698a8b1e9ab65fd7d538ae3d5e26599ef60f4b99da637460",
+      "current_sha256": "2d989fea10445d7e698a8b1e9ab65fd7d538ae3d5e26599ef60f4b99da637460"
+    }
+  ],
+  "verification_target": "Original figure-only working state and independently prepared compile_source_snapshot.json; later concurrent bibliography edits remain outside this scope."
+}

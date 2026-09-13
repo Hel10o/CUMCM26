@@ -1,0 +1,486 @@
+[
+  {
+    "number": 1,
+    "path": "figures/legibility_schematics/q1_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q1.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "9.2": 18,
+        "9.6": 3
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "d3a6d1abb5d360e06e33c0468995dc04c45cb92a281868e5f5793e9497d914d0"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "10.0": 18,
+        "10.5": 3
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "333a05de66aa7c384def334aa1bde46a0593a7f4c2fc182f631ab99bd16e862c"
+    }
+  },
+  {
+    "number": 2,
+    "path": "figures/legibility_schematics/q1_boundary.pdf",
+    "width_cm": 15.0,
+    "section": "q1.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        4.3
+      ],
+      "actual_font_pt_span_counts": {
+        "6.3": 3,
+        "6.37": 2,
+        "7.07": 10,
+        "9.0": 17,
+        "9.1": 24,
+        "9.3": 7,
+        "9.6": 4,
+        "10.0": 1,
+        "10.1": 42
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "6b240171e30e32203350fbc89bcd3fc34887e97625ce0da6b8bed5f26f1af3cb"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        4.3
+      ],
+      "actual_font_pt_span_counts": {
+        "7.0": 5,
+        "7.35": 10,
+        "10.0": 49,
+        "10.5": 46
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "f6325ab8d665bcd2e21923983bf8c03f7944ddf2bc1c6df54aeaf8f8a67f92d1"
+    }
+  },
+  {
+    "number": 3,
+    "path": "figures/q1_legibility/q1_profiles.pdf",
+    "width_cm": 14.1,
+    "section": "q1.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        7.1
+      ],
+      "actual_font_pt_span_counts": {
+        "9.46": 40,
+        "9.72": 12,
+        "10.49": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        7.1
+      ],
+      "actual_font_pt_span_counts": {
+        "9.46": 40,
+        "9.72": 12,
+        "10.49": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008"
+    }
+  },
+  {
+    "number": 4,
+    "path": "figures/legibility_schematics/q2_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q2.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "9.2": 20,
+        "9.6": 3
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "311495f4379b487103efb386a152d63c5aa4994cb31c32f59d0854c443e18475"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "10.0": 20,
+        "10.5": 3
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "227684694c332bb079f34e5ac3bc45e7472ba1b9fd25fbc55ea80081c3a9b3a1"
+    }
+  },
+  {
+    "number": 5,
+    "path": "figures/legibility_q2/q2_fields.pdf",
+    "width_cm": 14.1,
+    "section": "q2.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        8.1
+      ],
+      "actual_font_pt_span_counts": {
+        "8.77": 28,
+        "8.94": 4,
+        "9.11": 14,
+        "9.29": 12,
+        "9.89": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "47fd500235089fddc27d421ead469e8ca59c268ad14d499f8b6dde9a051b4a0e"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        8.1
+      ],
+      "actual_font_pt_span_counts": {
+        "9.5": 28,
+        "9.63": 18,
+        "9.72": 12,
+        "10.49": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "48c7d39f68fb58b52e818e6f5989651376ed97028e438cdd6101edff6b69e153"
+    }
+  },
+  {
+    "number": 6,
+    "path": "figures/legibility_q2/q2_mechanism.pdf",
+    "width_cm": 15.0,
+    "section": "q2.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        5.5
+      ],
+      "actual_font_pt_span_counts": {
+        "9.0": 20,
+        "9.1": 6,
+        "9.2": 7,
+        "9.6": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "1232f3159f306b7f5358823ad1092e57e3be67d281b47eb079c9398e5652aa43"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        5.5
+      ],
+      "actual_font_pt_span_counts": {
+        "9.5": 20,
+        "9.6": 6,
+        "9.7": 7,
+        "10.5": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "93055441a0c2ace07a3d8101b9cf85950040452ef5c1c621482a67a62e8fd1e8"
+    }
+  },
+  {
+    "number": 7,
+    "path": "figures/q3_white/q3_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q3.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "10.0": 16
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "10.0": 16
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
+    }
+  },
+  {
+    "number": 8,
+    "path": "figures/legibility_process/q3_q4_drying.pdf",
+    "width_cm": 13.950000000000001,
+    "section": "q3.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        8.0
+      ],
+      "actual_font_pt_span_counts": {
+        "5.95": 1,
+        "6.21": 34,
+        "6.38": 2,
+        "6.46": 4,
+        "6.97": 6,
+        "7.4": 9
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "530a5a995b2207d637742a1db62fd8b23b5689b39a4bdae4caab8d80c6436de4"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        8.0
+      ],
+      "actual_font_pt_span_counts": {
+        "9.7": 41,
+        "9.82": 6,
+        "10.51": 9
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "5ed8b1a1d528b66cb16a104f8188e5307e4d80dc422c817135bc50e750cafd04"
+    }
+  },
+  {
+    "number": 9,
+    "path": "figures/legibility_schematics/q4_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q4.tex",
+    "before": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "9.2": 17
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "0749f122ef134f8c1fd919d0173cbe917fbea8cad3f84277c9a8e1dc327c47c1"
+    },
+    "after": {
+      "dimensions_cm": [
+        15.0,
+        3.2
+      ],
+      "actual_font_pt_span_counts": {
+        "10.0": 17
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "3a28879bd58ae9ff8df45408f59ba9d16c3cb3eef05cbc817105bdb824bd4c69"
+    }
+  },
+  {
+    "number": 10,
+    "path": "figures/legibility_process/q4_shrinkage.pdf",
+    "width_cm": 13.8,
+    "section": "q4.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        9.2
+      ],
+      "actual_font_pt_span_counts": {
+        "5.05": 1,
+        "5.47": 2,
+        "5.72": 13,
+        "5.89": 7,
+        "5.97": 4,
+        "6.06": 2,
+        "6.14": 21,
+        "6.31": 1,
+        "6.82": 6,
+        "6.9": 8,
+        "7.74": 4
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "33c1935a1c3d74f8e30ac55856ea1af62c8c3d8dd858d94af32eae0f88897379"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        10.6
+      ],
+      "actual_font_pt_span_counts": {
+        "9.59": 49,
+        "9.72": 10,
+        "10.52": 10
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "10de05a98bf6afe8ac4b565fb9fb2a82a813c613a0d16048520cdc1036c296d3"
+    }
+  },
+  {
+    "number": 11,
+    "path": "figures/legibility_validation/dimension_reduction.pdf",
+    "width_cm": 14.7,
+    "section": "validation_limits.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        9.0
+      ],
+      "actual_font_pt_span_counts": {
+        "4.77": 3,
+        "5.27": 2,
+        "6.27": 1,
+        "6.54": 33,
+        "6.63": 6,
+        "6.81": 12,
+        "6.9": 9,
+        "6.99": 1,
+        "7.35": 2,
+        "7.53": 7,
+        "7.8": 11
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "5f71b9835f2da48eb2b45b29730b8f09c70a0a6bede5d43c645b3ef1660a13d3"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        9.0
+      ],
+      "actual_font_pt_span_counts": {
+        "6.65": 3,
+        "7.03": 2,
+        "9.5": 56,
+        "9.77": 8,
+        "10.04": 7,
+        "10.49": 11
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPS-ItalicMT",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "eab97f7aba0ca2bd555f9959ce14069a66759b67cab61cfedae333f64bd684d1"
+    }
+  },
+  {
+    "number": 12,
+    "path": "figures/legibility_validation/environment_sensitivity.pdf",
+    "width_cm": 13.950000000000001,
+    "section": "validation_limits.tex",
+    "before": {
+      "dimensions_cm": [
+        16.4,
+        6.2
+      ],
+      "actual_font_pt_span_counts": {
+        "5.95": 3,
+        "6.21": 19,
+        "6.55": 8,
+        "6.97": 2,
+        "7.66": 2
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "7d0cd2c546d4a52b508079af3892e2809dc73cb13809a35d8b2df03204ea9291"
+    },
+    "after": {
+      "dimensions_cm": [
+        16.4,
+        6.2
+      ],
+      "actual_font_pt_span_counts": {
+        "9.53": 30,
+        "9.7": 2,
+        "10.55": 2
+      },
+      "fonts": [
+        "SimSun",
+        "TimesNewRomanPSMT"
+      ],
+      "sha256": "47826361a4a642d78e100373ccc0db7ad24bab97825f00c9828907b7a5aef56d"
+    }
+  }
+]

@@ -1,5 +1,7 @@
 # 四问 LaTeX 论文初稿 v1
 
+本轮以6.3图3为字号基准，放大图1、2、4、5、6、8、9、10、11、12的图内文字，正文实际主字号约9.5—10.5 pt；图3及图7保持原字节。中文宋体、英文数字Times New Roman，流程图白底；仅图10为容纳大字加高至16.4×10.6 cm。已存数组、全部结果数字与图中科学内容保持，未运行PDE求解或参数情景。重新编译后PDF仍158页（摘要1、正文30、附录127页），论文专项25项通过、六表279格一致。详见[图内字号修订记录](evidence/figure_legibility_20260913/图内字号统一修订记录.md)。
+
 本轮按2026年AI使用规定改写支撑材料中的`AI工具使用详情.pdf`：登记ChatGPT桌面端与GPT-6 Astra，用途为求解代码、文献检索和语言润色；核心模型与论文初稿由参赛队完成。论文参考文献前的声明改为同一官方套话。说明现为3页；论文仍158页（摘要1页、正文30页、附录127页），37项检查与六表279格通过。见[AI工具使用详情](AI工具使用详情.pdf)和[本轮修订记录](evidence/ai_details_contest_20260913/修订记录.md)。
 
 前一轮仅将第三问图7的七个彩色填充改为白色，保留文字、字体、框形和箭头布局；正文只切换图路径。正式PDF、源稿及支撑包同步更新，实际检查见[去色修订记录](evidence/q3_white_20260913/第三问流程图去色记录.md)和[当前白底流程图](figures/q3_white/README.md)。
@@ -126,7 +128,7 @@ python support/launch.py smoke
 
 PDF检查脚本需要 PyMuPDF。只看正文可运行 `./build.ps1 -BodyOnly`；这只是编辑预览，正式初稿始终由 `main.tex` 编译并包含附录。`build/`是未入库的编译中间目录；最终两份PDF位于本目录。
 
-图表已随源稿提供，编译不需要重新求解。当前问题一流程图与6.3热图使用 `build_q1_legibility.py` 生成至 `figures/q1_legibility/`；边界示意图继续使用 `figures/ch6_revision/`；问题二至四流程图继续使用 `figures/question_workflows/`，其余五张数值图使用 `figures/font_revision/`。详见[当前图表来源清单](support/图表来源清单.md)与[第六章绘图说明](figures/ch6_revision/README.md)。历史绘图入口和[原资产清单](evidence/assets_manifest.json)保持，不用于覆盖当前新图。重绘需要完整仓库中的冻结数组及科学Python依赖；独立源稿ZIP直接使用已生成图编译。
+图表已随源稿提供，编译不需要重新求解。当前放大字号的十图分别使用 `build_legibility_schematics.py`、`build_legibility_q2.py`、`build_legibility_process.py`、`build_legibility_validation.py`，输出至对应 `figures/legibility_*/`。基准图3继续使用 `figures/q1_legibility/q1_profiles.pdf`，图7继续使用 `figures/q3_white/q3_workflow.pdf`。详见[当前图表来源清单](support/图表来源清单.md)与[第六章绘图说明](figures/ch6_revision/README.md)。历史绘图入口和[原资产清单](evidence/assets_manifest.json)保持，不用于覆盖当前新图。重绘需要完整仓库中的冻结数组及科学Python依赖；独立源稿ZIP直接使用已生成图编译。
 
 ## 源稿包与提交边界
 

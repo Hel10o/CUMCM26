@@ -1,0 +1,22 @@
+{
+  "base_commit": "285f3d984190b0655e1a46b8cfffe91b656cc7ea",
+  "scope": "Committed paper text plus only ten figure paths; uncommitted concurrent bibliography edits excluded without changing working files.",
+  "tex_sha256": {
+    "main.tex": "2d989fea10445d7e698a8b1e9ab65fd7d538ae3d5e26599ef60f4b99da637460",
+    "body_preview.tex": "40c6feeabaa276bb09dd64d385589c9eaa25a347e5ccca654eabd9fe6d6a8c42",
+    "sections/appendix.tex": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7",
+    "sections/problem_model.tex": "98d2dada6f97bf3e57786d323b0dd1385cd337dde65d88473124658c323ab4e0",
+    "sections/q1.tex": "64dc544dd00a79cfd44ee17fdb813645d932a6b7bcf869f25dc42ba96a62e843",
+    "sections/q2.tex": "b93f106dc8f038afa5052e47cd98721607c236bc7192b5af6589f8e944ce4dfd",
+    "sections/q3.tex": "2c4c406bcc29f0e1df88cab4478c79be6a6c35aaf14df3a378532510ea254edd",
+    "sections/q4.tex": "0c63f8aa0ae29a90736a7d88a345ac57a35b6c19ef0d74a2bf231777e6873512",
+    "sections/references.tex": "7be9686c430fefc7e1e9a8c00ed9d7b5cc214b8ed5621271154127fde5c15d49",
+    "sections/validation_limits.tex": "c9ad308132e86c5b36f0a5cd767529bdc66beb9efff7b3203902dd730f07398f",
+    "tables/q1_moisture.tex": "28f7297e44c10604f870d9568134ac7d3713fc1bcb8553da4371fac19672f8b3",
+    "tables/q1_temperature.tex": "1ed7a7b963bffc274ee112fe63b18e86ae095fb288a796f9f8a998d225ad811b",
+    "tables/q2_moisture.tex": "2a151adcad9f83659566e428a903fdd39fb217558bbc578ffc006118a15da919",
+    "tables/q2_temperature.tex": "e3aa114161029bfc9bbc00b08174413e614312c69c3fa7fd287ad959637bb2ac",
+    "tables/q3_moisture.tex": "fc5abb663e19d63fa8ce8ffe746c903ec99841bf074d3154566694e9e2ca572c",
+    "tables/q4_moisture.tex": "cac0f1258d72c809a03915fe409333f07b0230db712377c77bd20abb44637cf9"
+  }
+}

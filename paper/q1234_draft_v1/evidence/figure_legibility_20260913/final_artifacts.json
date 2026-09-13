@@ -1,0 +1,14 @@
+{
+  "compile_exit_code": 0,
+  "command": "latexmk -xelatex -interaction=nonstopmode -halt-on-error -file-line-error -outdir=out main.tex",
+  "cwd": "isolated compile snapshot recorded in compile_source_snapshot.json",
+  "pdf_sha256": "6d46660316f0855c9226920fa751a6beae1ddb3fd5ec9f89bbb20c9d5d0910f1",
+  "pdf_bytes": 1888610,
+  "body_pages": 30,
+  "paper_checks": {
+    "pass": 25,
+    "info": 1
+  },
+  "PDE_or_scenario_runs": false,
+  "compile_log_sha256": "019731a211364eefbadf4b66e8b2262eef094bed5c1fab386feea98c4aed9ad2"
+}

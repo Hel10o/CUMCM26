@@ -1,0 +1,30 @@
+{
+  "q3_q4_drying": {
+    "source_pdf_min_font_pt": 11.399999618530273,
+    "source_pdf_max_font_pt": 12.350000381469727,
+    "actual_min_font_pt": 9.696950895030325,
+    "actual_max_font_pt": 10.50503081228675,
+    "fonts": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ],
+    "pdf_size_cm": [
+      16.400000254313152,
+      7.999999953375923
+    ]
+  },
+  "q4_shrinkage": {
+    "source_pdf_min_font_pt": 11.399999618530273,
+    "source_pdf_max_font_pt": 12.5,
+    "actual_min_font_pt": 9.592682605836451,
+    "actual_max_font_pt": 10.51829268292683,
+    "fonts": [
+      "SimSun",
+      "TimesNewRomanPSMT"
+    ],
+    "pdf_size_cm": [
+      16.400000254313152,
+      10.600000059339736
+    ]
+  }
+}

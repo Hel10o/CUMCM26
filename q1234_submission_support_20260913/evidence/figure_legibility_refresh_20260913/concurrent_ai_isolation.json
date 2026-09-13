@@ -1,0 +1,490 @@
+{
+  "operation": "Inspect and retain concurrent AI-only support ZIP update before figure refresh",
+  "original_zip_sha256": "707f55909541942d055b6b0fecf0f54a655bb12a78fc0d1e42f4252c7aa009aa",
+  "accepted_zip_sha256": "8409a3c6358c994d5897cc023de809050e1dc37270d77f2384cde219e78662d8",
+  "member_count": 94,
+  "changed_members": [
+    "支撑材料/AI工具使用详情.pdf"
+  ],
+  "unchanged_other_member_count": 93,
+  "ai_content_truthfulness_validation": "not performed; only bytes and PDF page counts inspected",
+  "pde_or_parameter_scenarios_run": false,
+  "ai_old": {
+    "sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da",
+    "bytes": 125296,
+    "pages": 3
+  },
+  "ai_new": {
+    "sha256": "819e9d88909b3e5f49fb3706c25b4eb280e4d7f49d065dcef26dbf79e455e08d",
+    "bytes": 119379,
+    "pages": 3
+  },
+  "unchanged_members": [
+    {
+      "name": "支撑材料/figures/ch6_revision/q1_boundary.pdf",
+      "sha256": "6b240171e30e32203350fbc89bcd3fc34887e97625ce0da6b8bed5f26f1af3cb",
+      "bytes": 47252
+    },
+    {
+      "name": "支撑材料/figures/font_revision/dimension_reduction.pdf",
+      "sha256": "5f71b9835f2da48eb2b45b29730b8f09c70a0a6bede5d43c645b3ef1660a13d3",
+      "bytes": 58907
+    },
+    {
+      "name": "支撑材料/figures/font_revision/environment_sensitivity.pdf",
+      "sha256": "7d0cd2c546d4a52b508079af3892e2809dc73cb13809a35d8b2df03204ea9291",
+      "bytes": 38319
+    },
+    {
+      "name": "支撑材料/figures/font_revision/q3_q4_drying.pdf",
+      "sha256": "530a5a995b2207d637742a1db62fd8b23b5689b39a4bdae4caab8d80c6436de4",
+      "bytes": 47527
+    },
+    {
+      "name": "支撑材料/figures/font_revision/q4_shrinkage.pdf",
+      "sha256": "33c1935a1c3d74f8e30ac55856ea1af62c8c3d8dd858d94af32eae0f88897379",
+      "bytes": 405791
+    },
+    {
+      "name": "支撑材料/figures/q1_legibility/q1_profiles.pdf",
+      "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008",
+      "bytes": 70834
+    },
+    {
+      "name": "支撑材料/figures/q1_legibility/q1_workflow.pdf",
+      "sha256": "d3a6d1abb5d360e06e33c0468995dc04c45cb92a281868e5f5793e9497d914d0",
+      "bytes": 36008
+    },
+    {
+      "name": "支撑材料/figures/q2_heatmap/q2_fields.pdf",
+      "sha256": "47fd500235089fddc27d421ead469e8ca59c268ad14d499f8b6dde9a051b4a0e",
+      "bytes": 95814
+    },
+    {
+      "name": "支撑材料/figures/q2_revision/q2_mechanism.pdf",
+      "sha256": "1232f3159f306b7f5358823ad1092e57e3be67d281b47eb079c9398e5652aa43",
+      "bytes": 33875
+    },
+    {
+      "name": "支撑材料/figures/q2_revision/q2_workflow.pdf",
+      "sha256": "311495f4379b487103efb386a152d63c5aa4994cb31c32f59d0854c443e18475",
+      "bytes": 43525
+    },
+    {
+      "name": "支撑材料/figures/q3_white/q3_workflow.pdf",
+      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428",
+      "bytes": 38173
+    },
+    {
+      "name": "支撑材料/figures/question_workflows/q4_workflow.pdf",
+      "sha256": "0749f122ef134f8c1fd919d0173cbe917fbea8cad3f84277c9a8e1dc327c47c1",
+      "bytes": 43368
+    },
+    {
+      "name": "支撑材料/literature/1-s2.0-S0260877414002118-main.pdf",
+      "sha256": "f366438e9b447e270ae210f0f7e8bcc59bb65c94e850736e8db992e8817deb5b",
+      "bytes": 1464267
+    },
+    {
+      "name": "支撑材料/literature/foods-09-01577.pdf",
+      "sha256": "bf168dbdc9c8695dcfde06d88962736e028a0c4c1469f0d24d9edc4b5b7eb2cc",
+      "bytes": 1153307
+    },
+    {
+      "name": "支撑材料/literature/references.bib",
+      "sha256": "4eb7e91def6c7fc6ac1f339e4a0a4f514ccbe5fc8fe5734fc23f2fefdd444001",
+      "bytes": 3459
+    },
+    {
+      "name": "支撑材料/literature/基于动网格的白萝卜热风干燥热质传递研究.pdf",
+      "sha256": "7008d5825be39367014ca79762e637e883807a96a362c9f4a6d8ab931a7a72ab",
+      "bytes": 1988165
+    },
+    {
+      "name": "支撑材料/results/result1.xlsx",
+      "sha256": "250c92ac0e5c0660b2ef214800302aaad556937f8342640f07fc112647ac5e22",
+      "bytes": 398003
+    },
+    {
+      "name": "支撑材料/results/result2.xlsx",
+      "sha256": "99059fe86feff53b64f0f091585645962b3d4379b9b945d4bcb1dcbb3a7a0af0",
+      "bytes": 2501564
+    },
+    {
+      "name": "支撑材料/results/result2_全程轨迹_206907x21.npz",
+      "sha256": "6a0b22fdc18f5793de32058801a8f03740f2da88298c855a82b50fb2ffbde15f",
+      "bytes": 2884735
+    },
+    {
+      "name": "支撑材料/results/result3.xlsx",
+      "sha256": "acd51bbb97ed4e2d304204dd14a9c213b2d665bec739674e992831d6ae4a2e17",
+      "bytes": 924899
+    },
+    {
+      "name": "支撑材料/results/result4.xlsx",
+      "sha256": "d3caa7aee8ded1ca6516cec7b771595c37d0dc35e0f004b8cd94e63a909f5672",
+      "bytes": 327524
+    },
+    {
+      "name": "支撑材料/support/README.md",
+      "sha256": "dd79c64be0bd3ce01c5de919509c9ce6bbbb0014cc6935960ce9314bd96d754e",
+      "bytes": 12141
+    },
+    {
+      "name": "支撑材料/support/launch.py",
+      "sha256": "a241267bb2f717aeba84c97325b01da193aa24e7213edea53e7a82bf1f482659",
+      "bytes": 8232
+    },
+    {
+      "name": "支撑材料/support/project/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "name": "支撑材料/support/project/paper/q1234_draft_v1/build_assets.py",
+      "sha256": "3d34c1564ddda72c2a85834f10979d4806490ac03ef0a646fd8338d989e244d6",
+      "bytes": 17394
+    },
+    {
+      "name": "支撑材料/support/project/q1234_overall_review_delivery/v1/reviews/environment_check/audit_environment_evidence.py",
+      "sha256": "8c36e7cec5dd15bcdcf1da5abdb1b48f7b66d768bfb33247bc438551da846bad",
+      "bytes": 9188
+    },
+    {
+      "name": "支撑材料/support/project/q1234_overall_review_delivery/v1/reviews/geometry/audit_geometry_endpoints.py",
+      "sha256": "7aa5d16d0ad0cfcfa94cf17f4cbf91281b80d3cb7bafbeab6570d0fd29767909",
+      "bytes": 6901
+    },
+    {
+      "name": "支撑材料/support/project/q1234_overall_review_delivery/v1/reviews/geometry/audit_saved_geometry_scope.py",
+      "sha256": "6406d3b4069003e69571bed019810394426d03bf4e5b9c3e54422a52b5ab9920",
+      "bytes": 1942
+    },
+    {
+      "name": "支撑材料/support/project/q1234_overall_review_delivery/v1/reviews/physics/diagnose_saved_fields.py",
+      "sha256": "e7b4f806c47ae07e2f5a2542c0bbbaf0485c80c9cd44ba33d988de25a8b3cded",
+      "bytes": 8293
+    },
+    {
+      "name": "支撑材料/support/project/q1234_overall_review_delivery/v1/source/environment_probe.py",
+      "sha256": "8e479ee8f2ff48e8ec43e6d7883af5145bf46197251240a2c6834cd339daf4bb",
+      "bytes": 6957
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/input/result1_template.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/input/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/requirements.txt",
+      "sha256": "cf007907bf18ebd2db9be38e98a6c77d4b83f216e84b83efb73b5ee9fec996d3",
+      "bytes": 311
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/run_all.py",
+      "sha256": "3f78714ddee2a026ac2f8335015ca82719666a0902679063632f78e48218a135",
+      "bytes": 3358
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/paper_template.md",
+      "sha256": "f1ac44b7e28e8f7bfefc03b9a73be661e1218bb67a7b9a9bcc8c9dcab4267358",
+      "bytes": 25918
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_excel.py",
+      "sha256": "d2e14289bd909ed8cacddc74e2c7e984ff6439094dbc184f6ca1a34a40d21f01",
+      "bytes": 10245
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_refine.py",
+      "sha256": "3d484fab094a60c31d16a9f121d5c1a5bc228bb2d5bcf0890c0a698a7a095253",
+      "bytes": 5465
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_report.py",
+      "sha256": "675f5ad1f8ab8e7510e4b759fd3f86720ddcc382a5b96b2d958726f3dafc66c1",
+      "bytes": 8683
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_rounding_audit.py",
+      "sha256": "79ee9622118400270c0ed8401821f3f7e8475a94ce17fbd42fecafa194e7d0ca",
+      "bytes": 1551
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_solver.py",
+      "sha256": "c27100781c3a09b8f4bc43ec5a7ed6df7b77400d307d617c777e516344808f7d",
+      "bytes": 15435
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/q1_validate.py",
+      "sha256": "ca44f90660d56d887667e47cebb9d64d7095cd9d9a424482cf882a54b2d4e4c9",
+      "bytes": 12849
+    },
+    {
+      "name": "支撑材料/support/project/q1_complete_delivery/q1_delivery/source/references_used.bib",
+      "sha256": "433ebc126263b1b71d0ee238e95350605f2c13ba9ba3520fa8dcdc2a23677d41",
+      "bytes": 1513
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/reused/q2_core_original.py",
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "bytes": 16233
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/reused/q2_final_delivery/inputs/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/inputs/result2_template.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/inputs/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/requirements.txt",
+      "sha256": "1438fcb9cc35de5ee5361c2ab64e10e98955e5c277572d399cea07488fb8b87c",
+      "bytes": 284
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/source/q2_core.py",
+      "sha256": "e8fe62a29c771d66bfa31ca8ac21a46424a5c25ccd36edf86a95ec6dd60770c1",
+      "bytes": 16233
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/source/q2_spectral.py",
+      "sha256": "c464e9d8f8cbeb5a0eb53b31e034bcb4467297899425e99d10316110697e5d33",
+      "bytes": 8959
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/runtime/source/q2_tests.py",
+      "sha256": "822d28b2e6a88c82ad91479d95cfc3353d31006baa49b69effdc2647e7004654",
+      "bytes": 9684
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/source/prepare_reused.py",
+      "sha256": "d7231a9f886aa6e5c46acf9dea2fc7e1f67da7536d9d52f1d4873261d526b245",
+      "bytes": 2755
+    },
+    {
+      "name": "支撑材料/support/project/q2_refinement_delivery/source/q2_mechanism.py",
+      "sha256": "c004752b2f09757b738d79613bfe0110fdd55969fb14586dbb8c72f3033fcfbd",
+      "bytes": 17596
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/inputs/result3_blank.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "bytes": 9345
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/export_workbook.py",
+      "sha256": "af1d710f011c14248496e374ff85858637412c952eee4f1b173b831168719224",
+      "bytes": 5923
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/future_scenarios_from_checkpoint.py",
+      "sha256": "30ffe81f0543ccf582879cfe97efb9cdd7ddc19cda1802c6df2c05a836d85a86",
+      "bytes": 3987
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/q3_reference.py",
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "bytes": 8667
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/q3_refined_reference.py",
+      "sha256": "d71417a1dc8205aabe319d99004fea359cdf6ba48096bc4fa360a61ae0a70bda",
+      "bytes": 10677
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/q3_solver.py",
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "bytes": 19331
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/validate_xlsx.py",
+      "sha256": "753512f76f382c297b13388e7c2f0cd36a6b69b07b32ccfb0ecc0fb98db399c3",
+      "bytes": 5419
+    },
+    {
+      "name": "支撑材料/support/project/q3_refinement_delivery/source/verify_frozen.py",
+      "sha256": "4356acb19ffaaa59bd8b2d95b6e91dbfa8c93f586fe08f7a393dbd0f5c06b91e",
+      "bytes": 2870
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/inputs/attachment2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/inputs/result2_template.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/inputs/result4_template.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "bytes": 9351
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/inputs/attachment1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/source/audit_unified_q23.py",
+      "sha256": "0a0ca74c6f963745c10e080f1205dcaaea7fcbb0ce79594265d7aa7eadb8884a",
+      "bytes": 6352
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/source/legacy_q3/q3_reference.py",
+      "sha256": "777970fd41b807b30bc7fdffc52d36ec8750e0df7a390e96dd1eeb9d1924d890",
+      "bytes": 8667
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/source/legacy_q3/q3_solver.py",
+      "sha256": "e246136ae6813046b70d8e382b00572fe3efad8c8fb8f553de2829bd371a46a6",
+      "bytes": 19331
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/source/requirements.txt",
+      "sha256": "de1e6a74630e14d22a31b98c3ba7a8c5e20fc820e1db901d49882370a40fc132",
+      "bytes": 23
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/q123_closeout/source/solve_unified_q23.py",
+      "sha256": "dfe7d04931f820c1d0375211f3d63a7e2738a66fc0751507c34858e7f66146d8",
+      "bytes": 6055
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/check_numerics.py",
+      "sha256": "957c081cd7fc363300049b00de15d0334c69d9cf6163dc7dfcd9e0b642c1ee65",
+      "bytes": 3529
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/export_workbooks.mjs",
+      "sha256": "d2c88b7d366305950f5f47e96bd73ca29f2557d9e6095815e1a8234a1b78763c",
+      "bytes": 8856
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/finalize_q4.py",
+      "sha256": "324d1b8821e4085122a9e2f69b159c02864b9e4162cc326b6993aaede3bc5bd0",
+      "bytes": 5104
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/geometry_analysis.py",
+      "sha256": "a4de40b1f7d85face0f7e2a8423722023472a467e6b3a5bd36088969cb75163e",
+      "bytes": 4443
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/geometry_checks.py",
+      "sha256": "57ac08dc310bc05e87d426dcf7088e3db877a24efc23f95a22f1d36aa424172c",
+      "bytes": 1976
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/geometry_report.py",
+      "sha256": "246f9510068d4c17b175836422a025593fc0a2d19d4d63da91a6830a89e1bed6",
+      "bytes": 12902
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/geometry_solver.py",
+      "sha256": "b63aaa9f35544d25738d3158a06e30b0a3f47a24d7422b1c39618c0fa578496b",
+      "bytes": 13286
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/geometry_solver_executed.py",
+      "sha256": "e0ce2a6b0be278ac7397238d2eeb99890b9d6cba98f0852d87e5f0ce243915f3",
+      "bytes": 12515
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/package_workbooks.py",
+      "sha256": "6e18aa4075327df0de6a608d513e67e1ef1e4637a046c4a7e5d9d6d9c2dfc5fe",
+      "bytes": 17042
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/q4_common.py",
+      "sha256": "4b2b78e4b95463cbbe6df7a1ae35c2ca70dc4502e9268c188c498eef38b7a61b",
+      "bytes": 3175
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/q4_spectral.py",
+      "sha256": "8a7d7d0e48c0c1d4db37427f7f1de7157611d69c57afcae851e174a57f4f4503",
+      "bytes": 5675
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/requirements.txt",
+      "sha256": "3f9b0cd0f46b96598ffd59588c389f32b5f67159c28b23007bc12e28a4fc7ea2",
+      "bytes": 62
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/source/run_q4.py",
+      "sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+      "bytes": 7306
+    },
+    {
+      "name": "支撑材料/support/project/q4_complete_delivery/v1/第四问模型与文献采用.md",
+      "sha256": "f9d14e5665de976d0d4f62d11ba1e1609206f95bbb5a2e8269492299a3327522",
+      "bytes": 12135
+    },
+    {
+      "name": "支撑材料/support/project/readable/problem/fulltext.md",
+      "sha256": "aee05fb6207423340c975f0c10d0dbde6fe01f9170356c4e3ea35347b8c9d56b",
+      "bytes": 7063
+    },
+    {
+      "name": "支撑材料/support/requirements-smoke.txt",
+      "sha256": "8d2690d3a7e6bdddcda9de87bc10d337c449b968734b1d0bae411dc9f2d0c49c",
+      "bytes": 62
+    },
+    {
+      "name": "支撑材料/support/smoke_result.json",
+      "sha256": "10af517cccfb9ebac64dc336e5f62e443ec79bc9456a03695998454ae2312b0c",
+      "bytes": 3830
+    },
+    {
+      "name": "支撑材料/support/snapshot_manifest.json",
+      "sha256": "7ff7819ba32e7a41a6646fca0d5eca55c959fb3c6b2b29b82c34ceb768b0938e",
+      "bytes": 23139
+    },
+    {
+      "name": "支撑材料/support/图表来源清单.md",
+      "sha256": "058eec80ae13a2d9857e23df5ca820bfbcdb885013e0559824f2e6c0aeda53b6",
+      "bytes": 8796
+    },
+    {
+      "name": "支撑材料/支撑材料文件列表.md",
+      "sha256": "47690602d890d0ada33400cb0a3f3d070a384d012840d37bf62baf67d65a0f62",
+      "bytes": 1129
+    },
+    {
+      "name": "支撑材料/支撑材料说明.md",
+      "sha256": "7bc850a5e2c2f9942e3defd254bf96e436be516911776d639e3201f5e195a2e9",
+      "bytes": 2486
+    }
+  ],
+  "integrated_ai_commit": "285f3d984190b0655e1a46b8cfffe91b656cc7ea"
+}

@@ -1,0 +1,21 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "integrated_ai_commit": "285f3d984190b0655e1a46b8cfffe91b656cc7ea",
+  "baseline_zip_sha256": "8409a3c6358c994d5897cc023de809050e1dc37270d77f2384cde219e78662d8",
+  "concurrent_ai_isolation": "figure_legibility_refresh_20260913/concurrent_ai_isolation.json",
+  "source_list_sha256": "ae7409c0f8ce2bf271f6f0cd33b31895f4ca2c1dfedffea5f7070d08f6a4c238",
+  "figure_sha256": {
+    "figures/legibility_process/q3_q4_drying.pdf": "5ed8b1a1d528b66cb16a104f8188e5307e4d80dc422c817135bc50e750cafd04",
+    "figures/legibility_process/q4_shrinkage.pdf": "10de05a98bf6afe8ac4b565fb9fb2a82a813c613a0d16048520cdc1036c296d3",
+    "figures/legibility_q2/q2_fields.pdf": "48c7d39f68fb58b52e818e6f5989651376ed97028e438cdd6101edff6b69e153",
+    "figures/legibility_q2/q2_mechanism.pdf": "93055441a0c2ace07a3d8101b9cf85950040452ef5c1c621482a67a62e8fd1e8",
+    "figures/legibility_schematics/q1_boundary.pdf": "f6325ab8d665bcd2e21923983bf8c03f7944ddf2bc1c6df54aeaf8f8a67f92d1",
+    "figures/legibility_schematics/q1_workflow.pdf": "333a05de66aa7c384def334aa1bde46a0593a7f4c2fc182f631ab99bd16e862c",
+    "figures/legibility_schematics/q2_workflow.pdf": "227684694c332bb079f34e5ac3bc45e7472ba1b9fd25fbc55ea80081c3a9b3a1",
+    "figures/legibility_schematics/q4_workflow.pdf": "3a28879bd58ae9ff8df45408f59ba9d16c3cb3eef05cbc817105bdb824bd4c69",
+    "figures/legibility_validation/dimension_reduction.pdf": "eab97f7aba0ca2bd555f9959ce14069a66759b67cab61cfedae333f64bd684d1",
+    "figures/legibility_validation/environment_sensitivity.pdf": "47826361a4a642d78e100373ccc0db7ad24bab97825f00c9828907b7a5aef56d",
+    "figures/q1_legibility/q1_profiles.pdf": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008",
+    "figures/q3_white/q3_workflow.pdf": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
+  }
+}

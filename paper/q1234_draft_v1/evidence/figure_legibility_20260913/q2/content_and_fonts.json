@@ -1,0 +1,3165 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "builder_sha256": "63f3377fb47f6fc99735d5578e742ac3f9454dd8533889a2fc23e5862f52ec1b",
+  "PDE_or_parameter_scenarios_run": false,
+  "figures": {
+    "q2_fields": {
+      "unchanged_data_text_axes_positions": true,
+      "annotation_positions_before": [
+        {
+          "text": "(a) 径向温度场",
+          "position": [
+            0.269,
+            0.957
+          ]
+        },
+        {
+          "text": "温度 T / °C",
+          "position": [
+            0.078,
+            0.905
+          ]
+        },
+        {
+          "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+          "position": [
+            0.269,
+            0.125
+          ]
+        },
+        {
+          "text": "末时温差 ΔT = 0.1169 K",
+          "position": [
+            0.269,
+            0.06
+          ]
+        },
+        {
+          "text": "(b) 径向干基含水率场",
+          "position": [
+            0.7609999999999999,
+            0.957
+          ]
+        },
+        {
+          "text": "干基含水率 C / (kg/kg)",
+          "position": [
+            0.57,
+            0.905
+          ]
+        },
+        {
+          "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+          "position": [
+            0.7609999999999999,
+            0.125
+          ]
+        },
+        {
+          "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+          "position": [
+            0.7609999999999999,
+            0.06
+          ]
+        },
+        {
+          "text": "32",
+          "position": [
+            0.4720899281015427,
+            0.578379765102073
+          ]
+        },
+        {
+          "text": "40",
+          "position": [
+            0.9236727121755943,
+            1.0214236814000823
+          ]
+        },
+        {
+          "text": "48",
+          "position": [
+            1.7745725447402039,
+            1.4287281867256725
+          ]
+        },
+        {
+          "text": "表面",
+          "position": [
+            0.027,
+            0.94
+          ]
+        },
+        {
+          "text": "轴心",
+          "position": [
+            0.027,
+            0.055
+          ]
+        },
+        {
+          "text": "1.2",
+          "position": [
+            2.6594402910488437,
+            1.8417738524770428
+          ]
+        },
+        {
+          "text": "1.8",
+          "position": [
+            1.6385808249232596,
+            1.4331597564468839
+          ]
+        },
+        {
+          "text": "2.4",
+          "position": [
+            0.9475145658247879,
+            0.9481260831838176
+          ]
+        },
+        {
+          "text": "表面",
+          "position": [
+            0.027,
+            0.94
+          ]
+        },
+        {
+          "text": "轴心",
+          "position": [
+            0.027,
+            0.055
+          ]
+        }
+      ],
+      "annotation_positions_after": [
+        {
+          "text": "(a) 径向温度场",
+          "position": [
+            0.269,
+            0.957
+          ]
+        },
+        {
+          "text": "温度 T / °C",
+          "position": [
+            0.078,
+            0.905
+          ]
+        },
+        {
+          "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+          "position": [
+            0.269,
+            0.1
+          ]
+        },
+        {
+          "text": "末时温差 ΔT = 0.1169 K",
+          "position": [
+            0.269,
+            0.037
+          ]
+        },
+        {
+          "text": "(b) 径向干基含水率场",
+          "position": [
+            0.7609999999999999,
+            0.957
+          ]
+        },
+        {
+          "text": "干基含水率 C / (kg/kg)",
+          "position": [
+            0.57,
+            0.905
+          ]
+        },
+        {
+          "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+          "position": [
+            0.7609999999999999,
+            0.1
+          ]
+        },
+        {
+          "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+          "position": [
+            0.7609999999999999,
+            0.037
+          ]
+        },
+        {
+          "text": "32",
+          "position": [
+            0.4720899281015427,
+            0.578379765102073
+          ]
+        },
+        {
+          "text": "40",
+          "position": [
+            0.9236727121755943,
+            1.0214236814000823
+          ]
+        },
+        {
+          "text": "48",
+          "position": [
+            1.7745725447402039,
+            1.4287281867256725
+          ]
+        },
+        {
+          "text": "表面",
+          "position": [
+            0.027,
+            0.94
+          ]
+        },
+        {
+          "text": "轴心",
+          "position": [
+            0.027,
+            0.055
+          ]
+        },
+        {
+          "text": "1.2",
+          "position": [
+            2.6594402910488437,
+            1.8417738524770428
+          ]
+        },
+        {
+          "text": "1.8",
+          "position": [
+            1.6385808249232596,
+            1.4331597564468839
+          ]
+        },
+        {
+          "text": "2.4",
+          "position": [
+            0.9475145658247879,
+            0.9481260831838176
+          ]
+        },
+        {
+          "text": "表面",
+          "position": [
+            0.027,
+            0.94
+          ]
+        },
+        {
+          "text": "轴心",
+          "position": [
+            0.027,
+            0.055
+          ]
+        }
+      ],
+      "content": {
+        "size_inches": [
+          6.456692913385826,
+          3.1889763779527556
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.078,
+              0.275,
+              0.382,
+              0.49
+            ],
+            "xlim": [
+              0.0,
+              3.0
+            ],
+            "ylim": [
+              0.0,
+              2.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "yticks": [
+              0,
+              1,
+              2
+            ],
+            "lines": [],
+            "collections": [
+              {
+                "class": "QuadMesh",
+                "array": {
+                  "shape": [
+                    101,
+                    10801
+                  ],
+                  "dtype": "float64",
+                  "sha256": "358f4132471e81fa4cd7a18f0983b68399e64681590b907c7db2bb923b005d0f"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": {
+                  "shape": [
+                    102,
+                    10802,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "b2739cbb068e45873750f83dcaeae591a1821ec81ac952007cfef69b224d9212"
+                },
+                "clim": [
+                  28.0,
+                  50.0
+                ],
+                "cmap": "YlOrBr"
+              },
+              {
+                "class": "QuadContourSet",
+                "array": {
+                  "shape": [
+                    3
+                  ],
+                  "dtype": "int64",
+                  "sha256": "ab25350e3e65efebe24584461683ecda68725576e825e550038b90e7b1479946"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      610,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "e1ff447afb0bd17bedef727fe8cc6c1d697ae06378b3a82509759d60e15b1999"
+                  },
+                  {
+                    "shape": [
+                      636,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "373911ef3ef3fc3f00d1d1b9276a0227a7d7475fab6f1acc63361f915bf9e7b3"
+                  },
+                  {
+                    "shape": [
+                      611,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "f8398e09dfda5c814b6571b5fa4b58876ef10e9561f90f24fca52d1b338949e4"
+                  }
+                ],
+                "clim": [
+                  32.0,
+                  48.0
+                ],
+                "cmap": "unnamed"
+              }
+            ]
+          },
+          {
+            "bounds": [
+              0.078,
+              0.85,
+              0.382,
+              0.02400000000000002
+            ],
+            "xlim": [
+              28.0,
+              50.0
+            ],
+            "ylim": [
+              0.0,
+              1.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              28,
+              36,
+              44,
+              50
+            ],
+            "yticks": [],
+            "lines": [],
+            "collections": [
+              {
+                "class": "LineCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": [],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "QuadMesh",
+                "array": {
+                  "shape": [
+                    256,
+                    1
+                  ],
+                  "dtype": "float64",
+                  "sha256": "05567c60dc41cb4eddd4c7d68b9f1b7742497e92c50a29e4c00be4d5231489e0"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": {
+                  "shape": [
+                    257,
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e36a838f181277ebfac57bf19f737d77ab3797543a764c3e95380efb4f3b5714"
+                },
+                "clim": [
+                  28.0,
+                  50.0
+                ],
+                "cmap": "YlOrBr"
+              }
+            ]
+          },
+          {
+            "bounds": [
+              0.57,
+              0.275,
+              0.382,
+              0.49
+            ],
+            "xlim": [
+              0.0,
+              3.0
+            ],
+            "ylim": [
+              0.0,
+              2.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "yticks": [
+              0,
+              1,
+              2
+            ],
+            "lines": [],
+            "collections": [
+              {
+                "class": "QuadMesh",
+                "array": {
+                  "shape": [
+                    101,
+                    10801
+                  ],
+                  "dtype": "float64",
+                  "sha256": "c761d9c746df7d0125e0ff125edfc4cdfc45b77a7cbbfbc1076585b470cb052f"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": {
+                  "shape": [
+                    102,
+                    10802,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "b2739cbb068e45873750f83dcaeae591a1821ec81ac952007cfef69b224d9212"
+                },
+                "clim": [
+                  1.0,
+                  2.55
+                ],
+                "cmap": "YlGnBu"
+              },
+              {
+                "class": "QuadContourSet",
+                "array": {
+                  "shape": [
+                    3
+                  ],
+                  "dtype": "int64",
+                  "sha256": "ab25350e3e65efebe24584461683ecda68725576e825e550038b90e7b1479946"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      2038,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "7553d526f6b35913fc529a656bdb26812c32192ee1dc8e7c12ec4e388b1c59b3"
+                  },
+                  {
+                    "shape": [
+                      8451,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "fb8e2336c5a3d413854135b59875a867748d1d13efd2259fdf8d80eac605b15e"
+                  },
+                  {
+                    "shape": [
+                      4457,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "5e5307151185321757250cdd9286052bcf2212f93a20c65bdcd0f37dbb23cb64"
+                  }
+                ],
+                "clim": [
+                  1.2,
+                  2.4
+                ],
+                "cmap": "unnamed"
+              }
+            ]
+          },
+          {
+            "bounds": [
+              0.57,
+              0.85,
+              0.382,
+              0.02400000000000002
+            ],
+            "xlim": [
+              1.0,
+              2.55
+            ],
+            "ylim": [
+              0.0,
+              1.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              1.0,
+              1.5,
+              2.0,
+              2.55
+            ],
+            "yticks": [],
+            "lines": [],
+            "collections": [
+              {
+                "class": "LineCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": [],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "QuadMesh",
+                "array": {
+                  "shape": [
+                    256,
+                    1
+                  ],
+                  "dtype": "float64",
+                  "sha256": "4464f50f6a351a0bbf4577e9712e84ee4965576efe168ee9d96dc5ad5b2bdd4f"
+                },
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+                },
+                "geometry": {
+                  "shape": [
+                    257,
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "9aeea253b5543d9cc3b116c59f7991a596f1202fb44b8c56be78fa2a8de750e5"
+                },
+                "clim": [
+                  1.0,
+                  2.55
+                ],
+                "cmap": "YlGnBu"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "32",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 273.34077305486517,
+            "color": "#32434A"
+          },
+          {
+            "text": "40",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 275.91648355093514,
+            "color": "#32434A"
+          },
+          {
+            "text": "48",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 279.13826359805967,
+            "color": "#32434A"
+          },
+          {
+            "text": "表面",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#303C43"
+          },
+          {
+            "text": "轴心",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#303C43"
+          },
+          {
+            "text": "时间 t / h",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "径向位置 r / cm",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 90.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "28",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "28",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "36",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "36",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "44",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "44",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "50",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "50",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 342.5992662524849,
+            "color": "#32434A"
+          },
+          {
+            "text": "1.8",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 334.0412954395264,
+            "color": "#32434A"
+          },
+          {
+            "text": "2.4",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 315.1521751353906,
+            "color": "#32434A"
+          },
+          {
+            "text": "表面",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#303C43"
+          },
+          {
+            "text": "轴心",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#303C43"
+          },
+          {
+            "text": "时间 t / h",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "径向位置 r / cm",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 90.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.50",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.50",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2.00",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2.00",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2.55",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2.55",
+            "size_pt": 11.05,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "(a) 径向温度场",
+            "size_pt": 12.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "温度 T / °C",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "末时温差 ΔT = 0.1169 K",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "(b) 径向干基含水率场",
+            "size_pt": 12.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "干基含水率 C / (kg/kg)",
+            "size_pt": 11.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "(a) 径向温度场",
+            "position": [
+              0.269,
+              0.957
+            ]
+          },
+          {
+            "text": "温度 T / °C",
+            "position": [
+              0.078,
+              0.905
+            ]
+          },
+          {
+            "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+            "position": [
+              0.269,
+              0.1
+            ]
+          },
+          {
+            "text": "末时温差 ΔT = 0.1169 K",
+            "position": [
+              0.269,
+              0.037
+            ]
+          },
+          {
+            "text": "(b) 径向干基含水率场",
+            "position": [
+              0.7609999999999999,
+              0.957
+            ]
+          },
+          {
+            "text": "干基含水率 C / (kg/kg)",
+            "position": [
+              0.57,
+              0.905
+            ]
+          },
+          {
+            "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+            "position": [
+              0.7609999999999999,
+              0.1
+            ]
+          },
+          {
+            "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+            "position": [
+              0.7609999999999999,
+              0.037
+            ]
+          },
+          {
+            "text": "32",
+            "position": [
+              0.4720899281015427,
+              0.578379765102073
+            ]
+          },
+          {
+            "text": "40",
+            "position": [
+              0.9236727121755943,
+              1.0214236814000823
+            ]
+          },
+          {
+            "text": "48",
+            "position": [
+              1.7745725447402039,
+              1.4287281867256725
+            ]
+          },
+          {
+            "text": "表面",
+            "position": [
+              0.027,
+              0.94
+            ]
+          },
+          {
+            "text": "轴心",
+            "position": [
+              0.027,
+              0.055
+            ]
+          },
+          {
+            "text": "1.2",
+            "position": [
+              2.6594402910488437,
+              1.8417738524770428
+            ]
+          },
+          {
+            "text": "1.8",
+            "position": [
+              1.6385808249232596,
+              1.4331597564468839
+            ]
+          },
+          {
+            "text": "2.4",
+            "position": [
+              0.9475145658247879,
+              0.9481260831838176
+            ]
+          },
+          {
+            "text": "表面",
+            "position": [
+              0.027,
+              0.94
+            ]
+          },
+          {
+            "text": "轴心",
+            "position": [
+              0.027,
+              0.055
+            ]
+          }
+        ]
+      },
+      "font_changes": [
+        {
+          "text": "32",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "40",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "48",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "表面",
+          "old_pt": 10.4,
+          "new_pt": 11.2
+        },
+        {
+          "text": "轴心",
+          "old_pt": 10.4,
+          "new_pt": 11.2
+        },
+        {
+          "text": "时间 t / h",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "3",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "3",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "径向位置 r / cm",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "28",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "28",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "36",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "36",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "44",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "44",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "50",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "50",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.8",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2.4",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "表面",
+          "old_pt": 10.4,
+          "new_pt": 11.2
+        },
+        {
+          "text": "轴心",
+          "old_pt": 10.4,
+          "new_pt": 11.2
+        },
+        {
+          "text": "时间 t / h",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "3",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "3",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "径向位置 r / cm",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "0",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.00",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.00",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.50",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "1.50",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2.00",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2.00",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2.55",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "2.55",
+          "old_pt": 10.2,
+          "new_pt": 11.05
+        },
+        {
+          "text": "(a) 径向温度场",
+          "old_pt": 11.5,
+          "new_pt": 12.2
+        },
+        {
+          "text": "温度 T / °C",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+          "old_pt": 10.6,
+          "new_pt": 11.2
+        },
+        {
+          "text": "末时温差 ΔT = 0.1169 K",
+          "old_pt": 10.6,
+          "new_pt": 11.2
+        },
+        {
+          "text": "(b) 径向干基含水率场",
+          "old_pt": 11.5,
+          "new_pt": 12.2
+        },
+        {
+          "text": "干基含水率 C / (kg/kg)",
+          "old_pt": 10.8,
+          "new_pt": 11.3
+        },
+        {
+          "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+          "old_pt": 10.6,
+          "new_pt": 11.2
+        },
+        {
+          "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+          "old_pt": 10.6,
+          "new_pt": 11.2
+        }
+      ],
+      "dimensions_cm": [
+        16.4,
+        8.1
+      ],
+      "text_bounds_checks": [
+        {
+          "text": "32",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "40",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "48",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "表面",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "轴心",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 t / h",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "径向位置 r / cm",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "28",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "36",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "44",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "50",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.2",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.8",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2.4",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "表面",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "轴心",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 t / h",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "径向位置 r / cm",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.00",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.50",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2.00",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "2.55",
+          "font_pt": 11.05,
+          "inside_canvas": true
+        },
+        {
+          "text": "(a) 径向温度场",
+          "font_pt": 12.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "温度 T / °C",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "末时温差 ΔT = 0.1169 K",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "(b) 径向干基含水率场",
+          "font_pt": 12.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "干基含水率 C / (kg/kg)",
+          "font_pt": 11.3,
+          "inside_canvas": true
+        },
+        {
+          "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        },
+        {
+          "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+          "font_pt": 11.2,
+          "inside_canvas": true
+        }
+      ],
+      "outputs": {
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_fields.pdf": {
+          "sha256": "48c7d39f68fb58b52e818e6f5989651376ed97028e438cdd6101edff6b69e153",
+          "bytes": 95814
+        },
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_fields.svg": {
+          "sha256": "e937af849ce16c2e3292d0313167bc28d71a30cb0b6fecddf9462b289b8f7142",
+          "bytes": 176160
+        },
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_fields.png": {
+          "sha256": "8cf3ec8c9c0c684ec7d0f64071cfc2e7fbc2089a02d889c0713a056ce3273d1b",
+          "bytes": 518842
+        }
+      }
+    },
+    "q2_mechanism": {
+      "unchanged_data_text_axes_positions": true,
+      "annotation_positions_before": [
+        {
+          "text": "(a) 轴心",
+          "position": [
+            0.269,
+            0.865
+          ]
+        },
+        {
+          "text": "(b) 表面",
+          "position": [
+            0.7609999999999999,
+            0.865
+          ]
+        },
+        {
+          "text": "对数分解项",
+          "position": [
+            0.016,
+            0.521
+          ]
+        },
+        {
+          "text": "2.46 h",
+          "position": [
+            1.53,
+            0.985
+          ]
+        },
+        {
+          "text": "2.02 h",
+          "position": [
+            1.22,
+            0.985
+          ]
+        }
+      ],
+      "annotation_positions_after": [
+        {
+          "text": "(a) 轴心",
+          "position": [
+            0.269,
+            0.865
+          ]
+        },
+        {
+          "text": "(b) 表面",
+          "position": [
+            0.7609999999999999,
+            0.865
+          ]
+        },
+        {
+          "text": "对数分解项",
+          "position": [
+            0.016,
+            0.521
+          ]
+        },
+        {
+          "text": "2.46 h",
+          "position": [
+            1.53,
+            0.985
+          ]
+        },
+        {
+          "text": "2.02 h",
+          "position": [
+            1.22,
+            0.985
+          ]
+        }
+      ],
+      "content": {
+        "size_inches": [
+          5.905511811023622,
+          2.1653543307086616
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.078,
+              0.235,
+              0.382,
+              0.572
+            ],
+            "xlim": [
+              0.0,
+              3.0
+            ],
+            "ylim": [
+              -0.34,
+              1.04
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "yticks": [
+              -0.25,
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "lines": [
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "e7a5e2d76c6e9d74be8a86ae0bfeaa74de8b0429e519a3cf335f72e1c74f7e85"
+              },
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "0e351074c674fd4f6b1eefd0924417bfe60322534445de4c8ad0a2367cd94bd7"
+              },
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "47059751e2a0189805ba130bb023f56a58a793478dcc11a8c3365577b34c5e1a"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  1,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "a38a2abb75aa15bc7fa4f27ee05bcec5bda9e138d3f39f14952d60944decf056"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.57,
+              0.235,
+              0.382,
+              0.572
+            ],
+            "xlim": [
+              0.0,
+              3.0
+            ],
+            "ylim": [
+              -0.34,
+              1.04
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "yticks": [
+              -0.25,
+              0.0,
+              0.25,
+              0.5,
+              0.75,
+              1.0
+            ],
+            "lines": [
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "80ba926cfb847c832adf3ff68cc65b24f37cfd609c0b9c3b486bd8d7754908f5"
+              },
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "554809122d19b5f06789ebc72c0f38f85c3e5814245ece1b31c9f744423bcf5a"
+              },
+              {
+                "shape": [
+                  10801,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "61a064d63e6e79c53e60c0c2586fab81fc32b4016335d386989cd588b56c65f1"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  1,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "012431c06f90508b600d3a1ca7bae7a1286a2054f794824785b4acd930818f47"
+              }
+            ],
+            "collections": []
+          }
+        ],
+        "texts": [
+          {
+            "text": "2.46 h",
+            "size_pt": 9.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "时间 / h",
+            "size_pt": 9.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "−0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "−0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.50",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.50",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.75",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.75",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2.02 h",
+            "size_pt": 9.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "时间 / h",
+            "size_pt": 9.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "2",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "3",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "−0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "−0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.25",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.50",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.50",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.75",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "0.75",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "1.00",
+            "size_pt": 9.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "(a) 轴心",
+            "size_pt": 10.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "(b) 表面",
+            "size_pt": 10.5,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "对数分解项",
+            "size_pt": 9.7,
+            "weight": "normal",
+            "rotation": 90.0,
+            "color": "#141414"
+          },
+          {
+            "text": "温度项 H",
+            "size_pt": 9.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "含水率项 M",
+            "size_pt": 9.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          },
+          {
+            "text": "合计 H+M",
+            "size_pt": 9.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#141414"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "(a) 轴心",
+            "position": [
+              0.269,
+              0.865
+            ]
+          },
+          {
+            "text": "(b) 表面",
+            "position": [
+              0.7609999999999999,
+              0.865
+            ]
+          },
+          {
+            "text": "对数分解项",
+            "position": [
+              0.016,
+              0.521
+            ]
+          },
+          {
+            "text": "2.46 h",
+            "position": [
+              1.53,
+              0.985
+            ]
+          },
+          {
+            "text": "2.02 h",
+            "position": [
+              1.22,
+              0.985
+            ]
+          }
+        ]
+      },
+      "font_changes": [
+        {
+          "text": "2.46 h",
+          "old_pt": 9.2,
+          "new_pt": 9.7
+        },
+        {
+          "text": "时间 / h",
+          "old_pt": 9.2,
+          "new_pt": 9.7
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "2",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "2",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "3",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "3",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "−0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "−0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.50",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.50",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.75",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.75",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1.00",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1.00",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "2.02 h",
+          "old_pt": 9.2,
+          "new_pt": 9.7
+        },
+        {
+          "text": "时间 / h",
+          "old_pt": 9.2,
+          "new_pt": 9.7
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "2",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "2",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "3",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "3",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "−0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "−0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.25",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.50",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.50",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.75",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "0.75",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1.00",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "1.00",
+          "old_pt": 9.0,
+          "new_pt": 9.5
+        },
+        {
+          "text": "(a) 轴心",
+          "old_pt": 9.6,
+          "new_pt": 10.5
+        },
+        {
+          "text": "(b) 表面",
+          "old_pt": 9.6,
+          "new_pt": 10.5
+        },
+        {
+          "text": "对数分解项",
+          "old_pt": 9.2,
+          "new_pt": 9.7
+        },
+        {
+          "text": "温度项 H",
+          "old_pt": 9.1,
+          "new_pt": 9.6
+        },
+        {
+          "text": "含水率项 M",
+          "old_pt": 9.1,
+          "new_pt": 9.6
+        },
+        {
+          "text": "合计 H+M",
+          "old_pt": 9.1,
+          "new_pt": 9.6
+        }
+      ],
+      "dimensions_cm": [
+        15.0,
+        5.5
+      ],
+      "text_bounds_checks": [
+        {
+          "text": "2.46 h",
+          "font_pt": 9.7,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 / h",
+          "font_pt": 9.7,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "−0.25",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.25",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.50",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.75",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.00",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "2.02 h",
+          "font_pt": 9.7,
+          "inside_canvas": true
+        },
+        {
+          "text": "时间 / h",
+          "font_pt": 9.7,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "1",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "2",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "3",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "−0.25",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.25",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.50",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "0.75",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "1.00",
+          "font_pt": 9.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "(a) 轴心",
+          "font_pt": 10.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "(b) 表面",
+          "font_pt": 10.5,
+          "inside_canvas": true
+        },
+        {
+          "text": "对数分解项",
+          "font_pt": 9.7,
+          "inside_canvas": true
+        },
+        {
+          "text": "温度项 H",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        },
+        {
+          "text": "含水率项 M",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        },
+        {
+          "text": "合计 H+M",
+          "font_pt": 9.6,
+          "inside_canvas": true
+        }
+      ],
+      "outputs": {
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.pdf": {
+          "sha256": "93055441a0c2ace07a3d8101b9cf85950040452ef5c1c621482a67a62e8fd1e8",
+          "bytes": 33862
+        },
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.svg": {
+          "sha256": "9b750be97349b4afeb75bee1a3917265c512f7f383288e632424d41ff4c488f7",
+          "bytes": 59253
+        },
+        "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.png": {
+          "sha256": "9e3bd328885cea141798cb50d28ce9da166cbf2f7d6b6634819d4db12a97712b",
+          "bytes": 236109
+        }
+      },
+      "source_evidence": {
+        "dimensions_cm": [
+          15.0,
+          5.5
+        ],
+        "text_bounds_checks": [
+          {
+            "text": "2.46 h",
+            "font_pt": 9.7,
+            "inside_canvas": true
+          },
+          {
+            "text": "时间 / h",
+            "font_pt": 9.7,
+            "inside_canvas": true
+          },
+          {
+            "text": "0",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "1",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "2",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "3",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "−0.25",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.25",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.50",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.75",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "1.00",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "2.02 h",
+            "font_pt": 9.7,
+            "inside_canvas": true
+          },
+          {
+            "text": "时间 / h",
+            "font_pt": 9.7,
+            "inside_canvas": true
+          },
+          {
+            "text": "0",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "1",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "2",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "3",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "−0.25",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.25",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.50",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "0.75",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "1.00",
+            "font_pt": 9.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "(a) 轴心",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "(b) 表面",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "对数分解项",
+            "font_pt": 9.7,
+            "inside_canvas": true
+          },
+          {
+            "text": "温度项 H",
+            "font_pt": 9.6,
+            "inside_canvas": true
+          },
+          {
+            "text": "含水率项 M",
+            "font_pt": 9.6,
+            "inside_canvas": true
+          },
+          {
+            "text": "合计 H+M",
+            "font_pt": 9.6,
+            "inside_canvas": true
+          }
+        ],
+        "outputs": {
+          "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.pdf": {
+            "sha256": "93055441a0c2ace07a3d8101b9cf85950040452ef5c1c621482a67a62e8fd1e8",
+            "bytes": 33862
+          },
+          "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.svg": {
+            "sha256": "9b750be97349b4afeb75bee1a3917265c512f7f383288e632424d41ff4c488f7",
+            "bytes": 59253
+          },
+          "paper/q1234_draft_v1/figures/legibility_q2/q2_mechanism.png": {
+            "sha256": "9e3bd328885cea141798cb50d28ce9da166cbf2f7d6b6634819d4db12a97712b",
+            "bytes": 236109
+          }
+        },
+        "source": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+        "source_sha256_before": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+        "source_sha256_after": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+        "source_byte_unchanged": true,
+        "source_keys_used": [
+          "time_s",
+          "radius_cm",
+          "profile_TC"
+        ],
+        "time_s": {
+          "shape": [
+            10801
+          ],
+          "dtype": "float64",
+          "sha256": "39cfb888bc1791f655fbea8eadc69e42124e77da29119854bef2ba5b05d068d8"
+        },
+        "sample_count": 10801,
+        "window_s": [
+          0,
+          10800
+        ],
+        "temperature_conversion": "T_K = stored profile_TC[..., 0] + 273.15",
+        "moisture_definition": "stored dry-basis C = profile_TC[..., 1]",
+        "formulas": {
+          "H": "3850*(1/301.15-1/T_K)",
+          "M": "0.45*(1/2.55-1/C)",
+          "D": "2.4e-3*exp(-3850/T_K-0.45/C)",
+          "D0": "2.4e-3*exp(-3850/301.15-0.45/2.55)"
+        },
+        "D0_unrounded_for_identity": 5.641680373025668e-09,
+        "D0_display_rounded_existing_paper": "5.64168037e-9",
+        "max_abs_log_identity_residual": 4.218847493575595e-15,
+        "panel_titles_centered_over_axes": true,
+        "panels": [
+          {
+            "location": "轴心",
+            "radial_index": 0,
+            "all_10801_per_second_points_plotted": true,
+            "sample_peak_time_s": 8856.0,
+            "sample_peak_time_h": 2.46,
+            "sample_peak_annotation_h": "2.46",
+            "sample_peak_sum": 0.7972939393120845,
+            "D_over_D0_at_3h": 2.19566835845665,
+            "decrease_percent_2_5h_to_3h": 1.0612444259143428,
+            "H_negative_one_second_differences": 0,
+            "state": {
+              "shape": [
+                10801,
+                2
+              ],
+              "dtype": "float64",
+              "sha256": "7adfa9bdcc8b158ab1c05d4e2b63729bdb98618453c25bc10d12116efbe2664b"
+            },
+            "H": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "0449e847bf76734357d05867829fdc0c0e3353856f3c7bc50b97d1a22be95d30"
+            },
+            "M": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "46858334c82d15d1683040cb762c47d4e8b4af6770c1be39083dcfb51e489733"
+            },
+            "H_plus_M": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "80a67fc2c12bcabf5796ca6e6179b04db15925967d2c9fb22b6e103c8ca4ff41"
+            }
+          },
+          {
+            "location": "表面",
+            "radial_index": -1,
+            "all_10801_per_second_points_plotted": true,
+            "sample_peak_time_s": 7262.0,
+            "sample_peak_time_h": 2.0172222222222222,
+            "sample_peak_annotation_h": "2.02",
+            "sample_peak_sum": 0.644797104628575,
+            "D_over_D0_at_3h": 1.8206853990777971,
+            "decrease_percent_2_5h_to_3h": 3.159584586633346,
+            "H_negative_one_second_differences": 929,
+            "state": {
+              "shape": [
+                10801,
+                2
+              ],
+              "dtype": "float64",
+              "sha256": "404ebd57df8939d1415c8f5abf1f7c6cf0e7af57cfa36b1e225c191a455f765b"
+            },
+            "H": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "a1aa69f340072b36167dc8dcbc3d684d0183b5a7c5e00a0124138e595b47b922"
+            },
+            "M": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "e2c16ab45f2218b81355003169be885a0ef463a950d0b887513907f7de395f93"
+            },
+            "H_plus_M": {
+              "shape": [
+                10801
+              ],
+              "dtype": "float64",
+              "sha256": "5bb3260b0eb1ccd0db7f89116a9b71d08efd45fbf1e10088affe89068ee7bff0"
+            }
+          }
+        ],
+        "surface_initial_sample_minimum": {
+          "time_s": 144,
+          "D_over_D0": 0.9832815756343122
+        },
+        "peak_scope": "Maxima among saved one-second samples during 0-3 h, not certified continuous-time extrema.",
+        "interpretation_boundary": "Algebraic contributions along the saved coupled trajectory, not independent causal percentages. The surface curve initially dips and H is not asserted monotonic."
+      }
+    }
+  }
+}

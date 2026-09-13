@@ -1,0 +1,22 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "replacements": {
+    "figures/q1_legibility/q1_workflow.pdf": "figures/legibility_schematics/q1_workflow.pdf",
+    "figures/ch6_revision/q1_boundary.pdf": "figures/legibility_schematics/q1_boundary.pdf",
+    "figures/q2_revision/q2_workflow.pdf": "figures/legibility_schematics/q2_workflow.pdf",
+    "figures/q2_heatmap/q2_fields.pdf": "figures/legibility_q2/q2_fields.pdf",
+    "figures/q2_revision/q2_mechanism.pdf": "figures/legibility_q2/q2_mechanism.pdf",
+    "figures/font_revision/q3_q4_drying.pdf": "figures/legibility_process/q3_q4_drying.pdf",
+    "figures/question_workflows/q4_workflow.pdf": "figures/legibility_schematics/q4_workflow.pdf",
+    "figures/font_revision/q4_shrinkage.pdf": "figures/legibility_process/q4_shrinkage.pdf",
+    "figures/font_revision/dimension_reduction.pdf": "figures/legibility_validation/dimension_reduction.pdf",
+    "figures/font_revision/environment_sensitivity.pdf": "figures/legibility_validation/environment_sensitivity.pdf"
+  },
+  "tex_files_changed": [
+    "paper/q1234_draft_v1/sections/q1.tex",
+    "paper/q1234_draft_v1/sections/q2.tex",
+    "paper/q1234_draft_v1/sections/q3.tex",
+    "paper/q1234_draft_v1/sections/q4.tex",
+    "paper/q1234_draft_v1/sections/validation_limits.tex"
+  ]
+}

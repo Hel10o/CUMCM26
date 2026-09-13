@@ -1,0 +1,24 @@
+{
+  "total_pages": 158,
+  "changed_pages": [
+    7,
+    8,
+    11,
+    14,
+    15,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "unchanged_count": 144,
+  "abstract_pixel_identical": true,
+  "appendix_pixel_identical": true,
+  "comparison_resolution_dpi": 72,
+  "rendered_changed_pages_dpi": 111.6
+}

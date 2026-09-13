@@ -1,0 +1,190 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "scope": "Read frozen arrays and evidence; graphical postprocessing only, no PDE or scenario execution.",
+  "script": "paper/q1234_draft_v1/visual_refinement/geometry.py",
+  "script_sha256": "dcb904212d950ea803375fcfad4e74a7703522ab51ffbe6453cbffda801fb4e4",
+  "common_sha256": "faada64af48890a4726dd4e8c6fe2cd79de475478d744109299bef96cda2e456",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0"
+  },
+  "sources": {
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz": {
+      "sha256": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+      "purpose": "Q3 frozen full trajectory, axis and surface moisture"
+    },
+    "q4_complete_delivery/v1/output/main.npz": {
+      "sha256": "5a6057d654c62eda3fa14e6958b90cfc7ba7490f7f0fdc4ce55d05f33c0a5cf7",
+      "purpose": "Q4 frozen time/radius/material field, current surface and formal endpoint"
+    },
+    "q4_complete_delivery/v1/q123_closeout/output/q23_unified.json": {
+      "sha256": "a5214496d3dc42277668779d906ad05257f9ece761985182e9ce4f7606096610",
+      "purpose": "Saved Q3 exact root and execution extrema"
+    },
+    "q4_complete_delivery/v1/output/end_event.json": {
+      "sha256": "13b737e84266e1c89984b2cb970e212872abd0233683d86f09da24771f69a4ef",
+      "purpose": "Saved Q4 root, execution point and endpoint maximum"
+    },
+    "q4_complete_delivery/v1/output/main.json": {
+      "sha256": "c73e5a2ca90b36745fee3cebf3ef0e501dd6f6dda73d6d53af3f75dcb3787473",
+      "purpose": "Frozen main-run metadata for shared conditional environment and source identity"
+    },
+    "q4_complete_delivery/v1/validation/fixed80.json": {
+      "sha256": "bcd89b71eaee2ef553e2d991cb68222fa38ac8677ddf84356bd6368ea16948a3",
+      "purpose": "Frozen appendix4 fixed-radius conditional critical root; no new scenario"
+    },
+    "q4_complete_delivery/v1/inputs/attachment2.xlsx": {
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "purpose": "Observed external radius history; visual input trace only"
+    }
+  },
+  "outputs": {
+    "paper/q1234_draft_v1/figures/legibility_process/q3_q4_drying.pdf": {
+      "sha256": "5ed8b1a1d528b66cb16a104f8188e5307e4d80dc422c817135bc50e750cafd04",
+      "bytes": 47467
+    },
+    "paper/q1234_draft_v1/figures/legibility_process/q3_q4_drying.svg": {
+      "sha256": "c882cd628dc2a22341e477aa297bade6e6ed2b1a9ed697f84ea5275d6de3eb9f",
+      "bytes": 128215
+    },
+    "paper/q1234_draft_v1/figures/legibility_process/q3_q4_drying.png": {
+      "sha256": "dc21f324858e1815103325a30000dfd8483d10bce939f3c0a0d3ecf322837e65",
+      "bytes": 561328
+    },
+    "paper/q1234_draft_v1/figures/legibility_process/q4_shrinkage.pdf": {
+      "sha256": "10de05a98bf6afe8ac4b565fb9fb2a82a813c613a0d16048520cdc1036c296d3",
+      "bytes": 349744
+    },
+    "paper/q1234_draft_v1/figures/legibility_process/q4_shrinkage.svg": {
+      "sha256": "d3ac0bb6601836319e27870f3b5b3dbc74c1a5a1f9610f72b7e011978d5dbf52",
+      "bytes": 588824
+    },
+    "paper/q1234_draft_v1/figures/legibility_process/q4_shrinkage.png": {
+      "sha256": "c81430cb98df9fab8ca81abc914a202bb3e574e5ccc0701c2ef201f5cd6732db",
+      "bytes": 1034251
+    }
+  },
+  "details": {
+    "font": "Microsoft YaHei",
+    "events": [
+      {
+        "title": "(a) 问题三：附录3 · 固定半径",
+        "root_s": 206906.38993232802,
+        "exec_s": 206906.76,
+        "exec_C": 0.14999989220802712,
+        "exec_h": "57.4741",
+        "margin_display": "0.3701"
+      },
+      {
+        "title": "(b) 问题四：附录4 · 规定收缩",
+        "root_s": 183931.21171548913,
+        "exec_s": 183931.56,
+        "exec_C": 0.14999982116131336,
+        "exec_h": "51.0921",
+        "margin_display": "0.3483"
+      }
+    ],
+    "shrinkage": {
+      "profiles": [
+        {
+          "time_h": 6,
+          "time_index": 360,
+          "current_radius_cm": 1.374,
+          "axis_C": 1.7196029341884955,
+          "surface_C": 0.4206825942811151
+        },
+        {
+          "time_h": 12,
+          "time_index": 720,
+          "current_radius_cm": 1.248,
+          "axis_C": 0.7376863465762249,
+          "surface_C": 0.16694747164292625
+        },
+        {
+          "time_h": 24,
+          "time_index": 1440,
+          "current_radius_cm": 1.204,
+          "axis_C": 0.28512069131022066,
+          "surface_C": 0.06732456430561844
+        },
+        {
+          "time_h": 51.0921,
+          "time_index": 3066,
+          "current_radius_cm": 1.2,
+          "axis_C": 0.14999982116131336,
+          "surface_C": 0.05260748963556811
+        }
+      ],
+      "heatmap_time_count": 3067,
+      "radial_node_count": 121,
+      "current_radius_mapping": "r_cm=100*radius_m(t)*sqrt(x)",
+      "time_stop_h": 51.0921,
+      "radius_observations_count": 145,
+      "log_color_limits": [
+        0.05,
+        2.55
+      ],
+      "heatmap_visual_interpolation": "Gouraud color interpolation between saved mesh nodes; no PDE state evaluated or extrapolated.",
+      "outside_material": "No mesh or fill beyond the current outer vertex R(t); white background.",
+      "observation_time_end_h": 72.0,
+      "all_145_observations_drawn": true,
+      "post_execution_display": "Observed piecewise-linear radius only through 72 h; no moisture mesh, zero fill or PDE continuation beyond execution.",
+      "controlled_comparison": {
+        "fixed_source": "q4_complete_delivery/v1/validation/fixed80.json",
+        "shrinking_source": "q4_complete_delivery/v1/output/end_event.json",
+        "fixed_critical_h": 129.84836083945225,
+        "shrinking_critical_h": 51.09200325430254,
+        "fixed_critical_s": 467454.0990220281,
+        "shrinking_critical_s": 183931.21171548913,
+        "unit_conversion": "critical_s / 3600; exact equality to each stored critical_h asserted",
+        "critical_difference_h": 78.75635758514971,
+        "model_critical_time_reduction_percent": 60.65256201618597,
+        "display_hours": [
+          "129.8484",
+          "51.0920"
+        ],
+        "display_difference_h": "78.7564",
+        "display_percent": "60.65",
+        "scope": "Appendix 4 same properties and environment; fixed dry-basis hm. Difference includes diffusion length and boundary exchange scaling; not a Q3/Q4 property comparison."
+      }
+    },
+    "process_sampling": "Q3 every stored 60 s plus exact execution output; Q4 all 3067 stored outputs. Rulers read exact saved JSON root and execution metadata.",
+    "event_scope": "Each root/execution result is for its one-dimensional effective model and assumed environment; no continuous 2D or physical execution guarantee.",
+    "between_question_scope": "Q3 uses appendix 3 and fixed radius; Q4 uses appendix 4 and prescribed shrinkage. Difference between these two curves is not a pure shrinkage effect.",
+    "old_new_mapping": {
+      "q3_q4_drying": "Retains all stored process and discrete-event information within original 16.4x8.0 cm; adds prominent non-causal between-property warning above the legend.",
+      "q4_shrinkage": "Retains moisture mesh only through execution and all four current-radius profiles. Full 145 observations move into upper panel through 72h; old radius-only lower panel is replaced by frozen same-property conditional root comparison within 16.4x9.2 cm."
+    },
+    "figure_size_cm": {
+      "q3_q4_drying": [
+        16.4,
+        8.0
+      ],
+      "q4_shrinkage": [
+        16.4,
+        9.2
+      ]
+    },
+    "controlled_comparison_metadata": {
+      "same_recorded_source_sha256": "dc1256ee960783721e35d3d2681a470c43bde120323c141305fb591a2c0896a6",
+      "same_future_environment": [
+        49.99893442622951,
+        0.04998754098360656
+      ],
+      "fixed_n": 80,
+      "shrinking_n": 120,
+      "scope": "Reuses the accepted fixed80 versus main120 roots already reported in the paper; does not claim same grid or a newly run convergence check."
+    },
+    "checks": {
+      "q3_event_max_matches_last_frozen_axis": true,
+      "q4_event_max_matches_last_frozen_axis": true,
+      "displayed_root_to_execution_deltas_match_paper": true,
+      "saved_radius_matches_linear_observation_input": true,
+      "no_outside_material_mesh": true,
+      "fixed_and_shrinking_comparison_uses_roots_not_execution_times": true,
+      "controlled_comparison_numbers_match_existing_paper": true
+    }
+  },
+  "all_input_hashes_unchanged": true
+}

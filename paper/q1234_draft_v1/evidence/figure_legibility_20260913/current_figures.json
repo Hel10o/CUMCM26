@@ -1,0 +1,74 @@
+[
+  {
+    "number": 1,
+    "path": "figures/legibility_schematics/q1_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q1.tex"
+  },
+  {
+    "number": 2,
+    "path": "figures/legibility_schematics/q1_boundary.pdf",
+    "width_cm": 15.0,
+    "section": "q1.tex"
+  },
+  {
+    "number": 3,
+    "path": "figures/q1_legibility/q1_profiles.pdf",
+    "width_cm": 14.1,
+    "section": "q1.tex"
+  },
+  {
+    "number": 4,
+    "path": "figures/legibility_schematics/q2_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q2.tex"
+  },
+  {
+    "number": 5,
+    "path": "figures/legibility_q2/q2_fields.pdf",
+    "width_cm": 14.1,
+    "section": "q2.tex"
+  },
+  {
+    "number": 6,
+    "path": "figures/legibility_q2/q2_mechanism.pdf",
+    "width_cm": 15.0,
+    "section": "q2.tex"
+  },
+  {
+    "number": 7,
+    "path": "figures/q3_white/q3_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q3.tex"
+  },
+  {
+    "number": 8,
+    "path": "figures/legibility_process/q3_q4_drying.pdf",
+    "width_cm": 13.950000000000001,
+    "section": "q3.tex"
+  },
+  {
+    "number": 9,
+    "path": "figures/legibility_schematics/q4_workflow.pdf",
+    "width_cm": 15.0,
+    "section": "q4.tex"
+  },
+  {
+    "number": 10,
+    "path": "figures/legibility_process/q4_shrinkage.pdf",
+    "width_cm": 13.8,
+    "section": "q4.tex"
+  },
+  {
+    "number": 11,
+    "path": "figures/legibility_validation/dimension_reduction.pdf",
+    "width_cm": 14.7,
+    "section": "validation_limits.tex"
+  },
+  {
+    "number": 12,
+    "path": "figures/legibility_validation/environment_sensitivity.pdf",
+    "width_cm": 13.950000000000001,
+    "section": "validation_limits.tex"
+  }
+]

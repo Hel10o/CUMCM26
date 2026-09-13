@@ -1,0 +1,5604 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "builder": "paper/q1234_draft_v1/build_legibility_validation.py",
+  "builder_sha256": "54c5bfe7fa95a1286cf6beabe24715d9300e448d730f7c02476c4968170dacee",
+  "scope": "Frozen input graphical postprocessing only; no solver or scenario run.",
+  "font_files": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "font_file_sha256": {
+    "Times New Roman": "931c5de5c70401d9324d5014c123802b4fb753000360ceb2f56c589403cd58c5",
+    "SimSun": "1526ac24375f51f6eb73bc2d3f8072dbe4a80a3a65217677c9d9a84f67dab2ab"
+  },
+  "figure_3_reference": {
+    "ticks_notes_paper_pt": 9.46,
+    "axes_paper_pt": 9.72,
+    "titles_paper_pt": 10.49
+  },
+  "figures": {
+    "dimension_reduction": {
+      "prior_pdf": "paper/q1234_draft_v1/figures/font_revision/dimension_reduction.pdf",
+      "prior_sha256": "5f71b9835f2da48eb2b45b29730b8f09c70a0a6bede5d43c645b3ef1660a13d3",
+      "inserted_width_cm": 14.7,
+      "source_width_cm": 16.4,
+      "canvas_dimensions_unchanged": true,
+      "scientific_signature_unchanged": true,
+      "baseline_signature_matches_accepted_font_record": true,
+      "visible_text_bounds_nonoverlapping": true,
+      "scientific_signature": {
+        "size_inches": [
+          6.456692913385826,
+          3.543307086614173
+        ],
+        "axes": [
+          {
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -8.0,
+              3.5
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -6,
+              -3,
+              0,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "f6308aecd8dc4906801b2765ce708757ecb7827373e3e37468a63ea19529168a"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -2.5,
+              1.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -2,
+              -1,
+              0,
+              1
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "df45e775bc05817f9ca86779127c0eb48f78761dfb32f842c49cfd241634ad88"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "xlim": [
+              0.0,
+              1.374
+            ],
+            "ylim": [
+              -9.6,
+              0.6
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0.0,
+              0.5,
+              1.0
+            ],
+            "yticks": [
+              -9,
+              -6,
+              -3,
+              0
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "a3e44994d8ac51c723a65b8da020a2f9ce4fb50016aecb834ded801e84da8d57"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "xlim": [
+              0.79,
+              2.55
+            ],
+            "ylim": [
+              2.45,
+              -0.45
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              1.0,
+              1.5,
+              2.0,
+              2.5
+            ],
+            "yticks": [
+              0,
+              1,
+              2
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "9f8696686d6d91d05447eccb53bcaaca286c956fc8aface25e406fa9e660f0ab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "2178a4f7ea6555bc184b5121bb8d66bbf94c5aa223c18cd61e60279d8e00bcab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "59b6330a912f654b583225951bd5a7c521b9004de04ca9fdb3d91cca91f7540e"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "19ed0f79f052ae9c9ec50cc10e0914eb5c655222b832bcaf14f277736ae338b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "6e811edfdbd16d14bac21a686828e780cebf690101b8ff11da27860ee88fb150"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5f119310706198ffcabf10fd84f13a8fe297527554b1076d08749c65f8078a3b"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "59a8f5cd8e236ee699dd9c5a821e1027db35dc03ef08564e713006c9cff19407"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "9137b557a30eae342d319f2d38c7e8ddc65a93bd8b6be1ccbed20757e7f942b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e77c3bbf574343e0637b916b42659cf65c50a73998da8fdf2cad69731c07349d"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.274929",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "2.293532",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "7.2533%",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.327482",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.382492",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "4.7118%",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.024545",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.065198",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "2.7379%",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "体积加权平均含水率 / (kg/kg)",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(a) 问题一 · 1800 s",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(b) 问题二 · 3 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(c) 问题四 · 6 h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(d) 各时窗终点的整根平均",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "失水增加",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "二维",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "配对一维",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ]
+      },
+      "before": {
+        "size_inches": [
+          6.456692913385826,
+          3.543307086614173
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.08,
+              0.595,
+              0.258,
+              0.258
+            ],
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -8.0,
+              3.5
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -6,
+              -3,
+              0,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "f6308aecd8dc4906801b2765ce708757ecb7827373e3e37468a63ea19529168a"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.387,
+              0.595,
+              0.258,
+              0.258
+            ],
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -2.5,
+              1.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -2,
+              -1,
+              0,
+              1
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "df45e775bc05817f9ca86779127c0eb48f78761dfb32f842c49cfd241634ad88"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.694,
+              0.595,
+              0.258,
+              0.258
+            ],
+            "xlim": [
+              0.0,
+              1.374
+            ],
+            "ylim": [
+              -9.6,
+              0.6
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0.0,
+              0.5,
+              1.0
+            ],
+            "yticks": [
+              -9,
+              -6,
+              -3,
+              0
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "a3e44994d8ac51c723a65b8da020a2f9ce4fb50016aecb834ded801e84da8d57"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.215,
+              0.173,
+              0.6,
+              0.20400000000000001
+            ],
+            "xlim": [
+              0.79,
+              2.55
+            ],
+            "ylim": [
+              2.45,
+              -0.45
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              1.0,
+              1.5,
+              2.0,
+              2.5
+            ],
+            "yticks": [
+              0,
+              1,
+              2
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "9f8696686d6d91d05447eccb53bcaaca286c956fc8aface25e406fa9e660f0ab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "2178a4f7ea6555bc184b5121bb8d66bbf94c5aa223c18cd61e60279d8e00bcab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "59b6330a912f654b583225951bd5a7c521b9004de04ca9fdb3d91cca91f7540e"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "19ed0f79f052ae9c9ec50cc10e0914eb5c655222b832bcaf14f277736ae338b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "6e811edfdbd16d14bac21a686828e780cebf690101b8ff11da27860ee88fb150"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5f119310706198ffcabf10fd84f13a8fe297527554b1076d08749c65f8078a3b"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "59a8f5cd8e236ee699dd9c5a821e1027db35dc03ef08564e713006c9cff19407"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "9137b557a30eae342d319f2d38c7e8ddc65a93bd8b6be1ccbed20757e7f942b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e77c3bbf574343e0637b916b42659cf65c50a73998da8fdf2cad69731c07349d"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+            "size_pt": 7.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+            "size_pt": 7.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+            "size_pt": 7.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.274929",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "2.293532",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "7.2533%",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.327482",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.382492",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "4.7118%",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.024545",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.065198",
+            "size_pt": 7.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "2.7379%",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "体积加权平均含水率 / (kg/kg)",
+            "size_pt": 8.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+            "size_pt": 8.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(a) 问题一 · 1800 s",
+            "size_pt": 8.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(b) 问题二 · 3 h",
+            "size_pt": 8.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(c) 问题四 · 6 h",
+            "size_pt": 8.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(d) 各时窗终点的整根平均",
+            "size_pt": 8.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "失水增加",
+            "size_pt": 7.8,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+            "size_pt": 7.0,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "二维",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "配对一维",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+            "position": [
+              0.08,
+              0.989
+            ]
+          },
+          {
+            "text": "(a) 问题一 · 1800 s",
+            "position": [
+              0.08,
+              0.909
+            ]
+          },
+          {
+            "text": "(b) 问题二 · 3 h",
+            "position": [
+              0.387,
+              0.909
+            ]
+          },
+          {
+            "text": "(c) 问题四 · 6 h",
+            "position": [
+              0.694,
+              0.909
+            ]
+          },
+          {
+            "text": "(d) 各时窗终点的整根平均",
+            "position": [
+              0.08,
+              0.429
+            ]
+          },
+          {
+            "text": "失水增加",
+            "position": [
+              0.935,
+              0.429
+            ]
+          },
+          {
+            "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+            "position": [
+              0.215,
+              0.018
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+            "position": [
+              0,
+              1.025
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+            "position": [
+              0,
+              1.025
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+            "position": [
+              0,
+              1.025
+            ]
+          },
+          {
+            "text": "2.274929",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "2.293532",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "7.2533%",
+            "position": [
+              1.2,
+              0
+            ]
+          },
+          {
+            "text": "1.327482",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "1.382492",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "4.7118%",
+            "position": [
+              1.2,
+              1
+            ]
+          },
+          {
+            "text": "1.024545",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "1.065198",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "2.7379%",
+            "position": [
+              1.2,
+              2
+            ]
+          }
+        ]
+      },
+      "after": {
+        "size_inches": [
+          6.456692913385826,
+          3.543307086614173
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.07,
+              0.57,
+              0.262,
+              0.24
+            ],
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -8.0,
+              3.5
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -6,
+              -3,
+              0,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "f6308aecd8dc4906801b2765ce708757ecb7827373e3e37468a63ea19529168a"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.384,
+              0.57,
+              0.262,
+              0.24
+            ],
+            "xlim": [
+              0.0,
+              2.0
+            ],
+            "ylim": [
+              -2.5,
+              1.0
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              -2,
+              -1,
+              0,
+              1
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "df45e775bc05817f9ca86779127c0eb48f78761dfb32f842c49cfd241634ad88"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.698,
+              0.57,
+              0.262,
+              0.24
+            ],
+            "xlim": [
+              0.0,
+              1.374
+            ],
+            "ylim": [
+              -9.6,
+              0.6
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              0.0,
+              0.5,
+              1.0
+            ],
+            "yticks": [
+              -9,
+              -6,
+              -3,
+              0
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  81,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "a3e44994d8ac51c723a65b8da020a2f9ce4fb50016aecb834ded801e84da8d57"
+              }
+            ],
+            "collections": []
+          },
+          {
+            "bounds": [
+              0.23,
+              0.185,
+              0.558,
+              0.189
+            ],
+            "xlim": [
+              0.79,
+              2.55
+            ],
+            "ylim": [
+              2.45,
+              -0.45
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              1.0,
+              1.5,
+              2.0,
+              2.5
+            ],
+            "yticks": [
+              0,
+              1,
+              2
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "9f8696686d6d91d05447eccb53bcaaca286c956fc8aface25e406fa9e660f0ab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "2178a4f7ea6555bc184b5121bb8d66bbf94c5aa223c18cd61e60279d8e00bcab"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "59b6330a912f654b583225951bd5a7c521b9004de04ca9fdb3d91cca91f7540e"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "19ed0f79f052ae9c9ec50cc10e0914eb5c655222b832bcaf14f277736ae338b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "6e811edfdbd16d14bac21a686828e780cebf690101b8ff11da27860ee88fb150"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5f119310706198ffcabf10fd84f13a8fe297527554b1076d08749c65f8078a3b"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "59a8f5cd8e236ee699dd9c5a821e1027db35dc03ef08564e713006c9cff19407"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "9137b557a30eae342d319f2d38c7e8ddc65a93bd8b6be1ccbed20757e7f942b1"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e77c3bbf574343e0637b916b42659cf65c50a73998da8fdf2cad69731c07349d"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 10.9,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 10.9,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "当前径向距离 / cm",
+            "size_pt": 10.9,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-9",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-6",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-3",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.274929",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "2.293532",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "7.2533%",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.327482",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.382492",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "4.7118%",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.024545",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "1.065198",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "2.7379%",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "体积加权平均含水率 / (kg/kg)",
+            "size_pt": 10.9,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.0",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2.5",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题一 · 1800 s",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题二 · 3 h",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 6 h",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(a) 问题一 · 1800 s",
+            "size_pt": 11.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(b) 问题二 · 3 h",
+            "size_pt": 11.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(c) 问题四 · 6 h",
+            "size_pt": 11.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "(d) 各时窗终点的整根平均",
+            "size_pt": 11.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "失水增加",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "二维",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "配对一维",
+            "size_pt": 10.6,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+            "position": [
+              0.07,
+              0.994
+            ]
+          },
+          {
+            "text": "(a) 问题一 · 1800 s",
+            "position": [
+              0.07,
+              0.887
+            ]
+          },
+          {
+            "text": "(b) 问题二 · 3 h",
+            "position": [
+              0.384,
+              0.887
+            ]
+          },
+          {
+            "text": "(c) 问题四 · 6 h",
+            "position": [
+              0.698,
+              0.887
+            ]
+          },
+          {
+            "text": "(d) 各时窗终点的整根平均",
+            "position": [
+              0.07,
+              0.39
+            ]
+          },
+          {
+            "text": "失水增加",
+            "position": [
+              0.978,
+              0.39
+            ]
+          },
+          {
+            "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+            "position": [
+              0.07,
+              0.015
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+            "position": [
+              0,
+              1.022
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+            "position": [
+              0,
+              1.022
+            ]
+          },
+          {
+            "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+            "position": [
+              0,
+              1.022
+            ]
+          },
+          {
+            "text": "2.274929",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "2.293532",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "7.2533%",
+            "position": [
+              1.34,
+              0
+            ]
+          },
+          {
+            "text": "1.327482",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "1.382492",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "4.7118%",
+            "position": [
+              1.34,
+              1
+            ]
+          },
+          {
+            "text": "1.024545",
+            "position": [
+              -5,
+              0
+            ]
+          },
+          {
+            "text": "1.065198",
+            "position": [
+              5,
+              0
+            ]
+          },
+          {
+            "text": "2.7379%",
+            "position": [
+              1.34,
+              2
+            ]
+          }
+        ]
+      },
+      "text_bounds": [
+        {
+          "text": "$\\Delta C$ / ($10^{-10}$ kg/kg)",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            45.19685039370079,
+            288.87874015748025,
+            110.0,
+            16.0
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "当前径向距离 / cm",
+          "source_font_pt": 10.9,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            69.27952755905511,
+            159.81607880679954,
+            121.0,
+            16.26727973090277
+          ],
+          "paper_font_pt": 9.770121951219513
+        },
+        {
+          "text": "0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            41.19685039370079,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            125.77952755905511,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            210.36220472440945,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-6",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            23.863517060367457,
+            208.47670960287567,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-3",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            23.863517060367457,
+            230.66089310167746,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            28.863517060367457,
+            252.84507660047922,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "3",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            28.863517060367457,
+            275.029260099281,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "$\\Delta C$ / ($10^{-5}$ kg/kg)",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            247.93700787401573,
+            288.87874015748025,
+            104.00000000000003,
+            16.0
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "当前径向距离 / cm",
+          "source_font_pt": 10.9,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            272.0196850393701,
+            159.81607880679954,
+            121.0,
+            16.26727973090277
+          ],
+          "paper_font_pt": 9.770121951219513
+        },
+        {
+          "text": "0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            243.93700787401573,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            328.5196850393701,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            413.1023622047244,
+            180.25002520436897,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-2",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            226.6036745406824,
+            205.83573537682787,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-1",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            226.6036745406824,
+            230.1326982564679,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            231.6036745406824,
+            254.42966113610794,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            231.6036745406824,
+            278.726624015748,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "$\\Delta C$ / ($10^{-7}$ kg/kg)",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            450.67716535433067,
+            288.87874015748025,
+            104.0,
+            16.0
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "当前径向距离 / cm",
+          "source_font_pt": 10.9,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            474.759842519685,
+            159.81607880679954,
+            121.0,
+            16.26727973090277
+          ],
+          "paper_font_pt": 9.770121951219513
+        },
+        {
+          "text": "0.0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            440.67716535433067,
+            180.25002520436897,
+            20.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "0.5",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            502.23661016172105,
+            180.25002520436897,
+            20.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            563.7960549691113,
+            180.25002520436897,
+            20.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-9",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            429.34383202099735,
+            198.68956982399254,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-6",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            429.34383202099735,
+            223.70114925891613,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "-3",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            429.34383202099735,
+            248.71272869383967,
+            13.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            434.34383202099735,
+            273.72430812876325,
+            8.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2.274929",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            385.5342123896225,
+            117.86016962996982,
+            60.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2.293532",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            463.2311290439462,
+            113.01072624142788,
+            60.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "7.2533%",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            574.2837795275591,
+            115.43544793569885,
+            57.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.327482",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            191.58547779663883,
+            94.76758206548435,
+            60.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.382492",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            276.73541472728704,
+            89.9181386769424,
+            60.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "4.7118%",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            574.8306545275591,
+            92.34286037121338,
+            56.453125,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.024545",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            129.57243081955943,
+            71.67499450099888,
+            60.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.065198",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            211.78319735253754,
+            66.82555111245694,
+            59.99999999999997,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2.7379%",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            574.2837795275591,
+            69.2502728067279,
+            57.0,
+            13.385145399305543
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "体积加权平均含水率 / (kg/kg)",
+          "source_font_pt": 10.9,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            232.14566929133855,
+            22.009867083264986,
+            193.0,
+            16.26727973090278
+          ],
+          "paper_font_pt": 9.770121951219513
+        },
+        {
+          "text": "1.0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            181.49230493915533,
+            43.83270236972332,
+            20.0,
+            13.385145399305557
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "1.5",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            283.8455619183966,
+            43.83270236972332,
+            20.0,
+            13.385145399305557
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2.0",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            386.1988188976378,
+            43.83270236972332,
+            20.0,
+            13.385145399305557
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "2.5",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            488.55207587687903,
+            43.83270236972332,
+            20.0,
+            13.385145399305557
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "问题一 · 1800 s",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            20.726159230096243,
+            112.45066603465717,
+            100.0,
+            16.177354600694443
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "问题二 · 3 h",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            42.72615923009624,
+            89.3580784701717,
+            78.0,
+            16.177354600694443
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "问题四 · 6 h",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            42.72615923009624,
+            66.26549090568624,
+            78.0,
+            16.177354600694443
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "中截面终时差值  $\\Delta C=C_{\\mathrm{2D}}-C_{\\mathrm{1D}}$",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            45.19685039370079,
+            335.2047244094488,
+            223.0,
+            17.0
+          ],
+          "paper_font_pt": 10.039024390243902
+        },
+        {
+          "text": "(a) 问题一 · 1800 s",
+          "source_font_pt": 11.7,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            45.19685039370079,
+            310.78425850455216,
+            124.0,
+            17.507080078125
+          ],
+          "paper_font_pt": 10.487195121951219
+        },
+        {
+          "text": "(b) 问题二 · 3 h",
+          "source_font_pt": 11.7,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            247.93700787401573,
+            310.78425850455216,
+            103.00000000000003,
+            17.507080078125
+          ],
+          "paper_font_pt": 10.487195121951219
+        },
+        {
+          "text": "(c) 问题四 · 6 h",
+          "source_font_pt": 11.7,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            450.67716535433067,
+            310.78425850455216,
+            102.0,
+            17.507080078125
+          ],
+          "paper_font_pt": 10.487195121951219
+        },
+        {
+          "text": "(d) 各时窗终点的整根平均",
+          "source_font_pt": 11.7,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            45.19685039370079,
+            134.68189629982774,
+            182.0,
+            17.507080078125
+          ],
+          "paper_font_pt": 10.487195121951219
+        },
+        {
+          "text": "失水增加",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            571.4645669291338,
+            135.01162177725828,
+            60.0,
+            16.177354600694457
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "各行时窗不同；失水增加仅按各行的一维、二维配对计算。",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            45.19685039370079,
+            2.1376060292268146,
+            390.0,
+            16.177354600694443
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "二维",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            349.8362860892388,
+            137.54124395949526,
+            30.0,
+            16.177354600694457
+          ],
+          "paper_font_pt": 9.501219512195123
+        },
+        {
+          "text": "配对一维",
+          "source_font_pt": 10.6,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            416.3362860892388,
+            137.54124395949526,
+            60.0,
+            16.177354600694457
+          ],
+          "paper_font_pt": 9.501219512195123
+        }
+      ]
+    },
+    "environment_sensitivity": {
+      "prior_pdf": "paper/q1234_draft_v1/figures/font_revision/environment_sensitivity.pdf",
+      "prior_sha256": "7d0cd2c546d4a52b508079af3892e2809dc73cb13809a35d8b2df03204ea9291",
+      "inserted_width_cm": 13.95,
+      "source_width_cm": 16.4,
+      "canvas_dimensions_unchanged": true,
+      "scientific_signature_unchanged": true,
+      "baseline_signature_matches_accepted_font_record": true,
+      "visible_text_bounds_nonoverlapping": true,
+      "scientific_signature": {
+        "size_inches": [
+          6.456692913385826,
+          2.440944881889764
+        ],
+        "axes": [
+          {
+            "xlim": [
+              -2.62,
+              2.62
+            ],
+            "ylim": [
+              3.48,
+              -0.48
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ae2cc60d29de85c7ed46adf5bb27e89a62bdafc75e3f8822473568055af8b86e"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "124fc60dac41dc47baad781dd0007eeb48fafe636020e7aba99bb0ab9611bd9b"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "d9c47dbac3baa7de2ef9d5bb92cd9b4cfe2b5c844059b73577cbed9f1c8fd193"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "1e189b8c800842972195a7e6c636891956127e9fd82026f60cd0f47320598d1d"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e71c566d549934e4dd3f934d274f32447320f50c87636aa5c5011ff41b8c730f"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "431eaae5e021a9aa631265388b7f8eabb851d96a16ade0e556026f9410bd5ca0"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f0f35be8e55ade26babd10e1481f8c3f8c25ad8ec61fb70b220b61c16aa3d29e"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "15947d924c57682a20167eb484ea3d1eacf46012e1011ec41eb5cf7cb45eeacc"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f19a241fe60824346f6683cd94cf99abe45a340f05a5661730bf117b1ca69e14"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "afc124faba7b03448ff36787488e23a9498afb1418fb5d9e4b0d58f51080d768"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5d8d6e22a006e374762a5e98210e706eec3f69f6978ad59bd7f9455370d651ae"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "82e1c308d1993ab9a5d09adced8d13bee760d5c049fc84db49fb2cfbf673c6f8"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "+1.867279",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-1.785639",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-0.091249",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+0.110117",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+1.637343",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-1.566660",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-0.098185",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "+0.126750",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "相对同阶基线的临界根变化 / h",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "4 h 后单因素情景",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "问题三 · 固定半径",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 规定收缩",
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ]
+      },
+      "before": {
+        "size_inches": [
+          6.456692913385826,
+          2.440944881889764
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.218,
+              0.29000000000000004,
+              0.756,
+              0.52
+            ],
+            "xlim": [
+              -2.62,
+              2.62
+            ],
+            "ylim": [
+              3.48,
+              -0.48
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ae2cc60d29de85c7ed46adf5bb27e89a62bdafc75e3f8822473568055af8b86e"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "124fc60dac41dc47baad781dd0007eeb48fafe636020e7aba99bb0ab9611bd9b"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "d9c47dbac3baa7de2ef9d5bb92cd9b4cfe2b5c844059b73577cbed9f1c8fd193"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "1e189b8c800842972195a7e6c636891956127e9fd82026f60cd0f47320598d1d"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e71c566d549934e4dd3f934d274f32447320f50c87636aa5c5011ff41b8c730f"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "431eaae5e021a9aa631265388b7f8eabb851d96a16ade0e556026f9410bd5ca0"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f0f35be8e55ade26babd10e1481f8c3f8c25ad8ec61fb70b220b61c16aa3d29e"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "15947d924c57682a20167eb484ea3d1eacf46012e1011ec41eb5cf7cb45eeacc"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f19a241fe60824346f6683cd94cf99abe45a340f05a5661730bf117b1ca69e14"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "afc124faba7b03448ff36787488e23a9498afb1418fb5d9e4b0d58f51080d768"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5d8d6e22a006e374762a5e98210e706eec3f69f6978ad59bd7f9455370d651ae"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "82e1c308d1993ab9a5d09adced8d13bee760d5c049fc84db49fb2cfbf673c6f8"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "+1.867279",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-1.785639",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-0.091249",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+0.110117",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+1.637343",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-1.566660",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-0.098185",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "+0.126750",
+            "size_pt": 7.7,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "相对同阶基线的临界根变化 / h",
+            "size_pt": 8.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "4 h 后单因素情景",
+            "size_pt": 9.0,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+            "size_pt": 7.0,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "问题三 · 固定半径",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 规定收缩",
+            "size_pt": 7.3,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "4 h 后单因素情景",
+            "position": [
+              0.218,
+              0.936
+            ]
+          },
+          {
+            "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+            "position": [
+              0.218,
+              0.042
+            ]
+          },
+          {
+            "text": "+1.867279",
+            "position": [
+              6,
+              0
+            ]
+          },
+          {
+            "text": "-1.785639",
+            "position": [
+              -6,
+              0
+            ]
+          },
+          {
+            "text": "-0.091249",
+            "position": [
+              -6,
+              0
+            ]
+          },
+          {
+            "text": "+0.110117",
+            "position": [
+              6,
+              0
+            ]
+          },
+          {
+            "text": "+1.637343",
+            "position": [
+              6,
+              0
+            ]
+          },
+          {
+            "text": "-1.566660",
+            "position": [
+              -6,
+              0
+            ]
+          },
+          {
+            "text": "-0.098185",
+            "position": [
+              -6,
+              0
+            ]
+          },
+          {
+            "text": "+0.126750",
+            "position": [
+              6,
+              0
+            ]
+          }
+        ]
+      },
+      "after": {
+        "size_inches": [
+          6.456692913385826,
+          2.440944881889764
+        ],
+        "axes": [
+          {
+            "bounds": [
+              0.218,
+              0.275,
+              0.756,
+              0.533
+            ],
+            "xlim": [
+              -2.62,
+              2.62
+            ],
+            "ylim": [
+              3.48,
+              -0.48
+            ],
+            "xscale": "linear",
+            "yscale": "linear",
+            "xticks": [
+              -2,
+              -1,
+              0,
+              1,
+              2
+            ],
+            "yticks": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "lines": [
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ae2cc60d29de85c7ed46adf5bb27e89a62bdafc75e3f8822473568055af8b86e"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "ee282b9a2a908de59370144927dbde8229713e5d8873d82b72a649cb2e6c621a"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "124fc60dac41dc47baad781dd0007eeb48fafe636020e7aba99bb0ab9611bd9b"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "d9c47dbac3baa7de2ef9d5bb92cd9b4cfe2b5c844059b73577cbed9f1c8fd193"
+              },
+              {
+                "shape": [
+                  2,
+                  2
+                ],
+                "dtype": "float64",
+                "sha256": "1e189b8c800842972195a7e6c636891956127e9fd82026f60cd0f47320598d1d"
+              }
+            ],
+            "collections": [
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e71c566d549934e4dd3f934d274f32447320f50c87636aa5c5011ff41b8c730f"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "431eaae5e021a9aa631265388b7f8eabb851d96a16ade0e556026f9410bd5ca0"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f0f35be8e55ade26babd10e1481f8c3f8c25ad8ec61fb70b220b61c16aa3d29e"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "15947d924c57682a20167eb484ea3d1eacf46012e1011ec41eb5cf7cb45eeacc"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      26,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "05e87227f693f643c4a22a74c90340f91569fd574b5a92cee5a0753b9a1ff1bc"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f19a241fe60824346f6683cd94cf99abe45a340f05a5661730bf117b1ca69e14"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "afc124faba7b03448ff36787488e23a9498afb1418fb5d9e4b0d58f51080d768"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "5d8d6e22a006e374762a5e98210e706eec3f69f6978ad59bd7f9455370d651ae"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              },
+              {
+                "class": "PathCollection",
+                "array": null,
+                "offsets": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "82e1c308d1993ab9a5d09adced8d13bee760d5c049fc84db49fb2cfbf673c6f8"
+                },
+                "geometry": [
+                  {
+                    "shape": [
+                      5,
+                      2
+                    ],
+                    "dtype": "float64",
+                    "sha256": "730b1fb2cd7a771dee661177f6c1cef4409e29ff7e7f1bfe28a460d66b1fe7ac"
+                  }
+                ],
+                "clim": [
+                  null,
+                  null
+                ],
+                "cmap": "viridis"
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "+1.867279",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-1.785639",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "-0.091249",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+0.110117",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#176B80"
+          },
+          {
+            "text": "+1.637343",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-1.566660",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "-0.098185",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "+0.126750",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#C77C35"
+          },
+          {
+            "text": "相对同阶基线的临界根变化 / h",
+            "size_pt": 11.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-2",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "-1",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "0",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "1",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "2",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 −1 K",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "温度 +1 K",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b −0.005",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "边界 b +0.005",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "4 h 后单因素情景",
+            "size_pt": 12.4,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#6C7C83"
+          },
+          {
+            "text": "问题三 · 固定半径",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          },
+          {
+            "text": "问题四 · 规定收缩",
+            "size_pt": 11.2,
+            "weight": "normal",
+            "rotation": 0.0,
+            "color": "#253E4A"
+          }
+        ],
+        "anchors": [
+          {
+            "text": "4 h 后单因素情景",
+            "position": [
+              0.04,
+              0.94
+            ]
+          },
+          {
+            "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+            "position": [
+              0.04,
+              0.03
+            ]
+          },
+          {
+            "text": "+1.867279",
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "text": "-1.785639",
+            "position": [
+              -6,
+              2
+            ]
+          },
+          {
+            "text": "-0.091249",
+            "position": [
+              -6,
+              2
+            ]
+          },
+          {
+            "text": "+0.110117",
+            "position": [
+              6,
+              2
+            ]
+          },
+          {
+            "text": "+1.637343",
+            "position": [
+              6,
+              -2
+            ]
+          },
+          {
+            "text": "-1.566660",
+            "position": [
+              -6,
+              -2
+            ]
+          },
+          {
+            "text": "-0.098185",
+            "position": [
+              -6,
+              -2
+            ]
+          },
+          {
+            "text": "+0.126750",
+            "position": [
+              6,
+              -2
+            ]
+          }
+        ]
+      },
+      "text_bounds": [
+        {
+          "text": "+1.867279",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            567.0963645446203,
+            183.29982356165,
+            69.0,
+            14.357204861111086
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "-1.785639",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            145.14646138418183,
+            150.44569169177007,
+            65.0,
+            14.357204861111086
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "-0.091249",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            302.98540270629337,
+            117.59155982189016,
+            65.0,
+            14.3572048611111
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "+0.110117",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            403.41000559329086,
+            84.73742795201026,
+            67.84375,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "+1.637343",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            545.6769623083611,
+            165.25969789554006,
+            69.0,
+            14.357204861111086
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "-1.566660",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            165.54518816133057,
+            132.40556602566016,
+            65.0,
+            14.357204861111086
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "-0.098185",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            302.33923414518756,
+            99.55143415578026,
+            65.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "+0.126750",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            404.95945935924,
+            66.69730228590035,
+            69.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "相对同阶基线的临界根变化 / h",
+          "source_font_pt": 11.4,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            278.8188976377952,
+            21.46273555405185,
+            212.0,
+            17.417154947916668
+          ],
+          "paper_font_pt": 9.696951219512195
+        },
+        {
+          "text": "-2",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            192.01127006070803,
+            44.435446057524075,
+            13.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "-1",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            285.16508384925163,
+            44.435446057524075,
+            13.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "0",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            380.8188976377952,
+            44.435446057524075,
+            8.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "1",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            473.9727114263388,
+            44.435446057524075,
+            8.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "2",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            567.1265252148823,
+            44.435446057524075,
+            8.0,
+            14.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "温度 −1 K",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            59.25590551181102,
+            171.10115829803945,
+            69.0,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "温度 +1 K",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            59.25590551181102,
+            138.24702642815956,
+            69.0,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "边界 b −0.005",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            35.25590551181102,
+            105.39289455827965,
+            93.0,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "边界 b +0.005",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            35.25590551181102,
+            72.53876268839974,
+            93.0,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "4 h 后单因素情景",
+          "source_font_pt": 12.4,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            25.826771653543307,
+            220.09036620666555,
+            128.0,
+            18.716905381944457
+          ],
+          "paper_font_pt": 10.547560975609755
+        },
+        {
+          "text": "负值：根提前     正值：根后移     人工设定幅度；第四问规定半径不变。",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            25.826771653543307,
+            3.965629784558181,
+            504.00000000000006,
+            17.35720486111111
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "问题三 · 固定半径",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            346.90671478565184,
+            220.7702164670822,
+            125.0,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        },
+        {
+          "text": "问题四 · 规定收缩",
+          "source_font_pt": 11.2,
+          "inside_canvas": true,
+          "bounds_pixels": [
+            506.3789370078741,
+            220.7702164670822,
+            125.00000000000006,
+            17.357204861111114
+          ],
+          "paper_font_pt": 9.526829268292682
+        }
+      ]
+    }
+  },
+  "permitted_changes": [
+    "font sizes",
+    "text and legend positions",
+    "axes rectangles",
+    "annotation offset points and padding"
+  ],
+  "preserved": [
+    "all displayed strings",
+    "all plotted arrays and marker coordinates",
+    "all axis limits scales and ticks",
+    "all colours",
+    "figure dimensions"
+  ]
+}

@@ -1,0 +1,5406 @@
+{
+  "baseline_commit": "4f09fdad4182b6f220e801af54dffd0be37ad04c",
+  "scope": "Font-size increase in existing figures 1, 2, 4 and 9. Canvas dimensions, text, arrow topology and colours unchanged. Only Q4 rounded input boxes are slightly enlarged to maintain inner padding.",
+  "builder": "paper/q1234_draft_v1/build_legibility_schematics.py",
+  "builder_sha256": "fed8526295431148d40df210da76ded76c4a955865b4e60d64af1e722f388af1",
+  "runtime": {
+    "python": "3.13.14",
+    "numpy": "2.4.6"
+  },
+  "font_contract": {
+    "Chinese": "SimSun",
+    "Latin_and_digits": "Times New Roman"
+  },
+  "font_files": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "source_hashes": {
+    "paper/q1234_draft_v1/build_ch6_assets.py": "d88d2d06752c35755916224e27edfc87743025e5727bf397e2f4e3749588aa09",
+    "paper/q1234_draft_v1/build_q1_legibility.py": "a16d586b586078700e51a93f9eb47b9fb01ae63adfbf3616231c591e17739627",
+    "paper/q1234_draft_v1/build_q2_revision_assets.py": "d8a7d1e851f19103c1a23f2b2348728cfe1121101bf5e5a0156dca4f81975df8",
+    "paper/q1234_draft_v1/build_question_workflows.py": "e98838aa04dfced5fbc148864fa05df0de9974d74c6fbce5d772631ea27a7733",
+    "paper/q1234_draft_v1/figures/q1_legibility/q1_workflow.pdf": "d3a6d1abb5d360e06e33c0468995dc04c45cb92a281868e5f5793e9497d914d0",
+    "paper/q1234_draft_v1/figures/ch6_revision/q1_boundary.pdf": "6b240171e30e32203350fbc89bcd3fc34887e97625ce0da6b8bed5f26f1af3cb",
+    "paper/q1234_draft_v1/figures/q2_revision/q2_workflow.pdf": "311495f4379b487103efb386a152d63c5aa4994cb31c32f59d0854c443e18475",
+    "paper/q1234_draft_v1/figures/question_workflows/q4_workflow.pdf": "0749f122ef134f8c1fd919d0173cbe917fbea8cad3f84277c9a8e1dc327c47c1"
+  },
+  "source_files_byte_unchanged": true,
+  "numerical_data_files_read": 0,
+  "PDE_or_scenario_runs": 0,
+  "figures": {
+    "q1_workflow": {
+      "prior_asset": "figures/q1_legibility/q1_workflow.pdf",
+      "old_font_sizes_pt": [
+        9.2,
+        9.6
+      ],
+      "new_font_sizes_pt": [
+        10.0,
+        10.5
+      ],
+      "insertion_width_cm": 15,
+      "actual_main_text_size_in_paper_pt": [
+        10.0,
+        10.5
+      ],
+      "font_note": "Natural mathematical subscripts retain the math font scale.",
+      "content_and_geometry_before": {
+        "canvas_inches": [
+          5.905511811023622,
+          1.2598425196850394
+        ],
+        "axes": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "limits": [
+              [
+                0.0,
+                15.0
+              ],
+              [
+                0.0,
+                3.2
+              ]
+            ],
+            "lines": [
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f40f997e4a0aec2b87976e04d0551de5a5722737548fa5e7612b38acce2cec95"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "be1a41ea5d15270e951f983cc5010b760f4eaeee0446ee742d34ab2197c035ce"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f78b8b571c187eccad820718be06f8ff97ce91d44a36c76c756854029ce2a7cd"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "c577c3aef97202b88123526fcd749543d58e499fb42e3056b311eaf7250c4b78"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3d913d55737a7537ed31f81e590b9cfa2b85a9d56c1d2a97a508fad61bde8a44"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3010dd6cd46c948758d6daf37b0364b473a19eea9d38f3cc00a87172e6397273"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              }
+            ],
+            "patches": [
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "a388f4f3b96555a6b4733c266a09b3f436070935d3f59dd234c460e4763a5414"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "9d9e8d1c97b0b899bf173fb6a558973d5764c3e5151b2cd07e8fc1d9e3310a86"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "cd351ab03fdc1204fccd96a73941e6ac23ae5c28bd85f654c92bc76b29406d51"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "d8b072e5caec37a0a216a18aeef078fa270db8d3b46dbf495cfbeb9dae62a7ee"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "56a3bf1bcd19e595498e1876f64cad10e3980cd22ec231f1ea3ab7d7bbaca65f"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "06c5fcee9f9dd137ddf499650fa9272b1f9cc6ff501964a0e5e42e095a16bdcb"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "387c250d712cb4f9ec6611cafd5435d75e337c25586d842a601dc9ece34c46c3"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "c78043dee9d61185afb8b1ae5c7f9b8949c46d1531dbbdddf24e82ef0693fff9"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "1e57becffba29ac84bc16ffb040c30961fbe3c1c85a33d13bdb29784848975b9"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "ba6ba5a3539c7f3235a66df009ee73610fbdc1ecdfac7a759a568bfbcc2b9e9c"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "58509768051d6e704d02ca104fc4657fb450231ed1e1394bc452f3a5b9107917"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "cab296fb0fec8ad02325714a6f19c50703bd34f0f681625927d6d544c154ceae"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "1e309094686cf20d3170f9b100d847489e304716e982871accfc6c05f60d739d"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "统一传热传质模型 → 问题一条件与参数代入",
+            "position": [
+              7.5,
+              2.96
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "几何与初态\n环境记录\n附录2物性",
+            "position": [
+              1.4749999999999999,
+              1.38
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "常热物性导热方程",
+            "position": [
+              4.975,
+              2.18
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "非线性水分扩散\nD(C)",
+            "position": [
+              4.975,
+              0.675
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "圆环有限体积\nBDF隐式积分",
+            "position": [
+              8.76,
+              2.1799999999999997
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "圆环有限体积\nBDF隐式积分",
+            "position": [
+              8.76,
+              0.675
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "0–1800 s\n径向温度场",
+            "position": [
+              12.94,
+              2.1799999999999997
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "0–1800 s\n径向含水率场",
+            "position": [
+              12.94,
+              0.675
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          }
+        ]
+      },
+      "all_text_positions_colours_and_canvas_exactly_unchanged": true,
+      "geometry_exactly_unchanged": true,
+      "layout_adjustment": null,
+      "node_checks": [
+        {
+          "text": "几何与初态\n环境记录\n附录2物性",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 9.553972379429133
+        },
+        {
+          "text": "常热物性导热方程",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.0393700787401485
+        },
+        {
+          "text": "非线性水分扩散\nD(C)",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.335194184711284
+        },
+        {
+          "text": "圆环有限体积\nBDF隐式积分",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.744643003608914
+        },
+        {
+          "text": "圆环有限体积\nBDF隐式积分",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.9414933973097064
+        },
+        {
+          "text": "0–1800 s\n径向温度场",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.744643003608914
+        },
+        {
+          "text": "0–1800 s\n径向含水率场",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.9414933973097064
+        }
+      ],
+      "text_spacing_check": {
+        "text_pair_count": 28,
+        "no_text_bounding_box_overlap": true
+      },
+      "all_exported_pdf_text_characters_and_counts_unchanged": true,
+      "old_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "9.2000": 18,
+          "9.6000": 3
+        },
+        "spans": [
+          {
+            "text": "统一传热传质模型",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": " → ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "问题一条件与参数代入",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "几何与初态",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "环境记录",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "附录",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "2",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "物性",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "常热物性导热方程",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "非线性水分扩散",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "D(C)",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "圆环有限体积",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "BDF",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "圆环有限体积",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "BDF",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "0–1800 s",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "径向温度场",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "0–1800 s",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "径向含水率场",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "(": 1,
+          ")": 1,
+          "0": 6,
+          "1": 2,
+          "2": 1,
+          "8": 2,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "F": 2,
+          "s": 2,
+          "–": 2,
+          "→": 1,
+          "一": 2,
+          "与": 2,
+          "代": 1,
+          "件": 1,
+          "传": 2,
+          "体": 2,
+          "何": 1,
+          "入": 1,
+          "几": 1,
+          "分": 3,
+          "初": 1,
+          "参": 1,
+          "向": 2,
+          "含": 1,
+          "圆": 2,
+          "场": 2,
+          "型": 1,
+          "境": 1,
+          "导": 1,
+          "常": 1,
+          "度": 1,
+          "式": 2,
+          "录": 2,
+          "径": 2,
+          "态": 1,
+          "性": 3,
+          "扩": 1,
+          "散": 1,
+          "数": 1,
+          "方": 1,
+          "有": 2,
+          "条": 1,
+          "模": 1,
+          "水": 2,
+          "温": 1,
+          "热": 3,
+          "物": 2,
+          "率": 1,
+          "环": 3,
+          "积": 4,
+          "程": 1,
+          "线": 1,
+          "统": 1,
+          "记": 1,
+          "质": 1,
+          "问": 1,
+          "附": 1,
+          "限": 2,
+          "隐": 2,
+          "非": 1,
+          "题": 1
+        }
+      },
+      "new_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "10.0000": 18,
+          "10.5000": 3
+        },
+        "spans": [
+          {
+            "text": "统一传热传质模型",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": " → ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "问题一条件与参数代入",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": "几何与初态",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "环境记录",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "附录",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "2",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "物性",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "常热物性导热方程",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "非线性水分扩散",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "D(C)",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "圆环有限体积",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "BDF",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "圆环有限体积",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "BDF",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "0–1800 s",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "径向温度场",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "0–1800 s",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "径向含水率场",
+            "font": "SimSun",
+            "size_pt": 10.0
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "(": 1,
+          ")": 1,
+          "0": 6,
+          "1": 2,
+          "2": 1,
+          "8": 2,
+          "B": 2,
+          "C": 1,
+          "D": 3,
+          "F": 2,
+          "s": 2,
+          "–": 2,
+          "→": 1,
+          "一": 2,
+          "与": 2,
+          "代": 1,
+          "件": 1,
+          "传": 2,
+          "体": 2,
+          "何": 1,
+          "入": 1,
+          "几": 1,
+          "分": 3,
+          "初": 1,
+          "参": 1,
+          "向": 2,
+          "含": 1,
+          "圆": 2,
+          "场": 2,
+          "型": 1,
+          "境": 1,
+          "导": 1,
+          "常": 1,
+          "度": 1,
+          "式": 2,
+          "录": 2,
+          "径": 2,
+          "态": 1,
+          "性": 3,
+          "扩": 1,
+          "散": 1,
+          "数": 1,
+          "方": 1,
+          "有": 2,
+          "条": 1,
+          "模": 1,
+          "水": 2,
+          "温": 1,
+          "热": 3,
+          "物": 2,
+          "率": 1,
+          "环": 3,
+          "积": 4,
+          "程": 1,
+          "线": 1,
+          "统": 1,
+          "记": 1,
+          "质": 1,
+          "问": 1,
+          "附": 1,
+          "限": 2,
+          "隐": 2,
+          "非": 1,
+          "题": 1
+        }
+      },
+      "output": {
+        "dimensions_cm": [
+          15.0,
+          3.2
+        ],
+        "text_bounds_checks": [
+          {
+            "text": "统一传热传质模型 → 问题一条件与参数代入",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "几何与初态\n环境记录\n附录2物性",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "常热物性导热方程",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "非线性水分扩散\nD(C)",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "圆环有限体积\nBDF隐式积分",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "圆环有限体积\nBDF隐式积分",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "0–1800 s\n径向温度场",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "0–1800 s\n径向含水率场",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          }
+        ],
+        "outputs": {
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_workflow.pdf": {
+            "sha256": "333a05de66aa7c384def334aa1bde46a0593a7f4c2fc182f631ab99bd16e862c",
+            "bytes": 35976
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_workflow.svg": {
+            "sha256": "5138f5bb7e35f8efee734c287c8c6c65500779fcddc74acfabede8560e03aa1c",
+            "bytes": 82531
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_workflow.png": {
+            "sha256": "23ea2fc61b2db263d554939333caf4004eb6e9b13259003cda2345e32c9e8406",
+            "bytes": 227699
+          }
+        }
+      }
+    },
+    "q1_boundary": {
+      "prior_asset": "figures/ch6_revision/q1_boundary.pdf",
+      "old_font_sizes_pt": [
+        9.0,
+        9.1,
+        9.3,
+        9.6,
+        10.0,
+        10.1
+      ],
+      "new_font_sizes_pt": [
+        10.0,
+        10.5
+      ],
+      "insertion_width_cm": 15,
+      "actual_main_text_size_in_paper_pt": [
+        10.0,
+        10.5
+      ],
+      "font_note": "Natural mathematical subscripts retain the math font scale.",
+      "content_and_geometry_before": {
+        "canvas_inches": [
+          5.905511811023622,
+          1.6929133858267715
+        ],
+        "axes": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "limits": [
+              [
+                0.0,
+                15.0
+              ],
+              [
+                0.0,
+                4.3
+              ]
+            ],
+            "lines": [
+              {
+                "xy": {
+                  "shape": [
+                    1,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "c8971412f76d7b894669929bf9dd0eabcdd5a117956b1d2fe34b5785913d7d13"
+                },
+                "color": "#273D4A",
+                "width": 1.5,
+                "marker": "o"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "888450c2a2d078d4b8e9abda2089739efc94dbb368ec671cf933d2cbc8ee4b40"
+                },
+                "color": "#273D4A",
+                "width": 0.8,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "21f57499ec979b344d5777a7427f89e32cdc2fdf104370c6fa2745975f68da08"
+                },
+                "color": "#AD6222",
+                "width": 1.15,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "a76b7e730759178ea7e0c3d898000b6d88616220d39d31f5070bfdc30915ab25"
+                },
+                "color": "#175F72",
+                "width": 1.15,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "b8a1a9f529c3ee72fb51ea7951580926f59dc1f8a20afd7a5629cc1417f28d8a"
+                },
+                "color": "#273D4A",
+                "width": 0.85,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "ff62caf36b18f5f920526c9482fac5585cd4080153609ad6322d37104b76a5fe"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "2317bab36b391ab215a99f697137d27b789003c1641add7f33d2cb8b566e28aa"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              }
+            ],
+            "patches": [
+              {
+                "type": "Circle",
+                "path": {
+                  "shape": [
+                    26,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f6e66519d2b00e08cd862d904e1c0ca6ea09f711d1828c1c500252b0e9510844"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "8aa20c3923ea6efc1d15b149efc5ec48b23b7d6a7e23d4ed7a9b9782959502d3"
+                },
+                "facecolor": [
+                  0.9607843137254902,
+                  0.9725490196078431,
+                  0.9803921568627451,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "fbfa2803e333596f71ea742d52f7c08f31c305d63a118a27579cee5b325102d7"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "143e1c83e7d8f44da055a5c01e20bcbb058bb82353ef8f6691fa226ceae5a0d6"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f8514730f114ef3d7cf3446c5152969d9f1bb35cc321c3529ecef078ad9361f6"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "143e1c83e7d8f44da055a5c01e20bcbb058bb82353ef8f6691fa226ceae5a0d6"
+                },
+                "facecolor": [
+                  0.6784313725490196,
+                  0.3843137254901961,
+                  0.13333333333333333,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.6784313725490196,
+                  0.3843137254901961,
+                  0.13333333333333333,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f74ba91d5cfe6c62538a71fd590b8588869c6b90f9a93a1d66ae4cae41f1030e"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "143e1c83e7d8f44da055a5c01e20bcbb058bb82353ef8f6691fa226ceae5a0d6"
+                },
+                "facecolor": [
+                  0.09019607843137255,
+                  0.37254901960784315,
+                  0.4470588235294118,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.09019607843137255,
+                  0.37254901960784315,
+                  0.4470588235294118,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "42a46f15e90d8a1bf1a5be481e2b552b88af8b0fb95630b1283b3b00fe071742"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "143e1c83e7d8f44da055a5c01e20bcbb058bb82353ef8f6691fa226ceae5a0d6"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "(a) 中截面与通量方向",
+            "position": [
+              2.51,
+              4.01
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "(b) 径向区间与边界条件",
+            "position": [
+              10.16,
+              4.01
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$r$",
+            "position": [
+              3.27,
+              3.21
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$R=2\\ \\mathrm{cm}$",
+            "position": [
+              2.27,
+              3.47
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "轴心",
+            "position": [
+              2.48,
+              1.86
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "热量传入",
+            "position": [
+              0.8,
+              2.64
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#AD6222",
+            "rotation": 0.0
+          },
+          {
+            "text": "$T_s<T_a(t)$",
+            "position": [
+              0.81,
+              1.78
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#AD6222",
+            "rotation": 0.0
+          },
+          {
+            "text": "水分迁出",
+            "position": [
+              4.23,
+              2.64
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#175F72",
+            "rotation": 0.0
+          },
+          {
+            "text": "$C_s>b(t)$",
+            "position": [
+              4.23,
+              1.78
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#175F72",
+            "rotation": 0.0
+          },
+          {
+            "text": "箭头示意本问预热工况",
+            "position": [
+              2.52,
+              0.61
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#454D52",
+            "rotation": 0.0
+          },
+          {
+            "text": "$0\\leq r\\leq R$",
+            "position": [
+              10.0,
+              3.56
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$r$",
+            "position": [
+              14.62,
+              3.24
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "轴心",
+            "position": [
+              6.05,
+              2.86
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "表面",
+            "position": [
+              13.9,
+              2.86
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "轴心：",
+            "position": [
+              5.82,
+              2.3
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$T_r(0,t)=C_r(0,t)=0$",
+            "position": [
+              7.0,
+              2.3
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "表面：",
+            "position": [
+              5.82,
+              1.72
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$-k\\,T_r(R,t)=h_T\\,[T_s-T_a(t)]$",
+            "position": [
+              7.0,
+              1.72
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$-D(C_s)\\,C_r(R,t)=h_m\\,[C_s-b(t)]$",
+            "position": [
+              7.0,
+              1.12
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$T_s=T(R,t),\\quad C_s=C(R,t)$",
+            "position": [
+              5.82,
+              0.44
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "$b(t)$",
+            "position": [
+              11.6,
+              0.44
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "：有效边界值",
+            "position": [
+              12.21,
+              0.44
+            ],
+            "ha": "left",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          }
+        ]
+      },
+      "all_text_positions_colours_and_canvas_exactly_unchanged": true,
+      "geometry_exactly_unchanged": true,
+      "layout_adjustment": null,
+      "node_checks": [],
+      "text_spacing_check": {
+        "text_pair_count": 231,
+        "no_text_bounding_box_overlap": true
+      },
+      "all_exported_pdf_text_characters_and_counts_unchanged": true,
+      "old_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          121.88976287841797
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPS-ItalicMT",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "10.0000": 1,
+          "10.1000": 42,
+          "6.3000": 3,
+          "6.3700": 2,
+          "7.0700": 10,
+          "9.0000": 17,
+          "9.1000": 24,
+          "9.3000": 7,
+          "9.6000": 4
+        },
+        "spans": [
+          {
+            "text": "(a) ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "中截面与通量方向",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "(b) ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "径向区间与边界条件",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "=2 cm",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "轴心",
+            "font": "SimSun",
+            "size_pt": 9.0
+          },
+          {
+            "text": "热量传入",
+            "font": "SimSun",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 6.300000190734863
+          },
+          {
+            "text": " <",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "a",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 6.300000190734863
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "水分迁出",
+            "font": "SimSun",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 6.300000190734863
+          },
+          {
+            "text": " >",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.0
+          },
+          {
+            "text": "箭头示意本问预热工况",
+            "font": "SimSun",
+            "size_pt": 9.0
+          },
+          {
+            "text": "0≤",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "≤",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.300000190734863
+          },
+          {
+            "text": "轴心",
+            "font": "SimSun",
+            "size_pt": 9.0
+          },
+          {
+            "text": "表面",
+            "font": "SimSun",
+            "size_pt": 9.0
+          },
+          {
+            "text": "轴心：",
+            "font": "SimSun",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "(0,",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "(0,",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")=0",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "表面：",
+            "font": "SimSun",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "kT",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "h",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "[",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "a",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")]",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "D",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "h",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "m",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": "[",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.070000171661377
+          },
+          {
+            "text": " −",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": ")]",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 6.369999885559082
+          },
+          {
+            "text": " =",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "),",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 6.369999885559082
+          },
+          {
+            "text": " =",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.100000381469727
+          },
+          {
+            "text": "：有效边界值",
+            "font": "SimSun",
+            "size_pt": 9.0
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "(": 14,
+          ")": 14,
+          ",": 7,
+          "0": 4,
+          "2": 1,
+          "<": 1,
+          "=": 7,
+          ">": 1,
+          "C": 7,
+          "D": 1,
+          "R": 6,
+          "T": 9,
+          "[": 2,
+          "]": 2,
+          "a": 3,
+          "b": 4,
+          "c": 1,
+          "h": 2,
+          "k": 1,
+          "m": 2,
+          "r": 7,
+          "s": 7,
+          "t": 11,
+          "−": 4,
+          "≤": 2,
+          "与": 2,
+          "中": 1,
+          "件": 1,
+          "传": 1,
+          "值": 1,
+          "入": 1,
+          "况": 1,
+          "出": 1,
+          "分": 1,
+          "区": 1,
+          "向": 2,
+          "头": 1,
+          "工": 1,
+          "径": 1,
+          "心": 3,
+          "意": 1,
+          "截": 1,
+          "效": 1,
+          "方": 1,
+          "有": 1,
+          "本": 1,
+          "条": 1,
+          "水": 1,
+          "热": 2,
+          "界": 2,
+          "示": 1,
+          "箭": 1,
+          "表": 2,
+          "轴": 3,
+          "边": 2,
+          "迁": 1,
+          "通": 1,
+          "量": 2,
+          "问": 1,
+          "间": 1,
+          "面": 3,
+          "预": 1,
+          "：": 3
+        }
+      },
+      "new_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          121.88976287841797
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPS-ItalicMT",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "10.0000": 49,
+          "10.5000": 46,
+          "7.0000": 5,
+          "7.3500": 10
+        },
+        "spans": [
+          {
+            "text": "(a) ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "中截面与通量方向",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": "(b) ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "径向区间与边界条件",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "=2 cm",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "轴心",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "热量传入",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.0
+          },
+          {
+            "text": " <",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "a",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "水分迁出",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.0
+          },
+          {
+            "text": " >",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "箭头示意本问预热工况",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "0≤",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "≤",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "轴心",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "表面",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "轴心：",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "(0,",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "(0,",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")=0",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "表面：",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "kT",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "h",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "[",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "a",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")]",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "−",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "D",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "r",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")=",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "h",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "m",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": "[",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.349999904632568
+          },
+          {
+            "text": " −",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": ")]",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.0
+          },
+          {
+            "text": " =",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "T",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "),",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "s",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 7.0
+          },
+          {
+            "text": " =",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "C",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "R",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ",",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "b",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "(",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "t",
+            "font": "TimesNewRomanPS-ItalicMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": ")",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": " ：有效边界值",
+            "font": "SimSun",
+            "size_pt": 10.0
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "(": 14,
+          ")": 14,
+          ",": 7,
+          "0": 4,
+          "2": 1,
+          "<": 1,
+          "=": 7,
+          ">": 1,
+          "C": 7,
+          "D": 1,
+          "R": 6,
+          "T": 9,
+          "[": 2,
+          "]": 2,
+          "a": 3,
+          "b": 4,
+          "c": 1,
+          "h": 2,
+          "k": 1,
+          "m": 2,
+          "r": 7,
+          "s": 7,
+          "t": 11,
+          "−": 4,
+          "≤": 2,
+          "与": 2,
+          "中": 1,
+          "件": 1,
+          "传": 1,
+          "值": 1,
+          "入": 1,
+          "况": 1,
+          "出": 1,
+          "分": 1,
+          "区": 1,
+          "向": 2,
+          "头": 1,
+          "工": 1,
+          "径": 1,
+          "心": 3,
+          "意": 1,
+          "截": 1,
+          "效": 1,
+          "方": 1,
+          "有": 1,
+          "本": 1,
+          "条": 1,
+          "水": 1,
+          "热": 2,
+          "界": 2,
+          "示": 1,
+          "箭": 1,
+          "表": 2,
+          "轴": 3,
+          "边": 2,
+          "迁": 1,
+          "通": 1,
+          "量": 2,
+          "问": 1,
+          "间": 1,
+          "面": 3,
+          "预": 1,
+          "：": 3
+        }
+      },
+      "output": {
+        "dimensions_cm": [
+          15.0,
+          4.3
+        ],
+        "text_bounds_checks": [
+          {
+            "text": "(a) 中截面与通量方向",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "(b) 径向区间与边界条件",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "$r$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$R=2\\ \\mathrm{cm}$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "轴心",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "热量传入",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$T_s<T_a(t)$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "水分迁出",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$C_s>b(t)$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "箭头示意本问预热工况",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$0\\leq r\\leq R$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$r$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "轴心",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "表面",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "轴心：",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$T_r(0,t)=C_r(0,t)=0$",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "表面：",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$-k\\,T_r(R,t)=h_T\\,[T_s-T_a(t)]$",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "$-D(C_s)\\,C_r(R,t)=h_m\\,[C_s-b(t)]$",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "$T_s=T(R,t),\\quad C_s=C(R,t)$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "$b(t)$",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "：有效边界值",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          }
+        ],
+        "outputs": {
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_boundary.pdf": {
+            "sha256": "f6325ab8d665bcd2e21923983bf8c03f7944ddf2bc1c6df54aeaf8f8a67f92d1",
+            "bytes": 47118
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_boundary.svg": {
+            "sha256": "bbedf1d22382fde223deb95b7f54b2d4347fbcb07bbb424a0f0f47374dbf7779",
+            "bytes": 79404
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q1_boundary.png": {
+            "sha256": "bad41719a6014bab65bb28aa73a9041150fa908c91c0f9e6c3d6d6ea87451b76",
+            "bytes": 290628
+          }
+        }
+      }
+    },
+    "q2_workflow": {
+      "prior_asset": "figures/q2_revision/q2_workflow.pdf",
+      "old_font_sizes_pt": [
+        9.2,
+        9.6
+      ],
+      "new_font_sizes_pt": [
+        10.0,
+        10.5
+      ],
+      "insertion_width_cm": 15,
+      "actual_main_text_size_in_paper_pt": [
+        10.0,
+        10.5
+      ],
+      "font_note": "Natural mathematical subscripts retain the math font scale.",
+      "content_and_geometry_before": {
+        "canvas_inches": [
+          5.905511811023622,
+          1.2598425196850394
+        ],
+        "axes": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "limits": [
+              [
+                0.0,
+                15.0
+              ],
+              [
+                0.0,
+                3.2
+              ]
+            ],
+            "lines": [
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "491d036221e647de19572f86bc581d3ef3a5c88ab0ead5bc424ce634cfdf5f0d"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f4cb36547624dedee4d0d5f4724e172fd6a1b16b9f1b2d782c47f23a34ba7003"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "7306d06c1d0e75ba5ea59a7608897b80234f0b48d5fdb639723a0af744fc42f8"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "33ed3fabdb7865aff26a99ad7f553ba8c0de39805da012687b708b82ecfa52a3"
+                },
+                "color": "#273D4A",
+                "width": 0.9,
+                "marker": "None"
+              }
+            ],
+            "patches": [
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "2011b8d3c93e6d7b1b59c7a33e5d659fcf6e2627a079c054ab632a1a197edd3e"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "b62982294d9bceb9b23d50b82afd622ae1c08067bc75e643109d0a6cf68ff7a0"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "b2cc9fe0961842bd55ae42a92b9a70e24b8ccc441e1eccf868a2cbfac2a28607"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "fa4222d2cffb0e06747b54f921de0f063eda93a9da852e672ec99fd569bea120"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "Rectangle",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "658c0e42dc673b8a72f4745ba389d3b0a4d563fb73746db73eaf054819ee8c69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "e15b8517388b073ae6e48e4a1d3a702dacb5f3adae5f58e1babd6b7f377d9211"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "6f69ebda90dd06e5e25374175d67a4b0af605d7527f47d3cf9d210db12af9f73"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f6a4294d796712e85dee0749dcb6cbd4b305931566b774bddf0ff80e1404a92d"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "7d83577a49793868592d487a5789e062b86876edfea10d607490f8f9bfdc7f3b"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "880906e40866299df3c98650ab1a550b759a71668e48e59e89c652df10999ec0"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.15294117647058825,
+                  0.23921568627450981,
+                  0.2901960784313726,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "统一传热传质模型 → 问题二条件与参数代入",
+            "position": [
+              7.5,
+              2.97
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "几何与共同初态\n环境记录\n附录3物性",
+            "position": [
+              1.48,
+              1.325
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "固定半径径向模型\n变物性温湿耦合\nRobin交换边界",
+            "position": [
+              5.125,
+              1.32
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "Chebyshev配点\nRadau隐式积分\n温湿场联立求解",
+            "position": [
+              8.93,
+              1.3250000000000002
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "前3 h规定表格\n径向温湿分布",
+            "position": [
+              12.95,
+              2.125
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          },
+          {
+            "text": "全程温湿轨迹\n供问题三终点判定",
+            "position": [
+              12.95,
+              0.595
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#141414",
+            "rotation": 0.0
+          }
+        ]
+      },
+      "all_text_positions_colours_and_canvas_exactly_unchanged": true,
+      "geometry_exactly_unchanged": true,
+      "layout_adjustment": null,
+      "node_checks": [
+        {
+          "text": "几何与共同初态\n环境记录\n附录3物性",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.543307086614177
+        },
+        {
+          "text": "固定半径径向模型\n变物性温湿耦合\nRobin交换边界",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 11.913385826771616
+        },
+        {
+          "text": "Chebyshev配点\nRadau隐式积分\n温湿场联立求解",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 8.918793445497059
+        },
+        {
+          "text": "前3 h规定表格\n径向温湿分布",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.305442349491457
+        },
+        {
+          "text": "全程温湿轨迹\n供问题三终点判定",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.305442349491464
+        }
+      ],
+      "text_spacing_check": {
+        "text_pair_count": 15,
+        "no_text_bounding_box_overlap": true
+      },
+      "all_exported_pdf_text_characters_and_counts_unchanged": true,
+      "old_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "9.2000": 20,
+          "9.6000": 3
+        },
+        "spans": [
+          {
+            "text": "统一传热传质模型",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": " → ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "问题二条件与参数代入",
+            "font": "SimSun",
+            "size_pt": 9.600000381469727
+          },
+          {
+            "text": "几何与共同初态",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "环境记录",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "附录",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "3",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "物性",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "固定半径径向模型",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "变物性温湿耦合",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "Robin",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "交换边界",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "Chebyshev",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "配点",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "Radau",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "温湿场联立求解",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "前",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "3 h",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "规定表格",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "径向温湿分布",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "全程温湿轨迹",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "供问题三终点判定",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "3": 2,
+          "C": 1,
+          "R": 2,
+          "a": 2,
+          "b": 2,
+          "d": 1,
+          "e": 2,
+          "h": 3,
+          "i": 1,
+          "n": 1,
+          "o": 1,
+          "s": 1,
+          "u": 1,
+          "v": 1,
+          "y": 1,
+          "→": 1,
+          "一": 1,
+          "三": 1,
+          "与": 2,
+          "二": 1,
+          "交": 1,
+          "代": 1,
+          "件": 1,
+          "传": 2,
+          "何": 1,
+          "供": 1,
+          "入": 1,
+          "全": 1,
+          "共": 1,
+          "几": 1,
+          "分": 2,
+          "初": 1,
+          "判": 1,
+          "前": 1,
+          "半": 1,
+          "参": 1,
+          "变": 1,
+          "合": 1,
+          "同": 1,
+          "向": 2,
+          "固": 1,
+          "场": 1,
+          "型": 2,
+          "境": 1,
+          "定": 3,
+          "布": 1,
+          "式": 1,
+          "录": 2,
+          "径": 3,
+          "态": 1,
+          "性": 2,
+          "换": 1,
+          "数": 1,
+          "条": 1,
+          "格": 1,
+          "模": 2,
+          "求": 1,
+          "温": 4,
+          "湿": 4,
+          "点": 2,
+          "热": 1,
+          "物": 2,
+          "环": 1,
+          "界": 1,
+          "积": 1,
+          "程": 1,
+          "立": 1,
+          "终": 1,
+          "统": 1,
+          "耦": 1,
+          "联": 1,
+          "表": 1,
+          "规": 1,
+          "解": 1,
+          "记": 1,
+          "质": 1,
+          "轨": 1,
+          "边": 1,
+          "迹": 1,
+          "配": 1,
+          "问": 2,
+          "附": 1,
+          "隐": 1,
+          "题": 2
+        }
+      },
+      "new_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "10.0000": 20,
+          "10.5000": 3
+        },
+        "spans": [
+          {
+            "text": "统一传热传质模型",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": " → ",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.5
+          },
+          {
+            "text": "问题二条件与参数代入",
+            "font": "SimSun",
+            "size_pt": 10.5
+          },
+          {
+            "text": "几何与共同初态",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "环境记录",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "附录",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "3",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "物性",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "固定半径径向模型",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "变物性温湿耦合",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "Robin",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "交换边界",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "Chebyshev",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "配点",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "Radau",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "隐式积分",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "温湿场联立求解",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "前",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "3 h",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "规定表格",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "径向温湿分布",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "全程温湿轨迹",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "供问题三终点判定",
+            "font": "SimSun",
+            "size_pt": 10.0
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          "3": 2,
+          "C": 1,
+          "R": 2,
+          "a": 2,
+          "b": 2,
+          "d": 1,
+          "e": 2,
+          "h": 3,
+          "i": 1,
+          "n": 1,
+          "o": 1,
+          "s": 1,
+          "u": 1,
+          "v": 1,
+          "y": 1,
+          "→": 1,
+          "一": 1,
+          "三": 1,
+          "与": 2,
+          "二": 1,
+          "交": 1,
+          "代": 1,
+          "件": 1,
+          "传": 2,
+          "何": 1,
+          "供": 1,
+          "入": 1,
+          "全": 1,
+          "共": 1,
+          "几": 1,
+          "分": 2,
+          "初": 1,
+          "判": 1,
+          "前": 1,
+          "半": 1,
+          "参": 1,
+          "变": 1,
+          "合": 1,
+          "同": 1,
+          "向": 2,
+          "固": 1,
+          "场": 1,
+          "型": 2,
+          "境": 1,
+          "定": 3,
+          "布": 1,
+          "式": 1,
+          "录": 2,
+          "径": 3,
+          "态": 1,
+          "性": 2,
+          "换": 1,
+          "数": 1,
+          "条": 1,
+          "格": 1,
+          "模": 2,
+          "求": 1,
+          "温": 4,
+          "湿": 4,
+          "点": 2,
+          "热": 1,
+          "物": 2,
+          "环": 1,
+          "界": 1,
+          "积": 1,
+          "程": 1,
+          "立": 1,
+          "终": 1,
+          "统": 1,
+          "耦": 1,
+          "联": 1,
+          "表": 1,
+          "规": 1,
+          "解": 1,
+          "记": 1,
+          "质": 1,
+          "轨": 1,
+          "边": 1,
+          "迹": 1,
+          "配": 1,
+          "问": 2,
+          "附": 1,
+          "隐": 1,
+          "题": 2
+        }
+      },
+      "output": {
+        "dimensions_cm": [
+          15.0,
+          3.2
+        ],
+        "text_bounds_checks": [
+          {
+            "text": "统一传热传质模型 → 问题二条件与参数代入",
+            "font_pt": 10.5,
+            "inside_canvas": true
+          },
+          {
+            "text": "几何与共同初态\n环境记录\n附录3物性",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "固定半径径向模型\n变物性温湿耦合\nRobin交换边界",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "Chebyshev配点\nRadau隐式积分\n温湿场联立求解",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "前3 h规定表格\n径向温湿分布",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "全程温湿轨迹\n供问题三终点判定",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          }
+        ],
+        "outputs": {
+          "paper/q1234_draft_v1/figures/legibility_schematics/q2_workflow.pdf": {
+            "sha256": "227684694c332bb079f34e5ac3bc45e7472ba1b9fd25fbc55ea80081c3a9b3a1",
+            "bytes": 43472
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q2_workflow.svg": {
+            "sha256": "911452e07241713f727bb54d5a5fca3f22d8fe9e9593f12008001ed16aab9715",
+            "bytes": 104549
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q2_workflow.png": {
+            "sha256": "b99b294750a5853ead00fc834583211e24e3553e2268a406029959481c43bd04",
+            "bytes": 247552
+          }
+        }
+      }
+    },
+    "q4_workflow": {
+      "prior_asset": "figures/question_workflows/q4_workflow.pdf",
+      "old_font_sizes_pt": [
+        9.2
+      ],
+      "new_font_sizes_pt": [
+        10.0
+      ],
+      "insertion_width_cm": 15,
+      "actual_main_text_size_in_paper_pt": [
+        10.0
+      ],
+      "font_note": "Natural mathematical subscripts retain the math font scale.",
+      "content_and_geometry_before": {
+        "canvas_inches": [
+          5.905511811023622,
+          1.2598425196850394
+        ],
+        "axes": [
+          {
+            "position": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "limits": [
+              [
+                0.0,
+                15.0
+              ],
+              [
+                0.0,
+                3.2
+              ]
+            ],
+            "lines": [
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "31b6a6284e9793f8e9e03376bc30b66dcdcecd7b1bd6f956beef9ee7de37bc9d"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "883cb794487409cceab6db112ef66041b86914cc9938ef78d44d3147793cded5"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "fea00741112545af8f6ee634b851288b62749553e117eccf771f8991c3138c4e"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "835b9a6e6e743732910aa335936f143cf2932370fc4d0e4c6e2b7bed13bddb3e"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    4,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "ea9400f0d83ae8d1cbe3a6f6860437139ffe601c6387423fcc4e99c5ef5bb44b"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              },
+              {
+                "xy": {
+                  "shape": [
+                    2,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "bdd08fb9efa06b3d7342d3e6d8cadea00cd35cdd48bdd8a8ca9e092f7e9a13c4"
+                },
+                "color": "#111111",
+                "width": 0.72,
+                "marker": "None"
+              }
+            ],
+            "patches": [
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "417b0c3e89739ca021e7d3174b4ff9b0c733125328a860786ae6d1e220d26f69"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "6006adae099a7f7cf4a2a0a365d08f0d2b18ebf2fa15be15284202d8897a37f4"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "eb7d4cbcfb59803d630cf1fe04630180aad3190846e358b3c795fad7de028df9"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "f86db2b4ffa354cd3fff5355dd594c103489664d0d6f7ddf521b6450973b4d1e"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "2174cbb3d834915398572266b172f8b5398d9495adb9df9a50891aa72c317d35"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyArrowPatch",
+                "path": {
+                  "shape": [
+                    7,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "cdb449eef1de2fab7703f5c1f4de07a0e6c672c31cc0a8b4ead579d835dade63"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  0.06666666666666667,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    14,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "1b1776603e2b52109572bc2b379296a60ca1cc817f1008a67c5bd53e0655eb78"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    14,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "91b1ac4a137ddd084fcffebd8a9d411e6203ef8db3b551a4b951724ffa1c876c"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "05f2df76b9ea5a93610b86c7a41caf31da6a8a54f2ae8d64868c98cf5db10f19"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "fec36af4d0429ba6043fff00a0593c0f2181f43fe0fe3b3bdf15dda43592fe9e"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "a29e32fbda122351bed79965f1c7fca10bf3348caf75b0828d87052bc4f98934"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "a642eac726375546cee9814be3b7b5c0a934c4be52c95b01213c1bfceabd8baf"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              },
+              {
+                "type": "FancyBboxPatch",
+                "path": {
+                  "shape": [
+                    5,
+                    2
+                  ],
+                  "dtype": "float64",
+                  "sha256": "c681f68b716dfc7eb64ebf14552763e2594c95f87f1a9083bbc7e8dcb6d01938"
+                },
+                "transform": {
+                  "shape": [
+                    3,
+                    3
+                  ],
+                  "dtype": "float64",
+                  "sha256": "3ea69519ca9f30d3f135a244083b3377c84f9eadd28020069d3545190ae63a72"
+                },
+                "facecolor": [
+                  1.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ],
+                "edgecolor": [
+                  0.10588235294117647,
+                  0.1450980392156863,
+                  0.25882352941176473,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "texts": [
+          {
+            "text": "半径与环境观测\n共同初态、附录4",
+            "position": [
+              1.52,
+              2.38
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "恒长度径向收缩\n干物质守恒",
+            "position": [
+              1.52,
+              0.8
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "半径历程插值\n材料坐标变换",
+            "position": [
+              5.39,
+              2.38
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "参考域热质耦合\n表面交换条件",
+            "position": [
+              5.39,
+              0.8
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "Chebyshev配点\nRadau独立积分",
+            "position": [
+              9.19,
+              1.59
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "阈值事件与余量\n执行点复核",
+            "position": [
+              13.12,
+              2.38
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          },
+          {
+            "text": "51.0921 h\n实际径向含水率",
+            "position": [
+              13.12,
+              0.8
+            ],
+            "ha": "center",
+            "va": "center",
+            "color": "#111111",
+            "rotation": 0.0
+          }
+        ]
+      },
+      "all_text_positions_colours_and_canvas_exactly_unchanged": true,
+      "geometry_exactly_unchanged": false,
+      "layout_adjustment": {
+        "scope": "Two rounded input boxes only: widths 2.80 to 2.90 cm, heights 0.94 to 1.08 cm; outgoing connector starts follow box edges.",
+        "node_centres_unchanged": true,
+        "all_node_text_and_edge_topology_unchanged": true,
+        "before": {
+          "title": "问题四求解流程",
+          "nodes": [
+            {
+              "id": "input",
+              "x": 1.52,
+              "y": 2.38,
+              "w": 2.8,
+              "h": 0.94,
+              "text": "半径与环境观测\n共同初态、附录4",
+              "kind": "input"
+            },
+            {
+              "id": "conservation",
+              "x": 1.52,
+              "y": 0.8,
+              "w": 2.8,
+              "h": 0.94,
+              "text": "恒长度径向收缩\n干物质守恒",
+              "kind": "input"
+            },
+            {
+              "id": "coordinate",
+              "x": 5.39,
+              "y": 2.38,
+              "w": 3.02,
+              "h": 0.94,
+              "text": "半径历程插值\n材料坐标变换",
+              "kind": "process"
+            },
+            {
+              "id": "model",
+              "x": 5.39,
+              "y": 0.8,
+              "w": 3.02,
+              "h": 0.94,
+              "text": "参考域热质耦合\n表面交换条件",
+              "kind": "process"
+            },
+            {
+              "id": "solve",
+              "x": 9.19,
+              "y": 1.59,
+              "w": 3.02,
+              "h": 1.13,
+              "text": "Chebyshev配点\nRadau独立积分",
+              "kind": "process"
+            },
+            {
+              "id": "event",
+              "x": 13.12,
+              "y": 2.38,
+              "w": 3.43,
+              "h": 0.94,
+              "text": "阈值事件与余量\n执行点复核",
+              "kind": "process"
+            },
+            {
+              "id": "output",
+              "x": 13.12,
+              "y": 0.8,
+              "w": 3.43,
+              "h": 0.94,
+              "text": "51.0921 h\n实际径向含水率",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            [
+              "input",
+              "coordinate",
+              "direct"
+            ],
+            [
+              "conservation",
+              "model",
+              "direct"
+            ],
+            [
+              "coordinate",
+              "model",
+              "down"
+            ],
+            [
+              "model",
+              "solve",
+              "merge"
+            ],
+            [
+              "solve",
+              "event",
+              "split"
+            ],
+            [
+              "event",
+              "output",
+              "down"
+            ]
+          ],
+          "source_lines": [
+            [
+              6,
+              25
+            ],
+            [
+              32,
+              78
+            ],
+            [
+              89,
+              101
+            ],
+            [
+              106,
+              139
+            ],
+            [
+              168,
+              213
+            ]
+          ],
+          "meaning": "Independent initial-state integration in the moving material reference domain; event detection, margin and verification precede current-radius outputs. The conditional fixed-radius comparison and 2D validation remain in the body and are not drawn as state-transfer steps."
+        },
+        "after": {
+          "title": "问题四求解流程",
+          "nodes": [
+            {
+              "id": "input",
+              "x": 1.52,
+              "y": 2.38,
+              "w": 2.9,
+              "h": 1.08,
+              "text": "半径与环境观测\n共同初态、附录4",
+              "kind": "input"
+            },
+            {
+              "id": "conservation",
+              "x": 1.52,
+              "y": 0.8,
+              "w": 2.9,
+              "h": 1.08,
+              "text": "恒长度径向收缩\n干物质守恒",
+              "kind": "input"
+            },
+            {
+              "id": "coordinate",
+              "x": 5.39,
+              "y": 2.38,
+              "w": 3.02,
+              "h": 0.94,
+              "text": "半径历程插值\n材料坐标变换",
+              "kind": "process"
+            },
+            {
+              "id": "model",
+              "x": 5.39,
+              "y": 0.8,
+              "w": 3.02,
+              "h": 0.94,
+              "text": "参考域热质耦合\n表面交换条件",
+              "kind": "process"
+            },
+            {
+              "id": "solve",
+              "x": 9.19,
+              "y": 1.59,
+              "w": 3.02,
+              "h": 1.13,
+              "text": "Chebyshev配点\nRadau独立积分",
+              "kind": "process"
+            },
+            {
+              "id": "event",
+              "x": 13.12,
+              "y": 2.38,
+              "w": 3.43,
+              "h": 0.94,
+              "text": "阈值事件与余量\n执行点复核",
+              "kind": "process"
+            },
+            {
+              "id": "output",
+              "x": 13.12,
+              "y": 0.8,
+              "w": 3.43,
+              "h": 0.94,
+              "text": "51.0921 h\n实际径向含水率",
+              "kind": "output"
+            }
+          ],
+          "edges": [
+            [
+              "input",
+              "coordinate",
+              "direct"
+            ],
+            [
+              "conservation",
+              "model",
+              "direct"
+            ],
+            [
+              "coordinate",
+              "model",
+              "down"
+            ],
+            [
+              "model",
+              "solve",
+              "merge"
+            ],
+            [
+              "solve",
+              "event",
+              "split"
+            ],
+            [
+              "event",
+              "output",
+              "down"
+            ]
+          ],
+          "source_lines": [
+            [
+              6,
+              25
+            ],
+            [
+              32,
+              78
+            ],
+            [
+              89,
+              101
+            ],
+            [
+              106,
+              139
+            ],
+            [
+              168,
+              213
+            ]
+          ],
+          "meaning": "Independent initial-state integration in the moving material reference domain; event detection, margin and verification precede current-radius outputs. The conditional fixed-radius comparison and 2D validation remain in the body and are not drawn as state-transfer steps."
+        }
+      },
+      "node_checks": [
+        {
+          "text": "半径与环境观测\n共同初态、附录4",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 4.586614173228327
+        },
+        {
+          "text": "恒长度径向收缩\n干物质守恒",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 5.854297814823932
+        },
+        {
+          "text": "半径历程插值\n材料坐标变换",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.098392303012915
+        },
+        {
+          "text": "参考域热质耦合\n表面交换条件",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.098392303012906
+        },
+        {
+          "text": "Chebyshev配点\nRadau独立积分",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 6.8385497833278635
+        },
+        {
+          "text": "阈值事件与余量\n执行点复核",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.098392303012915
+        },
+        {
+          "text": "51.0921 h\n实际径向含水率",
+          "text_inside_node": true,
+          "node_facecolor": "white",
+          "minimum_box_clearance_px": 3.098392303012906
+        }
+      ],
+      "text_spacing_check": {
+        "text_pair_count": 21,
+        "no_text_bounding_box_overlap": true
+      },
+      "all_exported_pdf_text_characters_and_counts_unchanged": true,
+      "old_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "9.2000": 17
+        },
+        "spans": [
+          {
+            "text": "半径与环境观测",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "共同初态、附录",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "4",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "恒长度径向收缩",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "干物质守恒",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "半径历程插值",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "材料坐标变换",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "参考域热质耦合",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "表面交换条件",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "Chebyshev",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "配点",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "Radau",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "独立积分",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "阈值事件与余量",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "执行点复核",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "51.0921 h",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 9.199999809265137
+          },
+          {
+            "text": "实际径向含水率",
+            "font": "SimSun",
+            "size_pt": 9.199999809265137
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          ".": 1,
+          "0": 1,
+          "1": 2,
+          "2": 1,
+          "4": 1,
+          "5": 1,
+          "9": 1,
+          "C": 1,
+          "R": 1,
+          "a": 2,
+          "b": 1,
+          "d": 1,
+          "e": 2,
+          "h": 3,
+          "s": 1,
+          "u": 1,
+          "v": 1,
+          "y": 1,
+          "、": 1,
+          "与": 2,
+          "事": 1,
+          "交": 1,
+          "件": 2,
+          "余": 1,
+          "值": 2,
+          "共": 1,
+          "分": 1,
+          "初": 1,
+          "半": 2,
+          "历": 1,
+          "参": 1,
+          "变": 1,
+          "合": 1,
+          "同": 1,
+          "向": 2,
+          "含": 1,
+          "坐": 1,
+          "域": 1,
+          "境": 1,
+          "复": 1,
+          "守": 1,
+          "实": 1,
+          "干": 1,
+          "度": 1,
+          "录": 1,
+          "径": 4,
+          "态": 1,
+          "恒": 2,
+          "执": 1,
+          "换": 2,
+          "插": 1,
+          "收": 1,
+          "料": 1,
+          "材": 1,
+          "条": 1,
+          "标": 1,
+          "核": 1,
+          "水": 1,
+          "测": 1,
+          "点": 2,
+          "热": 1,
+          "物": 1,
+          "独": 1,
+          "率": 1,
+          "环": 1,
+          "积": 1,
+          "程": 1,
+          "立": 1,
+          "缩": 1,
+          "考": 1,
+          "耦": 1,
+          "行": 1,
+          "表": 1,
+          "观": 1,
+          "质": 2,
+          "配": 1,
+          "量": 1,
+          "长": 1,
+          "阈": 1,
+          "附": 1,
+          "际": 1,
+          "面": 1
+        }
+      },
+      "new_pdf": {
+        "page_count": 1,
+        "page_size_pt": [
+          425.19683837890625,
+          90.70866394042969
+        ],
+        "fonts": [
+          "SimSun",
+          "TimesNewRomanPSMT"
+        ],
+        "font_size_pt_counts": {
+          "10.0000": 17
+        },
+        "spans": [
+          {
+            "text": "半径与环境观测",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "共同初态、附录",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "4",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "恒长度径向收缩",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "干物质守恒",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "半径历程插值",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "材料坐标变换",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "参考域热质耦合",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "表面交换条件",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "Chebyshev",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "配点",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "Radau",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "独立积分",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "阈值事件与余量",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "执行点复核",
+            "font": "SimSun",
+            "size_pt": 10.0
+          },
+          {
+            "text": "51.0921 h",
+            "font": "TimesNewRomanPSMT",
+            "size_pt": 10.0
+          },
+          {
+            "text": "实际径向含水率",
+            "font": "SimSun",
+            "size_pt": 10.0
+          }
+        ],
+        "nonwhitespace_glyph_counts": {
+          ".": 1,
+          "0": 1,
+          "1": 2,
+          "2": 1,
+          "4": 1,
+          "5": 1,
+          "9": 1,
+          "C": 1,
+          "R": 1,
+          "a": 2,
+          "b": 1,
+          "d": 1,
+          "e": 2,
+          "h": 3,
+          "s": 1,
+          "u": 1,
+          "v": 1,
+          "y": 1,
+          "、": 1,
+          "与": 2,
+          "事": 1,
+          "交": 1,
+          "件": 2,
+          "余": 1,
+          "值": 2,
+          "共": 1,
+          "分": 1,
+          "初": 1,
+          "半": 2,
+          "历": 1,
+          "参": 1,
+          "变": 1,
+          "合": 1,
+          "同": 1,
+          "向": 2,
+          "含": 1,
+          "坐": 1,
+          "域": 1,
+          "境": 1,
+          "复": 1,
+          "守": 1,
+          "实": 1,
+          "干": 1,
+          "度": 1,
+          "录": 1,
+          "径": 4,
+          "态": 1,
+          "恒": 2,
+          "执": 1,
+          "换": 2,
+          "插": 1,
+          "收": 1,
+          "料": 1,
+          "材": 1,
+          "条": 1,
+          "标": 1,
+          "核": 1,
+          "水": 1,
+          "测": 1,
+          "点": 2,
+          "热": 1,
+          "物": 1,
+          "独": 1,
+          "率": 1,
+          "环": 1,
+          "积": 1,
+          "程": 1,
+          "立": 1,
+          "缩": 1,
+          "考": 1,
+          "耦": 1,
+          "行": 1,
+          "表": 1,
+          "观": 1,
+          "质": 2,
+          "配": 1,
+          "量": 1,
+          "长": 1,
+          "阈": 1,
+          "附": 1,
+          "际": 1,
+          "面": 1
+        }
+      },
+      "output": {
+        "dimensions_cm": [
+          15.0,
+          3.2
+        ],
+        "text_bounds_checks": [
+          {
+            "text": "半径与环境观测\n共同初态、附录4",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "恒长度径向收缩\n干物质守恒",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "半径历程插值\n材料坐标变换",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "参考域热质耦合\n表面交换条件",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "Chebyshev配点\nRadau独立积分",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "阈值事件与余量\n执行点复核",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          },
+          {
+            "text": "51.0921 h\n实际径向含水率",
+            "font_pt": 10.0,
+            "inside_canvas": true
+          }
+        ],
+        "outputs": {
+          "paper/q1234_draft_v1/figures/legibility_schematics/q4_workflow.pdf": {
+            "sha256": "3a28879bd58ae9ff8df45408f59ba9d16c3cb3eef05cbc817105bdb824bd4c69",
+            "bytes": 43330
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q4_workflow.svg": {
+            "sha256": "29249020e86a58413e4168ffa5b78c5ce915ab33011698bd8af0324a8c4a67df",
+            "bytes": 100602
+          },
+          "paper/q1234_draft_v1/figures/legibility_schematics/q4_workflow.png": {
+            "sha256": "bfb37833388bd8d8c1ed9abc3464211a015226c9b351b2c7fb3c313c11191196",
+            "bytes": 230078
+          }
+        }
+      }
+    }
+  },
+  "visual_review": "Not implied by script assertions; recorded separately after viewing."
+}
