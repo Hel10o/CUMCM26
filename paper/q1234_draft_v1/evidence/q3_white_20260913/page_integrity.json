@@ -1,0 +1,22 @@
+{
+  "pdf_sha256": "33c68c7532993d199c998cb042e4036ead267147dfe1586043c167445ffca73e",
+  "pages": 158,
+  "abstract_pages": 1,
+  "body_pages": 30,
+  "appendix_pages": 127,
+  "changed_physical_pages": [
+    16
+  ],
+  "unchanged_pixel_pages": 157,
+  "pixel_comparison_dpi": 72,
+  "all_158_page_texts_identical": true,
+  "final_aux_unique_labels": 82,
+  "baseline_aux_comparison_not_used": "Initial build/main.aux had only three lines due to concurrent compilation; use final unique labels, clean log and identical PDF text instead.",
+  "q3_tex_only_include_path_changed": true,
+  "compile_log_issues": [],
+  "isolated_committed_main_used": true,
+  "local_AI_sources_not_overwritten": true,
+  "PDE_run": false,
+  "full_paper_AI_joint_audit_run": false,
+  "table_279_cell_audit_rerun": false
+}

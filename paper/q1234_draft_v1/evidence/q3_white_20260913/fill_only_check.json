@@ -1,0 +1,9 @@
+{
+  "nodes_unchanged_except_fill": 7,
+  "edges_unchanged": 6,
+  "all_seven_fills_white": true,
+  "font_size_line_spacing_canvas_and_text_geometry_identical": true,
+  "PDF_drawing_commands_unchanged_except_seven_fills": true,
+  "figure_sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428",
+  "PDE_or_numerical_arrays_run": false
+}

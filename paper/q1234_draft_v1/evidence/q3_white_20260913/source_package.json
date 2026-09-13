@@ -1,0 +1,15 @@
+{
+  "snapshot_base_commit": "6496064c62f5495d0e4d324905bff0cd782cb2db",
+  "source_files": 652,
+  "archive_sha256": "2f8ba3846107b3f8a55a527baf19cc7dd2851107c57e0ddb663c6f4560c8883d",
+  "archive_bytes": 37085748,
+  "CRC_and_members_verified": true,
+  "frozen_AI_related_paths": [
+    "AI工具使用详情.pdf",
+    "ai_details.tex",
+    "main.tex"
+  ],
+  "excluded_concurrent_untracked_files": [],
+  "local_AI_sources_were_not_overwritten": true,
+  "note": "Snapshot packages baseline main/AI files with this color-only revision; concurrent AI draft remains local."
+}

@@ -1,8 +1,10 @@
 {
-  "operation": "Q3 workflow replacement and source-list packaging refresh only",
-  "baseline_commit": "2206ae259332121e6392f0543fe8e7759595912f",
-  "baseline_zip_sha256": "b127ea501b815e0032e396e6757b69668e27e98b0e7106b862c43f3aacd8a5bc",
-  "baseline_report": "q3_workflow_refresh_20260913/prior_report.json",
+  "operation": "Q3 white-box workflow replacement and source-list packaging refresh only",
+  "figure_reference_scope": "main.tex and sections/*.tex only; unrelated ai_details.tex excluded",
+  "ai_pdf_byte_identical_to_prior_zip": true,
+  "baseline_commit": "6496064c62f5495d0e4d324905bff0cd782cb2db",
+  "baseline_zip_sha256": "eceb65a8936b3a2b09182e3f37f71c7e61e79a96ed60bf9d880c2ba752f3c642",
+  "baseline_report": "q3_white_refresh_20260913/prior_report.json",
   "paper_table_numerical_validation": "not rerun; historical checks retained in q2_figure_refresh_20260913/baseline_package_report.json",
   "full_trajectory_values": 8690094,
   "full_trajectory_validation": "not rerun; existing NPZ bytes retained exactly from baseline ZIP",
@@ -10,13 +12,13 @@
   "workbooks_or_arrays_reexported": false,
   "figure_count": 12,
   "other_11_figures_byte_identical_to_prior_zip": true,
-  "frozen_workflow_sha256": "360735eeb04898b7c4bdca66ad3c6409eb4cb4c533b93938915926c653740c1d",
+  "frozen_workflow_sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428",
   "figures_match_current_paper_bytes": true,
   "removed_members": [
-    "支撑材料/figures/question_workflows/q3_workflow.pdf"
+    "支撑材料/figures/q3_intro/q3_workflow.pdf"
   ],
   "added_members": [
-    "支撑材料/figures/q3_intro/q3_workflow.pdf"
+    "支撑材料/figures/q3_white/q3_workflow.pdf"
   ],
   "changed_existing_members": [
     "支撑材料/support/图表来源清单.md",
@@ -75,8 +77,8 @@
       "sha256": "1232f3159f306b7f5358823ad1092e57e3be67d281b47eb079c9398e5652aa43"
     },
     {
-      "name": "支撑材料/figures/q3_intro/q3_workflow.pdf",
-      "sha256": "360735eeb04898b7c4bdca66ad3c6409eb4cb4c533b93938915926c653740c1d"
+      "name": "支撑材料/figures/q3_white/q3_workflow.pdf",
+      "sha256": "4c5e1ea9a2c3a75cd616c4cc6943a5c79a77390caeacdffc14def05fdb7e9428"
     },
     {
       "name": "支撑材料/figures/font_revision/q3_q4_drying.pdf",
@@ -110,10 +112,10 @@
   },
   "zip_crc_check": "passed",
   "zip": "D:\\Desktop\\CUMCM26\\q1234_submission_support_20260913\\out\\A题_支撑材料.zip",
-  "zip_bytes": 11288228,
+  "zip_bytes": 11288088,
   "zip_mb": 10.77,
   "zip_within_20mb": true,
-  "zip_sha256": "eceb65a8936b3a2b09182e3f37f71c7e61e79a96ed60bf9d880c2ba752f3c642",
+  "zip_sha256": "8f17955fd4622d553a900a3e9d2998a1e26194cead6fafa91c164a24939200d3",
   "member_count": 94,
   "members": [
     {
@@ -172,9 +174,9 @@
       "zip_bytes": 40255
     },
     {
-      "name": "支撑材料/figures/q3_intro/q3_workflow.pdf",
-      "bytes": 38317,
-      "zip_bytes": 35247
+      "name": "支撑材料/figures/q3_white/q3_workflow.pdf",
+      "bytes": 38173,
+      "zip_bytes": 35110
     },
     {
       "name": "支撑材料/figures/question_workflows/q4_workflow.pdf",
@@ -573,13 +575,13 @@
     },
     {
       "name": "支撑材料/support/图表来源清单.md",
-      "bytes": 8805,
-      "zip_bytes": 4067
+      "bytes": 8796,
+      "zip_bytes": 4063
     },
     {
       "name": "支撑材料/支撑材料文件列表.md",
       "bytes": 1129,
-      "zip_bytes": 589
+      "zip_bytes": 590
     },
     {
       "name": "支撑材料/支撑材料说明.md",

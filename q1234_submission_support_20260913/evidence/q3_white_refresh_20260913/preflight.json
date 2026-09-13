@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "6496064c62f5495d0e4d324905bff0cd782cb2db",
+  "baseline_zip_sha256": "eceb65a8936b3a2b09182e3f37f71c7e61e79a96ed60bf9d880c2ba752f3c642",
+  "members": 94,
+  "figures": 12,
+  "old_q3_present": true,
+  "new_q3_white_absent": true,
+  "prepared_script_syntax": "passed",
+  "historical_files_sha256": {
+    "refresh_figures.py": "216431f445116c4d2df0e203a8b8de445476cb6fc26562c7b46dcfd2ca3c9e96",
+    "refresh_q2_heatmap.py": "80c51d08a61351a765c643b65451b812a8c62e7252ca51e046f235adb5d9e1d3",
+    "refresh_q3_workflow.py": "62eb71d957314d6b44cd5b2a2b417444c224a60bb300998f78cdaa58e22ff77c",
+    "evidence/q2_figure_refresh_20260913/baseline_package_report.json": "65d1f6417951f9dba4074e33bed215d0f9fc2d9539bee5b0bcc491ae2160cb29",
+    "evidence/q2_figure_refresh_20260913/refresh_report.json": "44c25252103d4b4d3bf6ad9474078e721f4f9b2a8ffa22fca94f35b867b197eb",
+    "evidence/q2_figure_refresh_20260913/刷新记录.md": "2bacabcbd80966cb364cc5bc3633c5a18db597d30cb0d3887eb8da8da2af1f5e",
+    "evidence/q2_heatmap_refresh_20260913/final_readback.json": "7964d50b48f10b47e78ae84455741ab5d3ba5fa89e009274ac7beae953bb96a5",
+    "evidence/q2_heatmap_refresh_20260913/prior_report.json": "44c25252103d4b4d3bf6ad9474078e721f4f9b2a8ffa22fca94f35b867b197eb",
+    "evidence/q2_heatmap_refresh_20260913/refresh_report.json": "f6fdb67fc595ba709c1129f867fa9296396fcd0a94148c6d0a918329036aabeb",
+    "evidence/q2_heatmap_refresh_20260913/刷新记录.md": "65fa9c068e3f40e18c3cc19539cd476c76a4fc5498bd5adba4648c22cf0993ec",
+    "evidence/q3_workflow_refresh_20260913/final_readback.json": "cb0fe2404e87ba433d6a0b84d85880314f699a787fc1625789f1718d5bdcf587",
+    "evidence/q3_workflow_refresh_20260913/preflight.json": "a57b32e7dd417aeaf604cb1b2a50d223cd2e1c075c832d62582df8b500514458",
+    "evidence/q3_workflow_refresh_20260913/prior_report.json": "f6fdb67fc595ba709c1129f867fa9296396fcd0a94148c6d0a918329036aabeb",
+    "evidence/q3_workflow_refresh_20260913/refresh_report.json": "cc2a1d166f007156b409a7b97d846779e19bbda14a3b0b1eecc937787baf2aea",
+    "evidence/q3_workflow_refresh_20260913/刷新记录.md": "b1ea22805e17b207650b1c9d749d8cdc4cc1c0b38bad942c574e371acc9b1633"
+  },
+  "final_refresh_executed": false
+}

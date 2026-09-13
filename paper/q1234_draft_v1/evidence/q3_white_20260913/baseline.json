@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "6496064c62f5495d0e4d324905bff0cd782cb2db",
+  "local_and_fetched_main_equal": true,
+  "initial_user_changes": {
+    "paper/q1234_draft_v1/ai_details.tex": "83ad074f093a5964e97da37c720a262cf2117f888ae9b95b28b72dea2b3e56d8"
+  },
+  "before_pdf_sha256": "195b70528d212cf35e511e21cf26a65522a14b26906c85105e69fca98b273ac2",
+  "scope": "Only Q3 workflow fills become white; preserve content, geometry and typography.",
+  "concurrent_changes_detected_after_initial_snapshot": [
+    "paper/q1234_draft_v1/main.tex",
+    "paper/q1234_draft_v1/evidence/ai_details_contest_20260913/"
+  ],
+  "isolated_compile_main_source_commit": "6496064c62f5495d0e4d324905bff0cd782cb2db",
+  "unrelated_AI_sources_preserved_and_excluded_from_this_delivery": true
+}
