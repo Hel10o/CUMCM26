@@ -1,0 +1,25 @@
+{
+  "checked_at_utc": "2026-09-13T09:31:52.320768+00:00",
+  "ai_pages": 3,
+  "ai_ok": true,
+  "ai_sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da",
+  "paper_sha256": "3f166a9a9bb5dc629faf827ab73c10a9cadea9645157038a5cf2f89dae22f910",
+  "paper_bytes": 1945093,
+  "validate_paper_rc": 0,
+  "support_zip_sha256": "707f55909541942d055b6b0fecf0f54a655bb12a78fc0d1e42f4252c7aa009aa",
+  "support_zip_bytes": 11255621,
+  "copied": {
+    "AI工具使用详情.pdf": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\AI工具使用详情.pdf",
+      "sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da"
+    },
+    "build/ai_details.pdf": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\ai_details.pdf",
+      "sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da"
+    },
+    "四问论文初稿_v1.pdf": {
+      "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\四问论文初稿_v1.pdf",
+      "sha256": "3f166a9a9bb5dc629faf827ab73c10a9cadea9645157038a5cf2f89dae22f910"
+    }
+  }
+}

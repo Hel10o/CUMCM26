@@ -1,0 +1,30 @@
+{
+  "path": "D:\\Desktop\\CUMCM26\\paper\\q1234_draft_v1\\build\\ai_details_contest_20260913\\ai_details.pdf",
+  "bytes": 125296,
+  "sha256": "4119657818cfab0aea1fac1c71ed32b5dd1ed15ab0294a3cfc50d9eb54f3b9da",
+  "pages": 3,
+  "page_size": [
+    595.28,
+    841.89
+  ],
+  "author": "",
+  "title": "AI工具使用详情",
+  "required": {
+    "title": false,
+    "tool_and_version": true,
+    "purpose_or_stage": true,
+    "input_and_interaction": true,
+    "adoption_and_review": true,
+    "chatgpt": true,
+    "model": true,
+    "code": true,
+    "literature": true,
+    "polish": true,
+    "filename": true
+  },
+  "identity": [],
+  "footers_bad": [],
+  "bounds_bad": [],
+  "fonts_embedded": false,
+  "ok": false
+}
