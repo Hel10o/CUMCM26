@@ -1,0 +1,540 @@
+{
+  "dimensions_cm": [
+    16.4,
+    8.1
+  ],
+  "text_bounds_checks": [
+    {
+      "text": "32",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "40",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "48",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "表面",
+      "font_pt": 10.4,
+      "inside_canvas": true
+    },
+    {
+      "text": "轴心",
+      "font_pt": 10.4,
+      "inside_canvas": true
+    },
+    {
+      "text": "时间 t / h",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "0",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "3",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "径向位置 r / cm",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "0",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "28",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "36",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "44",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "50",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1.2",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1.8",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2.4",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "表面",
+      "font_pt": 10.4,
+      "inside_canvas": true
+    },
+    {
+      "text": "轴心",
+      "font_pt": 10.4,
+      "inside_canvas": true
+    },
+    {
+      "text": "时间 t / h",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "0",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "3",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "径向位置 r / cm",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "0",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1.00",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "1.50",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2.00",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "2.55",
+      "font_pt": 10.2,
+      "inside_canvas": true
+    },
+    {
+      "text": "(a) 径向温度场",
+      "font_pt": 11.5,
+      "inside_canvas": true
+    },
+    {
+      "text": "温度 T / °C",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+      "font_pt": 10.6,
+      "inside_canvas": true
+    },
+    {
+      "text": "末时温差 ΔT = 0.1169 K",
+      "font_pt": 10.6,
+      "inside_canvas": true
+    },
+    {
+      "text": "(b) 径向干基含水率场",
+      "font_pt": 11.5,
+      "inside_canvas": true
+    },
+    {
+      "text": "干基含水率 C / (kg/kg)",
+      "font_pt": 10.8,
+      "inside_canvas": true
+    },
+    {
+      "text": "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+      "font_pt": 10.6,
+      "inside_canvas": true
+    },
+    {
+      "text": "末时含水率差 ΔC = 0.7581 kg/kg",
+      "font_pt": 10.6,
+      "inside_canvas": true
+    }
+  ],
+  "outputs": {
+    "paper/q1234_draft_v1/figures/q2_heatmap/q2_fields.pdf": {
+      "sha256": "47fd500235089fddc27d421ead469e8ca59c268ad14d499f8b6dde9a051b4a0e",
+      "bytes": 95814
+    },
+    "paper/q1234_draft_v1/figures/q2_heatmap/q2_fields.svg": {
+      "sha256": "ff0047434597bbf8367eb659a7075983d59014b4aab6af020e3dcecac131960a",
+      "bytes": 176089
+    },
+    "paper/q1234_draft_v1/figures/q2_heatmap/q2_fields.png": {
+      "sha256": "7f7bc7df1e3d745820308c9fe06b5a382533bcd1d1f6a32405b500a1c72408ef",
+      "bytes": 501230
+    }
+  },
+  "baseline_commit": "1b84c827ae72353b37549715ff4da5513cc61ea1",
+  "builder": "paper/q1234_draft_v1/build_q2_heatmap.py",
+  "builder_sha256": "935e2ee64202fd4b8f91d2e3e1a221f455c22cf7074d3269b6c1c54c9fd93cb0",
+  "source": "q4_complete_delivery/v1/q123_closeout/output/q23_unified.npz",
+  "source_sha256_before": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+  "source_sha256_after": "80bd0a8ee77ac04189646a89e2dd78c2843344d9538923e402bef993b980c6f4",
+  "source_byte_unchanged": true,
+  "source_keys": [
+    "time_s",
+    "radius_cm",
+    "profile_TC"
+  ],
+  "source_time_s": {
+    "shape": [
+      10801
+    ],
+    "dtype": "float64",
+    "sha256": "39cfb888bc1791f655fbea8eadc69e42124e77da29119854bef2ba5b05d068d8"
+  },
+  "source_radius_cm": {
+    "shape": [
+      21
+    ],
+    "dtype": "float64",
+    "sha256": "72e8bb0c31b3247e7e40bc264619053e0d853a0fb746b5b89187c4caa22ae11c"
+  },
+  "display_radius_cm": {
+    "shape": [
+      101
+    ],
+    "dtype": "float64",
+    "sha256": "9f009255e7c1fb3382e783ad3f88b28e53084936978c4a2c90b783bca2ed6114"
+  },
+  "source_shape": [
+    10801,
+    21,
+    2
+  ],
+  "time_window_s": [
+    0,
+    10800
+  ],
+  "display_transformation": "All saved one-second times retained; linear interpolation along radius from 21 to 101 nodes only for displayed colour fields. The original 21 radii remain identical. No time interpolation, smoothing, PDE solve, or source write. Nearest-colour cells on the fine display grid are rasterized at 600 dpi; contours use the original sample grid.",
+  "contour_scope": "Display guides interpolated between saved samples, not rigorous threshold boundaries or new numerical field solutions.",
+  "endpoint_values_3h": {
+    "axis_T_degC": 49.84949558364246,
+    "surface_T_degC": 49.96641293404241,
+    "axis_C_kg_per_kg": 1.7661771010352587,
+    "surface_C_kg_per_kg": 1.0081231241926747,
+    "surface_minus_axis_T_K": 0.11691735039995166,
+    "axis_minus_surface_C_kg_per_kg": 0.758053976842584
+  },
+  "panels": [
+    {
+      "title": "(a) 径向温度场",
+      "stored_component": 0,
+      "stored_field": "temperature_degC",
+      "source_samples": {
+        "shape": [
+          10801,
+          21
+        ],
+        "dtype": "float64",
+        "sha256": "fedd24a732d9a19a3510b26e6351ee078704ce142624431facaf16b64f67ca8c"
+      },
+      "heatmap_array": {
+        "shape": [
+          101,
+          10801
+        ],
+        "dtype": "float64",
+        "sha256": "358f4132471e81fa4cd7a18f0983b68399e64681590b907c7db2bb923b005d0f"
+      },
+      "mesh_coordinates": {
+        "shape": [
+          102,
+          10802,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "b2739cbb068e45873750f83dcaeae591a1821ec81ac952007cfef69b224d9212"
+      },
+      "all_10801_saved_time_samples_used": true,
+      "source_radius_count": 21,
+      "display_radius_count": 101,
+      "original_radial_nodes_exactly_preserved": true,
+      "cmap": "YlOrBr",
+      "colour_limits": [
+        28.0,
+        50.0
+      ],
+      "colourbar_ticks": [
+        28,
+        36,
+        44,
+        50
+      ],
+      "contour_levels": [
+        32.0,
+        40.0,
+        48.0
+      ],
+      "contour_colours": [
+        "#713C20",
+        "#713C20",
+        "#FFF2DB"
+      ],
+      "contour_source": "Original 10801 x 21 saved samples; Matplotlib linearly interpolates contour crossings within the sample grid.",
+      "displayed_contour_labels": [
+        "32",
+        "40",
+        "48"
+      ],
+      "contour_paths": [
+        {
+          "shape": [
+            610,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "e1ff447afb0bd17bedef727fe8cc6c1d697ae06378b3a82509759d60e15b1999"
+        },
+        {
+          "shape": [
+            636,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "373911ef3ef3fc3f00d1d1b9276a0227a7d7475fab6f1acc63361f915bf9e7b3"
+        },
+        {
+          "shape": [
+            611,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "f8398e09dfda5c814b6571b5fa4b58876ef10e9561f90f24fca52d1b338949e4"
+        }
+      ],
+      "annotations": [
+        "3 h轴心 / 表面：49.8495 / 49.9664 °C",
+        "末时温差 ΔT = 0.1169 K"
+      ]
+    },
+    {
+      "title": "(b) 径向干基含水率场",
+      "stored_component": 1,
+      "stored_field": "dry_basis_moisture_kg_per_kg",
+      "source_samples": {
+        "shape": [
+          10801,
+          21
+        ],
+        "dtype": "float64",
+        "sha256": "4d843067615d2678a9368084ef51b3c7d3a48daceccb7d25d7f3b65fc956adfa"
+      },
+      "heatmap_array": {
+        "shape": [
+          101,
+          10801
+        ],
+        "dtype": "float64",
+        "sha256": "c761d9c746df7d0125e0ff125edfc4cdfc45b77a7cbbfbc1076585b470cb052f"
+      },
+      "mesh_coordinates": {
+        "shape": [
+          102,
+          10802,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "b2739cbb068e45873750f83dcaeae591a1821ec81ac952007cfef69b224d9212"
+      },
+      "all_10801_saved_time_samples_used": true,
+      "source_radius_count": 21,
+      "display_radius_count": 101,
+      "original_radial_nodes_exactly_preserved": true,
+      "cmap": "YlGnBu",
+      "colour_limits": [
+        1.0,
+        2.55
+      ],
+      "colourbar_ticks": [
+        1.0,
+        1.5,
+        2.0,
+        2.55
+      ],
+      "contour_levels": [
+        1.2,
+        1.8,
+        2.4
+      ],
+      "contour_colours": [
+        "#356177",
+        "#E6F1F0",
+        "#E6F1F0"
+      ],
+      "contour_source": "Original 10801 x 21 saved samples; Matplotlib linearly interpolates contour crossings within the sample grid.",
+      "displayed_contour_labels": [
+        "1.2",
+        "1.8",
+        "2.4"
+      ],
+      "contour_paths": [
+        {
+          "shape": [
+            2038,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "7553d526f6b35913fc529a656bdb26812c32192ee1dc8e7c12ec4e388b1c59b3"
+        },
+        {
+          "shape": [
+            8451,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "fb8e2336c5a3d413854135b59875a867748d1d13efd2259fdf8d80eac605b15e"
+        },
+        {
+          "shape": [
+            4457,
+            2
+          ],
+          "dtype": "float64",
+          "sha256": "5e5307151185321757250cdd9286052bcf2212f93a20c65bdcd0f37dbb23cb64"
+        }
+      ],
+      "annotations": [
+        "3 h轴心 / 表面：1.7662 / 1.0081 kg/kg",
+        "末时含水率差 ΔC = 0.7581 kg/kg"
+      ]
+    }
+  ],
+  "old_figure": "paper/q1234_draft_v1/figures/font_revision/q2_profiles.pdf",
+  "old_figure_sha256_unchanged": "d2e98eb035d31241055e83906d441c110af754d34a0587bd24aee4abf78e2e24",
+  "old_dimensions_cm": [
+    16.400000254313152,
+    8.099999771118163
+  ],
+  "same_dimensions_as_replaced_figure": true,
+  "panel_titles_centered_over_axes": true,
+  "contour_label_pair_overlap_check": "No pairwise label overlap.",
+  "contour_labels_inside_own_axes": true,
+  "font_files": {
+    "Times New Roman": "C:\\Windows\\Fonts\\times.ttf",
+    "SimSun": "C:\\Windows\\Fonts\\simsun.ttc"
+  },
+  "pdf_fonts": [
+    [
+      19,
+      "ttf",
+      "Type0",
+      "GNUYBP+SimSun",
+      "F2",
+      "Identity-H",
+      0
+    ],
+    [
+      26,
+      "ttf",
+      "Type0",
+      "CXBZFV+TimesNewRomanPSMT",
+      "F1",
+      "Identity-H",
+      0
+    ]
+  ],
+  "pdf_font_check": "SimSun and Times New Roman are embedded Type0 subsets.",
+  "source_font_sizes_pt": {
+    "panel_titles": 11.5,
+    "axes_and_units": 10.8,
+    "endpoint_annotations": 10.6,
+    "axis_surface_tags": 10.4,
+    "ticks_and_contour_labels": 10.2
+  },
+  "intended_tex_width_cm": 14.1,
+  "minimum_final_font_size_pt_at_intended_width": 8.769512195121951,
+  "PDE_solvers_or_parameter_scenarios_run": false,
+  "runtime": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.0",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "reference_image_review": {
+    "path": "paper/q1234_draft_v1/build/q2_word_preview_20260913/7-2.png",
+    "sha256": "41bae962078382c909df845df988abadcc3e91ea39ee3b8c83b4b701e7dfed7d",
+    "viewed": true,
+    "adopted": "Two side-by-side t-r fields with independent scales; improved warm/blue-green scales, horizontal colourbars, legible type and sparse contours."
+  },
+  "visual_review": {
+    "performed": true,
+    "method": "Viewed the generated PNG after shifting the 1.2 contour label inward and adjusting line colours for local contrast. Subsequent rebuild added checks only, with no figure geometry or style changes.",
+    "result": "Both panels readable; all 6 contour labels inside own axes and mutually disjoint; axis/surface tags and endpoint annotations not clipped. The 1.2 label remains below the top border."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "historical_script_sha256_unchanged": true,
+  "prior_report_git_json_match": true,
+  "zip_crc": "passed",
+  "figure_member_listing_exact": 12,
+  "current_source_list_match": true,
+  "numeric_members_hash_match_prior": 5,
+  "zip_bytes": 11287899,
+  "zip_sha256": "b127ea501b815e0032e396e6757b69668e27e98b0e7106b862c43f3aacd8a5bc",
+  "members": 94
+}

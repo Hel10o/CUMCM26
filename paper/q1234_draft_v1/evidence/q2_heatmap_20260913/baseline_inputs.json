@@ -1,0 +1,19 @@
+{
+  "baseline_local_and_fetched_origin_main": "1b84c827ae72353b37549715ff4da5513cc61ea1",
+  "files": [
+    {
+      "name": "第7章 .docx",
+      "sha256": "3d9717f9fcd84c773ca28ac05128888ee1ecac52236e8d5d419c482264c560fa",
+      "bytes": 807836
+    },
+    {
+      "name": "第七章图片.zip",
+      "sha256": "a91e7f707153ab7b55d033f03958d1e561aa8f21340a2122ac66b32d9aa0722e",
+      "bytes": 573755
+    }
+  ],
+  "reference_image_member": "第七章图片/7-2.PNG",
+  "reference_png_sha256": "41bae962078382c909df845df988abadcc3e91ea39ee3b8c83b4b701e7dfed7d",
+  "intent": "Replace current figure 5 with a replot in the style of Word figure 7-2, not insert an additional figure or copy new scientific results.",
+  "Word_text_reading": "Prior chapter edit read OOXML; this turn rechecked unchanged document/ZIP hashes and the reference image. No Word render or edit."
+}

@@ -1,0 +1,14 @@
+{
+  "archive": "四问论文LaTeX源稿_v1.zip",
+  "sha256": "efa8807c97075af684b97fcfb20ba1566d743381b94031357f87c5173e8f00f3",
+  "bytes": 36364794,
+  "source_member_count": 627,
+  "archive_member_count": 628,
+  "CRC_pass": true,
+  "member_set_exact": true,
+  "internal_external_manifests_equal": true,
+  "all_archive_and_working_file_hashes_equal": true,
+  "sha256_sidecar_verified": true,
+  "new_figure_builder_and_record_present": true,
+  "PDE_or_scenarios_run": false
+}

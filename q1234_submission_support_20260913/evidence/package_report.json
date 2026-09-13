@@ -1,21 +1,22 @@
 {
-  "operation": "paper figure and source-list packaging refresh only",
-  "baseline_commit": "dfe7b2911672deacdea62096fc409bcf04855fdf",
-  "baseline_zip_sha256": "ea93f1b834deb57564685f415082b9c7e9c6e665763875099caf4f159d490b9e",
-  "baseline_report": "q2_figure_refresh_20260913/baseline_package_report.json",
-  "paper_table_numerical_validation": "not rerun; original 60-value check retained in baseline report",
+  "operation": "Q2 figure 5 heatmap replacement and source-list packaging refresh only",
+  "baseline_commit": "1b84c827ae72353b37549715ff4da5513cc61ea1",
+  "baseline_zip_sha256": "d703b922b87f88d7f08d1d3dd05cc2b46d4d486a725f2c1a2f444c7aaf5ab5c3",
+  "baseline_report": "q2_heatmap_refresh_20260913/prior_report.json",
+  "paper_table_numerical_validation": "not rerun; historical checks retained in q2_figure_refresh_20260913/baseline_package_report.json",
   "full_trajectory_values": 8690094,
   "full_trajectory_validation": "not rerun; existing NPZ bytes retained exactly from baseline ZIP",
   "pde_or_parameter_scenarios_run": false,
   "workbooks_or_arrays_reexported": false,
   "figure_count": 12,
+  "other_11_figures_byte_identical_to_prior_zip": true,
+  "frozen_heatmap_sha256": "47fd500235089fddc27d421ead469e8ca59c268ad14d499f8b6dde9a051b4a0e",
   "figures_match_current_paper_bytes": true,
   "removed_members": [
-    "支撑材料/figures/question_workflows/q2_workflow.pdf"
+    "支撑材料/figures/font_revision/q2_profiles.pdf"
   ],
   "added_members": [
-    "支撑材料/figures/q2_revision/q2_mechanism.pdf",
-    "支撑材料/figures/q2_revision/q2_workflow.pdf"
+    "支撑材料/figures/q2_heatmap/q2_fields.pdf"
   ],
   "changed_existing_members": [
     "支撑材料/support/图表来源清单.md",
@@ -66,8 +67,8 @@
       "sha256": "311495f4379b487103efb386a152d63c5aa4994cb31c32f59d0854c443e18475"
     },
     {
-      "name": "支撑材料/figures/font_revision/q2_profiles.pdf",
-      "sha256": "d2e98eb035d31241055e83906d441c110af754d34a0587bd24aee4abf78e2e24"
+      "name": "支撑材料/figures/q2_heatmap/q2_fields.pdf",
+      "sha256": "47fd500235089fddc27d421ead469e8ca59c268ad14d499f8b6dde9a051b4a0e"
     },
     {
       "name": "支撑材料/figures/q2_revision/q2_mechanism.pdf",
@@ -109,10 +110,10 @@
   },
   "zip_crc_check": "passed",
   "zip": "D:\\Desktop\\CUMCM26\\q1234_submission_support_20260913\\out\\A题_支撑材料.zip",
-  "zip_bytes": 11249458,
-  "zip_mb": 10.73,
+  "zip_bytes": 11287899,
+  "zip_mb": 10.76,
   "zip_within_20mb": true,
-  "zip_sha256": "d703b922b87f88d7f08d1d3dd05cc2b46d4d486a725f2c1a2f444c7aaf5ab5c3",
+  "zip_sha256": "b127ea501b815e0032e396e6757b69668e27e98b0e7106b862c43f3aacd8a5bc",
   "member_count": 94,
   "members": [
     {
@@ -136,11 +137,6 @@
       "zip_bytes": 35098
     },
     {
-      "name": "支撑材料/figures/font_revision/q2_profiles.pdf",
-      "bytes": 42614,
-      "zip_bytes": 38868
-    },
-    {
       "name": "支撑材料/figures/font_revision/q3_q4_drying.pdf",
       "bytes": 47527,
       "zip_bytes": 44330
@@ -159,6 +155,11 @@
       "name": "支撑材料/figures/q1_legibility/q1_workflow.pdf",
       "bytes": 36008,
       "zip_bytes": 32848
+    },
+    {
+      "name": "支撑材料/figures/q2_heatmap/q2_fields.pdf",
+      "bytes": 95814,
+      "zip_bytes": 77070
     },
     {
       "name": "支撑材料/figures/q2_revision/q2_mechanism.pdf",
@@ -572,13 +573,13 @@
     },
     {
       "name": "支撑材料/support/图表来源清单.md",
-      "bytes": 7537,
-      "zip_bytes": 3446
+      "bytes": 7994,
+      "zip_bytes": 3685
     },
     {
       "name": "支撑材料/支撑材料文件列表.md",
-      "bytes": 1144,
-      "zip_bytes": 575
+      "bytes": 1139,
+      "zip_bytes": 585
     },
     {
       "name": "支撑材料/支撑材料说明.md",

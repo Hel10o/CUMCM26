@@ -11,6 +11,8 @@ roots = ["main.tex", "ai_details.tex", "AI工具使用详情.pdf", "body_preview
 files = [BASE / name for name in roots]
 files.append(BASE / 'build_q1_legibility.py')
 files.append(BASE / 'build_q2_revision_assets.py')
+files.append(BASE / 'build_q2_heatmap.py')
+files.extend((BASE / 'figures' / 'q2_heatmap').glob('*.png'))
 files.extend((BASE / 'figures' / 'q2_revision').glob('*.png'))
 files.extend((BASE / 'figures' / 'q1_legibility').glob('*.png'))
 files.extend((BASE / "figures" / "visual_revision").glob("*.png"))
