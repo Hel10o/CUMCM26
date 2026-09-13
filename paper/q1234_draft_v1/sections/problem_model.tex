@@ -43,7 +43,6 @@ T_a=49.9989344262\celsius,\qquad b=0.04998754098\unit{kg/kg}.
 
 \Needspace{22\baselineskip}
 \section{符号说明}
-\subsection{主要符号}
 \begin{table}[H]
 \centering\small
 \caption{主要符号及单位}\label{tab:symbols}
@@ -73,22 +72,7 @@ $t_{\mathrm{exec}}$&正式执行时刻&$\mathrm s$\\
 \end{tabularx}
 \end{table}
 
-\subsection{分问物性}
-表\ref{tab:properties}保留题给公式。所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。
-\begin{table}[htbp]
-\centering\small
-\caption{题给物性与本文使用方式}\label{tab:properties}
-\setlength{\tabcolsep}{4pt}
-\begin{tabularx}{\linewidth}{@{}lXXX@{}}
-\toprule&问题一&问题二、三&问题四\\\midrule
-$\rhoe\ (\mathrm{kg/m^3})$&$820$&$650+128C$&$760+90C$\\
-$c_p\ (\mathrm{J/(kg\,K)})$&$2600$&$1450+\dfrac{2736C}{1+C}$&$1850+\dfrac{2150C}{1+C}$\\[5pt]
-$k\ (\mathrm{W/(m\,K)})$&$0.36$&$0.21+\dfrac{0.38C}{1+C}$&$0.12+\dfrac{0.20C}{1+C}$\\[5pt]
-$D\ (\mathrm{m^2/s})$&$7\times10^{-9}e^{-0.89/C}$&$\begin{gathered}2.4\times10^{-3}e^{-0.45/C}\\{}\times e^{-3850/T_K}\end{gathered}$&$\begin{gathered}4.2\times10^{-4}e^{-0.30/C}\\{}\times e^{-3850/T_K}\end{gathered}$\\
-\bottomrule
-\end{tabularx}
-\end{table}
-
+\Needspace{7\baselineskip}
 \section{统一传热传质模型与数值方法}
 \label{sec:common-model}
 本节给出四问共用的局部收支关系。第一问在固定圆柱内代入常热物性并作
@@ -136,6 +120,23 @@ T(r,z,0)=28\celsius,\qquad C(r,z,0)=2.55\unit{kg/kg}.
 \label{eq:initial}
 \end{equation}
 在一维固定圆柱中，散度取$r^{-1}\partial_r(r\,\cdot)$；轴对称二维再加$\partial_z(\cdot)$。变系数保留在散度内部，不能将$k(C)$或$D(T,C)$简单提出算子；$\rhoe c_p$乘温度变化率也不能直接改写为$\partial_t(\rhoe c_pT)$。
+
+\Needspace{15\baselineskip}
+\subsection{分问物性与参数设置}
+表\ref{tab:properties}保留题给公式。所有指数中的温度使用$T_K$，材料水分变量均为干基$C$，不能与文献湿基量互换。
+\begin{table}[htbp]
+\centering\small
+\caption{题给物性与本文使用方式}\label{tab:properties}
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}lXXX@{}}
+\toprule&问题一&问题二、三&问题四\\\midrule
+$\rhoe\ (\mathrm{kg/m^3})$&$820$&$650+128C$&$760+90C$\\
+$c_p\ (\mathrm{J/(kg\,K)})$&$2600$&$1450+\dfrac{2736C}{1+C}$&$1850+\dfrac{2150C}{1+C}$\\[5pt]
+$k\ (\mathrm{W/(m\,K)})$&$0.36$&$0.21+\dfrac{0.38C}{1+C}$&$0.12+\dfrac{0.20C}{1+C}$\\[5pt]
+$D\ (\mathrm{m^2/s})$&$7\times10^{-9}e^{-0.89/C}$&$\begin{gathered}2.4\times10^{-3}e^{-0.45/C}\\{}\times e^{-3850/T_K}\end{gathered}$&$\begin{gathered}4.2\times10^{-4}e^{-0.30/C}\\{}\times e^{-3850/T_K}\end{gathered}$\\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \subsection{求解方法的分问衔接}
 第一问采用圆环有限体积法：从控制体收支推导相邻单元共用的面通量，

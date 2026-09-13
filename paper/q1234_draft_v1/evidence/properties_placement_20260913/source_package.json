@@ -1,0 +1,12 @@
+{
+  "zip_sha256": "de544769ad9781d79dfd6f2ae0a4ba26e943d7d6eb246ea47290eed9867ffd49",
+  "zip_bytes": 32658684,
+  "verified_source_members": 475,
+  "total_members_including_inner_manifest": 476,
+  "crc_passed": true,
+  "no_duplicate_names": true,
+  "inner_outer_manifest_equal": true,
+  "all_member_hashes_equal_disk": true,
+  "sidecar_hash_equal": true,
+  "formal_pdf_sha256": "62e51169824e5e856119994c18141c7b5e114dc8aaaaf4afca950b551abeee27"
+}

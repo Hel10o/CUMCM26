@@ -1,0 +1,10 @@
+{
+  "read_commit": "08a04330e24a1c014f4ff91ed9a0a34b0bbcbb19",
+  "origin_main": "08a04330e24a1c014f4ff91ed9a0a34b0bbcbb19",
+  "pdf_sha256": "98832a8e29b2789de72e30fe2857cc4c0395a6bbad3ab1f6dbb5e891a969cb2d",
+  "source_sha256": "25dd28bf4c4045b596eb0482c3dd4709f334d015ec86c327843f7a1bcb5ea540",
+  "untracked_preserved": [
+    "paper/q1234_draft_v1/main.pdf",
+    "template/"
+  ]
+}
