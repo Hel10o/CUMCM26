@@ -1,16 +1,12 @@
 {
-  "operation": "Replace only AI工具使用详情.pdf; drop 按照官方第2条",
-  "prior_zip_sha256": "6cb9ee3634512acc93c157a4de20b4080f06c8c2e9142aa8fe59519946148bc3",
-  "zip_bytes": 11193991,
-  "zip_mb": 10.68,
-  "zip_within_20mb": true,
-  "zip_sha256": "2ae1842690d52b76c0e462aaa9829b7824682d0deca75d8105e50e610c0c1f53",
-  "member_count": 94,
-  "changed_members": [
+  "operation": "Replace AI工具使用详情.pdf after dropping article-4 boilerplate",
+  "prior_zip_sha256": "2ae1842690d52b76c0e462aaa9829b7824682d0deca75d8105e50e610c0c1f53",
+  "zip_sha256": "34e9aab18b5f97661c1079feccf5aaa5ebf990d7277688cced322731d6818c71",
+  "zip_bytes": 11192253,
+  "zip_mib": 10.67,
+  "ai_pdf_sha256": "cfca7f5a6b3b5600d355926ffec66d26018f40cd128335f502dca7c7147b845d",
+  "ai_pdf_bytes": 117631,
+  "changed_existing_members": [
     "支撑材料/AI工具使用详情.pdf"
-  ],
-  "ai_pdf_sha256": "ec5b326dcb42bd44e28efa2d15c93c8d7f87b7a8216aa15cb4873e5bcc180785",
-  "ai_pdf_bytes": 119356,
-  "other_members_byte_identical": true,
-  "zip_crc_check": "passed"
+  ]
 }
