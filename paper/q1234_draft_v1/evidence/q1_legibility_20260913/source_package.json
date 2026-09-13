@@ -1,0 +1,9 @@
+{
+  "source_member_count": 589,
+  "archive_bytes": 35074563,
+  "archive_sha256": "0e7a8e84c63d3c4aa018ec3c6728855effc7a79a61a6e9ed0c19629fd25b958c",
+  "all_member_bytes_and_hashes_match": true,
+  "inner_and_outer_manifest_equal": true,
+  "sha256_sidecar_matches": true,
+  "official_pdf_matches_build": true
+}

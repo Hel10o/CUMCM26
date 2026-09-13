@@ -1,0 +1,53 @@
+{
+  "baseline_commit": "c516364c6934721b07c10533d9e878cff3db0aff",
+  "paper_sha256": "e01b23daa501dfc97871f8def2d29f7780e677a5485274cafe622d56cab36031",
+  "baseline_pdf_sha256": "3879db2d5619b14cc86668935051bc8a109fd45f773a792445bce3041aef08b6",
+  "total_pages": 158,
+  "abstract_pages": 1,
+  "body_pages": 30,
+  "appendix_pages": 127,
+  "pixel_comparison_dpi": 72,
+  "changed_physical_pages": [
+    7,
+    10
+  ],
+  "other_156_pages_pixel_identical": true,
+  "q1_tex_only_two_image_paths_changed": true,
+  "unchanged_tex_files": [
+    "paper/q1234_draft_v1/main.tex",
+    "paper/q1234_draft_v1/sections/appendix.tex",
+    "paper/q1234_draft_v1/sections/problem_model.tex",
+    "paper/q1234_draft_v1/sections/q2.tex",
+    "paper/q1234_draft_v1/sections/q3.tex",
+    "paper/q1234_draft_v1/sections/q4.tex",
+    "paper/q1234_draft_v1/sections/references.tex",
+    "paper/q1234_draft_v1/sections/validation_limits.tex",
+    "paper/q1234_draft_v1/tables/q1_moisture.tex",
+    "paper/q1234_draft_v1/tables/q1_temperature.tex",
+    "paper/q1234_draft_v1/tables/q2_moisture.tex",
+    "paper/q1234_draft_v1/tables/q2_temperature.tex",
+    "paper/q1234_draft_v1/tables/q3_moisture.tex",
+    "paper/q1234_draft_v1/tables/q4_moisture.tex"
+  ],
+  "workflow_only_7_box_fill_changes": true,
+  "workflow_all_text_positions_and_drawings_otherwise_unchanged": true,
+  "fonts": [
+    {
+      "figure": "q1_profiles",
+      "embedded_font_names": [
+        "FLIEVM+SimSun",
+        "MBIZQP+TimesNewRomanPSMT"
+      ]
+    },
+    {
+      "figure": "q1_workflow",
+      "embedded_font_names": [
+        "CJJFYB+SimSun",
+        "GRDSYA+TimesNewRomanPSMT"
+      ]
+    }
+  ],
+  "latex_issues": [],
+  "scientific_results_changed": false,
+  "solver_runs": 0
+}

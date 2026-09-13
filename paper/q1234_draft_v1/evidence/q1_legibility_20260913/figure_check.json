@@ -1,0 +1,415 @@
+{
+  "baseline_commit": "c516364c6934721b07c10533d9e878cff3db0aff",
+  "script_sha256": "a16d586b586078700e51a93f9eb47b9fb01ae63adfbf3616231c591e17739627",
+  "input_file": "q1_complete_delivery/q1_delivery/output/q1_unrounded.npz",
+  "input_sha256": "891a9520497b9b831bf7fe4917a95ec8efd346cc62fd9c6c217ca4906046fe77",
+  "input_unchanged": true,
+  "solver_runs": 0,
+  "plots": [
+    {
+      "key": "temperature_degC",
+      "source_array": {
+        "shape": [
+          1801,
+          21
+        ],
+        "dtype": "float64",
+        "sha256": "ea73b3d61cc689550c082550ead58aed697362e27fd254fa51c84b980bc14d1d"
+      },
+      "display_array": {
+        "shape": [
+          21,
+          1801
+        ],
+        "dtype": "float64",
+        "sha256": "6f0ced5606b20bfb46b7363ca2b9e3b8bac3ff8780532bc09d17f98a5d8ea968"
+      },
+      "mesh_coordinates": {
+        "shape": [
+          22,
+          1802,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "8397fabdde7d8bba4f60b1b93613a3fcb76c1b13348a03ae1e6d22929ceffe80"
+      },
+      "colour_limits": [
+        28,
+        37
+      ],
+      "cmap": "YlOrBr",
+      "endpoint_texts": [
+        "末时轴心 / 表面：33.5753 / 36.7856 °C",
+        "径向温差 ΔT = 3.2102 K"
+      ],
+      "arrays_geometry_colours_text_equal_to_baseline": true
+    },
+    {
+      "key": "moisture_dry_basis",
+      "source_array": {
+        "shape": [
+          1801,
+          21
+        ],
+        "dtype": "float64",
+        "sha256": "58f664357845f35cb8270b690ac38574aacd4c7f0c824a239beba11a29d8748d"
+      },
+      "display_array": {
+        "shape": [
+          21,
+          1801
+        ],
+        "dtype": "float64",
+        "sha256": "054ec81424caad814402ed05e2d6508f4de724cbf59392b77e89e5299ef2fcdf"
+      },
+      "mesh_coordinates": {
+        "shape": [
+          22,
+          1802,
+          2
+        ],
+        "dtype": "float64",
+        "sha256": "8397fabdde7d8bba4f60b1b93613a3fcb76c1b13348a03ae1e6d22929ceffe80"
+      },
+      "colour_limits": [
+        1.5,
+        2.55
+      ],
+      "cmap": "YlGnBu",
+      "endpoint_texts": [
+        "末时轴心 ≈ 2.5499924 kg/kg",
+        "末时表面：1.5102 kg/kg"
+      ],
+      "arrays_geometry_colours_text_equal_to_baseline": true
+    }
+  ],
+  "title_alignment_checks": [
+    {
+      "text": "(a) 热响应的时空演化",
+      "horizontal_alignment": "center",
+      "center_error_px": 0.0
+    },
+    {
+      "text": "温度 / °C",
+      "horizontal_alignment": "center",
+      "center_error_px": 0.0
+    },
+    {
+      "text": "(b) 失水的时空演化",
+      "horizontal_alignment": "center",
+      "center_error_px": 5.684341886080802e-14
+    },
+    {
+      "text": "干基含水率 / (kg/kg)",
+      "horizontal_alignment": "center",
+      "center_error_px": 5.684341886080802e-14
+    }
+  ],
+  "font_sizes_pt": [
+    11.0,
+    11.3,
+    12.2
+  ],
+  "font_contract": {
+    "Chinese": "SimSun",
+    "Latin_digits": "Times New Roman"
+  },
+  "figure": {
+    "dimensions_cm": [
+      16.4,
+      7.1
+    ],
+    "text_bounds_checks": [
+      {
+        "text": "表面",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "轴心",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "时间 / min",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "10",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "20",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "30",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "径向距离 / cm",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "0.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "0.5",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.5",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "2.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "28",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "31",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "34",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "37",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "表面",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "轴心",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "时间 / min",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "10",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "20",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "30",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "径向距离 / cm",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "0.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "0.5",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.5",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "2.0",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.50",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "1.85",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "2.20",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "2.55",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "(a) 热响应的时空演化",
+        "font_pt": 12.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "温度 / °C",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "末时轴心 / 表面：33.5753 / 36.7856 °C",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "径向温差 ΔT = 3.2102 K",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "(b) 失水的时空演化",
+        "font_pt": 12.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "干基含水率 / (kg/kg)",
+        "font_pt": 11.3,
+        "inside_canvas": true
+      },
+      {
+        "text": "末时轴心 ≈ 2.5499924 kg/kg",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      },
+      {
+        "text": "末时表面：1.5102 kg/kg",
+        "font_pt": 11.0,
+        "inside_canvas": true
+      }
+    ],
+    "outputs": {
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_profiles.pdf": {
+        "sha256": "0a88b67e8d179a7169ca88042014d45898c5f77378dba5c381b3cf215d7a7008",
+        "bytes": 70834
+      },
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_profiles.svg": {
+        "sha256": "71f9fce813552de1acf23ed48c7bbb99f4bea5b56f0a1b65d563e36974805c70",
+        "bytes": 109937
+      },
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_profiles.png": {
+        "sha256": "e1f41f53c2243026ec1ac66549bf1cbfe8f5b20bd47d86b03d2dce3b3e55d240",
+        "bytes": 346394
+      }
+    }
+  },
+  "workflow": {
+    "dimensions_cm": [
+      15.0,
+      3.2
+    ],
+    "text_bounds_checks": [
+      {
+        "text": "统一传热传质模型 → 问题一条件与参数代入",
+        "font_pt": 9.6,
+        "inside_canvas": true
+      },
+      {
+        "text": "几何与初态\n环境记录\n附录2物性",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "常热物性导热方程",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "非线性水分扩散\nD(C)",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "圆环有限体积\nBDF隐式积分",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "圆环有限体积\nBDF隐式积分",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "0–1800 s\n径向温度场",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      },
+      {
+        "text": "0–1800 s\n径向含水率场",
+        "font_pt": 9.2,
+        "inside_canvas": true
+      }
+    ],
+    "outputs": {
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_workflow.pdf": {
+        "sha256": "d3a6d1abb5d360e06e33c0468995dc04c45cb92a281868e5f5793e9497d914d0",
+        "bytes": 36008
+      },
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_workflow.svg": {
+        "sha256": "28f13e1318f14f68da3c58347fbc1df42d3e413ae08bb051fb28868584239a25",
+        "bytes": 82583
+      },
+      "paper/q1234_draft_v1/figures/q1_legibility/q1_workflow.png": {
+        "sha256": "eafb985e1140003c7457bfc146d4242ca632eebb3c963bc40c8e53c38495d586",
+        "bytes": 213758
+      }
+    },
+    "box_count": 7,
+    "all_box_interiors_white": true,
+    "geometry_text_arrows_and_fonts_preserved": true
+  },
+  "scope": "Heatmap typography/text positions and workflow white box interiors only; exact canvas sizes, numerical arrays, grid, limits, colormaps, labels and endpoint strings preserved."
+}
