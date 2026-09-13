@@ -1,0 +1,9 @@
+{
+  "file_count": 723,
+  "zip_crc": "passed",
+  "all_members_match_staged_git_blobs": true,
+  "sha256": "a4a6b7f7f449f05b9a2a0eafc3865bf65c605c24b3052ec7f685bc7ce08a80fc",
+  "bytes": 42245480,
+  "paper_pdf_sha256": "28a5f3ec3830511e6f89162147aa7cca272521ff6a9fcad6c1a9666475ad83f9",
+  "other_worktree_changes_left_unstaged": true
+}

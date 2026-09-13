@@ -2,6 +2,18 @@
 \label{sec:q4}
 
 \begingroup
+% Local display spacing accommodates the introduction; text and figure sizes are unchanged.
+\setlength{\abovedisplayskip}{8pt plus 2pt minus 2pt}
+\setlength{\belowdisplayskip}{8pt plus 2pt minus 2pt}
+\setlength{\abovedisplayshortskip}{6pt plus 2pt minus 1pt}
+\setlength{\belowdisplayshortskip}{6pt plus 2pt minus 1pt}
+问题四在第\ref{sec:common-model}章统一模型基础上，结合附件2的观测半径，
+在恒长度、均匀径向收缩假设下，用材料坐标与干物质守恒处理几何变化。
+采用附录4物性，从共同初态联立求解温湿场，沿用问题三的径向最大含水率判据
+确定所设环境条件下的模型干燥时长，并通过同物性恒半径对照分析收缩作用。
+求解流程见图\ref{fig:q4-workflow}。
+
+\begingroup
 \setlength{\intextsep}{10pt}
 \begin{figure}[H]
 \centering\includegraphics[width=\linewidth]{figures/legibility_schematics/q4_workflow.pdf}
@@ -284,3 +296,5 @@ $j_s=\rho_d(t)h_m(C_s-b)$，
 比主线提前约12.6058\unit{s}，明显大于单一插值方案内部的数值预算。
 输入重建差不能当作半径测量误差的置信区间，适用边界见第\ref{sec:limitations}节。
 复现给定的观测$R(t)$不能作为温湿预测的独立验证；改变环境或交换系数而沿用该半径历程时，结果仅为条件响应。
+
+\endgroup

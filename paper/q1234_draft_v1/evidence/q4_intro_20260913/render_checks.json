@@ -1,0 +1,19 @@
+{
+  "full_pdf_pages": 158,
+  "abstract_pages": 1,
+  "body_pages": 30,
+  "appendix_pages": 127,
+  "changed_physical_pages_at_72dpi": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "full_pdf_body_matches_reviewed_preview": true,
+  "compile_final_log_undefined_overfull_missing_glyph_duplicate_warnings": [],
+  "all_six_tables_passed": true,
+  "matched_table_cells": 279,
+  "output_sha256": "28a5f3ec3830511e6f89162147aa7cca272521ff6a9fcad6c1a9666475ad83f9",
+  "numerical_solves_run": false
+}

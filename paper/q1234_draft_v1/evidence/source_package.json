@@ -1,9 +1,9 @@
 {
   "purpose": "Editable LaTeX source archive, not the final competition support package",
-  "file_count": 721,
-  "bytes": 43205113,
-  "sha256": "1d88717a8b02b26f2ad7af7fc65d85460cced9140644c19a0f5c7494ba01119b",
-  "members_verified": 721,
+  "file_count": 723,
+  "bytes": 42245480,
+  "sha256": "a4a6b7f7f449f05b9a2a0eafc3865bf65c605c24b3052ec7f685bc7ce08a80fc",
+  "members_verified": 723,
   "sources": {
     "ai_details.tex": "6a20e837a67065aa01e54ecface58f377ce7f62332b76bc22df03d8a482e960b",
     "AI工具使用详情.pdf": "cfca7f5a6b3b5600d355926ffec66d26018f40cd128335f502dca7c7147b845d",
@@ -410,6 +410,10 @@
     "evidence/q3_white_20260913/prior_source_package.json": "3f2706c3eacf0766cd0bc4d12f80298cc9ad0747ad43d2877eb39304d4e2790c",
     "evidence/q3_white_20260913/workflow_sources.json": "95558bebf5eaa0a9ed2894ca5e2c655b8b27059c1e5e7268a2c6783e07449878",
     "evidence/q3_white_20260913/第三问流程图去色记录.md": "b31fcedb27a3f97c5033e747adc8bb142b433c4bd66221d4732e4f10c4e2f4d6",
+    "evidence/q4_intro_20260913/paper_checks.json": "d2fe4c4495def097c2ead9b6a9cd3e78a0f4ca9204a875407f85566c62ebc68b",
+    "evidence/q4_intro_20260913/render_checks.json": "4db63d396c751bcc2b4c53bf456699dd42f9c2362d683408cb4f197bf1f2c4e2",
+    "evidence/q4_intro_20260913/source_integrity.json": "52a3deea5a82898dfc0163397d501be2cd5a700bf04933a5b0ba1611cec127e0",
+    "evidence/q4_intro_20260913/修订记录.md": "541b9a599c446e428ef8475f29bb1b37171a9775e0573b7af2c9305f1e3c201f",
     "evidence/question_workflows_20260913/baseline.json": "9c5105192cf837facf444766c6d9cbf09876720854469f2290065c972b0c91c3",
     "evidence/question_workflows_20260913/compile_console.txt": "5095aa0d69b3550587310916624e419f821537e35fb0158775e36f3fd701e80f",
     "evidence/question_workflows_20260913/compile_exit_code.txt": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
@@ -625,13 +629,13 @@
     "figures/workflow_spacing/model_workflow.svg": "c8de93d71c01c6d1aa95c245457ddb029ecd069741e8b3baac4bb168336abfcf",
     "main.tex": "79f85bee123976eec68513dde3182a58c42a740e11dcbf145d880f46eabf7340",
     "package_source.py": "ebedb83401c025ae932d656aa576f09aadc476e483fd14dbd15f84a6a14f9457",
-    "README.md": "a64f8328a098b4084e7dc9503ce10ad50f5f88e0a07b83b308f0436f61860193",
+    "README.md": "e96d75c95df9ab0e51432b0d485bb7ec06d6d4e5faead74ea627296440fc52a2",
     "sections/appendix.tex": "f693ec77a21799a649f2b47822dd936995cf74bfbd6a3d5143552d0cf7e75ef7",
     "sections/problem_model.tex": "61fbede472c53774db1b024afed69b91ef919439ac882e7380b00ae4eaa868b0",
     "sections/q1.tex": "6a7ddd20f33c92b98d59421777c95154cf42e1f8e67f6f8964c68424c53fca5d",
     "sections/q2.tex": "8a57fc4694dd4d723742b35519039aea77c2dbb44949bb286b3f843f2456e711",
     "sections/q3.tex": "15c82d78643b51a3bb5ceaf66098a74a85c64b9f7681220ccc0b4f4a7956a64c",
-    "sections/q4.tex": "7c0c53c885fbbf755b5de34735796bbe24de340971946cce95ed35618a241796",
+    "sections/q4.tex": "47f985719f2e6d18d0ce0e04eb4f05f3626a935058b75f50c7a9aa8ffcce00e1",
     "sections/references.tex": "c954fcc0be6eed47df51584837264e525d112866244213ffea8a974bc5029f8c",
     "sections/validation_limits.tex": "c9ad308132e86c5b36f0a5cd767529bdc66beb9efff7b3203902dd730f07398f",
     "support/launch.py": "a241267bb2f717aeba84c97325b01da193aa24e7213edea53e7a82bf1f482659",
@@ -723,8 +727,6 @@
     "visual_revision/validation.py": "26b793d167ce405ea0a4588165d0f392883688fd3567b2983f701f760b2ef393",
     "workflow_spacing/common.py": "bd7735e40bb9a9101de1fc6cf892ef770de365ed05d362b909a625fab30605d9",
     "workflow_spacing/README.md": "4ef71e49db7747ae536b05ce722ab0eeb034251db2cf3d5f5e8e44d9facfadb0",
-    "workflow_spacing/workflow.py": "bb529c130a759e6615c4c66df2a6e86b98665072f919aac64cc5cd5fd155a0b9",
-    "evidence/ai_details_contest_20260913/final-2.png": "1883f3345b8bacac3da1925ac61fa8eeba96183bfb79ef7cc43bcf379f5b1d27",
-    "evidence/ai_details_contest_20260913/final-3.png": "ac218b87433629d0318379f802a17460eb3af4284c1778b4a927cfc6fb0b805d"
+    "workflow_spacing/workflow.py": "bb529c130a759e6615c4c66df2a6e86b98665072f919aac64cc5cd5fd155a0b9"
   }
 }
